@@ -3770,7 +3770,6 @@
 							<a href="#page105" id="go_page105" class="next_p_btn ui-btn go-next">
 								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
-							</div>
 						</div>
 					</div>
 				</section>
@@ -3785,9 +3784,9 @@
 						</a>
 					</div> -->
 					<div data-role="main" class="ui-content">
-						<a href="javascript:;"class="next_p_btn ui-btn go-next">
-								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
-							</a>
+						<a href="javascript:;" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
 					</div>
 				</section>
 
@@ -3799,6 +3798,6 @@
 		<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
 		<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
 
-		<a href="#page105">이동</a>
+		<a href="#page104">이동</a>
 	</body>
 </html>
