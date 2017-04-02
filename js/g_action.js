@@ -1895,7 +1895,7 @@ $(document).ready(function(){
 		    .fadeIn(500);
 		    $("#page77 #go_back").fadeIn();
 		    $("#page77 #textbox1,#page77 #go_next1").hide();
-		    $("#page77 #textbox2").show();
+		    $("#page77 #textbox2, #page77 .next_p_btn").show();
 		    $("#page77 .audio1").each(function(){ 
 					this.pause();
 					if (!isNaN(this.duration)) {
@@ -1940,7 +1940,7 @@ $(document).ready(function(){
 		        $(this).css({"background":"url(../images/day2/31_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		    .fadeIn(500);
-		    $("#page77 #textbox1").show();
+		    $("#page77 #textbox1, #page77 #go_next1").show();
 			$("#page77 #textbox2, #page77 .next_p_btn").hide();
 			$("#page77 .audio2").each(function(){ 
 					this.pause();
@@ -1978,8 +1978,14 @@ $(document).ready(function(){
 	$("#page79").on({
 		"pagebeforeshow" : function(){
 			$("#page79 .popLayer, #page79 .next_p_btn").hide();
+			$("#page79 .next_finger").show();
 			$("#page79 .next_p_btn").addClass("stopPage");
-
+			$("#page79 .audio2").each(function(){ 
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
 		},
 		"pageshow" : function(){
 						
@@ -1996,6 +2002,15 @@ $(document).ready(function(){
 	$("#page79 .next_p_btn").click(function(){
 		if($("#page79 .next_p_btn").hasClass("stopPage")){
 			$("#page79 .popLayer").fadeIn(500, function(){
+				$("#page79 .audio1").each(function(){ 
+					this.pause();
+					if (!isNaN(this.duration)) {
+						this.currentTime = 0;
+					}
+				});
+		    if($("#page79").has(".audio2")) {
+				$("#page79").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			}
 				$("#page79 .next_p_btn").removeClass("stopPage");
 			});
 		}
