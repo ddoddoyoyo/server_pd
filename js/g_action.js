@@ -1204,11 +1204,11 @@ $(document).ready(function(){
 				if (!isNaN(this.duration)) {
 					this.currentTime = 0;
 				}
+				if($("section").has(".audio2")) {
+					$("section").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+				}
 			});
 		} 
-		if($("section").has(".audio2")) {
-				$("section").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
-			}
 		next_Count++;
 	});
 
