@@ -38,6 +38,29 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#mokup, #wrap.mobile").addClass("landscape");
 			$(".btn_device").hide();
+			//뒤로가기 할때 뒤에 있는 오디오 pause
+			$("audio").each(function(){ 
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
+		}, 
+		"pageshow" : function(){
+			if($(this).has("audio")) {
+				$(this).find("audio").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			}
+		}
+	});
+
+	$(".next_finger, .next_p_btn").click(function(e) {
+		if($("audio").length){
+			$("audio").each(function(){ 
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
 		}
 	});
 
