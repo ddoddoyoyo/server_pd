@@ -61,8 +61,10 @@
       position: absolute;
       top: 0;
       left: 0; 
-      background:$black;
+      //background:$black;
       //z-index: 20;
+      background-image:url('../day2/13_plus_background.jpg');
+      background-repeat: no-repeat;
       iframe, video{
         position:relative;
         top:50%;

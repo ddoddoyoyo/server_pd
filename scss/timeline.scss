@@ -3,6 +3,9 @@
 #wrap{
 	overflow-y: auto;
 }
+#mokup .btn_device{
+  display: none;
+}
 #view_contBox {
   position: relative;
   width: 100%;
@@ -22,8 +25,8 @@
     // -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
     // box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
     .logo {
-      margin: 5% auto;
-      width: 84%;
+      margin: 0 auto;
+      //width: 84%;
     }
     a.share {
       position: absolute;

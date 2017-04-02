@@ -346,6 +346,9 @@ img {
 #wrap {
   overflow-y: auto; }
 
+#mokup .btn_device {
+  display: none; }
+
 #view_contBox {
   position: relative;
   width: 100%;
@@ -360,8 +363,7 @@ img {
     overflow: hidden;
     z-index: 9; }
     #view_contBox header .logo {
-      margin: 5% auto;
-      width: 84%; }
+      margin: 0 auto; }
     #view_contBox header a.share {
       position: absolute;
       top: 50%;

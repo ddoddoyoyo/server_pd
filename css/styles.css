@@ -3888,7 +3888,8 @@ img {
       position: absolute;
       top: 0;
       left: 0;
-      background: #000; }
+      background-image: url("../day2/13_plus_background.jpg");
+      background-repeat: no-repeat; }
       #page63001 .ui-content .popLayer iframe, #page63001 .ui-content .popLayer video {
         position: relative;
         top: 50%;
