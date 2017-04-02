@@ -115,13 +115,13 @@ $(document).ready(function(){
 
 	$("#page2").on({
 		"pagebeforeshow" : function(){
-			$("#page2 .textwrap").hide();
-			$("#page2 .imgwrap img").animate({"left":"-11%"},500);
+			$("#page2 .textwrap, #page2 .yes_btn").hide();
+			$("#page2 .imgwrap img").css({"left":"-100%"});
 
 		}, 
 		"pageshow" : function(){
-			$("#page2 .imgwrap img").animate({"left":"-100%"},500);
-			$("#page2 .textwrap").delay(500).fadeIn(500);
+			$("#page2 .imgwrap img").animate({"left":"-11%"},500);
+			$("#page2 .textwrap, #page2 .yes_btn").delay(500).fadeIn(500);
 		}
 	});
 	// $("#page1 .intnext_btn").click(function(){
@@ -131,10 +131,11 @@ $(document).ready(function(){
 
 	$("#page3001").on({
 		"pagebeforeshow" : function(){
-			$("#page3001 .popLayer, #page3001 .next_p_btn").hide();
+			$("#page3001 .popLayer, #page3001 .next_p_btn, #page3001 .textwrap").hide();
 			$("#page3001 .next_p_btn").addClass("stopPage");
 		}, 
 		"pageshow" : function(){
+			$("#page3001 .textwrap").fadeIn(500);
 			
 		}
 	});
