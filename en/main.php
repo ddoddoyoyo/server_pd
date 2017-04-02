@@ -3784,7 +3784,7 @@
 						</a>
 					</div> -->
 					<div data-role="main" class="ui-content">
-						<a href="javascript:;" class="next_p_btn ui-btn go-next">
+						<a href="/pd/en/day3.html" class="next_p_btn ui-btn go-next"><!--href="javascript:;"-->
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
