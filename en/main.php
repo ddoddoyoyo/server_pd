@@ -2629,7 +2629,7 @@
 									<p>Stelvio Pass is famous for its tremendous views of Alps range becomes a beautiful scene</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>These are the roads we just have passed.<br>Pretty dizzy right?<br>How many hairpins did we passed?<br>It was such a fun.</p>
+									<p>These are the roads we just have passed pretty dizzy right?<br>How many hairpins did we passed?<br>It was such a fun.</p>
 								</div>
 								<div id="textbox3" class="textbox">
 									<p>Powerful engine, 7 DCT, Strong body rigidity, Multilink rear-suspension system. These combination makes i30 such a fun car!</p>
@@ -3731,6 +3731,6 @@
 		<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
 		<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
 
-		<a href="#page76">이동</a>
+		<a href="#page56">이동</a>
 	</body>
 </html>

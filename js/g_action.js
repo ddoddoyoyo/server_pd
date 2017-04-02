@@ -1356,8 +1356,10 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page63001 .popLayer, #page63001 .next_p_btn").hide();
 			$("#page63001 .next_p_btn").addClass("stopPage");
+			$("#page63001 .imgwrap, #page63001 .textwrap").hide();
 		}, 
 		"pageshow" : function(){
+			$("#page63001 .imgwrap, #page63001 .textwrap").fadeIn(500);
 			next_Count = 1;
 		}
 	});
@@ -1383,6 +1385,17 @@ $(document).ready(function(){
 			//video_pause();
 		}	
 	});
+
+	$("#page64").on({
+		"pagebeforeshow" : function(){
+			$("#page64 .textwrap,#page64 .next_p_btn").hide();
+		}, 
+		"pageshow" : function(){
+			$("#page64 .textwrap,#page64 .next_p_btn").fadeIn(500);
+
+		}
+	});
+
 
 	$("#page65").on({
 		"pagebeforeshow" : function(){
@@ -1471,16 +1484,28 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page68").on({
+		"pagebeforeshow" : function(){
+			$("#page68 .textwrap, #page68 .next_p_btn").hide();
+		}, 
+		"pageshow" : function(){
+			$("#page68 .textwrap, #page68 .next_p_btn").fadeIn(500);
+		}
+	});
+
+
 	$("#page69").on({
 		"pagebeforeshow" : function(){
 			$("#page69 #textbox2, #page69 .view_text").hide();
-			$("#page69 .textwrap").show();
+			$("#page69 .textwrap").hide();
 			$('#page69 .ui-content').queue(function() {
 		        $(this).css({"background":"url(../images/day2/19_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		}, 
 		"pageshow" : function(){
+			$("#page69 .textwrap").fadeIn(500);
 			$("#page69 .next_finger").delay(500).fadeIn(500);
+
 		}
 	});
 	$("#page69 .next_finger").click(function(){
@@ -1500,9 +1525,10 @@ $(document).ready(function(){
 	$("#page70").on({
 		"pagebeforeshow" : function(){
 			$('#page70 .next_p_btn, #page70 #go_back, #page70 #textbox2, #page70 #textbox3, #page70 #textbox4').hide();
-			$("#page70 #textbox1, #page70 #go_next1").show();
+			$("#page70 .textwrap, #page70 #go_next1").hide();
 		}, 
 		"pageshow" : function(){
+			$("#page70 .textwrap, #page70 #go_next1").fadeIn(500);
 			next_Count = 1;
 		}
 	});
@@ -1526,7 +1552,7 @@ $(document).ready(function(){
 		    })
 		    .fadeIn(500);
 		    $("#page70 #textbox2, #page70 #go_next1").hide();
-		    $("#page70 #textbox3").show();
+		    $("#page70 #textbox3, #page70 .next_p_btn").show();
 		} 
 		// else if(next_Count == 3){
 		// 	$('#page70 .page_bg')
@@ -1563,7 +1589,7 @@ $(document).ready(function(){
 		        $(this).css({"background":"url(../images/day2/22_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		    .fadeIn(500);
-		    $("#page70 #textbox2, #page70 .next_p_btn").show();
+		    $("#page70 #textbox2").show();
 			$("#page70 #textbox3").hide();
 		}	
 		// else if(next_Count == 4){
