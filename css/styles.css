@@ -3888,8 +3888,7 @@ img {
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url("../day2/13_plus_background.jpg");
-      background-repeat: no-repeat; }
+      background: #000; }
       #page63001 .ui-content .popLayer iframe, #page63001 .ui-content .popLayer video {
         position: relative;
         top: 50%;
@@ -3927,6 +3926,9 @@ img {
           bottom: 8px; }
         #page63001 .ui-content .popLayer .textwrap .text {
           margin-left: 19px; }
+    #page63001 .ui-content .popLayer#pop02 {
+      background-image: url("../images/day2/13_plus_background.jpg");
+      background-repeat: no-repeat; }
 
 @media only screen and (orientation: Portrait) {
   #page63001 .ui-content {

@@ -2031,7 +2031,7 @@ $(document).ready(function(){
 	$("#page85 .next_finger").click(function(){
 		if(next_Count == 1){
 			$(this).hide();
-			$("#page85 #textbox1").hide();
+			$("#page85 #textbox1, #page85 .next_finger").hide();
 			$('#page85 .ui-content')
 				.delay(500)
 				.fadeOut()
@@ -2062,7 +2062,7 @@ $(document).ready(function(){
 	$("#page87 .next_finger").click(function(){
 		if(next_Count == 1){
 			$(this).hide();
-			$("#page87 #textbox1").hide();
+			$("#page87 #textbox1, #page87 .next_finger").hide();
 			$('#page87 .ui-content')
 				.delay(500)
 				.fadeOut()
