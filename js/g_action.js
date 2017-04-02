@@ -2038,9 +2038,9 @@ $(document).ready(function(){
 	});
 	
 
-	// $("#page105 #go_page105").click(function(){	
-	// 	location.href="/pc_pd/app/en/day3.html";
-	// });
+	$("#page105 .go-next").click(function(){	
+		location.href="/pd/en/day3.html";
+	});
 
 	
 
