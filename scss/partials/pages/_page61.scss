@@ -143,7 +143,11 @@
       position: absolute;
       top: 0;
       left: 0; 
-      background:$black_opcity;
+      //background:$black_opcity;
+      background-image:url("../images/day2/10_background.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: 50% 50%;
       .imgwrap {
         width: 80px;
         height: 80px;
