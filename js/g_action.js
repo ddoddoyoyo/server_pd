@@ -1168,7 +1168,9 @@ $(document).ready(function(){
 				$("#page57 .textwrap").delay(700).fadeIn(500);
 				$("#page57 .next_finger").delay(1000).fadeIn(500);
 			});
-			
+			if($(this).has(".audio1")) {
+				$(this).find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			}
 			
 		}
 	});
