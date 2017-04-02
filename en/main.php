@@ -3261,6 +3261,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day2/39.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page89" class="container">
