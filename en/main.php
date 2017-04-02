@@ -2652,7 +2652,7 @@
 									<p>These are the roads we just have passed pretty dizzy right?<br>How many hairpins did we passed?<br>It was such a fun.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Powerful engine, 7 DCT, Strong body rigidity, Multilink rear-suspension system. These combination makes i30 such a fun car!</p>
+									<p>Powerful engine, 7 DCT, Strong body rigidity, Multilink rear-suspension. These combination makes i30 such a fun car!</p>
 								</div>
 								<!-- <div id="textbox4" class="textbox">
 									<p>These combination makes i30 such a fun car!</p>
