@@ -3501,13 +3501,14 @@
 					</div>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
-							<div class="text_tip">
-								<img src="../images/button/tail_3_@3x.png" alt="text box">
-							</div>
+							
 							<div class="text">	
 								<div id="textbox1" class="textbox">
 									<p>It's been a really long time doing camping right?<br>Let's take a sleep for now and take a look zurich tomorrow?.</p>
 								</div>
+							</div>
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 						</div>
 						<a href="#page97" id="go_page97" class="next_p_btn ui-btn go-next">
@@ -3802,7 +3803,7 @@
 
 
 
-		<a href="#page61">이동</a>
+		<a href="#page4">이동</a>
 		<a href="#page93">이동</a>
 
 

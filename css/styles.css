@@ -3428,10 +3428,12 @@ img {
     display: block; } }
 
 #page57 {
-  background: url("../images/day2/map_1.jpg") no-repeat;
+  background: url("../images/day2/03_stelviopass_map_2.jpg") no-repeat;
   background-size: 100% auto; }
-  #page57 .page_bg img {
-    position: absolute; }
+  #page57 .page_bg {
+    animation: twinkle 1.5s infinite; }
+    #page57 .page_bg img {
+      position: absolute; }
   #page57 .next_finger {
     top: 0;
     left: 0;
@@ -3490,7 +3492,7 @@ img {
     display: block; } }
 
 #page58 {
-  background: url("../images/day2/03_stelviopass_map_2.jpg") no-repeat;
+  background: url("../images/day2/04_photo.jpg") no-repeat;
   background-size: 120% auto; }
   #page58 .ui-content {
     margin: 0;
@@ -5588,7 +5590,7 @@ img {
     #page93 .ui-content .start_text {
       max-width: 60px;
       position: absolute;
-      bottom: 125px;
+      bottom: 107px;
       left: 77px; }
     #page93 .ui-content .img_twinkle {
       animation: twinkle 1.5s infinite; }
@@ -5716,15 +5718,14 @@ img {
   #page96 .ui-content {
     margin: 0;
     padding: 0;
-    width: 33%;
     position: absolute;
-    top: 0;
     right: 0;
-    height: 100%;
-    overflow-x: initial; }
+    bottom: 0;
+    width: 33%; }
     #page96 .ui-content .textwrap {
       margin-top: 45px;
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 88px; }
       #page96 .ui-content .textwrap:before, #page96 .ui-content .textwrap:after {
         content: "";
         display: table; }
@@ -5735,6 +5736,15 @@ img {
         position: absolute;
         left: -3px;
         top: 80px; }
+      #page96 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page96 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+    #page96 .ui-content .imgwrap {
+      overflow: hidden;
+      max-height: 154px; }
+      #page96 .ui-content .imgwrap img {
+        width: 60%; }
 
 @media only screen and (orientation: Portrait) {
   #page96 .ui-content {

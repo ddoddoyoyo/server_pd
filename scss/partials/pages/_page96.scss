@@ -5,20 +5,35 @@
 
   .ui-content {
     @include reset-margins;
-    width: 33%;
     position: absolute;
-    top: 0;
     right: 0;
-    height: 100%;
-    overflow-x: initial;
+    bottom: 0;
+    width: 33%;
 
     .textwrap { 
       @include clearfix;
       margin-top: 45px;
       padding: 0;
+      margin-bottom: 88px;
 
       .text_tip {
-        @include text_tip_t;
+          @include text_tip_t;
+       }
+
+       .text {
+          overflow:hidden ; 
+
+          #go_page13 {
+            margin-top: 10px;
+          }
+       }
+    }
+    .imgwrap {
+      overflow: hidden;
+      max-height: 154px;
+
+      img {
+        width: 60%;
       }
     }
   } 
