@@ -194,7 +194,17 @@ $(document).ready(function(){
 //         $.mobile.loading('hide');
 //     }, 20);
 // });
-	
+	$("#page4").on({
+		"pagebeforeshow" : function(){
+			$("#page4 .textwrap").hide();
+			$("#page4 #go_next1").show();
+			$("#page4 .imgwrap img").css({"bottom":"-300px"});
+		}, 
+		"pageshow" : function(){
+		$("#page4 .imgwrap").animate({"bottom":"-27px"},1000);
+		$("#page4 .textwrap").delay(500).fadeIn(500);
+		}
+	});
 
 	$("#page5").on({
 		"pagebeforeshow" : function(){
