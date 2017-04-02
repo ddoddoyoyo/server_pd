@@ -3660,7 +3660,7 @@
 							<div class="imgwrap">
 								<img src="../images/person/james_15.png" alt="james">
 							</div>
-							<a href="#page102" id="go_page102" class="next_p_btn ui-btn go-next">
+							<a href="#page105" id="go_page105" class="next_p_btn ui-btn go-next">
 								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
 						</div>
@@ -3668,7 +3668,7 @@
 					<audio class="audio1" src="../tts/day2/51.mp3"></audio>
 				</section>
 
-				<section data-role="page" id="page102" class="container">
+				<!-- <section data-role="page" id="page102" class="container">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">
@@ -3759,7 +3759,7 @@
 							<div class="textwrap">	
 								<div class="text">	
 									<div id="textbox1" class="textbox">
-										<p>okay, all the luggages loaded.<br>Let's move to Zurich for city tour.</p>
+										<p>We're pretty much done in Zurich now. And next stop will be Bern.</p>
 									</div>
 								</div>
 								<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -3773,7 +3773,7 @@
 							</a>
 						</div>
 					</div>
-				</section>
+				</section> -->
 
 				<section data-role="page" id="page105" class="container">
 					<!-- <div data-role="header" class="header">
