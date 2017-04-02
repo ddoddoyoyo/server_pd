@@ -45,6 +45,11 @@ $(document).ready(function(){
 					this.currentTime = 0;
 				}
 			});
+			!$("#wrap").hasClass("mobile"){
+				$("html, body").css({
+					"background":"none"
+				});
+			}
 		}, 
 		"pageshow" : function(){
 			if($(this).has(".audio1")) {
