@@ -3261,6 +3261,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day2/39.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page89" class="container">
@@ -3368,7 +3369,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">	
-									<p>Please check the lamp being charged wirelessly.</p>
+									<p>Please put your phone on the wireless charger.</p>
 								</div>
 							</div>
 						</div>
@@ -3801,7 +3802,7 @@
 
 
 		<a href="#page85">이동</a>
-		<a href="#page79">이동</a>
+		<a href="#page93">이동</a>
 
 	</body>
 </html>
