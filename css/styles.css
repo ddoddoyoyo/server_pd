@@ -683,7 +683,8 @@ img {
       top: 50%;
       left: 37%;
       transform: translate(-37%, -50%);
-      width: 7%; }
+      width: 7%;
+      animation: twinkle 1.5s infinite; }
     #page3001 .ui-content .popLayer {
       height: 100%;
       width: 100%;
