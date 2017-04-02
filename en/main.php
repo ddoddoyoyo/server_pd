@@ -3716,13 +3716,30 @@
 							<div class="imgwrap">
 								<img src="../images/person/james_14.png" alt="james">
 							</div>
-							<a href="javascript:;" id="go_page105" class="next_p_btn ui-btn go-next">
+							<a href="#page105" id="go_page105" class="next_p_btn ui-btn go-next">
 								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
 							</div>
 						</div>
 					</div>
 				</section>
+
+				<section data-role="page" id="page105" class="container">
+					<!-- <div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div> -->
+					<div data-role="main" class="ui-content">
+						<a href="javascript:;"class="next_p_btn ui-btn go-next">
+								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+							</a>
+					</div>
+				</section>
+
 			</div>
 		<!-- <a href="#page11">이동!!!!!!!!!</a> -->
 
@@ -3731,6 +3748,6 @@
 		<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
 		<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
 
-		<a href="#page56">이동</a>
+		<a href="#page105">이동</a>
 	</body>
 </html>
