@@ -1,0 +1,71 @@
+// page5.scss
+#page69 {
+  background:url('../images/day2/19_photo.jpg') no-repeat;
+  background-size: 100% auto;
+  background-position:50% 50%;
+
+  .page_bg {
+    background:url('../images/day2/19_photo.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    background-position:50% 50%;
+  }
+
+  a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%;
+  }
+    .ui-content {
+      @include reset-margins;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+
+      .imgwrap {
+        max-width: 45%;
+        margin: 0 auto;
+        margin-top: 5px;
+
+        img {
+          // @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+          //   bottom: -100px;
+          // }
+        }
+      } 
+
+      .textwrap { 
+        @include clearfix;
+        max-width: 33%;
+        float: right;
+        margin-top: 45px;
+        padding: 0;
+
+        .text_tip {
+          @include text_tip_p;
+        }
+      }
+    } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page69{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page69{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

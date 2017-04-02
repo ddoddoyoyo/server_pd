@@ -1,0 +1,84 @@
+// page5.scss
+#page13 {
+  background-image:url('../images/day1/13_bg_1.jpg');
+  background-repeat:no-repeat;
+  background-size: auto 100%;
+  //opacity: 0.7;
+   .ui-content {
+      @include reset-margins;
+      //background-color: $black_opcity;
+      height:100%;
+      .textwrap { 
+      @include clearfix
+      text-align: center;
+      //margin-top:4%;
+       .text_i {
+          //overflow:hidden;
+          width: 50%;
+          //padding-top: 5%;
+          //margin: 0 auto;
+          
+          
+          // p {
+          //   &:before {
+          //     content: '';
+          //     display: block;
+          //     width: 4px;
+          //     height: 26px;
+          //     background: #ffffff;
+          //     position: relative;
+          //     margin-top: 3px;
+          //     top: 23px;
+          //     left: 50px;
+          //   }
+          // }           
+       }
+    }
+    .imgwrap{
+      width: 22%;
+      position: absolute;
+      right: 18%;
+      bottom: 47%;  
+      .incr_count{
+        margin-left: 32%;
+        font-size: 30px;
+        color:$yellow;
+        .incremental-counter .num{
+          display: inline-block;
+        }
+      }
+      
+    }
+    
+
+    .next_finger {
+    top: 10%;
+    left: 10%;
+    width: 90%;
+    height: 70%;
+
+      img {
+      left: 27%;
+      top: 47%;
+      }
+    } 
+   } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page13{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page13{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

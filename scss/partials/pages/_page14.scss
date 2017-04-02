@@ -1,0 +1,138 @@
+// page5.scss
+#page14 {
+  background: $black;
+
+  .try_again, .good  {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+  }
+
+   .ui-content {
+      @include reset-margins;
+
+      .textwrap { 
+        @include clearfix;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+         .text {
+            margin: 0 auto;
+            max-width: 85%;
+           // margin-top: 5%;
+            background: transparent;
+            border: none;
+            
+            #textbox1 {
+              @include clearfix;
+
+              img {
+                  width: 15%;
+                  float: left;
+                  margin: 0 5%;
+              }
+
+              p {
+                max-width: 74%;
+                float: left;
+                line-height: 140%;
+                color: $white;
+                margin-top: 2%;
+                font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+                span {
+                  border: 1px solid $white;
+                  padding: 0px 32px;
+                  margin: 0 10px;
+                }
+              }
+            }
+
+            #textbox2 {
+               width: 84%;
+               margin: 0 auto;
+               margin-top: 5%;
+               position: relative;
+
+               // &:before {
+               //    content: '';
+               //    display: block;
+               //    height: 1px;
+               //    width: 16%;
+               //    background: $white;
+               //    position: absolute;
+               //    left: -85px;
+               //    margin-top: 12px;
+               // }
+
+               // &:after {
+               //    content: '';
+               //    display: block;
+               //    height: 1px;
+               //    width: 16%;
+               //    background: $white;
+               //    position: absolute;
+               //    right: -85px;
+               //    top: 12px;
+               // }
+
+               p {
+                  color: $white;
+                  text-align: center;
+                  font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+               }
+
+               ul.btn_num {
+                  @include clearfix;
+                  margin: 0 auto;
+                  margin-top: 5%;
+                  width: 396px;
+
+                  a {
+                    float: left;
+                    padding: 7px 0;
+                    margin: 0px 17px;
+                    text-align: center;
+                    font-size: 1.2em;
+                    margin-top: 4px;
+                    background: $white;
+                    padding: 0px 29px;
+
+                      &:focus, &:active, &:hover {
+                        background: $navi;
+                        color: $white;
+
+                        li {
+                          color: $white;
+                        }
+                       }
+
+                     li {
+                        color: $black;
+                        font-weight: normal;
+                        font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+                     } 
+                  }
+               }
+            }
+         }
+      }
+   } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page14{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page14{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

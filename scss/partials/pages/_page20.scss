@@ -1,0 +1,53 @@
+// page5.scss
+#page20 {
+  background:url('../images/day1/27_photo.jpg') no-repeat;
+  background-size: 100% auto;
+
+  .ui-content {
+    @include reset-margins;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    width: 100%;
+
+    .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px;
+
+      img {
+        // @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+        //   bottom: -100px;
+        // }
+      }
+    } 
+
+    .textwrap { 
+      @include clearfix
+      margin-top: 45px;
+      padding: 0;
+
+      .text_tip {
+          @include text_tip_p;
+       }
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page20{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page20{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

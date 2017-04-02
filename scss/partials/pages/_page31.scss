@@ -1,0 +1,45 @@
+// page31.scss
+#page31 {
+  background:url('../images/day1/54_i30.jpg') no-repeat;
+  background-size: 100% auto;
+
+  
+    
+  .ui-content {
+    overflow: hidden;
+    a.next_finger {
+        position: absolute;
+        top: 29%;
+        left: 44%;
+        width: 25%;
+        z-index: 10;
+    }
+    .img_twinkle{
+      animation : twinkle 1.5s infinite;
+      width: 60.5%;
+       position: absolute;
+       left: 27%;
+       top: 39.5%;
+    }
+    
+  } 
+
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page31{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page31{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
+

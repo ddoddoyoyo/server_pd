@@ -1,0 +1,101 @@
+// page5.scss
+#page50 {
+  background-image:url('../images/day1/78_image.jpg');
+  background-repeat:no-repeat;
+  background-size: auto 100%;
+  //opacity: 0.7;
+   .ui-content {
+      @include reset-margins;
+      //background-color: $black_opcity;
+      height:100%;
+      .textwrap { 
+      @include clearfix
+      text-align: center;
+      //margin-top:4%;
+       .text_i {
+          //overflow:hidden;
+          width: 74%;
+          //margin: 0 auto; 
+          
+          // p {
+          //   &:before {
+          //     content: '';
+          //     display: block;
+          //     width: 4px;
+          //     height: 20px;
+          //     background: #ffffff;
+          //     position: relative;
+          //     margin-top: 3px;
+          //     top: 23px;
+          //     left: 50px;
+          //   }
+          // }           
+       }
+    }
+    .imgwrap{
+      margin-top:3%;
+      color:$white;
+      font-weight:bold;
+      ul{
+        li{
+         // margin:3% 0;
+         height:33px;
+          .g_title{
+            display: inline-block;
+            width:29%;
+            text-align:right;
+            margin-right:1%;
+            vertical-align: middle;
+          }
+          .g_num{
+            display:inline-block;
+            height:100%;
+            width:0%;
+            vertical-align: middle;
+            text-align:  right;
+            padding: 5px 10px;
+            box-sizing: border-box;
+          }
+          .g_num#red{
+           // width:60%;
+            background:linear-gradient(to left,$g_red,$ga_red);
+          }
+          .g_num#black{
+           // width:12%;
+            background:linear-gradient(to left,$g_black,$g_black);
+          }
+          .g_num#gray{
+            //width:48%;
+            background:linear-gradient(to left,$g_gray,$ga_gray);
+          }
+          .g_num#ind_blue{
+           // width:36%;
+            background:linear-gradient(to left,$g_blue,$ga_blue);
+          }
+          .g_num#burgundy{
+           // width:24%;
+            background:linear-gradient(to left,$g_burgundy,$ga_burgundy);
+          }
+        }
+      }
+    } 
+   } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page50{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page50{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

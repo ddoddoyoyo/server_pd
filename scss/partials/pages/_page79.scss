@@ -1,0 +1,112 @@
+// page5.scss
+#page79 {
+  //background-image:url('../images/day1/13_bg_1.jpg');
+  //background-repeat:no-repeat;
+  //background-size: auto 100%;
+  //opacity: 0.7;
+   .ui-content {
+      @include reset-margins;
+      //background-color: $black_opcity;
+      height:100%;
+      .textwrap { 
+      @include clearfix
+      text-align: center;
+
+       .text_i {
+
+          width: 100%;
+                    
+       }
+    }
+    .numCounter{
+      width:50%;
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%,-50%);
+      .nCount{
+        display:inline-block;
+        width:26%;
+        height:116px;
+        background: linear-gradient($dark_orange 0%,$orange 30%,$orange 70%,$dark_orange 100%);
+        font-size:92px;
+        color:$white;
+        text-align:center;
+        padding-top:6%;
+      }
+      #liter{
+        display: inline-block;
+        width:10%;
+        position: relative;
+        bottom: -2px;
+        left:10px;
+      }
+    }
+    .popLayer{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; 
+      background:$black_opcity;
+      .imgwrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        position: absolute;
+        bottom: 25px;
+        overflow: hidden;
+      }
+      .textwrap { 
+        @include clearfix
+        max-width: 63%;
+        margin-left: 0;
+        padding-left: 0;
+        padding:  0;
+        position: absolute;
+        left: 134px;
+        bottom: 30px;
+
+        .text_tip {
+            @include text_tip_l;
+            bottom: 8px;
+        }
+
+        .text {
+          margin-left: 19px;
+        }
+      }
+    }
+    
+    .next_finger {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+
+      img {
+      left: 48%;
+      top: 47%;
+      }
+    } 
+   } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page79{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page79{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

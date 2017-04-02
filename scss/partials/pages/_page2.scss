@@ -1,0 +1,71 @@
+// page2.scss
+#page2 {
+  background:url('../images/intro/03_bg_3_2_@3x.jpg') no-repeat; 
+  background-size: 100% auto;
+  
+  .ui-content {
+    padding: 0;
+    height: 100%;
+    .imgwrap {
+      overflow: hidden;
+      height: 55%;
+      position: absolute;
+      bottom: 0;
+      // @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+      //     margin-top: 10%;
+      // }
+
+      img {
+         max-width: 100%;
+         margin: 0 auto;
+         position: relative;
+         left: -11%;
+         //bottom: 130%;
+      }
+    } 
+
+    .textwrap {
+      margin: 15% 5% 0 15%;
+      .text_tip {
+         @include text_tip_p;
+         margin-right: 55%;
+        //  -moz-transform: scaleX(-1);
+        // -o-transform: scaleX(-1);
+        // -webkit-transform: scaleX(-1);
+        // transform: scaleX(-1);
+        top:-1px;
+        left:-11%;
+        img{
+          transform: rotate(0deg);
+        }
+       }
+
+       .text {
+          overflow:hidden ; 
+                     
+          &:after {
+             content:'';
+             display:block; /* or whatever else than inline */
+             clear:both;
+          }
+          span.pointColor{
+            font-family: 'HyundaiSansText-Italic_0', sans-serif;
+          }
+          .pointColor{
+            color: $light_navi;
+          }
+       }
+    }
+    a.yes_btn {
+      @include blue_btn;
+      background: $light_navi;
+      min-width: 106px;
+      position: absolute;
+      right: 10%;
+      bottom: 5%;
+      animation: twinkle 2s infinite;
+      z-index: 20;
+    }
+  } 
+
+}

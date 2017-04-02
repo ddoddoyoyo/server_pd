@@ -1,0 +1,66 @@
+// page5.scss
+#page49 {
+  overflow: hidden;
+  background:url('../images/day1/79_interior_01.jpg') no-repeat;
+  background-size: 100% auto;
+  background-position:50% 50%;
+  height: 100%;
+
+  a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%;
+  }
+    .ui-content {
+      @include reset-margins;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      .textwrap { 
+        @include clearfix;
+        margin-top: 45px;
+        padding: 0;
+        width: 28%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        .text_img2 {
+          width: 59%;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+
+        .text_tip {
+          @include text_tip_t2;
+          transform: rotate(90deg);
+          top:70px;
+        }
+
+        .text {
+          overflow:hidden ;
+          // padding-top: 39%;    
+        }
+      }
+    } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page49{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page49{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

@@ -1,0 +1,59 @@
+// page102.scss
+#page102 {
+  background:url('../images/day2/71_photo.jpg') no-repeat;
+  background-size: auto 100%;
+  background-position:50% 50%;
+
+  .page_bg {
+    background:url('../images/day2/71_photo.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position:50% 50%;
+    height: 100%;
+  }
+
+  a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%;
+  }
+    .ui-content {
+      @include reset-margins;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+
+      .textwrap { 
+        @include clearfix;
+        max-width: 33%;
+        float: right;
+        margin-top: 45px;
+        padding: 0;
+
+        .text_tip {
+          @include text_tip_p;
+        }
+      }
+    } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page102{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page102{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

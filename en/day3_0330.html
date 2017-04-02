@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="../css/styles_day3.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		  //주소창 없애기
+			 /*$(document).on("mobileinit", function () {
+				 $.mobile.hashListeningEnabled = false;
+				 $.mobile.pushStateEnabled = false;
+				 $.mobile.changePage.defaults.changeHash = false;
+			});*/
+		</script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="../js/jquery.ui.touch-punch.min.js"></script>
+		<script src="../js/jquery.incremental-counter.js"></script>
+		<script src="../js/jquery.animateNumber.min.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<script src="../js/g_action_day3.js"></script>
+		<script>
+		$(document).ready(function(){
+				// enter key 금지
+				//console.log($("#current-img").height() );
+				//console.log($("#current-img").width() );
+				$(document).on('keypress', function(e) {
+					if (e.which == 13) {
+						return false;
+					}
+				});
+				function readURL(input) {
+					if (input.files && input.files[0]) {
+						var reader = new FileReader(); //파일을 읽기 위한 FileReader객체 생성
+						reader.onload = function (e) {
+						//파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
+							$("#current-img").attr("src", e.target.result);
+							if($("#current-img").height() >= $("#current-img").width()){
+								$("#current-img").css({"width":"100%","height":"auto"});
+							} else {
+								$("#current-img").css({"width":"auto", "height":"100%"});
+							}
+						}
+						reader.readAsDataURL(input.files[0]);
+					}
+				}
+
+				$("#upload").change(function(){
+					readURL(this);
+				});
+
+				var android = (/|android|/i.test(navigator.userAgent.toLowerCase()));
+				var agt = navigator.userAgent.toLowerCase();
+				var browser = fun_agt(agt);
+
+				if(android){
+					if(browser == "Samsungbrowser"){
+						$("body").css({'height':'calc(100% + 20px)'});
+						$(".ui-mobile-viewport").css({'height':'calc(100% + 20px)'});
+						$(".ui-mobile").css({"top":"10px"});
+					} else if(browser == "Chrome") {
+						$("body").css({'height':'calc(100% + 20px)'});
+						$(".ui-mobile").css({"top":"20px"});
+						$('.ui-mobile').css({'height':'calc(100% + 30px)'});
+					} else {
+
+					}
+				}
+			 });
+
+			 function fun_agt(agt){
+				if (agt.indexOf("samsungbrowser") != -1) {
+					return 'Samsungbrowser';
+				}  if (agt.indexOf("chrome") != -1) {
+					return 'Chrome';
+				} else {
+					return 'etc';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="contBox" class="container">
+
+				<section data-role="page" id="page0" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<a href="#page1" class="page_bg">
+						<img src="../images/day3/02_bg_map_2.jpg" alt="bern_map_2" />
+					</a>
+					<div data-role="main" class="ui-content">
+						<div class="textwrap">
+							<div class="text">
+								<div id="textbox0_1" class="textbox">
+									<p>So, shall we carry on to the next stop?</p>
+								</div>
+								<div id="textbox0_2" class="textbox">
+									<p>It's actually 4th biggest and the capital city of Switzerland, which is the Bern.</p>
+								</div>
+								<div id="textbox0_3" class="textbox">
+									<p>Touch the Bern on the map.</p>
+								</div>
+								<div class="btn_box">
+									<a href="#" id="go_next1" class="text_btn_l">
+										<img src="../images/button/btn_next_talk_arrow_2.png" alt="next button">
+									</a>
+									<a href="#" id="go_back" class="text_btn_r">
+										<img src="../images/button/btn_next_talk_arrow_1.png" alt="next button">
+									</a>
+								</div>
+							</div>
+							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
+							</div>
+						</div>
+						<div class="imgwrap">
+							<img src="../images/person/james_14.png" alt="james">
+						</div>
+					</div>
+				</section>
+
+				<section data-role="page" id="page1" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="textwrap">
+							<div class="text">
+								<div id="textbox1" class="textbox">
+									<p>We need to take a Express way A1 to get to Bern.<br />
+									So that will be a high speed driving.<br />
+									I'm pretty nervous now.</p>
+								</div>
+							</div>
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
+							</div>
+						</div>
+						<a href="#page2" id="go_page2" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page2" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="textwrap">
+							<div class="text">
+								<div id="textbox1" class="textbox">
+									<p>i30's stability and fuel efficiency is quite good even on high speed driving.<br />
+									I heard that there was an improvement on aerodynamics.</p>
+								</div>
+							</div>
+						</div>
+						<a href="#page3" id="go_page3" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page3" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="start_text">
+							<img src="../images/button/btn_talk_more.png" alt="">
+						</div>
+						<div class="img_twinkle" id="img_twinkle3_1">
+							<img src="../images/day3/05_image_overlay.jpg" alt="">
+						</div>
+						<div class="img_twinkle" id="img_twinkle3_2">
+							<img src="../images/day3/06_image_overlay.jpg" alt="">
+						</div>
+						<div class="img_twinkle" id="img_twinkle3_3">
+							<img src="../images/day3/07_image_overlay.jpg" alt="">
+						</div>
+						<div class="imgwrap">
+							<img src="../images/intro/login_profile_@3x.png" alt="james">
+						</div>
+						<div class="textwrap">
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
+							</div>
+							<div class="text">
+								<div id="textbox3_1" class="textbox">
+									<p>First, the rear spoiler and side garnish is applied to optimize the air flow.</p>
+								</div>
+								<div id="textbox3_2" class="textbox">
+									<p>The improve the swirl on A-pillar part, side moulding is applied on boy side of windshield</p>
+								</div>
+								<div id="textbox3_3" class="textbox">
+									<p>A wheel air-curtain minimize the air flow and resistance on high speed driving.</p>
+								</div>
+								<div id="textbox3_4" class="textbox">
+									<p>by the way, do you know the entire coefficient dynamics figure of i30?</p>
+								</div>
+								<div class="btn_box">
+									<a href="#" id="go_next1" class="text_btn_l">
+										<img src="../images/button/btn_next_talk_arrow_2.png" alt="next button">
+									</a>
+									<a href="#" id="go_back" class="text_btn_r">
+										<img src="../images/button/btn_next_talk_arrow_1.png" alt="next button">
+									</a>
+								</div>
+							</div>
+						</div>
+						<a href="#page4" id="go_page4" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page4" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="imgwrap">
+							<div class="graphQuantity4 graphLegend4">
+								<div>0.30</div>
+								<div>0.30</div>
+								<div>0.31</div>
+								<div>0.33</div>
+							</div>
+							<ul class="graph4">
+								<li class="graph4_1">
+									<div class="graphObj"></div>
+								</li>
+								<li class="graph4_2">
+									<div class="graphObj"></div>
+								</li>
+								<li class="graph4_3">
+									<div class="graphObj"></div>
+								</li>
+								<li class="graph4_4">
+									<div class="graphObj"></div>
+								</li>
+							</ul>
+							<div class="graphLegend4">
+								<div><img src="../images/day3/09_title_i30.png" /></div>
+								<div>VW<br />Golf</div>
+								<div>Peugeot<br />308</div>
+								<div>Ford<br />Focus</div>
+							</div>
+						</div>
+						<div class="pageTitle">Cd Comparison</div>
+						<div class="textwrap">
+							<div class="text">
+								<div id="textbox4_1" class="textbox">
+									<p>You mean the Cd figure right?<br />
+									Yeah, I know it.<br />
+									It's 0.3, and  I heard the smaller number is good and i30 has lowest figure on it's class.</p>
+								</div>
+							</div>
+						</div>
+						<a href="#page5" id="go_page5" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page5" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="textwrap">
+							<div class="text">
+								<div id="textbox5_1" class="textbox">
+									<p>Don't you think it's too quiet even we're running on the highway?</p>
+								</div>
+							</div>
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
+							</div>
+						</div>
+						<a href="#page6" id="go_page6" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page6" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="imgwrap">
+							<div class="graphDesc">30%<br /><span>decrease</span></div>
+							<div class="graphLegend6">
+								<div><img src="../images/day3/11_title_current-i30.png" /></div>
+								<div><img src="../images/day3/09_title_i30.png" /></div>
+								<div>VW<br />Golf</div>
+							</div>
+							<ul class="graph6">
+								<li class="graph6_1">
+									<div class="graphObj"><img src="../images/day3/11_graph_01.png" /></div>
+									<div class="graphText">418</div>
+								</li>
+								<li class="graph6_2">
+									<div class="graphObj"><img src="../images/day3/11_graph_02.png" /></div>
+									<div class="graphText graphTextEm">314</div>
+								</li>
+								<li class="graph6_3">
+									<div class="graphObj"><img src="../images/day3/11_graph_03.png" /></div>
+									<div class="graphText">339</div>
+								</li>
+							</ul>
+						</div>
+						<div class="imgwrap2">
+							<div class="panel panelTitle">
+								<div><img src="../images/day3/11_title_current-i30.png" /></div>
+								<div><img src="../images/day3/09_title_i30.png" /></div>
+							</div>
+							<div class="panel panelImg">
+								<div><img src="../images/day3/12_vehicle_overlay_left.png" /></div>
+								<div><img src="../images/day3/12_vehicle_overlay_right.png" /></div>
+							</div>
+							<div class="panel panelTitle">
+								<div>Multiple pieces</div>
+								<div>Unified panel</div>
+							</div>
+						</div>
+						<div class="pageTitle">Minimized number of parts</div>
+						<div class="profilewrap">
+							<img src="../images/intro/login_profile_@3x.png" alt="james">
+						</div>
+						<div class="textwrap">
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
+							</div>
+							<div class="text">
+								<div id="textbox6_1" class="textbox">
+									<p>That's the effect of aerodynamics,<br />and also minimized the number of parts used about 30%.</p>
+								</div>
+								<div id="textbox6_2" class="textbox">
+									<p>Lastly, integral panel is applied to improve fundamental noise.</p>
+								</div>
+								<div class="btn_box">
+									<a href="#" id="go_next1" class="text_btn_l">
+										<img src="../images/button/btn_next_talk_arrow_2.png" alt="next button">
+									</a>
+									<a href="#" id="go_back" class="text_btn_r">
+										<img src="../images/button/btn_next_talk_arrow_1.png" alt="next button">
+									</a>
+								</div>
+							</div>
+						</div>
+						<a href="#page7" id="go_page7" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page7" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="textwrap">
+							<div class="text">
+								<div id="textbox7_1" class="textbox">
+									<p>Oh, that's why I felt silent on high speed also. Because there is less wind noise.</p>
+								</div>
+							</div>
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
+							</div>
+						</div>
+						<a href="#page8" id="go_page8" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page8" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="textwrap">
+							<div class="text">
+								<div id="textbox8_1" class="textbox">
+									<p>Do you know about the i30 engines?<br />
+									There were 3 line-up on engines, and I chose 1.6 T-GDI.</p>
+								</div>
+							</div>
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
+							</div>
+						</div>
+						<a href="#page9" id="go_page9" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page9" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="pageTitle">Verify the engines</div>
+						<div class="imgwrap">
+							<div class="engine">
+								<img src="../images/day3/15_btn_01.png" alt="0" />
+								<img src="../images/day3/15_btn_02.png" alt="1" />
+								<img src="../images/day3/15_btn_03.png" alt="2" />
+							</div>
+						</div>
+						<a href="#page10" id="go_page10" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page10" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="../images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="../images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div data-role="main" class="ui-content">
+						<div class="pageTitle">Result</div>
+						<div class="imgwrap">
+							<div class="graphLegend10">
+								<div>NU 2.0 GDI</div>
+								<div>GAMMA 1.6 T-GDI</div>
+								<div>U2 1.6 VGT</div>
+							</div>
+							<ul class="graph10">
+								<li>
+									<div class="graphObj" alt="30">30%</div>
+									<div class="graphText"></div>
+								</li>
+								<li>
+									<div class="graphObj large" alt="50">50%</div>
+									<div class="graphText large"></div>
+								</li>
+								<li>
+									<div class="graphObj" alt="20">20%</div>
+									<div class="graphText"></div>
+								</li>
+							</ul>
+						</div>
+						<a href="#page11" id="go_page11" class="next_p_btn ui-btn go-next">
+							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</body>
+</html>

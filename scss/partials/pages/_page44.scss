@@ -1,0 +1,61 @@
+// page44.scss
+#page44 {
+  background:url('../images/day1/69_photo.jpg') no-repeat;
+  background-size: 100% auto;
+  background-position:50% 50%; 
+
+    .ui-content {
+      @include reset-margins;
+      max-width: 33%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      overflow: hidden;
+
+      .textwrap { 
+        @include clearfix
+
+        .text_tip {
+            @include text_tip_p;
+            top:3px;
+         }
+
+         .text {
+            overflow:hidden ; 
+         }
+      }
+
+      .imgwrap {
+        max-width: 100%;
+        height:180px;
+        overflow:hidden;
+        img {
+          position: relative;
+          right: 7%;
+         // top: 18px;
+          // -moz-transform: scaleX(-1);
+          // -o-transform: scaleX(-1);
+          // -webkit-transform: scaleX(-1);
+          // transform: scaleX(-1);
+        }
+      }
+    } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page44{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page44{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
+

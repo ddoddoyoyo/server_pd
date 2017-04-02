@@ -1,0 +1,64 @@
+// page78.scss
+#page78 {
+  background:url('../images/day2/35_photo.jpg') no-repeat;
+  background-size: 100% auto;
+  background-position:50% 50%; 
+
+    .ui-content {
+      @include reset-margins;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      overflow: hidden;
+
+      .main_wrap {
+        max-width: 50%;
+        float: right;
+
+        .textwrap { 
+          @include clearfix;
+          max-width: 188px;
+          float: right;
+
+          .text_tip {
+              @include text_tip_p;
+           }
+
+           .text {
+              overflow:hidden ; 
+           }
+        }
+
+        .imgwrap {
+          max-width: 70%;
+          max-height: 130px;
+          float: right;
+          margin-right: 25%;
+
+          img {
+            position: relative;
+            right: -10%;
+            top: 7px;
+          }
+        }
+      }
+    } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page78{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page78{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
+

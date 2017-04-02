@@ -1,0 +1,55 @@
+// page87.scss
+#page87 {
+  background:url('../images/day2/46_image.jpg') no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+
+  a.next_finger {
+    position: absolute;
+    top: 24%;
+    left: 48%;
+    width: 25%;
+  }
+    .ui-content {
+      @include reset-margins;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      .textwrap { 
+        @include clearfix
+        margin-top: 45px;
+
+        .text_i {
+          width: 100%;
+          text-align: center;
+          padding-top: 0;
+
+          p {
+            margin-top: 0;
+            font-family: "HyundaiSansHead-Regular_0"; 
+          }
+        }
+      }
+    } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page87{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page87{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

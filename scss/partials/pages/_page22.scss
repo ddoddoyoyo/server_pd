@@ -1,0 +1,65 @@
+// page22.scss
+#page22 {
+  background:url('../images/ezgif.com-video-to-gif.gif') no-repeat;
+  background-size: 100% auto;
+
+  .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    .imgwrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50px;
+      margin-left: 25px;
+      position: absolute;
+      bottom: 25px;
+      overflow: hidden;
+    } 
+    .start_text {
+        max-width: 60px;
+        position: absolute;
+        bottom: 106px;
+        left: 77px;
+      }
+
+    .textwrap { 
+      @include clearfix
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding:  0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px;
+
+      .text_tip {
+          @include text_tip_l;
+          bottom: 8px;
+      }
+
+      .text {
+        margin-left: 19px;
+      }
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page22{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page22{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
+

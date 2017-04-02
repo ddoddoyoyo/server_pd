@@ -1,0 +1,103 @@
+// page5.scss
+#page66 {
+  background-image:url('../images/day2/16_photo_1.jpg');
+  background-repeat:no-repeat;
+  background-size: auto 100%;
+  //opacity: 0.7;
+   .ui-content {
+      @include reset-margins;
+      //background-color: $black_opcity;
+      height:100%;
+      .textwrap { 
+      @include clearfix
+      text-align: center;
+      //margin-top:4%;
+       .text_i {
+          width: 75%;
+          
+       }
+    }
+    .img_ex{
+      position: absolute;
+      right: 14%;
+      bottom: 17%;
+      span{
+        font-size:39px;
+        color:$yellow;
+        animation:twinkle 1.5s 2;
+      }  
+    }
+    .pointbtn{
+      position:absolute; 
+      top:26%;
+      left:54%;
+      width:9%
+    }
+    
+    .next_finger {
+    top: 10%;
+    left: 10%;
+    width: 90%;
+    height: 70%;
+
+      img {
+      left: 44%;
+      top: 12%;
+      }
+    }
+    .popLayer{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; 
+      background:$black_opcity;
+      .imgwrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        position: absolute;
+        bottom: 25px;
+        overflow: hidden;
+      }
+      .textwrap { 
+        @include clearfix
+        max-width: 63%;
+        margin-left: 0;
+        padding-left: 0;
+        padding:  0;
+        position: absolute;
+        left: 134px;
+        bottom: 30px;
+
+        .text_tip {
+            @include text_tip_l;
+            bottom: 8px;
+        }
+
+        .text {
+          margin-left: 19px;
+        }
+      }
+    } 
+   } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page66{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page66{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

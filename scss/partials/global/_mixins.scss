@@ -1,0 +1,108 @@
+// General Purpose Mixins
+
+// ==========================================================
+// Font Face
+// ==========================================================
+
+
+@mixin font-face($name, $path, $transform: null, $weight: null, $exts: eot woff2 woff ttf otf) {
+    $src: null;
+
+    $extmods: (
+        // eot: "?#iefix",
+        // svg: "#" + str-replace($name, " ", "_")
+    );
+
+    $formats: (
+        otf: "opentype",
+        ttf: "truetype"
+    );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote("../"+$path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        text-transform: $transform;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// ==========================================================
+// Layout
+// ==========================================================
+
+@mixin reset-margins {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+
+
+@mixin blue_btn {
+    height: 30px;
+    background: $navi;
+    padding: 6px 10px 6px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: $white;
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+@mixin text_tip_p {
+    max-width: 20px;
+    margin-left: 10%;
+    float: right;
+    margin-right: 70%;
+    position: relative;
+    //top: 3px;
+    top:1px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    img {
+      -ms-transform: rotate(-90deg); /* IE 9 */
+      -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+      transform: rotate(-90deg);
+    }
+}
+
+@mixin text_tip_l {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    bottom: 8px;
+}
+
+@mixin text_tip_t {
+    width: 20px;
+    position: absolute;
+    left: -3px;
+    top: 80px;
+}
+
+@mixin text_tip_t2 {
+    width: 20px;
+    position: relative;
+    top: -3px;
+    left: 60px;
+}

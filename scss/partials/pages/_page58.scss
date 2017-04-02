@@ -1,0 +1,43 @@
+// page5.scss
+#page58 {
+  background:url('../images/day2/04_photo.jpg') no-repeat;
+  background-size: 120% auto;
+
+  .ui-content {
+    @include reset-margins;
+      width: 33%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      overflow-x: initial;
+
+      .textwrap { 
+        @include clearfix;
+        margin-top: 45px;
+        padding: 0;
+
+        .text_tip {
+          @include text_tip_t;
+        }
+      }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page58{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page58{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

@@ -1,0 +1,93 @@
+// page5.scss
+#page43 {
+  //background:url('../images/day1/68_photo.jpg') no-repeat;
+  //background-size: 100% auto;
+
+  .ui-content {
+    @include reset-margins;
+    height: 100%;
+    overflow-x: initial;
+    margin: 0 auto;
+
+    .next_finger {
+      position: absolute;
+      top: 36%;
+      right: 16%;
+    }
+  
+  .imgwrap{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    img#waking{
+      width: 27%;
+      display: inline-block;
+      margin: 0 5%;
+      //opacity:  0.8;
+    }
+    img#waking2{
+      width: 27%;
+      display: inline-block;
+      margin: 0 5%;
+      position: absolute;
+      left: 0;
+      //animation: twinkle 3s infinite;
+    }
+    img{
+      width: 61%;
+      display: inline-block;
+      margin-bottom: 10%;
+      //position: relative;
+      //top: -34px;
+    }
+
+  }
+
+    // .textwrap { 
+    //   position: absolute;
+    //   top: calc((100% - 86px)/ 2);
+    //   left: calc((100% - 358px)/ 2);
+
+    //   .next_finger {
+    //       position: relative;
+    //       right: 37%; 
+    //     }
+
+    //   // .text_w { 
+    //   //   background-color: rgba(0, 0, 0, 0.8);
+    //   //   padding: 10px 50px;
+    //   //   font-size: 2em;
+    //   //   text-align: center;
+    //   //   max-width: 362px;
+    //   //   line-height: 0;
+    //   //   border: 1px solid $light_navi;
+    //   //   border-radius: 2px;
+    //   //   margin: 0 auto;  
+
+    //     // p {
+    //     //   color:  $light_navi;
+    //     // } 
+    //   }
+  //  }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page43{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page43{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

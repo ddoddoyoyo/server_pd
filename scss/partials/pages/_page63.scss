@@ -1,0 +1,68 @@
+// page5.scss
+#page63 {
+  background:url('../images/day2/12_photo.jpg') no-repeat;
+  background-size: 120% auto;
+
+  // .ui-content {
+  //   @include reset-margins;
+  //   max-width: 33%;
+  //   float: right;
+  //   height: 100%;
+  //   overflow-x: initial;
+
+  //   .textwrap { 
+  //     @include clearfix;
+  //     margin-top: 45px;
+  //     padding: 0;
+
+  //     .text_tip {
+  //         @include text_tip_p;
+  //      }
+
+  //      .text {
+  //         overflow:hidden ; 
+
+  //         #go_page13 {
+  //           margin-top: 10px;
+  //         }
+  //      }
+  //   }
+  // } 
+    .ui-content {
+    @include reset-margins;
+      width: 33%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      overflow-x: initial;
+
+      .textwrap { 
+        @include clearfix;
+        margin-top: 45px;
+        padding: 0;
+
+        .text_tip {
+          @include text_tip_t;
+        }
+      }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page63{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page63{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

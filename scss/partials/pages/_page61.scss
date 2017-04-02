@@ -1,0 +1,195 @@
+// page5.scss
+#page61 {
+  background:$black;
+  overflow: hidden;
+
+  .next_finger {
+    position: absolute;
+    top: calc((100% - 116px)/ 2);
+    left: 17%;
+  }
+
+  .ui-content {
+    @include reset-margins;
+    height: 100%;
+    overflow-x: initial;
+
+    .imgwrap { 
+      @include clearfix;
+      text-align: center;
+      margin-top: 45px;
+      
+      &>div {
+        display: inline-block;
+        width: 30%;
+        margin: 0 5%;
+
+        p {
+          font-family: 'HyundaiSansHead-Medium', sans-serif;
+          font-size: 2.2em;
+          line-height: 0.8;
+          margin-bottom: 20px;
+
+          span {
+            font-size: 16px;
+          }
+        }
+
+        img.back, img.front {
+          display: none;
+        }
+
+        img {
+          width: 85%;
+          margin: 0 auto;
+        }
+      }
+
+      .imgL {
+        .engine {
+          width: 100%;
+          height: 200px;
+          background:url('../images/day2/08_engine_left.png') no-repeat;
+          background-size: auto 100%;
+          background-position:50% 50%;
+        }
+      }
+
+      .imgR {
+        .engine {
+          width: 100%;
+          height: 200px;
+          background:url('../images/day2/08_engine_right.png') no-repeat;
+          background-size: auto 100%;
+          background-position:50% 50%;
+        }
+      }
+    }
+
+    .graphwrap {
+      width: 100%;
+      text-align: center;
+      margin-top: 45px;
+
+      .graphL, .graphR {
+        display: inline-block;
+        width: 30%;
+        margin: 0 5%;
+        vertical-align: bottom;
+
+        ul{
+          li.graph1, li.graph2 {
+            position: relative;
+            top: 33px;
+            height: 0;
+            width: 40px;
+            background: red;
+            padding: 10px;
+            border-radius: 5px;
+            vertical-align: bottom;
+            display: inline-block;
+            background:linear-gradient($g_orange,$ga_orange);
+
+            div {
+              color: $white;
+
+              span {
+                font-weight: bold;
+                font-size: 1.4em;
+              }
+            }
+          }
+
+          li.graph2 {
+            height: 0px;
+            background:linear-gradient($g_skyblue,$ga_skyblue);
+          }
+
+          li.bottom_bg {
+            display: block;
+          }
+        }
+      }
+
+      .graphL {
+        position: absolute;
+        bottom: 5%;
+        left: 9%;
+        margin-bottom: 3%;
+      }
+
+      .graphR {
+        position: absolute;
+        bottom: 5%;
+        right: 9%;
+        margin-bottom: 3%;
+
+        ul {
+          li.graph1 {
+            height: 0px;
+            background:linear-gradient($g_orange,$ga_orange);
+          }
+
+          li.graph2 {
+            height: 0px;
+            background:linear-gradient($g_skyblue,$ga_skyblue);
+          }
+        }
+      }
+    }
+    .popLayer{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; 
+      background:$black_opcity;
+      .imgwrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        position: absolute;
+        bottom: 25px;
+        overflow: hidden;
+      }
+      .textwrap { 
+        @include clearfix
+        max-width: 63%;
+        margin-left: 0;
+        padding-left: 0;
+        padding:  0;
+        position: absolute;
+        left: 134px;
+        bottom: 30px;
+
+        .text_tip {
+            @include text_tip_l;
+            bottom: 8px;
+        }
+
+        .text {
+          margin-left: 19px;
+        }
+      }
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page61{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page61{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

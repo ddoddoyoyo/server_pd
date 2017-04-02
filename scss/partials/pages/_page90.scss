@@ -1,0 +1,45 @@
+// page5.scss
+#page90 {
+  background:url('../images/day2/49_photo.jpg') no-repeat;
+  background-size: 100% auto;
+
+  .ui-content {
+    @include reset-margins;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial;
+
+    .textwrap { 
+      @include clearfix;
+      margin-top: 45px;
+      padding: 0;
+
+      .text_tip {
+          @include text_tip_p;
+       }
+    }
+
+    .imgwrap {
+      max-width: 64%;
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page90{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page90{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

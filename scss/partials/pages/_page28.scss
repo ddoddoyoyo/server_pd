@@ -1,0 +1,75 @@
+// page28.scss
+#page28 {
+  background:url('../images/day1/45_i30.jpg') no-repeat;
+  background-size: 100% auto;
+
+  a.next_finger {
+    position: absolute;
+    top: 14%;
+    right: 2%;
+    width: 25%;
+  }
+    
+  .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+
+    .imgwrap {
+      width: 26%;
+      display: inline-block;
+      margin-left: 3%;
+
+      img {
+        width: 84%;
+        position: relative;
+        bottom: -98px;
+        left: 10px;
+      }
+    } 
+
+    .textwrap { 
+      @include clearfix
+      display: inline-block;
+      max-width: 55%;
+      margin-left: 22px;
+      margin-bottom: 30px;
+
+
+      .text_tip {
+          @include text_tip_l;
+          bottom: 38px;
+       }
+
+       .text {
+          overflow:hidden ;
+          margin-left: 19px; 
+                     
+          &:after {
+             content:'';
+             display:block; /* or whatever else than inline */
+             clear:both;
+          }
+       }
+    }
+  } 
+
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page28{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page28{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
+

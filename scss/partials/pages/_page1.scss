@@ -1,0 +1,111 @@
+// page1.scss
+#page1 {
+	background:url('../images/intro/login_bg_blue_2_@3x.jpg') no-repeat; 
+	background-size: 100% auto;
+		
+	.ui-content {
+		//margin-top:10%;
+		position: absolute;
+    	width: 100%;
+    	top: 50%;
+    	transform: translateY(-50%);
+		.textwrap {
+		    width: 66%;
+		    margin: 0 auto;
+		    //margin-top: 10%;
+		    color: $white;
+
+		    h2 {
+		    	font-size: 1.6em;
+		    }
+		}
+		a{
+			margin: 8%;
+			.imgwrap {
+			position:relative;
+			width:180px;
+			height:180px;
+			margin: 0 auto;
+			overflow:hidden;
+			border-radius:50%;
+			img {
+				position:absolute;
+				left:50%;
+				transform:translateX(-50%);	
+				//display: block;
+		    	width: 100%;
+		    	margin: 0 auto;	
+			}
+			.ui-input-text{
+				position:absolute;
+				top:0;
+				width: 100%;
+				height:100%;
+				background: none;
+				border: none;
+				box-shadow:none;
+
+				input{
+					opacity:0;
+					height: 100%;
+				}
+			}
+		}
+		}
+		
+		.log_box  {
+			width: 65%;
+			margin: 0 auto;
+			margin-top: 9%;
+			.input_info{
+				position:relative;
+				label{
+					position:relative;
+					top:0;
+					//font-weight:bold;
+					text-overflow: ellipsis;
+				    white-space: nowrap;
+				    width: 100%;
+				    padding: .4em;
+				    box-sizing: border-box;
+				    border-radius: .3125em;
+				    color: $gray_bg;
+				    background: url('../images/button/icon_country_arrow_basic.png') no-repeat;
+				    background-size: 7% auto;
+				    background-position: 95% 50%;
+				    background-color: #fff;
+				}
+				select{
+					width: 100%;
+					height: 100%;
+					position:absolute;
+					top:0;
+					border:none;
+					opacity:0;
+					display:block !important;
+				}
+				.ui-selectmenu-button{
+					display:none;
+				}
+			}
+			
+			.ui-input-text {
+				opacity: 1;
+				border:none;
+				input{
+					color:$navi;
+					//font-weight:bold;
+				}
+				input::-webkit-input-placeholder{
+					color:$gray_bg;
+				}
+				
+			}
+			a.intnext_btn {
+				@include blue_btn;
+				margin: 0 auto;
+				margin-top: 6%;
+			}
+		}
+	}	
+}

@@ -1,0 +1,60 @@
+// page5.scss
+#page64 {
+  background:url('../images/day2//13_photo.jpg') no-repeat;
+  background-size: 100% auto;
+
+  .ui-content {
+    @include reset-margins;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial;
+
+    .textwrap { 
+      @include clearfix;
+      margin-top: 25px;
+      padding: 0;
+      width: 28%;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      .text_img2 {
+        width: 55%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        top: 11px;
+      }
+
+      .text_tip {
+        @include text_tip_t2;
+        transform: rotate(90deg);
+      }
+
+      .text {
+        overflow:hidden ;
+        // padding-top: 39%;    
+      }
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page64{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page64{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+
+

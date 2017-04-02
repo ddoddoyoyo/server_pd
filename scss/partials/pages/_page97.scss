@@ -1,0 +1,58 @@
+// page5.scss
+#page97 {
+  background:url('../images/day2/57_photo.jpg') no-repeat;
+  background-size: 100% auto;
+
+  .ui-content {
+    @include reset-margins;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 33%;
+
+    .textwrap { 
+      @include clearfix;
+      margin-top: 45px;
+      padding: 0;
+      margin-bottom: 15px;
+
+      .text_tip {
+          @include text_tip_p;
+       }
+
+       .text {
+          overflow:hidden ; 
+
+          #go_page13 {
+            margin-top: 10px;
+          }
+       }
+    }
+    .imgwrap {
+      overflow: hidden;
+      max-height: 154px;
+
+      img {
+        width: 60%;
+      }
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page97{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page97{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

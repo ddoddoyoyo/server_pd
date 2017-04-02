@@ -1,0 +1,81 @@
+// page73.scss
+
+
+#page73 {
+  background:url('../images/day2/26_Zurich_map_1.jpg') no-repeat;
+  background-size: 100% auto;
+
+  .page_bg {
+    animation: twinkle 1.5s infinite;
+  }
+
+  .next_finger {
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+
+    img {
+      left: calc(78% - 183px);
+      top: 41%;
+    }
+  }
+
+  .ui-content {
+    @include reset-margins;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+
+    .textwrap { 
+      @include clearfix
+
+      .text_tip {
+          @include text_tip_p;
+       }
+
+       .text {
+          overflow:hidden ; 
+
+          #go_page7 {
+            margin-top: 20px;
+          }
+       }
+    }
+
+    .imgwrap {
+      max-width: 64%;
+      max-height: 150px;
+      overflow: hidden;
+
+      img {
+        width: 88%;
+        position: relative;
+        right: -10%;
+        top: 5px;
+      }
+    } 
+  } 
+}
+
+
+
+
+@media only screen and (orientation: Portrait) {
+  #page73{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page73{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

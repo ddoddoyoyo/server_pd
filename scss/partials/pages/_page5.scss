@@ -1,0 +1,59 @@
+// page5.scss
+#page5 {
+  background:url('../images/day1/landscape/06_bg_map_2.jpg') no-repeat;
+  background-size: 100% auto; 
+
+  .page_bg {
+    animation: twinkle 3s 2;
+  }
+    .ui-content {
+      @include reset-margins;
+      max-width: 33%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      overflow: hidden;
+
+      .textwrap { 
+        @include clearfix;
+        position:   relative; 
+        top:22px;
+
+        .text_tip {
+            @include text_tip_p;
+         }
+
+         .text {
+            overflow:hidden ; 
+         }
+      }
+
+      .imgwrap {
+        max-width: 71%;
+
+        img {
+          position: relative;
+          right: -10%;
+          top: 5px;
+        }
+      }
+    } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page5{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page5{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
+

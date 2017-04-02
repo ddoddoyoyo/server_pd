@@ -1,0 +1,83 @@
+// page57.scss
+
+
+#page57 {
+  // background:url('../images/day2/03_stelviopass_map_3.jpg') no-repeat;
+  background:url('../images/day2/map_1.jpg') no-repeat;
+  background-size: 100% auto;
+
+  .page_bg {
+    //animation: twinkle 1.5s infinite;
+    img{
+      position: absolute;
+    }
+    
+  }
+
+  .next_finger {
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+
+    img {
+      left: calc(78% - 165px);
+      top: 41%;
+    }
+  }
+
+  .ui-content {
+    @include reset-margins;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+
+    .textwrap { 
+      @include clearfix
+
+      .text_tip {
+          @include text_tip_p;
+       }
+
+       .text {
+          overflow:hidden ; 
+
+          #go_page7 {
+            margin-top: 20px;
+          }
+       }
+    }
+
+    .imgwrap {
+      max-width: 64%;
+
+      img {
+        position: relative;
+        right: -10%;
+        top: 5px;
+      }
+    } 
+  } 
+}
+
+
+
+
+@media only screen and (orientation: Portrait) {
+  #page57{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page57{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

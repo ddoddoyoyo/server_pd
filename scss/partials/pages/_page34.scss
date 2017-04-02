@@ -1,0 +1,67 @@
+// page29.scss
+#page34 {
+  background:url('../images/day1/55_i30.jpg') no-repeat;
+  background-size: 100% auto;
+
+  a.next_finger {
+    position: absolute;
+    top: 31%;
+    left: 17%;
+    width: 25%;
+    z-index: 10;
+  }
+    
+  .ui-content {
+    overflow: hidden;
+
+    .imgwrap {
+      img {
+        animation: twinkle 1.5s infinite;
+      }
+    } 
+
+    .textwrap { 
+      @include clearfix
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px;
+      margin-left: 0;
+
+      .text_tip {
+          @include text_tip_l;
+          position: relative;
+          top: 75px;
+          left: 1px;
+       }
+
+       .text {
+          overflow:hidden ; 
+                     
+          &:after {
+             content:'';
+             display:block; /* or whatever else than inline */
+             clear:both;
+          }
+       }
+    }
+  } 
+
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page34{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page34{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
+

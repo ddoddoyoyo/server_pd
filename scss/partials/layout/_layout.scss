@@ -1,0 +1,205 @@
+////////////////////////
+// Layouts Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All box model properties go here
+////////////////////////
+
+html, body {
+	@include reset-margins;
+	height: 100%;
+    font-family: 'AritaSans-Medium';
+    background: url(../images/web_bg.jpg) 0 0;
+    background-size: cover;
+    overflow: hidden;
+
+    // ==========================================================
+	// a, form, input, img, ul
+	// ==========================================================
+
+	ol, ul {
+		list-style:none;
+		padding: 0 10px;
+
+		li {
+			margin: 8px 0;
+		}
+	}
+
+	a {
+		color:$white; 
+		text-decoration:none; 
+		display:block; 
+		-webkit-text-shadow:none; 
+		text-shadow:none;
+		cursor: Pointer;
+	}
+
+	a.go_to_btn {
+		float: left;
+	}
+
+	button {
+		padding: 10px;
+		border: none;
+    		background: none;
+    		background-color: none;
+		&:hover {
+			cursor: Pointer;	
+		}
+	}
+
+	img {
+		width:100%;
+		display: block;
+	}
+
+	// ==========================================================
+	// Content layout
+	// ==========================================================
+
+	#wrap {
+		background: $black;
+		height: 100%;
+		overflow-y: auto;
+		position: relative;
+	    padding: 0;
+
+	    #contBox {
+	    	margin-right: auto;
+    		margin-left: auto;
+
+    		.ui-page-theme-a {
+	    		section {
+	    			position: absolute;
+				    top: 0;
+				    left: 0;
+				    width: 100%;
+				    height: 100%;
+				    //padding-top: 50px;
+				    //display: none !important;
+				    z-index: 2;
+				    min-height: inherit!important;
+
+				    .ui-content {
+				    	@include reset-margins;
+
+				    	.textwrap {
+						    padding: 20px 10px;
+				    		margin: 0 16px;
+
+				    		.ui-link {
+								max-width: 30px;
+					            float: right;
+							}
+
+				    		.text{
+				    			background-color: rgba( $black, .8);
+				            	border-radius: 4px;
+				            	padding: 20px 25px;
+
+				            	.ui-link {
+									margin-top: 10px;
+								}
+				    		}
+						}
+				    }
+					
+					.ui-btn	{
+						background: none;
+						border: none;
+						text-shadow: none;
+					    position: absolute;
+					    bottom: 0;
+					    right: 0;
+				       	max-width: 20px;
+					    white-space: inherit;
+					    float: right;
+
+						&:hover {
+							background: none;
+						}
+					}
+
+	    		}
+
+	    		section.active {
+	    			//display: block !important;
+	    		}
+
+    		}
+	    }
+	}
+
+	#wrap.mobile {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin: -331px -187px;
+	    padding: 0;
+	    width: 380px;
+	    height: 668px;
+	    z-index: 2;
+        overflow: hidden;
+	}
+
+	#wrap.mobile.landscape	{
+		margin:-187px -331px;
+		width:668px;
+		height:380px;
+	}
+
+	#mokup {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin: -464px -221px;
+	    width: 442px;
+	    height: 929px;
+	    background: url(../images/mokup.png) 0 0 no-repeat;
+	    background-size: 442px 929px;
+
+	    .btn_device {
+			position: absolute;
+		    top: 133px;
+		    right: 50%;
+		    margin: 0 -185px;
+		    padding: 0;
+		    //width: 376px;
+		    //height: 668px;
+		    border: none;
+		    //display: none;
+		    z-index: 999;
+
+		    img {
+	    	    position: absolute;
+			    top: -40px;
+			    right: -11px;
+			    width: 31px;
+		    }
+	    }
+	}
+
+	#mokup.landscape {
+		-webkit-transform: rotate(90deg)!important;
+		transform:rotate(90deg)!important;
+	}
+}
+
+
+
+// ==========================================================
+// media query
+// ==========================================================
+
+@media only screen and (min-width: 650px){	
+	.page_wrap {
+		background: none;
+	}
+
+	
+}
+
+

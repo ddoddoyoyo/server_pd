@@ -1,0 +1,63 @@
+// page104.scss
+#page104 {
+  background:url('../images/day2/76_photo.jpg') no-repeat;
+  background-size: 100% auto;
+  background-position:50% 50%; 
+
+  .ui-content {
+    @include reset-margins;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+
+    .main_wrap {
+      max-width: 50%;
+      float: right;
+
+      .textwrap { 
+        @include clearfix;
+        max-width: 188px;
+        float: right;
+
+        .text_tip {
+            @include text_tip_p;
+         }
+
+         .text {
+            overflow:hidden ; 
+         }
+      }
+
+      .imgwrap {
+        max-width: 70%;
+        float: right;
+        margin-right: 33%;
+
+        img {
+          position: relative;
+          right: -10%;
+          top: 7px;
+        }
+      }
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page104{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page104{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

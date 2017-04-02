@@ -1,0 +1,66 @@
+// page67.scss
+#page67 {
+  background: $black;
+  .page_bg {
+    width: 80%;
+    margin: 0 auto;
+  }
+     
+  .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+
+    .imgwrap {
+      width: 14%;
+      display: inline-block;
+      margin-left: 3%;
+
+      img {
+        width: 100%;
+      }
+    } 
+
+    .textwrap { 
+      @include clearfix
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px;
+
+      .text_tip {
+          @include text_tip_l;
+          position: relative;
+          top: 75px;
+          left: 1px;
+       }
+
+       .text {
+          overflow:hidden ; 
+                     
+          &:after {
+             content:'';
+             display:block; /* or whatever else than inline */
+             clear:both;
+          }
+       }
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page67{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page67{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

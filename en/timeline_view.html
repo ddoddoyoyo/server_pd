@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/timeline.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="../js/timeline.js"></script>
+		<script>
+			if($(".userPix img").height() >= $(".userPix img").width()){
+				$(".userPix img").css({"width":"100%","height":"auto"});
+			} else {
+				$(".userPix img").css({"width":"auto", "height":"100%"});
+			}
+		</script>
+	</head>
+	<body>
+	    <div id="wrap">
+			<div id="view_contBox">
+				<header>
+					<div class="logo"><img src="../images/timeline/emblem.png" alt=""></div>
+					<!-- <a class="share" href="#"><img src="/genesis/part1/images/button/btn_share.png" alt=""></a> -->
+				</header>
+				<div class="list">
+					<article class="article">
+						<div class="photo">
+							<img src="../images/timeline/1-1.jpg" alt="">
+						</div>
+						<div class="profile_wrap">
+							<div class="userPix_wrap">
+								<div class="userPix"><img src="../images/timeline/1.jpg" alt=""></div>
+							</div>
+							<div class="userProfile">
+								<span class="name">Jacob</span>
+								<span class="region">USA</span>
+							</div>
+						</div>
+						<div class="txt_wrap">
+							<div class="comment_wrap">
+								<p class="headColor">Trip Feedback</p>
+								<p>It was so fun to have a real trip! Thank you.</p>
+							</div>
+							<div class="keyword_wrap">
+								<p class="headColor">Best Style Interior <span class="interior">'BLACK'</span></p>
+								<p class="headColor">Favorite Engine <span class="engine">'GAMMA 1.6T-GDI'</span></p>
+								<p class="headColor">Favorite High-tech Feature <span class="feature">'LKAS'</span></p>
+							</div>
+						</div>
+					</article>
+					<article class="article">
+						<div class="photo">
+							<img src="../images/timeline/2-1.png" alt="">
+						</div>
+						<div class="profile_wrap">
+							<div class="userPix_wrap">
+								<div class="userPix"><img src="../images/timeline/2.jpg" alt=""></div>
+							</div>
+							<div class="userProfile">
+								<span class="name">Steve</span>
+								<span class="region">CANADA</span>
+							</div>
+						</div>
+						<div class="txt_wrap">
+							<div class="comment_wrap">
+								<p class="headColor">Trip Feedback</p>
+								<p>I remember traveling backpacking. It was fun.</p>
+							</div>
+							<div class="keyword_wrap">
+								<p class="headColor">Best Style Interior <span class="interior">'GRAY'</span></p>
+								<p class="headColor">Favorite Engine <span class="engine">'NU 2.0 GDI'</span></p>
+								<p class="headColor">Favorite High-tech Feature <span class="feature">'AEB'</span></p>
+							</div>
+						</div>
+					</article>
+					<article class="article">
+						<div class="photo">
+							<img src="../images/timeline/3-1.jpg" alt="">
+						</div>
+						<div class="profile_wrap">
+							<div class="userPix_wrap">
+								<div class="userPix"><img src="../images/timeline/3.jpg" alt=""></div>
+							</div>
+							<div class="userProfile">
+								<span class="name">Jessica</span>
+								<span class="region">USA</span>
+							</div>
+						</div>
+						<div class="txt_wrap">
+							<div class="comment_wrap">
+								<p class="headColor">Trip Feedback</p>
+								<p>I wanted to go to Milan. I upload my travel photos.</p>
+							</div>
+							<div class="keyword_wrap">
+								<p class="headColor">Best Style Interior <span class="interior">'GRAY'</span></p>
+								<p class="headColor">Favorite Engine <span class="engine">'GAMMA 1.6 T-GDI'</span></p>
+								<p class="headColor">Favorite High-tech Feature <span class="feature">'ASCC'</span></p>
+							</div>
+						</div>
+					</article>
+					<!-- <div class="moreView">
+						<a href="javascript:void(0)" onclick="view_search();"><i class="icon"></i>View More</a>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

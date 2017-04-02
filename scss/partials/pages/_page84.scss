@@ -1,0 +1,60 @@
+// page84.scss
+#page84 {
+  background:url('../images/day2/41_photo.jpg') no-repeat;
+  background-size: 100% auto;
+  background-position:50% 50%;
+
+    .ui-content {
+      @include reset-margins;
+      width: 100%;
+      height: 100%;
+
+      .imgwrap {
+        margin: 0 auto;
+        margin-top: 45px;
+
+        .text_i {
+          width: 100%;
+          text-align: center;
+
+          p {
+            font-family: "HyundaiSansHead-Regular_0"; 
+          }
+        }
+
+        .device_wrap {
+          text-align: center;
+
+          .deviceL, .deviceR {
+            width: 40%;
+            min-height: 250px;
+            display: inline-block;
+
+            &>div {
+              width: 80%;
+              margin: 0 auto;
+              margin-top: 18%;
+            }
+          }
+        }
+      } 
+    } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page84{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page84{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

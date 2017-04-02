@@ -1,0 +1,78 @@
+// page4.scss
+#page4 {
+  background:url('../images/day1/landscape/05_bg_@3x.jpg') no-repeat;
+  background-size: 100% auto;
+    
+  .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    height: 100%;
+    .imgwrap {
+      width: 27%;
+      //display: inline-block;
+      //margin-left: 3%;
+      position: absolute;
+      bottom: 0;
+      left: 18%;
+
+      img {
+        position: relative;
+        width: 130%;
+        bottom: -27px;
+        left: -40px;
+        // @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+        //   bottom: -100px;
+        // }
+      }
+    } 
+
+    .textwrap { 
+      @include clearfix
+      //display: inline-block;
+      max-width: 55%;
+     // margin-bottom: 20px;
+      position: relative;
+      left: 15%;
+      top: 20px;
+      .text_tip {
+          @include text_tip_l;
+          position: relative;
+         // top: 75px;
+          //left: 1px;
+          left: 7%;
+          top: 146px;
+          transform: rotate(-90deg);
+       }
+
+       .text {
+          overflow:hidden ; 
+                     
+          &:after {
+             content:'';
+             display:block; /* or whatever else than inline */
+             clear:both;
+          }
+       }
+    }
+  } 
+
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page4{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page4{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
+

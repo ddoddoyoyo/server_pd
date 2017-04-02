@@ -1,0 +1,43 @@
+// page5.scss
+#page16 {
+  background:url('../images/day1/landscape2/12_photo.jpg') no-repeat;
+  background-size: 100% auto;
+
+  .ui-content {
+    @include reset-margins;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow-x: initial;
+
+    .textwrap { 
+      @include clearfix
+      margin-top: 45px;
+      padding: 0;
+
+      .text_tip {
+        @include text_tip_t;
+      }
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page16{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page16{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

@@ -1,0 +1,67 @@
+// page62.scss
+#page62 {
+  background: $black;
+  .page_bg {
+    width: 80%;
+    margin: 0 auto;
+  }
+     
+  .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+
+    .imgwrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50px;
+      display: inline-block;
+      margin-left: 25px;
+      margin-bottom: -5px;
+      overflow: hidden;
+    } 
+
+    .textwrap { 
+      @include clearfix
+      display: inline-block;
+      max-width: 63%;
+      margin-left: 22px;
+      margin-bottom: 30px;
+
+
+      .text_tip {
+          @include text_tip_l;
+          bottom: 38px;
+       }
+
+       .text {
+          overflow:hidden ;
+          margin-left: 19px; 
+                     
+          &:after {
+             content:'';
+             display:block; /* or whatever else than inline */
+             clear:both;
+          }
+       }
+    }
+  } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page62{
+    .ui-content {
+      display: none!important;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page62{
+    .ui-content {
+      display: block;
+    }
+  }
+}
+

@@ -1,0 +1,5900 @@
+@charset "UTF-8";
+@font-face {
+	font-family:"HyundaiSansHead-Regular_0";
+	text-transform:normal;
+	font-weight:normal;
+	src:url("../fonts/HyundaiSansHead.eot") format("eot"), url("../fonts/HyundaiSansHead.woff2") format("woff2"), url("../fonts/HyundaiSansHead.woff") format("woff"), url("../fonts/HyundaiSansHead.ttf") format("truetype"), url("../fonts/HyundaiSansHead.otf") format("opentype"); }
+
+@font-face {
+	font-family:"HyundaiSansText-Italic_0";
+	text-transform:normal;
+	font-weight:normal;
+	src:url("../fonts/HyundaiSansText-Italic.eot") format("eot"), url("../fonts/HyundaiSansText-Italic.woff2") format("woff2"), url("../fonts/HyundaiSansText-Italic.woff") format("woff"), url("../fonts/HyundaiSansText-Italic.ttf") format("truetype"), url("../fonts/HyundaiSansText-Italic.otf") format("opentype"); }
+
+@font-face {
+	font-family:"HyundaiSansText-Regular_0";
+	text-transform:normal;
+	font-weight:normal;
+	src:url("../fonts/HyundaiSansText.eot") format("eot"), url("../fonts/HyundaiSansText.woff2") format("woff2"), url("../fonts/HyundaiSansText.woff") format("woff"), url("../fonts/HyundaiSansText.ttf") format("truetype"), url("../fonts/HyundaiSansText.otf") format("opentype"); }
+
+@font-face {
+	font-family:"HyundaiSansHead-Medium";
+	text-transform:normal;
+	font-weight:normal;
+	src:url("../fonts/HyundaiSansHeadMedium.eot") format("eot"), url("../fonts/HyundaiSansHeadMedium.woff2") format("woff2"), url("../fonts/HyundaiSansHeadMedium.woff") format("woff"), url("../fonts/HyundaiSansHeadMedium.ttf") format("truetype"), url("../fonts/HyundaiSansHeadMedium.otf") format("opentype"); }
+
+body p {
+	font-family:'HyundaiSansText-Italic_0', sans-serif;
+	font-size:1em;
+	font-weight:normal;
+	color:#ffffff;
+	font-weight:normal; }
+
+h1, h2, h3 {
+	font-weight:normal;
+	line-height:120%; }
+
+h1 {
+	font-family:'HyundaiSansHead-Regular_0', sans-serif;
+	font-size:2.5em;
+	margin:0 0 10px 0; }
+
+h2 {
+	font-family:'HyundaiSansHead-Regular_0', sans-serif;
+	font-size:1.8em;
+	margin:0 0 10px 0; }
+
+.h2_sub {
+	font-family:'HyundaiSansText-Regular_0', sans-serif;
+	font-size:1.2em; }
+
+h3 {
+	font-family:'HyundaiSansText-Regular_0', sans-serif;
+	font-size:1.3em;
+	margin:10px 0; }
+
+.intro_start {
+	font-family:'HyundaiSansHead-Regular_0', sans-serif;
+	font-size:30px;
+	margin:10px 0; }
+
+.text_i {
+	font-size:20px; }
+
+span, .p1, .p2 {
+	font-family:'HyundaiSansHead-Regular_0', sans-serif; }
+
+input select label a {
+	font-family:'HyundaiSansText-Regular_0', sans-serif !important; }
+
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	background:url(../images/web_bg.jpg) 0 0;
+	background-size:cover;
+	overflow:hidden; }
+
+ol, ul {
+	list-style:none;
+	padding:0 10px; }
+	ol li, ul li {
+		margin:8px 0; }
+
+a {
+	color:#ffffff;
+	text-decoration:none;
+	display:block;
+	-webkit-text-shadow:none;
+	text-shadow:none;
+	cursor:Pointer; }
+
+a.go_to_btn {
+	float:left; }
+
+button {
+	padding:10px;
+	border:none;
+	background:none;
+	background-color:none; }
+	button:hover {
+		cursor:Pointer; }
+
+a.next_finger {
+	position:absolute;
+	-webkit-animation:pointer 2s infinite;
+	-moz-animation:pointer 2s infinite;
+	-o-animation:pointer 2s infinite;
+	animation:pointer 2s infinite;
+	z-index:10; }
+	a.next_finger img {
+		width:167px;
+		position:relative; }
+
+.next_p_btn.ui-btn {
+	background-color:transparent;
+	border:none;
+	box-shadow:none !important;
+	text-shadow:none !important;
+	position:absolute;
+	bottom:0;
+	right:0;
+	max-width:40px;
+	white-space:inherit;
+	float:right;
+	animation:twinkle 2s infinite; }
+	.next_p_btn.ui-btn:hover {
+		background:none; }
+
+img {
+	width:100%;
+	display:block; }
+
+#wrap {
+	background:#000;
+	height:100%;
+	overflow-y:auto;
+	position:relative;
+	padding:0; }
+	#wrap #contBox {
+		margin-right:auto;
+		margin-left:auto;
+		background:#000; }
+		#wrap #contBox section {
+			color:dimgray;
+			text-shadow:none;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100% !important;
+			min-height:100% !important;
+			background-color:#000; }
+
+.ui-page-theme-a {
+	background:#000; }
+	.ui-page-theme-a .ui-header {
+		position:absolute;
+		width:100%;
+		background:none;
+		border:none;
+		z-index:10; }
+		.ui-page-theme-a .ui-header .ui-btn {
+			background:none;
+			border:none;
+			outline:none;
+			box-shadow:none;
+			width:30px; }
+
+.ui-page-theme-a .ui-content {
+	margin:0;
+	padding:0;
+	overflow:hidden; }
+	.ui-page-theme-a .ui-content .textwrap {
+		margin:0 16px; }
+		.ui-page-theme-a .ui-content .textwrap .ui-link {
+			max-width:40px;
+			float:right; }
+		.ui-page-theme-a .ui-content .textwrap .text_i {
+			padding-top:5%;
+			margin:0 auto; }
+			.ui-page-theme-a .ui-content .textwrap .text_i p {
+				font-family:'HyundaiSansHead-Regular_0', sans-serif; }
+		.ui-page-theme-a .ui-content .textwrap .text {
+			background-color:rgba(255, 255, 255, 0.8);
+			border-radius:4px;
+			padding:15px;
+			border:2px solid #ffffff;
+			overflow:hidden; }
+			.ui-page-theme-a .ui-content .textwrap .text p {
+				color:dimgray;
+				margin:0;
+				line-height:1.4; }
+			.ui-page-theme-a .ui-content .textwrap .text .text_btn_r img, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img {
+				width:20px;
+				height:23px;
+				padding-left:2px;
+				background:dimgray; }
+				.ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:focus, .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:hover, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:focus, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:hover {
+					background:#002c5f; }
+			.ui-page-theme-a .ui-content .textwrap .text .text_btn_r {
+				float:left; }
+			.ui-page-theme-a .ui-content .textwrap .text .text_img {
+				width:80px;
+				height:80px;
+				margin:0 auto;
+				border-radius:50px;
+				background:#a0a0a0;
+				border:1px solid #ffffff;
+				overflow:hidden;
+				margin-bottom:10px; }
+				.ui-page-theme-a .ui-content .textwrap .text .text_img img {
+					margin-top:10px;
+					width:120%;
+					position:relative;
+					right:9px; }
+			.ui-page-theme-a .ui-content .textwrap .text .btn_box #go_next1 {
+				position:relative;
+				top:15px;
+				right:-15px; }
+			.ui-page-theme-a .ui-content .textwrap .text .btn_box #go_back {
+				position:relative;
+				top:15px;
+				left:-15px; }
+	.ui-page-theme-a .ui-content .view_text {
+		position:absolute;
+		bottom:0;
+		right:0; }
+		.ui-page-theme-a .ui-content .view_text p {
+			background:rgba(0, 0, 0, 0.6);
+			padding:10px 51px 10px 20px;
+			border-radius:50px;
+			position:relative;
+			bottom:3px;
+			right:17px; }
+
+#wrap.mobile {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-331px -187px;
+	padding:0;
+	width:380px;
+	height:668px;
+	z-index:2;
+	overflow:hidden; }
+
+#wrap.mobile.landscape {
+	margin:-187px -331px;
+	width:668px;
+	height:380px; }
+
+#mokup {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-464px -221px;
+	width:442px;
+	height:929px;
+	background:url(../images/mokup.png) 0 0 no-repeat;
+	background-size:442px 929px; }
+	#mokup .btn_device {
+		position:absolute;
+		top:133px;
+		right:50%;
+		margin:0 -185px;
+		padding:0;
+		border:none;
+		z-index:999; }
+		#mokup .btn_device img {
+			position:absolute;
+			top:-40px;
+			right:-11px;
+			width:31px; }
+
+#mokup.landscape {
+	-webkit-transform:rotate(90deg) !important;
+	transform:rotate(90deg) !important; }
+
+.layer_landscape {
+	display:none;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:0;
+	padding:0px;
+	z-index:10;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	background:rgba(0, 0, 0, 0.6); }
+	.layer_landscape .box {
+		width:100%;
+		position:absolute;
+		top:50%;
+		left:50%;
+		-webkit-transform:translate(-50%, -50%);
+		transform:translate(-50%, -50%);
+		text-align:center; }
+		.layer_landscape .box img {
+			width:150px;
+			display:block;
+			margin:0 auto;
+			margin-bottom:20px; }
+		.layer_landscape .box p {
+			text-align:center; }
+		.layer_landscape .box .ok_btn {
+			border:1px solid;
+			width:100px;
+			margin:0 auto;
+			margin-top:15px;
+			padding-bottom:1px;
+			padding-top:2px; }
+
+@media only screen and (min-width:650px) {
+	.page_wrap {
+		background:none; } }
+
+@-webkit-keyframes pointer {
+	0%, 100% {
+		-webkit-transform:translate(0, 0);
+		transform:translate(0, 0); }
+	50% {
+		-webkit-transform:translate(10px, 10px);
+		transform:translate(10px, 10px); } }
+
+@keyframes pointer {
+	0%, 100% {
+		-webkit-transform:translate(0, 0);
+		transform:translate(0, 0); }
+	50% {
+		-webkit-transform:translate(10px, 10px);
+		transform:translate(10px, 10px); } }
+
+@-webkit-keyframes twinkle {
+	0%, 100% {
+		opacity:1; }
+	50% {
+		opacity:0; } }
+
+@keyframes twinkle {
+	0%, 100% {
+		opacity:1; }
+	50% {
+		opacity:0; } }
+
+#pageStart {
+  background:#000; }
+  #pageStart .ui-content {
+	margin:0;
+	padding:0;
+	height:100%; }
+	#pageStart .ui-content:before, #pageStart .ui-content:after {
+	  content:"";
+	  display:table; }
+	#pageStart .ui-content:after {
+	  clear:both; }
+	#pageStart .ui-content .imgwrap {
+	  height:85%;
+	  width:60%;
+	  overflow:hidden;
+	  float:left;
+	  margin-left:25px; }
+	  #pageStart .ui-content .imgwrap img {
+		width:185%;
+		position:relative;
+		top:-26px;
+		right:33px; }
+	#pageStart .ui-content .textwrap {
+	  margin:0;
+	  padding:0;
+	  width:36%;
+	  height:85%;
+	  float:left; }
+	  #pageStart .ui-content .textwrap .text {
+		background:transparent;
+		margin-top:10px;
+		border:none; }
+		#pageStart .ui-content .textwrap .text #textbox1 {
+		  color:#ffffff; }
+		  #pageStart .ui-content .textwrap .text #textbox1 .img_wrap {
+			width:80%;
+			margin-top:10%; }
+			#pageStart .ui-content .textwrap .text #textbox1 .img_wrap img:first-child {
+			  max-width:18px; }
+			#pageStart .ui-content .textwrap .text #textbox1 .img_wrap img:nth-child(2) {
+			  margin-left:1px; }
+			#pageStart .ui-content .textwrap .text #textbox1 .img_wrap p {
+			  font-size:12px;
+			  color:#ffffff; }
+			#pageStart .ui-content .textwrap .text #textbox1 .img_wrap .p1 {
+			  float:left; }
+			#pageStart .ui-content .textwrap .text #textbox1 .img_wrap .p2 {
+			  float:right; }
+		  #pageStart .ui-content .textwrap .text #textbox1 ul {
+			margin-top:12%;
+			position:relative; }
+			#pageStart .ui-content .textwrap .text #textbox1 ul li:before {
+			  content:'';
+			  display:block;
+			  width:2px;
+			  height:15px;
+			  background:#ffffff;
+			  position:absolute;
+			  left:0;
+			  margin-top:3px; }
+}
+
+@media only screen and (orientation:Portrait) {
+	#page4 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page4 .ui-content {
+		display:block; } }
+
+#page0 {
+	background:url("../images/day3/02_bg_map_1.jpg") no-repeat;
+	background-size:100% 100%; }
+	#page0 .page_bg {
+		animation:twinkle 1.5s infinite;
+    height: 100%; }
+  #page0 .page_bg img {
+    height: 100%; }
+	#page0 .next_finger {
+		top:20%;
+		left:0;
+		width:80%;
+		height:50%; }
+		#page0 .next_finger img {
+			left:calc(78% - 196px);
+			top:32%; }
+	#page0 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		bottom:0;
+		right:0;
+		overflow:hidden; }
+		#page0 .ui-content .textwrap {
+			margin:45px 25px 0 0; }
+		#page0 .ui-content .textwrap:before, #page0 .ui-content .textwrap:after {
+			content:"";
+			display:table; }
+		#page0 .ui-content .textwrap:after {
+			clear:both; }
+		#page0 .ui-content .textbox {
+			display:none; }
+		#page0 .ui-content #textbox0_1 {
+			display:block; }
+		#page0 .ui-content .textwrap .text_tip {
+			max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 70%;
+      position: relative;
+      top: 1px;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1); }
+			#page0 .ui-content .textwrap .text_tip img {
+				-ms-transform:rotate(-90deg);
+				/* IE 9 */
+				-webkit-transform:rotate(-90deg);
+				/* Chrome, Safari, Opera */
+				transform:rotate(-90deg); }
+		#page0 .ui-content .textwrap .text {
+			overflow:hidden; }
+			#page0 .ui-content .textwrap .text #go_page1 {
+				margin-top:20px; }
+			#page0 .ui-content .textwrap #textbox, #page0 .ui-content .textwrap #go_back {
+				display:none; }
+		#page0 .ui-content .imgwrap {
+			max-width:64%; }
+			#page0 .ui-content .imgwrap img {
+				position:relative;
+				right:-10%;
+				top:5px; }
+
+@media only screen and (orientation:Portrait) {
+	#page4 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page4 .ui-content {
+		display:block; } }
+
+#page1 {
+	background:url("../images/day3/03_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page1 .ui-content {
+		margin:0;
+		padding:0;
+		width:40%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page1 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page1 .ui-content .textwrap:before, #page1 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page1 .ui-content .textwrap:after {
+				clear:both; }
+			#page1 .ui-content .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+
+@media only screen and (orientation:Portrait) {
+	#page4 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page4 .ui-content {
+		display:block; } }
+
+#page2 {
+	background:url("../images/day3/04_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page2 .ui-content {
+		margin:0;
+		padding:0;
+		width:40%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page2 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page2 .ui-content .textwrap:before, #page2 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page2 .ui-content .textwrap:after {
+				clear:both; }
+			#page2 .ui-content .textwrap .text_tip {
+				max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 70%;
+        position: relative;
+        top: 1px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);}
+      #page2 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation:Portrait) {
+	#page4 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page4 .ui-content {
+		display:block; } }
+
+#page3 {
+	background:url("../images/day3/05_image.jpg") no-repeat;
+	background-size:100% auto; }
+	#page3 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page3 .ui-content .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page3 .ui-content .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:106px;
+			left:77px;
+			z-index:10; }
+		#page3 .ui-content .img_twinkle {
+			animation:twinkle 1.5s infinite;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0; }
+		#page3 .ui-content .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page3 .ui-content .textwrap:before, #page3 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page3 .ui-content .textwrap:after {
+				clear:both; }
+			#page3 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page3 .ui-content .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page4 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page4 .ui-content {
+		display:block; } }
+
+#page4 {
+	background:url("../images/day3/09_bg.jpg") no-repeat;
+	background-size:100% auto; }
+	#page4 .ui-content {
+		position:absolute;
+		bottom:0;
+		overflow:hidden;
+		height:100%;
+		width:100%; }
+		#page4 .ui-content .imgwrap {
+			width:60%;
+			position:absolute;
+			top:15%;
+			left:35px;
+			height:80%; }
+			#page4 .ui-content .imgwrap ul {
+				width:85%;
+				height:60%;
+				border-bottom:solid 1px #644d1f;
+				margin-top:16%;
+				padding:0; }
+			#page4 .ui-content .imgwrap li {
+				width:17%;
+				height:100%;
+				float:left;
+				margin:0 12px 0 13px; }
+			#page4 .ui-content .imgwrap li .graphObj {
+				width:100%;
+				float:left;
+				background-size:100%;
+				height:100%; }
+			.graph4_1 .graphObj {
+				background:url(../images/day3/09_graph_01.png) no-repeat bottom; }
+			.graph4_2 .graphObj {
+				background:url(../images/day3/09_graph_02.png) no-repeat bottom; }
+			.graph4_3 .graphObj {
+				background:url(../images/day3/09_graph_03.png) no-repeat bottom; }
+			.graph4_4 .graphObj {
+				background:url(../images/day3/09_graph_04.png) no-repeat bottom; }
+			#page4 .ui-content .imgwrap .graphLegend4 {
+				width:85%;
+				margin:10px 0 0 0;
+			}
+			#page4 .ui-content .imgwrap .graphLegend4 > div {
+				width:17%;
+				height:100%;
+				float:left;
+				margin:0 12px 0 13px;
+				text-align:center;
+				font-size:10pt;
+				font-weight:bold; }
+			#page4 .ui-content .imgwrap .graphLegend4 > div > img {
+				margin:7px 0 0 0; }
+			#page4 .ui-content .imgwrap .graphQuantity4 {
+				position:absolute;
+				margin-top:16%; }
+			#page4 .ui-content .imgwrap .graphQuantity4 > div {
+				font-size:12pt;
+				font-weight:bold;
+				text-align:center; }
+			#page4 .ui-content .imgwrap .graphQuantity4 > div:nth-child(1), #page4 .ui-content .imgwrap .graphQuantity4 > div:nth-child(2) {
+				margin-top:7%; }
+			#page4 .ui-content .imgwrap .graphQuantity4 > div:nth-child(3) {
+				margin-top:5%; }
+		#page4 .ui-content .pageTitle {
+			margin:20px 0 0 0;
+			width:100%;
+			text-align:center;
+			font-size:18pt;
+			position:absolute;
+			font-weight:700;
+			color:#FFF; }
+		#page4 .ui-content .textwrap {
+			margin-top: 28px;
+      padding: 0;
+      width: 28%;
+      position: absolute;
+      top: 0;
+      right: 0; }
+			#page4 .ui-content .textwrap:before, #page4 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page4 .ui-content .textwrap:after {
+				clear:both; }
+			#page4 .ui-content .textwrap .text_img2 {
+        width: 59%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        top: 11px; }
+      #page4 .ui-content .textwrap .text_tip {
+        width: 20px;
+        position: relative;
+        top: -3px;
+        left: 60px;
+        transform: rotate(90deg); }
+      #page4 .ui-content .textwrap .text {
+        overflow: hidden; }
+
+@media only screen and (orientation:Portrait) {
+	#page4 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page4 .ui-content {
+		display:block; } }
+
+#page5 {
+	background:url("../images/day3/10_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page5 .ui-content {
+		margin:0;
+		padding:0;
+		width:40%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page5 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page5 .ui-content .textwrap:before, #page5 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page5 .ui-content .textwrap:after {
+				clear:both; }
+			#page5 .ui-content .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+
+@media only screen and (orientation:Portrait) {
+	#page5 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page5 .ui-content {
+		display:block; } }
+
+#page6 {
+	background:#000; }
+	#page6 .ui-content {
+		position:absolute;
+		bottom:0;
+		overflow:hidden;
+		height:100%;
+		width:100%; }
+		#page6 .ui-content .imgwrap {
+			width:90%;
+			position:absolute;
+			top:15%;
+			left:35px;
+			height:80%; }
+			#page6 .ui-content .imgwrap ul {
+				width:86%;
+				border-left:solid 1px #6b6b6b;
+				margin:17px 0 0 0;
+				float:left;
+				padding:0; }
+			#page6 .ui-content .imgwrap li {
+				margin:10px 0 20px 0;
+				overflow:hidden; }
+			#page6 .ui-content .imgwrap li div {
+				float:left;
+				height:100%; }
+			#page6 .ui-content .imgwrap li .graphText {
+				font-size:12pt;
+				font-weight:bold;
+				padding:13px 0 0 10px; }
+			#page6 .ui-content .imgwrap li .graphTextEm {
+				color:#FFF; }
+			.graph6_1 .graphObj {
+				width:85%;
+				transition:width 1s ease; }
+			.graph6_2 .graphObj {
+				width:58%;
+				transition:width 1s ease; }
+			.graph6_3 .graphObj {
+				width:65%;
+				transition:width 1s ease; }
+			#page6 .ui-content .imgwrap .graphLegend6 {
+				width:13%;
+				float:left;
+				margin:17px 0 0 0;
+				height:100%; }
+			#page6 .ui-content .imgwrap .graphLegend6 > div {
+				width:80%;
+				margin:15% 0 0 0;
+				text-align:center;
+				font-size:10pt;
+				overflow:hidden;
+			height:18%;
+				font-weight:bold; }
+			#page6 .ui-content .imgwrap .graphLegend6 > div:nth-child(2) {
+				padding-top:15%; }
+			#page6 .ui-content .imgwrap .graphLegend6 > div:nth-child(3) {
+				margin-top:10%; }
+			#page6 .ui-content .imgwrap .graphLegend6 > div > img {
+				}
+			#page6 .ui-content .imgwrap .graphDesc {
+				position:absolute;
+				background:url(../images/day3/11_gap-rating.png) no-repeat;
+				background-size:100%;
+				left:64%;
+				top:25%;
+				text-align:right;
+				color:#fea900;
+				width:21%;
+				font-size:1.7em;
+				line-height:60%;
+				padding:3% 1% 0 0;
+				font-weight:bold; }
+			#page6 .ui-content .imgwrap .graphDesc span {
+				font-size:0.5em; }
+			#page6 .ui-content .imgwrap2 {
+				width:90%;
+				position:absolute;
+				top:20%;
+				left:35px;
+				height:80%; }
+			#page6 .ui-content .imgwrap2 .panel {
+				margin:0 0 15px 0;
+				overflow:hidden; }
+			#page6 .ui-content .imgwrap2 .panel div {
+				float:left;
+				width:50%;
+				overflow:hidden; }
+			#page6 .ui-content .imgwrap2 .panelTitle {
+				text-align:center; }
+			#page6 .ui-content .imgwrap2 .panelTitle img {
+				width:20%;
+				margin:auto; }
+			#page6 .ui-content .imgwrap2 .panelTitle div:last-child img {
+				margin:18px auto 0; }
+			#page6 .ui-content .imgwrap2 .panelImg img {
+				width:65%;
+				margin:0 auto; }
+			#page6 .ui-content .imgwrap2 .panelImg div:nth-child(1) {
+				background:url(../images/day3/12_vehicle_left.png) no-repeat center;
+				background-size:65%; }
+			#page6 .ui-content .imgwrap2 .panelImg div:nth-child(2) {
+				background:url(../images/day3/12_vehicle_right.png) no-repeat center;
+				background-size:65%; }
+		#page6 .ui-content .profilewrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page6 .ui-content .pageTitle {
+			margin:20px 0 0 0;
+			width:100%;
+			text-align:center;
+			font-size:18pt;
+			position:absolute;
+			font-weight:700;
+			color:#FFF; }
+		#page6 .ui-content .textwrap {
+			max-width:80%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:115px;
+			bottom:15px; }
+			#page6 .ui-content .textwrap:before, #page6 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page6 .ui-content .textwrap:after {
+				clear:both; }
+			#page6 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page6 .ui-content .textwrap .text {
+				margin-left:19px;
+				overflow:hidden; }
+				#page6 .ui-content .textwrap .text:after {
+					content:'';
+					display:block;
+					/* or whatever else than inline */
+					clear:both; }
+
+@media only screen and (orientation:Portrait) {
+	#page0 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page0 .ui-content {
+		display:block; } }
+
+#page7 {
+	background:url("../images/day3/13_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page7 .ui-content {
+		margin:0;
+		padding:0;
+		width:40%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page7 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page7 .ui-content .textwrap:before, #page7 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page7 .ui-content .textwrap:after {
+				clear:both; }
+			#page7 .ui-content .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+
+@media only screen and (orientation:Portrait) {
+	#page7 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page7 .ui-content {
+		display:block; } }
+
+#page8 {
+	background:url("../images/day3/14_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page8 .ui-content {
+		margin:0;
+		padding:0;
+		width:40%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page8 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page8 .ui-content .textwrap:before, #page8 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page8 .ui-content .textwrap:after {
+				clear:both; }
+			#page8 .ui-content .textwrap .text_tip {
+				max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 70%;
+        position: relative;
+        top: 1px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+        #page8 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation:Portrait) {
+	#page8 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page8 .ui-content {
+		display:block; } }
+
+#page9 {
+	background:#000; }
+	#page9 .ui-content {
+		position:absolute;
+		bottom:0;
+		overflow:hidden;
+		height:100%;
+		width:100%; }
+		#page9 .imgwrap {
+			width:90%;
+			position:absolute;
+			top:15%;
+			left:35px;
+			height:80%; }
+		#page9 .engine {
+			text-align:center;
+			margin-top:2% }
+			#page9 .engine img {
+				width:31%;
+				margin:0 1%;
+				float:left; }
+		#page9 .ui-content .pageTitle {
+			margin:20px 0 0 0;
+			width:100%;
+			text-align:center;
+			font-size:18pt;
+			position:absolute;
+			font-weight:700;
+			color:#FFF; }
+
+@media only screen and (orientation:Portrait) {
+	#page9 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page9 .ui-content {
+		display:block; } }
+
+#page10 {
+		background:#000; }
+	#page10 .ui-content {
+		position:absolute;
+		bottom:0;
+		overflow:hidden;
+		height:100%;
+		width:100%; }
+		#page10 .imgwrap {
+			width:90%;
+			position:absolute;
+			top:25%;
+			left:35px;
+			height:80%; }
+			#page10 .imgwrap ul {
+				width:79%;
+				border-left:solid 1px #6b6b6b;
+				float:left;
+				padding:0; }
+			#page10 .imgwrap li {
+				margin:2% 0;
+				overflow:hidden; }
+			#page10 .imgwrap li div {
+				float:left;
+				height:100%; }
+			#page10 .imgwrap li .graphText {
+				font-size:12pt;
+				font-weight:bold;
+				padding:13px 0 0 10px; }
+			#page10 .imgwrap li .graphObj {
+				background:linear-gradient(to right, #5C5C5C, #B6B6B6);
+				border:1px solid #363636;
+				border-top-right-radius:5px;
+				border-bottom-right-radius:5px;
+				text-align:right;
+				font-size:1.25em;
+				font-weight:bold;
+				color:#333;
+				line-height:210%;
+				padding-right:2%; }
+			#page10 .imgwrap li .graphObj.large {
+				background:linear-gradient(to right, #7F5500 , #FFAA00);
+				color:#000; }
+			#page10 .imgwrap li .large {
+				color:#FFF; }
+			#page10 .imgwrap .graphLegend10 {
+				width:20%;
+				float:left;
+				margin:17px 0 0 0;
+				height:100%;
+				color:#FFF; }
+			#page10 .imgwrap .graphLegend10 > div {
+				width:95%;
+				margin:23% 0 31% 0;
+				text-align:right;
+				font-size:.75em;
+				overflow:hidden;
+				font-weight:bold; }
+		#page10 .pageTitle {
+			margin:20px 0 0 0;
+			width:100%;
+			text-align:center;
+			font-size:18pt;
+			position:absolute;
+			font-weight:700;
+			color:#FFF; }
+
+@media only screen and (orientation:Portrait) {
+	#page10 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page10 .ui-content {
+		display:block; } }
+
+#page11 {
+	background:url("../images/day3/19_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page11 .ui-content {
+		margin:0;
+		padding:0;
+		width:40%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page11 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page11 .ui-content .textwrap:before, #page11 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page11 .ui-content .textwrap:after {
+				clear:both; }
+			#page11 .ui-content .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+
+@media only screen and (orientation:Portrait) {
+	#page11 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page11 .ui-content {
+		display:block; } }
+
+#page12 {
+	background:url("../images/day3/20_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page12 .ui-content {
+		margin:0;
+		padding:0;
+		width:40%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page12 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page12 .ui-content .textwrap:before, #page12 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page12 .ui-content .textwrap:after {
+				clear:both; }
+			#page12 .ui-content .textwrap .text_tip {
+				max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 70%;
+        position: relative;
+        top: 1px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+        #page12 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation:Portrait) {
+	#page12 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page12 .ui-content {
+		display:block; } }
+
+#page13 {
+	background:url("../images/day3/22_image.jpg") no-repeat;
+	background-size:100% auto;
+	overflow: hidden; }
+	#page13 .next_finger {
+		top:13%;
+		left:47%;
+		width:80%;
+		height:80%; }
+	#page13 .ui-content {
+		margin:0;
+		padding:0;
+		height:100%; }
+		#page13 .imgwrap {
+			width:90%;
+			position:absolute;
+			left:5%;
+			top:35%; }
+			#page13 .car13 {
+				width:60%;
+				float:left; }
+			#page13 .table13 {
+				width:33%;
+				float:right; }
+			#page13 .table13 td {
+				padding:3% 0 2% 0;
+				font-size:1em;
+				text-align:center; }
+			#page13 .table13 tr td:nth-child(1) {
+				color:#FFF;
+				background:url("../images/day3/23_title_01_none.png") no-repeat;
+				background-size:100%; }
+			#page13 .table13 tr td:nth-child(3) {
+				background:url("../images/day3/23_title_02_none.png") no-repeat;
+				background-size:100%; }
+
+@media only screen and (orientation:Portrait) {
+	#page13 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page13 .ui-content {
+		display:block; } }
+
+#page14 {
+	background:#000; }
+	#page14 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page14 .ui-content .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			position:absolute;
+			top:40%;
+			left:10%;
+			overflow:hidden; }
+		#page14 .ui-content .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:23%;
+			top:37%; }
+			#page14 .ui-content .textwrap:before, #page14 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page14 .ui-content .textwrap:after {
+				clear:both; }
+			#page14 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page14 .ui-content .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page14 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page14 .ui-content {
+		display:block; } }
+
+#page15 {
+	background:url("../images/day3/28_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page15 .ui-content {
+		margin:0;
+		padding:0;
+		width:40%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page15 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page15 .ui-content .textwrap:before, #page15 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page15 .ui-content .textwrap:after {
+				clear:both; }
+			#page15 .ui-content .textwrap .text_tip {
+				max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 70%;
+        position: relative;
+        top: 1px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+        #page15 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation:Portrait) {
+	#page15 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page15 .ui-content {
+		display:block; } }
+
+#page16 {
+	background:url("../images/day3/29_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page16 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page16 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page16 .ui-content .textwrap:before, #page16 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page16 .ui-content .textwrap:after {
+				clear:both; }
+			#page16 .ui-content .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+
+@media only screen and (orientation:Portrait) {
+	#page16 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page16 .ui-content {
+		display:block; } }
+
+#page17 {
+	background:url("../images/day3/30_photo.jpg") no-repeat;
+	background-size:auto 100%;
+	background-position:50% 50%; }
+	#page17 .page_bg {
+		background:url("../images/day3/30_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		background-position:50% 50%;
+		height:100%; }
+	#page17 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page17 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		width:100%; }
+		#page17 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page17 .ui-content .textwrap {
+			max-width:33%;
+			float:right;
+			margin-top:45px;
+			padding:0; }
+			#page17 .ui-content .textwrap:before, #page17 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page17 .ui-content .textwrap:after {
+				clear:both; }
+			#page17 .ui-content .textwrap .text_tip {
+				max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 70%;
+        position: relative;
+        top: 1px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+        #page17 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation:Portrait) {
+	#page17 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page17 .ui-content {
+		display:block; } }
+
+#page18 {
+	overflow:hidden; }
+	#page18 .page_bg {
+		background:url("../images/day3/33_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page18 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page18 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		position:absolute;
+		top:0; }
+		#page18 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0;
+			width:28%;
+			position:absolute;
+			top:0;
+			right:0; }
+			#page18 .ui-content .textwrap:before, #page18 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page18 .ui-content .textwrap:after {
+				clear:both; }
+			#page18 .ui-content .textwrap .text_img2 {
+        width: 59%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        top: 11px; }
+      #page18 .ui-content .textwrap .text_tip {
+        width: 20px;
+        position: relative;
+        top: -3px;
+        left: 60px;
+        transform: rotate(90deg); }
+      #page18 .ui-content .textwrap .text {
+        overflow: hidden; }
+
+@media only screen and (orientation:Portrait) {
+	#page18 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page18 .ui-content {
+		display:block; } }
+
+#page19 {
+	background:url("../images/day3/35_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page19 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page19 .ui-content .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page19 .ui-content .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page19 .ui-content .textwrap:before, #page19 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page19 .ui-content .textwrap:after {
+				clear:both; }
+			#page19 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page19 .ui-content .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page19 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page19 .ui-content {
+		display:block; } }
+
+#page20 {
+	background:url("../images/day3/36_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page20 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:100%;
+		height:100%;
+		width:100%; }
+		#page20 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0;
+			width:30%;
+			right:3%;
+			position:absolute; }
+			#page20 .ui-content .textwrap:before, #page20 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page20 .ui-content .textwrap:after {
+				clear:both; }
+			#page20 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:70%;
+				position:relative;
+				top:2px; }
+				#page20 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+		#page20 .ui-content .imgwrap {
+			max-width:40%;
+			bottom:0;
+			right:10%;
+			position:absolute; }
+			#page20 .ui-content .imgwrap img {
+				position:relative; }
+
+@media only screen and (orientation:Portrait) {
+	#page20 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page20 .ui-content {
+		display:block; } }
+
+#page21 {
+	overflow:hidden; }
+	#page21 .page_bg {
+		background:url("../images/day3/37_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page21 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		position:absolute;
+		top:0; }
+		#page21 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0;
+			width:28%;
+			position:absolute;
+			top:0;
+			right:0; }
+			#page21 .ui-content .textwrap:before, #page21 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page21 .ui-content .textwrap:after {
+				clear:both; }
+			#page21 .ui-content .textwrap .text_img2 {
+        width: 59%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        top: 11px; }
+      #page21 .ui-content .textwrap .text_tip {
+        width: 20px;
+        position: relative;
+        top: -3px;
+        left: 60px;
+        transform: rotate(90deg); }
+      #page21 .ui-content .textwrap .text {
+        overflow: hidden; }
+
+@media only screen and (orientation:Portrait) {
+	#page21 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page21 .ui-content {
+		display:block; } }
+
+#page22 {
+	background:url("../images/day3/38_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page22 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page22 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page22 .ui-content .textwrap:before, #page22 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page22 .ui-content .textwrap:after {
+				clear:both; }
+			#page22 .ui-content .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+
+@media only screen and (orientation:Portrait) {
+	#page22 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page22 .ui-content {
+		display:block; } }
+
+#page23 {
+	background:url("../images/day3/39_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page23 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page23 .ui-content .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page23 .ui-content .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page23 .ui-content .textwrap:before, #page23 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page23 .ui-content .textwrap:after {
+				clear:both; }
+			#page23 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page23 .ui-content .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page23 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page23 .ui-content {
+		display:block; } }
+
+#page24 {
+	background:url("../images/day3/40_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page24 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:100%;
+		height:100%;
+		width:100%; }
+		#page24 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0;
+			width:30%;
+			right:3%;
+			position:absolute; }
+			#page24 .ui-content .textwrap:before, #page24 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page24 .ui-content .textwrap:after {
+				clear:both; }
+			#page24 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:70%;
+				position:relative;
+				top:2px; }
+				#page24 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+		#page24 .ui-content .imgwrap {
+			max-width:22%;
+			bottom:0;
+			right:12%;
+			position:absolute; }
+			#page24 .ui-content .imgwrap img {
+				position:relative; }
+
+@media only screen and (orientation:Portrait) {
+	#page24 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page24 .ui-content {
+		display:block; } }
+
+#page25 {
+	background:url("../images/day3/41_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page25 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page25 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page25 .ui-content .textwrap:before, #page25 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page25 .ui-content .textwrap:after {
+				clear:both; }
+			#page25 .ui-content .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+
+@media only screen and (orientation:Portrait) {
+	#page25 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page25 .ui-content {
+		display:block; } }
+
+#page26 {
+	background:url("../images/day3/42_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page26 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page26 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page26 .ui-content .textwrap:before, #page26 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page26 .ui-content .textwrap:after {
+				clear:both; }
+			#page26 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 70%;
+        position: relative;
+        top: 1px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+        #page26 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page26 .ui-content .textwrap .text {
+        overflow: hidden; }
+
+@media only screen and (orientation:Portrait) {
+	#page26 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page26 .ui-content {
+		display:block; } }
+
+#page27 {
+	background:url("../images/day3/42_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page27 .ui-content {
+		z-index:2;
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page27 .img_twinkle {
+			animation:twinkle 1.5s infinite;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0; }
+		#page27 .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page27 .textwrap:before, #page27 .textwrap:after {
+				content:"";
+				display:table; }
+			#page27 .textwrap:after {
+				clear:both; }
+			#page27 .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+		#page27 .ui-content .textwrap .text {
+			overflow:hidden; }
+		#page27 .ui-content .textwrap .text .text_img img {
+			margin-top:0;
+		}
+
+@media only screen and (orientation:Portrait) {
+	#page27 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page27 .ui-content {
+		display:block; } }
+
+#page28 {
+	background:url("../images/day3/44_AEB.gif") no-repeat;
+	background-size:100% auto; }
+	#page28 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page28 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page28 .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:106px;
+			left:77px;
+			z-index:10; }
+		#page28 .img_twinkle {
+			animation:twinkle 1.5s infinite;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0; }
+		#page28 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page28 .textwrap:before, #page28 .textwrap:after {
+				content:"";
+				display:table; }
+			#page28 .textwrap:after {
+				clear:both; }
+			#page28 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page28 .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page28 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page28 .ui-content {
+		display:block; } }
+
+#page29 {
+	background:url("../images/day3/46_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page29 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page29 .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page29 .textwrap:before, #page29 .textwrap:after {
+				content:"";
+				display:table; }
+			#page29 .textwrap:after {
+				clear:both; }
+			#page29 .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+
+@media only screen and (orientation:Portrait) {
+	#page29 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page29 .ui-content {
+		display:block; } }
+
+#page30 {
+	background:url("../images/day3/47_ASCC.gif") no-repeat;
+	background-size:100% auto; }
+	#page30 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page30 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page30 .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:106px;
+			left:77px;
+			z-index:10; }
+		#page30 .img_twinkle {
+			animation:twinkle 1.5s infinite;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0; }
+		#page30 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page30 .textwrap:before, #page30 .textwrap:after {
+				content:"";
+				display:table; }
+			#page30 .textwrap:after {
+				clear:both; }
+			#page30 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page30 .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page30 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page30 .ui-content {
+		display:block; } }
+
+#page31 {
+	background:#000; }
+	#page31 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page31 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			position:absolute;
+			top:40%;
+			left:10%;
+			overflow:hidden; }
+		#page31 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:23%;
+			top:37%; }
+			#page31 .textwrap:before, #page31 .textwrap:after {
+				content:"";
+				display:table; }
+			#page31 .textwrap:after {
+				clear:both; }
+			#page31 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page31 .textwrap .text {
+				margin-left:19px; }
+
+#page32 {
+	background:url("../images/day3/50_LKAS.gif") no-repeat;
+	background-size:100% auto; }
+	#page32 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page32 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page32 .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:106px;
+			left:77px;
+			z-index:10; }
+		#page32 .img_twinkle {
+			animation:twinkle 1.5s infinite;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0; }
+		#page32 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page32 .textwrap:before, #page32 .textwrap:after {
+				content:"";
+				display:table; }
+			#page32 .textwrap:after {
+				clear:both; }
+			#page32 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page32 .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page32 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page32 .ui-content {
+		display:block; } }
+
+#page33 {
+	background:#000; }
+	#page33 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page33 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			position:absolute;
+			top:40%;
+			left:10%;
+			overflow:hidden; }
+		#page33 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:23%;
+			top:37%; }
+			#page33 .textwrap:before, #page33 .textwrap:after {
+				content:"";
+				display:table; }
+			#page33 .textwrap:after {
+				clear:both; }
+			#page33 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page33 .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page33 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page33 .ui-content {
+		display:block; } }
+
+#page34 {
+	background:url("../images/day3/53_BSD.gif") no-repeat;
+	background-size:100% auto; }
+	#page34 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page34 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page34 .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:106px;
+			left:77px;
+			z-index:10; }
+		#page34 .img_twinkle {
+			animation:twinkle 1.5s infinite;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0; }
+		#page34 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page34 .textwrap:before, #page34 .textwrap:after {
+				content:"";
+				display:table; }
+			#page34 .textwrap:after {
+				clear:both; }
+			#page34 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page34 .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page34 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page34 .ui-content {
+		display:block; } }
+
+#page35 {
+	background:#000; }
+	#page35 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page35 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			position:absolute;
+			top:40%;
+			left:10%;
+			overflow:hidden; }
+		#page35 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:23%;
+			top:37%; }
+			#page35 .textwrap:before, #page35 .textwrap:after {
+				content:"";
+				display:table; }
+			#page35 .textwrap:after {
+				clear:both; }
+			#page35 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page35 .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page35 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page35 .ui-content {
+		display:block; } }
+
+#page36 {
+	overflow:hidden; }
+	#page36 .page_bg {
+		background:url("../images/day3/56_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page36 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page36 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page36 .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:106px;
+			left:77px;
+			z-index:10; }
+		#page36 .img_twinkle {
+			animation:twinkle 1.5s infinite;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0; }
+		#page36 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page36 .textwrap:before, #page36 .textwrap:after {
+				content:"";
+				display:table; }
+			#page36 .textwrap:after {
+				clear:both; }
+			#page36 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page36 .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page36 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page36 .ui-content {
+		display:block; } }
+#page37 {
+	background:url("../images/day3/60_photo.jpg") no-repeat;
+	background-size:100% 100%; }
+	#page37 .ui-content {
+		margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page37 .ui-content .main_wrap {
+      max-width: 50%;
+      float: right; }
+      #page37 .ui-content .main_wrap .textwrap {
+        max-width: 188px;
+        float: right; }
+        #page37 .ui-content .main_wrap .textwrap:before, #page37 .ui-content .main_wrap .textwrap:after {
+          content: "";
+          display: table; }
+        #page37 .ui-content .main_wrap .textwrap:after {
+          clear: both; }
+        #page37 .ui-content .main_wrap .textwrap .text_tip {
+          max-width: 20px;
+          margin-left: 10%;
+          float: right;
+          margin-right: 70%;
+          position: relative;
+          top: 1px;
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1); }
+          #page37 .ui-content .main_wrap .textwrap .text_tip img {
+            -ms-transform: rotate(-90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-90deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(-90deg); }
+        #page37 .ui-content .main_wrap .textwrap .text {
+          overflow: hidden; }
+      #page37 .ui-content .main_wrap .imgwrap {
+        max-width: 70%;
+        float: right;
+        margin-right: 33%;
+        max-height: 150px;
+    		overflow: hidden; }
+        #page37 .ui-content .main_wrap .imgwrap img {
+          position: relative;
+          right: -10%;
+          top: 7px; }
+
+@media only screen and (orientation:Portrait) {
+	#page37 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page37 .ui-content {
+		display:block; } }
+
+#page38 {
+	background:url("../images/day3/61_background.jpg") no-repeat;
+	background-size:100% auto; }
+	#page38 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page38 .pageTitle {
+			margin:10% 0 0 0;
+			width:100%;
+			text-align:center;
+			font-size:14pt;
+			position:absolute;
+			color:#FFF; }
+		#page38 .textwrap {
+			margin-top:15%;
+			padding:0; }
+			#page38 .textwrap:before, #page38 .textwrap:after {
+				content:"";
+				display:table; }
+			#page38 .textwrap:after {
+				clear:both; }
+			#page38 .textwrap ul {
+				width:50%;
+				overflow:hidden;
+				margin:4% auto;
+			}
+			#page38 .textwrap li {
+				float:left;
+				width:45%;
+				text-align:center;
+			}
+			#page38 .textwrap li:nth-child(even) {
+				margin:5% 0 5% 5%;
+			}
+			#page38 .textwrap li:nth-child(odd) {
+				margin:5% 5% 5% 0;
+			}
+			#page38 .textwrap li span {
+				background:#DCDCDC;
+				font-size:1.25em;
+				color:#000;
+				width:100%;
+				display:inline-block;
+				padding:3% 0;
+			}
+
+@media only screen and (orientation:Portrait) {
+	#page38 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page38 .ui-content {
+		display:block; } }
+
+#page39 {
+	background:url("../images/day3/61_background.jpg") no-repeat;
+	background-size:100% auto; }
+	#page39 .page_bg {
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		height:100%;
+		position:absolute;
+		top:0;
+		width:100%;
+	}
+	#page39 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		position:absolute;
+	}
+		#page39 .pageTitle {
+			margin:4% 0 0 20%;
+			width:60%;
+			border-bottom:2px solid #5D6069;
+			text-align:center;
+			font-size:1.75em;
+			position:absolute;
+			color:#FFF;
+			padding-bottom:1%;
+		}
+		#page39 .accessibility, #page39 .xAxis {
+			display: none;
+		}
+		#page39 svg {
+			margin:14% 0 0 15.5%;
+			width:70%;
+			height:70%;
+		}
+		#page39 .foreground {
+			-ms-transform:rotate(-18deg);
+			-webkit-transform:rotate(-18deg);
+			transform:rotate(-18deg);
+		}
+		#page39 .page39ChartNum {
+			position: absolute;
+			color:#0f76c0;
+			font-weight: bold;
+		}
+		#page39 #page39ChartNum1 {
+			top:28%;
+			left:48%;
+		}
+		#page39 #page39ChartNum2 {
+			top:53%;
+			left:66%;
+		}
+		#page39 #page39ChartNum3 {
+			top:89%;
+			left:59%;
+		}
+		#page39 #page39ChartNum4 {
+			top:89%;
+			left:37%;
+		}
+		#page39 #page39ChartNum5 {
+			top:53%;
+			left:30%;
+		}
+
+@media only screen and (orientation:Portrait) {
+	#page39 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page39 .ui-content {
+		display:block; } }
+
+#page40 {
+	background:#000; }
+	#page40 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page40 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			position:absolute;
+			top:40%;
+			left:10%;
+			overflow:hidden; }
+		#page40 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:23%;
+			top:37%; }
+			#page40 .textwrap:before, #page40 .textwrap:after {
+				content:"";
+				display:table; }
+			#page40 .textwrap:after {
+				clear:both; }
+			#page40 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page40 .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page40 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page40 .ui-content {
+		display:block; } }
+
+#page41 {
+	background:url("../images/day3/65_photo.jpg") no-repeat;
+	background-size:auto 100%;
+	background-position:50% 50%; }
+	#page41 .page_bg {
+		background:url("../images/day3/65_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		background-position:50% 50%;
+		height:100%; }
+	#page41 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page41 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		width:100%; }
+		#page41 .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page41 .textwrap {
+			max-width:33%;
+			float:right;
+			margin-top:45px;
+			padding:0; }
+			#page41 .textwrap:before, #page41 .textwrap:after {
+				content:"";
+				display:table; }
+			#page41 .textwrap:after {
+				clear:both; }
+			#page41 .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page41 .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+
+@media only screen and (orientation:Portrait) {
+	#page41 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page41 .ui-content {
+		display:block; } }
+
+#page42 {
+	overflow:hidden; }
+	#page42 .page_bg {
+		background:url("../images/day3/67_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		height:100%; }
+	#page42 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page42 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		position:absolute;
+		top:0; }
+		#page42 .textwrap {
+			margin-top:25px;
+			padding:0;
+			width:28%;
+			position:absolute;
+			top:0;
+			right:0; }
+			#page42 .textwrap:before, #page42 .textwrap:after {
+				content:"";
+				display:table; }
+			#page42 .textwrap:after {
+				clear:both; }
+			#page42 .ui-content .textwrap .text_img2 {
+        width: 59%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        top: 11px; }
+      #page42 .ui-content .textwrap .text_tip {
+        width: 20px;
+        position: relative;
+        top: -3px;
+        left: 60px;
+        transform: rotate(90deg); }
+      #page42 .ui-content .textwrap .text {
+        overflow: hidden; }
+
+@media only screen and (orientation:Portrait) {
+	#page42 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page42 .ui-content {
+		display:block; } }
+
+#page43 {
+	background:url("../images/day3/42_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page43 .ui-content {
+		z-index:2;
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page43 .img_twinkle {
+			animation:twinkle 1.5s infinite;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0; }
+		#page43 .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page43 .textwrap:before, #page43 .textwrap:after {
+				content:"";
+				display:table; }
+			#page43 .textwrap:after {
+				clear:both; }
+			#page43 .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				left:-3px;
+				top:80px; }
+		#page43 .ui-content .textwrap .text {
+			overflow:hidden; }
+		#page43 .ui-content .textwrap .text .text_img img {
+			margin-top:0;
+		}
+
+@media only screen and (orientation:Portrait) {
+	#page43 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page43 .ui-content {
+		display:block; } }
+
+#page44 {
+	background:url("../images/day3/70_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page44 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:100%;
+		height:100%;
+		width:100%; }
+		#page44 .textwrap {
+			margin-top:45px;
+			padding:0;
+			width:31%;
+			right:3%;
+			position:absolute; }
+			#page44 .textwrap:before, #page44 .textwrap:after {
+				content:"";
+				display:table; }
+			#page44 .textwrap:after {
+				clear:both; }
+			#page44 .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:70%;
+				position:relative;
+				top:2px; }
+				#page44 .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+		#page44 .imgwrap {
+			max-width:22%;
+			bottom:0;
+			right:12%;
+			position:absolute; }
+			#page44 .imgwrap img {
+				position:relative; }
+
+@media only screen and (orientation:Portrait) {
+	#page44 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page44 .ui-content {
+		display:block; } }
+
+#page45 {
+	overflow:hidden;
+	background:url("../images/day3/73_i30.jpg") no-repeat;
+	background-size:100% auto;
+}
+	#page45 a.next_finger {
+		position:absolute;
+		top:29%;
+		left:62%;
+		width:25%; }
+	#page45 .page_bg {
+		background:url("../images/day3/73_I30.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		height:100%; }
+	#page45 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		overflow:hidden;
+	}
+		#page45 .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page45 .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:106px;
+			left:77px;
+			z-index:10; }
+		#page45 .img_twinkle {
+			animation:twinkle 1.5s infinite;
+			width:100%;
+			position:absolute;
+			left:0;
+			top:0; }
+		#page45 .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page45 .textwrap:before, #page45 .textwrap:after {
+				content:"";
+				display:table; }
+			#page45 .textwrap:after {
+				clear:both; }
+			#page45 .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:64px; }
+			#page45 .textwrap .text {
+				margin-left:19px; }
+
+		#page45 .imgArrow {
+			display:block;
+			position:absolute;
+			width:4%;
+		}
+		#page45 #imgArrow1 {
+			top:25%;
+			left:65%;
+		}
+		#page45 #imgArrow2 {
+			top:23%;
+			left:75%;
+			-ms-transform:rotate(-10deg);
+			-webkit-transform:rotate(-10deg);
+			transform:rotate(-10deg);
+		}
+
+@media only screen and (orientation:Portrait) {
+	#page45 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page45 .ui-content {
+		display:block; } }
+
+#page46 {
+	overflow:hidden; }
+	#page46 .page_bg {
+		background:url("../images/day3/76_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page46 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page46 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		position:absolute;
+		top:0; }
+		#page46 .textwrap {
+			margin-top:45px;
+			padding:0;
+			width:28%;
+			position:absolute;
+			top:0;
+			right:0; }
+			#page46 .textwrap:before, #page46 .textwrap:after {
+				content:"";
+				display:table; }
+			#page46 .textwrap:after {
+				clear:both; }
+			#page46 .textwrap .text_img2 {
+				width:59%;
+				margin:0 auto;
+				overflow:hidden; }
+			#page46 .textwrap .text_tip {
+				width:20px;
+				position:absolute;
+				top:87px;
+				left:60px;
+				transform:rotate(90deg); }
+			#page46 .textwrap .text {
+				overflow:hidden; }
+
+@media only screen and (orientation:Portrait) {
+	#page46 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page46 .ui-content {
+		display:block; } }
+
+#page47 {
+	background:url("../images/day3/77_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page47 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:100%;
+		height:100%;
+		width:100%; }
+		#page47 .textwrap {
+			margin-top:45px;
+			padding:0;
+			width:31%;
+			right:3%;
+			position:absolute; }
+			#page47 .textwrap:before, #page47 .textwrap:after {
+				content:"";
+				display:table; }
+			#page47 .textwrap:after {
+				clear:both; }
+			#page47 .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:70%;
+				position:relative;
+				top:2px; }
+				#page47 .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+		#page47 .imgwrap {
+			max-width:22%;
+			bottom:0;
+			right:18%;
+			position:absolute; }
+			#page47 .imgwrap img {
+				position:relative; }
+	#page47 a.bye_btn {
+	    background: #012C5F;
+		display: inline-block;
+		color: #FFF;
+		padding: 0.5% 4%;
+		border-radius: 5px;
+		position: absolute;
+		bottom: 5%;
+		right: 3%;
+		font-weight: normal;
+		font-size: 1.25em;
+	}
+
+@media only screen and (orientation:Portrait) {
+	#page47 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page47 .ui-content {
+		display:block; } }
+
+#page48 {
+	background:url("../images/day3/78_bg.jpg") no-repeat;
+	background-size:100% auto; }
+	#page48 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		overflow-x:initial; }
+		#page48 .pageTitle {
+			margin:8% 0 0 0;
+			width:100%;
+			text-align:center;
+			font-size:14pt;
+			position:absolute;
+			color:#FFF; }
+		#page48 .imgwrap {
+			width:70%;
+			top:27%;
+			left:15%;
+			position:absolute; }
+		#page48 .imgwrap > div {
+			width:48%;
+			float:left;
+			border:1px solid #DADADA;
+			background:#5A5A5A;
+			overflow: hidden;
+			height:190px; }
+		#page48 .imgwrap .imgphoto {
+			background:#5A5A5A url(../images/day3/icon_photo_78.png) no-repeat center;
+			background-size:30%;
+			width:48%;
+			float:left; }
+		#page48 .imgwrap .imginput {
+			width:48%;
+			float:right; }
+		#page48 .imgwrap .imginput textarea {
+			width:100%;
+			height:100% !important;
+			margin:0; }
+			#page48 .imgwrap img {
+				position:relative; }
+		#page48 .textwrap {
+			margin-top:15%;
+			padding:0; }
+			#page48 .textwrap:before, #page48 .textwrap:after {
+				content:"";
+				display:table; }
+			#page48 .textwrap:after {
+				clear:both; }
+			#page48 .textwrap ul {
+				width:50%;
+				overflow:hidden;
+				margin:4% auto;
+			}
+			#page48 .textwrap li {
+				float:left;
+				width:45%;
+				text-align:center;
+			}
+			#page48 .textwrap li:nth-child(even) {
+				margin:5% 0 5% 5%;
+			}
+			#page48 .textwrap li:nth-child(odd) {
+				margin:5% 5% 5% 0;
+			}
+			#page48 .textwrap li span {
+				background:#DCDCDC;
+				font-size:1.25em;
+				color:#000;
+				width:100%;
+				display:inline-block;
+				padding:3% 0;
+			}
+	#page48 a.bye_btn {
+	    background: #012C5F;
+		display: inline-block;
+		color: #FFF;
+		padding: 0.5% 4%;
+		border-radius: 5px;
+		position: absolute;
+		bottom: 5%;
+		right: 3%;
+		font-weight: normal;
+		font-size: 1.25em;
+	}
+@media only screen and (orientation:Portrait) {
+	#page48 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page48 .ui-content {
+		display:block; } }
+
+#page49 {
+	overflow:hidden;
+	background:url("../images/day3/79_interior_01.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%;
+	height:100%; }
+	#page49 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page49 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page49 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page49 .ui-content .textwrap:before, #page49 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page49 .ui-content .textwrap:after {
+				clear:both; }
+			#page49 .ui-content .textwrap .text {
+				overflow:hidden;
+				padding:10px 15px; }
+
+@media only screen and (orientation:Portrait) {
+	#page49 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page49 .ui-content {
+		display:block; } }
+
+#page50 {
+	background-image:url("../images/day3/78_image.jpg");
+	background-repeat:no-repeat;
+	background-size:auto 100%; }
+	#page50 .ui-content {
+		margin:0;
+		padding:0;
+		height:100%; }
+		#page50 .ui-content .textwrap {
+			text-align:center; }
+			#page50 .ui-content .textwrap:before, #page50 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page50 .ui-content .textwrap:after {
+				clear:both; }
+			#page50 .ui-content .textwrap .text_i {
+				width:74%; }
+		#page50 .ui-content .imgwrap {
+			margin-top:3%;
+			color:#ffffff;
+			font-weight:bold; }
+			#page50 .ui-content .imgwrap ul li {
+				height:33px; }
+				#page50 .ui-content .imgwrap ul li .g_title {
+					display:inline-block;
+					width:29%;
+					text-align:right;
+					margin-right:1%;
+					vertical-align:middle; }
+				#page50 .ui-content .imgwrap ul li .g_num {
+					display:inline-block;
+					height:100%;
+					width:0%;
+					vertical-align:middle;
+					text-align:right;
+					padding:5px 10px;
+					box-sizing:border-box; }
+				#page50 .ui-content .imgwrap ul li .g_num#red {
+					background:linear-gradient(to left, #cf1920, rgba(207, 25, 32, 0.3)); }
+				#page50 .ui-content .imgwrap ul li .g_num#black {
+					background:linear-gradient(to left, #242424, #242424); }
+				#page50 .ui-content .imgwrap ul li .g_num#gray {
+					background:linear-gradient(to left, #b6b6b6, rgba(182, 182, 182, 0.3)); }
+				#page50 .ui-content .imgwrap ul li .g_num#ind_blue {
+					background:linear-gradient(to left, #233551, rgba(35, 53, 81, 0.3)); }
+				#page50 .ui-content .imgwrap ul li .g_num#burgundy {
+					background:linear-gradient(to left, #581d1d, rgba(88, 29, 29, 0.3)); }
+
+@media only screen and (orientation:Portrait) {
+	#page50 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page50 .ui-content {
+		display:block; } }
+
+#page51 {
+	background:url("../images/day3/82_photo.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; }
+	#page51 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		bottom:0;
+		right:0;
+		overflow:hidden; }
+		#page51 .ui-content .textwrap {
+			position:relative;
+			top:20px; }
+			#page51 .ui-content .textwrap:before, #page51 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page51 .ui-content .textwrap:after {
+				clear:both; }
+			#page51 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page51 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page51 .ui-content .textwrap .text {
+				overflow:hidden; }
+		#page51 .ui-content .imgwrap {
+			max-width:57%; }
+			#page51 .ui-content .imgwrap img {
+				position:relative;
+				right:-20%;
+				top:27px; }
+
+@media only screen and (orientation:Portrait) {
+	#page51 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page51 .ui-content {
+		display:block; } }
+
+#page52 {
+	background:url("../images/day3/83_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page52 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page52 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page52 .ui-content .textwrap:before, #page52 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page52 .ui-content .textwrap:after {
+				clear:both; }
+			#page52 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px;
+				transform:rotate(90deg);
+				right:69%;
+				top:-33px; }
+				#page52 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page52 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page52 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page52 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page52 .ui-content {
+		display:block; } }
+
+#page53 {
+	background:url("../images/day3/84_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page53 .page_bg {
+		background:url("../images/day3/84_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		height:99%; }
+	#page53 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page53 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		width:100%; }
+		#page53 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page53 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0;
+			max-width:33%;
+			float:right; }
+			#page53 .ui-content .textwrap:before, #page53 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page53 .ui-content .textwrap:after {
+				clear:both; }
+			#page53 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page53 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+
+@media only screen and (orientation:Portrait) {
+	#page53 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page53 .ui-content {
+		display:block; } }
+
+#page54 {
+	overflow:hidden; }
+	#page54 .page_bg {
+		background:url("../images/day3/87_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page54 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page54 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page54 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page54 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page54 .ui-content .textwrap:before, #page54 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page54 .ui-content .textwrap:after {
+				clear:both; }
+			#page54 .ui-content .textwrap .text {
+				overflow:hidden; }
+
+@media only screen and (orientation:Portrait) {
+	#page54 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page54 .ui-content {
+		display:block; } }
+
+#page55 {
+	background:url("../images/day3/91_photo.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; }
+	#page55 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		bottom:0;
+		right:0;
+		overflow:hidden; }
+		#page55 .ui-content .textwrap:before, #page55 .ui-content .textwrap:after {
+			content:"";
+			display:table; }
+		#page55 .ui-content .textwrap:after {
+			clear:both; }
+		#page55 .ui-content .textwrap .text_tip {
+			max-width:20px;
+			margin-left:10%;
+			float:right;
+			margin-right:30%;
+			position:relative;
+			top:1px;
+			top:2px; }
+			#page55 .ui-content .textwrap .text_tip img {
+				-ms-transform:rotate(-90deg);
+				/* IE 9 */
+				-webkit-transform:rotate(-90deg);
+				/* Chrome, Safari, Opera */
+				transform:rotate(-90deg); }
+		#page55 .ui-content .textwrap .text {
+			overflow:hidden; }
+		#page55 .ui-content .imgwrap {
+			max-width:64%; }
+			#page55 .ui-content .imgwrap img {
+				position:relative;
+				right:-10%;
+				top:7px; }
+
+@media only screen and (orientation:Portrait) {
+	#page55 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page55 .ui-content {
+		display:block; } }
+
+#page56 {
+	background:#000; }
+	#page56 .ui-content {
+		margin:0;
+		padding:0;
+		height:100%; }
+		#page56 .ui-content:before, #page56 .ui-content:after {
+			content:"";
+			display:table; }
+		#page56 .ui-content:after {
+			clear:both; }
+		#page56 .ui-content .imgwrap {
+			height:85%;
+			width:60%;
+			overflow:hidden;
+			float:left;
+			margin-left:25px; }
+			#page56 .ui-content .imgwrap img {
+				position:relative;
+				bottom:87%;
+				right:33px; }
+		#page56 .ui-content .textwrap {
+			margin:0;
+			padding:0;
+			width:36%;
+			height:85%;
+			float:left; }
+			#page56 .ui-content .textwrap .text {
+				background:transparent;
+				margin-top:25px;
+				border:none; }
+				#page56 .ui-content .textwrap .text #textbox1 {
+					color:#ffffff; }
+					#page56 .ui-content .textwrap .text #textbox1 .img_wrap {
+						width:80%;
+						margin-top:15%; }
+						#page56 .ui-content .textwrap .text #textbox1 .img_wrap img:first-child {
+							max-width:18px; }
+						#page56 .ui-content .textwrap .text #textbox1 .img_wrap img:nth-child(2) {
+							margin-left:1px; }
+						#page56 .ui-content .textwrap .text #textbox1 .img_wrap p {
+							font-size:12px;
+							color:#ffffff; }
+						#page56 .ui-content .textwrap .text #textbox1 .img_wrap .p1 {
+							float:left; }
+						#page56 .ui-content .textwrap .text #textbox1 .img_wrap .p2 {
+							float:right; }
+					#page56 .ui-content .textwrap .text #textbox1 ul {
+						margin-top:25%;
+						position:relative; }
+						#page56 .ui-content .textwrap .text #textbox1 ul li:before {
+							content:'';
+							display:block;
+							width:2px;
+							height:15px;
+							background:#ffffff;
+							position:absolute;
+							left:0;
+							margin-top:3px; }
+			#page56 .ui-content .textwrap #go_page8 {
+				position:absolute;
+				right:15px;
+				bottom:15px; }
+
+@media only screen and (orientation:Portrait) {
+	#page56 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page56.ui-content {
+		display:block; } }
+
+#page57 {
+	background:url("../images/day2/03_stelviopass_map_3.jpg") no-repeat;
+	background-size:100% auto; }
+	#page57 .page_bg {
+		animation:twinkle 1.5s infinite; }
+	#page57 .next_finger {
+		top:0;
+		left:0;
+		width:80%;
+		height:80%; }
+		#page57 .next_finger img {
+			left:calc(78% - 165px);
+			top:41%; }
+	#page57 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		bottom:0;
+		right:0;
+		overflow:hidden; }
+		#page57 .ui-content .textwrap:before, #page57 .ui-content .textwrap:after {
+			content:"";
+			display:table; }
+		#page57 .ui-content .textwrap:after {
+			clear:both; }
+		#page57 .ui-content .textwrap .text_tip {
+			max-width:20px;
+			margin-left:10%;
+			float:right;
+			margin-right:30%;
+			position:relative;
+			top:1px; }
+			#page57 .ui-content .textwrap .text_tip img {
+				-ms-transform:rotate(-90deg);
+				/* IE 9 */
+				-webkit-transform:rotate(-90deg);
+				/* Chrome, Safari, Opera */
+				transform:rotate(-90deg); }
+		#page57 .ui-content .textwrap .text {
+			overflow:hidden; }
+			#page57 .ui-content .textwrap .text #go_page7 {
+				margin-top:20px; }
+		#page57 .ui-content .imgwrap {
+			max-width:64%; }
+			#page57 .ui-content .imgwrap img {
+				position:relative;
+				right:-10%;
+				top:5px; }
+
+@media only screen and (orientation:Portrait) {
+	#page57 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page57 .ui-content {
+		display:block; } }
+
+#page58 {
+	background:url("../images/day2/04_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page58 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page58 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page58 .ui-content .textwrap:before, #page58 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page58 .ui-content .textwrap:after {
+				clear:both; }
+			#page58 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page58 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page58 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page58 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page58 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page58 .ui-content {
+		display:block; } }
+
+#page59 {
+	overflow:hidden; }
+	#page59 .page_bg {
+		background:url("../images/day2/05_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page59 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page59 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page59 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page59 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page59 .ui-content .textwrap:before, #page59 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page59 .ui-content .textwrap:after {
+				clear:both; }
+			#page59 .ui-content .textwrap .text {
+				overflow:hidden;
+				padding-top:39%; }
+				#page59 .ui-content .textwrap .text .text_img2 {
+					height:24%;
+					position:absolute;
+					top:5%;
+					right:25%;
+					overflow:hidden;
+					width:49%;
+					border-bottom:1px solid #ffffff; }
+					#page59 .ui-content .textwrap .text .text_img2 img {
+						width:131%;
+						position:relative;
+						right:21%; }
+
+@media only screen and (orientation:Portrait) {
+	#page59 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page59 .ui-content {
+		display:block; } }
+
+#page00 {
+	background:url("../images/day2/07_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page00 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page00 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page00 .ui-content .textwrap:before, #page00 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page00 .ui-content .textwrap:after {
+				clear:both; }
+			#page00 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page00 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page00 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page00 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page00 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page00 .ui-content {
+		display:block; } }
+
+#page01 {
+	background:#000;
+	overflow:hidden; }
+	#page01 .next_finger {
+		position:absolute;
+		top:calc((100% - 116px)/ 2);
+		left:17%; }
+	#page01 .ui-content {
+		margin:0;
+		padding:0;
+		height:100%;
+		overflow-x:initial; }
+		#page01 .ui-content .imgwrap {
+			text-align:center;
+			margin-top:45px; }
+			#page01 .ui-content .imgwrap:before, #page01 .ui-content .imgwrap:after {
+				content:"";
+				display:table; }
+			#page01 .ui-content .imgwrap:after {
+				clear:both; }
+			#page01 .ui-content .imgwrap > div {
+				display:inline-block;
+				width:30%;
+				margin:0 5%; }
+				#page01 .ui-content .imgwrap > div p {
+					font-family:'HyundaiSansHead-Medium', sans-serif;
+					font-size:2.2em;
+					line-height:0.8;
+					margin-bottom:20px; }
+					#page01 .ui-content .imgwrap > div p span {
+						font-size:16px; }
+				#page01 .ui-content .imgwrap > div img.back, #page01 .ui-content .imgwrap > div img.front {
+					display:none; }
+				#page01 .ui-content .imgwrap > div img {
+					width:85%;
+					margin:0 auto; }
+			#page01 .ui-content .imgwrap .imgL .engine {
+				width:100%;
+				height:200px;
+				background:url("../images/day2/08_engine_left.png") no-repeat;
+				background-size:auto 100%;
+				background-position:50% 50%; }
+			#page01 .ui-content .imgwrap .imgR .engine {
+				width:100%;
+				height:200px;
+				background:url("../images/day2/08_engine_right.png") no-repeat;
+				background-size:auto 100%;
+				background-position:50% 50%; }
+		#page01 .ui-content .graphwrap {
+			width:100%;
+			text-align:center;
+			margin-top:45px; }
+			#page01 .ui-content .graphwrap .graphL, #page01 .ui-content .graphwrap .graphR {
+				display:inline-block;
+				width:30%;
+				margin:0 5%;
+				vertical-align:bottom; }
+				#page01 .ui-content .graphwrap .graphL ul li.graph1, #page01 .ui-content .graphwrap .graphL ul li.graph2, #page01 .ui-content .graphwrap .graphR ul li.graph1, #page01 .ui-content .graphwrap .graphR ul li.graph2 {
+					position:relative;
+					top:33px;
+					height:0;
+					width:40px;
+					background:red;
+					padding:10px;
+					border-radius:5px;
+					vertical-align:bottom;
+					display:inline-block;
+					background:linear-gradient(#ff6600, rgba(255, 102, 0, 0.5)); }
+					#page01 .ui-content .graphwrap .graphL ul li.graph1 div, #page01 .ui-content .graphwrap .graphL ul li.graph2 div, #page01 .ui-content .graphwrap .graphR ul li.graph1 div, #page01 .ui-content .graphwrap .graphR ul li.graph2 div {
+						color:#ffffff; }
+						#page01 .ui-content .graphwrap .graphL ul li.graph1 div span, #page01 .ui-content .graphwrap .graphL ul li.graph2 div span, #page01 .ui-content .graphwrap .graphR ul li.graph1 div span, #page01 .ui-content .graphwrap .graphR ul li.graph2 div span {
+							font-weight:bold;
+							font-size:1.4em; }
+				#page01 .ui-content .graphwrap .graphL ul li.graph2, #page01 .ui-content .graphwrap .graphR ul li.graph2 {
+					height:0px;
+					background:linear-gradient(#00aeef, rgba(0, 174, 239, 0.5)); }
+				#page01 .ui-content .graphwrap .graphL ul li.bottom_bg, #page01 .ui-content .graphwrap .graphR ul li.bottom_bg {
+					display:block; }
+			#page01 .ui-content .graphwrap .graphL {
+				position:absolute;
+				bottom:5%;
+				left:9%;
+				margin-bottom:3%; }
+			#page01 .ui-content .graphwrap .graphR {
+				position:absolute;
+				bottom:5%;
+				right:9%;
+				margin-bottom:3%; }
+				#page01 .ui-content .graphwrap .graphR ul li.graph1 {
+					height:0px;
+					background:linear-gradient(#ff6600, rgba(255, 102, 0, 0.5)); }
+				#page01 .ui-content .graphwrap .graphR ul li.graph2 {
+					height:0px;
+					background:linear-gradient(#00aeef, rgba(0, 174, 239, 0.5)); }
+
+@media only screen and (orientation:Portrait) {
+	#page01 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page01 .ui-content {
+		display:block; } }
+
+#page02 {
+	background:#000; }
+	#page02 .page_bg {
+		width:80%;
+		margin:0 auto; }
+	#page02 .ui-content {
+		position:absolute;
+		bottom:0;
+		overflow:hidden; }
+		#page02 .ui-content .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			display:inline-block;
+			margin-left:25px;
+			margin-bottom:-5px;
+			overflow:hidden; }
+		#page02 .ui-content .textwrap {
+			display:inline-block;
+			max-width:63%;
+			margin-left:22px;
+			margin-bottom:30px; }
+			#page02 .ui-content .textwrap:before, #page02 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page02 .ui-content .textwrap:after {
+				clear:both; }
+			#page02 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				bottom:38px; }
+			#page02 .ui-content .textwrap .text {
+				overflow:hidden;
+				margin-left:19px; }
+				#page02 .ui-content .textwrap .text:after {
+					content:'';
+					display:block;
+					/* or whatever else than inline */
+					clear:both; }
+
+@media only screen and (orientation:Portrait) {
+	#page02 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page02 .ui-content {
+		display:block; } }
+
+#page03 {
+	background:url("../images/day2/12_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page03 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page03 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page03 .ui-content .textwrap:before, #page03 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page03 .ui-content .textwrap:after {
+				clear:both; }
+			#page03 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page03 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page03 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page03 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page03 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page03 .ui-content {
+		display:block; } }
+
+#page04 {
+	background:url("../images/day2//13_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page04 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page04 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page04 .ui-content .textwrap:before, #page04 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page04 .ui-content .textwrap:after {
+				clear:both; }
+			#page04 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page04 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page04 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page04 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page04 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page04 .ui-content {
+		display:block; } }
+
+#page05 {
+	background:url("../images/ezgif.com-video-to-gif.gif") no-repeat;
+	background-size:100% auto; }
+	#page05 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page05 .ui-content .imgwrap {
+			width:80px;
+			height:80px;
+			border-radius:50px;
+			margin-left:25px;
+			position:absolute;
+			bottom:25px;
+			overflow:hidden; }
+		#page05 .ui-content .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:106px;
+			left:77px; }
+		#page05 .ui-content .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page05 .ui-content .textwrap:before, #page05 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page05 .ui-content .textwrap:after {
+				clear:both; }
+			#page05 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				bottom:8px; }
+			#page05 .ui-content .textwrap .text {
+				margin-left:19px; }
+
+@media only screen and (orientation:Portrait) {
+	#page05 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page05 .ui-content {
+		display:block; } }
+
+#page06 {
+	background:#000; }
+	#page06 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page06 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page06 .ui-content .textwrap:before, #page06 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page06 .ui-content .textwrap:after {
+				clear:both; }
+			#page06 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page06 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page06 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page06 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page06 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page06 .ui-content {
+		display:block; } }
+
+#page07 {
+	background:#000; }
+	#page07 .page_bg {
+		width:80%;
+		margin:0 auto; }
+	#page07 .ui-content {
+		position:absolute;
+		bottom:0;
+		overflow:hidden; }
+		#page07 .ui-content .imgwrap {
+			width:14%;
+			display:inline-block;
+			margin-left:3%; }
+			#page07 .ui-content .imgwrap img {
+				width:100%; }
+		#page07 .ui-content .textwrap {
+			display:inline-block;
+			max-width:55%;
+			margin-bottom:20px; }
+			#page07 .ui-content .textwrap:before, #page07 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page07 .ui-content .textwrap:after {
+				clear:both; }
+			#page07 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				position:relative;
+				top:75px;
+				left:1px; }
+			#page07 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page07 .ui-content .textwrap .text:after {
+					content:'';
+					display:block;
+					/* or whatever else than inline */
+					clear:both; }
+
+@media only screen and (orientation:Portrait) {
+	#page07 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page07 .ui-content {
+		display:block; } }
+
+#page08 {
+	background:url("../images/day2/18_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page08 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page08 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page08 .ui-content .textwrap:before, #page08 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page08 .ui-content .textwrap:after {
+				clear:both; }
+			#page08 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page08 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page08 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page08 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page08 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page08 .ui-content {
+		display:block; } }
+
+#page09 {
+	background:url("../images/day2/19_photo.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; }
+	#page09 .page_bg {
+		background:url("../images/day2/19_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		height:100%;
+		background-position:50% 50%; }
+	#page09 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page09 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		width:100%; }
+		#page09 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page09 .ui-content .textwrap {
+			max-width:33%;
+			float:right;
+			margin-top:45px;
+			padding:0; }
+			#page09 .ui-content .textwrap:before, #page09 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page09 .ui-content .textwrap:after {
+				clear:both; }
+			#page09 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page09 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+
+@media only screen and (orientation:Portrait) {
+	#page09 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page09 .ui-content {
+		display:block; } }
+
+#page70 {
+	overflow:hidden; }
+	#page70 .page_bg {
+		background:url("../images/day2/21_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page70 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page70 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page70 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page70 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page70 .ui-content .textwrap:before, #page70 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page70 .ui-content .textwrap:after {
+				clear:both; }
+			#page70 .ui-content .textwrap .text {
+				overflow:hidden;
+				padding-top:39%; }
+				#page70 .ui-content .textwrap .text .text_img2 {
+					height:24%;
+					position:absolute;
+					top:5%;
+					right:25%;
+					overflow:hidden;
+					width:49%;
+					border-bottom:1px solid #ffffff; }
+					#page70 .ui-content .textwrap .text .text_img2 img {
+						width:131%;
+						position:relative;
+						right:21%; }
+
+@media only screen and (orientation:Portrait) {
+	#page70 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page70 .ui-content {
+		display:block; } }
+
+#page71 {
+	background:url("../images/day2/24_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page71 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page71 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page71 .ui-content .textwrap:before, #page71 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page71 .ui-content .textwrap:after {
+				clear:both; }
+			#page71 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page71 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page71 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page71 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page71 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page71 .ui-content {
+		display:block; } }
+
+#page72 {
+	background:url("../images/day2/25_photo.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; }
+	#page72 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		bottom:0;
+		right:0;
+		overflow:hidden; }
+		#page72 .ui-content .main_wrap {
+			max-width:50%;
+			float:right; }
+			#page72 .ui-content .main_wrap .textwrap {
+				max-width:188px;
+				float:right; }
+				#page72 .ui-content .main_wrap .textwrap:before, #page72 .ui-content .main_wrap .textwrap:after {
+					content:"";
+					display:table; }
+				#page72 .ui-content .main_wrap .textwrap:after {
+					clear:both; }
+				#page72 .ui-content .main_wrap .textwrap .text_tip {
+					max-width:20px;
+					margin-left:10%;
+					float:right;
+					margin-right:30%;
+					position:relative;
+					top:1px; }
+					#page72 .ui-content .main_wrap .textwrap .text_tip img {
+						-ms-transform:rotate(-90deg);
+						/* IE 9 */
+						-webkit-transform:rotate(-90deg);
+						/* Chrome, Safari, Opera */
+						transform:rotate(-90deg); }
+				#page72 .ui-content .main_wrap .textwrap .text {
+					overflow:hidden; }
+			#page72 .ui-content .main_wrap .imgwrap {
+				max-width:70%;
+				float:right;
+				margin-right:25%; }
+				#page72 .ui-content .main_wrap .imgwrap img {
+					position:relative;
+					right:-10%;
+					top:7px; }
+
+@media only screen and (orientation:Portrait) {
+	#page72 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page72 .ui-content {
+		display:block; } }
+
+#page73 {
+	background:url("../images/day2/26_Zürich_map_1.jpg") no-repeat;
+	background-size:100% auto; }
+	#page73 .page_bg {
+		animation:twinkle 1.5s infinite; }
+	#page73 .next_finger {
+		top:0;
+		left:0;
+		width:80%;
+		height:80%; }
+		#page73 .next_finger img {
+			left:calc(78% - 183px);
+			top:41%; }
+	#page73 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		position:absolute;
+		bottom:0;
+		right:0;
+		overflow:hidden; }
+		#page73 .ui-content .textwrap:before, #page73 .ui-content .textwrap:after {
+			content:"";
+			display:table; }
+		#page73 .ui-content .textwrap:after {
+			clear:both; }
+		#page73 .ui-content .textwrap .text_tip {
+			max-width:20px;
+			margin-left:10%;
+			float:right;
+			margin-right:30%;
+			position:relative;
+			top:1px; }
+			#page73 .ui-content .textwrap .text_tip img {
+				-ms-transform:rotate(-90deg);
+				/* IE 9 */
+				-webkit-transform:rotate(-90deg);
+				/* Chrome, Safari, Opera */
+				transform:rotate(-90deg); }
+		#page73 .ui-content .textwrap .text {
+			overflow:hidden; }
+			#page73 .ui-content .textwrap .text #go_page7 {
+				margin-top:20px; }
+		#page73 .ui-content .imgwrap {
+			max-width:64%; }
+			#page73 .ui-content .imgwrap img {
+				position:relative;
+				right:-10%;
+				top:5px; }
+
+@media only screen and (orientation:Portrait) {
+	#page73 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page73 .ui-content {
+		display:block; } }
+
+#page74 {
+	background:url("../images/day2/27_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page74 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page74 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page74 .ui-content .textwrap:before, #page74 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page74 .ui-content .textwrap:after {
+				clear:both; }
+			#page74 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page74 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page74 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page74 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page74 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page74 .ui-content {
+		display:block; } }
+
+#page75 {
+	overflow:hidden; }
+	#page75 .page_bg {
+		background:url("../images/day2/28_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page75 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page75 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page75 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page75 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page75 .ui-content .textwrap:before, #page75 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page75 .ui-content .textwrap:after {
+				clear:both; }
+			#page75 .ui-content .textwrap .text {
+				overflow:hidden;
+				padding-top:39%; }
+				#page75 .ui-content .textwrap .text .text_img2 {
+					height:24%;
+					position:absolute;
+					top:5%;
+					right:25%;
+					overflow:hidden;
+					width:49%;
+					border-bottom:1px solid #ffffff; }
+					#page75 .ui-content .textwrap .text .text_img2 img {
+						width:131%;
+						position:relative;
+						right:21%; }
+
+@media only screen and (orientation:Portrait) {
+	#page75 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page75 .ui-content {
+		display:block; } }
+
+#page76 {
+	background:url("../images/day2/29_photo.jpg") no-repeat;
+	background-size:auto 100%;
+	background-position:50% 50%; }
+	#page76 .page_bg {
+		background:url("../images/day2/29_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:auto 100%;
+		height:100%;
+		background-position:50% 50%; }
+	#page76 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page76 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		width:100%; }
+		#page76 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page76 .ui-content .textwrap {
+			max-width:33%;
+			float:right;
+			margin-top:45px;
+			padding:0; }
+			#page76 .ui-content .textwrap:before, #page76 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page76 .ui-content .textwrap:after {
+				clear:both; }
+			#page76 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page76 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+		#page76 .ui-content .view_text {
+			position:absolute;
+			bottom:0;
+			right:0; }
+			#page76 .ui-content .view_text p {
+				position:relative;
+				top:-3px;
+				right:26px;
+				background:rgba(0, 0, 0, 0.6);
+				padding:10px 40px 10px 15px;
+				border-radius:50px; }
+
+@media only screen and (orientation:Portrait) {
+	#page76 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page76 .ui-content {
+		display:block; } }
+
+#page77 {
+	overflow:hidden; }
+	#page77 .page_bg {
+		background:url("../images/day2/31_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page77 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page77 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page77 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page77 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page77 .ui-content .textwrap:before, #page77 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page77 .ui-content .textwrap:after {
+				clear:both; }
+			#page77 .ui-content .textwrap .text {
+				overflow:hidden;
+				padding-top:39%; }
+				#page77 .ui-content .textwrap .text .text_img2 {
+					height:24%;
+					position:absolute;
+					top:5%;
+					right:25%;
+					overflow:hidden;
+					width:49%;
+					border-bottom:1px solid #ffffff; }
+					#page77 .ui-content .textwrap .text .text_img2 img {
+						width:131%;
+						position:relative;
+						right:21%; }
+
+@media only screen and (orientation:Portrait) {
+	#page77 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page77 .ui-content {
+		display:block; } }
+
+#page78 {
+	background:url("../images/day2/35_photo.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; }
+	#page78 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		bottom:0;
+		right:0;
+		overflow:hidden; }
+		#page78 .ui-content .main_wrap {
+			max-width:50%;
+			float:right; }
+			#page78 .ui-content .main_wrap .textwrap {
+				max-width:188px;
+				float:right; }
+				#page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
+					content:"";
+					display:table; }
+				#page78 .ui-content .main_wrap .textwrap:after {
+					clear:both; }
+				#page78 .ui-content .main_wrap .textwrap .text_tip {
+					max-width:20px;
+					margin-left:10%;
+					float:right;
+					margin-right:30%;
+					position:relative;
+					top:1px; }
+					#page78 .ui-content .main_wrap .textwrap .text_tip img {
+						-ms-transform:rotate(-90deg);
+						/* IE 9 */
+						-webkit-transform:rotate(-90deg);
+						/* Chrome, Safari, Opera */
+						transform:rotate(-90deg); }
+				#page78 .ui-content .main_wrap .textwrap .text {
+					overflow:hidden; }
+			#page78 .ui-content .main_wrap .imgwrap {
+				max-width:70%;
+				float:right;
+				margin-right:25%; }
+				#page78 .ui-content .main_wrap .imgwrap img {
+					position:relative;
+					right:-10%;
+					top:7px; }
+
+@media only screen and (orientation:Portrait) {
+	#page78 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page78 .ui-content {
+		display:block; } }
+
+#page78 {
+	background:url("../images/day2/35_photo.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; }
+	#page78 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		bottom:0;
+		right:0;
+		overflow:hidden; }
+		#page78 .ui-content .main_wrap {
+			max-width:50%;
+			float:right; }
+			#page78 .ui-content .main_wrap .textwrap {
+				max-width:188px;
+				float:right; }
+				#page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
+					content:"";
+					display:table; }
+				#page78 .ui-content .main_wrap .textwrap:after {
+					clear:both; }
+				#page78 .ui-content .main_wrap .textwrap .text_tip {
+					max-width:20px;
+					margin-left:10%;
+					float:right;
+					margin-right:30%;
+					position:relative;
+					top:1px; }
+					#page78 .ui-content .main_wrap .textwrap .text_tip img {
+						-ms-transform:rotate(-90deg);
+						/* IE 9 */
+						-webkit-transform:rotate(-90deg);
+						/* Chrome, Safari, Opera */
+						transform:rotate(-90deg); }
+				#page78 .ui-content .main_wrap .textwrap .text {
+					overflow:hidden; }
+			#page78 .ui-content .main_wrap .imgwrap {
+				max-width:70%;
+				float:right;
+				margin-right:25%; }
+				#page78 .ui-content .main_wrap .imgwrap img {
+					position:relative;
+					right:-10%;
+					top:7px; }
+
+@media only screen and (orientation:Portrait) {
+	#page78 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page78 .ui-content {
+		display:block; } }
+
+#page80 {
+	background:#000; }
+	#page80 .page_bg {
+		width:80%;
+		margin:0 auto; }
+	#page80 .ui-content {
+		position:absolute;
+		bottom:0;
+		overflow:hidden; }
+		#page80 .ui-content .imgwrap {
+			width:14%;
+			display:inline-block;
+			margin-left:3%; }
+			#page80 .ui-content .imgwrap img {
+				width:100%; }
+		#page80 .ui-content .textwrap {
+			display:inline-block;
+			max-width:55%;
+			margin-bottom:20px; }
+			#page80 .ui-content .textwrap:before, #page80 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page80 .ui-content .textwrap:after {
+				clear:both; }
+			#page80 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				position:relative;
+				top:75px;
+				left:1px; }
+			#page80 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page80 .ui-content .textwrap .text:after {
+					content:'';
+					display:block;
+					/* or whatever else than inline */
+					clear:both; }
+
+@media only screen and (orientation:Portrait) {
+	#page80 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page80 .ui-content {
+		display:block; } }
+
+#page81 {
+	background:url("../images/day2/38_photo.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; }
+	#page81 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		bottom:0;
+		right:0;
+		overflow:hidden; }
+		#page81 .ui-content .main_wrap {
+			max-width:50%;
+			float:right; }
+			#page81 .ui-content .main_wrap .textwrap {
+				max-width:188px;
+				float:right; }
+				#page81 .ui-content .main_wrap .textwrap:before, #page81 .ui-content .main_wrap .textwrap:after {
+					content:"";
+					display:table; }
+				#page81 .ui-content .main_wrap .textwrap:after {
+					clear:both; }
+				#page81 .ui-content .main_wrap .textwrap .text_tip {
+					max-width:20px;
+					margin-left:10%;
+					float:right;
+					margin-right:30%;
+					position:relative;
+					top:1px; }
+					#page81 .ui-content .main_wrap .textwrap .text_tip img {
+						-ms-transform:rotate(-90deg);
+						/* IE 9 */
+						-webkit-transform:rotate(-90deg);
+						/* Chrome, Safari, Opera */
+						transform:rotate(-90deg); }
+				#page81 .ui-content .main_wrap .textwrap .text {
+					overflow:hidden; }
+			#page81 .ui-content .main_wrap .imgwrap {
+				max-width:65%;
+				float:right;
+				margin-right:25%; }
+				#page81 .ui-content .main_wrap .imgwrap img {
+					position:relative;
+					right:-10%;
+					top:7px; }
+
+@media only screen and (orientation:Portrait) {
+	#page81 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page81 .ui-content {
+		display:block; } }
+
+#page82 {
+	background:url("../images/day2/39_photo.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; }
+	#page82 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page82 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page82 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page82 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page82 .ui-content .textwrap:before, #page82 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page82 .ui-content .textwrap:after {
+				clear:both; }
+			#page82 .ui-content .textwrap .text {
+				overflow:hidden;
+				padding-top:39%; }
+				#page82 .ui-content .textwrap .text .text_img2 {
+					height:24%;
+					position:absolute;
+					top:5%;
+					right:25%;
+					overflow:hidden;
+					width:49%;
+					border-bottom:1px solid #ffffff; }
+					#page82 .ui-content .textwrap .text .text_img2 img {
+						width:131%;
+						position:relative;
+						right:21%; }
+
+@media only screen and (orientation:Portrait) {
+	#page82 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page82 .ui-content {
+		display:block; } }
+
+#page83 {
+	background:url("../images/day2/40_photo.jpg") no-repeat;
+	background-size:100% auto;
+	background-position:50% 50%; }
+	#page83 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page83 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page83 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page83 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page83 .ui-content .textwrap:before, #page83 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page83 .ui-content .textwrap:after {
+				clear:both; }
+			#page83 .ui-content .textwrap .text {
+				overflow:hidden;
+				padding-top:39%; }
+				#page83 .ui-content .textwrap .text .text_img2 {
+					height:24%;
+					position:absolute;
+					top:5%;
+					right:25%;
+					overflow:hidden;
+					width:49%;
+					border-bottom:1px solid #ffffff; }
+					#page83 .ui-content .textwrap .text .text_img2 img {
+						width:131%;
+						position:relative;
+						right:21%; }
+
+@media only screen and (orientation:Portrait) {
+	#page83 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page83 .ui-content {
+		display:block; } }
+
+#page84 {
+	overflow:hidden;
+	background-color:#000; }
+	#page84 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%; }
+		#page84 .ui-content .imgwrap {
+			margin:0 auto;
+			margin-top:45px; }
+			#page84 .ui-content .imgwrap .text_i {
+				width:100%;
+				text-align:center; }
+				#page84 .ui-content .imgwrap .text_i p {
+					font-family:"HyundaiSansHead-Regular_0"; }
+			#page84 .ui-content .imgwrap .device_wrap {
+				text-align:center; }
+				#page84 .ui-content .imgwrap .device_wrap .deviceL, #page84 .ui-content .imgwrap .device_wrap .deviceR {
+					width:40%;
+					min-height:250px;
+					display:inline-block; }
+
+@media only screen and (orientation:Portrait) {
+	#page84 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page84 .ui-content {
+		display:block; } }
+
+#page85 {
+	background:url("../images/day2/43_image.jpg") no-repeat;
+	background-size:100% auto; }
+	#page85 a.next_finger {
+		position:absolute;
+		top:24%;
+		left:48%;
+		width:25%; }
+	#page85 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page85 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page85 .ui-content .textwrap:before, #page85 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page85 .ui-content .textwrap:after {
+				clear:both; }
+			#page85 .ui-content .textwrap .text_i {
+				width:100%;
+				text-align:center; }
+				#page85 .ui-content .textwrap .text_i p {
+					font-family:"HyundaiSansHead-Regular_0"; }
+
+@media only screen and (orientation:Portrait) {
+	#page85 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page85 .ui-content {
+		display:block; } }
+
+#page86 {
+	background:url("../images/day2/43_image.jpg") no-repeat;
+	background-size:100% auto; }
+	#page86 .page_bg {
+		background:rgba(0, 0, 0, 0.6);
+		width:100%;
+		height:100%; }
+	#page86 .ui-content {
+		position:absolute;
+		bottom:0;
+		overflow:hidden; }
+		#page86 .ui-content .imgwrap {
+			width:14%;
+			display:inline-block;
+			margin-left:3%; }
+			#page86 .ui-content .imgwrap img {
+				width:100%; }
+		#page86 .ui-content .textwrap {
+			display:inline-block;
+			max-width:55%;
+			margin-bottom:20px; }
+			#page86 .ui-content .textwrap:before, #page86 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page86 .ui-content .textwrap:after {
+				clear:both; }
+			#page86 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				position:relative;
+				top:75px;
+				left:1px; }
+			#page86 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page86 .ui-content .textwrap .text:after {
+					content:'';
+					display:block;
+					/* or whatever else than inline */
+					clear:both; }
+
+@media only screen and (orientation:Portrait) {
+	#page86 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page86 .ui-content {
+		display:block; } }
+
+#page87 {
+	background:url("../images/day2/46_image.jpg") no-repeat;
+	background-size:100% auto; }
+	#page87 a.next_finger {
+		position:absolute;
+		top:24%;
+		left:48%;
+		width:25%; }
+	#page87 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page87 .ui-content .textwrap {
+			margin-top:45px; }
+			#page87 .ui-content .textwrap:before, #page87 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page87 .ui-content .textwrap:after {
+				clear:both; }
+			#page87 .ui-content .textwrap .text_i {
+				width:100%;
+				text-align:center; }
+				#page87 .ui-content .textwrap .text_i p {
+					font-family:"HyundaiSansHead-Regular_0"; }
+
+@media only screen and (orientation:Portrait) {
+	#page87 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page87 .ui-content {
+		display:block; } }
+
+#page88 {
+	background:url("../images/day2/46_image.jpg") no-repeat;
+	background-size:100% auto; }
+	#page88 .page_bg {
+		background:rgba(0, 0, 0, 0.6);
+		width:100%;
+		height:100%; }
+	#page88 .ui-content {
+		position:absolute;
+		bottom:0;
+		overflow:hidden; }
+		#page88 .ui-content .imgwrap {
+			width:80px;
+			display:inline-block;
+			margin-left:25px;
+			margin-bottom:-5px; }
+			#page88 .ui-content .imgwrap img {
+				width:100%; }
+		#page88 .ui-content .textwrap {
+			display:inline-block;
+			max-width:55%;
+			margin-bottom:30px; }
+			#page88 .ui-content .textwrap:before, #page88 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page88 .ui-content .textwrap:after {
+				clear:both; }
+			#page88 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				position:relative;
+				top:75px;
+				left:1px; }
+			#page88 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page88 .ui-content .textwrap .text:after {
+					content:'';
+					display:block;
+					/* or whatever else than inline */
+					clear:both; }
+
+@media only screen and (orientation:Portrait) {
+	#page88 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page88 .ui-content {
+		display:block; } }
+
+#page89 {
+	background:url("../images/day2/48_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page89 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page89 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page89 .ui-content .textwrap:before, #page89 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page89 .ui-content .textwrap:after {
+				clear:both; }
+			#page89 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page89 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page89 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page89 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page89 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page89 .ui-content {
+		display:block; } }
+
+#page90 {
+	background:url("../images/day2/49_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page90 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page90 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page90 .ui-content .textwrap:before, #page90 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page90 .ui-content .textwrap:after {
+				clear:both; }
+			#page90 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page90 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+		#page90 .ui-content .imgwrap {
+			max-width:64%; }
+
+@media only screen and (orientation:Portrait) {
+	#page90 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page90 .ui-content {
+		display:block; } }
+
+#page91 {
+	overflow:hidden; }
+	#page91 .page_bg {
+		background:url("../images/day2/50_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page91 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page91 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page91 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page91 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page91 .ui-content .textwrap:before, #page91 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page91 .ui-content .textwrap:after {
+				clear:both; }
+			#page91 .ui-content .textwrap .text {
+				overflow:hidden;
+				padding-top:39%; }
+				#page91 .ui-content .textwrap .text .text_img2 {
+					height:24%;
+					position:absolute;
+					top:5%;
+					right:25%;
+					overflow:hidden;
+					width:49%;
+					border-bottom:1px solid #ffffff; }
+					#page91 .ui-content .textwrap .text .text_img2 img {
+						width:131%;
+						position:relative;
+						right:21%; }
+
+@media only screen and (orientation:Portrait) {
+	#page91 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page91 .ui-content {
+		display:block; } }
+
+#page92 {
+	background:#000; }
+	#page92 .ui-content {
+		margin:0;
+		padding:0;
+		height:100%;
+		overflow-x:initial; }
+		#page92 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page92 .ui-content .textwrap:before, #page92 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page92 .ui-content .textwrap:after {
+				clear:both; }
+			#page92 .ui-content .textwrap .text_i {
+				width:100%;
+				text-align:center; }
+				#page92 .ui-content .textwrap .text_i p {
+					font-family:"HyundaiSansHead-Regular_0"; }
+		#page92 .ui-content .imgwrap {
+			text-align:center;
+			position:absolute;
+			top:calc((100% - 138px)/ 2);
+			width:100%; }
+			#page92 .ui-content .imgwrap:before, #page92 .ui-content .imgwrap:after {
+				content:"";
+				display:table; }
+			#page92 .ui-content .imgwrap:after {
+				clear:both; }
+			#page92 .ui-content .imgwrap > div p {
+				font-family:'HyundaiSansHead-Medium', sans-serif;
+				font-size:2.2em;
+				line-height:0.8;
+				margin-bottom:20px; }
+				#page92 .ui-content .imgwrap > div p span {
+					font-size:16px; }
+			#page92 .ui-content .imgwrap > div img.back {
+				display:none; }
+			#page92 .ui-content .imgwrap > a {
+				display:inline-block;
+				width:30%;
+				margin:0 5%; }
+
+@media only screen and (orientation:Portrait) {
+	#page92 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page92 .ui-content {
+		display:block; } }
+
+#page93 {
+	background:url("../images/day2/53_image.jpg") no-repeat;
+	background-size:100% auto; }
+	#page93 .blink_wrap {
+		position:absolute;
+		right:28%;
+		top:55%;
+		width:18%; }
+		#page93 .blink_wrap .red {
+			display:none; }
+	#page93 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page93 .ui-content .imgwrap {
+			width:80px;
+			margin-left:20px;
+			position:absolute;
+			bottom:50px;
+			z-index:10; }
+		#page93 .ui-content .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:125px;
+			left:77px;
+			z-index:10; }
+		#page93 .ui-content .img_twinkle {
+			animation:twinkle 1.5s infinite; }
+		#page93 .ui-content .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page93 .ui-content .textwrap:before, #page93 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page93 .ui-content .textwrap:after {
+				clear:both; }
+			#page93 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:20px; }
+
+@media only screen and (orientation:Portrait) {
+	#page93 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page93 .ui-content {
+		display:block; } }
+
+#page94 {
+	background:url("../images/day2/54_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page94 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page94 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page94 .ui-content .textwrap:before, #page94 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page94 .ui-content .textwrap:after {
+				clear:both; }
+			#page94 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page94 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page94 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page94 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page94 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page94 .ui-content {
+		display:block; } }
+
+#page95 {
+	background:url("../images/day2/55_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page95 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page95 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page95 .ui-content .textwrap:before, #page95 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page95 .ui-content .textwrap:after {
+				clear:both; }
+			#page95 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page95 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page95 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page95 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page95 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page95 .ui-content {
+		display:block; } }
+
+#page96 {
+	background:url("../images/day2/56_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page96 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page96 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page96 .ui-content .textwrap:before, #page96 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page96 .ui-content .textwrap:after {
+				clear:both; }
+			#page96 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page96 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page96 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page96 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page96 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page96 .ui-content {
+		display:block; } }
+
+#page97 {
+	background:url("../images/day2/57_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page97 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page97 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page97 .ui-content .textwrap:before, #page97 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page97 .ui-content .textwrap:after {
+				clear:both; }
+			#page97 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page97 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page97 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page97 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page97 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page97 .ui-content {
+		display:block; } }
+
+#page98 {
+	background:url("../images/day2/61_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page98 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page98 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page98 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page98 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page98 .ui-content .textwrap:before, #page98 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page98 .ui-content .textwrap:after {
+				clear:both; }
+			#page98 .ui-content .textwrap .text {
+				overflow:hidden;
+				padding-top:39%; }
+				#page98 .ui-content .textwrap .text .text_img2 {
+					height:24%;
+					position:absolute;
+					top:5%;
+					right:25%;
+					overflow:hidden;
+					width:49%;
+					border-bottom:1px solid #ffffff; }
+					#page98 .ui-content .textwrap .text .text_img2 img {
+						width:131%;
+						position:relative;
+						right:21%; }
+
+@media only screen and (orientation:Portrait) {
+	#page98 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page98 .ui-content {
+		display:block; } }
+
+#page99 {
+	background:url("../images/day2/60.jpg") no-repeat;
+	background-size:100% auto; }
+	#page99 a.next_finger {
+		position:absolute;
+		top:50%;
+		left:52%;
+		width:25%; }
+	#page99 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page99 .ui-content .textwrap {
+			margin-top:45px; }
+			#page99 .ui-content .textwrap:before, #page99 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page99 .ui-content .textwrap:after {
+				clear:both; }
+			#page99 .ui-content .textwrap .text_i {
+				width:100%;
+				text-align:center; }
+				#page99 .ui-content .textwrap .text_i p {
+					font-family:"HyundaiSansHead-Regular_0"; }
+
+@media only screen and (orientation:Portrait) {
+	#page99 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page99 .ui-content {
+		display:block; } }
+
+#page100 {
+	background:url("../images/day2/52_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page100 .ui-content {
+		overflow:hidden;
+		width:100%;
+		height:100%; }
+		#page100 .ui-content .imgwrap {
+			width:80px;
+			margin-left:20px;
+			position:absolute;
+			bottom:50px;
+			z-index:10; }
+		#page100 .ui-content .start_text {
+			max-width:60px;
+			position:absolute;
+			bottom:125px;
+			left:77px;
+			z-index:10; }
+		#page100 .ui-content .img_twinkle {
+			animation:twinkle 1.5s infinite; }
+		#page100 .ui-content .textwrap {
+			max-width:63%;
+			margin-left:0;
+			padding-left:0;
+			padding:0;
+			position:absolute;
+			left:134px;
+			bottom:30px; }
+			#page100 .ui-content .textwrap:before, #page100 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page100 .ui-content .textwrap:after {
+				clear:both; }
+			#page100 .ui-content .textwrap .text_tip {
+				width:20px;
+				height:30px;
+				position:absolute;
+				bottom:8px;
+				margin-top:20px; }
+
+@media only screen and (orientation:Portrait) {
+	#page100 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page100 .ui-content {
+		display:block; } }
+
+#page101 {
+	background:url("../images/day2/70_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page101 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page101 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page101 .ui-content .textwrap:before, #page101 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page101 .ui-content .textwrap:after {
+				clear:both; }
+			#page101 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page101 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page101 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page101 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page101 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page101 .ui-content {
+		display:block; } }
+
+#page102 {
+	background:url("../images/day2/71_photo.jpg") no-repeat;
+	background-size:auto 100%;
+	background-position:50% 50%; }
+	#page102 .page_bg {
+		background:url("../images/day2/71_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:auto 100%;
+		height:100%;
+		background-position:50% 50%; }
+	#page102 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page102 .ui-content {
+		margin:0;
+		padding:0;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		width:100%; }
+		#page102 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page102 .ui-content .textwrap {
+			max-width:33%;
+			float:right;
+			margin-top:45px;
+			padding:0; }
+			#page102 .ui-content .textwrap:before, #page102 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page102 .ui-content .textwrap:after {
+				clear:both; }
+			#page102 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page102 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+
+@media only screen and (orientation:Portrait) {
+	#page102 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page102 .ui-content {
+		display:block; } }
+
+#page103 {
+	overflow:hidden; }
+	#page103 .page_bg {
+		background:url("../images/day2/73_photo.jpg") no-repeat;
+		background-repeat:no-repeat;
+		background-size:101% auto;
+		height:100%; }
+	#page103 a.next_finger {
+		position:absolute;
+		top:14%;
+		left:33%;
+		width:25%; }
+	#page103 .ui-content {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		max-width:33%;
+		position:absolute;
+		top:0;
+		right:0; }
+		#page103 .ui-content .imgwrap {
+			max-width:45%;
+			margin:0 auto;
+			margin-top:5px; }
+		#page103 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page103 .ui-content .textwrap:before, #page103 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page103 .ui-content .textwrap:after {
+				clear:both; }
+
+@media only screen and (orientation:Portrait) {
+	#page103 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page103 .ui-content {
+		display:block; } }
+
+#page104 {
+	background:url("../images/day2/76_photo.jpg") no-repeat;
+	background-size:100% auto; }
+	#page104 .ui-content {
+		margin:0;
+		padding:0;
+		max-width:33%;
+		float:right;
+		height:100%;
+		overflow-x:initial; }
+		#page104 .ui-content .textwrap {
+			margin-top:45px;
+			padding:0; }
+			#page104 .ui-content .textwrap:before, #page104 .ui-content .textwrap:after {
+				content:"";
+				display:table; }
+			#page104 .ui-content .textwrap:after {
+				clear:both; }
+			#page104 .ui-content .textwrap .text_tip {
+				max-width:20px;
+				margin-left:10%;
+				float:right;
+				margin-right:30%;
+				position:relative;
+				top:1px; }
+				#page104 .ui-content .textwrap .text_tip img {
+					-ms-transform:rotate(-90deg);
+					/* IE 9 */
+					-webkit-transform:rotate(-90deg);
+					/* Chrome, Safari, Opera */
+					transform:rotate(-90deg); }
+			#page104 .ui-content .textwrap .text {
+				overflow:hidden; }
+				#page104 .ui-content .textwrap .text #go_page13 {
+					margin-top:10px; }
+
+@media only screen and (orientation:Portrait) {
+	#page104 .ui-content {
+		display:none !important; } }
+
+@media only screen and (orientation:landscape) {
+	#page104 .ui-content {
+		display:block; } }

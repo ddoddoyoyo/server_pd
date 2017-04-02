@@ -1,0 +1,59 @@
+// page27.scss
+#page27 {
+  background:url('../images/day1/40_photo_1.jpg') no-repeat;
+  background-size: 100% auto;
+
+    .ui-content {
+      @include reset-margins;
+      max-width: 33%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      overflow: hidden;
+
+      .textwrap { 
+        @include clearfix
+        position:   relative;
+        top:63px;
+        .text_tip {
+            @include text_tip_p;
+         }
+
+         .text {
+            overflow:hidden ; 
+         }
+      }
+
+      .imgwrap {
+        max-width: 61%;
+
+        img {
+          position: relative;
+          right: -3%;
+          top: 62px;
+          // -moz-transform: scaleX(-1);
+          // -o-transform: scaleX(-1);
+          // -webkit-transform: scaleX(-1);
+          // transform: scaleX(-1);
+        }
+      }
+    } 
+}
+
+
+@media only screen and (orientation: Portrait) {
+  #page27{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page27{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
+
