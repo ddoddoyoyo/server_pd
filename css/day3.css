@@ -72,7 +72,8 @@ html, body {
   height: 100%;
   background: url(../images/web_bg.jpg) 0 0;
   background-size: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #000; }
 
 ol, ul {
   list-style: none;
