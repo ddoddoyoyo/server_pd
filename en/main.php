@@ -2337,7 +2337,7 @@
 						</div>
 					</div>
 					<audio class="audio1" src="../tts/day2/10.mp3"></audio>
-					<audio class="audio1" src="../tts/day2/11.mp3"></audio>
+					<audio class="audio2" src="../tts/day2/11.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page63001" class="container">
@@ -3799,6 +3799,6 @@
 		<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
 
 		<a href="#page104">이동</a>
-		<a href="#page58">이동</a>
+		<a href="#page63">이동</a>
 	</body>
 </html>

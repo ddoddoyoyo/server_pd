@@ -1240,6 +1240,12 @@ $(document).ready(function(){
 			$('#page59 #textbox1, #page59 #go_next1').show();
 			$('#page59 .textwrap').hide();
 			$("#page59 .page_bg").css({"background":"url(../images/day2/05_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
+			$("#page59 .audio2").each(function(){ 
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
 		}, 
 		"pageshow" : function(){
 			$('#page59 .textwrap').delay(500).fadeIn(500);
@@ -1262,6 +1268,15 @@ $(document).ready(function(){
 		    //$("#page59 #go_back").fadeIn();
 		    $("#page59 #textbox1, #page59 #go_next1").hide();
 		    $("#page59 .textwrap,#page59 #textbox2, #page59 #go_page60,#page59 #go_back").delay(500).fadeIn(500);
+		    $("#page59 .audio1").each(function(){ 
+					this.pause();
+					if (!isNaN(this.duration)) {
+						this.currentTime = 0;
+					}
+				});
+		    if($("#page59").has(".audio2")) {
+					$("#page59").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+				}
 		} 
 		next_Count++;
 	});
@@ -1284,6 +1299,15 @@ $(document).ready(function(){
 		   // $("#page59 #textbox1, #page59 #go_next1").show();
 			$("#page59 #textbox2, #page59 #go_page60").hide();
 			$("#page59 .textwrap,#page59 #textbox1, #page59 #go_next1").delay(500).fadeIn(500);
+			$("#page59 .audio2").each(function(){ 
+					this.pause();
+					if (!isNaN(this.duration)) {
+						this.currentTime = 0;
+					}
+				});
+		    if($("#page59").has(".audio1")) {
+					$("#page59").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+				}
 		} 
 		next_Count--;
 	});
@@ -1311,12 +1335,18 @@ $(document).ready(function(){
 			$("#page61 .imgL .engine").css({"background-image":"url(../images/day2/08_engine_left.png)","background-repeat":"no-repeat%","background-position":"50% 50%"}).dequeue();
 			$("#page61 .imgR .engine").css({"background-image":"url(../images/day2/08_engine_right.png)","background-repeat":"no-repeat%","background-position":"50% 50%"}).dequeue();
 			$("#page61 .next_finger").css({"left":"17%"});
-			$("#page61 .graphR .graph1, #page61 .graphR .graph2, #page61 .graphL .graph1, #page61 .graphL .graph2").css({"height":"0"});
+			$("#page61 .graphR .graph1, #page61 .graphR .graph2, #page61 .graphL .graph1, #page61 .graphL .graph2").css({"height":"0"});	
 
 			// $("#page61 #textbox2, #page63 #go_back, #page63 .next_p_btn").hide();
 			// $("#page63 #textbox1, #page63 #go_next1").show();
 		}, 
 		"pageshow" : function(){
+			$("#page61 audio").each(function(){ 
+					this.pause();
+					if (!isNaN(this.duration)) {
+						this.currentTime = 0;
+					}
+				});
 			next_Count = 1;
 		}
 	});
@@ -1364,6 +1394,9 @@ $(document).ready(function(){
 			});
 			//$("#page61 .next_p_btn").removeClass("stopPage");
 		}
+		if($("#page61").has(".audio1")) {
+					$("#page61").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+				}
 	});
 	
 	$("#page63").on({
@@ -1371,6 +1404,12 @@ $(document).ready(function(){
 			$("#page63 #textbox2, #page63 #go_back, #page63 .next_p_btn").hide();
 			$("#page63 .textwrap, #page63 #textbox1, #page63 #go_next1").hide();
 			$("#page63").css({"background-size":"120% auto"});
+			$("#page63 .audio2").each(function(){ 
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
 		}, 
 		"pageshow" : function(){
 			$("#page63 .textwrap, #page63 #textbox1, #page63 #go_next1").delay(1000).fadeIn(500);
@@ -1384,6 +1423,15 @@ $(document).ready(function(){
 		if(next_Count == 1){
 		    $("#page63 .textwrap,#page63 #textbox1, #page63 #go_next1").hide();
 		    $("#page63 .textwrap,#page63 #textbox2, #page63 #go_back, #page63 .next_p_btn").fadeIn(500);
+		    $("#page63 .audio1").each(function(){ 
+					this.pause();
+					if (!isNaN(this.duration)) {
+						this.currentTime = 0;
+					}
+				});
+		    if($("#page63").has(".audio2")) {
+				$("#page63").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			}
 		} 
 		next_Count++;
 	});
@@ -1396,6 +1444,15 @@ $(document).ready(function(){
 			$(this).hide();
 			$("#page63 .textwrap,#page63 #textbox1, #page63 #go_next1").fadeIn(500);
 			$("#page63 #textbox2, #page63 .next_p_btn").hide();
+			$("#page63 .audio2").each(function(){ 
+					this.pause();
+					if (!isNaN(this.duration)) {
+						this.currentTime = 0;
+					}
+				});
+		    if($("#page63").has(".audio1")) {
+				$("#page63").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			}
 		}
 		next_Count--;
 	});
