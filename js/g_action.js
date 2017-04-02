@@ -201,7 +201,7 @@ $(document).ready(function(){
 			$("#page4 .imgwrap img").css({"bottom":"-300px"});
 		}, 
 		"pageshow" : function(){
-		$("#page4 .imgwrap").animate({"bottom":"-27px"},1000);
+		$("#page4 .imgwrap img").animate({"bottom":"-27px"},1000);
 		$("#page4 .textwrap").delay(500).fadeIn(500);
 		}
 	});
