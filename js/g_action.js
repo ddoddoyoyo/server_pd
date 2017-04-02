@@ -1180,7 +1180,12 @@ $(document).ready(function(){
 			$("#page58 #textbox2, #page58 #go_back, #page58 .next_p_btn").hide();
 			$("#page58 .textwrap, #page58 #go_next1").hide();
 			$("#page58").css({"background-size":"120% auto"});
-			
+			$("#page58 .audio2").each(function(){ 
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
 		}, 
 		"pageshow" : function(){
 			$("#page58").delay(500).animate({"backgroundSize":"100%"});
@@ -1195,6 +1200,9 @@ $(document).ready(function(){
 		    $("#page58 #textbox1, #page58 #go_next1").hide();
 		    $("#page58 .textwrap, #page58 #textbox2, #page58 #go_back, #page58 .next_p_btn").fadeIn(500);
 		} 
+		if($("section").has(".audio2")) {
+				$("section").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			}
 		next_Count++;
 	});
 
