@@ -2130,11 +2130,20 @@ $(document).ready(function(){
 			$("#page100 .start_text").show();
 		}, 
 		"pageshow" : function(){
-			$("#page100 #textbox1").show();	
+			$("#page100 #textbox1").show();
+			$("#page100 audio").each(function(){ 
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
 		}
 	});
 	$("#page100 .imgwrap").click(function(){
 		$("#page100 .textwrap, #page100 .start_text, #page100 .next_p_btn").toggle();
+		if($("#page100").has(".audio1")) {
+				$("#page100").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			}
 	});
 
 	$("#page102").on({
