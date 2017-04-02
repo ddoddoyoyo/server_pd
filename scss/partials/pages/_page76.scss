@@ -1,11 +1,12 @@
 // page5.scss
 #page76 {
-  background:url('../images/day2/29_photo.jpg') no-repeat;
-  background-size: auto 100%;
+  background:url('../images/day2/29_photo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto ;
   background-position:50% 50%;
 
   .page_bg {
-    background:url('../images/day2/29_photo.jpg') no-repeat;
+    background:url('../images/day2/29_photo.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position:50% 50%;

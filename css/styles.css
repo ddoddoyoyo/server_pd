@@ -590,7 +590,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -772,7 +772,7 @@ img {
         bottom: 8px;
         position: relative;
         left: 7%;
-        top: 146px;
+        top: 124px;
         transform: rotate(-90deg); }
       #page4 .ui-content .textwrap .text {
         overflow: hidden; }
@@ -817,7 +817,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -883,7 +883,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -1459,7 +1459,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -1600,7 +1600,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -1766,7 +1766,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -1829,7 +1829,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -1927,7 +1927,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -2407,7 +2407,7 @@ img {
       float: right;
       margin-right: 70%;
       position: relative;
-      top: 1px;
+      top: 2px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -2717,7 +2717,7 @@ img {
       float: right;
       margin-right: 70%;
       position: relative;
-      top: 1px;
+      top: 2px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -2770,7 +2770,7 @@ img {
       float: right;
       margin-right: 70%;
       position: relative;
-      top: 1px;
+      top: 2px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -3068,7 +3068,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -3122,7 +3122,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -3227,7 +3227,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -3323,7 +3323,7 @@ img {
       float: right;
       margin-right: 70%;
       position: relative;
-      top: 1px;
+      top: 2px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -3457,7 +3457,7 @@ img {
       float: right;
       margin-right: 70%;
       position: relative;
-      top: 1px;
+      top: 2px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -4205,7 +4205,7 @@ img {
 
 #page68 {
   background: url("../images/day2/18_photo.jpg") no-repeat;
-  background-size: 100% auto; }
+  background-size: 120% auto; }
   #page68 .ui-content {
     margin: 0;
     padding: 0;
@@ -4280,7 +4280,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -4303,11 +4303,12 @@ img {
 #page70 {
   overflow: hidden; }
   #page70 .page_bg {
-    background: url("../images/day2/21_photo.jpg") no-repeat;
+    background-image: url("../images/day2/21_photo.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: 50% 50%;
-    height: 100%; }
+    height: 100%;
+    position: relative; }
   #page70 a.next_finger {
     position: absolute;
     top: 14%;
@@ -4416,7 +4417,7 @@ img {
           float: right;
           margin-right: 70%;
           position: relative;
-          top: 1px;
+          top: 2px;
           -moz-transform: scaleX(-1);
           -o-transform: scaleX(-1);
           -webkit-transform: scaleX(-1);
@@ -4430,12 +4431,10 @@ img {
         #page72 .ui-content .main_wrap .textwrap .text {
           overflow: hidden; }
       #page72 .ui-content .main_wrap .imgwrap {
-        max-width: 70%;
-        float: right;
-        margin-right: 25%; }
+        max-width: 100%; }
         #page72 .ui-content .main_wrap .imgwrap img {
           position: relative;
-          right: -10%;
+          right: 25%;
           top: 7px; }
 
 @media only screen and (orientation: Portrait) {
@@ -4478,7 +4477,7 @@ img {
       float: right;
       margin-right: 70%;
       position: relative;
-      top: 1px;
+      top: 2px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -4603,11 +4602,12 @@ img {
     display: block; } }
 
 #page76 {
-  background: url("../images/day2/29_photo.jpg") no-repeat;
-  background-size: auto 100%;
+  background: url("../images/day2/29_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   background-position: 50% 50%; }
   #page76 .page_bg {
-    background: url("../images/day2/29_photo.jpg") no-repeat;
+    background: url("../images/day2/29_photo.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: 50% 50%;
@@ -4645,7 +4645,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -4747,7 +4747,7 @@ img {
           float: right;
           margin-right: 70%;
           position: relative;
-          top: 1px;
+          top: 2px;
           -moz-transform: scaleX(-1);
           -o-transform: scaleX(-1);
           -webkit-transform: scaleX(-1);
@@ -4806,7 +4806,7 @@ img {
           float: right;
           margin-right: 70%;
           position: relative;
-          top: 1px;
+          top: 2px;
           -moz-transform: scaleX(-1);
           -o-transform: scaleX(-1);
           -webkit-transform: scaleX(-1);
@@ -5000,7 +5000,7 @@ img {
           float: right;
           margin-right: 70%;
           position: relative;
-          top: 1px;
+          top: 2px;
           -moz-transform: scaleX(-1);
           -o-transform: scaleX(-1);
           -webkit-transform: scaleX(-1);
@@ -5409,7 +5409,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -5637,7 +5637,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -5759,7 +5759,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -5952,7 +5952,7 @@ img {
           float: right;
           margin-right: 70%;
           position: relative;
-          top: 1px;
+          top: 2px;
           -moz-transform: scaleX(-1);
           -o-transform: scaleX(-1);
           -webkit-transform: scaleX(-1);
@@ -6022,7 +6022,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -6118,7 +6118,7 @@ img {
           float: right;
           margin-right: 70%;
           position: relative;
-          top: 1px;
+          top: 2px;
           -moz-transform: scaleX(-1);
           -o-transform: scaleX(-1);
           -webkit-transform: scaleX(-1);
@@ -6146,4 +6146,17 @@ img {
 
 @media only screen and (orientation: landscape) {
   #page104 .ui-content {
+    display: block; } }
+
+#page105 {
+  background: url("../images/day2/comingsoon.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+
+@media only screen and (orientation: Portrait) {
+  #page105 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page105 .ui-content {
     display: block; } }

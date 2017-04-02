@@ -1,0 +1,22 @@
+// page0.scss
+#page105 {
+	background:url('../images/day2/comingsoon.jpg') no-repeat; 
+	background-size: 100% auto;
+	background-position: 50% 50%;
+}
+
+@media only screen and (orientation: Portrait) {
+  #page105{
+  	.ui-content {
+  		display: none!important;
+  	}
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #page105{
+  	.ui-content {
+  		display: block;
+  	}
+  }
+}
