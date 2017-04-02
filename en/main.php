@@ -3446,7 +3446,7 @@
 							<div class="textwrap">	
 								<div class="text">	
 									<div id="textbox1" class="textbox">
-										<p>It’s already dark now.isn’t it great watching lake while camping?</p>
+										<p>It's already dark now. Isn't it great watching lake while camping?</p>
 									</div>
 								</div>
 								<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -3593,7 +3593,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">	
-									<p>Pairing completed.</p>
+									<p>Please touch to load luggages.</p>
 								</div>
 							</div>
 						</div>
