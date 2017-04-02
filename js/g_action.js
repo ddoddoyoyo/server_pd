@@ -1872,7 +1872,7 @@ $(document).ready(function(){
 	$("#page77").on({
 		"pagebeforeshow" : function(){
 			$('#page77 .next_p_btn, #page77 #go_back, #page77 #textbox2, #page77 #textbox3, #page77 #textbox4').hide();
-			$("#page77 #textbox1").show();
+			$("#page77 #textbox1, #page77 #go_next1").show();
 			$("#page77 .audio2").each(function(){ 
 				this.pause();
 				if (!isNaN(this.duration)) {
