@@ -196,13 +196,12 @@ $(document).ready(function(){
 // });
 	$("#page4").on({
 		"pagebeforeshow" : function(){
-			$("#page4 .textwrap").hide();
-			$("#page4 #go_next1").show();
-			$("#page4 .imgwrap img").css({"bottom":"-300px"});
+			$("#page4 .textwrap,#page4 #go_next1").hide();
+			$("#page4 .imgwrap img").css({"left":"-300px"});
 		}, 
 		"pageshow" : function(){
-		$("#page4 .imgwrap img").animate({"bottom":"-27px"},1000);
-		$("#page4 .textwrap").delay(500).fadeIn(500);
+			$("#page4 .imgwrap img").animate({"left":"-27px"},500);
+			$("#page4 .textwrap,#page4 #go_next1").delay(500).fadeIn(500);
 		}
 	});
 
