@@ -47,8 +47,8 @@ $(document).ready(function(){
 			});
 		}, 
 		"pageshow" : function(){
-			if($(this).has("audio")) {
-				$(this).find("audio").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			if($(this).has(".audio1")) {
+				$(this).find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
 			}
 		}
 	});
