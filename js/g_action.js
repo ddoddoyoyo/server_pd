@@ -111,12 +111,12 @@ $(document).ready(function(){
 	$("#page2").on({
 		"pagebeforeshow" : function(){
 			$("#page2 .textwrap").hide();
-			$("#page2 .imgwrap img").animate({"left":"-11%"},500);
+			$("#page2 .imgwrap img").css({"left":"-100%"});
 
 		}, 
 		"pageshow" : function(){
-			$("#page2 .imgwrap img").animate({"left":"-100%"},500);
-			$("#page2 .textwrap").delay(500).fadeIn(500);
+			$("#page2 .imgwrap img").animate({"left":"-11%"},500);
+			$("#page2 .textwrap, #page2 .yes_btn").delay(500).fadeIn(500);
 		}
 	});
 	// $("#page1 .intnext_btn").click(function(){
