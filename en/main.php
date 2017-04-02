@@ -3798,7 +3798,9 @@
 		<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
 		<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
 
+
 		<a href="#page63001">이동</a>
-		<a href="#page63">이동</a>
+		<a href="#page77">이동</a>
+
 	</body>
 </html>
