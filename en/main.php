@@ -2061,12 +2061,12 @@
 						</a>
 					</div>
 					<div class="page_bg">
-						<!-- <img src="../images/day2/03_stelviopass_map_2.jpg" alt="james"> <-->
-						<img src="../images/day2/map_2.jpg" alt="" id="map2">
+						 <img src="../images/day2/03_stelviopass_map_3.jpg" alt="james"> <
+						<!-- <img src="../images/day2/map_2.jpg" alt="" id="map2">
 						<img src="../images/day2/map_3.jpg" alt="" id="map3">
 						<img src="../images/day2/map_4.jpg" alt="" id="map4">
 						<img src="../images/day2/map_5.jpg" alt="" id="map5">
-						<img src="../images/day2/map_6.jpg" alt="" id="map6">
+						<img src="../images/day2/map_6.jpg" alt="" id="map6"> -->
 
 					</div>
 					<a href="#page58" class="next_finger">

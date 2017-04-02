@@ -110,11 +110,11 @@ $(document).ready(function(){
 
 	$("#page2").on({
 		"pagebeforeshow" : function(){
-			$("#page2 .imgwrap, #page2 .textwrap").hide();
+			$("#page2 .textwrap").hide();
+
 		}, 
 		"pageshow" : function(){
-
-			$("#page2 .imgwrap").fadeIn(500);
+			$("#page2 .imgwrap").animate({"left":"-100%"},500);
 			$("#page2 .textwrap").delay(500).fadeIn(500);
 		}
 	});
