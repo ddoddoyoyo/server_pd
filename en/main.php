@@ -3149,9 +3149,9 @@
 							<img src="../images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
-					<!-- <a href="#" class="next_finger">
+					<a href="#" class="next_finger">
 						<img src="../images/button/touchfinger_@3x.png" alt="next button">
-					</a> -->
+					</a>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
 							<div class="text_i">
@@ -3211,9 +3211,9 @@
 							<img src="../images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
-					<!-- <a href="#" class="next_finger">
+					<a href="#" class="next_finger">
 						<img src="../images/button/touchfinger_@3x.png" alt="next button">
-					</a> -->
+					</a>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
 							<div class="text_i">
