@@ -313,7 +313,7 @@
 								<p>You'll be travelling 6 cities for 3days with i30 and me. I've planned the routes already.<br>So shall we move on?</p>
 							</div>
 						</div>
-						<a href="#page5" id="go_page5" class="next_p_btn ui-btn go-next">
+						<a href="#page56" id="go_page56" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
@@ -2632,7 +2632,7 @@
 									<p>These are the roads we just have passed.<br>Pretty dizzy right?<br>How many hairpins did we passed?<br>It was such a fun.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Noteworthy powerful engine,<br>7 Speed Dual Clutch Transmission,<br>Strong body rigidity,<br>Multilink rear-suspension system. These combination makes i30 such a fun car!</p>
+									<p>Powerful engine, 7 DCT, Strong body rigidity, Multilink rear-suspension system. These combination makes i30 such a fun car!</p>
 								</div>
 								<!-- <div id="textbox4" class="textbox">
 									<p>These combination makes i30 such a fun car!</p>
@@ -2895,7 +2895,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>i30 is really spacious car.<br>As you can see the trunk, its so roomy.<br>We could load all of our luggages for this trip.</p>
+									<p>i30 is really spacious car.<br>As you can see the trunk, its so roomy.<br>We could load all of our luggage for this trip.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -3005,7 +3005,7 @@
 							<div class="textwrap">	
 								<div class="text">	
 									<div id="textbox1" class="textbox">
-										<p>Wow, it can load really a lot of baggages.</p>
+										<p>Wow, it can load really a lot of baggage.</p>
 									</div>
 								</div>
 								<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -3300,7 +3300,7 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Do you know the reason why?<br>Stelvio Pass is connecting various Alps mountains, so it gives us tremendous views.</p>
+									<p>Oh, right! my battery is almost dead. Can you charge it for me?</p>
 								</div>
 							</div>
 						</div>
@@ -3401,7 +3401,7 @@
 							<div class="textwrap">	
 								<div class="text">	
 									<div id="textbox1" class="textbox">
-										<p>You have a serious good taste on music.<br>Come on we gotta get done before sunset.</p>
+										<p>It’s already dark now.isn’t it great watching lake while camping?</p>
 									</div>
 								</div>
 								<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -3731,6 +3731,6 @@
 		<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
 		<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
 
-		<a href="#page70">이동</a>
+		<a href="#page76">이동</a>
 	</body>
 </html>

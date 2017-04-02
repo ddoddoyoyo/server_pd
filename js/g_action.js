@@ -1522,7 +1522,7 @@ $(document).ready(function(){
 			$('#page70 .page_bg')
 			.fadeOut()
 			.queue(function() {
-		        $(this).css({"background":"url(../images/day2/23_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		        $(this).css({"background":"url(../images/day2/23_photo_2.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		    .fadeIn(500);
 		    $("#page70 #textbox2, #page70 #go_next1").hide();
@@ -1585,7 +1585,7 @@ $(document).ready(function(){
 			$("#page76 #textbox2, #page76 .view_text").hide();
 			$("#page76 .textwrap").show();
 			$('#page76 .ui-content').queue(function() {
-		        $(this).css({"background":"url(../images/day2/29_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		        $(this).css({"background-image":"url(../images/day2/29_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		}, 
 		"pageshow" : function(){
