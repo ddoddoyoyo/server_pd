@@ -63,12 +63,12 @@
 		window.onload = function(){
 			setTimeout(function(){
 				var t = performance.timing;
-				var s =  (t.loadEventEnd - t.navigationStart) -1;
+				var s =  (t.loadEventEnd - t.navigationStart);
 				//console.log(s - 2000);
 				$('.loding_bar .londing2').animate({"width":"100%"}, s);
 				setTimeout(function(){
 					$.mobile.changePage("#page2");
-				}, s);
+				}, s-1);
 			},0);
 		}
 
