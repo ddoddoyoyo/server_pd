@@ -1845,6 +1845,18 @@ $(document).ready(function(){
 		$("#page69 .view_text").delay(2000).fadeIn();
 	});
 
+	$("#page69 .next_p_btn").click(function(){
+		$("#page69 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page70").has(".audio1")) {
+			$("#page70").find(".audio1").trigger('play');
+		}
+});
+
 	$("#page70").on({
 		"pagebeforeshow" : function(){
 			$('#page70 .next_p_btn, #page70 #go_back, #page70 #textbox2, #page70 #textbox3, #page70 #textbox4').hide();
