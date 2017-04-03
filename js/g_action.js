@@ -1161,19 +1161,19 @@ $(document).ready(function(){
 			$("#page57 .next_finger").hide();
 			$("#page57 .textwrap").hide();
 			$("#page57 .imgwrap img").css({"top":"150px"});
-			$("#page57 .page_bg #map2,#page57 .page_bg #map3,#page57 .page_bg #map4,#page57 .page_bg #map5,#page57 .page_bg #map6").hide();
+			//$("#page57 .page_bg #map2,#page57 .page_bg #map3,#page57 .page_bg #map4,#page57 .page_bg #map5,#page57 .page_bg #map6").hide();
 		}, 
 		"pageshow" : function(){
-			//$("#page57 .imgwrap").fadeIn(500);
-			$("#page57 .page_bg #map2").fadeIn(500);
-			$("#page57 .page_bg #map3").delay(1000).fadeIn(500);
-			$("#page57 .page_bg #map4").delay(1700).fadeIn(500);
-			$("#page57 .page_bg #map5").delay(2200).fadeIn(500);
-			$("#page57 .page_bg #map6").delay(2700).fadeIn(500,function(){
+			$("#page57 .imgwrap").fadeIn(500,function(){
 				$("#page57 .imgwrap img").delay(500).animate({"top":"5px"},500);
 				$("#page57 .textwrap").delay(700).fadeIn(500);
 				$("#page57 .next_finger").delay(1000).fadeIn(500);
 			});
+			// $("#page57 .page_bg #map2").fadeIn(500);
+			// $("#page57 .page_bg #map3").delay(1000).fadeIn(500);
+			// $("#page57 .page_bg #map4").delay(1700).fadeIn(500);
+			// $("#page57 .page_bg #map5").delay(2200).fadeIn(500);
+			// $("#page57 .page_bg #map6").delay(2700).fadeIn(500
 			if($(this).has(".audio1")) {
 				$(this).find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
 			}
