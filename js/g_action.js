@@ -1281,6 +1281,18 @@ $(document).ready(function(){
 		next_Count--;
 	});
 
+	$("#page58 .next_p_btn").click(function(){
+		$("#page58 .audio2").each(function(){ 
+			this.pause();
+			if (!isNaN(this.duration)) {
+				this.currentTime = 0;
+			}
+		});
+		if($("#page59").has(".audio1")) {
+				$("#page59").find(".audio1").trigger('play');
+			}
+});
+
 	$("#page59").on({
 		"pagebeforeshow" : function(){
 			$('#page59 #go_page60, #page59 #go_back, #page59 #textbox2').hide();
@@ -1359,6 +1371,18 @@ $(document).ready(function(){
 		next_Count--;
 	});
 
+	$("#page59 .next_p_btn").click(function(){
+		$("#page59 .audio2").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+		if($("#page60").has(".audio1")) {
+				$("#page60").find(".audio1").trigger('play');
+			}
+	});
+
 	$("#page60").on({
 		"pagebeforeshow" : function(){
 			$('#page60 #go_page60, #page60 #go_back, #page60 #textbox2').hide();
@@ -1370,6 +1394,18 @@ $(document).ready(function(){
 			$("#page60").delay(500).animate({"backgroundSize":"100%"});
 			$("#page60 .textwrap, #page60 .go-next, #page60 #go_page60, #page60 #go_back, #page60 #textbox1").delay(1000).fadeIn(500);
 			//next_Count = 1;
+		}
+	});
+
+	$("#page60 .next_p_btn").click(function(){
+		$("#page60 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page61").has(".audio1")) {
+			$("#page61").find(".audio1").trigger('play');
 		}
 	});
 
@@ -1438,6 +1474,12 @@ $(document).ready(function(){
 		if($("#page61 .next_p_btn").hasClass("stopPage")){
 			$("#page61 .popLayer").fadeIn(500, function(){
 				$("#page61 .next_p_btn").removeClass("stopPage");
+				$("#page61 .audio1").each(function(){ 
+					this.pause();
+					if (!isNaN(this.duration)) {
+						this.currentTime = 0;
+					}
+				});
 			});
 			//$("#page61 .next_p_btn").removeClass("stopPage");
 		}
