@@ -1486,19 +1486,22 @@ $(document).ready(function(){
 			// if($("#page61").has(".audio1")) {
 			// 	$("#page61").find(".audio1").trigger('play');
 			// }
+			// $("#page61 .audio1").each(function(){ 
+			// 		this.pause();
+			// 		if (!isNaN(this.duration)) {
+			// 			this.currentTime = 0;
+			// 		}
+			// 	});
 			$("#page61 .popLayer").fadeIn(500, function(){
 				$("#page61 .next_p_btn").removeClass("stopPage");
-				// $("#page61 .audio1").each(function(){ 
-				// 	this.pause();
-				// 	if (!isNaN(this.duration)) {
-				// 		this.currentTime = 0;
-				// 	}
-				// });
-				if($("#page63").has(".audio1")) {
-					$("#page63").find(".audio1").trigger('play');
-				}
+				
 			});
 			//$("#page61 .next_p_btn").removeClass("stopPage");
+		}
+		else{
+			if($("#page63").has(".audio1")) {
+						$("#page63").find(".audio1").trigger('play');
+				}
 		}
 	});
 	
@@ -1627,8 +1630,10 @@ $(document).ready(function(){
 			
 		}
 		else{
-			//video_pause();
-		}	
+			if($("#page64").has(".audio1")) {
+						$("#page64").find(".audio1").trigger('play');
+				}
+		}
 	});
 
 	$("#page64").on({
@@ -1778,20 +1783,24 @@ $(document).ready(function(){
 			}
 				$("#page66 .next_p_btn").removeClass("stopPage");
 			});
+		}else{
+			if($("#page68").has(".audio1")) {
+						$("#page68").find(".audio1").trigger('play');
+				}
 		}
 	});
 
-	$("#page66 .next_p_btn").click(function(){
-		$("#page66 .audio1").each(function(){ 
-			this.pause();
-			if (!isNaN(this.duration)) {
-				this.currentTime = 0;
-			}
-		});
-		if($("#page68").has(".audio1")) {
-				$("#page68").find(".audio1").trigger('play');
-			}
-	});
+	// $("#page66 .next_p_btn").click(function(){
+	// 	$("#page66 .audio1").each(function(){ 
+	// 		this.pause();
+	// 		if (!isNaN(this.duration)) {
+	// 			this.currentTime = 0;
+	// 		}
+	// 	});
+	// 	if($("#page68").has(".audio1")) {
+	// 			$("#page68").find(".audio1").trigger('play');
+	// 		}
+	// });
 
 	$("#page68").on({
 		"pagebeforeshow" : function(){
@@ -2292,12 +2301,17 @@ $(document).ready(function(){
 						this.currentTime = 0;
 					}
 				});
-		    if($("#page79").has(".audio2")) {
-				$("#page79").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
-			}
+		 //    if($("#page79").has(".audio2")) {
+			// 	$("#page79").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			// }
 				$("#page79 .next_p_btn").removeClass("stopPage");
 
 			});
+		}
+		else {
+			if($("#page81").has(".audio1")) {
+				$("#page81").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			}
 		}
 	});
 
@@ -2368,6 +2382,13 @@ $(document).ready(function(){
 		next_Count++;
 	});
 
+	$("#page86 .next_p_btn").click(function(){
+			if($("#page89").has(".audio1")) {
+			$("#page89").find(".audio1").trigger('play');
+		}
+});
+
+
 	//page87
 	$("#page87").on({
 		"pagebeforeshow" : function(){
@@ -2400,12 +2421,7 @@ $(document).ready(function(){
 	});
 
 	$("#page88 .next_p_btn").click(function(){
-		$("#page88 .audio1").each(function(){ 
-		this.pause();
-		if (!isNaN(this.duration)) {
-			this.currentTime = 0;
-		}
-	});
+		
 	if($("#page89").has(".audio1")) {
 			$("#page89").find(".audio1").trigger('play');
 		}
@@ -2492,6 +2508,90 @@ $(document).ready(function(){
 			}
 	});
 
+	$("#page93 .next_p_btn").click(function(){
+		$("#page93 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page94").has(".audio1")) {
+			$("#page94").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page94 .next_p_btn").click(function(){
+		$("#page94 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page95").has(".audio1")) {
+			$("#page95").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page95 .next_p_btn").click(function(){
+		$("#page95 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page96").has(".audio1")) {
+			$("#page96").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page96 .next_p_btn").click(function(){
+		$("#page96 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page97").has(".audio1")) {
+			$("#page97").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page97 .next_p_btn").click(function(){
+		$("#page97 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page98").has(".audio1")) {
+			$("#page98").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page98 .next_p_btn").click(function(){
+		$("#page98 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page99").has(".audio1")) {
+			$("#page99").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page99 .next_finger").click(function(){
+		$("#page99 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page100").has(".audio1")) {
+			$("#page100").find(".audio1").trigger('play');
+		}
+	});
+
 	//page100
 	$("#page100").on({
 		"pagebeforeshow" : function(){
@@ -2514,6 +2614,27 @@ $(document).ready(function(){
 				$("#page100").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
 			}
 	});
+
+	$("#page100 .next_p_btn").click(function(){
+		$("#page100 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page101").has(".audio1")) {
+			$("#page101").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page101 .next_p_btn").click(function(){
+		$("#page101 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+});
 
 	$("#page102").on({
 		"pagebeforeshow" : function(){

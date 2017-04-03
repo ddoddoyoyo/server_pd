@@ -2267,7 +2267,7 @@
 						<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 					</a>
 					</div>
-					<audio class="audio1" src="../tts/day2/09.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day2/09.mp3"></audio> -->
 				</section>
 
 				<!--<section data-role="page" id="page62" class="container">
@@ -2400,8 +2400,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day2/12.mp3"></audio>
-					<audio class="audio2" src="../tts/day2/13.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day2/12.mp3"></audio>
+					<audio class="audio2" src="../tts/day2/13.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page64" class="container">
@@ -2531,8 +2531,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day2/17.mp3"></audio>
-					<audio class="audio2" src="../tts/day2/18.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day2/17.mp3"></audio>
+					<audio class="audio2" src="../tts/day2/18.mp3"></audio> -->
 				</section>
 
 				<!-- <section data-role="page" id="page67" class="container">
@@ -2990,8 +2990,8 @@
 							 <img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a> 
 					</div>
-					<audio class="audio1" src="../tts/day2/33.mp3"></audio>
-					<audio class="audio2" src="../tts/day2/34.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day2/33.mp3"></audio>
+					<audio class="audio2" src="../tts/day2/34.mp3"></audio> -->
 				</section>
 
 				<!--<section data-role="page" id="page80" class="container">
@@ -3199,7 +3199,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day2/39.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day2/39.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page87" class="container">
@@ -3261,7 +3261,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day2/39.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day2/39.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page89" class="container">
@@ -3804,7 +3804,7 @@
 
 
 		<a href="#page92">이동</a>
-		<a href="#page77">이동</a>
+		<a href="#page84">이동</a>
 
 
 	</body>
