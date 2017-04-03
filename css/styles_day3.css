@@ -3015,6 +3015,17 @@ img {
 			background-size:30%;
 			width:48%;
 			float:left; }
+		#page48 .imgwrap .imgphoto .ui-input-text{
+			width:100%;
+			height:100%;
+			background:none;
+			border:none;
+			box-shadow: none;
+		}
+		#page48 .imgwrap .imgphoto .ui-input-text input{
+			opacity: 0;
+			height:100%;
+		}
 		#page48 .imgwrap .imginput {
 			width:48%;
 			float:right; }

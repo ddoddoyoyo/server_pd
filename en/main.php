@@ -3594,7 +3594,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">	
-									<p>Pairing completed.</p>
+									<p>Please touch the button to load your luggage.</p>
 								</div>
 							</div>
 						</div>
