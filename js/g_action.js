@@ -210,10 +210,10 @@ $(document).ready(function(){
 	$("#page4").on({
 		"pagebeforeshow" : function(){
 			$("#page4 .textwrap, #page4 .next_p_btn").hide();
-			$("#page4 .imgwrap img").css({"left":"-120%"});
+			$("#page4 .imgwrap img").css({"left":"-100px"});
 		}, 
 		"pageshow" : function(){
-		$("#page4 .imgwrap img").animate({"left":"-40px"},1000);
+		$("#page4 .imgwrap img").animate({"left":"5px"},1000);
 		$("#page4 .textwrap, #page4 .next_p_btn").delay(1000).fadeIn(500);
 		}
 	});
