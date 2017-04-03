@@ -1178,6 +1178,13 @@ $(document).ready(function(){
 	});
 
 	//day2
+	$("#page56 .next_p_btn").click(function(){
+		if($("#page57").has(".audio1")) {
+				$("#page57").find(".audio1").trigger('play');
+			}
+	});
+
+	
 	$("#page57").on({
 		"pagebeforeshow" : function(){
 			$("#page57 .next_finger").hide();
@@ -1202,6 +1209,18 @@ $(document).ready(function(){
 			
 		}
 	});
+
+	$("#page57 .next_finger").click(function(){
+		$("#page57 .audio1").each(function(){ 
+		this.pause();
+			if (!isNaN(this.duration)) {
+				this.currentTime = 0;
+			}
+		});
+		if($("#page58").has(".audio1")) {
+				$("#page58").find(".audio1").trigger('play');
+		}
+});
 
 	$("#page58").on({
 		"pagebeforeshow" : function(){
