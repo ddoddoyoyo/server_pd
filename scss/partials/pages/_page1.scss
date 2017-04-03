@@ -2,10 +2,14 @@
 #page1 {
 	background:url('../images/intro/login_bg_blue_2_@3x.jpg') no-repeat; 
 	background-size: 100% auto;
+	background-color:$black;
 		
 	.ui-content {
+		//background:url('../images/intro/login_bg_blue_2_@3x.jpg') no-repeat;
+		//background-size: 100% auto;
 		//margin-top:10%;
 		position: absolute;
+		//height:100%;
     	width: 100%;
     	top: 50%;
     	transform: translateY(-50%);
