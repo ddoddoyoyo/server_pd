@@ -33,11 +33,13 @@ $(document).ready(function(){
 
 	// portrait / landscape
 	$(window).trigger("orientationchange");
+	
 	if(!$("#wrap").hasClass("mobile")){
-				$("html, body").css({
-					"background":"none"
-				});
+		$("html, body").css({
+			"background":"none"
+		});
 	}
+
 	$("section").on({
 		"pagebeforeshow" : function(){
 			$("#mokup, #wrap.mobile").addClass("landscape");
