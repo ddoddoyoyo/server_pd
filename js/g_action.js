@@ -1707,6 +1707,18 @@ $(document).ready(function(){
 		next_Count--;
 	});
 
+	$("#page65 .next_p_btn").click(function(){
+		$("#page65 .audio1").each(function(){ 
+			this.pause();
+			if (!isNaN(this.duration)) {
+				this.currentTime = 0;
+			}
+		});
+	if($("#page66").has(".audio1")) {
+			$("#page66").find(".audio1").trigger('play');
+		}
+});
+
 	$("#page66").on({
 		"pagebeforeshow" : function(){
 			$("#page66 .next_p_btn, #page66 .popLayer, #page66 .img_ex").hide();
