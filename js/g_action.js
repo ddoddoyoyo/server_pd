@@ -1641,6 +1641,11 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page64 .next_p_btn").click(function(){
+		if($("#page65").has(".audio1")) {
+				$("#page65").find(".audio1").trigger('play');
+			}
+	});
 
 	$("#page65").on({
 		"pagebeforeshow" : function(){
