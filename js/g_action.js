@@ -1472,18 +1472,20 @@ $(document).ready(function(){
 	});
 	$("#page61 .next_p_btn").click(function(){
 		if($("#page61 .next_p_btn").hasClass("stopPage")){
+			// if($("#page61").has(".audio1")) {
+			// 	$("#page61").find(".audio1").trigger('play');
+			// }
 			$("#page61 .popLayer").fadeIn(500, function(){
 				$("#page61 .next_p_btn").removeClass("stopPage");
-				$("#page61 .audio1").each(function(){ 
-					this.pause();
-					if (!isNaN(this.duration)) {
-						this.currentTime = 0;
-					}
-				});
+				// $("#page61 .audio1").each(function(){ 
+				// 	this.pause();
+				// 	if (!isNaN(this.duration)) {
+				// 		this.currentTime = 0;
+				// 	}
+				// });
 				if($("#page63").has(".audio1")) {
-				$("#page63").find(".audio1").trigger('play');
-		}
-
+					$("#page63").find(".audio1").trigger('play');
+				}
 			});
 			//$("#page61 .next_p_btn").removeClass("stopPage");
 		}
@@ -1554,10 +1556,10 @@ $(document).ready(function(){
 			this.currentTime = 0;
 		}
 	});
-	if($("#page63001").has(".audio1")) {
-			$("#page63001").find(".audio1").trigger('play');
-		}
-});
+		if($("#page63001").has(".audio1")) {
+				$("#page63001").find(".audio1").trigger('play');
+			}
+	});
 
 	$("#page63001").on({
 		"pagebeforeshow" : function(){
@@ -1609,9 +1611,7 @@ $(document).ready(function(){
 						this.currentTime = 0;
 					}
 				});
-				if($("#page64").has(".audio1")) {
-					$("#page64").find(".audio1").trigger('play');
-				}
+				
 			});
 			
 		}
