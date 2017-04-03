@@ -156,7 +156,7 @@ var options = {
 		<div id="wrap">
 			<div id="contBox" class="container">
 
-				<section data-role="page" id="pageStart" class="container">
+				<!--<section data-role="page" id="pageStart" class="container">
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
 							<img src="/pd/images/day3/01_photo.jpg" alt="car" >
@@ -1838,7 +1838,7 @@ var options = {
 						</div>
 						<a href="#page48" id="go_page48" class="bye_btn">BYE</a>
 					</div>
-				</section>
+				</section>-->
 
 				<section data-role="page" id="page48" class="container">
 					<form id="Frm" name="Frm" method="post" enctype="multipart/form-data">

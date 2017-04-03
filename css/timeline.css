@@ -364,7 +364,8 @@ img {
     overflow: hidden;
     z-index: 9; }
     #view_contBox header .logo {
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 90%; }
     #view_contBox header a.share {
       position: absolute;
       top: 50%;

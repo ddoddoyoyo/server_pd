@@ -2652,7 +2652,7 @@
 									<p>These are the roads we just have passed pretty dizzy right?<br>How many hairpins did we passed?<br>It was such a fun.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Powerful engine, 7 DCT, Strong body rigidity, Multilink rear-suspension. These combination makes i30 such a fun car!</p>
+									<p>Powerful engine, 7 DCT, Strong body rigidity, Multilink rear-suspension system. These combination makes i30 such a fun car!</p>
 								</div>
 								<!-- <div id="textbox4" class="textbox">
 									<p>These combination makes i30 such a fun car!</p>
@@ -3446,7 +3446,7 @@
 							<div class="textwrap">	
 								<div class="text">	
 									<div id="textbox1" class="textbox">
-										<p>It's already dark now. Isn't it great watching lake while camping?</p>
+										<p>It’s already dark now.isn’t it great watching lake while camping?</p>
 									</div>
 								</div>
 								<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -3594,7 +3594,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">	
-									<p>Please touch to load luggages.</p>
+									<p>Pairing completed.</p>
 								</div>
 							</div>
 						</div>
@@ -3803,7 +3803,7 @@
 
 
 
-		<a href="#page4">이동</a>
+		<a href="#page92">이동</a>
 		<a href="#page93">이동</a>
 
 
