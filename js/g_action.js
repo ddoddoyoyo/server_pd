@@ -1994,6 +1994,18 @@ $(document).ready(function(){
 		next_Count--;
 	});
 
+	$("#page70 .next_p_btn").click(function(){
+		$("#page70 .audio3").each(function(){ 
+			this.pause();
+			if (!isNaN(this.duration)) {
+				this.currentTime = 0;
+			}
+		});
+		if($("#page71").has(".audio1")) {
+				$("#page71").find(".audio1").trigger('play');
+			}
+	});
+
 	$("#page71").on({
 		"pagebeforeshow" : function(){
 			$("#page71 .next_p_btn, #page71 .textwrap").hide();
