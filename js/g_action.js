@@ -1872,7 +1872,7 @@ $(document).ready(function(){
 		        $(this).css({"background-image":"url(../images/day2/30_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		    .fadeIn(500)
-		    .animate({ backgroundSize: '120%' }, 800);
+		    .animate({ backgroundSize: '120%' }, 500);
 		$("#page76 .textwrap").hide();
 		$("#page76 .view_text").delay(2000).fadeIn();
 	});
