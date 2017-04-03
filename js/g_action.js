@@ -1708,7 +1708,7 @@ $(document).ready(function(){
 	});
 
 	$("#page65 .next_p_btn").click(function(){
-		$("#page65 .audio1").each(function(){ 
+		$("#page65 .audio2").each(function(){ 
 			this.pause();
 			if (!isNaN(this.duration)) {
 				this.currentTime = 0;
