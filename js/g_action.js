@@ -1480,6 +1480,10 @@ $(document).ready(function(){
 						this.currentTime = 0;
 					}
 				});
+				if($("#page63").has(".audio1")) {
+				$("#page63").find(".audio1").trigger('play');
+		}
+
 			});
 			//$("#page61 .next_p_btn").removeClass("stopPage");
 		}
