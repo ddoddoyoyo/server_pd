@@ -1804,6 +1804,18 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page68 .next_p_btn").click(function(){
+		$("#page68 .audio1").each(function(){ 
+			this.pause();
+			if (!isNaN(this.duration)) {
+				this.currentTime = 0;
+			}
+		});
+		if($("#page69").has(".audio1")) {
+				$("#page69").find(".audio1").trigger('play');
+			}
+	});
+
 
 	$("#page69").on({
 		"pagebeforeshow" : function(){
