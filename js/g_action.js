@@ -1862,7 +1862,7 @@ $(document).ready(function(){
 			$('#page70 .next_p_btn, #page70 #go_back, #page70 #textbox2, #page70 #textbox3, #page70 #textbox4').hide();
 			$("#page70 .textwrap, #page70 #go_next1").hide();
 			$("#page70 .page_bg").css({"background":"url(../images/day2/21_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
-			$("#page70 .audio2").each(function(){ 
+			$("#page70 .audio2, #page70 .audio3").each(function(){ 
 				this.pause();
 				if (!isNaN(this.duration)) {
 					this.currentTime = 0;
@@ -2017,6 +2017,18 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page71 .next_p_btn").click(function(){
+		$("#page71 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page72").has(".audio1")) {
+			$("#page72").find(".audio1").trigger('play');
+		}
+});
+
 	$("#page72").on({
 		"pagebeforeshow" : function(){
 			$("#page72 .next_p_btn, #page72 .textwrap").hide();
@@ -2027,6 +2039,54 @@ $(document).ready(function(){
 			$("#page72").delay(500).animate({"backgroundSize":"100%"});
 			$("#page72 .imgwrap img").delay(1000).animate({"top":"7px"},500);
 			$("#page72 .next_p_btn, #page72 .textwrap").delay(1500).fadeIn(500);
+		}
+	});
+
+	$("#page72 .next_p_btn").click(function(){
+		$("#page72 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page73").has(".audio1")) {
+			$("#page73").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page73 .next_finger").click(function(){
+		$("#page73 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page74").has(".audio1")) {
+			$("#page74").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page74 .next_p_btn").click(function(){
+		$("#page74 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page75").has(".audio1")) {
+			$("#page75").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page75 .next_p_btn").click(function(){
+		$("#page75 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page76").has(".audio1")) {
+			$("#page76").find(".audio1").trigger('play');
 		}
 	});
 
@@ -2054,6 +2114,18 @@ $(document).ready(function(){
 		    .animate({ backgroundSize: '120%' }, 500);
 		$("#page76 .textwrap").hide();
 		$("#page76 .view_text").delay(2000).fadeIn();
+	});
+
+	$("#page76 .next_p_btn").click(function(){
+		$("#page76 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page77").has(".audio1")) {
+			$("#page77").find(".audio1").trigger('play');
+		}
 	});
 
 	$("#page77").on({
@@ -2162,6 +2234,31 @@ $(document).ready(function(){
 		// }
 		next_Count--;
 	});
+
+	$("#page77 .next_p_btn").click(function(){
+		$("#page77 .audio2").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page78").has(".audio1")) {
+			$("#page78").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page78 .next_p_btn").click(function(){
+		$("#page78 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page79").has(".audio1")) {
+			$("#page79").find(".audio1").trigger('play');
+		}
+	});
+
 	$("#page79").on({
 		"pagebeforeshow" : function(){
 			$("#page79 .popLayer, #page79 .next_p_btn").hide();
@@ -2199,7 +2296,44 @@ $(document).ready(function(){
 				$("#page79").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
 			}
 				$("#page79 .next_p_btn").removeClass("stopPage");
+
 			});
+		}
+	});
+
+	$("#page81 .next_p_btn").click(function(){
+		$("#page81 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page82").has(".audio1")) {
+			$("#page82").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page82 .next_p_btn").click(function(){
+		$("#page82 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page83").has(".audio1")) {
+			$("#page83").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page83 .next_p_btn").click(function(){
+		$("#page83 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page84").has(".audio1")) {
+			$("#page84").find(".audio1").trigger('play');
 		}
 	});
 
@@ -2263,6 +2397,18 @@ $(document).ready(function(){
 			$.mobile.changePage("#page88");
 		}
 		next_Count++;
+	});
+
+	$("#page88 .next_p_btn").click(function(){
+		$("#page88 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page89").has(".audio1")) {
+			$("#page89").find(".audio1").trigger('play');
+		}
 	});
 
 	//page92
