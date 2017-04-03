@@ -1424,7 +1424,7 @@ $(document).ready(function(){
 			// $("#page63 #textbox1, #page63 #go_next1").show();
 		}, 
 		"pageshow" : function(){
-			$("#page61 audio").each(function(){ 
+			$("#page61 .audio1").each(function(){ 
 					this.pause();
 					if (!isNaN(this.duration)) {
 						this.currentTime = 0;
@@ -1487,9 +1487,6 @@ $(document).ready(function(){
 			});
 			//$("#page61 .next_p_btn").removeClass("stopPage");
 		}
-		if($("#page61").has(".audio1")) {
-					$("#page61").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
-				}
 	});
 	
 	$("#page63").on({
