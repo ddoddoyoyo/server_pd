@@ -209,12 +209,12 @@ $(document).ready(function(){
 // });
 	$("#page4").on({
 		"pagebeforeshow" : function(){
-			$("#page5 .textwrap, #page5 .next_p_btn").hide();
-			$("#page5 .imgwrap img").css({"left":"-100%"});
+			$("#page4 .textwrap, #page4 .next_p_btn").hide();
+			$("#page4 .imgwrap img").css({"left":"-100%"});
 		}, 
 		"pageshow" : function(){
-		$("#page5 .imgwrap img").animate({"left":"-40px"},500);
-		$("#page5 .textwrap, #page5 .next_p_btn").delay(500).fadeIn(500);
+		$("#page4 .imgwrap img").animate({"left":"-40px"},500);
+		$("#page4 .textwrap, #page4 .next_p_btn").delay(500).fadeIn(500);
 		}
 	});
 
