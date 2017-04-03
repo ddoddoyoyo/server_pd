@@ -207,7 +207,14 @@ $(document).ready(function(){
 //         $.mobile.loading('hide');
 //     }, 20);
 // });
-	
+	$("#page4 .next_p_btn").click(function(){
+		$("#page4 .audio1").each(function(){ 
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
+	});
 
 	$("#page5").on({
 		"pagebeforeshow" : function(){
