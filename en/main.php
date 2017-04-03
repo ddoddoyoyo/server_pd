@@ -3504,7 +3504,7 @@
 							
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>It's been a really long time doing camping right?<br>Let's take a sleep for now and take a look zurich tomorrow?.</p>
+									<p>It's been a really long time doing camping right?<br>Let's take a sleep for now and take a look zurich tomorrow?</p>
 								</div>
 							</div>
 							<div class="text_tip">
