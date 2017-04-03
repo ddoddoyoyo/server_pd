@@ -879,6 +879,9 @@ $(document).ready(function() {
 			$(this).val('');
 	});
 
+	// $("#page48 .bye_btn").click(function(){	
+	// 	location.href="/pd/en/timeline_view.html";
+	// });
 
 	//다음페이지로 이동막기
 	$(".go-next").click(function(e) {
