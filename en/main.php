@@ -68,7 +68,7 @@
 				$('.loding_bar .londing2').animate({"width":"100%"}, s);
 				setTimeout(function(){
 					$.mobile.changePage("#page2");
-				}, s);
+				}, s-1);
 			},0);
 		}
 
