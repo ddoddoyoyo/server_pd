@@ -33,40 +33,42 @@ $(document).ready(function(){
 
 	// portrait / landscape
 	$(window).trigger("orientationchange");
+	
 	if(!$("#wrap").hasClass("mobile")){
-				$("html, body").css({
-					"background":"none"
-				});
+		$("html, body").css({
+			"background":"none"
+		});
 	}
+
 	$("section").on({
 		"pagebeforeshow" : function(){
 			$("#mokup, #wrap.mobile").addClass("landscape");
 			$(".btn_device").hide();
 			//뒤로가기 할때 뒤에 있는 오디오 pause
-			$("audio").each(function(){ 
-				this.pause();
-				if (!isNaN(this.duration)) {
-					this.currentTime = 0;
-				}
-			});
+			// $("audio").each(function(){ 
+			// 	this.pause();
+			// 	if (!isNaN(this.duration)) {
+			// 		this.currentTime = 0;
+			// 	}
+			// });
 		}, 
 		"pageshow" : function(){
-			if($(this).has(".audio1")) {
-				$(this).find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
-			}
+			// if($(this).has(".audio1")) {
+			// 	$(this).find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
+			// }
 		}
 	});
 
-	$(".next_finger, .next_p_btn").click(function(e) {
-		if($("audio").length){
-			$("audio").each(function(){ 
-				this.pause();
-				if (!isNaN(this.duration)) {
-					this.currentTime = 0;
-				}
-			});
-		}
-	});
+	// $(".next_finger, .next_p_btn").click(function(e) {
+	// 	if($("audio").length){
+	// 		$("audio").each(function(){ 
+	// 			this.pause();
+	// 			if (!isNaN(this.duration)) {
+	// 				this.currentTime = 0;
+	// 			}
+	// 		});
+	// 	}
+	// });
 
 	$("#page0, #page1,#page2, #page3").on({
 		"pagebeforeshow" : function(){
@@ -116,7 +118,6 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page2 .textwrap, #page2 .yes_btn").hide();
 			$("#page2 .imgwrap img").css({"left":"-100%"});
-
 		}, 
 		"pageshow" : function(){
 			$("#page2 .imgwrap img").animate({"left":"-11%"},500);
@@ -127,6 +128,7 @@ $(document).ready(function(){
 	// 	$("#page1 .input1").hide();
 	// 	$("#page1 .input2").show();
 	// });
+	$("#page2")
 
 	$("#page3001").on({
 		"pagebeforeshow" : function(){
@@ -139,6 +141,12 @@ $(document).ready(function(){
 		}
 	});
 	$("#page3001 .btn_play").click(function(){
+		$("#page3001 .audio1").each(function(){ 
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
 		$("#page3001 .popLayer").fadeIn(500,function(){
 			$("#page3001 .next_p_btn").delay(500).fadeIn(500);
 			//$("#page63001 video")[0].play();//자동 재생
@@ -154,6 +162,9 @@ $(document).ready(function(){
 			//setTimeout(function(){
 				video_pause();
 				$("#page3001 .next_p_btn").removeClass("stopPage");
+				if($("#page4").has(".audio1")) {
+				$("#page4").find(".audio1").trigger('play');
+			}
 			//});
 		}
 		else{
@@ -173,7 +184,11 @@ $(document).ready(function(){
 			});
 		}
 	});
-	
+	$("#page3 #go_page3001").click(function(){
+		if($("#page3001").has(".audio1")) {
+				$("#page3001").find(".audio1").trigger('play');
+			}
+	});
 
 	$(window).on("orientationchange",function(){
 	  if(window.orientation == 0){ // Portrait
