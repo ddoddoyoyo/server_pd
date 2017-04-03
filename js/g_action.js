@@ -1781,6 +1781,18 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page66 .next_p_btn").click(function(){
+		$("#page66 .audio1").each(function(){ 
+			this.pause();
+			if (!isNaN(this.duration)) {
+				this.currentTime = 0;
+			}
+		});
+		if($("#page68").has(".audio1")) {
+				$("#page68").find(".audio1").trigger('play');
+			}
+	});
+
 	$("#page68").on({
 		"pagebeforeshow" : function(){
 			$("#page68 .textwrap, #page68 .next_p_btn").hide();
