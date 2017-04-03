@@ -2411,6 +2411,42 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page89 .next_p_btn").click(function(){
+		$("#page89 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page90").has(".audio1")) {
+			$("#page90").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page90 .next_p_btn").click(function(){
+		$("#page90 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page91").has(".audio1")) {
+			$("#page91").find(".audio1").trigger('play');
+		}
+	});
+
+	$("#page91 .next_p_btn").click(function(){
+		$("#page91 .audio1").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
+	if($("#page92").has(".audio1")) {
+			$("#page92").find(".audio1").trigger('play');
+		}
+	});
+
 	//page92
 	$("#page92").on({
 		"pagebeforeshow" : function(){
