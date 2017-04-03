@@ -1862,7 +1862,8 @@ var options = {
 								<textarea class="pd_con_text">Please enter TEXT.</textarea>
 							</div>
 						</div>
-						<a href="javascript:;" id="form_sumit" class="bye_btn">OK</a>
+						<!-- <a href="/pd/en/timeline_view.html" id="form_sumit" class="bye_btn">OK</a> -->
+						<a href="/pd/en/timeline_view.html" class="bye_btn" target="_blank">OK</a>
 					</div>
 					</form>
 				</section>

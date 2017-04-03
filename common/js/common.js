@@ -111,6 +111,7 @@ $(document).ready(function(){
 
 					$.mobile.changePage("#page0");
 					window.open('/pd/timeline_view.php','toolbar=no, scrollbars=yes');
+					//window.open('/pd/en/timeline_view.html','toolbar=no, scrollbars=yes');
 				} else {
 					alert('오류가 발생했습니다');
 				}
