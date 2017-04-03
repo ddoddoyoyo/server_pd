@@ -1852,7 +1852,7 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Leave your feedback with your photos on trip with i30.</div>
+						<div class="pageTitle">Please upload your travel pictures!</div>
 						<div class="imgwrap">
 							<div class="imgphoto">
 								<input type="file" id="upload" accept="image/*">
