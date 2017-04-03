@@ -2291,7 +2291,7 @@ $(document).ready(function(){
 	
 
 	$("#page105 .go-next").click(function(){	
-		location.href="/pd/en/day3.html";
+		location.href="/pd/en/day3.php";
 	});
 
 	
