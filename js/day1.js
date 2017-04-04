@@ -16,6 +16,16 @@ $(document).ready(function(){
 				 $("#"+pageid+" #go_next1").show(); 
 			 }
 		 });
+
+		 audio_pause();
+
+			$('section').each(function(idx,obj){
+			 var pageid = $(obj).attr("id");
+			 if($("#"+pageid).hasClass("ui-page-active")){
+				$("#"+pageid).prev().find(".audio1").trigger('play'); 
+				 //$("#"+pageid).find(".audio1").trigger('play'); 
+			 }
+		 });
 	});
 
 	//다음페이지로 이동막기
