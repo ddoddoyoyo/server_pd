@@ -88,12 +88,7 @@ $(document).ready(function(){
 		}
 	});
 	$("#page3001 .btn_play").click(function(){
-		$("#page3001 .audio1").each(function(){ 
-				this.pause();
-				if (!isNaN(this.duration)) {
-					this.currentTime = 0;
-				}
-			});
+		audio_pause();
 		$("#page3001 .popLayer").fadeIn(500,function(){
 			$("#page3001 .next_p_btn").delay(500).fadeIn(500);
 			//$("#page63001 video")[0].play();//자동 재생
