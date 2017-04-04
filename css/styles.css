@@ -488,8 +488,14 @@ img {
           border: none;
           box-shadow: none; }
           #page1 .ui-content a .imgwrap .ui-input-text input {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 182px;
+            height: 182px;
             opacity: 0;
-            height: 100%; }
+            cursor: pointer;
+            transform: translate(-50%, -50%); }
     #page1 .ui-content .log_box {
       width: 65%;
       margin: 0 auto;
