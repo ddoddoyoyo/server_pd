@@ -2,7 +2,7 @@
 	include_once ($_SERVER[DOCUMENT_ROOT]."/common/commonFunction.php");
 	
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
-		$tools->JavaGo("/pd/en/main.php");
+		$tools->JavaGo("/pd/en/day1.php");
 	}
 	
 
