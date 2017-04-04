@@ -60,11 +60,11 @@
 							// }
 							console.log("H: " + $("#current-img").height());
 							console.log("W: " + $("#current-img").width());
-							// if($("#current-img").height() >= $("#current-img").width()){
-							// 	$("#current-img").css({"width":"100%","height":"auto"});
-							// } else {
-							// 	$("#current-img").css({"width":"auto", "height":"100%"});
-							// } 
+							if($("#current-img").height() >= $("#current-img").width()){
+								$("#current-img").css({"width":"100%","height":"auto"});
+							} else {
+								$("#current-img").css({"width":"auto", "height":"100%"});
+							} 
 						} 
 						                 
 						
