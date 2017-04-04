@@ -8,7 +8,9 @@ $(document).ready(function(){
 			 if($("#"+pageid+" #go_next1").css("display") == "none"){
 				 $("#"+pageid+" #go_next1").show(); 
 			 }
-		 });
+		});
+
+
 	});
 
 	//다음페이지로 이동막기
@@ -27,6 +29,14 @@ $(document).ready(function(){
 			}
 		}); 
 	}
+	//오디오 일시정지
+	function audio_pause(){
+	$("audio").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
 
 	$("#mokup, #wrap.mobile").addClass("landscape");
 	$(".btn_device").hide();

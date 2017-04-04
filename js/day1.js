@@ -34,6 +34,14 @@ $(document).ready(function(){
 			}
 		}); 
 	}
+	//오디오 일시정지
+	function audio_pause(){
+	$("audio").each(function(){ 
+		this.pause();
+		if (!isNaN(this.duration)) {
+			this.currentTime = 0;
+		}
+	});
 
 	//page1
 	$("#page0").on({
@@ -158,12 +166,7 @@ $(document).ready(function(){
 	});
 
 	$("#page4 .next_p_btn").click(function(){
-		$("#page4 .audio1").each(function(){ 
-				this.pause();
-				if (!isNaN(this.duration)) {
-					this.currentTime = 0;
-				}
-			});
+		audio_pause();
 	});
 
 	$("#page5").on({
