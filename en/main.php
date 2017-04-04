@@ -21,8 +21,8 @@
 		$row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 		
-		if($row['LMS_IMAGE']){
-			$LMS_IMAGE = "/upload/hyundai/member/".$row['LMS_IMAGE'];
+		if($row[0]['LMS_IMAGE']){
+			$LMS_IMAGE = "/upload/hyundai/member/".$row[0]['LMS_IMAGE'];
 		} else {
 			$LMS_IMAGE = "";
 		}
@@ -217,7 +217,7 @@
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
 							<div class="text">	
-								<h2 class="pointColor">Tom!</h1>
+								<h2 class="pointColor"><?=$_SESSION["HY_LMS_NAME"]?>!</h1>
 								<p>This is James!<br><span class="pointColor">Finally, I got an i30 that I've waited!</span><br>So now we can go on a trip that we have planned before.<br>You'll hop in right?</p>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box"></div>
@@ -3786,7 +3786,7 @@
 						</a>
 					</div> -->
 					<div data-role="main" class="ui-content">
-						<a href="/pd/en/day3.html" class="next_p_btn ui-btn go-next"><!--href="javascript:;"-->
+						<a href="/pd/en/day3.php" class="next_p_btn ui-btn go-next"><!--href="javascript:;"-->
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
@@ -3803,8 +3803,8 @@
 
 
 
-		<a href="#page92">이동</a>
-		<a href="#page84">이동</a>
+		<!-- <a href="#page92">이동</a>
+		<a href="#page84">이동</a> -->
 
 
 	</body>

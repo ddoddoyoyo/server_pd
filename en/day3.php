@@ -21,8 +21,8 @@
 		$stmt->execute();
 		$row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-		if($row['LMS_IMAGE']){
-			$LMS_IMAGE = "/upload/hyundai/member/".$row['LMS_IMAGE'];
+		if($row[0]['LMS_IMAGE']){
+			$LMS_IMAGE = "/upload/hyundai/member/".$row[0]['LMS_IMAGE'];
 		} else {
 			$LMS_IMAGE = "";
 		}
@@ -1852,18 +1852,19 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Please upload your travel pictures!</div>
+						<div class="pageTitle">Leave your feedback with your photos on trip with i30.</div>
 						<div class="imgwrap">
 							<div class="imgphoto">
+								<img id="current-img">
 								<input type="file" id="upload" accept="image/*">
-								<img id="current-img" src="/pd/images/day3/icon_photo_78.png" alt="3days trip in europe">
+								
 							</div>
 							<div class="imginput">
 								<textarea class="pd_con_text">Please enter TEXT.</textarea>
 							</div>
 						</div>
-						<!-- <a href="/pd/en/timeline_view.html" id="form_sumit" class="bye_btn">OK</a> -->
-						<a href="/pd/en/timeline_view.html" class="bye_btn" target="_blank">OK</a>
+						<a href="#" id="form_sumit" class="bye_btn">OK</a>
+						<!-- <a href="/pd/en/timeline_view.html" class="bye_btn" target="_blank">OK</a> -->
 					</div>
 					</form>
 				</section>

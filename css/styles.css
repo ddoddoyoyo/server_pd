@@ -475,7 +475,8 @@ img {
         #page1 .ui-content a .imgwrap img {
           position: absolute;
           left: 50%;
-          transform: translateX(-50%);
+          top: 50%;
+          transform: translate(-50%, -50%);
           width: 100%;
           margin: 0 auto; }
         #page1 .ui-content a .imgwrap .ui-input-text {
