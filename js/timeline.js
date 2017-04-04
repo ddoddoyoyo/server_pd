@@ -23,6 +23,8 @@ $(document).ready(function(){
 			});
 		}
 	}
+
+/*
 	var android = (/|android|/i.test(navigator.userAgent.toLowerCase()));
 		var agt = navigator.userAgent.toLowerCase();
 		var browser = fun_agt(agt);
@@ -51,3 +53,37 @@ $(document).ready(function(){
 			return 'etc'; 
 		}
 	}
+*/
+
+});
+
+function view_search(){
+
+	$('.moreView').remove();
+
+	var list_cnt = $('.list .article').length;
+	var limit = 0;
+
+
+	if(list_cnt == $('#TOT_LIST_COUNT').val()){
+		return false;
+	}
+
+	list_cnt = list_cnt; 
+	
+	$.ajax({
+		url: "/pd/timeline_view_data.php",
+		type: "POST",
+		dataType: "json",
+		data:{
+			list: list_cnt,
+		},
+		success:  function(json){
+			//console.log(json);
+			if(json.data){
+				$('.list').append(json.data);
+			}
+
+		}
+	});
+}

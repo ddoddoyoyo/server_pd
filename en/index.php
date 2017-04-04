@@ -2,7 +2,7 @@
 	include_once ($_SERVER[DOCUMENT_ROOT]."/common/commonFunction.php");
 	
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
-		$tools->JavaGo("/pd/en/main.php");
+		$tools->JavaGo("/pd/en/day1.php");
 	}
 	
 
@@ -29,6 +29,7 @@
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="/pd/js/g_action.js"></script>
+		<script src="/pd/js/device.js"></script>
 		<script>
 		$(document).ready(function(){
 				// enter key 금지
@@ -128,7 +129,7 @@
 				
 				<section data-role="page" id="page1" class="container">
 				<form id="Frm" name="Frm" method="post" action="/pd/common/join_action.php" enctype="multipart/form-data">
-					<input type="hidden" name="RETURN" value="/pd/en/main.php"/>
+					<input type="hidden" name="RETURN" value="/pd/en/day1.php"/>
 					<input type="hidden" name="LMS_GB" value="hyundai"/>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
