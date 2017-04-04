@@ -93,6 +93,8 @@
 					reader.onload = function (e) {
 					//파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
 						$("#current-img").attr("src", e.target.result);
+						console.log($("#current-img").height());
+						console.log($("#current-img").width());
 						if($("#current-img").height() >= $("#current-img").width()){
 							$("#current-img").css({"width":"100%","height":"auto"});
 						} else {

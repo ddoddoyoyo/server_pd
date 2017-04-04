@@ -59,7 +59,8 @@
 		<script src="/pd/js/jquery.animateNumber.min.js"></script>
 		<script src="/pd/js/jquery-ui.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-		<script src="/pd/js/g_action_day3.js"></script>
+		<script src="/pd/js/device.js"></script>
+		<script src="/pd/js/day3.js"></script>
 		<script src="/pd/js/Nwagon.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
@@ -83,6 +84,8 @@
 						reader.onload = function (e) {
 						//파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
 							$("#current-img").attr("src", e.target.result);
+							console.log($("#current-img").height());
+							console.log($("#current-img").width());
 							if($("#current-img").height() >= $("#current-img").width()){
 								$("#current-img").css({"width":"100%","height":"auto"});
 							} else {

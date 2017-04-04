@@ -477,7 +477,6 @@ img {
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
-          width: 100%;
           margin: 0 auto; }
         #page1 .ui-content a .imgwrap .ui-input-text {
           position: absolute;
@@ -486,7 +485,8 @@ img {
           height: 100%;
           background: none;
           border: none;
-          box-shadow: none; }
+          box-shadow: none;
+          margin: 0; }
           #page1 .ui-content a .imgwrap .ui-input-text input {
             position: absolute;
             top: 50%;
@@ -495,7 +495,8 @@ img {
             height: 182px;
             opacity: 0;
             cursor: pointer;
-            transform: translate(-50%, -50%); }
+            transform: translate(-50%, -50%);
+            padding: 0; }
     #page1 .ui-content .log_box {
       width: 65%;
       margin: 0 auto;

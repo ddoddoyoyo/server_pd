@@ -38,7 +38,7 @@
 				top:50%;
 				transform:translate(-50%,-50%);	
 				//display: block;
-		    	width: 100%;
+		    	//width: 100%;
 		    	margin: 0 auto;	
 			}
 			.ui-input-text{
@@ -49,7 +49,7 @@
 				background: none;
 				border: none;
 				box-shadow:none;
-
+				margin:0;
 				input{
 					position: absolute;
     				top: 50%;
@@ -59,6 +59,7 @@
 					opacity: 0;
 					cursor: pointer;
 					transform: translate(-50%,-50%);
+					padding:0;
 				}
 			}
 		}
