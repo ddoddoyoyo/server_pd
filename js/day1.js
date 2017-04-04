@@ -80,7 +80,7 @@ $(document).ready(function(){
 	$("#page3001").on({
 		"pagebeforeshow" : function(){
 			$("#page3001 .popLayer, #page3001 .next_p_btn, #page3001 .textwrap").hide();
-			$("#page3001 .next_p_btn").addClass("stopPage");
+			//$("#page3001 .next_p_btn").addClass("stopPage");
 		}, 
 		"pageshow" : function(){
 			$("#page3001 .textwrap").fadeIn(500);
@@ -98,20 +98,10 @@ $(document).ready(function(){
 	});
 
 	$("#page3001 .next_p_btn").click(function(){
-		if($("#page3001 .next_p_btn").hasClass("stopPage")){
-			//$("#page3001 .popLayer#pop02").fadeIn(500);
-			//video_pause();
-			//setTimeout(function(){
-				video_pause();
-				$("#page3001 .next_p_btn").removeClass("stopPage");
-				if($("#page4").has(".audio1")) {
-				$("#page4").find(".audio1").trigger('play');
-			}
-			//});
+		video_pause();
+		if($("#page4").has(".audio1")) {
+			$("#page4").find(".audio1").trigger('play');
 		}
-		else{
-			//video_pause();
-		}	
 	});
 
 	$("#page3").on({
