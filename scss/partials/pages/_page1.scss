@@ -51,8 +51,14 @@
 				box-shadow:none;
 
 				input{
-					opacity:0;
-					height: 100%;
+					position: absolute;
+    				top: 50%;
+					left: 50%;
+					width: 182px;
+					height: 182px;
+					opacity: 0;
+					cursor: pointer;
+					transform: translate(-50%,-50%);
 				}
 			}
 		}
