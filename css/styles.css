@@ -3437,10 +3437,10 @@ img {
     #page57 .page_bg img {
       position: absolute; }
   #page57 .next_finger {
-    top: 0;
+    top: 20%;
     left: 0;
     width: 80%;
-    height: 80%; }
+    height: 50%; }
     #page57 .next_finger img {
       left: calc(78% - 165px);
       top: 41%; }
