@@ -56,7 +56,7 @@
 		<script src="../js/jquery.animateNumber.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
-		<script src="../js/g_action.js"></script>		
+		<script src="../js/day2.js"></script>		
 		<script src="../js/menu.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
