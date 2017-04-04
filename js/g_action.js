@@ -101,7 +101,7 @@ $(document).ready(function(){
 		}, 
 		"pageshow" : function(){
 			$(".btn_device").click(function(){
-				$("#page .ok_btn").show();
+				$("#page3 .ok_btn").show();
 				$(this).hide();
 			});
 		}
@@ -114,10 +114,10 @@ $(document).ready(function(){
 
 	$(window).on("orientationchange",function(){
 	  if(window.orientation == 0){ // Portrait
-	  	$("#page3 .ok_btn").show();
+	  	$("#page3 .ok_btn").hide();
 	  }
 	  else{ // Landscape : window.orientation == 90 || window.orientation == -90
-		$("#page3 .ok_btn").hide();
+		$("#page3 .ok_btn").show();
   	  }	
 	});
 
