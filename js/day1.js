@@ -75,7 +75,6 @@ $(document).ready(function(){
 	// 	$("#page1 .input1").hide();
 	// 	$("#page1 .input2").show();
 	// });
-	$("#page2")
 
 	$("#page3001").on({
 		"pagebeforeshow" : function(){
