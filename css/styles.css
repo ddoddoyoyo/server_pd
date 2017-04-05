@@ -5449,8 +5449,9 @@ img {
           /* Chrome, Safari, Opera */
           transform: rotate(-90deg); }
     #page90 .ui-content .imgwrap {
-      position: relative;
       max-width: 64%; }
+      #page90 .ui-content .imgwrap img {
+        position: relative; }
 
 @media only screen and (orientation: Portrait) {
   #page90 .ui-content {
