@@ -546,7 +546,7 @@
 					<?php } ?>
 				</div>
 				<div class="start_text">
-					<img src="../images/button/btn_talk_more.png" alt="">
+					<img src="../images/button/btn_talk_more_gif.gif" alt="">
 				</div>
 				<div class="close_text">
 					<img src="../images/button/btn_close.png" alt="">
@@ -1503,16 +1503,22 @@
 			<img src="../images/day2/53_image_02.jpg" alt="">
 		</div>
 		<div data-role="main" class="ui-content">
-			<div class="imgwrap">
-				<?php if($LMS_IMAGE) { ?> 
-					<img src="<?=$LMS_IMAGE?>" alt="james">
-				<?php } else { ?>
-					<img src="../images/intro/login_profile_@3x.png" alt="james">
-				<?php } ?>
+			<div class="toggle">
+				<div class="imgwrap">
+					<?php if($LMS_IMAGE) { ?> 
+						<img src="<?=$LMS_IMAGE?>" alt="james">
+					<?php } else { ?>
+						<img src="../images/intro/login_profile_@3x.png" alt="james">
+					<?php } ?>
+				</div>
+				<div class="start_text">
+					<img src="../images/button/btn_talk_more_gif.gif" alt="">
+				</div>
+				<div class="close_text">
+					<img src="../images/button/btn_close.png" alt="">
+				</div>
 			</div>
-			<div class="start_text">
-				<img src="../images/button/btn_talk_more.png" alt="">
-			</div>
+
 			<div class="textwrap">
 				<div class="text_tip">
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1527,7 +1533,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/44.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/44.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page94" class="container">
@@ -1709,16 +1715,22 @@
 			</a>
 		</div>
 		<div data-role="main" class="ui-content">
-			<div class="imgwrap">
-				<?php if($LMS_IMAGE) { ?> 
-					<img src="<?=$LMS_IMAGE?>" alt="james">
-				<?php } else { ?>
-					<img src="../images/intro/login_profile_@3x.png" alt="james">
-				<?php } ?>
+			<div class="toggle">
+				<div class="imgwrap">
+					<?php if($LMS_IMAGE) { ?> 
+						<img src="<?=$LMS_IMAGE?>" alt="james">
+					<?php } else { ?>
+						<img src="../images/intro/login_profile_@3x.png" alt="james">
+					<?php } ?>
+				</div>
+				<div class="start_text">
+					<img src="../images/button/btn_talk_more_gif.gif" alt="">
+				</div>
+				<div class="close_text">
+					<img src="../images/button/btn_close.png" alt="">
+				</div>
 			</div>
-			<div class="start_text">
-				<img src="../images/button/btn_talk_more.png" alt="">
-			</div>
+			
 			<div class="textwrap">
 				<div class="text_tip">
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1733,7 +1745,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/50.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/50.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page101" class="container">
