@@ -1476,6 +1476,19 @@ $(document).ready(function(){
 		}
 	});
 
+	//page95
+	$("#page95").on({
+		"pagebeforeshow" : function(){
+			$("#page95").css({"background-size":"120% auto"});
+			$("#page95 .textwrap").hide();
+		}, 
+		"pageshow" : function(){
+			$("#page95").delay(500).animate({"backgroundSize":"100%"});
+			$("#page95 .textwrap").delay(1000).fadeIn(500);
+
+		}
+	});
+
 	$("#page95 .next_p_btn").click(function(){
 		$("#page95 .audio1").each(function(){ 
 		this.pause();
