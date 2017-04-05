@@ -1069,7 +1069,7 @@ $(document).ready(function(){
 		 //        $(this).css({"background":"url(../images/day2/32_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		 //    })
 		 //    .fadeIn(500);
-		 	$("#page77 .page_bg").css({"background":"url(../images/day2/31_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+		 	$("#page77 .page_bg").css({"background":"url(../images/day2/32_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
 		 	$("#page77 .page_bg").animate({"left":"0"},500);
 		    $("#page77 #go_back").fadeIn();
 		    $("#page77 #textbox1,#page77 #go_next1").hide();
