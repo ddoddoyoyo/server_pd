@@ -1562,6 +1562,23 @@ $(document).ready(function(){
 		}
 	});
 
+	//page101
+	$("#page101").on({
+		"pagebeforeshow" : function(){
+			$("#page101").css({"background-size":"120% auto"});
+			$("#page101 .textwrap").hide();
+			$("#page101 .imgwrap img").css({"top":"150px"});
+
+		}, 
+		"pageshow" : function(){
+			$("#page101").delay(500).animate({"backgroundSize":"100%"});
+			$("#page101 .textwrap").delay(1000).fadeIn(500);
+			$("#page101 .imgwrap img").delay(700).animate({"top":"7px"},500);
+			$("#page101 .textwrap").delay(700).fadeIn(500);
+
+		}
+	});
+
 	$("#page101 .next_p_btn").click(function(){
 		$("#page101 .audio1").each(function(){ 
 		this.pause();
