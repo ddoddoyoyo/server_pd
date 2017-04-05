@@ -156,7 +156,7 @@ $(document).ready(function(){
 			$("#page4 .imgwrap img").css({"left":"-200px"});
 		}, 
 		"pageshow" : function(){
-		$("#page4 .imgwrap img").animate({"left":"23px"},1000);
+		$("#page4 .imgwrap img").animate({"left":"23px"},500);
 		$("#page4 .textwrap, #page4 .next_p_btn").delay(1000).fadeIn(500);
 		}
 	});

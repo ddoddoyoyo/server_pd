@@ -755,7 +755,6 @@ img {
   #page4 .ui-content {
     position: absolute;
     bottom: 0;
-    overflow: hidden;
     height: 100%; }
     #page4 .ui-content .imgwrap {
       width: 34%;
