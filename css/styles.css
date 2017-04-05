@@ -4113,15 +4113,14 @@ img {
     margin: 0;
     padding: 0;
     height: 100%; }
-    #page66 .ui-content .textwrap {
+    #page66 .ui-content .textwrap:before, #page66 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page66 .ui-content .textwrap:after {
+      clear: both; }
+    #page66 .ui-content .textwrap .text_i {
+      width: 75%;
       text-align: center; }
-      #page66 .ui-content .textwrap:before, #page66 .ui-content .textwrap:after {
-        content: "";
-        display: table; }
-      #page66 .ui-content .textwrap:after {
-        clear: both; }
-      #page66 .ui-content .textwrap .text_i {
-        width: 75%; }
     #page66 .ui-content .img_ex {
       position: absolute;
       right: 14%;
