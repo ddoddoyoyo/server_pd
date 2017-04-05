@@ -1491,12 +1491,12 @@ $(document).ready(function(){
 	//page96
 	$("#page96").on({
 		"pagebeforeshow" : function(){
-			$("#page96").css({"background-size":"120% auto"});
+			$("#page96").css({"background-size":"120% auto", "background-position":"50% 50%"});
 			$("#page96 .textwrap").hide();
 
 		}, 
 		"pageshow" : function(){
-			$("#page96").delay(500).animate({"backgroundSize":"100%"});
+			$("#page96").delay(500).animate({"backgroundSize":"100% auto"});
 			$("#page96 .textwrap").delay(700).fadeIn(500);
 
 		}
