@@ -954,6 +954,18 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page74").on({
+		"pagebeforeshow" : function(){
+			$("#page74 .next_p_btn, #page74 .textwrap").hide();
+			$("#page74").css({"background-size":"120% auto"});
+			
+		}, 
+		"pageshow" : function(){
+			$("#page74").delay(500).animate({"backgroundSize":"100%"});
+			$("#page74 .textwrap").delay(1000).fadeIn(500);
+			$("#page74 .next_p_btn").delay(1500).fadeIn(500);
+		}
+	});
 	$("#page74 .next_p_btn").click(function(){
 		$("#page74 .audio1").each(function(){ 
 		this.pause();
