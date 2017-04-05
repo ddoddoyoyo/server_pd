@@ -1295,6 +1295,18 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page83").on({
+		"pagebeforeshow" : function(){
+			$("#page83 .textwrap, #page83 .next_p_btn").hide();
+			$("#page83").css({"background-size":"120% auto"});
+		}, 
+		"pageshow" : function(){
+			$("#page83").animate({"backgroundSize":"100%"});
+			$("#page83 .textwrap").delay(500).fadeIn(500);
+			$("#page83 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
 	$("#page83 .next_p_btn").click(function(){
 		$("#page83 .audio1").each(function(){ 
 		this.pause();
