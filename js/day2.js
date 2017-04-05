@@ -1434,7 +1434,7 @@ $(document).ready(function(){
 	//page91
 	$("#page91").on({
 		"pagebeforeshow" : function(){
-			$("#page91").css({"background-size":"120%", "background-position":"50% 50%"});
+			$("#page91").css({"background-size":"120% auto", "background-position":"50% 50%"});
 			$("#page91 .textwrap").hide();
 
 		}, 
