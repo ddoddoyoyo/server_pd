@@ -1176,6 +1176,18 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page78").on({
+		"pagebeforeshow" : function(){
+			$("#page78 .textwrap, #page78 .next_p_btn").hide();
+			$("#page78 .imgwrap img").css({"top":"200px"});
+		}, 
+		"pageshow" : function(){
+			$("#page78 .imgwrap img").animate({"top":"7px"},500);
+			$("#page78 .textwrap").delay(500).fadeIn(500);
+			$("#page78 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
 	$("#page78 .next_p_btn").click(function(){
 		$("#page78 .audio1").each(function(){ 
 		this.pause();
