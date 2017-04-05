@@ -5696,6 +5696,7 @@ img {
       overflow: hidden;
       max-height: 154px; }
       #page94 .ui-content .imgwrap img {
+        position: relative;
         width: 60%; }
 
 @media only screen and (orientation: Portrait) {
