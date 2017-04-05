@@ -3555,7 +3555,7 @@ img {
     height: 100%;
     overflow: hidden; }
     #page59 .ui-content .textwrap {
-      margin-top: 45px;
+      margin-top: 15px;
       padding: 0;
       width: 28%;
       position: absolute;
@@ -5989,7 +5989,7 @@ img {
 
 #page101 {
   background: url("../images/day2/70_photo.jpg") no-repeat;
-  background-size: 100% auto; }
+  background-size: 100% 100%; }
   #page101 .ui-content {
     margin: 0;
     padding: 0;
