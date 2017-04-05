@@ -1184,6 +1184,7 @@ $(document).ready(function(){
 		"pageshow" : function(){
 			$("#page78 .imgwrap img").animate({"top":"7px"},500);
 			$("#page78 .textwrap").delay(500).fadeIn(500);
+			$("#page78 .next_p_btn").delay(1000).fadeIn(500);
 		}
 	});
 
