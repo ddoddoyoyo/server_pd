@@ -753,17 +753,16 @@ img {
   background: url("../images/day1/landscape/05_bg_@3x.jpg") no-repeat;
   background-size: 100% auto; }
   #page4 .ui-content {
-    position: absolute;
-    bottom: 0;
     height: 100%; }
     #page4 .ui-content .imgwrap {
-      width: 34%;
+      width: 35%;
       height: 55%;
       position: absolute;
-      bottom: 0px; }
+      bottom: 0px;
+      overflow: hidden; }
       #page4 .ui-content .imgwrap img {
         position: relative;
-        left: 23px; }
+        left: 5px; }
     #page4 .ui-content .textwrap {
       max-width: 55%;
       position: relative;
