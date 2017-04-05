@@ -10,16 +10,17 @@
     height: 100%;
     .imgwrap {
       width: 27%;
+      height:55%;
       //display: inline-block;
       //margin-left: 3%;
       position: absolute;
-      bottom: 0;
+      //bottom: -27px;
       //left: 18%;
 
       img {
         position: relative;
         width: 130%;
-        bottom: -27px;
+        //bottom: -27px;
         left: 5px;
         // @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
         //   bottom: -100px;
