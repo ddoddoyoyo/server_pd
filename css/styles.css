@@ -607,6 +607,7 @@ img {
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
         margin-right: 55%;
+        transform: inherit;
         top: 3px;
         left: -11%; }
         #page2 .ui-content .textwrap .text_tip img {
