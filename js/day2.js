@@ -1006,12 +1006,13 @@ $(document).ready(function(){
 	$("#page76").on({
 		"pagebeforeshow" : function(){
 			$("#page76 #textbox2, #page76 .view_text").hide();
-			$("#page76 .textwrap").show();
+			$("#page76 .textwrap").hide();
 			$('#page76 .ui-content').queue(function() {
 		        $(this).css({"background-image":"url(../images/day2/29_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		}, 
 		"pageshow" : function(){
+			$("#page76 .textwrap").fadeIn(500);
 			$("#page76 .next_finger").delay(500).fadeIn(500);
 		}
 	});
