@@ -4811,65 +4811,6 @@ img {
   #page78 .ui-content {
     display: block; } }
 
-#page78 {
-  background: url("../images/day2/35_photo.jpg") no-repeat;
-  background-size: 100% auto;
-  background-position: 50% 50%; }
-  #page78 .ui-content {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    overflow: hidden; }
-    #page78 .ui-content .main_wrap {
-      max-width: 50%;
-      float: right; }
-      #page78 .ui-content .main_wrap .textwrap {
-        max-width: 188px;
-        float: right; }
-        #page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
-          content: "";
-          display: table; }
-        #page78 .ui-content .main_wrap .textwrap:after {
-          clear: both; }
-        #page78 .ui-content .main_wrap .textwrap .text_tip {
-          max-width: 20px;
-          margin-left: 10%;
-          float: right;
-          margin-right: 70%;
-          position: relative;
-          top: 2px;
-          -moz-transform: scaleX(-1);
-          -o-transform: scaleX(-1);
-          -webkit-transform: scaleX(-1);
-          transform: scaleX(-1); }
-          #page78 .ui-content .main_wrap .textwrap .text_tip img {
-            -ms-transform: rotate(-90deg);
-            /* IE 9 */
-            -webkit-transform: rotate(-90deg);
-            /* Chrome, Safari, Opera */
-            transform: rotate(-90deg); }
-        #page78 .ui-content .main_wrap .textwrap .text {
-          overflow: hidden; }
-      #page78 .ui-content .main_wrap .imgwrap {
-        max-width: 70%;
-        max-height: 130px;
-        float: right;
-        margin-right: 25%; }
-        #page78 .ui-content .main_wrap .imgwrap img {
-          position: relative;
-          right: -10%;
-          top: 7px; }
-
-@media only screen and (orientation: Portrait) {
-  #page78 .ui-content {
-    display: none !important; } }
-
-@media only screen and (orientation: landscape) {
-  #page78 .ui-content {
-    display: block; } }
-
 #page79 .ui-content {
   margin: 0;
   padding: 0;
