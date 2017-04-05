@@ -1894,7 +1894,7 @@
 
 </div>
 <a href="#page63001">이동!!!!!!!!!</a>
-<a href="#page65">이동!!!!!!!!!</a>
+<a href="#page78">이동!!!!!!!!!</a>
 
 <!-- 여창민 대리 추가 (2017-03-30) : 시작 -->
 <input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
