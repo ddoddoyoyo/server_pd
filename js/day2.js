@@ -1426,8 +1426,8 @@ $(document).ready(function(){
 			$("#page90").css({"background-size":"120% auto"});
 		}, 
 		"pageshow" : function(){
-			$("#page90").animate({"backgroundSize":"100%"});
-			$("#page90 .imgwrap img").delay(500).animate({"top":"0"},500);
+			$("#page90").animate({"backgroundSize":"100%"},500);
+			$("#page90 .imgwrap img").delay(500).animate({"top":"5px"},500);
 			$("#page90 .textwrap").delay(1000).fadeIn(500);
 			$("#page90 .next_p_btn").delay(1500).fadeIn(500);
 		}
@@ -1818,5 +1818,9 @@ $(document).ready(function(){
 		next_Count--;
 	});
 
+
+ $("#page105 .go-next").click(function(){	
+		location.href="/pd/en/day3.php";
+	});
 
 });

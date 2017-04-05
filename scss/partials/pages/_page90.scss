@@ -5,9 +5,12 @@
 
   .ui-content {
     @include reset-margins;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     max-width: 33%;
-    float: right;
-    height: 100%;
+    //float: right;
+    //height: 100%;
     overflow-x: initial;
 
     .textwrap { 
@@ -21,10 +24,12 @@
     }
 
     .imgwrap {
-       
+      overflow:hidden;
       max-width: 64%;
+      max-height: 206px;
       img{
-        position:relative; 
+        position:relative;
+        top:5px; 
       }
     }
   } 

@@ -1127,17 +1127,11 @@ $(document).ready(function(){
 	});
 
 	
-
-	
-
-	
 	$("#page4 .go-next").click(function(){	
 		location.href="/pd/en/day2.php";
 	});
 
-	 $("#page105 .go-next").click(function(){	
-		location.href="/pd/en/day3.php";
-	});
+	
 
 	
 

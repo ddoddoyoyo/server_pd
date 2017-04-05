@@ -5419,9 +5419,10 @@ img {
   #page90 .ui-content {
     margin: 0;
     padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     max-width: 33%;
-    float: right;
-    height: 100%;
     overflow-x: initial; }
     #page90 .ui-content .textwrap {
       margin-top: 45px;
@@ -5449,9 +5450,12 @@ img {
           /* Chrome, Safari, Opera */
           transform: rotate(-90deg); }
     #page90 .ui-content .imgwrap {
-      max-width: 64%; }
+      overflow: hidden;
+      max-width: 64%;
+      max-height: 206px; }
       #page90 .ui-content .imgwrap img {
-        position: relative; }
+        position: relative;
+        top: 5px; }
 
 @media only screen and (orientation: Portrait) {
   #page90 .ui-content {
@@ -5753,7 +5757,7 @@ img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 35%; }
+    width: 37%; }
     #page96 .ui-content .textwrap {
       margin-top: 45px;
       padding: 0;
