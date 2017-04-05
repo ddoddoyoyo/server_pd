@@ -4050,19 +4050,31 @@ img {
     overflow: hidden;
     width: 100%;
     height: 100%; }
-    #page65 .ui-content .imgwrap {
-      width: 80px;
-      height: 80px;
-      border-radius: 50px;
-      margin-left: 25px;
+    #page65 .ui-content .toggle {
+      width: 150px;
+      height: 50%;
       position: absolute;
-      bottom: 25px;
-      overflow: hidden; }
-    #page65 .ui-content .start_text {
-      max-width: 60px;
-      position: absolute;
-      bottom: 106px;
-      left: 77px; }
+      bottom: 0;
+      cursor: pointer; }
+      #page65 .ui-content .toggle .imgwrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        position: absolute;
+        bottom: 25px;
+        overflow: hidden; }
+      #page65 .ui-content .toggle .start_text {
+        max-width: 60px;
+        position: absolute;
+        bottom: 106px;
+        left: 77px;
+        z-index: 10; }
+      #page65 .ui-content .toggle .close_text {
+        max-width: 20px;
+        position: absolute;
+        bottom: 126px;
+        left: 97px; }
     #page65 .ui-content .textwrap {
       max-width: 63%;
       margin-left: 0;
