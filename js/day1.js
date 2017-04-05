@@ -153,7 +153,7 @@ $(document).ready(function(){
 	$("#page4").on({
 		"pagebeforeshow" : function(){
 			$("#page4 .textwrap, #page4 .next_p_btn").hide();
-			$("#page4 .imgwrap img").css({"left":"-200px"});
+			$("#page4 .imgwrap img").css({"left":"-250px"});
 		}, 
 		"pageshow" : function(){
 		$("#page4 .imgwrap img").animate({"left":"5px"},500);

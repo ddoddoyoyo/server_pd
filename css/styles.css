@@ -752,7 +752,7 @@ img {
 
 #page4 {
   background: url("../images/day1/landscape/05_bg_@3x.jpg") no-repeat;
-  background-size: 100% auto; }
+  background-size: auto 100%; }
   #page4 .ui-content {
     height: 100%; }
     #page4 .ui-content .imgwrap {
