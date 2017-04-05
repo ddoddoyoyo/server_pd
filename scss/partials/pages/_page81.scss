@@ -12,13 +12,13 @@
       overflow: hidden;
 
       .main_wrap {
-        max-width: 50%;
+        max-width: 62%;
         float: right;
 
         .textwrap { 
           @include clearfix;
           max-width: 188px;
-          float: right;
+         // float: right;
 
           .text_tip {
               @include text_tip_p;
@@ -30,8 +30,8 @@
         }
 
         .imgwrap {
-          max-width: 65%;
-          float: right;
+         // max-width: 65%;
+          //float: right;
           margin-right: 14%;
 
           img {
