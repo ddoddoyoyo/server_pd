@@ -81,6 +81,7 @@
         position: absolute;
         bottom: 25px;
         overflow: hidden;
+        display:none;
       }
       .textwrap { 
         @include clearfix
@@ -91,6 +92,7 @@
         position: absolute;
         left: 134px;
         bottom: 30px;
+        display:none;
 
         .text_tip {
             @include text_tip_l;

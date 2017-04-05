@@ -3920,7 +3920,8 @@ img {
         margin-left: 25px;
         position: absolute;
         bottom: 25px;
-        overflow: hidden; }
+        overflow: hidden;
+        display: none; }
       #page63001 .ui-content .popLayer .textwrap {
         max-width: 63%;
         margin-left: 0;
@@ -3928,7 +3929,8 @@ img {
         padding: 0;
         position: absolute;
         left: 134px;
-        bottom: 30px; }
+        bottom: 30px;
+        display: none; }
         #page63001 .ui-content .popLayer .textwrap:before, #page63001 .ui-content .popLayer .textwrap:after {
           content: "";
           display: table; }

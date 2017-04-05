@@ -472,7 +472,7 @@ $(document).ready(function(){
 	});
 
 	$("#page63001 .next_p_btn").click(function(){
-		$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").hide();
+		//$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").hide();
 		if($("#page63001 .next_p_btn").hasClass("stopPage")){
 			$("#page63001 .popLayer#pop02").fadeIn(500,function(){
 				$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").delay(500).fadeIn(500);
