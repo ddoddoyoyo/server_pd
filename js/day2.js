@@ -1488,6 +1488,20 @@ $(document).ready(function(){
 		}
 	});
 
+	//page96
+	$("#page96").on({
+		"pagebeforeshow" : function(){
+			$("#page96").css({"background-size":"120% auto"});
+			$("#page96 .textwrap").hide();
+
+		}, 
+		"pageshow" : function(){
+			$("#page96").delay(500).animate({"backgroundSize":"100%"});
+			$("#page96 .textwrap").delay(700).fadeIn(500);
+
+		}
+	});
+
 	$("#page96 .next_p_btn").click(function(){
 		$("#page96 .audio1").each(function(){ 
 		this.pause();
@@ -1608,9 +1622,8 @@ $(document).ready(function(){
 		}, 
 		"pageshow" : function(){
 			$("#page101").delay(500).animate({"backgroundSize":"100%"});
-			$("#page101 .textwrap").delay(1000).fadeIn(500);
 			$("#page101 .imgwrap img").delay(700).animate({"top":"7px"},500);
-			$("#page101 .textwrap").delay(700).fadeIn(500);
+			$("#page101 .textwrap").delay(1000).fadeIn(500);
 
 		}
 	});
