@@ -758,13 +758,13 @@ img {
     overflow: hidden;
     height: 100%; }
     #page4 .ui-content .imgwrap {
-      width: 27%;
+      width: 34%;
       height: 55%;
-      position: absolute; }
+      position: absolute;
+      bottom: 0px; }
       #page4 .ui-content .imgwrap img {
         position: relative;
-        width: 130%;
-        left: 5px; }
+        left: 23px; }
     #page4 .ui-content .textwrap {
       max-width: 55%;
       position: relative;
