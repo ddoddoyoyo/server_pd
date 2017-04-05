@@ -479,6 +479,7 @@ img {
           transform: translate(-50%, -50%);
           margin: 0 auto; }
         #page1 .ui-content a .imgwrap .ui-input-text {
+          z-index: 20;
           position: absolute;
           top: 0;
           width: 100%;
@@ -528,7 +529,6 @@ img {
         #page1 .ui-content .log_box .input_info .ui-selectmenu-button {
           display: none; }
       #page1 .ui-content .log_box .ui-input-text {
-        z-index: 20;
         opacity: 1;
         border: none; }
         #page1 .ui-content .log_box .ui-input-text input {

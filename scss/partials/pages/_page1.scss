@@ -42,6 +42,7 @@
 		    	margin: 0 auto;	
 			}
 			.ui-input-text{
+				z-index: 20;
 				position:absolute;
 				top:0;
 				width: 100%;
@@ -102,7 +103,6 @@
 			}
 			
 			.ui-input-text {
-				z-index: 20;
 				opacity: 1;
 				border:none;
 				input{
