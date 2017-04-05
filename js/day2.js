@@ -1487,6 +1487,23 @@ $(document).ready(function(){
 		}
 	});
 
+	//page97
+	$("#page97").on({
+		"pagebeforeshow" : function(){
+			$("#page97").css({"background-size":"120% auto"});
+			$("#page97 .textwrap").hide();
+			$("#page97 .imgwrap img").css({"top":"150px"});
+
+		}, 
+		"pageshow" : function(){
+			$("#page97").delay(500).animate({"backgroundSize":"100%"});
+			$("#page97 .textwrap").delay(1000).fadeIn(500);
+			$("#page97 .imgwrap img").delay(700).animate({"top":"7px"},500);
+			$("#page97 .textwrap").delay(700).fadeIn(500);
+
+		}
+	});
+
 	$("#page97 .next_p_btn").click(function(){
 		$("#page97 .audio1").each(function(){ 
 		this.pause();
@@ -1496,6 +1513,16 @@ $(document).ready(function(){
 	});
 	if($("#page98").has(".audio1")) {
 			$("#page98").find(".audio1").trigger('play');
+		}
+	});
+
+	//page98
+	$("#page98").on({
+		"pagebeforeshow" : function(){
+			$("#page98 .textwrap").hide();
+		}, 
+		"pageshow" : function(){
+			$("#page98 .textwrap").delay(500).fadeIn(500);
 		}
 	});
 
