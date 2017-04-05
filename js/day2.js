@@ -1006,7 +1006,7 @@ $(document).ready(function(){
 	$("#page76").on({
 		"pagebeforeshow" : function(){
 			$("#page76 #textbox2, #page76 .view_text").hide();
-			$("#page76 .textwrap").hide();
+			$("#page76 .textwrap, #page76 .next_finger").hide();
 			$('#page76 .ui-content').queue(function() {
 		        $(this).css({"background-image":"url(../images/day2/29_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
@@ -1045,27 +1045,32 @@ $(document).ready(function(){
 	$("#page77").on({
 		"pagebeforeshow" : function(){
 			$('#page77 .next_p_btn, #page77 #go_back, #page77 #textbox2, #page77 #textbox3, #page77 #textbox4').hide();
-			$("#page77 #textbox1, #page77 #go_next1").show();
+			//$("#page77 #textbox1, #page77 #go_next1").hide();
+			$("#page77 .textwrap").hide();
 			$("#page77 .audio2").each(function(){ 
 				this.pause();
 				if (!isNaN(this.duration)) {
 					this.currentTime = 0;
 				}
 			});
+			$("#page77 .page_bg").css({"background":"url(../images/day2/31_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
 		}, 
 		"pageshow" : function(){
+			$("#page77 .textwrap").fadeIn(500);
 			next_Count = 1;
 		}
 	});
 
 	$("#page77 #go_next1").click(function(e){
 		if(next_Count == 1){
-			$('#page77 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day2/32_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
+			// $('#page77 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day2/32_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page77 .page_bg").css({"background":"url(../images/day2/31_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+		 	$("#page77 .page_bg").animate({"left":"0"},500);
 		    $("#page77 #go_back").fadeIn();
 		    $("#page77 #textbox1,#page77 #go_next1").hide();
 		    $("#page77 #textbox2, #page77 .next_p_btn").show();
