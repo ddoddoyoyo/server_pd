@@ -1488,6 +1488,16 @@ $(document).ready(function(){
 		}
 	});
 
+	//page98
+	$("#page98").on({
+		"pagebeforeshow" : function(){
+			$("#page98 .textwrap").hide();
+		}, 
+		"pageshow" : function(){
+			$("#page98 .textwrap").delay(500).fadeIn(500);
+		}
+	});
+
 	$("#page98 .next_p_btn").click(function(){
 		$("#page98 .audio1").each(function(){ 
 		this.pause();
