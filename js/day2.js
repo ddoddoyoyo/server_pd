@@ -1407,6 +1407,20 @@ $(document).ready(function(){
 		}
 	});
 
+	//page91
+	$("#page91").on({
+		"pagebeforeshow" : function(){
+			$("#page91").css({"background-size":"120%", "background-position":"50% 50%"});
+			$("#page91 .textwrap").hide();
+
+		}, 
+		"pageshow" : function(){
+			$("#page91").delay(500).animate({"background-size":"100%"});
+			$("#page91 .textwrap").delay(700).fadeIn(500);
+
+		}
+	});
+
 	$("#page91 .next_p_btn").click(function(){
 		$("#page91 .audio1").each(function(){ 
 		this.pause();
