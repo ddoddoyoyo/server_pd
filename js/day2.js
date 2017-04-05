@@ -978,6 +978,19 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page75").on({
+		"pagebeforeshow" : function(){
+			$("#page75 .next_p_btn, #page75 .textwrap").hide();
+			$("#page75 .page_bg").css({"background-size":"120% auto"});
+			
+		}, 
+		"pageshow" : function(){
+			$("#page75 .page_bg").delay(500).animate({"backgroundSize":"100%"});
+			$("#page75 .textwrap").delay(1000).fadeIn(500);
+			$("#page75 .next_p_btn").delay(1500).fadeIn(500);
+		}
+	});
+
 	$("#page75 .next_p_btn").click(function(){
 		$("#page75 .audio1").each(function(){ 
 		this.pause();
@@ -993,12 +1006,13 @@ $(document).ready(function(){
 	$("#page76").on({
 		"pagebeforeshow" : function(){
 			$("#page76 #textbox2, #page76 .view_text").hide();
-			$("#page76 .textwrap").show();
+			$("#page76 .textwrap").hide();
 			$('#page76 .ui-content').queue(function() {
 		        $(this).css({"background-image":"url(../images/day2/29_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		}, 
 		"pageshow" : function(){
+			$("#page76 .textwrap").fadeIn(500);
 			$("#page76 .next_finger").delay(500).fadeIn(500);
 		}
 	});
