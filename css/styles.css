@@ -5048,10 +5048,9 @@ img {
       #page81 .ui-content .main_wrap .imgwrap {
         max-width: 65%;
         float: right;
-        margin-right: 25%; }
+        margin-right: 14%; }
         #page81 .ui-content .main_wrap .imgwrap img {
           position: relative;
-          right: -10%;
           top: 7px; }
 
 @media only screen and (orientation: Portrait) {
