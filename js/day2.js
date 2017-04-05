@@ -978,6 +978,19 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page75").on({
+		"pagebeforeshow" : function(){
+			$("#page75 .next_p_btn, #page75 .textwrap").hide();
+			$("#page75").css({"background-size":"120% auto"});
+			
+		}, 
+		"pageshow" : function(){
+			$("#page75").delay(500).animate({"backgroundSize":"100%"});
+			$("#page75 .textwrap").delay(1000).fadeIn(500);
+			$("#page75 .next_p_btn").delay(1500).fadeIn(500);
+		}
+	});
+
 	$("#page75 .next_p_btn").click(function(){
 		$("#page75 .audio1").each(function(){ 
 		this.pause();
