@@ -479,9 +479,24 @@ img {
           transform: translate(-50%, -50%);
           margin: 0 auto; }
         #page1 .ui-content a .imgwrap .ui-input-text {
-          background: none; }
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: none;
+          border: none;
+          box-shadow: none;
+          margin: 0; }
           #page1 .ui-content a .imgwrap .ui-input-text input {
-            opacity: 0; }
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 182px;
+            height: 182px;
+            opacity: 0;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+            padding: 0; }
     #page1 .ui-content .log_box {
       width: 65%;
       margin: 0 auto;
