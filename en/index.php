@@ -49,7 +49,6 @@
 						reader.onload = function (e) {
 						//파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
 							$("#current-img").attr("src", e.target.result);
-							$("#current-img-chk").attr("src", e.target.result);
 							// image.onload=function(){
 							// 	var w =this.width;
 							// 	var h= this.height;
@@ -61,11 +60,11 @@
 							// }
 							console.log("H: " + $("#current-img").height());
 							console.log("W: " + $("#current-img").width());
-							if($("#current-img-chk").height() >= $("#current-img-chk").width()){
+							if($("#current-img").height() >= $("#current-img").width()){
 								$("#current-img").css({"width":"100%","height":"auto"});
 							} else {
 								$("#current-img").css({"width":"auto", "height":"100%"});
-							}
+							} 
 						} 
 							reader.readAsDataURL(input.files[0]);                 
 						
@@ -157,7 +156,6 @@
 							<div class="imgwrap input1">
 								<img id="current-img" src="../images/intro/login_profile_icontype_@3x.png" alt="3days trip in europe">
 								<input type="file" id="upload" name="LMS_IMAGE" accept="image/*">
-								<img src="" id="current-img-chk" alt="" style='display:block'>
 							</div>
 						</a>
 

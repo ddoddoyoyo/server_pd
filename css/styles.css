@@ -528,6 +528,7 @@ img {
         #page1 .ui-content .log_box .input_info .ui-selectmenu-button {
           display: none; }
       #page1 .ui-content .log_box .ui-input-text {
+        z-index: 20;
         opacity: 1;
         border: none; }
         #page1 .ui-content .log_box .ui-input-text input {
