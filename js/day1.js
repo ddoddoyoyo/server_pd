@@ -1,5 +1,5 @@
 $(document).ready(function(){
-		//country selectbox
+	//country selectbox
 	var select = $("select#input_country");
     select.change(function(){
         var select_name = $(this).children("option:selected").text();
@@ -28,6 +28,7 @@ $(document).ready(function(){
 		 });
 	});
 
+	$(".btn_device").hide();
 	//다음페이지로 이동막기
 	$(".go-next").click(function(e){
 		if($(this).hasClass("stopPage")){
@@ -152,10 +153,10 @@ $(document).ready(function(){
 	$("#page4").on({
 		"pagebeforeshow" : function(){
 			$("#page4 .textwrap, #page4 .next_p_btn").hide();
-			$("#page4 .imgwrap img").css({"left":"-100px"});
+			$("#page4 .imgwrap img").css({"left":"-200px"});
 		}, 
 		"pageshow" : function(){
-		$("#page4 .imgwrap img").animate({"left":"5px"},1000);
+		$("#page4 .imgwrap img").animate({"left":"5px"},500);
 		$("#page4 .textwrap, #page4 .next_p_btn").delay(1000).fadeIn(500);
 		}
 	});
