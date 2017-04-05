@@ -937,7 +937,8 @@ $(document).ready(function(){
 		}, 
 		"pageshow" : function(){
 			$("#page73 .imgwrap img").delay(500).animate({"top":"5px"},500);
-			$("#page73 .next_finger, #page73 .textwrap").delay(1000).fadeIn(500);
+			$("#page73 .textwrap").delay(1000).fadeIn(500);
+			$("#page73 .next_finger").delay(1500).fadeIn(500);
 		}
 	});
 
