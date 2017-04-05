@@ -4872,15 +4872,14 @@ img {
   margin: 0;
   padding: 0;
   height: 100%; }
-  #page79 .ui-content .textwrap {
+  #page79 .ui-content .textwrap:before, #page79 .ui-content .textwrap:after {
+    content: "";
+    display: table; }
+  #page79 .ui-content .textwrap:after {
+    clear: both; }
+  #page79 .ui-content .textwrap .text_i {
+    width: 100%;
     text-align: center; }
-    #page79 .ui-content .textwrap:before, #page79 .ui-content .textwrap:after {
-      content: "";
-      display: table; }
-    #page79 .ui-content .textwrap:after {
-      clear: both; }
-    #page79 .ui-content .textwrap .text_i {
-      width: 100%; }
   #page79 .ui-content .numCounter {
     width: 50%;
     position: absolute;
@@ -5598,19 +5597,31 @@ img {
     overflow: hidden;
     width: 100%;
     height: 100%; }
-    #page93 .ui-content .imgwrap {
-      width: 80px;
-      height: 80px;
-      border-radius: 50px;
-      margin-left: 25px;
+    #page93 .ui-content .toggle {
+      width: 150px;
+      height: 50%;
       position: absolute;
-      bottom: 25px;
-      overflow: hidden; }
-    #page93 .ui-content .start_text {
-      max-width: 60px;
-      position: absolute;
-      bottom: 107px;
-      left: 77px; }
+      bottom: 0;
+      cursor: pointer; }
+      #page93 .ui-content .toggle .imgwrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        position: absolute;
+        bottom: 25px;
+        overflow: hidden; }
+      #page93 .ui-content .toggle .start_text {
+        max-width: 60px;
+        position: absolute;
+        bottom: 107px;
+        left: 77px;
+        z-index: 10; }
+      #page93 .ui-content .toggle .close_text {
+        max-width: 20px;
+        position: absolute;
+        bottom: 126px;
+        left: 97px; }
     #page93 .ui-content .img_twinkle {
       animation: twinkle 1.5s infinite; }
     #page93 .ui-content .textwrap {
@@ -5921,19 +5932,31 @@ img {
     overflow: hidden;
     width: 100%;
     height: 100%; }
-    #page100 .ui-content .imgwrap {
-      width: 80px;
-      height: 80px;
-      border-radius: 50px;
-      margin-left: 25px;
+    #page100 .ui-content .toggle {
+      width: 150px;
+      height: 50%;
       position: absolute;
-      bottom: 25px;
-      overflow: hidden; }
-    #page100 .ui-content .start_text {
-      max-width: 60px;
-      position: absolute;
-      bottom: 106px;
-      left: 77px; }
+      bottom: 0;
+      cursor: pointer; }
+      #page100 .ui-content .toggle .imgwrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        position: absolute;
+        bottom: 25px;
+        overflow: hidden; }
+      #page100 .ui-content .toggle .start_text {
+        max-width: 60px;
+        position: absolute;
+        bottom: 106px;
+        left: 77px;
+        z-index: 10; }
+      #page100 .ui-content .toggle .close_text {
+        max-width: 20px;
+        position: absolute;
+        bottom: 126px;
+        left: 97px; }
     #page100 .ui-content .textwrap {
       max-width: 63%;
       margin-left: 0;
