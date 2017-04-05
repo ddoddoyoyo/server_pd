@@ -1379,7 +1379,7 @@ $(document).ready(function(){
 			});	
 		}
 	});
-	$("#page93 .imgwrap").click(function(){
+	$("#page93 .toggle").click(function(){
 		$("#page93 .textwrap, #page93 .start_text, #page93 .next_p_btn").toggle();
 		if($("#page93").has(".audio1")) {
 				$("#page93").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
@@ -1486,7 +1486,7 @@ $(document).ready(function(){
 			});
 		}
 	});
-	$("#page100 .imgwrap").click(function(){
+	$("#page100 .toggle").click(function(){
 		$("#page100 .textwrap, #page100 .start_text, #page100 .next_p_btn").toggle();
 		if($("#page100").has(".audio1")) {
 				$("#page100").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
