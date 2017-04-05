@@ -607,7 +607,7 @@ img {
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
         margin-right: 55%;
-        top: -1px;
+        top: 3px;
         left: -11%; }
         #page2 .ui-content .textwrap .text_tip img {
           -ms-transform: rotate(-90deg);
@@ -616,7 +616,7 @@ img {
           /* Chrome, Safari, Opera */
           transform: rotate(-90deg); }
         #page2 .ui-content .textwrap .text_tip img {
-          transform: rotate(0deg); }
+          transform: rotate(270deg); }
       #page2 .ui-content .textwrap .text {
         overflow: hidden; }
         #page2 .ui-content .textwrap .text:after {
