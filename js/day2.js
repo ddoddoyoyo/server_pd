@@ -448,6 +448,7 @@ $(document).ready(function(){
 					this.currentTime = 0;
 				}
 			});
+			$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").hide();
 
 		}, 
 		"pageshow" : function(){
@@ -473,7 +474,7 @@ $(document).ready(function(){
 	$("#page63001 .next_p_btn").click(function(){
 		if($("#page63001 .next_p_btn").hasClass("stopPage")){
 			$("#page63001 .popLayer#pop02").fadeIn(500,function(){
-				$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").fadeIn(500);
+				//$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").delay(500).fadeIn(500);
 			});
 			//video_pause();
 
