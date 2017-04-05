@@ -3920,8 +3920,7 @@ img {
         margin-left: 25px;
         position: absolute;
         bottom: 25px;
-        overflow: hidden;
-        display: none; }
+        overflow: hidden; }
       #page63001 .ui-content .popLayer .textwrap {
         max-width: 63%;
         margin-left: 0;
@@ -3929,8 +3928,7 @@ img {
         padding: 0;
         position: absolute;
         left: 134px;
-        bottom: 30px;
-        display: none; }
+        bottom: 30px; }
         #page63001 .ui-content .popLayer .textwrap:before, #page63001 .ui-content .popLayer .textwrap:after {
           content: "";
           display: table; }
@@ -4531,7 +4529,6 @@ img {
       max-height: 150px;
       overflow: hidden; }
       #page73 .ui-content .imgwrap img {
-        width: 88%;
         position: relative;
         right: -10%;
         top: 5px; }

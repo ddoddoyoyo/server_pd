@@ -475,7 +475,8 @@ $(document).ready(function(){
 		//$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").hide();
 		if($("#page63001 .next_p_btn").hasClass("stopPage")){
 			$("#page63001 .popLayer#pop02").fadeIn(500,function(){
-				$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").delay(500).fadeIn(500);
+				//pageshow에서 fadeIn되서..
+				//$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").delay(500).fadeIn(500);
 			});
 			//video_pause();
 
@@ -919,24 +920,35 @@ $(document).ready(function(){
 
 	$("#page72 .next_p_btn").click(function(){
 		$("#page72 .audio1").each(function(){ 
-		this.pause();
-		if (!isNaN(this.duration)) {
-			this.currentTime = 0;
+			this.pause();
+			if (!isNaN(this.duration)) {
+				this.currentTime = 0;
+			}
+		});
+		if($("#page73").has(".audio1")) {
+			$("#page73").find(".audio1").trigger('play');
 		}
 	});
-	if($("#page73").has(".audio1")) {
-			$("#page73").find(".audio1").trigger('play');
+
+	$("#page73").on({
+		"pagebeforeshow" : function(){
+			$("#page73 .next_finger, #page73 .textwrap").hide();
+			$("#page73 .imgwrap img").css({"top":"150px"});
+		}, 
+		"pageshow" : function(){
+			$("#page73 .imgwrap img").delay(500).animate({"top":"5px"},500);
+			$("#page73 .next_finger, #page73 .textwrap").delay(1000).fadeIn(500);
 		}
 	});
 
 	$("#page73 .next_finger").click(function(){
 		$("#page73 .audio1").each(function(){ 
-		this.pause();
-		if (!isNaN(this.duration)) {
-			this.currentTime = 0;
-		}
-	});
-	if($("#page74").has(".audio1")) {
+			this.pause();
+			if (!isNaN(this.duration)) {
+				this.currentTime = 0;
+			}
+		});
+		if($("#page74").has(".audio1")) {
 			$("#page74").find(".audio1").trigger('play');
 		}
 	});
