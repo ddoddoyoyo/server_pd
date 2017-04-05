@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-	var sidePanel = "<div class='sidePanel_wrap'><div class='sidePanel'><a href='#' class='btn_close'><img src='../images/button/btn_close.png' alt=''></a><ul class='menu_list'>";
-	sidePanel += "<li id='day1'><span>Day1</span><ul class='sub_menu1'><li id='milan'><span>Passo della stelvio</span><ul class='sub_menu2'>";//day1 miano
+	var sidePanel = "<div class='sidePanel_wrap'><div class='sidePanel'><a href='/pd/en/day2.php#page57' class='btn_close'><img src='../images/button/btn_close.png' alt=''></a><ul class='menu_list'>";
+	sidePanel += "<li id='day1'><span>Day1</span><ul class='sub_menu1'><li id='milan'><span><a href='#' id='go_stelvio' data-ajax='false'>Passo della stelvio</a></span><ul class='sub_menu2'>";//day1 miano
 	sidePanel += "<li>ENGINE</li>";
 	sidePanel += "<li>TRANSMISSION(DCT)</li>";
 	sidePanel += "<li>SUSPENSION 2</li>";
@@ -10,24 +10,24 @@ $(document).ready(function(){
 	sidePanel += "<li><a href='#page79'></a>SPACE</li>";
 	sidePanel += "<li><a href='#page84'></a>CONNECTIVITY</li>";
 	sidePanel += "</ul></li></ul></li>";//day1 end
-	sidePanel += "<li id='day2'><span>Day2</span><ul class='sub_menu1'><li id='stelvio'><span></span><ul class='sub_menu2'>";//day2 passodella stelvio
-	sidePanel += "<li></li>";
-	sidePanel += "<li></li>";
-	sidePanel += "<li></li>";
-	sidePanel += "<li></li>";
-	sidePanel += "</ul></li><li id='zurich'><span></span><ul class='sub_menu2'>";//day2 zurich
-	sidePanel += "<li><a href='#page79'></a></li>";
-	sidePanel += "<li><a href='#page84'></a></li>";
+	sidePanel += "<li id='day2'><span>Day2</span><ul class='sub_menu1'><li id='stelvio'><span>Somewhere</span><ul class='sub_menu2'>";//day2 passodella stelvio
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "</ul></li><li id='zurich'><span>Somewhere</span><ul class='sub_menu2'>";//day2 zurich
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li>SUBTITLE</li>";
 	sidePanel += "</ul></li></ul></li>";//day2 end
-	sidePanel += "<li id='day3'><span>Day3</span><ul class='sub_menu1'><li id='bern'><span></span><ul class='sub_menu2'>";//day3 bern
-	sidePanel += "<li></li>";
-	sidePanel += "<li></li>";
-	sidePanel += "<li> </li>";
-	sidePanel += "<li></li>";
-	sidePanel += "<li></li>";
-	sidePanel += "</ul></li><li id='Strasbourg'><span></span><ul class='sub_menu2'>";//day3 strasbourg
-	sidePanel += "<li></li>";
-	sidePanel += "<li> </li>";
+	sidePanel += "<li id='day3'><span>Day3</span><ul class='sub_menu1'><li id='bern'><span>Somewhere</span><ul class='sub_menu2'>";//day3 bern
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "</ul></li><li id='Strasbourg'><span>Somewhere</span><ul class='sub_menu2'>";//day3 strasbourg
+	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li>SUBTITLE</li>";
 	sidePanel += "</ul></li></ul></li></ul>";//day3 end
 	$("section.container").append(sidePanel);
 
@@ -58,9 +58,10 @@ $(document).ready(function(){
 		//$(this).children(".sidePanel").fadeOut(500);
 	});
 
-	// $("#page104 #go_page105").click(function(){	
-	// 	location.href="/pc_pd/app/en/day3.html#page2";
-	// });
+	$("a#go_stelvio").click(function(){	
+		$.mobile.changePage("/pd/en/day2.php#page57","fade",false,true);
+	});
+	
 
 	// $("#page104 #go_page105").click(function(){	
 	// 	location.href="/pc_pd/app/en/day3.html#page3";
@@ -85,8 +86,13 @@ $(document).ready(function(){
 	// $("#page104 #go_page105").click(function(){	
 	// 	location.href="/pc_pd/app/en/day3.html#page0";
 	// });
-
-
 });
-
+// $(document).on('pagecreate',function(){
+// 	$("#go_stelvio").click(function(e){	
+// 		//location.href="/pd/en/day2.php#page57";
+// 		var href =$(this).attr('href');
+// 		e.preventDefault();
+// 		$.mobile.changePage(href);
+// 	});
+// });
 	
