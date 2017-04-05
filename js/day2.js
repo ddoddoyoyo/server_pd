@@ -1071,15 +1071,17 @@ $(document).ready(function(){
 		 //    .fadeIn(500);
 		 	$("#page77 .page_bg").css({"background":"url(../images/day2/32_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
 		 	$("#page77 .page_bg").animate({"left":"0"},500);
-		    $("#page77 #go_back").fadeIn();
-		    $("#page77 #textbox1,#page77 #go_next1").hide();
-		    $("#page77 #textbox2, #page77 .next_p_btn").show();
+		    //$("#page77 #go_back").fadeIn();
+		    //$("#page77 #textbox1,#page77 #go_next1").hide();
+		   //$("#page77 #textbox2, #page77 .next_p_btn").show();
+		   $("#page77 .textwrap").fadeIn(500);
+		   $("#page77 .next_p_btn").delay(500).fadeIn(500);
 		    $("#page77 .audio1").each(function(){ 
-					this.pause();
-					if (!isNaN(this.duration)) {
-						this.currentTime = 0;
-					}
-				});
+				this.pause();
+				if (!isNaN(this.duration)) {
+					this.currentTime = 0;
+				}
+			});
 		    if($("#page77").has(".audio2")) {
 				$("#page77").find(".audio2").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
 			}
