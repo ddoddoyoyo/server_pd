@@ -10,11 +10,10 @@
       height:100%;
       .textwrap { 
       @include clearfix
-      text-align: center;
 
        .text_i {
-
           width: 100%;
+          text-align: center;
                     
        }
     }

@@ -4873,15 +4873,14 @@ img {
   margin: 0;
   padding: 0;
   height: 100%; }
-  #page79 .ui-content .textwrap {
+  #page79 .ui-content .textwrap:before, #page79 .ui-content .textwrap:after {
+    content: "";
+    display: table; }
+  #page79 .ui-content .textwrap:after {
+    clear: both; }
+  #page79 .ui-content .textwrap .text_i {
+    width: 100%;
     text-align: center; }
-    #page79 .ui-content .textwrap:before, #page79 .ui-content .textwrap:after {
-      content: "";
-      display: table; }
-    #page79 .ui-content .textwrap:after {
-      clear: both; }
-    #page79 .ui-content .textwrap .text_i {
-      width: 100%; }
   #page79 .ui-content .numCounter {
     width: 50%;
     position: absolute;
