@@ -4700,7 +4700,7 @@ img {
 #page77 {
   overflow: hidden; }
   #page77 .page_bg {
-    background: url("../images/day2/31_photo.jpg") no-repeat;
+    background-image: url("../images/day2/31_photo.jpg") no-repeat;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: 50% 50%;
