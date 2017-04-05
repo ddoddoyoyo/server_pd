@@ -29,6 +29,7 @@
       .text_tip {
          @include text_tip_p;
          margin-right: 55%;
+        transform: inherit;
         //  -moz-transform: scaleX(-1);
         // -o-transform: scaleX(-1);
         // -webkit-transform: scaleX(-1);
