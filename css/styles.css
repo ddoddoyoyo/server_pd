@@ -649,6 +649,8 @@ img {
 #page3 {
   background: url("../images/intro/03_bg_3_2_@3x.jpg") no-repeat;
   background-size: 100% auto; }
+  #page3 p {
+    font-family: 'HyundaiSansHead-Regular_0', sans-serif; }
   #page3 .ok_btn {
     display: none; }
 
