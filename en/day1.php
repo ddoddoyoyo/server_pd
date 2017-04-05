@@ -222,7 +222,7 @@
 						<a href="#page3001" id="go_page3001"  class="layer_landscape">
 							<div class="box">
 								<img class="icon-device" src="../images/icon_phonerotation_@3x.png" alt="">
-								<div>Turn the screen to landscape.</div>
+								<p>Turn the screen to landscape.</p>
 								<p class="ok_btn">OK</p>
 							</div>
 						</a>
