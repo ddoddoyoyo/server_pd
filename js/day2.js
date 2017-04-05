@@ -1250,10 +1250,10 @@ $(document).ready(function(){
 	$("#page81").on({
 		"pagebeforeshow" : function(){
 			$("#page81 .textwrap, #page81 .next_p_btn").hide();
-			//$("#page81 .imgwrap img").css({"top":"250px"});
+			$("#page81 .imgwrap img").css({"top":"250px"});
 		}, 
 		"pageshow" : function(){
-			//$("#page81 .imgwrap img").animate({"top":"7px"},500);
+			$("#page81 .imgwrap img").animate({"top":"7px"},500);
 			$("#page81 .textwrap").delay(500).fadeIn(500);
 			$("#page81 .next_p_btn").delay(1000).fadeIn(500);
 		}

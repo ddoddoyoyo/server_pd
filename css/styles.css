@@ -5016,11 +5016,10 @@ img {
     right: 0;
     overflow: hidden; }
     #page81 .ui-content .main_wrap {
-      max-width: 50%;
+      max-width: 62%;
       float: right; }
       #page81 .ui-content .main_wrap .textwrap {
-        max-width: 188px;
-        float: right; }
+        max-width: 188px; }
         #page81 .ui-content .main_wrap .textwrap:before, #page81 .ui-content .main_wrap .textwrap:after {
           content: "";
           display: table; }
@@ -5046,8 +5045,6 @@ img {
         #page81 .ui-content .main_wrap .textwrap .text {
           overflow: hidden; }
       #page81 .ui-content .main_wrap .imgwrap {
-        max-width: 65%;
-        float: right;
         margin-right: 14%; }
         #page81 .ui-content .main_wrap .imgwrap img {
           position: relative;
