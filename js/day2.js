@@ -1271,6 +1271,18 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page82").on({
+		"pagebeforeshow" : function(){
+			$("#page82 .textwrap, #page82 .next_p_btn").hide();
+			$("#page82").css({"background-size":"120% auto"});
+		}, 
+		"pageshow" : function(){
+			$("#page82").delay(500).animate({"backgroundSize":"100%"});
+			$("#page82 .textwrap").delay(500).fadeIn(500);
+			$("#page82 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
 	$("#page82 .next_p_btn").click(function(){
 		$("#page82 .audio1").each(function(){ 
 		this.pause();
