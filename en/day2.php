@@ -537,16 +537,21 @@
 			</a>
 		</div>
 		<div data-role="main" class="ui-content">
-			<div class="imgwrap">
-				<?php if($LMS_IMAGE) { ?> 
-					<img src="<?=$LMS_IMAGE?>" alt="james">
-				<?php } else { ?>
-					<img src="../images/intro/login_profile_@3x.png" alt="james">
-				<?php } ?>
-			</div>
-			<div class="start_text">
-						<img src="../images/button/btn_talk_more.png" alt="">
+			<div class="toggle">
+				<div class="imgwrap">
+					<?php if($LMS_IMAGE) { ?> 
+						<img src="<?=$LMS_IMAGE?>" alt="james">
+					<?php } else { ?>
+						<img src="../images/intro/login_profile_@3x.png" alt="james">
+					<?php } ?>
 				</div>
+				<div class="start_text">
+					<img src="../images/button/btn_talk_more.png" alt="">
+				</div>
+				<div class="close_text">
+					<img src="../images/button/btn_close.png" alt="">
+				</div>
+			</div>
 
 			<div class="textwrap">
 				<div class="text_tip">
@@ -573,8 +578,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/15.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/16.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/15.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/16.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page66" class="container">

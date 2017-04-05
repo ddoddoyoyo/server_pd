@@ -530,7 +530,7 @@ $(document).ready(function(){
 			next_Count = 1;
 		}
 	});
-	$("#page65 .imgwrap").click(function(){
+	$("#page65 .toggle").click(function(){
 		$("#page65 .textwrap, #page65 .start_text").toggle();
 	    if($("#page65").has(".audio1")) {
 			$("#page65").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
