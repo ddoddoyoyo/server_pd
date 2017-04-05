@@ -5745,7 +5745,8 @@ img {
 
 #page96 {
   background: url("../images/day2/56_photo.jpg") no-repeat;
-  background-size: 100% auto; }
+  background-size: 100% auto;
+  background-color: #354255; }
   #page96 .ui-content {
     margin: 0;
     padding: 0;
