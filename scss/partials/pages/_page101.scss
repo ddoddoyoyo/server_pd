@@ -17,7 +17,7 @@
         .textwrap { 
           @include clearfix;
           max-width: 188px;
-          float: right;
+          //float: right;
 
           .text_tip {
               @include text_tip_p;
@@ -29,9 +29,9 @@
         }
 
         .imgwrap {
-          max-width: 70%;
+          width: 90%;
           float: right;
-          margin-right: 25%;
+          margin-right: 38%;
           max-height: 150px;
 
           img {
