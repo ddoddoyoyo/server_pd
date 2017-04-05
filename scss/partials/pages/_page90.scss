@@ -21,8 +21,11 @@
     }
 
     .imgwrap {
-      position:relative;  
+       
       max-width: 64%;
+      img{
+        position:relative; 
+      }
     }
   } 
 }
