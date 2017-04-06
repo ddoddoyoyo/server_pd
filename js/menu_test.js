@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-	var sidePanel = "<div class='sidePanel_wrap'><div class='sidePanel'><a href='/pd/en/day2.php#page57' class='btn_close'><img src='../images/button/btn_close.png' alt=''></a><ul class='menu_list'>";
-	sidePanel += "<li id='day1'><span>Day1</span><ul class='sub_menu1'><li id='milan'><span><a href='#' id='go_stelvio' data-ajax='false'>Passo della stelvio</a></span><ul class='sub_menu2'>";//day1 miano
+	var sidePanel = "<div class='sidePanel_wrap'><div class='sidePanel'><a href='#' class='btn_close'><img src='../images/button/btn_close.png' alt=''></a><ul class='menu_list'>";
+	sidePanel += "<li id='day1'><span>Day1</span><ul class='sub_menu1'><li id='milan'><span><a href='/pd/en/day2.php' id='go_stelvio' data-ajax='false'>Passo della stelvio</a></span><ul class='sub_menu2'>";//day1 miano
 	sidePanel += "<li>ENGINE</li>";
 	sidePanel += "<li>TRANSMISSION(DCT)</li>";
 	sidePanel += "<li>SUSPENSION 2</li>";
@@ -58,13 +58,16 @@ $(document).ready(function(){
 		//$(this).children(".sidePanel").fadeOut(500);
 	});
 
+
 	$("a#go_stelvio").click(function(){	
-		$.mobile.changePage("/pd/en/day2.php#page57","fade",false,true);
+		//$.mobile.changePage("/pd/en/day2.php","fade");	
+		location.href="/pd/en/day2.php#page57";	
 	});
 	
 
 	// $("#page104 #go_page105").click(function(){	
-	// 	location.href="/pc_pd/app/en/day3.html#page3";
+	// location.href="/pc_pd/app/en/day3.html#page3";	
+	
 	// });
 
 	// $("#page104 #go_page105").click(function(){	

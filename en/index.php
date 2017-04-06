@@ -44,11 +44,9 @@
 				function readURL(input) {
 					if (input.files && input.files[0]) {
 						var reader = new FileReader(); //파일을 읽기 위한 FileReader객체 생성
-		
 						reader.onload = function (e) {
 						//파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
 							$("#current-img").attr("src", e.target.result);
-	
 
 							var img = new Image;
 							var imgWidth = 0;
