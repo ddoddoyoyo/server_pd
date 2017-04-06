@@ -914,11 +914,11 @@ $(document).ready(function(){
 	$("#page72").on({
 		"pagebeforeshow" : function(){
 			$("#page72 .next_p_btn, #page72 .textwrap").hide();
-			$("#page72").css({"background-size":"120% auto"});
+			//$("#page72").css({"background-size":"120% auto"});
 			$("#page72 .imgwrap img").css({"top":"150px"});
 		}, 
 		"pageshow" : function(){
-			$("#page72").delay(500).animate({"backgroundSize":"100%"});
+			//$("#page72").delay(500).animate({"backgroundSize":"100%"});
 			$("#page72 .imgwrap img").delay(1000).animate({"top":"7px"},500);
 			$("#page72 .next_p_btn, #page72 .textwrap").delay(1500).fadeIn(500);
 		}
@@ -987,11 +987,11 @@ $(document).ready(function(){
 	$("#page75").on({
 		"pagebeforeshow" : function(){
 			$("#page75 .next_p_btn, #page75 .textwrap").hide();
-			$("#page75 .page_bg").css({"background-size":"120% auto"});
+			//$("#page75 .page_bg").css({"background-size":"120% auto"});
 			
 		}, 
 		"pageshow" : function(){
-			$("#page75 .page_bg").delay(500).animate({"backgroundSize":"100%"});
+			//$("#page75 .page_bg").delay(500).animate({"backgroundSize":"100%"});
 			$("#page75 .textwrap").delay(1000).fadeIn(500);
 			$("#page75 .next_p_btn").delay(1500).fadeIn(500);
 		}
@@ -1050,7 +1050,7 @@ $(document).ready(function(){
 
 	$("#page77").on({
 		"pagebeforeshow" : function(){
-			$('#page77 .next_p_btn, #page77 #go_back, #page77 #textbox2, #page77 #textbox3, #page77 #textbox4').hide();
+			$('#page77 .next_p_btn, #page77 #go_back, #page77 #textbox2, #page77 #textbox3, #page77 #textbox4, #page77 .textwrap').hide();
 			$("#page77 #textbox1, #page77 #go_next1").show();
 			$("#page77 .audio2").each(function(){ 
 				this.pause();
@@ -1060,6 +1060,7 @@ $(document).ready(function(){
 			});
 		}, 
 		"pageshow" : function(){
+			$("#page77 .textwrap").delay(500).fadeIn(500);
 			next_Count = 1;
 		}
 	});
