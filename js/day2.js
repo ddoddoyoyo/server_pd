@@ -172,6 +172,7 @@ $(document).ready(function(){
 			$('#page59 #textbox1, #page59 #go_next1').show();
 			$('#page59 .textwrap').hide();
 			$("#page59 .page_bg").css({"background":"url(../images/day2/05_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
+			$("#page59 .page_bg").fadeIn(500);
 			$("#page59 .audio2").each(function(){ 
 				this.pause();
 				if (!isNaN(this.duration)) {
@@ -180,6 +181,7 @@ $(document).ready(function(){
 			});
 		}, 
 		"pageshow" : function(){
+			$("#page59 .page_bg").fadeIn(500);
 			$('#page59 .textwrap').delay(500).fadeIn(500);
 			next_Count = 1;
 		}
