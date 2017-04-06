@@ -88,17 +88,21 @@
 					var img = new Image;
 					var imgWidth = 0;
 					var imgheight = 0;
+					var ratioW, ratioH;
 					img.src=lms_img;
 					img.onload = function() {
 						imgWidth = img.width;
 						imgheight = img.height;
+						ratioW = imgWidth * 80 / imgheight;
+						ratioH = imgheight * 80 / imgWidth;
+
 						//console.log("w : " + imgWidth);
 						//console.log("h : " + imgheight);
-						
+						console.log("W test : " + (imgWidth * 80 / imgheight));
 						if(imgheight >= imgWidth){
-							$("#current-img").css({"width":"100%","height":"auto"});
+							$("#current-img").css({"width":"100%","height":"auto","margin-top":"calc((100% - "+ ratioH+"px) / 2)"});
 						} else {
-							$("#current-img").css({"width":"auto", "height":"100%","margin-left":"calc((100% - 142px) / 2)"});
+							$("#current-img").css({"width":"auto", "height":"100%","margin-left":"calc((100% - "+ ratioW+"px) / 2)"});
 						} 
 					};
 				}
