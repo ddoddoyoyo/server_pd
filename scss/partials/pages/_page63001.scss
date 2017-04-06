@@ -4,6 +4,7 @@
   video {
     position: absolute;
     left: calc((100% - 320px) / 2);
+    overflow: hidden;
   }
 
   .ui-content {
