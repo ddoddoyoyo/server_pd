@@ -102,9 +102,9 @@
 						console.log("W test : " + ratioW);
 						console.log("h test : " + ratioH);
 						if(imgheight >= imgWidth){
-							$("#current-img").css({"width":"100%","height":"auto","margin-top":"calc((100% - "+ ratioH+"px) / 2)"});
+							$("img#current-img").css({"width":"100%","height":"auto","margin-top":"calc((100% - "+ ratioH+"px) / 2)"});
 						} else {
-							$("#current-img").css({"width":"auto","height":"100%","margin-left":"calc((100% - "+ ratioW+"px) / 2)"});
+							$("img#current-img").css({"width":"auto","height":"100%","margin-left":"calc((100% - "+ ratioW+"px) / 2)"});
 						} 
 					};
 				}
