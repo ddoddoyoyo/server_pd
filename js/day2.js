@@ -743,6 +743,7 @@ $(document).ready(function(){
 
 	$("#page70").on({
 		"pagebeforeshow" : function(){
+			$("#page70 .page_bg").fadeIn(500);
 			$('#page70 .next_p_btn, #page70 #go_back, #page70 #textbox2, #page70 #textbox3, #page70 #textbox4').hide();
 			$("#page70 .textwrap, #page70 #go_next1").hide();
 			$("#page70 .page_bg").css({"background":"url(../images/day2/21_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
@@ -754,6 +755,7 @@ $(document).ready(function(){
 			});
 		}, 
 		"pageshow" : function(){
+			$("#page70 .page_bg").fadeIn(500);
 			$("#page70 .textwrap,#page70 #textbox1,#page70 #go_next1").fadeIn(500);
 			next_Count = 1;
 		}
@@ -989,6 +991,8 @@ $(document).ready(function(){
 	$("#page75").on({
 		"pagebeforeshow" : function(){
 			$("#page75 .next_p_btn, #page75 .textwrap").hide();
+			$("#page75 .page_bg").fadeIn(500);
+
 			//$("#page75 .page_bg").css({"background-size":"120% auto"});
 			
 		}, 
@@ -996,6 +1000,7 @@ $(document).ready(function(){
 			//$("#page75 .page_bg").delay(500).animate({"backgroundSize":"100%"});
 			$("#page75 .textwrap").delay(1000).fadeIn(500);
 			$("#page75 .next_p_btn").delay(1500).fadeIn(500);
+			$("#page75 .page_bg").fadeIn(500);
 		}
 	});
 
@@ -1052,6 +1057,8 @@ $(document).ready(function(){
 
 	$("#page77").on({
 		"pagebeforeshow" : function(){
+			$("#page77 .page_bg").css({"background":"url(../images/day2/31_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
+			$("#page77 .page_bg").fadeIn(500);
 			$('#page77 .next_p_btn, #page77 #go_back, #page77 #textbox2, #page77 #textbox3, #page77 #textbox4, #page77 .textwrap').hide();
 			$("#page77 #textbox1, #page77 #go_next1").show();
 			$("#page77 .audio2").each(function(){ 
@@ -1062,6 +1069,7 @@ $(document).ready(function(){
 			});
 		}, 
 		"pageshow" : function(){
+			$("#page77 .page_bg").fadeIn(500);
 			$("#page77 .textwrap").delay(500).fadeIn(500);
 			next_Count = 1;
 		}
@@ -1453,11 +1461,13 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			//$("#page91 .page_bg").css({"background-size":"120% auto", "background-position":"50% 50%"});
 			$("#page91 .textwrap").hide();
+			$("#page91 .page_bg").fadeIn(500);
 
 		}, 
 		"pageshow" : function(){
 			//$("#page91 .page_bg").delay(500).animate({"background-size":"100%"});
 			$("#page91 .textwrap").delay(700).fadeIn(500);
+			$("#page91 .page_bg").fadeIn(500);
 
 		}
 	});

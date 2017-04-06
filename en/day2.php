@@ -82,6 +82,28 @@
 				$.mobile.pushStateEnabled = false;
 				$.mobile.changePage.defaults.changeHash = false;
 
+				var lms_img = "<? echo $LMS_IMAGE ?>";
+
+				if(lms_img != ""){
+					var img = new Image;
+					var imgWidth = 0;
+					var imgheight = 0;
+					img.src=lms_img;
+					img.onload = function() {
+						imgWidth = img.width;
+						imgheight = img.height;
+						//console.log("w : " + imgWidth);
+						//console.log("h : " + imgheight);
+						
+						if(imgheight >= imgWidth){
+							$("#current-img").css({"width":"100%","height":"auto"});
+						} else {
+							$("#current-img").css({"width":"auto", "height":"100%","margin-left":"calc((100% - 142px) / 2)"});
+						} 
+					};
+				}
+				
+
 				// $(document).on('keypress', function(e) {
 				// 	if (e.which == 13) {
 				// 		return false;
@@ -1506,7 +1528,7 @@
 			<div class="toggle">
 				<div class="imgwrap">
 					<?php if($LMS_IMAGE) { ?> 
-						<img src="<?=$LMS_IMAGE?>" alt="james">
+						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 					<?php } else { ?>
 						<img src="../images/intro/login_profile_@3x.png" alt="james">
 					<?php } ?>
@@ -1907,8 +1929,8 @@
 </div>
 
 
-<a href="#page90">이동!!!!!!!!!</a>
-<a href="#page71">이동!!!!!!!!!</a>
+<a href="#page93">이동!!!!!!!!!</a>
+<a href="#page76">이동!!!!!!!!!</a>
 
 
 
