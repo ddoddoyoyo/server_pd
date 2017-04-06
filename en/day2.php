@@ -101,6 +101,7 @@
 						//console.log("h : " + imgheight);
 						console.log("W test : " + ratioW);
 						console.log("h test : " + ratioH);
+						console.log(lms_img);
 						if(imgheight >= imgWidth){
 							$("img#current-img").css({"width":"100%","height":"auto","margin-top":"calc((100% - "+ ratioH+"px) / 2)"});
 						} else {
