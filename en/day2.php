@@ -43,9 +43,9 @@
 		<script>
 		  //주소창 없애기
 			 $(document).on("mobileinit", function () {
-				 $.mobile.hashListeningEnabled = false;
-				 $.mobile.pushStateEnabled = false;
-				 $.mobile.changePage.defaults.changeHash = false;
+				// $.mobile.hashListeningEnabled = false;
+				 //$.mobile.pushStateEnabled = false;
+				 //$.mobile.changePage.defaults.changeHash = false;
 			});
 		</script>
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -78,9 +78,9 @@
 				//console.log($("#current-img").height() );
 				//console.log($("#current-img").width() );
 
-				$.mobile.hashListeningEnabled = false;
-				$.mobile.pushStateEnabled = false;
-				$.mobile.changePage.defaults.changeHash = false;
+				//$.mobile.hashListeningEnabled = false;
+				//$.mobile.pushStateEnabled = false;
+				//$.mobile.changePage.defaults.changeHash = false;
 
 				var lms_img = "<? echo $LMS_IMAGE ?>";
 
