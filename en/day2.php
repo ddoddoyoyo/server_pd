@@ -366,7 +366,7 @@
 			<div class="popLayer">
 				<div class="imgwrap">
 					<?php if($LMS_IMAGE) { ?> 
-						<img src="<?=$LMS_IMAGE?>" alt="james">
+						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 					<?php } else { ?>
 						<img src="../images/intro/login_profile_@3x.png" alt="james">
 					<?php } ?>
@@ -473,8 +473,8 @@
 			<div class="imgwrap">
 				
 				<?php if($LMS_IMAGE) { ?> 
-					<img src="<?=$LMS_IMAGE?>" alt="james">
-				<?php } else { ?>
+						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+					<?php } else { ?>
 					<img src="../images/intro/login_profile_@3x.png"" alt="man">
 				<?php } ?>
 			</div>
@@ -499,7 +499,7 @@
 			<div class="popLayer" id="pop02">
 				<div class="imgwrap">
 					<?php if($LMS_IMAGE) { ?> 
-						<img src="<?=$LMS_IMAGE?>" alt="james">
+						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 					<?php } else { ?>
 						<img src="../images/intro/login_profile_@3x.png" alt="james">
 					<?php } ?>
@@ -634,7 +634,7 @@
 			<div class="popLayer">
 				<div class="imgwrap">
 					<?php if($LMS_IMAGE) { ?> 
-						<img src="<?=$LMS_IMAGE?>" alt="james">
+						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 					<?php } else { ?>
 						<img src="../images/intro/login_profile_@3x.png" alt="james">
 					<?php } ?>
@@ -1093,8 +1093,8 @@
 			<div class="popLayer">
 				<div class="imgwrap">
 				<?php if($LMS_IMAGE) { ?> 
-					<img src="<?=$LMS_IMAGE?>" alt="james">
-				<?php } else { ?>
+						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+					<?php } else { ?>
 					<img src="../images/intro/login_profile_@3x.png" alt="james">
 				<?php } ?>
 				</div>	
@@ -1306,8 +1306,8 @@
 		<div data-role="main" class="ui-content">
 			<div class="imgwrap">
 				<?php if($LMS_IMAGE) { ?> 
-					<img src="<?=$LMS_IMAGE?>" alt="man">
-				<?php } else { ?>
+						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+					<?php } else { ?>
 					<img src="../images/intro/login_profile_@3x.png" alt="man">
 				<?php } ?>
 			</div>
@@ -1368,8 +1368,8 @@
 		<div data-role="main" class="ui-content">
 			<div class="imgwrap">
 				<?php if($LMS_IMAGE) { ?> 
-					<img src="<?=$LMS_IMAGE?>" alt="man">
-				<?php } else { ?>
+						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+					<?php } else { ?>
 					<img src="../images/intro/login_profile_@3x.png" alt="man">
 				<?php } ?>
 			</div>
