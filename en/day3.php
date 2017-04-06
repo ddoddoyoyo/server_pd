@@ -40,6 +40,7 @@
 		<meta name="apple-touch-fullscreen" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="../css/styles.css">
 		<link rel="stylesheet" href="/pd/css/styles_day3.css">
 		<!-- <link rel="stylesheet" href="/pd/css/day3.css"> -->
 		<link rel="stylesheet" href="/pd/css/Nwagon.css">
@@ -82,16 +83,23 @@
 				function readURL(input) {
 					if (input.files && input.files[0]) {
 						var reader = new FileReader(); //파일을 읽기 위한 FileReader객체 생성
+						var img = new Image();
 						reader.onload = function (e) {
 						//파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
-							$("#current-img").attr("src", e.target.result);
-							console.log($("#current-img").height());
-							console.log($("#current-img").width());
-							if($("#current-img").height() >= $("#current-img").width()){
-								$("#current-img").css({"width":"100%","height":"auto"});
-							} else {
-								$("#current-img").css({"width":"auto", "height":"100%"});
-							}
+							var imgH,imgW;
+							img.src = e.target.result;
+							$("#current-img").attr("src", img.src);
+							img.onload = function(){
+								imgH = img.height;
+								imgW = img.width;
+								//console.log("H : " + imgH);
+								//console.log("W : " + imgW);
+								if(imgH >= imgW){
+									$("#current-img").css({"width":"100%","height":"auto"});
+								} else {
+									$("#current-img").css({"width":"auto", "height":"100%"});
+								}
+							};
 						}
 						reader.readAsDataURL(input.files[0]);
 					}
