@@ -3854,7 +3854,8 @@ img {
   background: linear-gradient(#000, #3c3c3c, #3c3c3c, #000); }
   #page63001 video {
     position: absolute;
-    left: calc((100% - 320px) / 2); }
+    left: calc((100% - 320px) / 2);
+    overflow: hidden; }
   #page63001 .ui-content {
     overflow: hidden;
     width: 100%;
@@ -4768,8 +4769,7 @@ img {
       max-width: 50%;
       float: right; }
       #page78 .ui-content .main_wrap .textwrap {
-        max-width: 188px;
-        float: right; }
+        max-width: 188px; }
         #page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
           content: "";
           display: table; }
@@ -4795,10 +4795,10 @@ img {
         #page78 .ui-content .main_wrap .textwrap .text {
           overflow: hidden; }
       #page78 .ui-content .main_wrap .imgwrap {
-        max-width: 70%;
+        width: 100%;
         max-height: 130px;
         float: right;
-        margin-right: 25%; }
+        margin-right: 35%; }
         #page78 .ui-content .main_wrap .imgwrap img {
           position: relative;
           right: -10%;
@@ -4827,8 +4827,7 @@ img {
       max-width: 50%;
       float: right; }
       #page78 .ui-content .main_wrap .textwrap {
-        max-width: 188px;
-        float: right; }
+        max-width: 188px; }
         #page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
           content: "";
           display: table; }
@@ -4854,10 +4853,10 @@ img {
         #page78 .ui-content .main_wrap .textwrap .text {
           overflow: hidden; }
       #page78 .ui-content .main_wrap .imgwrap {
-        max-width: 70%;
+        width: 100%;
         max-height: 130px;
         float: right;
-        margin-right: 25%; }
+        margin-right: 35%; }
         #page78 .ui-content .main_wrap .imgwrap img {
           position: relative;
           right: -10%;
