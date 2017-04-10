@@ -82,32 +82,33 @@
 			$.mobile.pushStateEnabled = false;
 			$.mobile.changePage.defaults.changeHash = false;
 
-			$(document).on('keypress', function(e) {
-				if (e.which == 13) {
-					return false;
-				}
-			});
-			function readURL(input) {
-				if (input.files && input.files[0]) {
-					var reader = new FileReader(); //파일을 읽기 위한 FileReader객체 생성
-					reader.onload = function (e) {
-					//파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
-						$("#current-img").attr("src", e.target.result);
-						console.log($("#current-img").height());
-						console.log($("#current-img").width());
-						if($("#current-img").height() >= $("#current-img").width()){
-							$("#current-img").css({"width":"100%","height":"auto"});
-						} else {
-							$("#current-img").css({"width":"auto", "height":"100%"});
-						}
-					}                   
-					reader.readAsDataURL(input.files[0]);
-				}
-			}
+			var lms_img = "<? echo $LMS_IMAGE ?>";
 
-			$("#upload").change(function(){
-				readURL(this);
-			});
+			if(lms_img != ""){
+				var img = new Image;
+				var imgWidth = 0;
+				var imgheight = 0;
+				var ratioW =0;
+				var ratioH =0;
+				img.src=lms_img;
+				img.onload = function() {
+					imgWidth = img.width;
+					imgheight = img.height;
+					ratioW = imgWidth * 80 / imgheight;
+					ratioH = imgheight * 80 / imgWidth;
+
+					//console.log("w : " + imgWidth);
+					//console.log("h : " + imgheight);
+					console.log("W test : " + ratioW);
+					console.log("h test : " + ratioH);
+					console.log(lms_img);
+					if(imgheight >= imgWidth){
+						$("img#current-img").css({"width":"100%","height":"auto","margin-top":"calc((100% - "+ ratioH+"px) / 2)"});
+					} else {
+						$("img#current-img").css({"width":"auto","height":"100%","margin-left":"calc((100% - "+ ratioW+"px) / 2)"});
+					} 
+				};
+			}
 		});
 
 			 
@@ -126,53 +127,6 @@
 	<body>
 		<div id="wrap">
 			<div id="contBox" class="container">
-				<!-- <section data-role="page" id="page0" class="container">
-					<div data-role="main" class="ui-content">
-						<div class="textwrap">
-							<h1>3Days trip <span>in europe</span> with i30.</h1>
-							<p>PD mobile learning</p>
-						</div>
-						<a href="#page1" id="go_page1" class="next_p_btn ui-btn go-next">
-							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
-						</a>
-						
-					</div>
-				</section>
-
-				
-				<section data-role="page" id="page1" class="container">
-				<form id="profileFrm" name="profileFrm" method="post" action="" enctype="multipart/form-data">
-					<div data-role="main" class="ui-content">
-						<div class="textwrap">
-							<h1>Hello.</h1>
-							<h2>What's your name?</h2>
-
-						</div>
-						<a class="btn btn-change" href="javascript:;">
-							<div class="imgwrap input1">
-								<img id="current-img" src="../images/intro/login_profile_icontype_@3x.png" alt="3days trip in europe">
-								<input type="file" id="upload" name="PROFILE_IMAGE" accept="image/*">
-							</div>
-						</a>
-
-						<div class="log_box input1">
-							<div class="input_info" id="select_box">
-								<label for="input_country">COUNTRY</label>
-								<select id="input_country" name="COUNTRY">
-									<option value="COUNTRY">COUNTRY</option>
-									<option value="usa">usa</option>
-									<option value="korea">korea</option>
-									<option value="china">china</option>
-								</select>
-							</div>
-							<input type="text" id="input_name" placeholder="NAME" name="">
-							<a href="#page2" class="intnext_btn">NEXT</a>
-						</div>
-						
-					</div></form>
-				</section> -->
-
-
 				<section data-role="page" id="page1001" class="container"> 
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
@@ -292,7 +246,7 @@
 								<p>You'll be travelling 6 cities for 3days with i30 and me. I've planned the routes already.<br>So shall we move on?</p>
 							</div>
 						</div>
-						<a href="#page56" id="go_page56" class="next_p_btn ui-btn go-next">
+						<a href="#page5" id="go_page5" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
@@ -1992,15 +1946,15 @@
 						<div class="imgwrap">
 							<img src="../images/person/james_7.png" alt="james">
 						</div>
-						<a href="#page56" id="go_page56" class="next_p_btn ui-btn go-next">
+						<a href="javascript:;" id="go_page56" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
 				</section>
 	</div>
 </div>
-		<!-- <a href="#page92">이동</a>
-		<a href="#page84">이동</a> -->
+		 <a href="#page55">이동</a>
+		<!--<a href="#page84">이동</a> -->
 
 
 	</body>

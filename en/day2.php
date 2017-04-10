@@ -43,9 +43,9 @@
 		<script>
 		  //주소창 없애기
 			 $(document).on("mobileinit", function () {
-				// $.mobile.hashListeningEnabled = false;
-				 //$.mobile.pushStateEnabled = false;
-				 //$.mobile.changePage.defaults.changeHash = false;
+				 $.mobile.hashListeningEnabled = false;
+				 $.mobile.pushStateEnabled = false;
+				 $.mobile.changePage.defaults.changeHash = false;
 			});
 		</script>
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -78,9 +78,9 @@
 				//console.log($("#current-img").height() );
 				//console.log($("#current-img").width() );
 
-				//$.mobile.hashListeningEnabled = false;
-				//$.mobile.pushStateEnabled = false;
-				//$.mobile.changePage.defaults.changeHash = false;
+				$.mobile.hashListeningEnabled = false;
+				$.mobile.pushStateEnabled = false;
+				$.mobile.changePage.defaults.changeHash = false;
 
 				var lms_img = "<? echo $LMS_IMAGE ?>";
 
@@ -151,7 +151,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<h1>Day1.</h1>
+						<h1>Day2.</h1>
 						<div class="img_wrap">
 							<img src="../images/button/08_point.png" alt="location point">
 							<img src="../images/button/08_lodeline.png" alt="location">
@@ -1800,7 +1800,7 @@
 				<div class="imgwrap">
 					<img src="../images/person/james_15.png" alt="james">
 				</div>
-				<a href="#page105" id="go_page105" class="next_p_btn ui-btn go-next">
+				<a href="javascript:;" id="go_day3" class="next_p_btn ui-btn go-next">
 					<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 				</a>
 			</div>
@@ -1915,21 +1915,21 @@
 		</div>
 	</section> -->
 
-	<section data-role="page" id="page105" class="container">
-		<!-- <div data-role="header" class="header">
+	<!-- <section data-role="page" id="page105" class="container">
+		<div data-role="header" class="header">
 			<a href="#" class="ui-btn go-back back" data-rel="back">
 				<img src="../images/button/icon_arrow.png" alt="">
 			</a>
 			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
 				<img src="../images/button/icon_navbar.png" alt="">
 			</a>
-		</div> -->
+		</div>
 		<div data-role="main" class="ui-content">
-			<a href="/pd/en/day3.php" class="next_p_btn ui-btn go-next"><!--href="javascript:;"-->
+			<a href="/pd/en/day3.php" class="next_p_btn ui-btn go-next">
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-	</section>
+	</section> -->
 
 </div>
 

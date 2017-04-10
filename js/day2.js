@@ -1832,7 +1832,7 @@ $(document).ready(function(){
 	});
 
 
- $("#page105 .go-next").click(function(){	
+ $("#page101 .go-next").click(function(){	
 		location.href="/pd/en/day3.php";
 	});
 

@@ -75,47 +75,40 @@
 			 $.mobile.pushStateEnabled = false;
 			 $.mobile.changePage.defaults.changeHash = false;
 
-				$(document).on('keypress', function(e) {
-					if (e.which == 13) {
-						return false;
-					}
-				});
-				function readURL(input) {
-					if (input.files && input.files[0]) {
-						var reader = new FileReader(); //파일을 읽기 위한 FileReader객체 생성
-						var img = new Image();
-						reader.onload = function (e) {
-						//파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
-							var imgH,imgW;
-							img.src = e.target.result;
-							$("#current-img").attr("src", img.src);
-							img.onload = function(){
-								imgH = img.height;
-								imgW = img.width;
-								//console.log("H : " + imgH);
-								//console.log("W : " + imgW);
-								if(imgH >= imgW){
-									$("#current-img").css({"width":"100%","height":"auto"});
-								} else {
-									$("#current-img").css({"width":"auto", "height":"100%"});
-								}
-							};
-						}
-						reader.readAsDataURL(input.files[0]);
-					}
-				}
+			 var lms_img = "<? echo $LMS_IMAGE ?>";
 
-				$("#upload").change(function(){
-					readURL(this);
-				});
-				//Nwagon.chart(options);
-			 });
+			if(lms_img != ""){
+				var img = new Image;
+				var imgWidth = 0;
+				var imgheight = 0;
+				var ratioW =0;
+				var ratioH =0;
+				img.src=lms_img;
+				img.onload = function() {
+					imgWidth = img.width;
+					imgheight = img.height;
+					ratioW = imgWidth * 80 / imgheight;
+					ratioH = imgheight * 80 / imgWidth;
+
+					//console.log("w : " + imgWidth);
+					//console.log("h : " + imgheight);
+					console.log("W test : " + ratioW);
+					console.log("h test : " + ratioH);
+					console.log(lms_img);
+					if(imgheight >= imgWidth){
+						$("img#current-img").css({"width":"100%","height":"auto","margin-top":"calc((100% - "+ ratioH+"px) / 2)"});
+					} else {
+						$("img#current-img").css({"width":"auto","height":"100%","margin-left":"calc((100% - "+ ratioW+"px) / 2)"});
+					} 
+				};
+			}		
+		});
 		</script>
 
 
 		
 <script>
-/*
+/**/
 var options = {
 	'legend':{
 		names: [],
@@ -131,7 +124,7 @@ var options = {
 	'chartType': 'radar',
 	'chartSize': {width:600, height:300}
 };
-	*/
+	
 </script>
 
 
@@ -140,7 +133,7 @@ var options = {
 		<div id="wrap">
 			<div id="contBox" class="container">
 
-				<!--<section data-role="page" id="pageStart" class="container">
+				<section data-role="page" id="pageStart" class="container">
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
 							<img src="/pd/images/day3/01_photo.jpg" alt="car" >
@@ -1822,7 +1815,7 @@ var options = {
 						</div>
 						<a href="#page48" id="go_page48" class="bye_btn">BYE</a>
 					</div>
-				</section>-->
+				</section>
 
 				<section data-role="page" id="page48" class="container">
 					<form id="Frm" name="Frm" method="post" enctype="multipart/form-data">

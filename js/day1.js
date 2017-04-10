@@ -1127,7 +1127,7 @@ $(document).ready(function(){
 	});
 
 	
-	$("#page4 .go-next").click(function(){	
+	$("#page55 .go-next").click(function(){	
 		location.href="/pd/en/day2.php";
 	});
 
