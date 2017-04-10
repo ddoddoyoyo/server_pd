@@ -8,22 +8,21 @@
   .page_bg {
     animation: twinkle 1.5s infinite;
   }
-
   .next_finger {
-    top: 20%;
+    top: 25%;
     left: 0;
-    width: 80%;
+    width: 70%;
     height: 40%;
 
     img {
       left: calc(78% - 259px);
-      top: 41%;
+      //top: 41%;
     }
   }
 
   .ui-content {
     @include reset-margins;
-    max-width: 33%;
+    width: 33%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -31,17 +30,18 @@
 
     .textwrap { 
       @include clearfix
+      // position:   relative; 
+      // top:18px;
+      // right:7px;
 
       .text_tip {
           @include text_tip_p;
+          //max-width: 23px;
+          
        }
 
        .text {
           overflow:hidden ; 
-
-          #go_page7 {
-            margin-top: 20px;
-          }
        }
     }
 
@@ -54,7 +54,9 @@
         right: -26%;
         top: 5px;
       }
-    } 
+    }
+
+
   } 
 }
 

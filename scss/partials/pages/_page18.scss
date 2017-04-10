@@ -3,10 +3,12 @@
   overflow: hidden;
   
   .page_bg {
-    background:url('../images/day1/landscape2/18_photo_1.jpg') no-repeat;
+    background-image:url('../images/day1/landscape2/18_photo_1.jpg');
     background-repeat: no-repeat;
-    background-size: 101% auto;
+    background-position: 50% 50%;
+    background-size: 100% auto;
     height: 100%;
+    position: relative;
   }
 
   a.next_finger {

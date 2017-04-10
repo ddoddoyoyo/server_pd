@@ -11,47 +11,66 @@
   }
     
   .ui-content {
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
+    //position: absolute;
+    //bottom: 0;
+    //overflow: hidden;
+    height:100%;
 
     .imgwrap {
-      width: 26%;
-      display: inline-block;
-      margin-left: 3%;
+      width: 24%;
+      //display: inline-block;
+      //margin-left: 3%;
+      position:absolute;
+      bottom:0;
+      height:55%;
+      overflow: hidden;
 
       img {
-        width: 84%;
+       // width: 84%;
         position: relative;
-        bottom: -98px;
+       // bottom: -98px;
         left: 10px;
       }
-    } 
-
-    .textwrap { 
-      @include clearfix
-      display: inline-block;
-      max-width: 55%;
-      margin-left: 22px;
-      margin-bottom: 30px;
-
-
-      .text_tip {
-          @include text_tip_l;
-          bottom: 38px;
-       }
-
-       .text {
-          overflow:hidden ;
-          margin-left: 19px; 
-                     
-          &:after {
-             content:'';
-             display:block; /* or whatever else than inline */
-             clear:both;
-          }
-       }
     }
+    .textwrap { 
+        @include clearfix;
+        margin-top: 38%;
+        margin-left: 32%;
+        padding: 0;
+        max-width: 59%;
+        position: relative;
+
+        .text_tip {
+          @include text_tip_t;
+          left:-18px;
+          top:25px;
+        }
+      }
+
+    // .textwrap { 
+    //   @include clearfix
+    //   display: inline-block;
+    //   max-width: 55%;
+    //   margin-left: 22px;
+    //   margin-bottom: 30px;
+
+
+    //   .text_tip {
+    //       @include text_tip_l;
+    //       bottom: 38px;
+    //    }
+
+    //    .text {
+    //       overflow:hidden ;
+    //       margin-left: 19px; 
+                     
+    //       &:after {
+    //          content:'';
+    //          display:block; /* or whatever else than inline */
+    //          clear:both;
+    //       }
+    //    }
+    // }
   } 
 
 }

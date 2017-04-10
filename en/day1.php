@@ -728,13 +728,13 @@
 					</div>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
-							<div class="text_tip">
-								<img src="../images/button/tail_3_@3x.png" alt="text box">
-							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
 									<p>Be hurry!<br>We gotta move on!</p>
 								</div>
+							</div>
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 						</div>
 						<a href="#page20" id="go_page20" class="next_p_btn ui-btn go-next">
@@ -752,7 +752,6 @@
 							<img src="../images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
-					<div class="page_bg"></div>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
 							<div class="text">	
@@ -806,16 +805,21 @@
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
-						</div>
-						<div class="start_text">
-									<img src="../images/button/btn_talk_more.png" alt="">
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
 							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
+						</div>
 
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1038,11 +1042,11 @@
 							<img src="../images/person/james_5.png" alt="james">
 						</div>
 						<div class="textwrap">
-							<div class="text_tip">
-								<img src="../images/button/tail_3_@3x.png" alt="text box">
-							</div>
 							<div class="text">	
 								<p>Such a thrill watching these great architects. And you know I'm saying this because it's not just my car but isn't i30's design so cool?</p>
+							</div>
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 						</div>
 					</div>
@@ -1077,15 +1081,20 @@
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
-						</div>
-						<div class="start_text">
-							<img src="../images/button/btn_talk_more.png" alt="">
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="img_twinkle">
 							<img id="img1" src="../images/day1/48_i30_block.png" alt="">
@@ -1180,15 +1189,20 @@
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
-						</div>
-						<div class="start_text">
-							<img src="../images/button/btn_talk_more.png" alt="">
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1235,15 +1249,20 @@
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
-						</div>
-						<div class="start_text">
-							<img src="../images/button/btn_talk_more.png" alt="">
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1329,13 +1348,14 @@
 					</div>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
-							<div class="text_tip">
-								<img src="../images/button/tail_3_@3x.png" alt="text box">
-							</div>
+							
 							<div class="text">	
 								<div id="textbox1" class="textbox">
 									<p>We gotta be hurry before the dawn.</p>
 								</div>
+							</div>
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 						</div>
 						<a href="#page39" id="go_page39" class="next_p_btn ui-btn go-next">
@@ -1384,15 +1404,20 @@
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
-						</div>
-						<div class="start_text">
-							<img src="../images/button/btn_talk_more.png" alt="">
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1424,11 +1449,11 @@
 							<img src="../images/person/james_2_2.png" alt="james">
 						</div>
 						<div class="textwrap">
-							<div class="text_tip">
-								<img src="../images/button/tail_3_@3x.png" alt="text box">
-							</div>
 							<div class="text">	
 								<p>It's a bit late today, so we will take a night off here in hostel.</p>
+							</div>
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 						</div>
 						<a href="#page42" id="go_page42" class="next_p_btn ui-btn go-next">
@@ -1953,7 +1978,7 @@
 				</section>
 	</div>
 </div>
-		 <a href="#page55">이동</a>
+		 <a href="#page44">이동</a>
 		<!--<a href="#page84">이동</a> -->
 
 

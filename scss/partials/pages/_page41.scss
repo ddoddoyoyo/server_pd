@@ -4,36 +4,42 @@
   background-size: 100% auto;
     
   .ui-content {
-    position: absolute;
-    bottom: 0;
+    //position: absolute;
+   // bottom: 0;
     overflow: hidden;
     width: 100%;
     height: 100%;
 
     .imgwrap {
       width: 26%;
-      display: inline-block;
-      margin-left: 3%;
+     // display: inline-block;
+     // margin-left: 3%;
+      position:absolute;
+      bottom:0;
+      height:55%;
+      overflow: hidden;
 
       img {
         position: relative;
-        width: 100%;
-        bottom: -150px;
+        //bottom: -150px;
         left: -4px;
       }
     } 
 
     .textwrap { 
       @include clearfix;
-      display: inline-block;
-      max-width: 55%;
-      margin-bottom: 30px;
-      margin-left: 5px;
-      position: absolute;
-      bottom: 0px;
+      //display: inline-block;
+      margin-top: 41%;
+      margin-left: 28%;
+      padding: 0;
+      max-width: 56%;
+      position: relative;
+     // bottom: 0px;
 
       .text_tip {
-        @include text_tip_l;
+        @include text_tip_t;
+        left:0px;
+        top:51px;
       }
 
      .text {

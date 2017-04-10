@@ -14,11 +14,12 @@
 
     .textwrap { 
         @include clearfix;
-        margin-top: 45px;
+        margin-top: 62px;
         padding: 0;
 
         .text_tip {
           @include text_tip_t;
+          top:108px;
         }
       }
   } 

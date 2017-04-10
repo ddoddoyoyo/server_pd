@@ -14,16 +14,18 @@
 
     .textwrap { 
       @include clearfix;
-      margin-top: 45px;
-      padding: 0;
+      margin-top:100px;
+      //max-width: 188px;
+      //float: right;
 
       .text_tip {
-        @include text_tip_t;
-        -moz-transform: scaleY(-1);
-        -o-transform: scaleY(-1);
-        -webkit-transform: scaleY(-1);
-        transform: scaleY(-1);
-      }
+          @include text_tip_t;
+          top:130px;
+       }
+
+       .text {
+          overflow:hidden ; 
+       }
     }
   } 
 }

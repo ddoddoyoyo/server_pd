@@ -17,15 +17,15 @@ $(document).ready(function(){
 			 }
 		 });
 
-		 audio_pause();
+		//  audio_pause();
 
-			$('section').each(function(idx,obj){
-			 var pageid = $(obj).attr("id");
-			 if($("#"+pageid).hasClass("ui-page-active")){
-				$("#"+pageid).prev().find(".audio1").trigger('play'); 
-				 //$("#"+pageid).find(".audio1").trigger('play'); 
-			 }
-		 });
+		// $('section').each(function(idx,obj){
+		// 	 var pageid = $(obj).attr("id");
+		// 	 if($("#"+pageid).hasClass("ui-page-active")){
+		// 		$("#"+pageid).prev().find(".audio1").trigger('play'); 
+		// 		 //$("#"+pageid).find(".audio1").trigger('play'); 
+		// 	 }
+		//  });
 	});
 
 	$(".btn_device").hide();
@@ -231,13 +231,47 @@ $(document).ready(function(){
 
 	$("#page6").on({
 		"pagebeforeshow" : function(){
-			$("#page6 .next_finger").hide()
+			$("#page6 .next_finger").hide();
+			$("#page6 .textwrap").hide();
+			$("#page6 .imgwrap img").css({"top":"200px"});
 
 		}, 
 		"pageshow" : function(){
-			$("#page6 .next_finger").delay(500).fadeIn(500);
+			$("#page6 .imgwrap img").animate({"top":"5px"},500);
+			$("#page6 .textwrap").delay(500).fadeIn(500);
+			$("#page6 .next_finger").delay(1000).fadeIn(500);
 		}
 	});
+
+	$("#page9").on({
+		"pagebeforeshow" : function(){
+			$("#page9 .next_p_btn").hide();
+			$("#page9 .textwrap").hide();
+			$("#page9 .imgwrap img").css({"left":"-200px"});
+
+		}, 
+		"pageshow" : function(){
+			$("#page9 .imgwrap img").animate({"left":"-4px"},500);
+			$("#page9 .textwrap").delay(500).fadeIn(500);
+			$("#page9 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
+	$("#page10").on({
+		"pagebeforeshow" : function(){
+			$("#page10 .next_p_btn").hide();
+			$("#page10 .textwrap").hide();
+			$("#page10").css({"background-size":"120% auto"});
+
+		}, 
+		"pageshow" : function(){
+			$("#page10").animate({"background-size":"100%"},500);
+			$("#page10 .textwrap").delay(500).fadeIn(500);
+			$("#page10 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
+
 	$("#page11").on({
 		"pagebeforeshow" : function(){
 			$("#page11 .text_img2, #page11 .text_tip,#page11 .text").hide();
@@ -251,10 +285,13 @@ $(document).ready(function(){
 
 	$("#page12").on({
 		"pagebeforeshow" : function(){
-			$("#page12 #textbox2, #page12 #go_back, #page12 .next_p_btn").hide();
-			$("#page12 #textbox1, #page12 #go_next1").show();
+			$("#page12 .textwrap, #page12 #textbox2, #page12 #go_back, #page12 .next_p_btn").hide();
+			//$("#page12 #textbox1, #page12 #go_next1").show();
+			$("#page12").css({"background-size":"120% auto"});
 		}, 
 		"pageshow" : function(){
+			$("#page12").animate({"background-size":"100%"},500);
+			$("#page12 .textwrap, #page12 #textbox1,#page12 #go_next1 ").delay(500).fadeIn(500);
 			next_Count = 1;
 		}
 	});
@@ -371,30 +408,46 @@ $(document).ready(function(){
 		},1000);	
 	});
 
+	$("#page15").on({
+		"pagebeforeshow" : function(){
+			$("#page15 .imgwrap , #page15 .textwrap, #page15 .next_p_btn").hide();
+		},
+		"pageshow": function(){
+			$("#page15 .imgwrap , #page15 .textwrap").fadeIn(500);
+			$('#page15 .next_p_btn').delay(500).fadeIn(500);
+		}
+
+	});
+
 	$("#page16").on({
 		"pagebeforeshow" : function(){
-			$("#page16 #textbox2, #page16 #go_back, #page16 .next_p_btn").hide();
-			$("#page16 #textbox1, #page16 #go_next1").show();
+			$("#page16 .textwrap, #page16 #textbox2, #page16 #go_back, #page16 .next_p_btn").hide();
+			//$("#page16 #textbox1, #page16 #go_next1").show();
+			$('#page16').css({'background-size':'120% auto'});
 		}, 
 		"pageshow" : function(){
+			$("#page16").animate({"background-size":"100%"},500);
+			$("#page16 .textwrap, #page16 #textbox1,#page16 #go_next1 ").delay(500).fadeIn(500);
 			next_Count = 1;
 		}
 	});
 
 	$("#page16 #go_next1").click(function(){
+		$('#page16 .textwrap').hide();
 		if(next_Count == 1){
 		    $("#page16 #textbox1, #page16 #go_next1").hide();
-		    $("#page16 #textbox2, #page16 #go_back, #page16 .next_p_btn").show();
+		    $("#page16 .textwrap,#page16 #textbox2, #page16 #go_back, #page16 .next_p_btn").fadeIn(500);
 		} 
 		next_Count++;
 	});
 
 	$("#page16 #go_back").click(function(e){
+		$('#page16 .textwrap').hide();
 		if(next_Count == 1){
 			
 		} else if(next_Count == 2){
 			$(this).hide();
-			$("#page16 #textbox1, #page16 #go_next1").show();
+			$("#page16 .textwrap, #page16 #textbox1, #page16 #go_next1").fadeIn(500);
 			$("#page16 #textbox2, #page16 .next_p_btn").hide();
 		}
 		next_Count--;
@@ -403,12 +456,13 @@ $(document).ready(function(){
 	$("#page17").on({
 		"pagebeforeshow" : function(){
 			$("#page17 #textbox2, #page17 .view_text").hide();
-			$("#page17 .textwrap").show();
+			$("#page17 .textwrap, #page17 .next_finger").hide();
 			$('#page17 .ui-content').queue(function() {
 		        $(this).css({"background":"url(../images/day1/landscape2/17_photo_1.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		}, 
 		"pageshow" : function(){
+			$('#page17 .textwrap').fadeIn(500);
 			$("#page17 .next_finger").delay(500).fadeIn(500);
 		}
 	});
@@ -428,66 +482,115 @@ $(document).ready(function(){
 
 	$("#page18").on({
 		"pagebeforeshow" : function(){
-			$('#page18 .next_p_btn, #page18 #go_back, #page18 #textbox2, #page18 #textbox3').hide();
-			$("#page18 #textbox1, #page18 #go_next1").show();
-			$('#page18 .page_bg').css({"background":"url(../images/day1/landscape2/18_photo_1.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"});
+			$('#page18 .textwrap, #page18 .next_p_btn, #page18 #go_back, #page18 #textbox2, #page18 #textbox3').hide();
+			//$("#page18 #textbox1, #page18 #go_next1").show();
+			// $('#page18 .page_bg').css({"background":"url(../images/day1/landscape2/18_photo_1.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"});
+			//$("#page18 .page_bg").fadeIn(500);
+			$('#page18 .page_bg').css({"background":"url(../images/day1/landscape2/18_photo_1.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
+			$('#page18 #textbox1, #page18 #go_next1').show();
+			
 		}, 
 		"pageshow" : function(){
+			$("#page18 .page_bg").fadeIn(500);
+			
+			$('#page18 .textwrap').delay(500).fadeIn(500);
 			next_Count = 1;
 		}
 	});
 
 	$("#page18 #go_next1").click(function(e){
+		$('#page18 .textwrap').hide();
 		if(next_Count == 1){
-			$('#page18 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/landscape2/18_photo_2.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page18 #go_back").fadeIn();
+			// $('#page18 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/landscape2/18_photo_2.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$('#page18 .page_bg').css({"background":"url(../images/day1/landscape2/18_photo_2.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+		 	$('#page18 .page_bg').animate({'left':'0'},500);
 		    $("#page18 #textbox1").hide();
-		    $("#page18 #textbox2").show();
+		    $("#page18 .textwrap, #page18 #textbox2, #page18 #go_back").delay(500).fadeIn(500);
 		} else if(next_Count == 2){
-			$('#page18 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/landscape2/19_photo_2.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
+			// $('#page18 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/landscape2/19_photo_2.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$('#page18 .page_bg').css({"background":"url(../images/day1/landscape2/19_photo_2.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+		 	$('#page18 .page_bg').animate({'left':'0'},500);
 		    $("#page18 #go_next1, #page18 #textbox2").hide();
-		    $("#page18 .next_p_btn, #page18 #textbox3").show();
+		    $("#page18 .textwrap, #page18 .next_p_btn, #page18 #textbox3").delay(500).fadeIn(500);
 		} 
 		next_Count++;
 	});
 
 
 	$("#page18 #go_back").click(function(e){
+		$('#page18 .textwrap').hide();
 		if(next_Count == 1){
 			
 		} else if(next_Count == 2){
 			$(this).hide();
-			$('#page18 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/landscape2/18_photo_1.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page18 #textbox1").show();
+			// $('#page18 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/landscape2/18_photo_1.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$('#page18 .page_bg').css({"background":"url(../images/day1/landscape2/18_photo_1.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+		 	$('#page18 .page_bg').animate({'left':'0'},500);
+		    $("#page18 .textwrap, #page18 #textbox1").delay(500).fadeIn(500);
 			$("#page18 #textbox2, #page18 .next_p_btn").hide();
 		} else if(next_Count == 3){
-			$('#page18 #go_next1').show()
-			$('#page18 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/landscape2/18_photo_2.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page18 #textbox2").show();
+			// $('#page18 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/landscape2/18_photo_2.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$('#page18 .page_bg').css({"background":"url(../images/day1/landscape2/18_photo_2.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+		 	$('#page18 .page_bg').animate({'left':'0'},500);
+		    $("#page18 .textwrap, #page18 #textbox2,#page18 #go_next1").delay(500).fadeIn(500);
 			$("#page18 #textbox3, #page18 .next_p_btn").hide();
 		}
 		next_Count--;
 	});
+
+	$("#page19").on({
+		"pagebeforeshow" : function(){
+			$('#page19 .textwrap, #page19 .next_p_btn').hide();
+		}, 
+		"pageshow" : function(){
+			$('#page19 .textwrap').fadeIn(500);
+			$('#page19 .next_p_btn').delay(500).fadeIn(500);
+		}
+	});
+
+	$("#page20").on({
+		"pagebeforeshow" : function(){
+			$('#page20 .textwrap, #page20 .next_p_btn').hide();
+		}, 
+		"pageshow" : function(){
+			$('#page20 .textwrap').fadeIn(500);
+			$('#page20 .next_p_btn').delay(500).fadeIn(500);
+		}
+	});
+
+	$("#page21").on({
+		"pagebeforeshow" : function(){
+			$('#page21 .textwrap, #page21 .next_p_btn').hide();
+			$('#page21').css({'background-size':'120% auto'});
+		}, 
+		"pageshow" : function(){
+			$('#page21').animate({'background-size':'100%'},500);
+			$('#page21 .textwrap').delay(500).fadeIn(500);
+			$('#page21 .next_p_btn').delay(1000).fadeIn(500);
+		}
+	});
+
+
 
 	$("#page22").on({
 		"pagebeforeshow" : function(){
@@ -500,7 +603,7 @@ $(document).ready(function(){
 			next_Count = 1;
 		}
 	});
-	$("#page22 .imgwrap").click(function(){
+	$("#page22 .toggle").click(function(){
 		$("#page22 .textwrap, #page22 .start_text").toggle();
 	});
 
@@ -531,28 +634,32 @@ $(document).ready(function(){
 
 	$("#page23").on({
 		"pagebeforeshow" : function(){
-			$("#page23 #textbox2, #page23 #go_back, #page23 .next_p_btn").hide();
-			$("#page23 #textbox1, #page23 #go_next1").show();
+			$("#page23 .textwrap, #page23 #textbox2, #page23 #go_back, #page23 .next_p_btn").hide();
+			$('#page23').css({'background-size':'120% auto'});
 		}, 
 		"pageshow" : function(){
+			$("#page23 .textwrap, #page23 #textbox1, #page23 #go_next1").delay(500).fadeIn(500);
+			$('#page23').animate({'background-size':'100%'});
 			next_Count = 1;
 		}
 	});
 
 	$("#page23 #go_next1").click(function(){
+		$('#page23 .textwrap').hide();
 		if(next_Count == 1){
 		    $("#page23 #textbox1, #page23 #go_next1").hide();
-		    $("#page23 #textbox2, #page23 #go_back, #page23 .next_p_btn").show();
+		    $("#page23 .textwrap,#page23 #textbox2, #page23 #go_back, #page23 .next_p_btn").fadeIn(500);
 		} 
 		next_Count++;
 	});
 
 	$("#page23 #go_back").click(function(e){
+		$('#page23 .textwrap').hide();
 		if(next_Count == 1){
 			
 		} else if(next_Count == 2){
 			$(this).hide();
-			$("#page23 #textbox1, #page23 #go_next1").show();
+			$("#page23 .textwrap,#page23 #textbox1, #page23 #go_next1").fadeIn(500);
 			$("#page23 #textbox2, #page23 .next_p_btn").hide();
 		}
 		next_Count--;
@@ -561,12 +668,13 @@ $(document).ready(function(){
 	$("#page25").on({
 		"pagebeforeshow" : function(){
 			$("#page25 .view_text").hide();
-			$("#page25 .textwrap").show();
+			$("#page25 .textwrap, #page25 .next_finger").hide();
 			$('#page25 .page_bg').queue(function() {
 		        $(this).css({"background":"url(../images/day1/38_photo_1.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		}, 
 		"pageshow" : function(){
+			$("#page25 .textwrap").fadeIn(500);
 			$("#page25 .next_finger").delay(500).fadeIn(500);
 		}
 	});
@@ -587,86 +695,126 @@ $(document).ready(function(){
 
 	$("#page26").on({
 		"pagebeforeshow" : function(){
-			$('#page26 .next_p_btn, #page26 #go_back, #page26 #textbox2, #page26 #textbox3, #page26 #textbox4').hide();
-			$("#page26 #textbox1, #page26 #go_next1").show();
-			$('#page26 .page_bg').css({"background":"url(../images/day1/40_photo_1.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"});
+			$('#page26 .textwrap,#page26 .next_p_btn, #page26 #go_back, #page26 #textbox2, #page26 #textbox3, #page26 #textbox4').hide();
+			$('#page26 .page_bg').css({"background":"url(../images/day1/40_photo_1.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
 		}, 
 		"pageshow" : function(){
+			$("#page26 .textwrap, #page26 #textbox1, #page26 #go_next1").fadeIn(500);
 			next_Count = 1;
 		}
 	});
 
 	$("#page26 #go_next1").click(function(e){
+		$('#page26 .textwrap').hide();
 		if(next_Count == 1){
-			$('#page26 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/38_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page26 #go_back").fadeIn();
+			// $('#page26 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/38_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page26 .page_bg").css({"background":"url(../images/day1/38_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+			$("#page26 .page_bg").animate({"left":"0"},500);
+		    $("#page26 .textwrap, #page26 #textbox2, #page26 #go_back").delay(500).fadeIn(500);
 		    $("#page26 #textbox1").hide();
-		    $("#page26 #textbox2").show();
+		    //$("#page26 #textbox2").show();
 		} else if(next_Count == 2){
-			$('#page26 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/39_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
+			// $('#page26 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/39_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page26 .page_bg").css({"background":"url(../images/day1/39_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+			$("#page26 .page_bg").animate({"left":"0"},500);
+			$("#page26 .textwrap, #page26 #textbox3").delay(500).fadeIn(500);
 		    $("#page26 #textbox2").hide();
-		    $("#page26 #textbox3").show();
+		   // $("#page26 #textbox3").show();
 		} else if(next_Count == 3){
-			$('#page26 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/40_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page26 #go_next, #page26 #textbox3, #page26 #go_next1").hide();
-		    $("#page26 .next_p_btn, #page26 #textbox4").show();
+			// $('#page26 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/40_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page26 .page_bg").css({"background":"url(../images/day1/40_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+			$("#page26 .page_bg").animate({"left":"0"},500);
+		    $("#page26 #textbox3, #page26 #go_next1").hide();
+		    $("#page26 .textwrap, #page26 #textbox4,#page26 .next_p_btn").delay(500).fadeIn(500);
+		    //$("#page26 .next_p_btn, #page26 #textbox4").show();
 		} 
 		next_Count++;
 	});
 
 
 	$("#page26 #go_back").click(function(e){
+		$('#page26 .textwrap').hide();
 		if(next_Count == 1){
 			
 		} else if(next_Count == 2){
 			$(this).hide();
-			$('#page26 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/40_photo_1.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page26 #textbox1").show();
+			// $('#page26 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/40_photo_1.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page26 .page_bg").css({"background":"url(../images/day1/40_photo_1.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+			$("#page26 .page_bg").animate({"left":"0"},500);
+		    $("#page26 .textwrap, #page26 #textbox1").delay(500).fadeIn(500);
 			$("#page26 #textbox2, #page26 .next_p_btn").hide();
 		} else if(next_Count == 3){
-			$('#page26 #go_next1').show()
-			$('#page26 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/38_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page26 #textbox2").show();
+			// $('#page26 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/38_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page26 .page_bg").css({"background":"url(../images/day1/38_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+			$("#page26 .page_bg").animate({"left":"0"},500);
+		    $("#page26 .textwrap,#page26 #textbox2").delay(500).fadeIn(500);
 			$("#page26 #textbox3").hide();
 		}else if(next_Count == 4){
-			$('#page26 #go_next1').show()
-			$('#page26 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/39_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page26 #textbox3").show();
+			//$('#page26 #go_next1').show()
+			// $('#page26 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/39_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+			$("#page26 .page_bg").css({"background":"url(../images/day1/39_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+			$("#page26 .page_bg").animate({"left":"0"},500);
+		    $("#page26 .textwrap, #page26 #textbox3, #page26 #go_next1").delay(500).fadeIn(500);
 			$("#page26 #textbox4, #page26 .next_p_btn").hide();
 		}
 		next_Count--;
 	});
-	
+
+	$("#page27").on({
+		"pagebeforeshow" : function(){
+			$('#page27 .next_p_btn, #page27 .textwrap').hide();
+			$('#page27 .imgwrap img').css({"top":"250px"});
+		}, 
+		"pageshow" : function(){
+			$('#page27 .imgwrap img').animate({"top":"62px"},500);
+			$("#page27 .textwrap").delay(500).fadeIn(500);
+			$("#page27 .next_p_btn").delay(500).fadeIn(500);
+			
+		}
+	});
+
+	$("#page28").on({
+		"pagebeforeshow" : function(){
+			$('#page28 .next_finger, #page28 .textwrap').hide();
+			$('#page28 .imgwrap img').css({"left":"-200px"});
+		}, 
+		"pageshow" : function(){
+			$('#page28 .imgwrap img').animate({"left":"10px"},500);
+			$("#page28 .textwrap").delay(500).fadeIn(500);
+			$("#page28 .next_finger").delay(500).fadeIn(500);
+			
+		}
+	});
 	//page30
 	$("#page30").on({
 		"pagebeforeshow" : function(){
@@ -678,7 +826,7 @@ $(document).ready(function(){
 			next_Count = 0;
 		}
 	});
-	$("#page30 .imgwrap").click(function(){
+	$("#page30 .toggle").click(function(){
 		$("#page30 .textwrap, #page30 .start_text").toggle();
 	});
 
@@ -751,7 +899,7 @@ $(document).ready(function(){
 			$("#page33 #textbox1").show();	
 		}
 	});
-	$("#page33 .imgwrap").click(function(){
+	$("#page33 .toggle").click(function(){
 		$("#page33 .textwrap, #page33 .start_text, #page33 .next_p_btn").toggle();
 	});
 
@@ -765,19 +913,44 @@ $(document).ready(function(){
 			$("#page35 #textbox1").show();	
 		}
 	});
-	$("#page35 .imgwrap").click(function(){
+	$("#page35 .toggle").click(function(){
 		$("#page35 .textwrap, #page35 .start_text, #page35 .next_p_btn").toggle();
 	});
 
 	$("#page37").on({
 		"pagebeforeshow" : function(){
-			$("#page37 .next_finger").hide()
-
+			$("#page37 .next_finger, #page37 .textwrap").hide()
+			$('#page37 .imgwrap img').css({"top":"200px"});
 		}, 
 		"pageshow" : function(){
-			$("#page37 .next_finger").delay(500).fadeIn(500);
+			$('#page37 .imgwrap img').animate({"top":"5px"},500);
+			$("#page37 .textwrap").delay(500).fadeIn(500);
+			$("#page37 .next_finger").delay(1000).fadeIn(500);
 		}
 	});
+
+	$("#page38").on({
+		"pagebeforeshow" : function(){
+			$("#page38 .next_finger, #page38 .textwrap").hide()
+			$('#page38').css({"background-size":"120% auto"});
+		}, 
+		"pageshow" : function(){
+			$('#page38').animate({"background-size":"100%"},500);
+			$("#page38 .textwrap").delay(500).fadeIn(500);
+			$("#page38 .next_finger").delay(1000).fadeIn(500);
+		}
+	});
+
+	$("#page39").on({
+		"pagebeforeshow" : function(){
+			$("#page39 .next_finger, #page39 .textwrap").hide();
+		}, 
+		"pageshow" : function(){
+			$("#page39 .textwrap").delay(500).fadeIn(500);
+			$("#page39 .next_finger").delay(1000).fadeIn(500);
+		}
+	});
+
 
 	//page40
 	$("#page40").on({
@@ -789,8 +962,56 @@ $(document).ready(function(){
 			$("#page40 #textbox1").show();	
 		}
 	});
-	$("#page40 .imgwrap").click(function(){
+	$("#page40 .toggle").click(function(){
 		$("#page40 .textwrap, #page40 .start_text, #page40 .next_p_btn").toggle();
+	});
+
+	$("#page41").on({
+		"pagebeforeshow" : function(){
+			$("#page41 .next_finger, #page41 .textwrap").hide();
+			$('#page41 .imgwrap img').css({"left":"-200px"});
+		}, 
+		"pageshow" : function(){
+			$('#page41 .imgwrap img').animate({"left":"-4px"},500);
+			$("#page41 .textwrap").delay(500).fadeIn(500);
+			$("#page41 .next_finger").delay(1000).fadeIn(500);
+		}
+	});
+
+	$("#page42").on({
+		"pagebeforeshow" : function(){
+			$("#page42 .next_finger, #page42 .textwrap").hide();
+			
+		}, 
+		"pageshow" : function(){
+			$("#page42 .textwrap").fadeIn(500);
+			$("#page42 .next_finger").delay(500).fadeIn(500);
+		}
+	});
+
+
+	$("#page44").on({
+		"pagebeforeshow" : function(){
+			$("#page44 .next_finger, #page44 .textwrap").hide();
+			$('#page44 .imgwrap img').css({"top":"200px"});
+		}, 
+		"pageshow" : function(){
+			$('#page44 .imgwrap img').animate({"top":"0"},500);
+			$("#page44 .textwrap").delay(500).fadeIn(500);
+			$("#page44 .next_finger").delay(1000).fadeIn(500);
+		}
+	});
+
+	$("#page45").on({
+		"pagebeforeshow" : function(){
+			$("#page45 .next_finger, #page45 .textwrap").hide();
+			$('#page45 .imgwrap img').css({"top":"200px"});
+		}, 
+		"pageshow" : function(){
+			$('#page45 .imgwrap img').animate({"top":"7px"},500);
+			$("#page45 .textwrap").delay(500).fadeIn(500);
+			$("#page45 .next_finger").delay(1000).fadeIn(500);
+		}
 	});
 
 		//page46
