@@ -275,9 +275,6 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="start_text">
-							<img src="/pd/images/button/btn_talk_more.png" alt="">
-						</div>
 						<div class="img_twinkle" id="img_twinkle3_1">
 							<img src="/pd/images/day3/05_image_overlay.jpg" alt="">
 						</div>
@@ -287,12 +284,20 @@ var options = {
 						<div class="img_twinkle" id="img_twinkle3_3">
 							<img src="/pd/images/day3/07_image_overlay.jpg" alt="">
 						</div>
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -469,14 +474,36 @@ var options = {
 								<div>Unified panel</div>
 							</div>
 						</div>
-						<div class="pageTitle">Minimized number of parts</div>
-						<div class="profilewrap">
+						<!-- <div class="pageTitle">Minimized number of parts</div> -->
+						<div class="titlewrap">
+							<div class="text_i">
+								<div id="textbox1">
+									<p>Minimized number of parts</p>
+								</div>	
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="profilewrap">
+								<?php if($LMS_IMAGE) { ?> 
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
+						</div>
+						<!-- <div class="profilewrap">
 							<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
-						</div>
+						</div> -->
 						<div class="textwrap">
 							<div class="text_tip">
 								<img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1853,7 +1880,7 @@ var options = {
 			</div>
 		</div>
 
-		<!-- <a href="#page48">이동</a> -->
+		<!--  --><a href="#page6">이동</a>
 	</body>
 </html>
 

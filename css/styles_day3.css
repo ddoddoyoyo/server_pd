@@ -195,7 +195,7 @@ img {
 				height:23px;
 				padding-left:2px;
 				background:dimgray; }
-				.ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:focus, .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:hover, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:focus, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:hover {
+				.ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:hover,.ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:hover,.ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:active,.ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:active {
 					background:#2b73af; }
 			.ui-page-theme-a .ui-content .textwrap .text .text_btn_r {
 				float:left; }
@@ -410,11 +410,11 @@ img {
 }
 
 @media only screen and (orientation:Portrait) {
-	#page4 .ui-content {
+	#pageStart .ui-content {
 		display:none !important; } }
 
 @media only screen and (orientation:landscape) {
-	#page4 .ui-content {
+	#pageStart .ui-content {
 		display:block; } }
 
 #page0 {
@@ -483,11 +483,11 @@ img {
 				top:5px; }
 
 @media only screen and (orientation:Portrait) {
-	#page4 .ui-content {
+	#page0 .ui-content {
 		display:none !important; } }
 
 @media only screen and (orientation:landscape) {
-	#page4 .ui-content {
+	#page0 .ui-content {
 		display:block; } }
 
 #page1 {
@@ -517,11 +517,11 @@ img {
 				top:80px; }
 
 @media only screen and (orientation:Portrait) {
-	#page4 .ui-content {
+	#page1 .ui-content {
 		display:none !important; } }
 
 @media only screen and (orientation:landscape) {
-	#page4 .ui-content {
+	#page1 .ui-content {
 		display:block; } }
 
 #page2 {
@@ -563,11 +563,11 @@ img {
           transform: rotate(-90deg); }
 
 @media only screen and (orientation:Portrait) {
-	#page4 .ui-content {
+	#page2 .ui-content {
 		display:none !important; } }
 
 @media only screen and (orientation:landscape) {
-	#page4 .ui-content {
+	#page2 .ui-content {
 		display:block; } }
 
 #page3 {
@@ -577,26 +577,38 @@ img {
 		overflow:hidden;
 		width:100%;
 		height:100%; }
-		#page3 .ui-content .imgwrap {
-			width:80px;
-			height:80px;
-			border-radius:50px;
-			margin-left:25px;
-			position:absolute;
-			bottom:25px;
-			overflow:hidden; }
-		#page3 .ui-content .start_text {
-			max-width:60px;
-			position:absolute;
-			bottom:106px;
-			left:77px;
-			z-index:10; }
+		
 		#page3 .ui-content .img_twinkle {
 			animation:twinkle 1.5s infinite;
 			width:100%;
 			position:absolute;
 			left:0;
 			top:0; }
+		#page3 .ui-content .toggle {
+	      width: 150px;
+	      height: 50%;
+	      position: absolute;
+	      bottom: 0;
+	      cursor: pointer; }
+	    #page3 .ui-content .toggle .imgwrap {
+	        width: 80px;
+	        height: 80px;
+	        border-radius: 50px;
+	        margin-left: 25px;
+	        position: absolute;
+	        bottom: 25px;
+	        overflow: hidden; }
+	    #page3 .ui-content .toggle .start_text {
+	        max-width: 60px;
+	        position: absolute;
+	        bottom: 106px;
+	        left: 77px;
+	        z-index: 10; }
+	    #page3 .ui-content .toggle .close_text {
+	        max-width: 20px;
+	        position: absolute;
+	        bottom: 126px;
+	        left: 97px; }
 		#page3 .ui-content .textwrap {
 			max-width:63%;
 			margin-left:0;
@@ -620,11 +632,11 @@ img {
 				margin-left:19px; }
 
 @media only screen and (orientation:Portrait) {
-	#page4 .ui-content {
+	#page3 .ui-content {
 		display:none !important; } }
 
 @media only screen and (orientation:landscape) {
-	#page4 .ui-content {
+	#page3 .ui-content {
 		display:block; } }
 
 #page4 {
@@ -777,11 +789,17 @@ img {
 		height:100%;
 		width:100%; }
 		#page6 .ui-content .imgwrap {
-			width:90%;
+			/*width:90%;
 			position:absolute;
 			top:15%;
 			left:35px;
-			height:80%; }
+			height:80%;*/
+			width:70%;
+			position:absolute;
+			top:26%;
+			left:20%;
+			height:70%; 
+		}
 			#page6 .ui-content .imgwrap ul {
 				width:86%;
 				border-left:solid 1px #6b6b6b;
@@ -844,11 +862,17 @@ img {
 			#page6 .ui-content .imgwrap .graphDesc span {
 				font-size:0.5em; }
 			#page6 .ui-content .imgwrap2 {
-				width:90%;
+				/*width:90%;
 				position:absolute;
 				top:20%;
 				left:35px;
-				height:80%; }
+				height:80%;*/
+				width:86%;
+				position:absolute;
+				top:26%;
+				left:9%;
+				height:80%;
+				 }
 			#page6 .ui-content .imgwrap2 .panel {
 				margin:0 0 15px 0;
 				overflow:hidden; }
@@ -872,22 +896,58 @@ img {
 			#page6 .ui-content .imgwrap2 .panelImg div:nth-child(2) {
 				background:url(../images/day3/12_vehicle_right.png) no-repeat center;
 				background-size:65%; }
-		#page6 .ui-content .profilewrap {
+		/*#page6 .ui-content .profilewrap {
 			width:80px;
 			height:80px;
 			border-radius:50px;
 			margin-left:25px;
 			position:absolute;
 			bottom:25px;
-			overflow:hidden; }
-		#page6 .ui-content .pageTitle {
+			overflow:hidden; }*/
+			#page6 .ui-content .toggle {
+		      width: 150px;
+		      height: 50%;
+		      position: absolute;
+		      bottom: 0;
+		      cursor: pointer; }
+	        #page6 .ui-content .toggle .profilewrap {
+		        width: 80px;
+		        height: 80px;
+		        border-radius: 50px;
+		        margin-left: 25px;
+		        position: absolute;
+		        bottom: 25px;
+		        overflow: hidden; }
+	        #page6 .ui-content .toggle .start_text {
+		        max-width: 60px;
+		        position: absolute;
+		        bottom: 106px;
+		        left: 77px;
+		        z-index: 10; }
+	        #page6 .ui-content .toggle .close_text {
+		        max-width: 20px;
+		        position: absolute;
+		        bottom: 126px;
+		        left: 97px; }
+		/*#page6 .ui-content .pageTitle {
 			margin:20px 0 0 0;
 			width:100%;
 			text-align:center;
 			font-size:18pt;
 			position:absolute;
 			font-weight:700;
-			color:#FFF; }
+			color:#FFF; }*/
+		#page6 .ui-content .titlewrap {
+      		text-align: center;
+      		margin:0 16px; 
+  		}
+	     #page6 .ui-content .titlewrap .text_i {
+	        width: 50%; 
+	    	margin:0 auto;
+	    	padding-top:5%;}
+	    #page6 .ui-content .titlewrap .text_i  p{
+	    	font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+		}
 		#page6 .ui-content .textwrap {
 			max-width:80%;
 			margin-left:0;

@@ -219,7 +219,7 @@ img {
 					padding-left: 2px;
 					background: $gray;
 
-					&:focus, &:hover {
+					&:hover, &:active {
 						background: $btn_navi;
 					}
 				}

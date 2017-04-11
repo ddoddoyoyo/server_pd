@@ -96,7 +96,7 @@ $(document).ready(function() {
 			next_Count = 0;
 		}
 	});
-	$("#page3 .imgwrap").click(function() {
+	$("#page3 .toggle").click(function() {
 		$("#page3 .textwrap, #page3 .start_text, #textbox3_1, #img_twinkle3_1").toggle();
 	});
 
@@ -164,10 +164,11 @@ $(document).ready(function() {
 
 	$("#page4").on({
 		"pagebeforeshow" : function() {
-			$("#page4 .graphQuantity4 div, #page4 .graphLegend4 div, #page4 .graph4 li, #page4 #textbox2, #page4 #go_back, #page4 .next_p_btn").hide();
-			$("#page4 #textbox1, #page4 #go_next1").show();
+			$("#page4 .graphQuantity4 div, #page4 .graphLegend4 div, #page4 .graph4 li, #page4 #textbox2, #page4 #go_back, #page4 .next_p_btn, #page4 .textwrap").hide();
+			//$("#page4 #textbox1, #page4 #go_next1").show();
 		},
 		"pageshow" : function() {
+			$("#page4 .textwrap ,#page4 #textbox1, #page4 #go_next1").fadeIn(500);
 			next_Count = 1;
 			$("#page4 .graphQuantity4 div:nth-child(1), #page4 .graphLegend4 div:nth-child(1), #page4 .graph4 li:nth-child(1)").slideDown(function() {
 				$("#page4 .graph4 li:nth-child(1)").css({'animation': 'twinkle 1.5s infinite'});
@@ -199,10 +200,22 @@ $(document).ready(function() {
 		next_Count--;
 	});
 
+	$("#page5").on({
+		"pagebeforeshow" : function(){
+			$("#page5 .textwrap, #page5 .next_p_btn").hide();
+			$("#page5").css({"background-size":"120% auto"});
+		},
+		"pageshow": function(){
+			$("#page5").animate({"background-size":"100%"},500);
+			$("#page5 .textwrap").delay(500).fadeIn(500);
+			$("#page5 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
 	$("#page6").on({
 		"pagebeforeshow" : function() {
-			$("#page6 .imgwrap, #page6 .textbox").show();
-			$("#page6 .imgwrap2, #page6 #go_back, #textbox6_2, #page6 .graphDesc").hide();
+			$("#page6 .imgwrap, #page6 .textbox,#page6 .titlewrap").show();
+			$("#page6 .textwrap,#page6 .imgwrap2, #page6 #go_back, #textbox6_2, #page6 .graphDesc, #page6 .next_p_btn").hide();
 			$("#page6 .graphObj").css({'margin-left':'-100%'});
 			next_Count = 1;
 		},
@@ -215,6 +228,10 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#page6 .toggle").click(function() {
+		$("#page6 .textwrap, #page6 .start_text, #textbox3_1, #img_twinkle3_1").toggle();
+	});
+
 	$("#page6 #go_next1").click(function() {
 		if (next_Count == 1) {
 			$("#page6 .textbox, #page6 #go_back, #page6 #go_next1, #page6 .panelImg img").hide();
@@ -222,7 +239,7 @@ $(document).ready(function() {
 			$("#page6 .panelImg img").fadeIn();
 			$("#page6 .imgwrap").hide();
 			$("#page6 .imgwrap2").show();
-			$("#page6 .pageTitle").html('Unified frame panel');
+			$("#page6 .titlewrap .text_i #textbox1 p").html('Unified frame panel');
 			$('#page6').queue(function() {
 				$(this).css({"background-image":"url(../images/day3/09_bg.jpg)","background-repeat":"no-repeat", "background-size":"100% auto"}).dequeue();
 			});
@@ -246,7 +263,7 @@ $(document).ready(function() {
 				$("#page6 .graphDesc").fadeIn();
 			});
 			$("#page6 .graph6_2 .graphObj").animate({'margin-left':'0'}, 'slow');
-			$("#page6 .pageTitle").html('Minimized number of parts');
+			$("#page6 .titlewrap .text_i #textbox1 p").html('Minimized number of parts');
 			$('#page6').queue(function() {
 				$(this).css({"background-image":""}).dequeue();
 			});
