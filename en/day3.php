@@ -594,7 +594,14 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Verify the engines</div>
+						<!-- <div class="pageTitle">Verify the engines</div> -->
+						<div class="titlewrap">
+							<div class="text_i">
+								<div id="textbox1">
+									<p>Verify the engines</p>
+								</div>	
+							</div>
+						</div>
 						<div class="imgwrap">
 							<div class="engine">
 								<img src="/pd/images/day3/15_btn_01.png" alt="0" />
@@ -618,7 +625,14 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Result</div>
+						<!-- <div class="pageTitle">Result</div> -->
+						<div class="titlewrap">
+							<div class="text_i">
+								<div id="textbox1">
+									<p>Verify the engines</p>
+								</div>	
+							</div>
+						</div>
 						<div class="imgwrap">
 							<div class="graphLegend10">
 								<div>NU 2.0 GDI</div>
@@ -1197,15 +1211,20 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="start_text">
-							<img src="/pd/images/button/btn_talk_more.png" alt="">
-						</div>
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1260,15 +1279,20 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="start_text">
-							<img src="/pd/images/button/btn_talk_more.png" alt="">
-						</div>
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1328,15 +1352,20 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="start_text">
-							<img src="/pd/images/button/btn_talk_more.png" alt="">
-						</div>
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1396,15 +1425,20 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="start_text">
-							<img src="/pd/images/button/btn_talk_more.png" alt="">
-						</div>
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1465,15 +1499,20 @@ var options = {
 					</div>
 					<div class="page_bg"></div>
 					<div data-role="main" class="ui-content">
-						<div class="start_text">
-							<img src="/pd/images/button/btn_talk_more.png" alt="">
-						</div>
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1515,7 +1554,7 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="main_wrap">
+						
 							<div class="textwrap">	
 								<div class="text">	
 									<div id="textbox1" class="textbox">
@@ -1532,7 +1571,7 @@ var options = {
 							<a href="#page38" id="go_page38" class="next_p_btn ui-btn go-next">
 								<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
-						</div>
+						
 					</div>
 				</section>
 
@@ -1577,7 +1616,14 @@ var options = {
 						<div id="page39ChartNum5" class="page39ChartNum">99%</div>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Result</div>
+						<!-- <div class="pageTitle">Result</div> -->
+						<div class="titlewrap">
+							<div class="text_i">
+								<div id="textbox1">
+									<p>Result</p>
+								</div>	
+							</div>
+						</div>
 						<a href="#page40" id="go_page40" class="next_p_btn ui-btn go-next">
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
@@ -1880,7 +1926,7 @@ var options = {
 			</div>
 		</div>
 
-		<!--  --><a href="#page6">이동</a>
+		<!--  --><a href="#page36">이동</a>
 	</body>
 </html>
 
