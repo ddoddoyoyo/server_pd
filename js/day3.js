@@ -1,45 +1,15 @@
 $(document).ready(function() {
-	// mobile, tablet / PC 구분
-	mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowssce|palm/i.test(navigator.userAgent.toLowerCase()));
-	ios =  (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
-	android = (/android/i.test(navigator.userAgent.toLowerCase()));
-	if (!mobile) {
-		$("#wrap").addClass("mobile");
-		$("body").append("<div id='mokup'><a class='btn btn_device'><img src='../images/icon_again.png' alt='Tilt device'></a></div>");
-		//$(".ui-page").css("min-height": "100%");
-	}
-	else {
-		$("body").css({"background":"none"});
-
-		// layout
-		if (ios && navigator.userAgent.indexOf("KAKAOTALK") < 0) {
-			function vh() {
-				$("html, body").css({"min-height":$(window).height() + 1});
-			}
-			$(window).on("orientationchange", function() {
-				if (window.orientation != 0) {
-					vh();
-				}
-			});
-		}
-	}
-
-	window.addEventListener("load",function() {
-		setTimeout(function() {
-			// This hides the address bar:
-			window.scrollTo(0, 1);
-		}, 0);
+	
+	//뒤로가기 후에 textbox에서 next버튼 항상 보이게 하기
+	$(".go-back").click(function(){
+		 
+		 $('section').each(function(idx,obj){
+			 var pageid = $(obj).attr("id");
+			 if($("#"+pageid+" #go_next1").css("display") == "none"){
+				 $("#"+pageid+" #go_next1").show(); 
+			 }
+		 });
 	});
-
-	// portrait / landscape
-	$(window).trigger("orientationchange");
-
-	// $("#page0, #page1,#page2, #page3").on({
-	// 	"pagebeforeshow" : function(){
-	// 		$("#mokup, #wrap.mobile").removeClass("landscape");
-			
-	// 	}
-	// });
 	
 	$("#mokup, #wrap.mobile").addClass("landscape");
 	$(".btn_device").hide();
@@ -53,31 +23,66 @@ $(document).ready(function() {
 	});
 
 	//page1
-	var next_Count = 1;
-
+	var next_Count;
+	$("#page0").on({
+		"pagebeforeshow" : function(){
+			$("#page0 .textwrap, #page0 .textbox,#page0 .next_finger,#page0 #go_back").hide();
+			$("#page0 .imgwrap img").css({"top":"200px"});
+		},
+		"pageshow": function(){
+			$("#page0 .imgwrap img").animate({"top":"5px"},500);
+			$("#page0 .textwrap, #page0 #textbox0_1,#page0 #go_next1").delay(500).fadeIn(500);
+			$("#page0 .next_finger").delay(1000).fadeIn(500);
+			next_Count=1;
+		}
+	});
 	$("#page0 #go_next1").click(function() {
+		$("#page0 .textwrap").hide();
 		if (next_Count == 1) {
 			$("#page0 .textbox").hide();
-			$("#textbox0_2, #page0 #go_back, #page0 #go_next1").show();
+			$("#page0 .textwrap,#textbox0_2, #page0 #go_back, #page0 #go_next1").fadeIn(500);
 		}
-		else {
+		else { //next_Count == 2
 			$("#page0 .textbox, #page0 #go_next1").hide();
-			$("#textbox0_3, #page0 #go_back").show();
+			$("#page0 .textwrap,#textbox0_3, #page0 #go_back").fadeIn(500);
 		}
 		next_Count++;
 	});
 
 	$("#page0 #go_back").click(function(e) {
+		$("#page0 .textwrap").hide();
 		if (next_Count == 2) {
 			$(this).hide();
 			$("#page0 .textbox, #page0 #go_back").hide();
-			$("#textbox0_1, #page0 #go_next1").show();
+			$("#page0 .textwrap, #textbox0_1, #page0 #go_next1").fadeIn(500);
 		}
 		else if (next_Count == 3) {
 			$("#page0 .textbox").hide();
-			$("#textbox0_2, #page0 #go_next1, #page0 #go_back").show();
+			$("#page0 .textwrap, #textbox0_2, #page0 #go_next1, #page0 #go_back").fadeIn(500);
 		}
 		next_Count--;
+	});
+
+	$("#page1").on({
+		"pagebeforeshow" : function(){
+			$("#page1 .textwrap, #page1 .next_p_btn").hide();
+			$("#page1").css({"background-size":"120% auto"});
+		},
+		"pageshow": function(){
+			$("#page1").animate({"background-size":"100%"},500);
+			$("#page1 .textwrap").delay(500).fadeIn(500);
+			$("#page1 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
+	$("#page2").on({
+		"pagebeforeshow" : function(){
+			$("#page2 .textwrap, #page2 .next_p_btn").hide();
+		},
+		"pageshow": function(){
+			$("#page2 .textwrap").fadeIn(500);
+			$("#page2 .next_p_btn").delay(500).fadeIn(500);
+		}
 	});
 
 	$("#page3").on({

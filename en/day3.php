@@ -157,7 +157,7 @@ var options = {
 										<li>Remote Window Control</li>
 									</ul>
 								</div>
-								<a href="#page0" id="go_page0">
+								<a href="#page0" id="go_page0" class="next_p_btn ui-btn go-next">
 									<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 								</a>
 							</div>
@@ -289,7 +289,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -472,7 +472,7 @@ var options = {
 						<div class="pageTitle">Minimized number of parts</div>
 						<div class="profilewrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -739,7 +739,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -891,7 +891,7 @@ var options = {
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1013,7 +1013,7 @@ var options = {
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1140,7 +1140,7 @@ var options = {
 							<div class="text">
 								<div class="text_img">
 									<?php if($LMS_IMAGE) { ?> 
-										<img src="<?=$LMS_IMAGE?>" alt="james">
+										<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 									<?php } else { ?>
 										<img src="../images/intro/login_profile_@3x.png" alt="james">
 									<?php } ?>
@@ -1175,7 +1175,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1238,7 +1238,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1280,7 +1280,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1306,7 +1306,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1348,7 +1348,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1374,7 +1374,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1416,7 +1416,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1443,7 +1443,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1578,7 +1578,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
@@ -1680,8 +1680,8 @@ var options = {
 							<div class="text">
 								<div class="text_img">
 									<?php if($LMS_IMAGE) { ?> 
-										<img src="<?=$LMS_IMAGE?>" alt="james">
-									<?php } else { ?>
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+							<?php } else { ?>
 										<img src="../images/intro/login_profile_@3x.png" alt="james">
 									<?php } ?>
 								</div>
@@ -1746,7 +1746,7 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 							<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
