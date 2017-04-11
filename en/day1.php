@@ -550,8 +550,8 @@
 							<div class="text">	
 								<div id="textbox1" class="textbox">
 									<?php if($LMS_IMAGE) { ?> 
-										<img src="<?=$LMS_IMAGE?>" alt="man">
-									<?php } else { ?>
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
 										<img src="../images/intro/login_profile_@3x.png" alt="man">
 									<?php } ?>
 									<p>Compare to the previous i30, 27.2% higher than<span>?</span> of AHSS applied to strengthen the the body frame.</p>
@@ -584,8 +584,8 @@
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="man">
-							<?php } else { ?>
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="man">
 							<?php } ?>
 						</div>
@@ -1585,8 +1585,8 @@
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
-							<?php } else { ?>
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
 						</div>
@@ -1621,8 +1621,8 @@
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
 							<?php if($LMS_IMAGE) { ?> 
-								<img src="<?=$LMS_IMAGE?>" alt="james">
-							<?php } else { ?>
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
 								<img src="../images/intro/login_profile_@3x.png" alt="james">
 							<?php } ?>
 						</div>
@@ -1724,7 +1724,7 @@
 							<div class="text">
 								<div class="text_img">
 								<?php if($LMS_IMAGE) { ?> 
-									<img src="<?=$LMS_IMAGE?>" alt="james">
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 								<?php } else { ?>
 									<img src="../images/intro/login_profile_@3x.png" alt="james">
 								<?php } ?>
