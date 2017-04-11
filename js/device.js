@@ -98,11 +98,7 @@ $(document).ready(function(){
 	// 	}
 	// });
 
-	$("#page0, #page1,#page2, #page3").on({
-		"pagebeforeshow" : function(){
-			$("#mokup, #wrap.mobile").removeClass("landscape");
-		}
-	});
+	
 
 	//rotate btn
 	$(".btn_device").click(function(){	

@@ -703,7 +703,7 @@ $(document).ready(function(){
 
 	$("#page69").on({
 		"pagebeforeshow" : function(){
-			$("#page69 #textbox2, #page69 .view_text").hide();
+			$("#page69 #textbox2, #page69 .view_text, #page69 .next_finger").hide();
 			$("#page69 .textwrap").hide();
 			$('#page69 .ui-content').queue(function() {
 		        $(this).css({"background":"url(../images/day2/19_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
@@ -998,8 +998,8 @@ $(document).ready(function(){
 		}, 
 		"pageshow" : function(){
 			//$("#page75 .page_bg").delay(500).animate({"backgroundSize":"100%"});
-			$("#page75 .textwrap").delay(1000).fadeIn(500);
-			$("#page75 .next_p_btn").delay(1500).fadeIn(500);
+			$("#page75 .textwrap").fadeIn(500);
+			$("#page75 .next_p_btn").delay(500).fadeIn(500);
 			$("#page75 .page_bg").fadeIn(500);
 		}
 	});
@@ -1018,7 +1018,7 @@ $(document).ready(function(){
 
 	$("#page76").on({
 		"pagebeforeshow" : function(){
-			$("#page76 #textbox2, #page76 .view_text").hide();
+			$("#page76 #textbox2, #page76 .view_text,#page76 .next_finger").hide();
 			$("#page76 .textwrap").hide();
 			$('#page76 .ui-content').queue(function() {
 		        $(this).css({"background-image":"url(../images/day2/29_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
@@ -1309,10 +1309,10 @@ $(document).ready(function(){
 	$("#page83").on({
 		"pagebeforeshow" : function(){
 			$("#page83 .textwrap, #page83 .next_p_btn").hide();
-			$("#page83").css({"background-size":"120% auto"});
+			//$("#page83").css({"background-size":"120% auto"});
 		}, 
 		"pageshow" : function(){
-			$("#page83").animate({"backgroundSize":"100%"});
+			//$("#page83").animate({"backgroundSize":"100%"});
 			$("#page83 .textwrap").delay(500).fadeIn(500);
 			$("#page83 .next_p_btn").delay(1000).fadeIn(500);
 		}
@@ -1432,7 +1432,7 @@ $(document).ready(function(){
 
 	$("#page90").on({
 		"pagebeforeshow" : function(){
-			$("#page90 .textwrap, #page83 .next_p_btn").hide();
+			$("#page90 .textwrap, #page90 .next_p_btn").hide();
 			$("#page90 .imgwrap img").css({"top":"200px"});
 			//$("#page90").css({"background-size":"120% auto"});
 		}, 
@@ -1460,13 +1460,14 @@ $(document).ready(function(){
 	$("#page91").on({
 		"pagebeforeshow" : function(){
 			//$("#page91 .page_bg").css({"background-size":"120% auto", "background-position":"50% 50%"});
-			$("#page91 .textwrap").hide();
+			$("#page91 .textwrap,#page91 .next_p_btn").hide();
 			$("#page91 .page_bg").fadeIn(500);
 
 		}, 
 		"pageshow" : function(){
 			//$("#page91 .page_bg").delay(500).animate({"background-size":"100%"});
-			$("#page91 .textwrap").delay(700).fadeIn(500);
+			$("#page91 .textwrap").fadeIn(500);
+			$("#page91 .next_p_btn").delay(500).fadeIn(500);
 			$("#page91 .page_bg").fadeIn(500);
 
 		}
@@ -1545,14 +1546,15 @@ $(document).ready(function(){
 	$("#page94").on({
 		"pagebeforeshow" : function(){
 			//$("#page94").css({"background-size":"120% auto"});
-			$("#page94 .textwrap").hide();
+			$("#page94 .textwrap, #page94 .next_p_btn").hide();
 			$("#page94 .imgwrap img").css({"top":"150px"});
 
 		}, 
 		"pageshow" : function(){
 			//$("#page94").delay(500).animate({"backgroundSize":"100%"});
-			$("#page94 .imgwrap img").delay(700).animate({"top":"7px"},500);
-			$("#page94 .textwrap").delay(1000).fadeIn(500);
+			$("#page94 .imgwrap img").animate({"top":"7px"},500);
+			$("#page94 .textwrap").delay(500).fadeIn(500);
+			$("#page94 .next_p_btn").delay(1000).fadeIn(500);
 
 		}
 	});
@@ -1573,11 +1575,12 @@ $(document).ready(function(){
 	$("#page95").on({
 		"pagebeforeshow" : function(){
 			//$("#page95").css({"background-size":"120% auto"});
-			$("#page95 .textwrap").hide();
+			$("#page95 .textwrap,#page95 .next_p_btn").hide();
 		}, 
 		"pageshow" : function(){
 			//$("#page95").delay(500).animate({"backgroundSize":"100%"});
-			$("#page95 .textwrap").delay(1000).fadeIn(500);
+			$("#page95 .textwrap").fadeIn(500);
+			$("#page95 .next_p_btn").delay(500).fadeIn(500);
 
 		}
 	});
@@ -1598,12 +1601,13 @@ $(document).ready(function(){
 	$("#page96").on({
 		"pagebeforeshow" : function(){
 			//$("#page96").css({"background-size":"120%", "background-position":"50% 50%"});
-			$("#page96 .textwrap").hide();
+			$("#page96 .textwrap, #page96 .next_p_btn").hide();
 
 		}, 
 		"pageshow" : function(){
 			//$("#page96").delay(500).animate({"background-size":"100%"});
-			$("#page96 .textwrap").delay(700).fadeIn(500);
+			$("#page96 .textwrap").fadeIn(500);
+			$("#page96 .next_p_btn").delay(500).fadeIn(500);
 
 		}
 	});
@@ -1624,15 +1628,15 @@ $(document).ready(function(){
 	$("#page97").on({
 		"pagebeforeshow" : function(){
 			//$("#page97").css({"background-size":"120% auto"});
-			$("#page97 .textwrap").hide();
+			$("#page97 .textwrap,#page97 .next_p_btn").hide();
 			$("#page97 .imgwrap img").css({"top":"150px"});
 
 		}, 
 		"pageshow" : function(){
 			//$("#page97").delay(500).animate({"backgroundSize":"100%"});
-			$("#page97 .textwrap").delay(1000).fadeIn(500);
-			$("#page97 .imgwrap img").delay(700).animate({"top":"7px"},500);
-			$("#page97 .textwrap").delay(700).fadeIn(500);
+			$("#page97 .textwrap").delay(500).fadeIn(500);
+			$("#page97 .imgwrap img").animate({"top":"7px"},500);
+			$("#page97 .next_p_btn").delay(700).fadeIn(500);
 
 		}
 	});
@@ -1652,10 +1656,11 @@ $(document).ready(function(){
 	//page98
 	$("#page98").on({
 		"pagebeforeshow" : function(){
-			$("#page98 .textwrap").hide();
+			$("#page98 .textwrap,#page98 .next_p_btn").hide();
 		}, 
 		"pageshow" : function(){
-			$("#page98 .textwrap").delay(500).fadeIn(500);
+			$("#page98 .textwrap").fadeIn(500);
+			$("#page98 .next_p_btn").delay(500).fadeIn(500);
 		}
 	});
 
@@ -1722,14 +1727,15 @@ $(document).ready(function(){
 	$("#page101").on({
 		"pagebeforeshow" : function(){
 			//$("#page101").css({"background-size":"120% auto"});
-			$("#page101 .textwrap").hide();
+			$("#page101 .textwrap, #page101 .next_p_btn").hide();
 			$("#page101 .imgwrap img").css({"top":"150px"});
 
 		}, 
 		"pageshow" : function(){
 			//$("#page101").delay(500).animate({"backgroundSize":"100%"});
-			$("#page101 .imgwrap img").delay(700).animate({"top":"7px"},500);
-			$("#page101 .textwrap").delay(1000).fadeIn(500);
+			$("#page101 .imgwrap img").animate({"top":"7px"},500);
+			$("#page101 .textwrap").delay(500).fadeIn(500);
+			$("#page101 .next_p_btn").delay(1000).fadeIn(500);
 
 		}
 	});

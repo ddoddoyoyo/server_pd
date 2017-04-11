@@ -3,10 +3,11 @@
   overflow: hidden;
   
   .page_bg {
-    background:url('../images/day1/87_photo.jpg') no-repeat;
+    background-image:url('../images/day1/87_photo.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 100%;
+    position:relative;
   }
 
   a.next_finger {

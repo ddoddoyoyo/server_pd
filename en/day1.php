@@ -38,6 +38,7 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="stylesheet" href="/pd/css/menu.css">
 		<link rel="stylesheet" href="../css/jquery-ui.css">
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
@@ -1583,15 +1584,20 @@
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 								<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
-						</div>
-						<div class="start_text">
-							<img src="../images/button/btn_talk_more.png" alt="">
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1619,15 +1625,20 @@
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
 								<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
-						</div>
-						<div class="start_text">
-							<img src="../images/button/btn_talk_more.png" alt="">
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1978,7 +1989,7 @@
 				</section>
 	</div>
 </div>
-		 <a href="#page44">이동</a>
+		 <a href="#page53">이동</a>
 		<!--<a href="#page84">이동</a> -->
 
 

@@ -55,6 +55,13 @@ $(document).ready(function(){
 		});
 	}
 
+	//세로모드
+	$("#page0, #page1,#page2, #page3").on({
+		"pagebeforeshow" : function(){
+			$("#mokup, #wrap.mobile").removeClass("landscape");
+		}
+	});
+
 	//page1
 	$("#page0").on({
 		"pagebeforeshow" : function(){
@@ -946,8 +953,8 @@ $(document).ready(function(){
 			$("#page39 .next_finger, #page39 .textwrap").hide();
 		}, 
 		"pageshow" : function(){
-			$("#page39 .textwrap").delay(500).fadeIn(500);
-			$("#page39 .next_finger").delay(1000).fadeIn(500);
+			$("#page39 .textwrap").fadeIn(500);
+			$("#page39 .next_finger").delay(500).fadeIn(500);
 		}
 	});
 
@@ -968,13 +975,13 @@ $(document).ready(function(){
 
 	$("#page41").on({
 		"pagebeforeshow" : function(){
-			$("#page41 .next_finger, #page41 .textwrap").hide();
+			$("#page41 .next_p_btn, #page41 .textwrap").hide();
 			$('#page41 .imgwrap img').css({"left":"-200px"});
 		}, 
 		"pageshow" : function(){
 			$('#page41 .imgwrap img').animate({"left":"-4px"},500);
 			$("#page41 .textwrap").delay(500).fadeIn(500);
-			$("#page41 .next_finger").delay(1000).fadeIn(500);
+			$("#page41 .next_p_btn").delay(1000).fadeIn(500);
 		}
 	});
 
@@ -992,25 +999,25 @@ $(document).ready(function(){
 
 	$("#page44").on({
 		"pagebeforeshow" : function(){
-			$("#page44 .next_finger, #page44 .textwrap").hide();
+			$("#page44 .next_p_btn, #page44 .textwrap").hide();
 			$('#page44 .imgwrap img').css({"top":"200px"});
 		}, 
 		"pageshow" : function(){
 			$('#page44 .imgwrap img').animate({"top":"0"},500);
 			$("#page44 .textwrap").delay(500).fadeIn(500);
-			$("#page44 .next_finger").delay(1000).fadeIn(500);
+			$("#page44 .next_p_btn").delay(1000).fadeIn(500);
 		}
 	});
 
 	$("#page45").on({
 		"pagebeforeshow" : function(){
-			$("#page45 .next_finger, #page45 .textwrap").hide();
+			$("#page45 .next_p_btn, #page45 .textwrap").hide();
 			$('#page45 .imgwrap img').css({"top":"200px"});
 		}, 
 		"pageshow" : function(){
 			$('#page45 .imgwrap img').animate({"top":"7px"},500);
 			$("#page45 .textwrap").delay(500).fadeIn(500);
-			$("#page45 .next_finger").delay(1000).fadeIn(500);
+			$("#page45 .next_p_btn").delay(1000).fadeIn(500);
 		}
 	});
 
@@ -1024,7 +1031,7 @@ $(document).ready(function(){
 			$("#page35 #textbox1").show();	
 		}
 	});
-	$("#page46 .imgwrap").click(function(){
+	$("#page46 .toggle").click(function(){
 		$("#page46 .textwrap, #page46 .start_text, #page46 .next_p_btn").toggle();
 	});
 
@@ -1039,7 +1046,7 @@ $(document).ready(function(){
 			next_Count = 0;
 		}
 	});
-	$("#page47 .imgwrap").click(function(){
+	$("#page47 .toggle").click(function(){
 		$("#page47 .textwrap, #page47 .start_text").toggle();
 	});
 
@@ -1160,49 +1167,49 @@ $(document).ready(function(){
 	$("#page49").on({
 		"pagebeforeshow" : function(){
 			$("#page49 .text, #page49 #textbox1, #page49 #textbox2, #page49 #textbox3, #page49 #textbox4, #page49 #textbox5, #page49 .text_img2, #page49 .text_tip").hide();
+			$("#page49 .next_p_btn").hide();
 		},
 		"pageshow" :function(){
 			//console.log(ck);
+			$("#page49 .next_p_btn").delay(1000).fadeIn(500);
 			if(ck==1){
 				//$("#page49 #textbox2,#page49 #textbox3, #page49 #textbox4, #page49 #textbox5").hide();
-				$("#page49 .text, #page49 #textbox1, #page49 .text_img2").fadeIn(500);
-				$('#page49').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/79_interior_01.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
+				$("#page49 .text, #page49 #textbox1, #page49 .text_img2").delay(500).fadeIn(500);
+				$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_01.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 			}else if(ck==2){
 				//$("#page49 #textbox1,#page49 #textbox3, #page49 #textbox4, #page49 #textbox5").hide();
-				$("#page49 .text, #page49 #textbox2, #page49 .text_img2, #page49 .text_tip").fadeIn(500);
+				$("#page49 .text, #page49 #textbox2, #page49 .text_img2, #page49 .text_tip").delay(500).fadeIn(500);
 				//setTimeout(function(){
-					$('#page49').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/79_interior_02.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
+					$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_02.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 
 				//});
 			}else if(ck==3){
 				//$("#page49 #textbox2,#page49 #textbox1, #page49 #textbox4, #page49 #textbox5").hide();
-				$("#page49 .text, #page49 #textbox3, #page49 .text_img2, #page49 .text_tip").fadeIn(500);
+				$("#page49 .text, #page49 #textbox3, #page49 .text_img2, #page49 .text_tip").delay(500).fadeIn(500);
 				//setTimeout(function(){
-					$('#page49').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/79_interior_03.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
+					$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_03.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 				//});
 			}else if(ck==4){
 				//$("#page49 #textbox2,#page49 #textbox3, #page49 #textbox1, #page49 #textbox5").hide();
-				$("#page49 .text, #page49 #textbox4, #page49 .text_img2, #page49 .text_tip").fadeIn(500);
+				$("#page49 .text, #page49 #textbox4, #page49 .text_img2, #page49 .text_tip").delay(500).fadeIn(500);
 				//setTimeout(function(){
-					$('#page49').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/79_interior_04.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
+					$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_04.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 				//});
 			}else if(ck==5){
 				//$("#page49 #textbox2,#page49 #textbox3, #page49 #textbox4, #page49 #textbox1").hide();
-				$("#page49 .text,#page49 #textbox5, #page49 .text_img2, #page49 .text_tip").fadeIn(500);
+				$("#page49 .text,#page49 #textbox5, #page49 .text_img2, #page49 .text_tip").delay(500).fadeIn(500);
 				//setTimeout(function(){
-					$('#page49').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/79_interior_05.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
+					$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_05.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 				//})}
 			}
 		}
 	});
 
 	$("#page50").on({
-		
-		
-
 		"pagebeforeshow" : function(){
 			$("#page50 .g_num").text(' ');
 			$("#page50 .go-next").hide();
+			$("#page50 .g_num").css({"width":"0%"});
 		},
 		"pageshow" : function(){
 			$.ajax({
@@ -1239,15 +1246,51 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#page5001").on({
+		"pagebeforeshow" : function(){
+			$("#page5001 .textwrap, #page5001 .next_p_btn").hide();
+			$("#page5001 .imgwrap img").css({"top":"200px"});
+		}, 
+		"pageshow" : function(){
+			$("#page5001 .imgwrap img").animate({"top":"27px"},500);
+			$("#page5001 .textwrap").delay(500).fadeIn(500);
+			$("#page5001 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
+	$("#page51").on({
+		"pagebeforeshow" : function(){
+			$("#page51 .textwrap, #page51 .next_p_btn").hide();
+			$("#page51 .imgwrap img").css({"top":"200px"});
+		}, 
+		"pageshow" : function(){
+			$("#page51 .imgwrap img").animate({"top":"27px"},500);
+			$("#page51 .textwrap").delay(500).fadeIn(500);
+			$("#page51 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
+	$("#page52").on({
+		"pagebeforeshow" : function(){
+			$("#page52 .textwrap, #page52 .next_p_btn").hide();
+			$("#page52").css({"background-size":"120% auto"});
+		}, 
+		"pageshow" : function(){
+			$("#page52").animate({"background-size":"100%"},500);
+			$("#page52 .textwrap").delay(500).fadeIn(500);
+			$("#page52 .next_p_btn").delay(1000).fadeIn(500);
+		}
+	});
+
 	$("#page53").on({
 		"pagebeforeshow" : function(){
-			$("#page53 #textbox2, #page53 .view_text").hide();
-			$("#page53 .textwrap").show();
+			$("#page53 .textwrap,#page53 .view_text, #page53 .next_finger").hide();
 			$('#page53 .page_bg').queue(function() {
 		        $(this).css({"background":"url(../images/day1/84_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).dequeue();
 		    })
 		}, 
 		"pageshow" : function(){
+			$('#page53 .textwrap').fadeIn(500);
 			$("#page53 .next_finger").delay(500).fadeIn(500);
 		}
 	});
@@ -1267,84 +1310,109 @@ $(document).ready(function(){
 
 	$("#page54").on({
 		"pagebeforeshow" : function(){
-			$('#page54 #go_page55, #page54 #go_back, #page54 #textbox2, #page54 #textbox3, #page54 #textbox4').hide();
-			$("#page54 #textbox1, #page54 #go_next1").show();
-			$('#page54 .page_bg').css({"background":"url(../images/day1/87_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"});
+			$('#page54 .textwrap, #page54 #go_page55, #page54 #go_back, #page54 #textbox2, #page54 #textbox3, #page54 #textbox4').hide();
+			$("#page54 .page_bg").css({"background":"url(../images/day1/87_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
 		}, 
 		"pageshow" : function(){
+			$("#page54 .textwrap, #page54 #textbox1, #page54 #go_next1").fadeIn(500);
 			next_Count = 1;
 		}
 	});
 
 	$("#page54 #go_next1").click(function(e){
+		$("#page54 .textwrap").hide();
 		if(next_Count == 1){
-			$('#page54 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/88_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page54 #go_back").fadeIn();
+			// $('#page54 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/88_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page54 .page_bg").css({"background":"url(../images/day1/88_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+			$("#page54 .page_bg").animate({"left":"0"},500);
 		    $("#page54 #textbox1").hide();
-		    $("#page54 #textbox2").show();
+		    $("#page54 .textwrap, #page54 #textbox2, #page54 #go_back").delay(500).fadeIn(500);
 		} else if(next_Count == 2){
-			$('#page54 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/89_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
+			// $('#page54 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/89_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page54 .page_bg").css({"background":"url(../images/day1/89_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+			$("#page54 .page_bg").animate({"left":"0"},500);
 		    $("#page54 #textbox2").hide();
-		    $("#page54 #textbox3").show();
+		    $("#page54 .textwrap, #page54 #textbox3").delay(500).fadeIn(500);
 		} else if(next_Count == 3){
-			$('#page54 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/90_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
+			// $('#page54 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/90_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page54 .page_bg").css({"background":"url(../images/day1/90_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+			$("#page54 .page_bg").animate({"left":"0"},500);
 		    $("#page54 #go_next, #page54 #textbox3, #page54 #go_next1").hide();
-		    $("#page54 #go_page55, #page54 #textbox4").show();
+		    $("#page54 #go_page55, #page54 .textwrap,#page54 #textbox4").delay(500).fadeIn(500);
 		} 
 		next_Count++;
 	});
 
 
 	$("#page54 #go_back").click(function(e){
+		$("#page54 .textwrap").hide();
 		if(next_Count == 1){
 			
 		} else if(next_Count == 2){
 			$(this).hide();
-			$('#page54 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/87_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page54 #textbox1").show();
+			// $('#page54 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/87_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page54 .page_bg").css({"background":"url(../images/day1/87_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+			$("#page54 .page_bg").animate({"left":"0"},500);
+		    $("#page54 .textwrap, #page54 #textbox1").delay(500).fadeIn(500);
 			$("#page54 #textbox2, #page54 #go_page55").hide();
 		} else if(next_Count == 3){
-			$('#page54 #go_next1').show()
-			$('#page54 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/88_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page54 #textbox2").show();
+			//$('#page54 #go_next1').show()
+			// $('#page54 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/88_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page54 .page_bg").css({"background":"url(../images/day1/88_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+			$("#page54 .page_bg").animate({"left":"0"},500);
+		    $("#page54 .textwrap, #page54 #textbox2, #page54 #go_next1").delay(500).fadeIn(500);
 			$("#page54 #textbox3").hide();
 		}else if(next_Count == 4){
-			$('#page54 #go_next1').show()
-			$('#page54 .page_bg')
-			.fadeOut()
-			.queue(function() {
-		        $(this).css({"background":"url(../images/day1/89_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
-		    })
-		    .fadeIn(500);
-		    $("#page54 #textbox3").show();
-			$("#page54 #textbox4, #page55 #go_page55").hide();
+			//$('#page54 #go_next1').show()
+			// $('#page54 .page_bg')
+			// .fadeOut()
+			// .queue(function() {
+		 //        $(this).css({"background":"url(../images/day1/89_photo.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"101% auto"}).dequeue();
+		 //    })
+		 //    .fadeIn(500);
+		 	$("#page54 .page_bg").css({"background":"url(../images/day1/89_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+			$("#page54 .page_bg").animate({"left":"0"},500);
+		    $("#page54 .textwrap, #page54 #textbox3, #page54 #go_next1").delay(500).fadeIn(500);
+			$("#page54 #textbox4, #page54 #go_page55").hide();
 		}
 		next_Count--;
+	});
+
+	$("#page55").on({
+		"pagebeforeshow" : function(){
+			$("#page55 .textwrap, #page55 .next_p_btn").hide();
+			$("#page55 .imgwrap img").css({"top":"200px"});
+		}, 
+		"pageshow" : function(){
+			$("#page55 .imgwrap img").animate({"top":"7px"},500);
+			$("#page55 .textwrap").delay(500).fadeIn(500);
+			$("#page55 .next_p_btn").delay(1000).fadeIn(500);
+		}
 	});
 
 	

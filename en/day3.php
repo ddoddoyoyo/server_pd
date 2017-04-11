@@ -40,8 +40,9 @@
 		<meta name="apple-touch-fullscreen" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-		<link rel="stylesheet" href="../css/styles.css">
+		<!-- <link rel="stylesheet" href="../css/styles.css"> -->
 		<link rel="stylesheet" href="/pd/css/styles_day3.css">
+		<link rel="stylesheet" href="/pd/css/menu.css">
 		<!-- <link rel="stylesheet" href="/pd/css/day3.css"> -->
 		<link rel="stylesheet" href="/pd/css/Nwagon.css">
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -166,6 +167,9 @@ var options = {
 
 				<section data-role="page" id="page0" class="container">
 					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="/pd/images/button/icon_arrow.png" alt="">
+						</a>
 						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
 							<img src="/pd/images/button/icon_navbar.png" alt="">
 						</a>

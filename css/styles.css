@@ -344,87 +344,6 @@ img {
     opacity: 0; } }
 
 /* loading */
-.ui-page-theme-a .sidePanel {
-  background-color: #000 !important; }
-
-.sidePanel_wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: none;
-  z-index: 10;
-  overflow: hidden; }
-  .sidePanel_wrap .sidePanel {
-    position: absolute;
-    top: 0;
-    left: 105%;
-    width: 92%;
-    height: 100%;
-    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.75); }
-  .sidePanel_wrap .btn_close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 18px;
-    line-height: 0; }
-
-.sidePanel .menu_list {
-  position: relative;
-  top: 11%;
-  margin: 0 auto;
-  padding: 0;
-  width: 92%;
-  height: 80%;
-  list-style: none;
-  color: #ffffff; }
-  .sidePanel .menu_list ul, .sidePanel .menu_list li {
-    margin: 0;
-    padding: 0; }
-  .sidePanel .menu_list > li {
-    height: 100%;
-    width: 33%;
-    float: left;
-    margin-bottom: 10px; }
-    .sidePanel .menu_list > li > span {
-      font-size: 30px; }
-  .sidePanel .menu_list .sub_menu1 {
-    height: 100%;
-    width: 100%; }
-    .sidePanel .menu_list .sub_menu1 > li {
-      width: 84%;
-      margin-top: 10px; }
-      .sidePanel .menu_list .sub_menu1 > li > span {
-        font-size: 18px; }
-  .sidePanel .menu_list .sub_menu2 {
-    height: 100%;
-    width: 100%;
-    border-top: 1px solid;
-    margin-top: 5px 0;
-    line-height: 140%; }
-    .sidePanel .menu_list .sub_menu2 > li {
-      width: 100%; }
-    .sidePanel .menu_list .sub_menu2 span {
-      font-size: 11px; }
-  .sidePanel .menu_list li a:visited {
-    color: #fff; }
-  .sidePanel .menu_list li.current a {
-    color: #a36b4f; }
-    .sidePanel .menu_list li.current a:before {
-      position: absolute;
-      top: 0;
-      left: -15px;
-      width: 10px;
-      height: 22px;
-      content: " ";
-      background: url("/genesis/part1/images/pointer_current-position.png") 50% 50% no-repeat;
-      background-size: 6px;
-      display: inline-block; }
-
 #page0 {
   background: url("../images/intro/open_bg_@3x.jpg") no-repeat;
   background-size: 100% auto;
@@ -2860,21 +2779,31 @@ img {
     overflow: hidden;
     width: 100%;
     height: 100%; }
-    #page46 .ui-content .imgwrap {
-      width: 80px;
-      height: 80px;
-      border-radius: 50px;
-      margin-left: 25px;
+    #page46 .ui-content .toggle {
+      width: 150px;
+      height: 50%;
       position: absolute;
-      bottom: 25px;
-      overflow: hidden; }
-    #page46 .ui-content .start_text {
-      max-width: 60px;
-      position: absolute;
-      bottom: 106px;
-      left: 77px; }
-    #page46 .ui-content .img_twinkle {
-      animation: twinkle 1.5s infinite; }
+      bottom: 0;
+      cursor: pointer; }
+      #page46 .ui-content .toggle .imgwrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        position: absolute;
+        bottom: 25px;
+        overflow: hidden; }
+      #page46 .ui-content .toggle .start_text {
+        max-width: 60px;
+        position: absolute;
+        bottom: 107px;
+        left: 77px;
+        z-index: 10; }
+      #page46 .ui-content .toggle .close_text {
+        max-width: 20px;
+        position: absolute;
+        bottom: 126px;
+        left: 97px; }
     #page46 .ui-content .textwrap {
       max-width: 63%;
       margin-left: 0;
@@ -2912,21 +2841,31 @@ img {
     overflow: hidden;
     width: 100%;
     height: 100%; }
-    #page47 .ui-content .imgwrap {
-      width: 80px;
-      height: 80px;
-      border-radius: 50px;
-      margin-left: 25px;
+    #page47 .ui-content .toggle {
+      width: 150px;
+      height: 50%;
       position: absolute;
-      bottom: 25px;
-      overflow: hidden; }
-    #page47 .ui-content .start_text {
-      max-width: 60px;
-      position: absolute;
-      bottom: 106px;
-      left: 77px; }
-    #page47 .ui-content .img_twinkle {
-      animation: twinkle 1.5s infinite; }
+      bottom: 0;
+      cursor: pointer; }
+      #page47 .ui-content .toggle .imgwrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        position: absolute;
+        bottom: 25px;
+        overflow: hidden; }
+      #page47 .ui-content .toggle .start_text {
+        max-width: 60px;
+        position: absolute;
+        bottom: 107px;
+        left: 77px;
+        z-index: 10; }
+      #page47 .ui-content .toggle .close_text {
+        max-width: 20px;
+        position: absolute;
+        bottom: 126px;
+        left: 97px; }
     #page47 .ui-content .textwrap {
       max-width: 63%;
       margin-left: 0;
@@ -3305,10 +3244,11 @@ img {
 #page54 {
   overflow: hidden; }
   #page54 .page_bg {
-    background: url("../images/day1/87_photo.jpg") no-repeat;
+    background-image: url("../images/day1/87_photo.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    height: 100%; }
+    height: 100%;
+    position: relative; }
   #page54 a.next_finger {
     position: absolute;
     top: 14%;
