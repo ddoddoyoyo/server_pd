@@ -159,8 +159,8 @@
 							<img src="../images/person/james_21.png" alt="james">
 						</div>
 					</div>
-					<!-- <audio class="audio1" src="../tts/day1/01.mp3"></audio>
-				</section> -->
+					<!-- <audio class="audio1" src="../tts/day1/01.mp3"></audio>-->
+				</section> 
 
 				<section data-role="page" id="page3" class="container">
 					<div class="page_bg"></div>
