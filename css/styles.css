@@ -1150,7 +1150,7 @@ img {
 #page13 {
   background-image: url("../images/day1/13_bg_1.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%; }
+  background-size: 100% auto; }
   #page13 .ui-content {
     margin: 0;
     padding: 0;
