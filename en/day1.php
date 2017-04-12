@@ -38,7 +38,7 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" href="../css/styles.css">
-		<link rel="stylesheet" href="/pd/css/menu.css">
+		<link rel="stylesheet" href="/pd/css/menu_day1.css">
 		<link rel="stylesheet" href="../css/jquery-ui.css">
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
@@ -58,7 +58,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
 		<script src="../js/day1.js"></script>	
-		<script src="../js/menu_test.js"></script>
+		<script src="../js/menu_day1.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
@@ -291,7 +291,7 @@
 						<div class="imgwrap">
 							<img src="../images/person/james_2.png" alt="james">
 						</div>
-						<a href="#page6" id="go_page6" class="next_p_btn ui-btn go-next">
+						<a href="#page7" id="go_page7" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
@@ -309,7 +309,7 @@
 					<div class="page_bg">
 						<img src="../images/day1/landscape/07_bg_map_4.jpg" alt="">
 					</div>
-					<a href="#page7" class="next_finger">
+					<a href="#page9" class="next_finger">
 						<img src="../images/button/touchfinger_@3x.png" alt="next button">
 					</a>
 					<div data-role="main" class="ui-content">
@@ -354,7 +354,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="#page9" id="go_page9" class="next_p_btn ui-btn go-next">
+						<a href="#page6" id="go_page6" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
@@ -1031,7 +1031,7 @@
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">
 						</a>
-						<a href="#page29" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
 							<img src="../images/button/icon_navbar.png" alt="">
 						</a>
 					</div>

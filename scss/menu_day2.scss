@@ -1,3 +1,8 @@
+@import 'partials/global/mixins';
+@import 'partials/global/color';
+@import 'partials/global/typography';
+@import 'partials/global/variables';
+
 .ui-page-theme-a .sidePanel {
   background-color: #000 !important;
 }
@@ -16,7 +21,7 @@
     position: absolute;
     top: 0;
     left: 105%;
-    width: 92%;
+    width:67%;
     height: 100%;
     //background: url('/genesis/part1/images/menu_bg.png') 50% 104% no-repeat #000;
     //background-size: 100%;
@@ -35,28 +40,58 @@
 
 .sidePanel .menu_list {
   position: relative;
-  top: 11%;
+  top: 15%;
   //margin: 0 0 0 12%;
   margin:0 auto;
   padding: 0;
-  width: 92%;
+  width: 90%;
   height: 80%;
   list-style: none;
   color:#fff;
   ul, li{
     margin:0;
     padding:0;
+    span{
+      //font-family:'HyundaiSansHead-Regular_0', sans-serif;
+    }
   }
   
   >li{ //day1, day2, day3
-    height:100%;
-    width:33%;
-    float:left;
+    //height:100%;
+    width:50%;
+    //float:left;
     margin-bottom:10px;
-    >span{
+    >a span{
       font-size:30px;
     }
 
+  }
+  >li#day1{
+    height:100%;
+    float:left;
+  }
+  >li#day2{
+    height:50%;
+    float:left;
+    @include clearfix;
+    background: url('../images/button/btn_next_talk_arrow_2.png') no-repeat;
+    background-size: 15%;
+    background-position: 49% 2%;
+    >ul{
+      opacity: 0.5;
+      height: 50%;
+    }
+  }
+  >li#day3{
+    height:50%;
+    float:right;
+    background: url('../images/button/btn_next_talk_arrow_2.png') no-repeat;
+    background-size: 15%;
+    background-position: 49% 2%;
+    >ul{
+      opacity: 0.5;
+      height: 50%;
+    }
   }
   .sub_menu1{
     height: 100%;
@@ -69,6 +104,24 @@
       >span{
         font-size:18px;
       }
+    }
+    >li#milan >.sub_menu2 >li{
+      background:url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
+      background-size: 12%;
+      background-position: 97% 50%;
+      margin-top: 2px;
+    }
+    >li#como{
+      margin-top:20%;
+      >.sub_menu2 >li{
+        background:url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
+        background-size: 12%;
+        background-position: 97% 50%;
+        margin-top: 2px;
+      }
+    }
+    >li#zurich, li#strasbourg{
+      margin-top :2px;
     }
   }
   .sub_menu2{
@@ -124,23 +177,10 @@
   // .menu5 {
   //   margin-bottom: 25px;
   // }
-  li {
     a:visited {
       color: #fff;
     }
-    &.current a {
-      color: #a36b4f;
-      &:before {
-        position: absolute;
-        top: 0;
-        left: -15px;
-        width: 10px;
-        height: 22px;
-        content: " ";
-        background: url('/genesis/part1/images/pointer_current-position.png') 50% 50% no-repeat;
-        background-size: 6px;
-        display: inline-block;
-      }
+    a{
+      font-weight: normal;
     }
-  }
 }
