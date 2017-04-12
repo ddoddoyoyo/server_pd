@@ -111,7 +111,7 @@ a.next_finger {
 		width:167px;
 		position:relative; }
 
-.next_p_btn.ui-btn {
+.next_p_btn.ui-btn, .bye_btn {
 	background-color:transparent;
 	border:none;
 	box-shadow:none !important;
@@ -2473,23 +2473,16 @@ img {
 	background:url("../images/day3/60_photo.jpg") no-repeat;
 	background-size:100% 100%; }
 	#page37 .ui-content {
-	margin: 0;
+		margin: 0;
     padding: 0;
-    width:40%;
-    float:right;
-    /*position: absolute;
+    max-width: 33%;
+    position: absolute;
     bottom: 0;
-    right: 0;*/
-    overflow: hidden; 
-    height: 100%}
-    /*#page37 .ui-content .main_wrap {
-      max-width: 50%;
-      float: right; 
-      margin-top: 10%;}*/
+    right: 0;
+    overflow: hidden; }
       #page37 .ui-content .textwrap {
         max-width: 218px;
-        position: relative;	
-        top:50px;
+        margin-top: 50px;
         /*float: right;*/ }
         /*#page37 .ui-content .textwrap:before, #page37 .ui-content .textwrap:after {
           content: "";
@@ -2517,7 +2510,8 @@ img {
           overflow: hidden; }
       #page37 .ui-content  .imgwrap {
         width: 59%;
-        height:100%;
+        margin-top: 20px;
+        /*height:100%;*/
         /*float: right;*/
        /* margin-right: 28%;
         max-height: 150px;*/
@@ -2525,7 +2519,7 @@ img {
         #page37 .ui-content  .imgwrap img {
           position: relative;
           right: -10%;
-          top: 67px; }
+          top: 190px; }
 
 @media only screen and (orientation:Portrait) {
 	#page37 .ui-content {
@@ -2792,7 +2786,9 @@ img {
 		background:url("../images/day3/67_photo.jpg") no-repeat;
 		background-repeat:no-repeat;
 		background-size:100% 100%;
-		height:100%; }
+		height:100%; 
+		position: absolute;
+		width: 100%;}
 	#page42 a.next_finger {
 		position:absolute;
 		top:14%;
@@ -2889,7 +2885,8 @@ img {
 
 #page44 {
 	background:url("../images/day3/70_photo.jpg") no-repeat;
-	background-size:100% auto; }
+	background-size:100% 100%;
+	overflow: hidden; }
 	#page44 .ui-content {
 		margin:0;
 		padding:0;
@@ -2960,20 +2957,31 @@ img {
 		top:0;
 		overflow:hidden;
 	}
-		#page45 .imgwrap {
-			width:80px;
-			height:80px;
-			border-radius:50px;
-			margin-left:25px;
-			position:absolute;
-			bottom:25px;
-			overflow:hidden; }
-		#page45 .start_text {
-			max-width:60px;
-			position:absolute;
-			bottom:106px;
-			left:77px;
-			z-index:10; }
+		#page45 .ui-content .toggle {
+      width: 150px;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      cursor: pointer; }
+      #page45 .ui-content .toggle .imgwrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        position: absolute;
+        bottom: 25px;
+        overflow: hidden; }
+      #page45 .ui-content .toggle .start_text {
+        max-width: 60px;
+        position: absolute;
+        bottom: 106px;
+        left: 77px;
+        z-index: 10; }
+      #page45 .ui-content .toggle .close_text {
+        max-width: 20px;
+        position: absolute;
+        bottom: 126px;
+        left: 97px; }
 		#page45 .img_twinkle {
 			animation:twinkle 1.5s infinite;
 			width:100%;
@@ -3082,7 +3090,8 @@ img {
 
 #page47 {
 	background:url("../images/day3/77_photo.jpg") no-repeat;
-	background-size:100% auto; }
+	background-size:100% 100%;
+	overflow: hidden; }
 	#page47 .ui-content {
 		margin:0;
 		padding:0;
@@ -3121,7 +3130,7 @@ img {
 			#page47 .imgwrap img {
 				position:relative; }
 	#page47 a.bye_btn {
-	    background: #012C5F;
+	    background: #2b70ab;
 		display: inline-block;
 		color: #FFF;
 		padding: 0.5% 4%;
