@@ -42,7 +42,7 @@
 		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		<!-- <link rel="stylesheet" href="../css/styles.css"> -->
 		<link rel="stylesheet" href="/pd/css/styles_day3.css">
-		<link rel="stylesheet" href="/pd/css/menu.css">
+		<link rel="stylesheet" href="/pd/css/menu_day3.css">
 		<!-- <link rel="stylesheet" href="/pd/css/day3.css"> -->
 		<link rel="stylesheet" href="/pd/css/Nwagon.css">
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -63,7 +63,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="/pd/js/device.js"></script>
 		<script src="/pd/js/day3.js"></script>
-		<script src="../js/menu_test.js"></script>
+		<script src="../js/menu_day3.js"></script>
 		<script src="/pd/js/Nwagon.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
