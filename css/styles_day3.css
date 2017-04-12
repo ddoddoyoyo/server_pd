@@ -209,7 +209,7 @@ img {
 				overflow:hidden;
 				margin-bottom:10px; }
 				.ui-page-theme-a .ui-content .textwrap .text .text_img img {
-					margin-top:10px;
+					/*margin-top:10px;*/
 					/*width:120%;*/
 					position:relative;
 					/*right:9px;*/ }
