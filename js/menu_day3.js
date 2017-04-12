@@ -7,7 +7,7 @@ $(document).ready(function(){
 		sidePanel += "<li><a href='#page9'>ENGINE 2</a></li>";
 		sidePanel += "<li><a href='#page13'>DIMENSION</a></li>";
 		sidePanel += "<li><a href='#page22'>SUNROOF</a></li>";
-		sidePanel += "</ul></li><li id='Strasbourg'><a href='#page73'><span>Strasbourg</span></a><ul class='sub_menu2'>";//day3 strasbourg
+		sidePanel += "</ul></li><li id='strasbourg'><a href='#page2101'><span>Strasbourg</span></a><ul class='sub_menu2'>";//day3 strasbourg
 		sidePanel += "<li><a href='#page28'>ADAS</a></li>";
 		sidePanel += "<li><a href='#page45'>REMOTE WINDOW</a></li>";
 		sidePanel += "</ul></li></ul></li>";//day2 end

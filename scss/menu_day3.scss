@@ -70,28 +70,68 @@
     width:50%;
     height:100%;
     float:left;
-    margin-right: 5%;
+    margin-right: 3%;
   }
   >li#day1{
-    width:45%;
+    width:47%;
     height:50%;
     float:left;
     @include clearfix;
-    background: url('../images/button/btn_next_talk_arrow_2.png') no-repeat;
-    background-size: 15%;
-    background-position: 49% 2%;
+    //background: url('../images/button/btn_next_talk_arrow_2.png') no-repeat;
+    //background-size: 15%;
+   // background-position: 49% 2%;
+   position: relative;  
+    &:after{
+      content : ""; 
+      display: block; 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      background-image: url("../images/button/btn_next_talk_arrow_2.png"); 
+      width: 100%; 
+      height: 100%; 
+      opacity: 0.6;
+      z-index: 0;
+      background-repeat: no-repeat;
+      background-size: 16%;
+      background-position: 49% 2%;
+    }
+    a{
+          position: relative;
+            z-index: 1;
+        }
     >ul{
       opacity: 0.5;
       height: 50%;
     }
   }
   >li#day2{
-    width:45%;
+    width:47%;
     height:50%;
     float:left;
-    background: url('../images/button/btn_next_talk_arrow_2.png') no-repeat;
-    background-size: 15%;
-    background-position: 49% 2%;
+    //background: url('../images/button/btn_next_talk_arrow_2.png') no-repeat;
+   // background-size: 15%;
+   // background-position: 49% 2%;
+   position: relative;  
+    &:after{
+      content : ""; 
+      display: block; 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      background-image: url("../images/button/btn_next_talk_arrow_2.png"); 
+      width: 100%; 
+      height: 100%; 
+      opacity: 0.6;
+      z-index: 0;
+      background-repeat: no-repeat;
+      background-size: 16%;
+      background-position: 49% 2%;
+    }
+    a{
+          position: relative;
+            z-index: 1;
+        }
     >ul{
       opacity: 0.5;
       height: 50%;
@@ -102,7 +142,7 @@
     width:100%;
     >li{ //도시
       //border-bottom:1px solid;
-      width:92%; 
+      width:89%; 
       margin-top:10px;
       //padding:5px;
       >a, >span{
@@ -110,18 +150,58 @@
       }
     }
     >li#bern >.sub_menu2 >li{
-      background:url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
-      background-size: 12%;
-      background-position: 97% 50%;
-      margin-top: 2px;
+      //background:url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
+     // background-size: 12%;
+     // background-position: 97% 50%;
+      position: relative;
+        margin-top: 2px;
+        &:after{
+          content : ""; 
+          display: block; 
+          position: absolute; 
+          top: 0; 
+          left: 0; 
+          background-image: url("../images/button/btn_next_talk_arrow_2.png"); 
+          width: 100%; 
+          height: 100%; 
+          opacity: 0.6;
+          z-index: 0;
+          background-repeat: no-repeat;
+          background-size: 12%;
+          background-position: 96% 0%;
+        }
+        a{
+          position: relative;
+            z-index: 1;
+        }
     }
     >li#strasbourg{
       margin-top:5%;
       >.sub_menu2 >li{
-        background:url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
-        background-size: 12%;
-        background-position: 97% 50%;
+       // background:url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
+       // background-size: 12%;
+       // background-position: 97% 50%;
+       position: relative;
         margin-top: 2px;
+        &:after{
+          content : ""; 
+          display: block; 
+          position: absolute; 
+          top: 0; 
+          left: 0; 
+          background-image: url("../images/button/btn_next_talk_arrow_2.png"); 
+          width: 100%; 
+          height: 100%; 
+          opacity: 0.6;
+          z-index: 0;
+          background-repeat: no-repeat;
+          background-size: 12%;
+          background-position: 96% 0%;
+        }
+        a{
+          position: relative;
+            z-index: 1;
+        }
       }
     }
     >li#como, li#zurich{
@@ -132,8 +212,8 @@
     //display:none;
     height: 100%;
     width:100%;
-    border-top:1px solid;
-    margin-top:5px 0;
+    border-top:1px solid $white_opacity;
+    //margin-top:5px 0;
     line-height: 140%;
     >li{ //기능
       //border-bottom:1px solid;
@@ -147,41 +227,8 @@
       font-size:11px;
     }
   }
-  // li#day1{
-  //   top:0;
-  //   left:0;
-  // }
-  // li#day2{
-  //   top:0;
-  //   left:35%;
-  // }
-  // li#day3{
-  //   top:0;
-  //   left:70%;
-  // }
-  // li#milano{}
-  // li#como{top:50%;}
-  // li#stelvio{}
-  // li#zurich{top:50%;}
-  // li#bern{}
-  // li#Strasbourg{top:50%;}
-  // li {
-  //   position: relative;
-  //   margin: 10px 0;
-  //   padding: 0;
-  //   width: 100%;
-  //   list-style: none;
-  //   a {
-  //     //font-family: 'GenesisSansHead-Light';
-  //     font-size: 18px;
-  //     text-decoration: none;
-  //     display: block;
-  //   }
-  // }
-  // .menu5 {
-  //   margin-bottom: 25px;
-  // }
-    a:visited {
+  
+    a:visited,a{
       color: #fff;
     }
     a{

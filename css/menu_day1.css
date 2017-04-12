@@ -118,23 +118,53 @@ input select label a {
   .sidePanel .menu_list > li#day2 {
     height: 50%;
     float: left;
-    background: url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
-    background-size: 15%;
-    background-position: 49% 2%; }
+    position: relative; }
     .sidePanel .menu_list > li#day2:before, .sidePanel .menu_list > li#day2:after {
       content: "";
       display: table; }
     .sidePanel .menu_list > li#day2:after {
       clear: both; }
+    .sidePanel .menu_list > li#day2:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../images/button/btn_next_talk_arrow_2.png");
+      width: 100%;
+      height: 100%;
+      opacity: 0.6;
+      z-index: 0;
+      background-repeat: no-repeat;
+      background-size: 16%;
+      background-position: 49% 2%; }
+    .sidePanel .menu_list > li#day2 a {
+      position: relative;
+      z-index: 1; }
     .sidePanel .menu_list > li#day2 > ul {
       opacity: 0.5;
       height: 50%; }
   .sidePanel .menu_list > li#day3 {
     height: 50%;
     float: right;
-    background: url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
-    background-size: 15%;
-    background-position: 49% 2%; }
+    position: relative; }
+    .sidePanel .menu_list > li#day3:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../images/button/btn_next_talk_arrow_2.png");
+      width: 100%;
+      height: 100%;
+      opacity: 0.6;
+      z-index: 0;
+      background-repeat: no-repeat;
+      background-size: 16%;
+      background-position: 49% 2%; }
+    .sidePanel .menu_list > li#day3 a {
+      position: relative;
+      z-index: 1; }
     .sidePanel .menu_list > li#day3 > ul {
       opacity: 0.5;
       height: 50%; }
@@ -147,17 +177,47 @@ input select label a {
       .sidePanel .menu_list .sub_menu1 > li > a, .sidePanel .menu_list .sub_menu1 > li > span {
         font-size: 20px; }
     .sidePanel .menu_list .sub_menu1 > li#milan > .sub_menu2 > li {
-      background: url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
-      background-size: 12%;
-      background-position: 97% 50%;
+      position: relative;
       margin-top: 2px; }
+      .sidePanel .menu_list .sub_menu1 > li#milan > .sub_menu2 > li:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../images/button/btn_next_talk_arrow_2.png");
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-size: 12%;
+        background-position: 96% 0%; }
+      .sidePanel .menu_list .sub_menu1 > li#milan > .sub_menu2 > li a {
+        position: relative;
+        z-index: 1; }
     .sidePanel .menu_list .sub_menu1 > li#como {
       margin-top: 15%; }
       .sidePanel .menu_list .sub_menu1 > li#como > .sub_menu2 > li {
-        background: url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
-        background-size: 12%;
-        background-position: 97% 50%;
+        position: relative;
         margin-top: 2px; }
+        .sidePanel .menu_list .sub_menu1 > li#como > .sub_menu2 > li:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url("../images/button/btn_next_talk_arrow_2.png");
+          width: 100%;
+          height: 100%;
+          opacity: 0.6;
+          z-index: 0;
+          background-repeat: no-repeat;
+          background-size: 12%;
+          background-position: 96% 0%; }
+        .sidePanel .menu_list .sub_menu1 > li#como > .sub_menu2 > li a {
+          position: relative;
+          z-index: 1; }
     .sidePanel .menu_list .sub_menu1 > li#zurich, .sidePanel .menu_list .sub_menu1 li#strasbourg {
       margin-top: 2px; }
   .sidePanel .menu_list .sub_menu2 {
