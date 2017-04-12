@@ -381,7 +381,7 @@ $(document).ready(function(){
 			},1500);
 
 		}else if(ahss_ck  == 3){
-			$('#page13').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/13_bg_4.jpg)","background-repeat":"no-repeat","background-size":"auto 100%"}).fadeIn(500);
+			$('#page13').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/13_bg_4.jpg)","background-repeat":"no-repeat","background-size":"100% 100%"}).fadeIn(500);
 			$("#page13 .point, #page13 .percentage,#page13 .next_finger").fadeIn(500);
 			$("#page13 .next_p_btn").delay(1500).fadeIn(500);
 			$("#page13 .incremental-counter#int").attr('data-value','53');
