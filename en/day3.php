@@ -1010,7 +1010,7 @@ var options = {
 						<div class="imgwrap">
 							<img src="/pd/images/day3/james_16.png" alt="james">
 						</div>
-						<a href="#page2101" id="go_page2101" class="next_p_btn ui-btn go-next">
+						<a href="#page21" id="go_page21" class="next_p_btn ui-btn go-next">
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
@@ -1028,7 +1028,7 @@ var options = {
 					<div class="page_bg">
 						<img src="/pd/images/day3/37_plus_bg_map_1.jpg" alt="bern_map_2" />
 					</div>
-					<a href="#page21" class="next_finger">
+					<a href="#page22" class="next_finger">
 						<img src="/pd/images/button/touchfinger_@3x.png" alt="next button">
 					</a>
 					<div data-role="main" class="ui-content">
@@ -1083,7 +1083,7 @@ var options = {
 								</div>
 							</div>
 						</div>
-						<a href="#page22" id="go_page22" class="next_p_btn ui-btn go-next">
+						<a href="#page2101" id="go_page2101" class="next_p_btn ui-btn go-next">
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
@@ -1934,7 +1934,11 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div class="text_img">
+									<?php if($LMS_IMAGE) { ?> 
+									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+								<?php } else { ?>
 									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
 								</div>
 								<div id="textbox46_1" class="textbox">
 									<p>This city trip is the last course of our journey</p>

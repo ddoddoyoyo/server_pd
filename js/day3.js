@@ -1154,12 +1154,12 @@ $(document).ready(function() {
 
 	$("#page47").on({
 		"pagebeforeshow" : function(){
-			$("#page47 .textwrap, #page47 .textbox,#page47 .next_finger,#page47 #go_back").hide();
+			$("#page47 .textwrap, #page47 .textbox, #page47 #go_back").hide();
 			$("#page47 .imgwrap img").css({"top":"200px"});
 		},
 		"pageshow": function(){
 			$("#page47 .imgwrap img").animate({"top":"5px"},500);
-			$("#page47 .textwrap").delay(500).fadeIn(500);
+			$("#page47 .textwrap, #page47 .textbox").delay(500).fadeIn(500);
 			next_Count=1;
 		}
 	});
