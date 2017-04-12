@@ -344,6 +344,22 @@ img {
     opacity: 0; } }
 
 /* loading */
+.landscape_popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999; }
+  .landscape_popup .layer_landscape {
+    display: block; }
+  .landscape_popup p {
+    font-family: "HyundaiSansHead-Regular_0", sans-serif !important; }
+  .landscape_popup .ok_btn {
+    display: none; }
+
 #page0 {
   background: url("../images/intro/open_bg_@3x.jpg") no-repeat;
   background-size: 100% auto;

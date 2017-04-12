@@ -59,6 +59,8 @@ $(document).ready(function(){
 	$("#page0, #page1,#page2, #page3").on({
 		"pagebeforeshow" : function(){
 			$("#mokup, #wrap.mobile").removeClass("landscape");
+			// $('#page0 #landscape_popup,#page1 #landscape_popup,#page2 #landscape_popup,#page3 #landscape_popup').hide();
+			//$('.landscape_popup .layer_landscape').hide();
 		}
 	});
 

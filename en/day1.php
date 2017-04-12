@@ -1989,6 +1989,17 @@
 						</a>
 					</div>
 				</section>
+
+
+				<!-- <div id="landscape_popup" class="landscape_popup">
+				<a href="#" class="layer_landscape">
+					<div class="box">
+						<img class="icon-device" src="../images/icon_phonerotation_@3x.png" alt="">
+						<p>Turn the screen to landscape.</p>
+						<p class="ok_btn">OK</p>
+					</div>
+				</a>
+			</div> -->
 	</div>
 </div>
 		 <a href="#page14">이동</a>

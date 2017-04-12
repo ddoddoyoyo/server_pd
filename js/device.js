@@ -114,9 +114,13 @@ $(document).ready(function(){
 	   var nowPageId = $.mobile.activePage.attr("id");
 	   
 	   if(window.orientation == 0){
-	      //alert("portrait")
+	      //alert("portrait");
+	      //$('.landscape_popup').show();
+	      // $('#page0 #landscape_popup,#page1 #landscape_popup,#page2 #landscape_popup,#page3 #landscape_popup').hide();
 	   }else{
-	      //alert("landscape")
+	      //alert("landscape");
+	      //$('.landscape_popup').hide();
+
 	   }
 	});
 });
