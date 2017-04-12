@@ -108,7 +108,7 @@ $(document).ready(function(){
 		}
 	});
 	$("#page3001 .btn_play").click(function(){
-		audio_pause();
+		// audio_pause();
 		$("#page3001 .popLayer").fadeIn(500,function(){
 			$("#page3001 .next_p_btn").delay(500).fadeIn(500);
 			//$("#page63001 video")[0].play();//자동 재생
@@ -119,9 +119,9 @@ $(document).ready(function(){
 
 	$("#page3001 .next_p_btn").click(function(){
 		video_pause();
-		if($("#page4").has(".audio1")) {
-			$("#page4").find(".audio1").trigger('play');
-		}
+		// if($("#page4").has(".audio1")) {
+		// 	$("#page4").find(".audio1").trigger('play');
+		// }
 	});
 
 	$("#page3").on({
@@ -137,9 +137,9 @@ $(document).ready(function(){
 		}
 	});
 	$("#page3 #go_page3001").click(function(){
-		if($("#page3001").has(".audio1")) {
-				$("#page3001").find(".audio1").trigger('play');
-			}
+		// if($("#page3001").has(".audio1")) {
+		// 		$("#page3001").find(".audio1").trigger('play');
+		// 	}
 	});
 
 	$(window).on("orientationchange",function(){
@@ -171,7 +171,7 @@ $(document).ready(function(){
 	});
 
 	$("#page4 .next_p_btn").click(function(){
-		audio_pause();
+		// audio_pause();
 	});
 
 	$("#page5").on({

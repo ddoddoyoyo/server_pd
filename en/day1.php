@@ -159,8 +159,8 @@
 							<img src="../images/person/james_21.png" alt="james">
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/01.mp3"></audio>
-				</section>
+					<!-- <audio class="audio1" src="../tts/day1/01.mp3"></audio>
+				</section> -->
 
 				<section data-role="page" id="page3" class="container">
 					<div class="page_bg"></div>
@@ -223,7 +223,7 @@
 						<a href="#page4" id="go_page4" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
-						<audio class="audio1" src="../tts/day1/v1.mp3"></audio>
+						<!-- <audio class="audio1" src="../tts/day1/v1.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page4" class="container">
@@ -251,7 +251,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/02.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/02.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page5" class="container">
