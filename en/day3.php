@@ -2010,7 +2010,7 @@ var options = {
 			</div>
 		</div>
 
-		<!--  --><a href="#page20">이동</a>
+		<!--  <a href="#page20">이동</a>-->
 	</body>
 </html>
 
