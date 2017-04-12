@@ -370,7 +370,13 @@ var options = {
 								<div>Ford<br />Focus</div>
 							</div>
 						</div>
-						<div class="pageTitle">Cd Comparison</div>
+						<div class="titlewrap">
+							<div class="text_i">
+								<div id="textbox1">
+									<p>Cd Comparison</p>
+								</div>	
+							</div>
+						</div>
 						<div class="textwrap">
 							<div class="text_img2">
 								<img src="/pd/images/person/day3_james.png" alt="james">
@@ -1497,7 +1503,6 @@ var options = {
 							<img src="/pd/images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
-					<div class="page_bg"></div>
 					<div data-role="main" class="ui-content">
 						<div class="toggle">
 							<div class="imgwrap">
@@ -1814,15 +1819,20 @@ var options = {
 					<div id="imgArrow2" class="imgArrow img_twinkle"><img src="/pd/images/day3/72_arrow.png" alt="imgArrow2" /></div>
 					<div class="imgKey"><img src="/pd/images/day3/71_smartkey_block.png" alt="key" /></div>
 					<div data-role="main" class="ui-content">
-						<div class="start_text">
-							<img src="/pd/images/button/btn_talk_more.png" alt="">
-						</div>
-						<div class="imgwrap">
-							<?php if($LMS_IMAGE) { ?> 
+						<div class="toggle">
+							<div class="imgwrap">
+								<?php if($LMS_IMAGE) { ?> 
 									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
-							<?php } else { ?>
-								<img src="../images/intro/login_profile_@3x.png" alt="james">
-							<?php } ?>
+								<?php } else { ?>
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
+								<?php } ?>
+							</div>
+							<div class="start_text">
+								<img src="../images/button/btn_talk_more_gif.gif" alt="">
+							</div>
+							<div class="close_text">
+								<img src="../images/button/btn_close.png" alt="">
+							</div>
 						</div>
 						<div class="textwrap">
 							<div class="text_tip">
@@ -1854,7 +1864,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div class="text_img">
-									<img src="/pd/images/person/james_2_2.png" alt="james">
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
 								</div>
 								<div id="textbox46_1" class="textbox">
 									<p>This city trip is the last course of our journey</p>
@@ -1926,7 +1936,7 @@ var options = {
 			</div>
 		</div>
 
-		<!--  --><a href="#page36">이동</a>
+		<!--  --><a href="#page46">이동</a>
 	</body>
 </html>
 
