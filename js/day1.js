@@ -337,7 +337,7 @@ $(document).ready(function(){
 
 		}, 
 		"pageshow" : function(){
-			$('#page13').css({"background":"url(../images/day1/13_bg_1.jpg)","background-repeat":"no-repeat", "background-size":"auto 100%"}).show();
+			$('#page13').css({"background":"url(../images/day1/13_bg_1.jpg)","background-repeat":"no-repeat", "background-size":"100% 100%"}).show();
 			$("#page13 .next_finger img").css({"left":"27%","top":"47%"});
 			$("#page13 .next_finger, #page13 .next_finger img").show();
 		}
@@ -356,7 +356,7 @@ $(document).ready(function(){
 		}
 
 		if(ahss_ck  == 1){
-			$('#page13').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/13_bg_2.jpg)","background-repeat":"no-repeat", "background-size":"auto 100%"}).fadeIn(500);
+			$('#page13').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/13_bg_2.jpg)","background-repeat":"no-repeat", "background-size":"100% 100%"}).fadeIn(500);
 			$("#page13 .point, #page13 .percentage, #page13 .imgwrap,#page13 .next_finger").fadeIn(500);
 			$("#page13 .next_finger img").css({"left":"22%","top":"35%"}).delay(1500).fadeIn(500);
 			$("#page13 .incremental-counter#int").attr('data-value','17');
@@ -369,7 +369,7 @@ $(document).ready(function(){
 			},1500);
 
 		}else if(ahss_ck  == 2){
-			$('#page13').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/13_bg_3.jpg)","background-repeat":"no-repeat", "background-size":"auto 100%"}).fadeIn(500);
+			$('#page13').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day1/13_bg_3.jpg)","background-repeat":"no-repeat", "background-size":"100% 100%"}).fadeIn(500);
 			$("#page13 .point, #page13 .percentage,#page13 .next_finger").fadeIn(500);
 			$("#page13 .next_finger img").css({"left":"21%","top":"12%"}).delay(1500).fadeIn(500);
 			$("#page13 .incremental-counter#int").attr('data-value','27');
