@@ -983,9 +983,51 @@ var options = {
 						<div class="imgwrap">
 							<img src="/pd/images/day3/james_16.png" alt="james">
 						</div>
-						<a href="#page21" id="go_page21" class="next_p_btn ui-btn go-next">
+						<a href="#page2101" id="go_page2101" class="next_p_btn ui-btn go-next">
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
+					</div>
+				</section>
+
+				<section data-role="page" id="page2101" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="/pd/images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="/pd/images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div class="page_bg">
+						<img src="/pd/images/day3/37_plus_bg_map_1.jpg" alt="bern_map_2" />
+					</div>
+					<a href="#page21" class="next_finger">
+						<img src="/pd/images/button/touchfinger_@3x.png" alt="next button">
+					</a>
+					<div data-role="main" class="ui-content">
+						<div class="textwrap">
+							<div class="text">
+								<div id="textbox0_1" class="textbox">
+									<p>Our last destination, Strasbourg!<br>It is a city of France, </p>
+								</div>
+								<div id="textbox0_2" class="textbox">
+									<p>Where various canals meet and the center of traffic culture in a quiet atmosphere.<br>Let's go quickly!</p>
+								</div>
+								<div class="btn_box">
+									<a href="#" id="go_next1" class="text_btn_l">
+										<img src="/pd/images/button/btn_next_talk_arrow_2.png" alt="next button">
+									</a>
+									<a href="#" id="go_back" class="text_btn_r">
+										<img src="/pd/images/button/btn_next_talk_arrow_1.png" alt="next button">
+									</a>
+								</div>
+							</div>
+							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
+							</div>
+						</div>
+						<div class="imgwrap">
+							<img src="/pd/images/person/james_14.png" alt="james">
+						</div>
 					</div>
 				</section>
 
@@ -1503,6 +1545,7 @@ var options = {
 							<img src="/pd/images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
+					<div class="page_bg"></div>
 					<div data-role="main" class="ui-content">
 						<div class="toggle">
 							<div class="imgwrap">
@@ -1936,7 +1979,7 @@ var options = {
 			</div>
 		</div>
 
-		<!--  --><a href="#page27">이동</a>
+		<!--  --><a href="#page20">이동</a>
 	</body>
 </html>
 

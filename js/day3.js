@@ -617,6 +617,37 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#page2101").on({
+		"pagebeforeshow" : function(){
+			$("#page2101 .textwrap, #page2101 .textbox,#page2101 .next_finger,#page2101 #go_back").hide();
+			$("#page2101 .imgwrap img").css({"top":"200px"});
+		},
+		"pageshow": function(){
+			$("#page2101 .imgwrap img").animate({"top":"5px"},500);
+			$("#page2101 .textwrap, #page2101 #textbox0_1,#page2101 #go_next1").delay(500).fadeIn(500);
+			$("#page2101 .next_finger").delay(1000).fadeIn(500);
+			next_Count=1;
+		}
+	});
+	$("#page2101 #go_next1").click(function() {
+		$("#page2101 .textwrap").hide();
+		if (next_Count == 1) {
+			$("#page2101 .textbox, #page2101 #go_next1").hide();
+			$("#page2101 .textwrap,#textbox0_2, #page2101 #go_back").fadeIn(500);
+		}
+		next_Count++;
+	});
+
+	$("#page2101 #go_back").click(function(e) {
+		$("#page2101 .textwrap").hide();
+		if (next_Count == 2) {
+			$(this).hide();
+			$("#page2101 .textbox, #page2101 #go_next1, #page2101 .next_p_btn").hide();
+			$("#page2101 .textwrap, #textbox0_1, #page2101 #go_next1").fadeIn(500);
+		}
+		next_Count--;
+	});
+
 	$("#page21").on({
 		"pagebeforeshow" : function() {
 			$("#page21 .textwrap, #page21 .next_p_btn").hide();
@@ -768,6 +799,8 @@ $(document).ready(function() {
 		"pagebeforeshow" : function() {
 			$("#page36 .textwrap, #page36 .textbox, #page36 #go_back, #page36 .next_p_btn").hide();
 			$("#page36 #go_next1, #page36 .start_text").show();
+			$("#page36 .page_bg").css({"background":"url(../images/day3/56_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
+			$("#page36 .page_bg").fadeIn(500);
 		},
 		"pageshow" : function() {
 			next_Count = 1;
@@ -781,18 +814,18 @@ $(document).ready(function() {
 		if (next_Count == 1) {
 			$("#page36 .textbox").hide();
 			$("#textbox36_2, #page36 #go_next1, #page36 #go_back").show();
-			$('#page36 .page_bg').queue(function() {
-				$(this).css({"background-image":"url(../images/day3/58_photo.jpg)", "background-size":"100% auto"}).dequeue()
-				.fadeIn(500);
-			});
+			// $('#page36 .page_bg').queue(function() {
+			// 	$(this).css({"background-image":"url(../images/day3/58_photo.jpg)", "background-size":"100% auto"}).dequeue()
+			// 	.fadeIn(500);
+			// });
+			$("#page36 .page_bg").css({"background":"url(../images/day3/58_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+		  $("#page36 .page_bg").animate({"left":"0"},500);
 		}
 		else if (next_Count == 2) {
 			$("#page36 .textbox, #page36 #go_next1").hide();
 			$("#textbox36_3, #page36 #go_back, #page36 .next_p_btn").show();
-			$('#page36 .page_bg').queue(function() {
-				$(this).css({"background-image":"url(../images/day3/59_photo.jpg)", "background-size":"100% auto"}).dequeue()
-				.fadeIn(500);
-			});
+			$("#page36 .page_bg").css({"background":"url(../images/day3/59_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"100%"});
+		  $("#page36 .page_bg").animate({"left":"0"},500);
 		}
 		next_Count++;
 	});
@@ -802,19 +835,23 @@ $(document).ready(function() {
 			$(this).hide();
 			$("#page36 .textbox, #page36 #go_back, #page36 .next_p_btn").hide();
 			$("#textbox36_1, #page36 #go_next1").show();
-			$('#page36 .page_bg').queue(function() {
-				$(this).css({"background-image":"url(../images/day3/56_photo.jpg)", "background-size":"100% auto"}).dequeue()
-				.fadeIn(500);
-			});
+			// $('#page36 .page_bg').queue(function() {
+			// 	$(this).css({"background-image":"url(../images/day3/56_photo.jpg)", "background-size":"100% auto"}).dequeue()
+			// 	.fadeIn(500);
+			// });
+			$("#page36 .page_bg").css({"background":"url(../images/day3/56_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+		    $("#page36 .page_bg").animate({"left":"0"},500);
 		}
 		else if (next_Count == 3) {
 			$(this).hide();
 			$("#page36 .textbox, #page36 .next_p_btn").hide();
 			$("#textbox36_2, #page36 #go_back, #page36 #go_next1").show();
-			$('#page36 .page_bg').queue(function() {
-				$(this).css({"background-image":"url(../images/day3/58_photo.jpg)", "background-size":"100% auto"}).dequeue()
-				.fadeIn(500);
-			});
+			// $('#page36 .page_bg').queue(function() {
+			// 	$(this).css({"background-image":"url(../images/day3/58_photo.jpg)", "background-size":"100% auto"}).dequeue()
+			// 	.fadeIn(500);
+			// });
+			$("#page36 .page_bg").css({"background":"url(../images/day3/58_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
+		    $("#page36 .page_bg").animate({"left":"0"},500);
 		}
 		next_Count--;
 	});
@@ -1117,7 +1154,7 @@ $(document).ready(function() {
 
 	$("#page47").on({
 		"pagebeforeshow" : function(){
-			$("#page47 .textwrap, #page0 .textbox,#page0 .next_finger,#page0 #go_back").hide();
+			$("#page47 .textwrap, #page47 .textbox,#page47 .next_finger,#page47 #go_back").hide();
 			$("#page47 .imgwrap img").css({"top":"200px"});
 		},
 		"pageshow": function(){
