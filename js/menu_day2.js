@@ -1,33 +1,32 @@
 $(document).ready(function(){
 
 	var sidePanel = "<div class='sidePanel_wrap'><div class='sidePanel'><a href='#' class='btn_close'><img src='../images/button/btn_close.png' alt=''></a><ul class='menu_list'>";
-	sidePanel += "<li id='day1'><span>Day1</span><ul class='sub_menu1'><li id='milan'><span><a href='javascript:;' id='go_stelvio'>Passo della stelvio</a></span><ul class='sub_menu2'>";//day1 miano
+	sidePanel += "<li id='day1'><span>Day1</span><ul class='sub_menu1'><li id='milan'><span>Milan</span><ul class='sub_menu2'>";//day1 miano
+	sidePanel += "<li>BODY FRAME</li>";
+	sidePanel += "<li>SUSPENSION</li>";
+	sidePanel += "<li>EXTERIOR</li>";
+	sidePanel += "</ul></li><li id='como'><span>Como</span><ul class='sub_menu2'>";//day1 como
+	sidePanel += "<li>HIGH BEAM ASSIST</li>";
+	sidePanel += "<li>INTERIOR</li>";
+	sidePanel += "</ul></li></ul></li>";//day1 end
+	sidePanel += "<li id='day2'><span>Day2</span><ul class='sub_menu1'><li id='stelvio'><span>Passo della stelvio</span><ul class='sub_menu2'>";//day2 passodella stelvio
 	sidePanel += "<li>ENGINE</li>";
 	sidePanel += "<li>TRANSMISSION(DCT)</li>";
 	sidePanel += "<li>SUSPENSION 2</li>";
 	sidePanel += "<li>BODY FRAME 2</li>";
-	sidePanel += "</ul></li><li id='como'><span>Zurich</span><ul class='sub_menu2'>";//day1 como
+	sidePanel += "</ul></li><li id='zurich'><span>Zurich</span><ul class='sub_menu2'>";//day2 zurich
 	sidePanel += "<li><a href='#page79'></a>SPACE</li>";
 	sidePanel += "<li><a href='#page84'></a>CONNECTIVITY</li>";
-	sidePanel += "</ul></li></ul></li>";//day1 end
-	sidePanel += "<li id='day2'><span>Day2</span><ul class='sub_menu1'><li id='stelvio'><span>Somewhere</span><ul class='sub_menu2'>";//day2 passodella stelvio
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "</ul></li><li id='zurich'><span>Somewhere</span><ul class='sub_menu2'>";//day2 zurich
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "<li>SUBTITLE</li>";
 	sidePanel += "</ul></li></ul></li>";//day2 end
-	sidePanel += "<li id='day3'><span>Day3</span><ul class='sub_menu1'><li id='bern'><span>Somewhere</span><ul class='sub_menu2'>";//day3 bern
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "</ul></li><li id='Strasbourg'><span>Somewhere</span><ul class='sub_menu2'>";//day3 strasbourg
-	sidePanel += "<li>SUBTITLE</li>";
-	sidePanel += "<li>SUBTITLE</li>";
+	sidePanel += "<li id='day3'><span>Day3</span><ul class='sub_menu1'><li id='bern'><span>Bern</span><ul class='sub_menu2'>";//day3 bern
+	sidePanel += "<li>AERODYNAMIC</li>";
+	sidePanel += "<li>NVH</li>";
+	sidePanel += "<li>ENGINE 2</li>";
+	sidePanel += "<li>DIMENSION</li>";
+	sidePanel += "<li>SUNROOF</li>";
+	sidePanel += "</ul></li><li id='Strasbourg'><span>Strasbourg</span><ul class='sub_menu2'>";//day3 strasbourg
+	sidePanel += "<li>ADAS</li>";
+	sidePanel += "<li>REMOTE WINDOW</li>";
 	sidePanel += "</ul></li></ul></li></ul>";//day3 end
 	$("section.container").append(sidePanel);
 
@@ -58,28 +57,12 @@ $(document).ready(function(){
 		//$(this).children(".sidePanel").fadeOut(500);
 	});
 
-
-	$("a#go_stelvio").click(function(){	
-		location.href="/pd/en/day2.php#page57";
-	//	$.mobile.changePage("/pd/en/day2.php#page57","fade");	
-			
-		//$.mobile.changePage ("/pd/en/day2.php", {data : { page : "#page57"}});
-		/*
-		$.mobile.changePage( "/pd/en/day2_test.php", {
-			type: "post",
-			data: {page : "page57"},
-		});
-		*/
-		
-		
-		
-
-	});
-	
+	// $("#page104 #go_page105").click(function(){	
+	// 	location.href="/pc_pd/app/en/day3.html#page2";
+	// });
 
 	// $("#page104 #go_page105").click(function(){	
-	// location.href="/pc_pd/app/en/day3.html#page3";	
-	
+	// 	location.href="/pc_pd/app/en/day3.html#page3";
 	// });
 
 	// $("#page104 #go_page105").click(function(){	
@@ -101,13 +84,8 @@ $(document).ready(function(){
 	// $("#page104 #go_page105").click(function(){	
 	// 	location.href="/pc_pd/app/en/day3.html#page0";
 	// });
+
+
 });
-// $(document).on('pagecreate',function(){
-// 	$("#go_stelvio").click(function(e){	
-// 		//location.href="/pd/en/day2.php#page57";
-// 		var href =$(this).attr('href');
-// 		e.preventDefault();
-// 		$.mobile.changePage(href);
-// 	});
-// });
+
 	
