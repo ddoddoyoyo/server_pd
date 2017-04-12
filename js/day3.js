@@ -526,7 +526,7 @@ $(document).ready(function() {
 		"pagebeforeshow" : function() {
 			$('#page18 .textwrap,#page18 .next_p_btn, #page18 #go_back, #page18 .textbox').hide();
 			//$("#textbox18_1, #page18 #go_next1").show();
-			$("#page59 .page_bg").css({"background":"url(../images/day3/33_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
+			$("#page18 .page_bg").css({"background":"url(../images/day3/33_photo.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"0"});
 		},
 		"pageshow" : function() {
 			$('#page18 .textwrap,#textbox18_1, #page18 #go_next1').fadeIn(500);
@@ -953,7 +953,8 @@ $(document).ready(function() {
 			});
 		},
 		"pageshow" : function() {
-			$("#page41 .next_finger, #page41 .textwrap").delay(500).fadeIn(500);
+			$("#page41 .textwrap").fadeIn(500);
+			$("#page41 .next_finger").delay(500).fadeIn(500);
 
 		}
 	});

@@ -370,7 +370,13 @@ var options = {
 								<div>Ford<br />Focus</div>
 							</div>
 						</div>
-						<div class="pageTitle">Cd Comparison</div>
+						<div class="titlewrap">
+							<div class="text_i">
+								<div id="textbox1">
+									<p>Cd Comparison</p>
+								</div>	
+							</div>
+						</div>
 						<div class="textwrap">
 							<div class="text_img2">
 								<img src="/pd/images/person/day3_james.png" alt="james">
@@ -1858,7 +1864,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div class="text_img">
-									<img src="/pd/images/person/james_2_2.png" alt="james">
+									<img src="../images/intro/login_profile_@3x.png" alt="james">
 								</div>
 								<div id="textbox46_1" class="textbox">
 									<p>This city trip is the last course of our journey</p>

@@ -233,6 +233,18 @@ img {
 			bottom:3px;
 			right:17px; }
 
+.ui-content .titlewrap {
+      text-align: center;
+      margin:0 16px; 
+  }
+.ui-content .titlewrap .text_i {
+	width: 50%; 
+	margin:0 auto;
+	padding-top:5%;}
+.ui-content .titlewrap .text_i  p{
+	font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+}
+
 #wrap.mobile {
 	position:absolute;
 	top:50%;
