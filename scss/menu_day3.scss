@@ -40,7 +40,7 @@
 
 .sidePanel .menu_list {
   position: relative;
-  top: 15%;
+  top: 13%;
   //margin: 0 0 0 12%;
   margin:0 auto;
   padding: 0;
@@ -58,7 +58,7 @@
   
   >li{ //day1, day2, day3
     //height:100%;
-    width:50%;
+    //width:50%;
     //float:left;
     margin-bottom:10px;
     >a span{
@@ -66,11 +66,14 @@
     }
 
   }
-  >li#day1{
+  >li#day3{
+    width:50%;
     height:100%;
     float:left;
+    margin-right: 5%;
   }
-  >li#day2{
+  >li#day1{
+    width:45%;
     height:50%;
     float:left;
     @include clearfix;
@@ -82,9 +85,10 @@
       height: 50%;
     }
   }
-  >li#day3{
+  >li#day2{
+    width:45%;
     height:50%;
-    float:right;
+    float:left;
     background: url('../images/button/btn_next_talk_arrow_2.png') no-repeat;
     background-size: 15%;
     background-position: 49% 2%;
@@ -98,21 +102,21 @@
     width:100%;
     >li{ //도시
       //border-bottom:1px solid;
-      width:84%; 
+      width:92%; 
       margin-top:10px;
       //padding:5px;
-      >span{
-        font-size:18px;
+      >a, >span{
+        font-size:20px;
       }
     }
-    >li#milan >.sub_menu2 >li{
+    >li#bern >.sub_menu2 >li{
       background:url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
       background-size: 12%;
       background-position: 97% 50%;
       margin-top: 2px;
     }
-    >li#como{
-      margin-top:20%;
+    >li#strasbourg{
+      margin-top:5%;
       >.sub_menu2 >li{
         background:url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
         background-size: 12%;
@@ -120,7 +124,7 @@
         margin-top: 2px;
       }
     }
-    >li#zurich, li#strasbourg{
+    >li#como, li#zurich{
       margin-top :2px;
     }
   }

@@ -13,7 +13,7 @@ $(document).ready(function(){
 		sidePanel += "<li id='day1'><a href='javascript:;' id='go_day1'><span>Day1.</span></a><ul class='sub_menu1'><li id='milan'><span>Milan</span></li>";//day1 milan
 		sidePanel += "<li id='como'><span>Como</span></li>";//day1 Como;
 		sidePanel += "</ul></li>";//day1 end
-		sidePanel += "<li id='day3'><a href='javascript:;' id='go_day3'><span>Day3.</span></a><ul class='sub_menu1'><li id='bern'><a href='#page37'><span>Bern</span></a></li>";//day3 bern
+		sidePanel += "<li id='day3'><a href='javascript:;' id='go_day3'><span>Day3.</span></a><ul class='sub_menu1'><li id='bern'><span>Bern</span></li>";//day3 bern
 		sidePanel += "<li id='strasbourg'><span>Strasbourg</span></li>";//day3 strasbourg
 		sidePanel += "</ul></li></ul>";//day3 end
 		$("section.container").append(sidePanel);
