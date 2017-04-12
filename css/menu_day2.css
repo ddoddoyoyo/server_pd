@@ -97,7 +97,7 @@ input select label a {
 
 .sidePanel .menu_list {
   position: relative;
-  top: 15%;
+  top: 13%;
   margin: 0 auto;
   padding: 0;
   width: 90%;
@@ -108,30 +108,33 @@ input select label a {
     margin: 0;
     padding: 0; }
   .sidePanel .menu_list > li {
-    width: 50%;
     margin-bottom: 10px; }
     .sidePanel .menu_list > li > a span {
       font-size: 30px; }
-  .sidePanel .menu_list > li#day1 {
-    height: 100%;
-    float: left; }
   .sidePanel .menu_list > li#day2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-right: 5%; }
+  .sidePanel .menu_list > li#day1 {
+    width: 45%;
     height: 50%;
     float: left;
     background: url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
     background-size: 15%;
     background-position: 49% 2%; }
-    .sidePanel .menu_list > li#day2:before, .sidePanel .menu_list > li#day2:after {
+    .sidePanel .menu_list > li#day1:before, .sidePanel .menu_list > li#day1:after {
       content: "";
       display: table; }
-    .sidePanel .menu_list > li#day2:after {
+    .sidePanel .menu_list > li#day1:after {
       clear: both; }
-    .sidePanel .menu_list > li#day2 > ul {
+    .sidePanel .menu_list > li#day1 > ul {
       opacity: 0.5;
       height: 50%; }
   .sidePanel .menu_list > li#day3 {
+    width: 45%;
     height: 50%;
-    float: right;
+    float: left;
     background: url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
     background-size: 15%;
     background-position: 49% 2%; }
@@ -142,23 +145,23 @@ input select label a {
     height: 100%;
     width: 100%; }
     .sidePanel .menu_list .sub_menu1 > li {
-      width: 84%;
+      width: 92%;
       margin-top: 10px; }
-      .sidePanel .menu_list .sub_menu1 > li > span {
-        font-size: 18px; }
-    .sidePanel .menu_list .sub_menu1 > li#milan > .sub_menu2 > li {
+      .sidePanel .menu_list .sub_menu1 > li > a, .sidePanel .menu_list .sub_menu1 > li > span {
+        font-size: 20px; }
+    .sidePanel .menu_list .sub_menu1 > li#stelvio > .sub_menu2 > li {
       background: url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
       background-size: 12%;
       background-position: 97% 50%;
       margin-top: 2px; }
-    .sidePanel .menu_list .sub_menu1 > li#como {
-      margin-top: 20%; }
-      .sidePanel .menu_list .sub_menu1 > li#como > .sub_menu2 > li {
+    .sidePanel .menu_list .sub_menu1 > li#zurich {
+      margin-top: 5%; }
+      .sidePanel .menu_list .sub_menu1 > li#zurich > .sub_menu2 > li {
         background: url("../images/button/btn_next_talk_arrow_2.png") no-repeat;
         background-size: 12%;
         background-position: 97% 50%;
         margin-top: 2px; }
-    .sidePanel .menu_list .sub_menu1 > li#zurich, .sidePanel .menu_list .sub_menu1 li#strasbourg {
+    .sidePanel .menu_list .sub_menu1 > li#como, .sidePanel .menu_list .sub_menu1 li#strasbourg {
       margin-top: 2px; }
   .sidePanel .menu_list .sub_menu2 {
     height: 100%;
