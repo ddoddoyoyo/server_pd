@@ -433,6 +433,7 @@ $(document).ready(function() {
 			$('#page13 .next_finger img').css({'width':'167px'});
 			$("#page13 .next_finger").css({'top':'13%', 'left':'47%'});
 			$('#page13').css({"background-image":"url(../images/day3/22_image.jpg)", "background-size":"100% auto"});
+			$('#page13 .table13 tr:nth-child(3), #page13 .table13 tr:nth-child(4), #page13 .table13 tr:nth-child(5)').hide();
 		},
 		"pageshow" : function() {
 			$("#page13 .next_finger").show();
@@ -442,7 +443,7 @@ $(document).ready(function() {
 
 	$("#page13 .next_finger").click(function() {
 		if (next_Count == 1) {
-			$('#page13 .table13').show();
+			$('#page13 .table13').show()
 			$("#page13 .next_finger").hide();
 			$('#page13 .next_finger img').css({'width':'100px'});
 			$('#page13').css({"background-image":"url(../images/day3/09_bg.jpg)", "background-size":"100% auto"});
