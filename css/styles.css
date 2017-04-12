@@ -1204,10 +1204,13 @@ img {
           display: table; }
         #page14 .ui-content .textwrap .text #textbox1:after {
           clear: both; }
-        #page14 .ui-content .textwrap .text #textbox1 img {
-          width: 15%;
+        #page14 .ui-content .textwrap .text #textbox1 .imgwrap {
+          border-radius: 50px;
+          width: 80px;
+          height: 80px;
           float: left;
-          margin: 0 5%; }
+          overflow: hidden;
+          margin-right: 10px; }
         #page14 .ui-content .textwrap .text #textbox1 p {
           max-width: 74%;
           float: left;

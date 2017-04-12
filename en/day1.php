@@ -550,11 +550,13 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<?php if($LMS_IMAGE) { ?> 
-									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
-								<?php } else { ?>
-										<img src="../images/intro/login_profile_@3x.png" alt="man">
-									<?php } ?>
+									<div class="imgwrap">
+										<?php if($LMS_IMAGE) { ?> 
+												<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+											<?php } else { ?>
+											<img src="../images/intro/login_profile_@3x.png" alt="man">
+										<?php } ?>
+									</div>
 									<p>Compare to the previous i30, 27.2% higher than<span>?</span> of AHSS applied to strengthen the the body frame.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
@@ -1989,7 +1991,7 @@
 				</section>
 	</div>
 </div>
-		 <a href="#page53">이동</a>
+		 <a href="#page14">이동</a>
 		<!--<a href="#page84">이동</a> -->
 
 
