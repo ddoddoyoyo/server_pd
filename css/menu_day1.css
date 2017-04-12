@@ -192,7 +192,7 @@ input select label a {
         z-index: 0;
         background-repeat: no-repeat;
         background-size: 12%;
-        background-position: 96% 0%; }
+        background-position: 100% 0%; }
       .sidePanel .menu_list .sub_menu1 > li#milan > .sub_menu2 > li a {
         position: relative;
         z-index: 1; }
@@ -214,7 +214,7 @@ input select label a {
           z-index: 0;
           background-repeat: no-repeat;
           background-size: 12%;
-          background-position: 96% 0%; }
+          background-position: 100% 0%; }
         .sidePanel .menu_list .sub_menu1 > li#como > .sub_menu2 > li a {
           position: relative;
           z-index: 1; }
