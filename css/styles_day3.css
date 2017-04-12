@@ -429,6 +429,39 @@ img {
 	#pageStart .ui-content {
 		display:block; } }
 
+
+/*loading*/
+#page1001 {
+  background: #000 !important; }
+  #page1001 .ui-content {
+    width: 100%;
+    height: 100%;
+    background: #83d5fe !important; }
+    #page1001 .ui-content .imgwrap {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: calc((100% - 300px)/ 2);
+      left: calc((100% - 200px) / 2); }
+      #page1001 .ui-content .imgwrap .gif_img {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 10px; }
+      #page1001 .ui-content .imgwrap .loding_bar {
+        height: 15px;
+        width: 190px;
+        position: absolute;
+        bottom: 35px; }
+        #page1001 .ui-content .imgwrap .loding_bar .londing2 {
+          position: absolute;
+          bottom: 0;
+          width: 0%;
+          height: 15px; }
+        #page1001 .ui-content .imgwrap .loding_bar #logind_text {
+          margin-top: 10px;
+          text-align: center;
+          color: #206cdb; }
+
 #page0 {
 	background:url("../images/day3/02_bg_map_1.jpg") no-repeat;
 	background-size:100% 100%; }

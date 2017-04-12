@@ -3350,6 +3350,37 @@ img {
   #page55 .ui-content {
     display: block; } }
 
+#page5601 {
+  background: #000 !important; }
+  #page5601 .ui-content {
+    width: 100%;
+    height: 100%;
+    background: #83d5fe !important; }
+    #page5601 .ui-content .imgwrap {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: calc((100% - 300px)/ 2);
+      left: calc((100% - 200px) / 2); }
+      #page5601 .ui-content .imgwrap .gif_img {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 10px; }
+      #page5601 .ui-content .imgwrap .loding_bar {
+        height: 15px;
+        width: 190px;
+        position: absolute;
+        bottom: 35px; }
+        #page5601 .ui-content .imgwrap .loding_bar .londing2 {
+          position: absolute;
+          bottom: 0;
+          width: 0%;
+          height: 15px; }
+        #page5601 .ui-content .imgwrap .loding_bar #logind_text {
+          margin-top: 10px;
+          text-align: center;
+          color: #206cdb; }
+
 #page56 {
   background: #000; }
   #page56 .ui-content {

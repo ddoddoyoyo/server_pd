@@ -62,17 +62,17 @@
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
-		// window.onload = function(){
-		// 	setTimeout(function(){
-		// 		var t = performance.timing;
-		// 		var s =  (t.loadEventEnd - t.navigationStart);
-		// 		//console.log(s - 2000);
-		// 		$('.loding_bar .londing2').animate({"width":"100%"}, s);
-		// 		setTimeout(function(){
-		// 			$.mobile.changePage("#page2");
-		// 		}, s-1);
-		// 	},0);
-		// }
+		window.onload = function(){
+			setTimeout(function(){
+				var t = performance.timing;
+				var s =  (t.loadEventEnd - t.navigationStart);
+				//console.log(s - 2000);
+				$('.loding_bar .londing2').animate({"width":"100%"}, s);
+				setTimeout(function(){
+					$.mobile.changePage("#page56");
+				}, s-1);
+			},0);
+		}
 
 		$(document).ready(function(){
 				// enter key 금지
@@ -144,6 +144,21 @@
 		<div id="wrap">
 			<div id="contBox" class="container">
 <!--day2-->
+	<section data-role="page" id="page5601" class="container"> 
+					<div data-role="main" class="ui-content">
+						<div class="imgwrap">
+							<div class="gif_img">
+								<img src="/pd/images/loading_short_4sec.gif" alt="">
+							</div>
+							<div class="loding_bar">
+								<img src="/pd/images/loading_bar_1.png" alt="" class="londing1">
+								<img src="/pd/images/loading_bar_2.png" alt="" class="londing2">
+								<div id="logind_text">Preparing our trip...</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
 	<section data-role="page" id="page56" class="container">
 		<div data-role="main" class="ui-content">
 			<div class="imgwrap">
