@@ -1320,7 +1320,8 @@ img {
       border-radius: 50px;
       bottom: 30px;
       position: absolute;
-      left: 30px; }
+      left: 30px;
+      overflow: hidden; }
     #page15 .ui-content .textwrap {
       display: inline-block;
       max-width: 63%;
