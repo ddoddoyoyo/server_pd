@@ -1318,9 +1318,9 @@ img {
       width: 80px;
       height: 80px;
       border-radius: 50px;
-      bottom: 30px;
+      bottom: 25px;
       position: absolute;
-      left: 30px;
+      left: 25px;
       overflow: hidden; }
     #page15 .ui-content .textwrap {
       display: inline-block;
@@ -1897,7 +1897,7 @@ img {
   #page27 .ui-content {
     margin: 0;
     padding: 0;
-    max-width: 35%;
+    max-width: 38%;
     position: absolute;
     bottom: 0;
     right: 0;
