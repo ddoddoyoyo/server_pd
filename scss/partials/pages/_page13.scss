@@ -40,14 +40,21 @@
       right: 15%;
       bottom: 47%;  
       .incr_count{
-        margin-left: 36%;
+       // margin-left: 33%;
+       width: 95%;
+      text-align: right;
         font-size: 30px;
         color:$yellow;
-        .incremental-counter {
-          margin-right:3%;
-          .num{
+        .incremental-counter#int{
+          width: 39px;
           display: inline-block;
-          }
+        }
+        .incremental-counter#decimal{
+          width: 21px;
+          display: inline-block;
+        }
+        .incremental-counter .num{
+          display: inline-block;
         }
       }
       
