@@ -5,7 +5,7 @@
 
     .ui-content {
       @include reset-margins;
-      max-width: 33%;
+      max-width: 35%;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -26,6 +26,7 @@
 
       .imgwrap {
         max-width: 61%;
+        max-height: 200px;
 
         img {
           position: relative;

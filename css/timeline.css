@@ -199,7 +199,7 @@ img {
         height: 23px;
         padding-left: 2px;
         background: dimgray; }
-        .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:hover, .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:active, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:hover, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:active {
+        .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:active, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:active {
           background: #2b73af; }
       .ui-page-theme-a .ui-content .textwrap .text .text_btn_r {
         float: left; }

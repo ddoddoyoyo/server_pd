@@ -199,7 +199,7 @@ img {
         height: 23px;
         padding-left: 2px;
         background: dimgray; }
-        .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:hover, .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:active, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:hover, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:active {
+        .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:active, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:active {
           background: #2b73af; }
       .ui-page-theme-a .ui-content .textwrap .text .text_btn_r {
         float: left; }
@@ -1005,7 +1005,7 @@ img {
       #page9 .ui-content .imgwrap img {
         position: relative;
         width: 130%;
-        bottom: -200px;
+        bottom: -150px;
         left: -4px; }
     #page9 .ui-content .textwrap {
       display: inline-block;
@@ -1013,7 +1013,7 @@ img {
       margin-bottom: 30px;
       margin-left: 5px;
       position: relative;
-      bottom: 0px; }
+      bottom: 10%; }
       #page9 .ui-content .textwrap:before, #page9 .ui-content .textwrap:after {
         content: "";
         display: table; }
@@ -1026,6 +1026,12 @@ img {
         bottom: 8px; }
       #page9 .ui-content .textwrap .text {
         margin-left: 19px; }
+
+.mobile #page9 .ui-content .textwrap {
+  bottom: 5%; }
+
+.mobile #page9 .ui-content .imgwrap img {
+  bottom: -200px; }
 
 @media only screen and (orientation: Portrait) {
   #page9 .ui-content {
@@ -1265,10 +1271,10 @@ img {
               margin-top: 4px;
               background: #ffffff;
               padding: 0px 29px; }
-              #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a:focus, #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a:active, #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a:hover {
-                background: #002c5f;
+              #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a:active {
+                background: #2a72af;
                 color: #ffffff; }
-                #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a:focus li, #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a:active li, #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a:hover li {
+                #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a:active li {
                   color: #ffffff; }
               #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a li {
                 color: #000;
@@ -1872,7 +1878,7 @@ img {
   #page27 .ui-content {
     margin: 0;
     padding: 0;
-    max-width: 33%;
+    max-width: 35%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1905,7 +1911,8 @@ img {
       #page27 .ui-content .textwrap .text {
         overflow: hidden; }
     #page27 .ui-content .imgwrap {
-      max-width: 61%; }
+      max-width: 61%;
+      max-height: 200px; }
       #page27 .ui-content .imgwrap img {
         position: relative;
         right: -3%;
