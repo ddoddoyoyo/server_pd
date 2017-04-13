@@ -327,6 +327,7 @@ $(document).ready(function(){
 
 
 	var ahss_ck=1;
+	var click_ch = true;
 	$("#page13").on({
 		"pagebeforeshow" : function(){
 			$("#page13 .next_p_btn, #page13 .percentage,#page13 .imgwrap").hide();
@@ -340,10 +341,11 @@ $(document).ready(function(){
 			$('#page13').css({"background":"url(../images/day1/13_bg_1.jpg)","background-repeat":"no-repeat", "background-size":"100% 100%"}).show();
 			$("#page13 .next_finger img").css({"left":"27%","top":"47%"});
 			$("#page13 .next_finger, #page13 .next_finger img").show();
+			click_ch = true;
 		}
 	});
 
-	var click_ch = true;
+	
 	$("#page13 .next_finger").click(function(e){
 
 		if(!click_ch){
@@ -1427,7 +1429,7 @@ $(document).ready(function(){
 	
 
 	//draggable
-	// $("#page45 .page_bg").draggable({
+	// $("#page45 .page_bg").draggable({F
 	// 	axis: "x",
 	// 	drag: function(event, ui){
 	// 		var left = ui.position.left, offsetWidth = ($(this).width() - $(this).parent().width()) * -1;
