@@ -18,7 +18,7 @@
       img {
         position: relative;
         width: 130%;
-        bottom: -200px;
+        bottom: -150px;
         left: -4px;
       }
     } 
@@ -30,7 +30,7 @@
       margin-bottom: 30px;
       margin-left: 5px;
       position: relative;
-      bottom: 0px;
+      bottom: 10%;
 
       .text_tip {
         @include text_tip_l;
@@ -43,6 +43,13 @@
   } 
 }
 
+.mobile #page9 .ui-content .textwrap {
+  bottom: 5%;
+}
+
+.mobile #page9 .ui-content .imgwrap img {
+  bottom: -200px;
+}
 
 @media only screen and (orientation: Portrait) {
   #page9{

@@ -100,8 +100,8 @@
                     background: $white;
                     padding: 0px 29px;
 
-                      &:focus, &:active, &:hover {
-                        background: $navi;
+                      &:active {
+                        background: $light_navi;
                         color: $white;
 
                         li {
