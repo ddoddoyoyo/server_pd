@@ -29,7 +29,7 @@
     .textwrap { 
       @include clearfix;
       //display: inline-block;
-      margin-top: 41%;
+      margin-top: 38%;
       margin-left: 28%;
       padding: 0;
       max-width: 56%;
@@ -49,6 +49,9 @@
   } 
 }
 
+.mobile #page41 .ui-content .textwrap {
+  margin-top: 41%;
+}
 
 @media only screen and (orientation: Portrait) {
   #page41{
