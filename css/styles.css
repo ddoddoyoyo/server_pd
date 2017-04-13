@@ -1175,12 +1175,12 @@ img {
       #page13 .ui-content .textwrap .text_i {
         width: 50%; }
     #page13 .ui-content .imgwrap {
-      width: 22%;
+      width: 25%;
       position: absolute;
-      right: 18%;
+      right: 15%;
       bottom: 47%; }
       #page13 .ui-content .imgwrap .incr_count {
-        margin-left: 32%;
+        margin-left: 36%;
         font-size: 30px;
         color: #ffc800; }
         #page13 .ui-content .imgwrap .incr_count .incremental-counter .num {
