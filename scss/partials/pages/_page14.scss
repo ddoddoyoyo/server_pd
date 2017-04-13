@@ -105,9 +105,7 @@
                         color: $white;
 
                         li {
-                          color: $white;
-                          position: relative;
-                          right: 4px;
+                          color: $white;   
                         }
                        }
 
@@ -116,6 +114,13 @@
                         font-weight: normal;
                         font-family: 'HyundaiSansHead-Regular_0', sans-serif;
                      } 
+                  }
+
+                  a.right {
+                    li {
+                      position: relative;
+                      right: 4px;
+                    }
                   }
                }
             }
