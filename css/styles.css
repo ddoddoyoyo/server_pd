@@ -1281,7 +1281,9 @@ img {
                 background: #2a72af;
                 color: #ffffff; }
                 #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a:active li {
-                  color: #ffffff; }
+                  color: #ffffff;
+                  position: relative;
+                  right: 4px; }
               #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a li {
                 color: #000;
                 font-weight: normal;
