@@ -150,6 +150,8 @@ img {
       height: 100% !important;
       min-height: 100% !important;
       background-color: #000; }
+      #wrap #contBox section #current-img {
+        min-width: 100%; }
 
 .ui-page-theme-a {
   background: #000; }
