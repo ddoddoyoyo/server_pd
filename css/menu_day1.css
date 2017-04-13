@@ -221,7 +221,7 @@ input select label a {
     .sidePanel .menu_list .sub_menu1 > li#zurich, .sidePanel .menu_list .sub_menu1 li#strasbourg {
       margin-top: 2px; }
   .sidePanel .menu_list .sub_menu2 {
-    height: 100%;
+    height: 25%;
     width: 100%;
     border-top: 1px solid;
     margin-top: 5px 0;
