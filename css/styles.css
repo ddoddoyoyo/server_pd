@@ -741,7 +741,8 @@ img {
   background: url("../images/day1/landscape/06_bg_map_2.jpg") no-repeat;
   background-size: 100% 100%; }
   #page5 .page_bg {
-    animation: twinkle 3s 2; }
+    animation: twinkle 3s 2;
+    height: 100%; }
     #page5 .page_bg img {
       height: 100%; }
   #page5 .ui-content {
