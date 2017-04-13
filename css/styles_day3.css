@@ -3309,8 +3309,8 @@ img {
 			overflow: hidden;
 			height:190px; }
 		#page48 .imgwrap .imgphoto {
-			background:#5A5A5A url(../images/day3/icon_photo_78.png) no-repeat center;
-			background-size:30%;
+			/*background:#5A5A5A url(../images/day3/icon_photo_78.png) no-repeat center;
+			background-size:30%;*/
 			width:48%;
 			float:left; }
 		#page48 .imgwrap .imgphoto .ui-input-text{

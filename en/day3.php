@@ -87,7 +87,40 @@
 			 $.mobile.pushStateEnabled = false;
 			 $.mobile.changePage.defaults.changeHash = false;
 
-			 var lms_img = "<? echo $LMS_IMAGE ?>";
+			 function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader(); //파일을 읽기 위한 FileReader객체 생성
+					reader.onload = function (e) {
+					//파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
+						$("#upload-img").attr("src", e.target.result);
+
+						var img = new Image;
+						var imgWidth = 0;
+						var imgheight = 0;
+						img.src=reader.result;
+						img.onload = function() {
+							imgWidth = img.width;
+							imgheight = img.height;
+							//console.log("w : " + imgWidth);
+							//console.log("h : " + imgheight);
+							
+							if(imgheight >= imgWidth){
+								$("#upload-img").css({"width":"100%","height":"auto"});
+							} else {
+								$("#upload-img").css({"width":"auto", "height":"100%"});
+							} 
+						};
+					} 
+						reader.readAsDataURL(input.files[0]);                 
+					
+				}
+			}
+
+			$("#upload").change(function(){
+					readURL(this);
+				});
+			
+			var lms_img = "<? echo $LMS_IMAGE ?>";
 
 			if(lms_img != ""){
 				var img = new Image;
@@ -113,7 +146,8 @@
 						$("img#current-img").css({"width":"auto","height":"100%","margin-left":"calc((100% - "+ ratioW+"px) / 2)"});
 					} 
 				};
-			}		
+			}
+					
 		});
 		</script>
 
@@ -1991,7 +2025,7 @@ var options = {
 						<div class="pageTitle">Leave your feedback with your photos on trip with i30.</div>
 						<div class="imgwrap">
 							<div class="imgphoto">
-								<img id="current-img">
+								<img id="upload-img">
 								<input type="file" id="upload" accept="image/*">
 								
 							</div>
