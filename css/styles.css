@@ -1304,26 +1304,30 @@ img {
     display: block; } }
 
 #page15 {
-  background: #000; }
+  background: #000;
+  overflow: hidden; }
   #page15 .page_bg {
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 100%; }
   #page15 .ui-content {
     position: absolute;
-    bottom: 0;
-    overflow: hidden; }
+    top: 0;
+    width: 100%;
+    height: 100%; }
     #page15 .ui-content .imgwrap {
       width: 80px;
       height: 80px;
       border-radius: 50px;
-      display: inline-block;
-      margin-left: 25px;
-      margin-bottom: -5px;
-      overflow: hidden; }
+      bottom: 30px;
+      position: absolute;
+      left: 30px; }
     #page15 .ui-content .textwrap {
       display: inline-block;
       max-width: 63%;
       margin-left: 22px;
-      margin-bottom: 30px; }
+      position: absolute;
+      left: 17%;
+      bottom: 8%; }
       #page15 .ui-content .textwrap:before, #page15 .ui-content .textwrap:after {
         content: "";
         display: table; }
@@ -1334,7 +1338,7 @@ img {
         height: 30px;
         position: absolute;
         bottom: 8px;
-        bottom: 38px; }
+        bottom: 27px; }
       #page15 .ui-content .textwrap .text {
         overflow: hidden;
         margin-left: 19px; }
