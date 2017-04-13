@@ -1946,7 +1946,7 @@ img {
         position: relative;
         left: 10px; }
     #page28 .ui-content .textwrap {
-      margin-top: 38%;
+      margin-top: 35%;
       margin-left: 32%;
       padding: 0;
       max-width: 59%;
@@ -1963,6 +1963,9 @@ img {
         top: 80px;
         left: -18px;
         top: 25px; }
+
+.mobile #page28 .ui-content .textwrap {
+  margin-top: 38%; }
 
 @media only screen and (orientation: Portrait) {
   #page28 .ui-content {

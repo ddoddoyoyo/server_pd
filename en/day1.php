@@ -2,7 +2,6 @@
 	include_once ($_SERVER[DOCUMENT_ROOT]."/common/commonFunction.php");
 	header("Content-Type: text/html; charset=UTF-8");
 	
-	
 
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
 		//$tools->JavaGo("/genesis/part1/en/main.php");
@@ -1037,7 +1036,7 @@
 							<img src="../images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
-					<a href="#page29" class="next_finger">
+					<a href="#page29" class="next_finger"> 
 						<img src="../images/button/touchfinger_@3x.png" alt="next button">
 					</a>
 					<div data-role="main" class="ui-content">
@@ -2000,6 +1999,12 @@
 					</div>
 				</a>
 			</div> -->
+
+	<!-- 여창민 대리 추가 (2017-03-30) : 시작 -->
+	<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
+	<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
+
+
 	</div>
 </div>
 		<!-- <a href="#page14">이동</a>
