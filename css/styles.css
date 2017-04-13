@@ -1473,7 +1473,7 @@ img {
     #page18 .ui-content .textwrap {
       margin-top: 45px;
       padding: 0;
-      width: 28%;
+      width: 32%;
       position: absolute;
       top: 0;
       right: 0; }
@@ -1483,7 +1483,7 @@ img {
       #page18 .ui-content .textwrap:after {
         clear: both; }
       #page18 .ui-content .textwrap .text_img2 {
-        width: 59%;
+        width: 53%;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
