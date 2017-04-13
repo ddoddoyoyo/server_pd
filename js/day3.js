@@ -936,10 +936,20 @@ $(document).ready(function() {
 		//$.mobile.changePage("#page39");
 	});
 
+
 	$("#page39").on({
 		"pagebeforeshow" : function() {
 			//$("#page39 svg").hide();
 			$('#page39Chart').children().remove();
+			var ua = navigator.userAgent.toLowerCase();
+			var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+			if(isAndroid) {
+			    $("#page39 #page39ChartNum1").css({"top":"26%"});
+			    //$("#page39 #page39ChartNum2").text(json.val1 + "%");
+				$("#page39 #page39ChartNum3").css({"top":"92%"});
+				$("#page39 #page39ChartNum4").css({"top":"92%"});
+				//$("#page39 #page39ChartNum5").text(json.val4 + "%");
+			}
 		},
 		"pageshow" : function() {
 		

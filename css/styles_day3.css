@@ -2722,6 +2722,7 @@ img {
 		background-repeat:no-repeat;
 		background-size:100% auto;
 		background-position: 50% 50%;
+		margin-left: 2%;
 		height:95%;
 		position:absolute;
 		top:0;
@@ -2752,7 +2753,7 @@ img {
 		#page39 .ui-content .titlewrap .text_i {
 			width: 50%; 
 			margin:0 auto;
-			padding-top:5%;}
+			padding-top:3%;}
 		#page39 .ui-content .titlewrap .text_i  p{
 			font-family: 'HyundaiSansHead-Regular_0', sans-serif;
 		}
