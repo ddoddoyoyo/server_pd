@@ -739,13 +739,13 @@ img {
 
 #page5 {
   background: url("../images/day1/landscape/06_bg_map_2.jpg") no-repeat;
-  background-size: 100% auto; }
+  background-size: 100% 100%; }
   #page5 .page_bg {
     animation: twinkle 3s 2; }
   #page5 .ui-content {
     margin: 0;
     padding: 0;
-    max-width: 33%;
+    max-width: 37%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -778,7 +778,8 @@ img {
       #page5 .ui-content .textwrap .text {
         overflow: hidden; }
     #page5 .ui-content .imgwrap {
-      max-width: 71%; }
+      max-width: 71%;
+      max-height: 150px; }
       #page5 .ui-content .imgwrap img {
         position: relative;
         right: -10%;
@@ -2595,7 +2596,7 @@ img {
         position: relative;
         left: -4px; }
     #page41 .ui-content .textwrap {
-      margin-top: 41%;
+      margin-top: 38%;
       margin-left: 28%;
       padding: 0;
       max-width: 56%;
@@ -2614,6 +2615,9 @@ img {
         top: 51px; }
       #page41 .ui-content .textwrap .text {
         margin-left: 19px; }
+
+.mobile #page41 .ui-content .textwrap {
+  margin-top: 41%; }
 
 @media only screen and (orientation: Portrait) {
   #page41 .ui-content {
