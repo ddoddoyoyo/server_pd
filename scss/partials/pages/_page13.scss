@@ -43,8 +43,11 @@
         margin-left: 36%;
         font-size: 30px;
         color:$yellow;
-        .incremental-counter .num{
+        .incremental-counter {
+          margin-right:3%;
+          .num{
           display: inline-block;
+          }
         }
       }
       

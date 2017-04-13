@@ -1183,8 +1183,10 @@ img {
         margin-left: 36%;
         font-size: 30px;
         color: #ffc800; }
-        #page13 .ui-content .imgwrap .incr_count .incremental-counter .num {
-          display: inline-block; }
+        #page13 .ui-content .imgwrap .incr_count .incremental-counter {
+          margin-right: 3%; }
+          #page13 .ui-content .imgwrap .incr_count .incremental-counter .num {
+            display: inline-block; }
     #page13 .ui-content .next_finger {
       top: 10%;
       left: 10%;
