@@ -1,5 +1,4 @@
 <?php
-
 	include_once ($_SERVER[DOCUMENT_ROOT]."/common/commonFunction.php");
 	header("Content-Type: text/html; charset=UTF-8");
 	
@@ -2010,7 +2009,7 @@ var options = {
 			</div>
 		</div>
 
-		<!--  <a href="#page20">이동</a>-->
+		 <!-- <a href="#page37">이동</a> -->
 	</body>
 </html>
 

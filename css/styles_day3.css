@@ -205,7 +205,7 @@ img {
 				margin:0 auto;
 				border-radius:50px;
 				background:#a0a0a0;
-				border:1px solid #ffffff;
+				/*border:1px solid #ffffff;*/
 				overflow:hidden;
 				margin-bottom:10px; }
 				.ui-page-theme-a .ui-content .textwrap .text .text_img img {
@@ -441,7 +441,7 @@ img {
       width: 200px;
       height: 200px;
       position: absolute;
-      top: calc((100% - 300px)/ 2);
+      top: calc((100% - 200px)/ 2);
       left: calc((100% - 200px) / 2); }
       #page1001 .ui-content .imgwrap .gif_img {
         width: 50%;
@@ -503,7 +503,7 @@ img {
       float: right;
       margin-right: 70%;
       position: relative;
-      top: 1px;
+      top: 2px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -595,7 +595,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -697,7 +697,7 @@ img {
 			width:60%;
 			position:absolute;
 			top:15%;
-			left:35px;
+			left:6%;
 			height:80%; }
 			#page4 .ui-content .imgwrap ul {
 				width:85%;
@@ -709,7 +709,7 @@ img {
 				width:17%;
 				height:100%;
 				float:left;
-				margin:0 12px 0 13px; }
+				margin:0 4% 0 4%; }
 			#page4 .ui-content .imgwrap li .graphObj {
 				width:100%;
 				float:left;
@@ -731,7 +731,7 @@ img {
 				width:17%;
 				height:100%;
 				float:left;
-				margin:0 12px 0 13px;
+				margin:0 4% 0 4%;
 				text-align:center;
 				font-size:10pt;
 				font-weight:bold; }
@@ -739,7 +739,7 @@ img {
 				margin:7px 0 0 0; }
 			#page4 .ui-content .imgwrap .graphQuantity4 {
 				position:absolute;
-				margin-top:16%; }
+				margin-top:13%; }
 			#page4 .ui-content .imgwrap .graphQuantity4 > div {
 				font-size:12pt;
 				font-weight:bold;
@@ -900,7 +900,7 @@ img {
 				text-align:right;
 				color:#fea900;
 				width:21%;
-				font-size:1.7em;
+				font-size:1.4em;
 				line-height:60%;
 				padding:3% 1% 0 0;
 				font-weight:bold; }
@@ -1089,7 +1089,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -1144,7 +1144,7 @@ img {
 		      margin:0 16px; 
 		  }
 		#page9 .ui-content .titlewrap .text_i {
-			width: 50%; 
+			width: 70%; 
 			margin:0 auto;
 			padding-top:5%;}
 		#page9 .ui-content .titlewrap .text_i  p{
@@ -1305,7 +1305,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -1439,7 +1439,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -1536,7 +1536,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -1668,7 +1668,7 @@ img {
 		height:100%;
 		width:100%; }
 		#page20 .ui-content .textwrap {
-			margin-top:65px;
+			margin-top:8%;
 			padding:0;
 			width:30%;
 			right:3%;
@@ -1753,7 +1753,7 @@ img {
       float: right;
       margin-right: 70%;
       position: relative;
-      top: 1px;
+      top: 2px;
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -1925,7 +1925,7 @@ img {
 		height:100%;
 		width:100%; }
 		#page24 .ui-content .textwrap {
-			margin-top:84px;
+			margin-top:10%;
 			padding:0;
 			width:30%;
 			right:3%;
@@ -2011,7 +2011,7 @@ img {
 	#page26 .ui-content {
 		margin:0;
 		padding:0;
-		max-width:33%;
+		max-width:37%;
 		position:absolute;
 		top:0;
 		right:0;
@@ -2031,7 +2031,7 @@ img {
         float: right;
         margin-right: 70%;
         position: relative;
-        top: 1px;
+        top: 2px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -2596,7 +2596,7 @@ img {
 	#page37 .ui-content {
 		margin: 0;
     padding: 0;
-    max-width: 33%;
+    max-width: 36%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -2616,7 +2616,7 @@ img {
           float: right;
           margin-right: 70%;
           position: relative;
-          top: 1px;
+          top: 2px;
           -moz-transform: scaleX(-1);
           -o-transform: scaleX(-1);
           -webkit-transform: scaleX(-1);
@@ -2632,6 +2632,7 @@ img {
       #page37 .ui-content  .imgwrap {
         width: 59%;
         margin-top: 20px;
+        max-height: 133px;
         /*height:100%;*/
         /*float: right;*/
        /* margin-right: 28%;
@@ -2641,6 +2642,9 @@ img {
           position: relative;
           right: -10%;
           top: 190px; }
+    .mobile #page37 .ui-content .imgwrap{
+    	max-height: 150px;
+    }
 
 @media only screen and (orientation:Portrait) {
 	#page37 .ui-content {
@@ -2926,7 +2930,7 @@ img {
 		#page42 .textwrap {
 			margin-top:25px;
 			padding:0;
-			width:28%;
+			width:32%;
 			position:absolute;
 			top:0;
 			right:0; }
@@ -2936,7 +2940,7 @@ img {
 			#page42 .textwrap:after {
 				clear:both; }
 			#page42 .ui-content .textwrap .text_img2 {
-        width: 59%;
+        width: 53%;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
@@ -3029,7 +3033,7 @@ img {
 				max-width:20px;
 				margin-left:10%;
 				float:right;
-				margin-right:70%;
+				margin-right:29%;
 				position:relative;
 				top:2px; }
 				#page44 .textwrap .text_tip img {
@@ -3234,7 +3238,7 @@ img {
 				max-width:20px;
 				margin-left:10%;
 				float:right;
-				margin-right:70%;
+				margin-right:31%;
 				position:relative;
 				top:2px; }
 				#page47 .textwrap .text_tip img {
@@ -3515,7 +3519,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page51 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -3563,7 +3567,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px;
+				top:2px;
 				transform:rotate(90deg);
 				right:69%;
 				top:-33px; }
@@ -3627,7 +3631,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page53 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -3710,7 +3714,6 @@ img {
 			float:right;
 			margin-right:30%;
 			position:relative;
-			top:1px;
 			top:2px; }
 			#page55 .ui-content .textwrap .text_tip img {
 				-ms-transform:rotate(-90deg);
@@ -3839,7 +3842,7 @@ img {
 			float:right;
 			margin-right:30%;
 			position:relative;
-			top:1px; }
+			top:2px; }
 			#page57 .ui-content .textwrap .text_tip img {
 				-ms-transform:rotate(-90deg);
 				/* IE 9 */
@@ -3889,7 +3892,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page58 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -3990,7 +3993,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page00 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -4187,7 +4190,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page03 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -4231,7 +4234,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page04 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -4324,7 +4327,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page06 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -4416,7 +4419,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page08 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -4479,7 +4482,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page09 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -4576,7 +4579,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page71 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -4682,7 +4685,7 @@ img {
 			float:right;
 			margin-right:30%;
 			position:relative;
-			top:1px; }
+			top:2px; }
 			#page73 .ui-content .textwrap .text_tip img {
 				-ms-transform:rotate(-90deg);
 				/* IE 9 */
@@ -4732,7 +4735,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page74 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -4852,7 +4855,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page76 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -5485,7 +5488,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page89 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -5529,7 +5532,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page90 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -5736,7 +5739,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page94 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -5780,7 +5783,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page95 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -5824,7 +5827,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page96 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -5868,7 +5871,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page97 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -6051,7 +6054,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page101 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -6114,7 +6117,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page102 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */
@@ -6196,7 +6199,7 @@ img {
 				float:right;
 				margin-right:30%;
 				position:relative;
-				top:1px; }
+				top:2px; }
 				#page104 .ui-content .textwrap .text_tip img {
 					-ms-transform:rotate(-90deg);
 					/* IE 9 */

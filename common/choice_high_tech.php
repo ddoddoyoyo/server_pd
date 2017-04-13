@@ -59,8 +59,8 @@
 						PD_GUBUN = 3
 					";
 			$stmt = $dbh->prepare($sql);
-			$stmt->bindParam(':PD_CHOICE',$ENGINE_CHOICE);
-			$stmt->bindParam(':LMS_SEQ',$CHOICE);
+			$stmt->bindParam(':PD_CHOICE',$CHOICE);
+			$stmt->bindParam(':LMS_SEQ',$HY_LMS_SEQ);
 			if($stmt->execute()){
 				$dbh->commit();
 				$json["result"] = "success";

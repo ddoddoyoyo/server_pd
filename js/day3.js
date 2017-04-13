@@ -911,7 +911,6 @@ $(document).ready(function() {
 			}
 		});
 
-			
 		$.ajax({
 			url:"/pd/common/choice_high_tech.php",
 			type: "POST",
@@ -922,6 +921,7 @@ $(document).ready(function() {
 			},
 			success:  function(json){			
 				//console.log(json);
+				
 				if(json.result == 'success'){
 					$.mobile.changePage("#page39");
 				}
@@ -938,12 +938,11 @@ $(document).ready(function() {
 
 	$("#page39").on({
 		"pagebeforeshow" : function() {
-			$("#page39 svg").hide();
+			//$("#page39 svg").hide();
+			$('#page39Chart').children().remove()
 		},
 		"pageshow" : function() {
-			
-
-
+		
 			$.ajax({
 				url:"/pd/common/high_tech_json.php",
 				type: "POST",
@@ -951,6 +950,7 @@ $(document).ready(function() {
 				data:{
 				},
 				success:  function(json){
+					console.log(json);
 					$("#page39 #page39ChartNum1").text(json.val2 + "%");
 					$("#page39 #page39ChartNum2").text(json.val1 + "%");
 					$("#page39 #page39ChartNum3").text(json.val3 + "%");
@@ -976,7 +976,7 @@ $(document).ready(function() {
 					Nwagon.chart(options);
 				},
 			   error : function(xhr, status, error) {
-					console.log(error);
+					//console.log(error);
 			   }
 			});
 
