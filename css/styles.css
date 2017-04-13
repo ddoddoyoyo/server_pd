@@ -167,7 +167,7 @@ img {
       box-shadow: none;
       width: 30px;
       display: block; }
-  .ui-page-theme-a a, .ui-page-theme-a a:hover, .ui-page-theme-a a:focus {
+  .ui-page-theme-a a, .ui-page-theme-a a:hover, .ui-page-theme-a a:active {
     color: #fff; }
 
 .ui-page-theme-a .ui-content {
@@ -876,7 +876,7 @@ img {
       width: 60%;
       overflow: hidden;
       float: left;
-      margin-left: 25px; }
+      margin-left: 3%; }
       #page7 .ui-content .imgwrap img {
         width: 185%;
         position: relative;
@@ -3413,7 +3413,7 @@ img {
       width: 60%;
       overflow: hidden;
       float: left;
-      margin-left: 25px; }
+      margin-left: 3%; }
       #page56 .ui-content .imgwrap img {
         position: relative;
         top: 0;

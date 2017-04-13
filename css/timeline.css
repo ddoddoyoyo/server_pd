@@ -167,7 +167,7 @@ img {
       box-shadow: none;
       width: 30px;
       display: block; }
-  .ui-page-theme-a a, .ui-page-theme-a a:hover, .ui-page-theme-a a:focus {
+  .ui-page-theme-a a, .ui-page-theme-a a:hover, .ui-page-theme-a a:active {
     color: #fff; }
 
 .ui-page-theme-a .ui-content {
