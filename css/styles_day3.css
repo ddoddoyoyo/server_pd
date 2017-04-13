@@ -2596,13 +2596,13 @@ img {
 	#page37 .ui-content {
 		margin: 0;
     padding: 0;
-    max-width: 36%;
+    max-width: 40%;
     position: absolute;
     bottom: 0;
     right: 0;
     overflow: hidden; }
       #page37 .ui-content .textwrap {
-        max-width: 218px;
+        max-width: 100%;
         margin-top: 50px;
         /*float: right;*/ }
         /*#page37 .ui-content .textwrap:before, #page37 .ui-content .textwrap:after {
@@ -2721,10 +2721,11 @@ img {
 	#page39 .page_bg {
 		background-repeat:no-repeat;
 		background-size:100% auto;
-		height:100%;
+		background-position: 50% 50%;
+		height:95%;
 		position:absolute;
 		top:0;
-		width:100%;
+		width:95%;
 	}
 	#page39 .ui-content {
 		margin:0;
@@ -2778,20 +2779,20 @@ img {
 			left:48%;
 		}
 		#page39 #page39ChartNum2 {
-			top:53%;
+			top:54%;
 			left:66%;
 		}
 		#page39 #page39ChartNum3 {
-			top:89%;
+			top:90%;
 			left:59%;
 		}
 		#page39 #page39ChartNum4 {
-			top:89%;
+			top:90%;
 			left:37%;
 		}
 		#page39 #page39ChartNum5 {
-			top:53%;
-			left:30%;
+			top:54%;
+			left:29%;
 		}
 
 @media only screen and (orientation:Portrait) {

@@ -939,7 +939,7 @@ $(document).ready(function() {
 	$("#page39").on({
 		"pagebeforeshow" : function() {
 			//$("#page39 svg").hide();
-			$('#page39Chart').children().remove()
+			$('#page39Chart').children().remove();
 		},
 		"pageshow" : function() {
 		
@@ -1123,9 +1123,6 @@ $(document).ready(function() {
 
 	$("#page45 .next_finger").click(function() {
 		$('#page45 .toggle').show();
-		$("#page45 .toggle").click(function(){
-			$("#page45 .textwrap, #page45 .start_text, #page45 .next_p_btn").toggle();
-		});
 		$('#page45 .page_bg').fadeOut().queue(function() {
 			$('#imgArrow1').animate({'top':'17%'}, 'slow');
 			$('#imgArrow2').animate({'top':'17%', 'left':'73%'}, 'slow');
@@ -1138,6 +1135,10 @@ $(document).ready(function() {
 		$("#page45 .imgKey").hide();
 		$("#page45 .imgArrow").show();
 	});
+
+	$("#page45 .toggle").click(function(){
+			$("#page45 .textwrap, #page45 .start_text, #page45 .next_p_btn").toggle();
+		});
 
 	// $("#page45 .imgwrap").click(function() {
 	// 	$("#page45 .textwrap, #page45 .start_text, #page45 .next_p_btn").toggle();
