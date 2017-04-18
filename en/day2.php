@@ -1808,7 +1808,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>Okay, all the luggages loaded.<br>Let's move to Zurich for city tour.</p>
+							<p>Okay, all the luggages loaded.<br>Let's move on.</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
