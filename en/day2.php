@@ -1240,16 +1240,17 @@
 		</div>
 		<div data-role="main" class="ui-content">
 			<div class="textwrap">
-				<div class="text_img2">
-					<img src="../images/person/day2_james.png" alt="james">
+				<div class="text">
+					<div class="text_img">
+					<?php if($LMS_IMAGE) { ?> 
+						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
+					<?php } else { ?>
+						<img src="../images/intro/login_profile_@3x.png" alt="james">
+					<?php } ?>
 				</div>	
-				<div class="text_tip">
-					<img src="../images/button/tail_3_@3x.png" alt="text box">
-				</div>
-				<div class="text">		
 					<div id="textbox1" class="textbox">
 						<p>Wait a sec, I need a phone to link first. Where is my phone?</p>
-					</div>
+					</div>		
 				</div>
 			</div>
 			<a href="#page84" id="go_page84" class="next_p_btn ui-btn go-next">

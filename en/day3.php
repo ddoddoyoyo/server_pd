@@ -1965,17 +1965,19 @@ var options = {
 					<div class="page_bg"></div>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
+							<div class="text_img2">
+								<img src="../images/person/day3_james.png" alt="james">
+							</div>	
+							<div class="text_tip">
+								<img src="../images/button/tail_3_@3x.png" alt="text box">
+							</div>	
 							<div class="text">
-								<div class="text_img">
-									<?php if($LMS_IMAGE) { ?> 
-									<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
-								<?php } else { ?>
-									<img src="../images/intro/login_profile_@3x.png" alt="james">
-								<?php } ?>
+								<div id="textbox1" class="textbox">
+									<p>This city trip is the last course of our journey.</p>
 								</div>
-								<div id="textbox46_1" class="textbox">
-									<p>This city trip is the last course of our journey</p>
-								</div>
+								<!-- <div id="textbox2" class="textbox">
+									<p>In Switzerland, we will be stop at Zurich and Bern to get to final spot Strasbourg.</p>
+								</div> -->
 							</div>
 						</div>
 						<a href="#page47" id="go_page47" class="next_p_btn ui-btn go-next">

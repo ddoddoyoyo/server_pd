@@ -3194,16 +3194,18 @@ img {
 				display:table; }
 			#page46 .textwrap:after {
 				clear:both; }
-			#page46 .textwrap .text_img2 {
-				width:59%;
-				margin:0 auto;
-				overflow:hidden; }
-			#page46 .textwrap .text_tip {
-				width:20px;
-				position:absolute;
-				top:87px;
-				left:60px;
-				transform:rotate(90deg); }
+			#page46 .ui-content .textwrap .text_img2 {
+        width: 59%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        top: 11px; }
+      #page46 .ui-content .textwrap .text_tip {
+        width: 20px;
+        position: relative;
+        top: -3px;
+        left: 60px;
+        transform: rotate(90deg); }
 			#page46 .textwrap .text {
 				overflow:hidden; }
 

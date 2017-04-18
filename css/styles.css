@@ -682,11 +682,11 @@ img {
           margin-left: 19px; }
 
 @media only screen and (orientation: Portrait) {
-  #page11 .ui-content {
+  #page3001 .ui-content {
     display: none !important; } }
 
 @media only screen and (orientation: landscape) {
-  #page11 .ui-content {
+  #page3001 .ui-content {
     display: block; } }
 
 #page4 {
