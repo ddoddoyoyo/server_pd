@@ -131,7 +131,7 @@
 								ON A.LMS_SEQ = F.LMS_MEMBER_SEQ
 							  WHERE A.LMS_GB = 'hyundai'
 							  AND F.HD_CON_GUBUN = 'PD'
-							  ORDER BY F.HD_CON_REGDATE
+							  ORDER BY F.HD_CON_REGDATE DESC
 							 ) AS AA
 							 LIMIT 5
 							 ";
@@ -148,7 +148,7 @@
 					<article class="article">
 						<div class="photo">
 							<?php if($ls["HD_CON_FILENAME"]) { ?>
-								<img src="/upload/hyundai/pd/<?=$ls["HD_CON_FILENAME"]?>" alt="">
+								<img src="<?=$IMG_URL?>/hyundai/pd/<?=$ls["HD_CON_FILENAME"]?>" alt="">
 							<?php } else { ?>
 								<img src="" alt="">
 							<?php } ?>
@@ -156,7 +156,7 @@
 						<div class="profile_wrap">
 							<div class="userPix_wrap">
 								<?php if($ls["LMS_IMAGE"]) { ?>
-									<div class="userPix"><img src="/upload/hyundai/member/<?=$ls["LMS_IMAGE"]?>" alt=""></div>
+									<div class="userPix"><img src="<?=$IMG_URL?>/hyundai/member/<?=$ls["LMS_IMAGE"]?>" alt=""></div>
 								<?php } else { ?>
 									<div class="userPix"><img src="/pd/images/profile_basic_@3x.png" alt=""></div>
 								<?php } ?>
@@ -172,16 +172,16 @@
 								<!-- <p>Love Europe! Love trip! THanks you~</p>  -->
 								<p><?=$ls["HD_CON_COMMENT"]?></p>
 							</div>
-							<!-- <div class="keyword_wrap">
+							<div class="keyword_wrap">
 								<p class="headColor">Best Style Interior <span class="interior">'<?=$ls["PD_STYLE_DESC"]?>'</span></p>
 								<p class="headColor">Favorite Engine <span class="engine">'<?=$ls["PD_ENGINE_DESC"]?>'</span></p>
 								<p class="headColor">Favorite High-tech Feature <span class="feature">'<?=$ls["PD_HIGH_TECH_DESC"]?>'</span></p>
-							</div> -->
+							</div>
 						</div>
 					</article>
 					<?php } ?>
 
-					<?php if(count($ROW) > 5){ ?>
+					<?php if(count($ROW) >= 5){ ?>
 						<div class="moreView">
 							<a href="javascript:void(0)" onclick="view_search();"><i class="icon"></i>View More</a>
 						</div>

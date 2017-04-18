@@ -1,6 +1,7 @@
 <?php
 	include_once ($_SERVER[DOCUMENT_ROOT]."/common/commonFunction.php");
 
+
 	$LMS_CONTRY = $_POST["LMS_CONTRY"];
 
 	$LMS_NAME = $_POST["LMS_NAME"];
@@ -23,8 +24,6 @@
 	}
 
 
-
-
 	if( $_FILES["LMS_IMAGE"][size] > 0 ) {
 		// 업로드 파일 제한 확장자 추가 가능
 		$EXT_CHECK = array("php", "php3", "htm", "html", "cgi", "perl");	
@@ -37,7 +36,7 @@
 		}
 		$LMS_IMAGE	= "Hyundai_".date("YmdHis").time().".".$EXT_TMP[1];	//변환파일명
 
-		if( !@move_uploaded_file($_FILES["LMS_IMAGE"][tmp_name], $ROOT_IMG_DIR."/hyundai/member/".$LMS_IMAGE) ) { 
+		if( !@move_uploaded_file($_FILES["LMS_IMAGE"][tmp_name], $IMG_DIR."hyundai/member/".$LMS_IMAGE) ) { 
 			//$tools->errMsg("파일 업로드 에러"); 
 		}else { @unlink($_FILES["LMS_IMAGE"][tmp_name]);}	
 	}else{

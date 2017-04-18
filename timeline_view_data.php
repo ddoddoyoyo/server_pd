@@ -60,7 +60,7 @@
 				ON A.LMS_SEQ = F.LMS_MEMBER_SEQ
 			  WHERE A.LMS_GB = 'hyundai'
 			  AND F.HD_CON_GUBUN = 'PD'
-			  ORDER BY F.HD_CON_REGDATE
+			  ORDER BY F.HD_CON_REGDATE DESC
 			 ) AS AA
 
 			LIMIT ".$list.",5";
@@ -77,7 +77,7 @@
 		$dataList = $dataList."<article class='article'> <div class='photo'>";
 
 		if($ROW[$a]['HD_CON_FILENAME']){
-			$dataList = $dataList." <img src='/upload/hyundai/pd/".$ROW[$a]['HD_CON_FILENAME']."' alt=''>" ;
+			$dataList = $dataList." <img src='".$IMG_URL."/hyundai/pd/".$ROW[$a]['HD_CON_FILENAME']."' alt=''>" ;
 		} else {
 			$dataList = $dataList." <img src='' alt=''>";
 		}
@@ -85,15 +85,16 @@
 		$dataList = $dataList." <div class='profile_wrap'>";
 		$dataList = $dataList."	     <div class='userPix_wrap'>";
 		if($ROW[$a]['LMS_IMAGE']){
-			$dataList = $dataList."  <div class='userPix'><img src='/upload/hyundai/member/".$ROW[$a]['LMS_IMAGE']."' alt=''>" ;
+			$dataList = $dataList."  <div class='userPix'><img src='".$IMG_URL."/hyundai/member/".$ROW[$a]['LMS_IMAGE']."' alt=''></div>" ;
 		} else {
-			$dataList = $dataList."  <div class='userPix'><img src='/pc_pd/app/images/thumbnail_none-profile.png' alt=''>" ;
+			$dataList = $dataList."  <div class='userPix'><img src='/pc_pd/app/images/thumbnail_none-profile.png' alt=''></div>" ;
 		}
-		$dataList = $dataList."</div></div>";
-		$dataList = $dataList." <div class='userProfile'>";
-		$dataList = $dataList."		<span class='name'>".$ROW[$a]['LMS_NAME']."</span>";
-		$dataList = $dataList."		<span class='region'>".$ROW[$a]['LMS_CONTRY']."</span>";
-		$dataList = $dataList."	</div>";
+		$dataList = $dataList."</div>";
+		$dataList = $dataList."    <div class='userProfile'>";
+		$dataList = $dataList."		   <span class='name'>".$ROW[$a]['LMS_NAME']."</span>";
+		$dataList = $dataList."		   <span class='region'>".$ROW[$a]['LMS_CONTRY']."</span>";
+		$dataList = $dataList."	   </div>";
+		$dataList = $dataList."	</div></div>";
 		$dataList = $dataList."	<div class='txt_wrap'>";
 		$dataList = $dataList."    <div class='comment_wrap'><p class='headColor'>Trip Feedback</p><p>".$ROW[$a]['HD_CON_COMMENT']."</p></div>";
 		$dataList = $dataList."	   <div class='keyword_wrap'>";
@@ -109,14 +110,7 @@
 	}
 
 	$json["data"] = $dataList;
-
+	
 	echo json_encode($json);
-
-
-
-
-
-
-
 
 ?>

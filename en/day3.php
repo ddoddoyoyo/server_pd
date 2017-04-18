@@ -21,7 +21,7 @@
 		$row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 		if($row[0]['LMS_IMAGE']){
-			$LMS_IMAGE = "/upload/hyundai/member/".$row[0]['LMS_IMAGE'];
+			$LMS_IMAGE = $IMG_URL."/hyundai/member/".$row[0]['LMS_IMAGE'];
 		} else {
 			$LMS_IMAGE = "";
 		}

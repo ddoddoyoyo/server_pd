@@ -88,6 +88,16 @@ $(document).ready(function(){
 
 		var form = $('#Frm')[0];
 		var data = new FormData(form);	
+		
+		if(typeof $('#upload')[0].files[0] == "undefinde"){
+			alert('Please select an image.');
+			return;
+		} 
+
+		if($('#upload').val() == ""){
+			alert('Please select an image.');
+			return;
+		}
 
 		data.append('PD_CON_IMAGE',$('#upload')[0].files[0]);
 		data.append('PD_CON_TEXT',$('.pd_con_text').val());		
@@ -109,7 +119,8 @@ $(document).ready(function(){
 					$('#upload').val('');
 					$('.pd_con_text').val('');
 
-					$.mobile.changePage("#page0");
+					//$.mobile.changePage("#page0");
+					location.href='/pd/en/day1.php';
 					window.open('/pd/timeline_view.php','toolbar=no, scrollbars=yes');
 					//window.open('/pd/en/timeline_view.html','toolbar=no, scrollbars=yes');
 				} else {

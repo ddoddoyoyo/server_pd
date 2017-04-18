@@ -33,7 +33,7 @@ $(document).ready(function(){
 	/* side panel */
 	$(".btn_sidePanel").click(function(){
 		$(this).parents("section.container").find(".sidePanel_wrap").show();
-		$(this).parents("section.container").find(".sidePanel").animate({"left":"9%"}, 500);
+		$(this).parents("section.container").find(".sidePanel").animate({"left":"33%"}, 500);
 		// var pageNum = $(this).parents(".container").attr("id").replace("page", "");
 		// if(pageNum > 1 && pageNum < 8 && pageNum == 001 && pageNum == 101 && pageNum == 102){
 		// 	$(this).parents(".container").find(".sidePanel").children(".menu_list").children(".menu1").addClass("current");

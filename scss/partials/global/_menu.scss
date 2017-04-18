@@ -1,0 +1,145 @@
+.ui-page-theme-a .sidePanel {
+  background-color: #000 !important;
+}
+
+.sidePanel_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 10;
+  overflow: hidden;
+  .sidePanel {
+    position: absolute;
+    top: 0;
+    left: 105%;
+    width: 92%;
+    height: 100%;
+    //background: url('/genesis/part1/images/menu_bg.png') 50% 104% no-repeat #000;
+    //background-size: 100%;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+  }
+  .btn_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 18px;
+    line-height: 0;
+  }
+}
+
+.sidePanel .menu_list {
+  position: relative;
+  top: 11%;
+  //margin: 0 0 0 12%;
+  margin:0 auto;
+  padding: 0;
+  width: 92%;
+  height: 80%;
+  list-style: none;
+  color:$white;
+  ul, li{
+    @include reset-margins;
+  }
+  
+  >li{ //day1, day2, day3
+    height:100%;
+    width:33%;
+    float:left;
+    margin-bottom:10px;
+    >span{
+      font-size:30px;
+    }
+
+  }
+  .sub_menu1{
+    height: 100%;
+    width:100%;
+    >li{ //도시
+      //border-bottom:1px solid;
+      width:84%; 
+      margin-top:10px;
+      //padding:5px;
+      >span{
+        font-size:18px;
+      }
+    }
+  }
+  .sub_menu2{
+    //display:none;
+    height: 100%;
+    width:100%;
+    border-top:1px solid;
+    margin-top:5px 0;
+    line-height: 140%;
+    >li{ //기능
+      //border-bottom:1px solid;
+     // position:relative;
+      width:100%;
+      //margin-top:5px;
+      //padding:5px;
+      //margin-bottom: 10px;
+    }
+    span{
+      font-size:11px;
+    }
+  }
+  // li#day1{
+  //   top:0;
+  //   left:0;
+  // }
+  // li#day2{
+  //   top:0;
+  //   left:35%;
+  // }
+  // li#day3{
+  //   top:0;
+  //   left:70%;
+  // }
+  // li#milano{}
+  // li#como{top:50%;}
+  // li#stelvio{}
+  // li#zurich{top:50%;}
+  // li#bern{}
+  // li#Strasbourg{top:50%;}
+  // li {
+  //   position: relative;
+  //   margin: 10px 0;
+  //   padding: 0;
+  //   width: 100%;
+  //   list-style: none;
+  //   a {
+  //     //font-family: 'GenesisSansHead-Light';
+  //     font-size: 18px;
+  //     text-decoration: none;
+  //     display: block;
+  //   }
+  // }
+  // .menu5 {
+  //   margin-bottom: 25px;
+  // }
+  li {
+    a:visited {
+      color: #fff;
+    }
+    &.current a {
+      color: #a36b4f;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: -15px;
+        width: 10px;
+        height: 22px;
+        content: " ";
+        background: url('/genesis/part1/images/pointer_current-position.png') 50% 50% no-repeat;
+        background-size: 6px;
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -22,7 +22,7 @@
 
 		
 		if($row[0]['LMS_IMAGE']){
-			$LMS_IMAGE = "/upload/hyundai/member/".$row[0]['LMS_IMAGE'];
+			$LMS_IMAGE = $IMG_URL."/hyundai/member/".$row[0]['LMS_IMAGE'];
 		} else {
 			$LMS_IMAGE = "";
 		}
@@ -1946,6 +1946,15 @@
 			</a>
 		</div>
 	</section> -->
+	
+
+	
+
+
+
+	<!-- 여창민 대리 추가 (2017-03-30) : 시작 -->
+	<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
+	<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
 
 </div>
 
@@ -1955,10 +1964,4 @@
 <!-- <a href="#page69">이동!!!!!!!!!</a>
 <a href="#page90">이동!!!!!!!!!</a> -->
 
-
-
-
-<!-- 여창민 대리 추가 (2017-03-30) : 시작 -->
-<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
-<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
 

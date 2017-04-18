@@ -28,7 +28,7 @@
 		}
 		$PD_CON_IMAGE	= "PD_CON_".date("YmdHis").time().".".$EXT_TMP[1];	//변환파일명
 
-		if( !@move_uploaded_file($_FILES["PD_CON_IMAGE"][tmp_name], $ROOT_IMG_DIR."/hyundai/pd/".$PD_CON_IMAGE) ) { 
+		if( !@move_uploaded_file($_FILES["PD_CON_IMAGE"][tmp_name], $IMG_DIR."hyundai/pd/".$PD_CON_IMAGE) ) { 
 			//$tools->errMsg("파일 업로드 에러"); 
 		}else { @unlink($_FILES["PD_CON_IMAGE"][tmp_name]);}	
 	}else{
@@ -36,6 +36,13 @@
 	}
 	
 	
+	if($PD_CON_IMAGE ==  ""){
+		
+		$json["result"] = "fail";
+		echo json_encode($json);
+		exit;
+	}
+
 	try 
 	{
 		$dbh->beginTransaction();

@@ -1,0 +1,5534 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "HyundaiSansHead-Regular_0";
+  text-transform: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansHead.eot") format("eot"), url("../fonts/HyundaiSansHead.woff2") format("woff2"), url("../fonts/HyundaiSansHead.woff") format("woff"), url("../fonts/HyundaiSansHead.ttf") format("truetype"), url("../fonts/HyundaiSansHead.otf") format("opentype"); }
+
+@font-face {
+  font-family: "HyundaiSansText-Italic_0";
+  text-transform: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansText-Italic.eot") format("eot"), url("../fonts/HyundaiSansText-Italic.woff2") format("woff2"), url("../fonts/HyundaiSansText-Italic.woff") format("woff"), url("../fonts/HyundaiSansText-Italic.ttf") format("truetype"), url("../fonts/HyundaiSansText-Italic.otf") format("opentype"); }
+
+@font-face {
+  font-family: "HyundaiSansText-Regular_0";
+  text-transform: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansText.eot") format("eot"), url("../fonts/HyundaiSansText.woff2") format("woff2"), url("../fonts/HyundaiSansText.woff") format("woff"), url("../fonts/HyundaiSansText.ttf") format("truetype"), url("../fonts/HyundaiSansText.otf") format("opentype"); }
+
+@font-face {
+  font-family: "HyundaiSansHead-Medium";
+  text-transform: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansHeadMedium.eot") format("eot"), url("../fonts/HyundaiSansHeadMedium.woff2") format("woff2"), url("../fonts/HyundaiSansHeadMedium.woff") format("woff"), url("../fonts/HyundaiSansHeadMedium.ttf") format("truetype"), url("../fonts/HyundaiSansHeadMedium.otf") format("opentype"); }
+
+body p {
+  font-family: 'HyundaiSansText-Italic_0', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: normal; }
+
+h1, h2, h3 {
+  font-weight: normal;
+  line-height: 120%; }
+
+h1 {
+  font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+  font-size: 2.5em;
+  margin: 0 0 10px 0; }
+
+h2 {
+  font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+  font-size: 1.8em;
+  margin: 0 0 10px 0; }
+
+.h2_sub {
+  font-family: 'HyundaiSansText-Regular_0', sans-serif;
+  font-size: 1.2em; }
+
+h3 {
+  font-family: 'HyundaiSansText-Regular_0', sans-serif;
+  font-size: 1.3em;
+  margin: 10px 0; }
+
+.intro_start {
+  font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+  font-size: 30px;
+  margin: 10px 0; }
+
+.text_i {
+  font-size: 20px; }
+
+span {
+  font-family: 'HyundaiSansHead-Regular_0', sans-serif; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: url(../images/web_bg.jpg) 0 0;
+  background-size: cover;
+  overflow: hidden; }
+
+ol, ul {
+  list-style: none;
+  padding: 0 10px; }
+  ol li, ul li {
+    margin: 8px 0; }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  -webkit-text-shadow: none;
+  text-shadow: none;
+  cursor: Pointer; }
+
+a.go_to_btn {
+  float: left; }
+
+button {
+  padding: 10px;
+  border: none;
+  background: none;
+  background-color: none; }
+  button:hover {
+    cursor: Pointer; }
+
+a.next_finger {
+  position: absolute;
+  -webkit-animation: pointer 2s infinite;
+  -moz-animation: pointer 2s infinite;
+  -o-animation: pointer 2s infinite;
+  animation: pointer 2s infinite;
+  z-index: 10; }
+  a.next_finger img {
+    width: 167px;
+    position: relative; }
+
+.next_p_btn.ui-btn {
+  background-color: transparent;
+  border: none;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 40px;
+  white-space: inherit;
+  float: right; }
+  .next_p_btn.ui-btn:hover {
+    background: none; }
+
+img {
+  width: 100%;
+  display: block; }
+
+#wrap {
+  background: #000;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+  padding: 0; }
+  #wrap #contBox {
+    margin-right: auto;
+    margin-left: auto;
+    background: #000; }
+    #wrap #contBox section {
+      color: dimgray;
+      text-shadow: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100% !important;
+      min-height: 100% !important; }
+
+.ui-page-theme-a .ui-header {
+  position: absolute;
+  width: 100%;
+  background: none;
+  border: none;
+  z-index: 10; }
+  .ui-page-theme-a .ui-header .ui-btn {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 30px; }
+
+.ui-page-theme-a .ui-content {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  .ui-page-theme-a .ui-content .textwrap {
+    margin: 0 16px; }
+    .ui-page-theme-a .ui-content .textwrap .ui-link {
+      max-width: 40px;
+      float: right; }
+    .ui-page-theme-a .ui-content .textwrap .text_i p:before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 20px;
+      background: #ffffff;
+      position: relative;
+      margin-top: 3px;
+      top: 23px;
+      left: 50px; }
+    .ui-page-theme-a .ui-content .textwrap .text {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 4px;
+      padding: 15px;
+      border: 2px solid #ffffff;
+      overflow: hidden; }
+      .ui-page-theme-a .ui-content .textwrap .text p {
+        color: dimgray;
+        margin: 0;
+        line-height: 1.4; }
+      .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img {
+        width: 20px;
+        height: 23px;
+        padding-left: 2px;
+        background: dimgray; }
+        .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:focus, .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:hover, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:focus, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:hover {
+          background: #2a72af; }
+      .ui-page-theme-a .ui-content .textwrap .text .text_btn_r {
+        float: left; }
+      .ui-page-theme-a .ui-content .textwrap .text .text_img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        border-radius: 50px;
+        background: #a0a0a0;
+        border: 1px solid #ffffff;
+        overflow: hidden;
+        margin-bottom: 10px; }
+        .ui-page-theme-a .ui-content .textwrap .text .text_img img {
+          margin-top: 10px;
+          width: 120%;
+          position: relative;
+          right: 9px; }
+      .ui-page-theme-a .ui-content .textwrap .text .btn_box #go_next1 {
+        position: relative;
+        top: 15px;
+        right: -15px; }
+      .ui-page-theme-a .ui-content .textwrap .text .btn_box #go_back {
+        position: relative;
+        top: 15px;
+        left: -15px; }
+  .ui-page-theme-a .ui-content .view_text {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .ui-page-theme-a .ui-content .view_text p {
+      position: relative;
+      top: -3px;
+      right: 26px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 40px 10px 15px;
+      border-radius: 50px;
+      margin-bottom: 17px; }
+  .ui-page-theme-a .ui-content p {
+    margin: 0; }
+
+#wrap.mobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -331px -187px;
+  padding: 0;
+  width: 380px;
+  height: 668px;
+  z-index: 2;
+  overflow: hidden; }
+
+#wrap.mobile.landscape {
+  margin: -187px -331px;
+  width: 668px;
+  height: 380px; }
+
+#mokup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -464px -221px;
+  width: 442px;
+  height: 929px;
+  background: url(../images/mokup.png) 0 0 no-repeat;
+  background-size: 442px 929px; }
+  #mokup .btn_device {
+    position: absolute;
+    top: 133px;
+    right: 50%;
+    margin: 0 -185px;
+    padding: 0;
+    border: none;
+    z-index: 999; }
+    #mokup .btn_device img {
+      position: absolute;
+      top: -40px;
+      right: -11px;
+      width: 31px; }
+
+#mokup.landscape {
+  -webkit-transform: rotate(90deg) !important;
+  transform: rotate(90deg) !important; }
+
+.layer_landscape {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0px;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6); }
+  .layer_landscape .box {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .layer_landscape .box img {
+      width: 150px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px; }
+    .layer_landscape .box p {
+      text-align: center; }
+    .layer_landscape .box .ok_btn {
+      border: 1px solid;
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 15px;
+      padding-bottom: 1px;
+      padding-top: 2px; }
+
+@media only screen and (min-width: 650px) {
+  .page_wrap {
+    background: none; } }
+
+@-webkit-keyframes pointer {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(10px, 10px);
+    transform: translate(10px, 10px); } }
+
+@keyframes pointer {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(10px, 10px);
+    transform: translate(10px, 10px); } }
+
+@-webkit-keyframes twinkle {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+
+#page0 {
+  background: url("../images/intro/open_bg_2_@3x.jpg") no-repeat;
+  background-size: auto 100%; }
+  #page0 .ui-content .textwrap {
+    color: #373737;
+    margin: 16% 0 0 10%; }
+    #page0 .ui-content .textwrap h1 span {
+      display: block; }
+    #page0 .ui-content .textwrap p {
+      margin-top: 3%; }
+  #page0 .ui-content #go_page1 {
+    max-width: 45px !important;
+    bottom: 48%;
+    left: 6%; }
+  #page0 .ui-content .imgwrap {
+    width: 34%;
+    position: absolute;
+    bottom: 3%;
+    right: 6%; }
+
+#page1 {
+  background: url("../images/intro/login_bg_blue_2_@3x.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page1 .ui-content {
+    margin-top: 10%; }
+    #page1 .ui-content .textwrap {
+      width: 66%;
+      margin: 0 auto;
+      margin-top: 10%;
+      color: #ffffff; }
+      #page1 .ui-content .textwrap h2 {
+        font-size: 1.6em; }
+    #page1 .ui-content a {
+      margin: 8%; }
+      #page1 .ui-content a .imgwrap {
+        position: relative;
+        width: 190px;
+        height: 190px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 50%; }
+        #page1 .ui-content a .imgwrap img {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          margin: 0 auto; }
+        #page1 .ui-content a .imgwrap .ui-input-text {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: none;
+          border: none;
+          box-shadow: none; }
+          #page1 .ui-content a .imgwrap .ui-input-text input {
+            opacity: 0;
+            height: 100%; }
+    #page1 .ui-content .log_box {
+      width: 65%;
+      margin: 0 auto;
+      margin-top: 9%; }
+      #page1 .ui-content .log_box .input_info {
+        position: relative; }
+        #page1 .ui-content .log_box .input_info label {
+          position: relative;
+          top: 0;
+          font-weight: bold;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%;
+          padding: .4em;
+          box-sizing: border-box;
+          border-radius: .3125em;
+          color: #a0a0a0;
+          background: url("../images/button/icon_country_arrow_basic.png") no-repeat;
+          background-size: 7% auto;
+          background-position: 95% 50%;
+          background-color: #fff; }
+        #page1 .ui-content .log_box .input_info select {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          border: none;
+          opacity: 0;
+          display: block !important; }
+        #page1 .ui-content .log_box .input_info .ui-selectmenu-text {
+          display: none; }
+      #page1 .ui-content .log_box .ui-input-text {
+        opacity: 1;
+        border: none; }
+        #page1 .ui-content .log_box .ui-input-text input {
+          color: #002c5f;
+          font-weight: bold; }
+        #page1 .ui-content .log_box .ui-input-text input::-webkit-input-placeholder {
+          color: #a0a0a0; }
+      #page1 .ui-content .log_box a.intnext_btn {
+        height: 30px;
+        background: #002c5f;
+        padding: 6px 10px 6px 10px;
+        border-radius: 5px;
+        text-align: center;
+        color: #ffffff;
+        font-weight: normal;
+        font-size: 1.4em;
+        margin: 0 auto;
+        margin-top: 6%; }
+
+#page2 {
+  background: url("../images/intro/03_bg_3_@3x.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page2 .ui-content {
+    padding: 0;
+    height: 100%; }
+    #page2 .ui-content .imgwrap {
+      overflow: hidden;
+      height: 220px;
+      position: absolute;
+      bottom: 0; }
+      #page2 .ui-content .imgwrap img {
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        left: -11%;
+        bottom: 130%; }
+    #page2 .ui-content .textwrap {
+      margin: 15% 5% 0 15%; }
+      #page2 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page2 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page2 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page2 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+        #page2 .ui-content .textwrap .text .pointColor {
+          color: #2a72af; }
+    #page2 .ui-content a.yes_btn {
+      height: 30px;
+      background: #002c5f;
+      padding: 6px 10px 6px 10px;
+      border-radius: 5px;
+      text-align: center;
+      color: #ffffff;
+      font-weight: normal;
+      font-size: 1.4em;
+      background: #2a72af;
+      min-width: 106px;
+      position: absolute;
+      right: 10%;
+      bottom: 5%; }
+
+#page3 {
+  background: url("../images/intro/03_bg_3_2_@3x.jpg") no-repeat;
+  background-size: 100% auto; }
+
+#page4 {
+  background: url("../images/day1/landscape/05_bg_@3x.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page4 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page4 .ui-content .imgwrap {
+      width: 25%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page4 .ui-content .imgwrap img {
+        position: relative;
+        width: 130%;
+        bottom: -169px;
+        left: -40px; }
+    #page4 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px; }
+      #page4 .ui-content .textwrap:before, #page4 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page4 .ui-content .textwrap:after {
+        clear: both; }
+      #page4 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page4 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page4 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page4 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page4 .ui-content {
+    display: block; } }
+
+#page5 {
+  background: url("../images/day1/landscape/06_bg_map_2.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+  #page5 .page_bg {
+    background-image: url("../images/day1/landscape/06_bg_map_2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    background-position: 50% 50%; }
+  #page5 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page5 .ui-content .textwrap:before, #page5 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page5 .ui-content .textwrap:after {
+      clear: both; }
+    #page5 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page5 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page5 .ui-content .textwrap .text {
+      overflow: hidden; }
+    #page5 .ui-content .imgwrap {
+      max-width: 64%; }
+      #page5 .ui-content .imgwrap img {
+        position: relative;
+        right: -10%;
+        top: 7px; }
+
+@media only screen and (orientation: Portrait) {
+  #page5 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page5 .ui-content {
+    display: block; } }
+
+#page6 {
+  background: url("../images/day1/landscape/07_bg_map_3.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page6 .page_bg {
+    animation: twinkle 1.5s infinite; }
+  #page6 .next_finger {
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%; }
+    #page6 .next_finger img {
+      left: calc(78% - 165px);
+      top: 41%; }
+  #page6 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page6 .ui-content .textwrap:before, #page6 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page6 .ui-content .textwrap:after {
+      clear: both; }
+    #page6 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page6 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page6 .ui-content .textwrap .text {
+      overflow: hidden; }
+      #page6 .ui-content .textwrap .text #go_page7 {
+        margin-top: 20px; }
+    #page6 .ui-content .imgwrap {
+      max-width: 64%; }
+      #page6 .ui-content .imgwrap img {
+        position: relative;
+        right: -10%;
+        top: 5px; }
+
+@media only screen and (orientation: Portrait) {
+  #page6 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page6 .ui-content {
+    display: block; } }
+
+#page7 {
+  background: #000; }
+  #page7 .ui-content {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+    #page7 .ui-content:before, #page7 .ui-content:after {
+      content: "";
+      display: table; }
+    #page7 .ui-content:after {
+      clear: both; }
+    #page7 .ui-content .imgwrap {
+      height: 85%;
+      width: 60%;
+      overflow: hidden;
+      float: left;
+      margin-left: 25px; }
+      #page7 .ui-content .imgwrap img {
+        width: 185%;
+        position: relative;
+        top: -26px;
+        right: 33px; }
+    #page7 .ui-content .textwrap {
+      margin: 0;
+      padding: 0;
+      width: 36%;
+      height: 85%;
+      float: left; }
+      #page7 .ui-content .textwrap .text {
+        background: transparent;
+        margin-top: 25px;
+        border: none; }
+        #page7 .ui-content .textwrap .text #textbox1 {
+          color: #ffffff; }
+          #page7 .ui-content .textwrap .text #textbox1 .img_wrap {
+            width: 80%;
+            margin-top: 15%; }
+            #page7 .ui-content .textwrap .text #textbox1 .img_wrap img:first-child {
+              max-width: 18px; }
+            #page7 .ui-content .textwrap .text #textbox1 .img_wrap img:nth-child(2) {
+              margin-left: 1px; }
+            #page7 .ui-content .textwrap .text #textbox1 .img_wrap p {
+              font-size: 12px;
+              color: #ffffff; }
+            #page7 .ui-content .textwrap .text #textbox1 .img_wrap .p1 {
+              float: left; }
+            #page7 .ui-content .textwrap .text #textbox1 .img_wrap .p2 {
+              float: right; }
+          #page7 .ui-content .textwrap .text #textbox1 ul {
+            margin-top: 25%;
+            position: relative; }
+            #page7 .ui-content .textwrap .text #textbox1 ul li:before {
+              content: '';
+              display: block;
+              width: 2px;
+              height: 15px;
+              background: #ffffff;
+              position: absolute;
+              left: 0;
+              margin-top: 3px; }
+
+@media only screen and (orientation: Portrait) {
+  #page7 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page7.ui-content {
+    display: block; } }
+
+#page8 {
+  background: #e4dcd3; }
+  #page8 .ui-content {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+    #page8 .ui-content:before, #page8 .ui-content:after {
+      content: "";
+      display: table; }
+    #page8 .ui-content:after {
+      clear: both; }
+    #page8 .ui-content .imgwrap {
+      height: 85%;
+      width: 60%;
+      overflow: hidden;
+      float: left;
+      margin-left: 25px; }
+      #page8 .ui-content .imgwrap img {
+        width: 185%;
+        position: relative;
+        top: -26px;
+        right: 33px; }
+    #page8 .ui-content .textwrap {
+      margin: 0;
+      padding: 0;
+      width: 36%;
+      height: 85%;
+      float: left; }
+      #page8 .ui-content .textwrap .text {
+        background: transparent;
+        margin-top: 90%;
+        border: none; }
+        #page8 .ui-content .textwrap .text #textbox1 {
+          color: #000; }
+          #page8 .ui-content .textwrap .text #textbox1 h2 {
+            margin: 0px 0 5px 0; }
+          #page8 .ui-content .textwrap .text #textbox1 p {
+            font-size: 12px;
+            color: #000; }
+            #page8 .ui-content .textwrap .text #textbox1 p:before {
+              content: '';
+              display: block;
+              width: 66%;
+              height: 1px;
+              background: #000;
+              position: relative;
+              margin-bottom: 5px; }
+      #page8 .ui-content .textwrap #go_page9 {
+        position: absolute;
+        right: 15px;
+        bottom: 15px; }
+
+@media only screen and (orientation: Portrait) {
+  #page8 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page8 .ui-content {
+    display: block; } }
+
+#page9 {
+  background: url("../images/day1/landscape2/09_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page9 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page9 .ui-content .imgwrap {
+      width: 25%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page9 .ui-content .imgwrap img {
+        position: relative;
+        width: 130%;
+        bottom: -200px;
+        left: -40px; }
+    #page9 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 30px; }
+      #page9 .ui-content .textwrap:before, #page9 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page9 .ui-content .textwrap:after {
+        clear: both; }
+      #page9 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 115px;
+        left: 1px; }
+      #page9 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page9 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page9 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page9 .ui-content {
+    display: block; } }
+
+#page10 {
+  background: url("../images/day1/landscape2/10_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page10 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page10 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page10 .ui-content .textwrap:before, #page10 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page10 .ui-content .textwrap:after {
+        clear: both; }
+      #page10 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page10 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page10 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page10 .ui-content {
+    display: block; } }
+
+#page11 {
+  background: url("../images/day1/landscape2/11_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page11 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow: hidden; }
+    #page11 .ui-content .textwrap {
+      margin-top: 45px; }
+      #page11 .ui-content .textwrap:before, #page11 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page11 .ui-content .textwrap:after {
+        clear: both; }
+      #page11 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page11 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+    #page11 .ui-content .imgwrap {
+      max-width: 64%; }
+      #page11 .ui-content .imgwrap img {
+        position: relative;
+        right: -65px;
+        top: 5px; }
+
+@media only screen and (orientation: Portrait) {
+  #page11 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page11 .ui-content {
+    display: block; } }
+
+#page12 {
+  background: url("../images/day1/landscape2/10_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page12 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page12 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page12 .ui-content .textwrap:before, #page12 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page12 .ui-content .textwrap:after {
+        clear: both; }
+      #page12 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page12 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page12 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page12 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page12 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page12 .ui-content {
+    display: block; } }
+
+#page13 {
+  background-image: url("../images/day1/13_bg_1.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%; }
+  #page13 .ui-content {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+    #page13 .ui-content .textwrap {
+      text-align: center; }
+      #page13 .ui-content .textwrap:before, #page13 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page13 .ui-content .textwrap:after {
+        clear: both; }
+      #page13 .ui-content .textwrap .text_i {
+        width: 50%;
+        margin: 0 auto; }
+    #page13 .ui-content .imgwrap {
+      width: 22%;
+      position: absolute;
+      right: 13%;
+      bottom: 46%; }
+      #page13 .ui-content .imgwrap .incr_count {
+        margin-left: 32%;
+        font-size: 30px;
+        color: #ffc800; }
+        #page13 .ui-content .imgwrap .incr_count .incremental-counter .num {
+          display: inline-block; }
+    #page13 .ui-content .next_finger {
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 90%; }
+      #page13 .ui-content .next_finger img {
+        left: 37%;
+        top: 47%; }
+
+@media only screen and (orientation: Portrait) {
+  #page13 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page13 .ui-content {
+    display: block; } }
+
+#page14 {
+  background: #000; }
+  #page14 .ui-content {
+    margin: 0;
+    padding: 0; }
+    #page14 .ui-content .textwrap:before, #page14 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page14 .ui-content .textwrap:after {
+      clear: both; }
+    #page14 .ui-content .textwrap .text {
+      margin: 0 auto;
+      max-width: 85%;
+      margin-top: 5%;
+      background: transparent;
+      border: none; }
+      #page14 .ui-content .textwrap .text #textbox1:before, #page14 .ui-content .textwrap .text #textbox1:after {
+        content: "";
+        display: table; }
+      #page14 .ui-content .textwrap .text #textbox1:after {
+        clear: both; }
+      #page14 .ui-content .textwrap .text #textbox1 img {
+        width: 15%;
+        float: left;
+        margin: 0 5%; }
+      #page14 .ui-content .textwrap .text #textbox1 p {
+        max-width: 74%;
+        float: left;
+        line-height: 140%;
+        color: #ffffff; }
+        #page14 .ui-content .textwrap .text #textbox1 p span {
+          border: 1px solid #ffffff;
+          padding: 0px 32px;
+          margin: 0 10px; }
+      #page14 .ui-content .textwrap .text #textbox2 {
+        width: 84%;
+        margin: 0 auto;
+        margin-top: 10%;
+        position: relative; }
+        #page14 .ui-content .textwrap .text #textbox2:before {
+          content: '';
+          display: block;
+          height: 1px;
+          width: 16%;
+          background: #ffffff;
+          position: absolute;
+          left: -85px;
+          margin-top: 14px; }
+        #page14 .ui-content .textwrap .text #textbox2:after {
+          content: '';
+          display: block;
+          height: 1px;
+          width: 16%;
+          background: #ffffff;
+          position: absolute;
+          right: -85px;
+          top: 14px; }
+        #page14 .ui-content .textwrap .text #textbox2 p {
+          margin-left: 7px;
+          color: #ffffff;
+          text-align: center; }
+        #page14 .ui-content .textwrap .text #textbox2 ul.btn_num {
+          margin: 0 auto;
+          margin-top: 5%;
+          width: 406px; }
+          #page14 .ui-content .textwrap .text #textbox2 ul.btn_num:before, #page14 .ui-content .textwrap .text #textbox2 ul.btn_num:after {
+            content: "";
+            display: table; }
+          #page14 .ui-content .textwrap .text #textbox2 ul.btn_num:after {
+            clear: both; }
+          #page14 .ui-content .textwrap .text #textbox2 ul.btn_num li {
+            float: left;
+            background: gainsboro;
+            color: #000;
+            padding: 7px 0;
+            margin: 0px 17px;
+            width: 105px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 4px; }
+          #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a {
+            float: left;
+            margin-top: 0; }
+            #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a li {
+              color: #000;
+              font-weight: normal; }
+              #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a li:focus, #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a li:active, #page14 .ui-content .textwrap .text #textbox2 ul.btn_num a li:hover {
+                background: #00aad2;
+                color: #ffffff; }
+
+@media only screen and (orientation: Portrait) {
+  #page14 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page14 .ui-content {
+    display: block; } }
+
+#page15 {
+  background: #000; }
+  #page15 .page_bg {
+    width: 80%;
+    margin: 0 auto; }
+  #page15 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page15 .ui-content .imgwrap {
+      width: 14%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page15 .ui-content .imgwrap img {
+        width: 100%; }
+    #page15 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px; }
+      #page15 .ui-content .textwrap:before, #page15 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page15 .ui-content .textwrap:after {
+        clear: both; }
+      #page15 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page15 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page15 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page15 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page15 .ui-content {
+    display: block; } }
+
+#page16 {
+  background: url("../images/day1/landscape2/12_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page16 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%; }
+    #page16 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page16 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page16 .ui-content .textwrap:before, #page16 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page16 .ui-content .textwrap:after {
+        clear: both; }
+      #page16 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page16 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page16 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page16 .ui-content {
+    display: block; } }
+
+#page17 {
+  background: url("../images/day1/landscape2/17_photo_1.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 50%; }
+  #page17 .page_bg {
+    background: url("../images/day1/landscape2/17_photo_1.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 100%;
+    background-position: 50% 50%; }
+  #page17 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page17 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; }
+    #page17 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page17 .ui-content .textwrap {
+      max-width: 33%;
+      float: right;
+      margin-top: 45px;
+      padding: 0; }
+      #page17 .ui-content .textwrap:before, #page17 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page17 .ui-content .textwrap:after {
+        clear: both; }
+      #page17 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page17 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+    #page17 .ui-content .view_text {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      #page17 .ui-content .view_text p {
+        position: relative;
+        top: -3px;
+        right: 26px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 40px 10px 15px;
+        border-radius: 50px; }
+
+@media only screen and (orientation: Portrait) {
+  #page17 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page17 .ui-content {
+    display: block; } }
+
+#page18 {
+  overflow: hidden; }
+  #page18 .page_bg {
+    background: url("../images/day1/landscape2/18_photo_1.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page18 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page18 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page18 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page18 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page18 .ui-content .textwrap:before, #page18 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page18 .ui-content .textwrap:after {
+        clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page18 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page18 .ui-content {
+    display: block; } }
+
+#page19 {
+  background: url("../images/day1/landscape2/20_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page19 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%; }
+    #page19 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page19 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page19 .ui-content .textwrap:before, #page19 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page19 .ui-content .textwrap:after {
+        clear: both; }
+      #page19 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page19 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page19 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page19 .ui-content {
+    display: block; } }
+
+#page20 {
+  background: url("../images/day1/27_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page20 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    width: 100%; }
+    #page20 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page20 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page20 .ui-content .textwrap:before, #page20 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page20 .ui-content .textwrap:after {
+        clear: both; }
+      #page20 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page20 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page20 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page20 .ui-content {
+    display: block; } }
+
+#page21 {
+  background: url("../images/day1/landscape2/12_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page21 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    width: 100%; }
+    #page21 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page21 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page21 .ui-content .textwrap:before, #page21 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page21 .ui-content .textwrap:after {
+        clear: both; }
+      #page21 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page21 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page21 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page21 .ui-content {
+    display: block; } }
+
+#page22 {
+  background: url("../images/ezgif.com-video-to-gif.gif") no-repeat;
+  background-size: 100% auto; }
+  #page22 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page22 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px; }
+    #page22 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px; }
+    #page22 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page22 .ui-content .textwrap:before, #page22 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page22 .ui-content .textwrap:after {
+        clear: both; }
+      #page22 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page22 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page22 .ui-content {
+    display: block; } }
+
+#page23 {
+  background: url("../images/day1/32_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page23 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    width: 100%; }
+    #page23 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page23 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page23 .ui-content .textwrap:before, #page23 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page23 .ui-content .textwrap:after {
+        clear: both; }
+      #page23 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page23 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page23 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page23 .ui-content {
+    display: block; } }
+
+#page24 {
+  background: url("../images/day1/landscape2/26_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page24 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    width: 100%; }
+    #page24 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page24 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page24 .ui-content .textwrap:before, #page24 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page24 .ui-content .textwrap:after {
+        clear: both; }
+      #page24 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page24 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page24 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page24 .ui-content {
+    display: block; } }
+
+#page25 {
+  background: url("../images/day1/38_photo_1.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page25 .page_bg {
+    background: url("../images/day1/38_photo_1.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 99%; }
+  #page25 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page25 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; }
+    #page25 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page25 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0;
+      max-width: 33%;
+      float: right; }
+      #page25 .ui-content .textwrap:before, #page25 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page25 .ui-content .textwrap:after {
+        clear: both; }
+      #page25 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page25 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page25 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page25 .ui-content {
+    display: block; } }
+
+#page26 {
+  overflow: hidden; }
+  #page26 .page_bg {
+    background: url("../images/day1/40_photo_1.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page26 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page26 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page26 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page26 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page26 .ui-content .textwrap:before, #page26 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page26 .ui-content .textwrap:after {
+        clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page26 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page26 .ui-content {
+    display: block; } }
+
+#page27 {
+  background: url("../images/day1/40_photo_1.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page27 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page27 .ui-content .textwrap:before, #page27 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page27 .ui-content .textwrap:after {
+      clear: both; }
+    #page27 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page27 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page27 .ui-content .textwrap .text {
+      overflow: hidden; }
+    #page27 .ui-content .imgwrap {
+      max-width: 38%; }
+      #page27 .ui-content .imgwrap img {
+        position: relative;
+        right: -56%;
+        top: 5px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+
+@media only screen and (orientation: Portrait) {
+  #page27 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page27 .ui-content {
+    display: block; } }
+
+#page28 {
+  background: url("../images/day1/45_i30.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page28 a.next_finger {
+    position: absolute;
+    top: 14%;
+    right: 2%;
+    width: 25%; }
+  #page28 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page28 .ui-content .imgwrap {
+      width: 20%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page28 .ui-content .imgwrap img {
+        width: 84%;
+        position: relative;
+        bottom: -22px;
+        left: 10px; }
+    #page28 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px;
+      margin-left: 0; }
+      #page28 .ui-content .textwrap:before, #page28 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page28 .ui-content .textwrap:after {
+        clear: both; }
+      #page28 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page28 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page28 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page28 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page28 .ui-content {
+    display: block; } }
+
+#page29 {
+  background: url("../images/day1/46_i30.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page29 a.next_finger {
+    position: absolute;
+    top: 48%;
+    left: 7%;
+    width: 25%;
+    z-index: 10; }
+  #page29 .ui-content {
+    overflow: hidden; }
+    #page29 .ui-content .imgwrap {
+      position: absolute;
+      top: 34%;
+      left: 6%;
+      width: 59%; }
+      #page29 .ui-content .imgwrap img {
+        animation: twinkle 1.5s infinite;
+        width: 84%;
+        position: relative;
+        bottom: -22px; }
+    #page29 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px;
+      margin-left: 0; }
+      #page29 .ui-content .textwrap:before, #page29 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page29 .ui-content .textwrap:after {
+        clear: both; }
+      #page29 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page29 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page29 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page29 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page29 .ui-content {
+    display: block; } }
+
+#page30 {
+  background: url("../images/day1/48_i30.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page30 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page30 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px;
+      z-index: 10; }
+    #page30 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px;
+      z-index: 10; }
+    #page30 .ui-content .img_twinkle {
+      animation: twinkle 1.5s infinite; }
+    #page30 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page30 .ui-content .textwrap:before, #page30 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page30 .ui-content .textwrap:after {
+        clear: both; }
+      #page30 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page30 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page30 .ui-content {
+    display: block; } }
+
+#page31 {
+  background: url("../images/day1/54_i30.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page31 a.next_finger {
+    position: absolute;
+    top: 41%;
+    left: 44%;
+    width: 25%;
+    z-index: 10; }
+  #page31 .ui-content {
+    overflow: hidden; }
+    #page31 .ui-content .imgwrap {
+      position: absolute;
+      top: 34%;
+      left: 6%;
+      width: 59%; }
+      #page31 .ui-content .imgwrap img {
+        animation: twinkle 1.5s infinite;
+        width: 84%;
+        position: relative;
+        bottom: -22px; }
+    #page31 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px;
+      margin-left: 0; }
+      #page31 .ui-content .textwrap:before, #page31 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page31 .ui-content .textwrap:after {
+        clear: both; }
+      #page31 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page31 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page31 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page31 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page31 .ui-content {
+    display: block; } }
+
+#page32 {
+  background: url("../images/day1/51_i30.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page32 a.next_finger {
+    position: absolute;
+    top: 48%;
+    left: 7%;
+    width: 25%;
+    z-index: 10; }
+  #page32 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page32 .ui-content .textwrap {
+      text-align: center; }
+      #page32 .ui-content .textwrap:before, #page32 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page32 .ui-content .textwrap:after {
+        clear: both; }
+      #page32 .ui-content .textwrap .text_i {
+        overflow: hidden;
+        width: 77%;
+        margin: 0 auto; }
+    #page32 .ui-content .imgwrap img.brush_t {
+      position: absolute;
+      top: 42%;
+      left: 22%;
+      width: 40px; }
+    #page32 .ui-content .imgwrap img.left_light {
+      position: absolute;
+      top: 62%;
+      left: 21%;
+      width: 8%; }
+    #page32 .ui-content .imgwrap img.right_t_light {
+      width: 35%;
+      position: absolute;
+      top: 49%;
+      right: 19%; }
+    #page32 .ui-content .imgwrap img.right_b_light {
+      width: 30%;
+      position: absolute;
+      top: 60%;
+      right: 22%; }
+
+@media only screen and (orientation: Portrait) {
+  #page32 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page32 .ui-content {
+    display: block; } }
+
+#page33 {
+  background: url("../images/day1/53_i30.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page33 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page33 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px;
+      z-index: 10; }
+    #page33 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px;
+      z-index: 10; }
+    #page33 .ui-content .img_twinkle {
+      animation: twinkle 1.5s infinite; }
+    #page33 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page33 .ui-content .textwrap:before, #page33 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page33 .ui-content .textwrap:after {
+        clear: both; }
+      #page33 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page33 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page33 .ui-content {
+    display: block; } }
+
+#page34 {
+  background: url("../images/day1/55_i30.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page34 a.next_finger {
+    position: absolute;
+    top: 31%;
+    left: 17%;
+    width: 25%;
+    z-index: 10; }
+  #page34 .ui-content {
+    overflow: hidden; }
+    #page34 .ui-content .imgwrap img {
+      animation: twinkle 1.5s infinite; }
+    #page34 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px;
+      margin-left: 0; }
+      #page34 .ui-content .textwrap:before, #page34 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page34 .ui-content .textwrap:after {
+        clear: both; }
+      #page34 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page34 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page34 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page34 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page34 .ui-content {
+    display: block; } }
+
+#page35 {
+  background: url("../images/day1/57_i30.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page35 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page35 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px;
+      z-index: 10; }
+    #page35 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px;
+      z-index: 10; }
+    #page35 .ui-content .img_twinkle {
+      animation: twinkle 1.5s infinite; }
+    #page35 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page35 .ui-content .textwrap:before, #page35 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page35 .ui-content .textwrap:after {
+        clear: both; }
+      #page35 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page35 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page35 .ui-content {
+    display: block; } }
+
+#page37 {
+  background: url("../images/day1/61_bg_map_1.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page37 .page_bg {
+    animation: twinkle 1.5s infinite; }
+  #page37 .next_finger {
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%; }
+    #page37 .next_finger img {
+      left: calc(78% - 165px);
+      top: 41%; }
+  #page37 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page37 .ui-content .textwrap:before, #page37 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page37 .ui-content .textwrap:after {
+      clear: both; }
+    #page37 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page37 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page37 .ui-content .textwrap .text {
+      overflow: hidden; }
+      #page37 .ui-content .textwrap .text #go_page7 {
+        margin-top: 20px; }
+    #page37 .ui-content .imgwrap {
+      max-width: 64%;
+      max-height: 180px; }
+      #page37 .ui-content .imgwrap img {
+        position: relative;
+        right: -26%;
+        top: 5px; }
+
+@media only screen and (orientation: Portrait) {
+  #page37 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page37 .ui-content {
+    display: block; } }
+
+#page38 {
+  background: url("../images/day1/59_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page38 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page38 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page38 .ui-content .textwrap:before, #page38 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page38 .ui-content .textwrap:after {
+        clear: both; }
+      #page38 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page38 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page38 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page38 .ui-content {
+    display: block; } }
+
+#page39 {
+  overflow: hidden; }
+  #page39 .page_bg {
+    background: url("../images/day1/.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page39 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page39 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page39 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page39 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page39 .ui-content .textwrap:before, #page39 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page39 .ui-content .textwrap:after {
+        clear: both; }
+      #page39 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding: 10px 15px; }
+
+@media only screen and (orientation: Portrait) {
+  #page39 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page39 .ui-content {
+    display: block; } }
+
+#page40 {
+  background: url("../images/day1/64_photo.gif") no-repeat;
+  background-size: 100% auto; }
+  #page40 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page40 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px; }
+    #page40 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px; }
+    #page40 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page40 .ui-content .textwrap:before, #page40 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page40 .ui-content .textwrap:after {
+        clear: both; }
+      #page40 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page40 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page40 .ui-content {
+    display: block; } }
+
+#page41 {
+  background: url("../images/day1/66_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page41 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page41 .ui-content .imgwrap {
+      width: 25%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page41 .ui-content .imgwrap img {
+        width: 84%;
+        position: relative;
+        bottom: -44px;
+        left: 10px; }
+    #page41 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px; }
+      #page41 .ui-content .textwrap:before, #page41 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page41 .ui-content .textwrap:after {
+        clear: both; }
+      #page41 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 44px;
+        left: 1px; }
+      #page41 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page41 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page41 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page41 .ui-content {
+    display: block; } }
+
+#page42 {
+  background: url("../images/day1/67_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page42 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page42 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page42 .ui-content .textwrap:before, #page42 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page42 .ui-content .textwrap:after {
+        clear: both; }
+      #page42 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page42 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page42 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page42 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page42 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page42 .ui-content {
+    display: block; } }
+
+#page43 {
+  background: url("../images/day1/68_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page43 .ui-content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: initial;
+    margin: 0 auto; }
+    #page43 .ui-content .textwrap {
+      position: absolute;
+      top: calc((100% - 86px)/ 2);
+      left: calc((100% - 358px)/ 2); }
+      #page43 .ui-content .textwrap .next_finger {
+        position: relative;
+        right: 37%; }
+      #page43 .ui-content .textwrap .text_w {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 50px;
+        font-size: 2em;
+        text-align: center;
+        max-width: 362px;
+        line-height: 0;
+        border: 1px solid #2a72af;
+        border-radius: 2px;
+        margin: 0 auto; }
+        #page43 .ui-content .textwrap .text_w p {
+          color: #2a72af; }
+
+@media only screen and (orientation: Portrait) {
+  #page43 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page43 .ui-content {
+    display: block; } }
+
+#page44 {
+  background: url("../images/day1/69_photo.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+  #page44 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page44 .ui-content .textwrap:before, #page44 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page44 .ui-content .textwrap:after {
+      clear: both; }
+    #page44 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page44 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page44 .ui-content .textwrap .text {
+      overflow: hidden; }
+    #page44 .ui-content .imgwrap {
+      max-width: 85%; }
+      #page44 .ui-content .imgwrap img {
+        position: relative;
+        top: 27px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+
+@media only screen and (orientation: Portrait) {
+  #page44 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page44 .ui-content {
+    display: block; } }
+
+#page45 {
+  background: url("../images/day1/70_interior.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 50%; }
+  #page45 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page45 .ui-content .textwrap:before, #page45 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page45 .ui-content .textwrap:after {
+      clear: both; }
+    #page45 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page45 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page45 .ui-content .textwrap .text {
+      overflow: hidden; }
+    #page45 .ui-content .imgwrap {
+      max-width: 64%; }
+      #page45 .ui-content .imgwrap img {
+        position: relative;
+        right: -10%;
+        top: 7px; }
+
+@media only screen and (orientation: Portrait) {
+  #page45 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page45 .ui-content {
+    display: block; } }
+
+#page46 {
+  background: url("../images/day1/70_interior.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page46 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page46 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px;
+      z-index: 10; }
+    #page46 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px;
+      z-index: 10; }
+    #page46 .ui-content .img_twinkle {
+      animation: twinkle 1.5s infinite; }
+    #page46 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page46 .ui-content .textwrap:before, #page46 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page46 .ui-content .textwrap:after {
+        clear: both; }
+      #page46 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page46 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page46 .ui-content {
+    display: block; } }
+
+#page47 {
+  background: url("../images/day1/73_interior.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page47 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page47 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px;
+      z-index: 10; }
+    #page47 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px;
+      z-index: 10; }
+    #page47 .ui-content .img_twinkle {
+      animation: twinkle 1.5s infinite; }
+    #page47 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page47 .ui-content .textwrap:before, #page47 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page47 .ui-content .textwrap:after {
+        clear: both; }
+      #page47 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page47 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page47 .ui-content {
+    display: block; } }
+
+#page48 {
+  background-image: url("../images/day1/78_image.jpg");
+  background-size: 100% auto; }
+  #page48 .ui-content {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+    #page48 .ui-content .textwrap {
+      text-align: center;
+      margin-top: 6%; }
+      #page48 .ui-content .textwrap:before, #page48 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page48 .ui-content .textwrap:after {
+        clear: both; }
+      #page48 .ui-content .textwrap .text_i {
+        width: 65%;
+        margin: 0 auto; }
+        #page48 .ui-content .textwrap .text_i p:before {
+          content: '';
+          display: block;
+          width: 4px;
+          height: 26px;
+          background: #ffffff;
+          position: relative;
+          margin-top: 3px;
+          top: 23px; }
+    #page48 .ui-content .imgwrap {
+      margin-top: 4%; }
+      #page48 .ui-content .imgwrap .choice_color {
+        width: 90%;
+        margin: 0 auto; }
+        #page48 .ui-content .imgwrap .choice_color a {
+          display: block;
+          height: auto; }
+          #page48 .ui-content .imgwrap .choice_color a li {
+            width: 18%;
+            float: left;
+            margin: 1%; }
+
+@media only screen and (orientation: Portrait) {
+  #page48 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page48 .ui-content {
+    display: block; } }
+
+#page49 {
+  overflow: hidden;
+  background: url("../images/day1/79_interior_01.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+  height: 100%; }
+  #page49 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page49 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page49 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page49 .ui-content .textwrap:before, #page49 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page49 .ui-content .textwrap:after {
+        clear: both; }
+      #page49 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding: 10px 15px; }
+
+@media only screen and (orientation: Portrait) {
+  #page49 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page49 .ui-content {
+    display: block; } }
+
+#page50 {
+  background-image: url("../images/day1/78_image.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%; }
+  #page50 .ui-content {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+    #page50 .ui-content .textwrap {
+      text-align: center; }
+      #page50 .ui-content .textwrap:before, #page50 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page50 .ui-content .textwrap:after {
+        clear: both; }
+      #page50 .ui-content .textwrap .text_i {
+        width: 74%;
+        margin: 0 auto; }
+    #page50 .ui-content .imgwrap {
+      margin-top: 3%;
+      color: #ffffff;
+      font-weight: bold; }
+      #page50 .ui-content .imgwrap ul li {
+        height: 33px; }
+        #page50 .ui-content .imgwrap ul li .g_title {
+          display: inline-block;
+          width: 29%;
+          text-align: right;
+          margin-right: 1%;
+          vertical-align: middle; }
+        #page50 .ui-content .imgwrap ul li .g_num {
+          display: inline-block;
+          height: 100%;
+          width: 0%;
+          vertical-align: middle;
+          text-align: right;
+          padding: 5px 10px;
+          box-sizing: border-box; }
+        #page50 .ui-content .imgwrap ul li .g_num#red {
+          background: linear-gradient(to left, #cf1920, rgba(207, 25, 32, 0.3)); }
+        #page50 .ui-content .imgwrap ul li .g_num#black {
+          background: linear-gradient(to left, #242424, #242424); }
+        #page50 .ui-content .imgwrap ul li .g_num#gray {
+          background: linear-gradient(to left, #b6b6b6, rgba(182, 182, 182, 0.3)); }
+        #page50 .ui-content .imgwrap ul li .g_num#ind_blue {
+          background: linear-gradient(to left, #233551, rgba(35, 53, 81, 0.3)); }
+        #page50 .ui-content .imgwrap ul li .g_num#burgundy {
+          background: linear-gradient(to left, #581d1d, rgba(88, 29, 29, 0.3)); }
+
+@media only screen and (orientation: Portrait) {
+  #page50 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page50 .ui-content {
+    display: block; } }
+
+#page51 {
+  background: url("../images/day1/82_photo.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+  #page51 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page51 .ui-content .textwrap:before, #page51 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page51 .ui-content .textwrap:after {
+      clear: both; }
+    #page51 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page51 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page51 .ui-content .textwrap .text {
+      overflow: hidden; }
+    #page51 .ui-content .imgwrap {
+      max-width: 40%; }
+      #page51 .ui-content .imgwrap img {
+        position: relative;
+        right: -10%;
+        top: 7px; }
+
+@media only screen and (orientation: Portrait) {
+  #page51 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page51 .ui-content {
+    display: block; } }
+
+#page52 {
+  background: url("../images/day1/83_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page52 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page52 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page52 .ui-content .textwrap:before, #page52 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page52 .ui-content .textwrap:after {
+        clear: both; }
+      #page52 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page52 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page52 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page52 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page52 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page52 .ui-content {
+    display: block; } }
+
+#page53 {
+  background: url("../images/day1/84_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page53 .page_bg {
+    background: url("../images/day1/84_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 99%; }
+  #page53 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page53 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; }
+    #page53 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page53 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0;
+      max-width: 33%;
+      float: right; }
+      #page53 .ui-content .textwrap:before, #page53 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page53 .ui-content .textwrap:after {
+        clear: both; }
+      #page53 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page53 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+    #page53 .ui-content .view_text {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      #page53 .ui-content .view_text p {
+        position: relative;
+        top: -3px;
+        right: 26px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 40px 10px 15px;
+        border-radius: 50px; }
+
+@media only screen and (orientation: Portrait) {
+  #page53 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page53 .ui-content {
+    display: block; } }
+
+#page54 {
+  overflow: hidden; }
+  #page54 .page_bg {
+    background: url("../images/day1/87_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page54 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page54 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page54 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page54 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page54 .ui-content .textwrap:before, #page54 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page54 .ui-content .textwrap:after {
+        clear: both; }
+      #page54 .ui-content .textwrap .text {
+        overflow: hidden; }
+
+@media only screen and (orientation: Portrait) {
+  #page54 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page54 .ui-content {
+    display: block; } }
+
+#page55 {
+  background: url("../images/day1/landscape/06_bg_map_2.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+  #page55 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page55 .ui-content .textwrap:before, #page55 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page55 .ui-content .textwrap:after {
+      clear: both; }
+    #page55 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page55 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page55 .ui-content .textwrap .text {
+      overflow: hidden; }
+    #page55 .ui-content .imgwrap {
+      max-width: 64%; }
+      #page55 .ui-content .imgwrap img {
+        position: relative;
+        right: -10%;
+        top: 7px; }
+
+@media only screen and (orientation: Portrait) {
+  #page55 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page55 .ui-content {
+    display: block; } }
+
+#page56 {
+  background: #000; }
+  #page56 .ui-content {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+    #page56 .ui-content:before, #page56 .ui-content:after {
+      content: "";
+      display: table; }
+    #page56 .ui-content:after {
+      clear: both; }
+    #page56 .ui-content .imgwrap {
+      height: 85%;
+      width: 60%;
+      overflow: hidden;
+      float: left;
+      margin-left: 25px; }
+      #page56 .ui-content .imgwrap img {
+        position: relative;
+        bottom: 87%;
+        right: 33px; }
+    #page56 .ui-content .textwrap {
+      margin: 0;
+      padding: 0;
+      width: 36%;
+      height: 85%;
+      float: left; }
+      #page56 .ui-content .textwrap .text {
+        background: transparent;
+        margin-top: 25px;
+        border: none; }
+        #page56 .ui-content .textwrap .text #textbox1 {
+          color: #ffffff; }
+          #page56 .ui-content .textwrap .text #textbox1 .img_wrap {
+            width: 80%;
+            margin-top: 15%; }
+            #page56 .ui-content .textwrap .text #textbox1 .img_wrap img:first-child {
+              max-width: 18px; }
+            #page56 .ui-content .textwrap .text #textbox1 .img_wrap img:nth-child(2) {
+              margin-left: 1px; }
+            #page56 .ui-content .textwrap .text #textbox1 .img_wrap p {
+              font-size: 12px;
+              color: #ffffff; }
+            #page56 .ui-content .textwrap .text #textbox1 .img_wrap .p1 {
+              float: left; }
+            #page56 .ui-content .textwrap .text #textbox1 .img_wrap .p2 {
+              float: right; }
+          #page56 .ui-content .textwrap .text #textbox1 ul {
+            margin-top: 25%;
+            position: relative; }
+            #page56 .ui-content .textwrap .text #textbox1 ul li:before {
+              content: '';
+              display: block;
+              width: 2px;
+              height: 15px;
+              background: #ffffff;
+              position: absolute;
+              left: 0;
+              margin-top: 3px; }
+      #page56 .ui-content .textwrap #go_page8 {
+        position: absolute;
+        right: 15px;
+        bottom: 15px; }
+
+@media only screen and (orientation: Portrait) {
+  #page56 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page56.ui-content {
+    display: block; } }
+
+#page57 {
+  background: url("../images/day2/03_stelviopass_map_3.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page57 .page_bg {
+    animation: twinkle 1.5s infinite; }
+  #page57 .next_finger {
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%; }
+    #page57 .next_finger img {
+      left: calc(78% - 165px);
+      top: 41%; }
+  #page57 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page57 .ui-content .textwrap:before, #page57 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page57 .ui-content .textwrap:after {
+      clear: both; }
+    #page57 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page57 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page57 .ui-content .textwrap .text {
+      overflow: hidden; }
+      #page57 .ui-content .textwrap .text #go_page7 {
+        margin-top: 20px; }
+    #page57 .ui-content .imgwrap {
+      max-width: 64%; }
+      #page57 .ui-content .imgwrap img {
+        position: relative;
+        right: -10%;
+        top: 5px; }
+
+@media only screen and (orientation: Portrait) {
+  #page57 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page57 .ui-content {
+    display: block; } }
+
+#page58 {
+  background: url("../images/day2/04_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page58 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page58 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page58 .ui-content .textwrap:before, #page58 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page58 .ui-content .textwrap:after {
+        clear: both; }
+      #page58 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page58 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page58 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page58 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page58 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page58 .ui-content {
+    display: block; } }
+
+#page59 {
+  overflow: hidden; }
+  #page59 .page_bg {
+    background: url("../images/day2/05_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page59 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page59 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page59 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page59 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page59 .ui-content .textwrap:before, #page59 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page59 .ui-content .textwrap:after {
+        clear: both; }
+      #page59 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page59 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page59 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page59 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page59 .ui-content {
+    display: block; } }
+
+#page60 {
+  background: url("../images/day2/07_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page60 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page60 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page60 .ui-content .textwrap:before, #page60 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page60 .ui-content .textwrap:after {
+        clear: both; }
+      #page60 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page60 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page60 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page60 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page60 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page60 .ui-content {
+    display: block; } }
+
+#page61 {
+  background: #000; }
+  #page61 .next_finger {
+    position: absolute;
+    top: calc((100% - 116px)/ 2);
+    left: 17%; }
+  #page61 .ui-content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: initial; }
+    #page61 .ui-content .imgwrap {
+      text-align: center;
+      margin-top: 45px; }
+      #page61 .ui-content .imgwrap:before, #page61 .ui-content .imgwrap:after {
+        content: "";
+        display: table; }
+      #page61 .ui-content .imgwrap:after {
+        clear: both; }
+      #page61 .ui-content .imgwrap > div {
+        display: inline-block;
+        width: 30%;
+        margin: 0 5%; }
+        #page61 .ui-content .imgwrap > div p {
+          font-family: 'HyundaiSansHead-Medium', sans-serif;
+          font-size: 2.2em;
+          line-height: 0.8;
+          margin-bottom: 20px; }
+          #page61 .ui-content .imgwrap > div p span {
+            font-size: 16px; }
+        #page61 .ui-content .imgwrap > div img.back {
+          display: none; }
+    #page61 .ui-content .graphwrap {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      margin-top: 45px; }
+      #page61 .ui-content .graphwrap > div {
+        display: inline-block;
+        width: 30%;
+        margin: 0 5%; }
+        #page61 .ui-content .graphwrap > div ul {
+          background: url("../images/day2/09_graph_ground.png") no-repeat;
+          background-size: 100% auto; }
+          #page61 .ui-content .graphwrap > div ul li {
+            display: inline-block; }
+
+@media only screen and (orientation: Portrait) {
+  #page61 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page61 .ui-content {
+    display: block; } }
+
+#page62 {
+  background: #000; }
+  #page62 .page_bg {
+    width: 80%;
+    margin: 0 auto; }
+  #page62 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page62 .ui-content .imgwrap {
+      width: 14%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page62 .ui-content .imgwrap img {
+        width: 100%; }
+    #page62 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px; }
+      #page62 .ui-content .textwrap:before, #page62 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page62 .ui-content .textwrap:after {
+        clear: both; }
+      #page62 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page62 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page62 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page62 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page62 .ui-content {
+    display: block; } }
+
+#page63 {
+  background: url("../images/day2/12_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page63 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page63 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page63 .ui-content .textwrap:before, #page63 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page63 .ui-content .textwrap:after {
+        clear: both; }
+      #page63 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page63 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page63 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page63 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page63 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page63 .ui-content {
+    display: block; } }
+
+#page64 {
+  background: url("../images/day2//13_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page64 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page64 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page64 .ui-content .textwrap:before, #page64 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page64 .ui-content .textwrap:after {
+        clear: both; }
+      #page64 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page64 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page64 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page64 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page64 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page64 .ui-content {
+    display: block; } }
+
+#page65 {
+  background: url("../images/ezgif.com-video-to-gif.gif") no-repeat;
+  background-size: 100% auto; }
+  #page65 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page65 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px; }
+    #page65 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px; }
+    #page65 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page65 .ui-content .textwrap:before, #page65 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page65 .ui-content .textwrap:after {
+        clear: both; }
+      #page65 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page65 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page65 .ui-content {
+    display: block; } }
+
+#page66 {
+  background: #000; }
+  #page66 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page66 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page66 .ui-content .textwrap:before, #page66 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page66 .ui-content .textwrap:after {
+        clear: both; }
+      #page66 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page66 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page66 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page66 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page66 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page66 .ui-content {
+    display: block; } }
+
+#page67 {
+  background: #000; }
+  #page67 .page_bg {
+    width: 80%;
+    margin: 0 auto; }
+  #page67 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page67 .ui-content .imgwrap {
+      width: 14%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page67 .ui-content .imgwrap img {
+        width: 100%; }
+    #page67 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px; }
+      #page67 .ui-content .textwrap:before, #page67 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page67 .ui-content .textwrap:after {
+        clear: both; }
+      #page67 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page67 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page67 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page67 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page67 .ui-content {
+    display: block; } }
+
+#page68 {
+  background: url("../images/day2/18_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page68 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page68 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page68 .ui-content .textwrap:before, #page68 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page68 .ui-content .textwrap:after {
+        clear: both; }
+      #page68 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page68 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page68 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page68 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page68 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page68 .ui-content {
+    display: block; } }
+
+#page69 {
+  background: url("../images/day2/19_photo.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+  #page69 .page_bg {
+    background: url("../images/day2/19_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    background-position: 50% 50%; }
+  #page69 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page69 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; }
+    #page69 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page69 .ui-content .textwrap {
+      max-width: 33%;
+      float: right;
+      margin-top: 45px;
+      padding: 0; }
+      #page69 .ui-content .textwrap:before, #page69 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page69 .ui-content .textwrap:after {
+        clear: both; }
+      #page69 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page69 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page69 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page69 .ui-content {
+    display: block; } }
+
+#page70 {
+  overflow: hidden; }
+  #page70 .page_bg {
+    background: url("../images/day2/21_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page70 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page70 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page70 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page70 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page70 .ui-content .textwrap:before, #page70 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page70 .ui-content .textwrap:after {
+        clear: both; }
+      #page70 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page70 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page70 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page70 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page70 .ui-content {
+    display: block; } }
+
+#page71 {
+  background: url("../images/day2/24_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page71 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page71 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page71 .ui-content .textwrap:before, #page71 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page71 .ui-content .textwrap:after {
+        clear: both; }
+      #page71 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page71 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page71 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page71 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page71 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page71 .ui-content {
+    display: block; } }
+
+#page72 {
+  background: url("../images/day2/25_photo.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+  #page72 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page72 .ui-content .main_wrap {
+      max-width: 50%;
+      float: right; }
+      #page72 .ui-content .main_wrap .textwrap {
+        max-width: 188px;
+        float: right; }
+        #page72 .ui-content .main_wrap .textwrap:before, #page72 .ui-content .main_wrap .textwrap:after {
+          content: "";
+          display: table; }
+        #page72 .ui-content .main_wrap .textwrap:after {
+          clear: both; }
+        #page72 .ui-content .main_wrap .textwrap .text_tip {
+          max-width: 20px;
+          margin-left: 10%;
+          float: right;
+          margin-right: 30%;
+          position: relative;
+          top: 3px; }
+          #page72 .ui-content .main_wrap .textwrap .text_tip img {
+            -ms-transform: rotate(-90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-90deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(-90deg); }
+        #page72 .ui-content .main_wrap .textwrap .text {
+          overflow: hidden; }
+      #page72 .ui-content .main_wrap .imgwrap {
+        max-width: 70%;
+        float: right;
+        margin-right: 25%; }
+        #page72 .ui-content .main_wrap .imgwrap img {
+          position: relative;
+          right: -10%;
+          top: 7px; }
+
+@media only screen and (orientation: Portrait) {
+  #page72 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page72 .ui-content {
+    display: block; } }
+
+#page73 {
+  background: url("../images/day2/26_Zürich_map_1.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page73 .page_bg {
+    animation: twinkle 1.5s infinite; }
+  #page73 .next_finger {
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%; }
+    #page73 .next_finger img {
+      left: calc(78% - 183px);
+      top: 41%; }
+  #page73 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page73 .ui-content .textwrap:before, #page73 .ui-content .textwrap:after {
+      content: "";
+      display: table; }
+    #page73 .ui-content .textwrap:after {
+      clear: both; }
+    #page73 .ui-content .textwrap .text_tip {
+      max-width: 20px;
+      margin-left: 10%;
+      float: right;
+      margin-right: 30%;
+      position: relative;
+      top: 3px; }
+      #page73 .ui-content .textwrap .text_tip img {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg); }
+    #page73 .ui-content .textwrap .text {
+      overflow: hidden; }
+      #page73 .ui-content .textwrap .text #go_page7 {
+        margin-top: 20px; }
+    #page73 .ui-content .imgwrap {
+      max-width: 64%; }
+      #page73 .ui-content .imgwrap img {
+        position: relative;
+        right: -10%;
+        top: 5px; }
+
+@media only screen and (orientation: Portrait) {
+  #page73 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page73 .ui-content {
+    display: block; } }
+
+#page74 {
+  background: url("../images/day1/landscape2/10_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page74 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page74 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page74 .ui-content .textwrap:before, #page74 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page74 .ui-content .textwrap:after {
+        clear: both; }
+      #page74 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page74 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page74 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page74 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page74 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page74 .ui-content {
+    display: block; } }
+
+#page75 {
+  overflow: hidden; }
+  #page75 .page_bg {
+    background: url("../images/day2/28_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page75 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page75 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page75 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page75 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page75 .ui-content .textwrap:before, #page75 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page75 .ui-content .textwrap:after {
+        clear: both; }
+      #page75 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page75 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page75 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page75 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page75 .ui-content {
+    display: block; } }
+
+#page76 {
+  background: url("../images/day2/29_photo.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 50%; }
+  #page76 .page_bg {
+    background: url("../images/day2/29_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 100%;
+    background-position: 50% 50%; }
+  #page76 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page76 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; }
+    #page76 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page76 .ui-content .textwrap {
+      max-width: 33%;
+      float: right;
+      margin-top: 45px;
+      padding: 0; }
+      #page76 .ui-content .textwrap:before, #page76 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page76 .ui-content .textwrap:after {
+        clear: both; }
+      #page76 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page76 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+    #page76 .ui-content .view_text {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      #page76 .ui-content .view_text p {
+        position: relative;
+        top: -3px;
+        right: 26px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 40px 10px 15px;
+        border-radius: 50px; }
+
+@media only screen and (orientation: Portrait) {
+  #page76 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page76 .ui-content {
+    display: block; } }
+
+#page77 {
+  overflow: hidden; }
+  #page77 .page_bg {
+    background: url("../images/day2/31_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page77 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page77 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page77 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page77 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page77 .ui-content .textwrap:before, #page77 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page77 .ui-content .textwrap:after {
+        clear: both; }
+      #page77 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page77 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page77 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page77 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page77 .ui-content {
+    display: block; } }
+
+#page78 {
+  background: url("../images/day2/35_photo.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+  #page78 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page78 .ui-content .main_wrap {
+      max-width: 50%;
+      float: right; }
+      #page78 .ui-content .main_wrap .textwrap {
+        max-width: 188px;
+        float: right; }
+        #page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
+          content: "";
+          display: table; }
+        #page78 .ui-content .main_wrap .textwrap:after {
+          clear: both; }
+        #page78 .ui-content .main_wrap .textwrap .text_tip {
+          max-width: 20px;
+          margin-left: 10%;
+          float: right;
+          margin-right: 30%;
+          position: relative;
+          top: 3px; }
+          #page78 .ui-content .main_wrap .textwrap .text_tip img {
+            -ms-transform: rotate(-90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-90deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(-90deg); }
+        #page78 .ui-content .main_wrap .textwrap .text {
+          overflow: hidden; }
+      #page78 .ui-content .main_wrap .imgwrap {
+        max-width: 70%;
+        float: right;
+        margin-right: 25%; }
+        #page78 .ui-content .main_wrap .imgwrap img {
+          position: relative;
+          right: -10%;
+          top: 7px; }
+
+@media only screen and (orientation: Portrait) {
+  #page78 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page78 .ui-content {
+    display: block; } }
+
+#page78 {
+  background: url("../images/day2/35_photo.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+  #page78 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page78 .ui-content .main_wrap {
+      max-width: 50%;
+      float: right; }
+      #page78 .ui-content .main_wrap .textwrap {
+        max-width: 188px;
+        float: right; }
+        #page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
+          content: "";
+          display: table; }
+        #page78 .ui-content .main_wrap .textwrap:after {
+          clear: both; }
+        #page78 .ui-content .main_wrap .textwrap .text_tip {
+          max-width: 20px;
+          margin-left: 10%;
+          float: right;
+          margin-right: 30%;
+          position: relative;
+          top: 3px; }
+          #page78 .ui-content .main_wrap .textwrap .text_tip img {
+            -ms-transform: rotate(-90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-90deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(-90deg); }
+        #page78 .ui-content .main_wrap .textwrap .text {
+          overflow: hidden; }
+      #page78 .ui-content .main_wrap .imgwrap {
+        max-width: 70%;
+        float: right;
+        margin-right: 25%; }
+        #page78 .ui-content .main_wrap .imgwrap img {
+          position: relative;
+          right: -10%;
+          top: 7px; }
+
+@media only screen and (orientation: Portrait) {
+  #page78 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page78 .ui-content {
+    display: block; } }
+
+#page80 {
+  background: #000; }
+  #page80 .page_bg {
+    width: 80%;
+    margin: 0 auto; }
+  #page80 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page80 .ui-content .imgwrap {
+      width: 14%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page80 .ui-content .imgwrap img {
+        width: 100%; }
+    #page80 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px; }
+      #page80 .ui-content .textwrap:before, #page80 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page80 .ui-content .textwrap:after {
+        clear: both; }
+      #page80 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page80 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page80 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page80 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page80 .ui-content {
+    display: block; } }
+
+#page81 {
+  background: url("../images/day2/38_photo.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+  #page81 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #page81 .ui-content .main_wrap {
+      max-width: 50%;
+      float: right; }
+      #page81 .ui-content .main_wrap .textwrap {
+        max-width: 188px;
+        float: right; }
+        #page81 .ui-content .main_wrap .textwrap:before, #page81 .ui-content .main_wrap .textwrap:after {
+          content: "";
+          display: table; }
+        #page81 .ui-content .main_wrap .textwrap:after {
+          clear: both; }
+        #page81 .ui-content .main_wrap .textwrap .text_tip {
+          max-width: 20px;
+          margin-left: 10%;
+          float: right;
+          margin-right: 30%;
+          position: relative;
+          top: 3px; }
+          #page81 .ui-content .main_wrap .textwrap .text_tip img {
+            -ms-transform: rotate(-90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-90deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(-90deg); }
+        #page81 .ui-content .main_wrap .textwrap .text {
+          overflow: hidden; }
+      #page81 .ui-content .main_wrap .imgwrap {
+        max-width: 65%;
+        float: right;
+        margin-right: 25%; }
+        #page81 .ui-content .main_wrap .imgwrap img {
+          position: relative;
+          right: -10%;
+          top: 7px; }
+
+@media only screen and (orientation: Portrait) {
+  #page81 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page81 .ui-content {
+    display: block; } }
+
+#page82 {
+  overflow: hidden; }
+  #page82 .page_bg {
+    background: url("../images/day2/39_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page82 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page82 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page82 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page82 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page82 .ui-content .textwrap:before, #page82 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page82 .ui-content .textwrap:after {
+        clear: both; }
+      #page82 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page82 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page82 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page82 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page82 .ui-content {
+    display: block; } }
+
+#page83 {
+  overflow: hidden; }
+  #page83 .page_bg {
+    background: url("../images/day2/40_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page83 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page83 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page83 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page83 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page83 .ui-content .textwrap:before, #page83 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page83 .ui-content .textwrap:after {
+        clear: both; }
+      #page83 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page83 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page83 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page83 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page83 .ui-content {
+    display: block; } }
+
+#page84 {
+  overflow: hidden; }
+  #page84 .page_bg {
+    background: url("../images/day2/40_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page84 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page84 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page84 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page84 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page84 .ui-content .textwrap:before, #page84 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page84 .ui-content .textwrap:after {
+        clear: both; }
+      #page84 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page84 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page84 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page84 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page84 .ui-content {
+    display: block; } }
+
+#page85 {
+  overflow: hidden; }
+  #page85 .page_bg {
+    background: url("../images/day2/42_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page85 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page85 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page85 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page85 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page85 .ui-content .textwrap:before, #page85 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page85 .ui-content .textwrap:after {
+        clear: both; }
+      #page85 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page85 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page85 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page85 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page85 .ui-content {
+    display: block; } }
+
+#page86 {
+  background: #000; }
+  #page86 .page_bg {
+    width: 80%;
+    margin: 0 auto; }
+  #page86 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page86 .ui-content .imgwrap {
+      width: 14%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page86 .ui-content .imgwrap img {
+        width: 100%; }
+    #page86 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px; }
+      #page86 .ui-content .textwrap:before, #page86 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page86 .ui-content .textwrap:after {
+        clear: both; }
+      #page86 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page86 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page86 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page86 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page86 .ui-content {
+    display: block; } }
+
+#page87 {
+  overflow: hidden; }
+  #page87 .page_bg {
+    background: url("../images/day2/45_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page87 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page87 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page87 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page87 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page87 .ui-content .textwrap:before, #page87 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page87 .ui-content .textwrap:after {
+        clear: both; }
+      #page87 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page87 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page87 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page87 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page87 .ui-content {
+    display: block; } }
+
+#page88 {
+  background: #000; }
+  #page88 .page_bg {
+    width: 80%;
+    margin: 0 auto; }
+  #page88 .ui-content {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+    #page88 .ui-content .imgwrap {
+      width: 14%;
+      display: inline-block;
+      margin-left: 3%; }
+      #page88 .ui-content .imgwrap img {
+        width: 100%; }
+    #page88 .ui-content .textwrap {
+      display: inline-block;
+      max-width: 55%;
+      margin-bottom: 20px; }
+      #page88 .ui-content .textwrap:before, #page88 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page88 .ui-content .textwrap:after {
+        clear: both; }
+      #page88 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        position: relative;
+        top: 75px;
+        left: 1px; }
+      #page88 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page88 .ui-content .textwrap .text:after {
+          content: '';
+          display: block;
+          /* or whatever else than inline */
+          clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page88 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page88 .ui-content {
+    display: block; } }
+
+#page89 {
+  background: url("../images/day1/landscape2/48_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page89 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page89 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page89 .ui-content .textwrap:before, #page89 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page89 .ui-content .textwrap:after {
+        clear: both; }
+      #page89 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page89 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page89 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page89 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page89 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page89 .ui-content {
+    display: block; } }
+
+#page90 {
+  background: url("../images/day1/landscape2/49_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page90 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page90 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page90 .ui-content .textwrap:before, #page90 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page90 .ui-content .textwrap:after {
+        clear: both; }
+      #page90 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page90 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page90 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page90 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page90 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page90 .ui-content {
+    display: block; } }
+
+#page91 {
+  overflow: hidden; }
+  #page91 .page_bg {
+    background: url("../images/day2/50_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page91 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page91 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page91 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page91 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page91 .ui-content .textwrap:before, #page91 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page91 .ui-content .textwrap:after {
+        clear: both; }
+      #page91 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page91 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page91 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page91 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page91 .ui-content {
+    display: block; } }
+
+#page92 {
+  overflow: hidden; }
+  #page92 .page_bg {
+    background: url("../images/day2/42_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page92 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page92 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page92 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page92 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page92 .ui-content .textwrap:before, #page92 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page92 .ui-content .textwrap:after {
+        clear: both; }
+      #page92 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page92 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page92 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page92 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page92 .ui-content {
+    display: block; } }
+
+#page93 {
+  background: url("../images/day2/52_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page93 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page93 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px;
+      z-index: 10; }
+    #page93 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px;
+      z-index: 10; }
+    #page93 .ui-content .img_twinkle {
+      animation: twinkle 1.5s infinite; }
+    #page93 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page93 .ui-content .textwrap:before, #page93 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page93 .ui-content .textwrap:after {
+        clear: both; }
+      #page93 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page93 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page93 .ui-content {
+    display: block; } }
+
+#page94 {
+  background: url("../images/day1/landscape2/54_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page94 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page94 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page94 .ui-content .textwrap:before, #page94 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page94 .ui-content .textwrap:after {
+        clear: both; }
+      #page94 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page94 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page94 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page94 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page94 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page94 .ui-content {
+    display: block; } }
+
+#page95 {
+  background: url("../images/day1/landscape2/55_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page95 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page95 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page95 .ui-content .textwrap:before, #page95 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page95 .ui-content .textwrap:after {
+        clear: both; }
+      #page95 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page95 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page95 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page95 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page95 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page95 .ui-content {
+    display: block; } }
+
+#page96 {
+  background: url("../images/day1/landscape2/56_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page96 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page96 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page96 .ui-content .textwrap:before, #page96 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page96 .ui-content .textwrap:after {
+        clear: both; }
+      #page96 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page96 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page96 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page96 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page96 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page96 .ui-content {
+    display: block; } }
+
+#page97 {
+  background: url("../images/day1/landscape2/57_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page97 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page97 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page97 .ui-content .textwrap:before, #page97 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page97 .ui-content .textwrap:after {
+        clear: both; }
+      #page97 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page97 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page97 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page97 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page97 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page97 .ui-content {
+    display: block; } }
+
+#page98 {
+  overflow: hidden; }
+  #page98 .page_bg {
+    background: url("../images/day2/58_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page98 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page98 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page98 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page98 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page98 .ui-content .textwrap:before, #page98 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page98 .ui-content .textwrap:after {
+        clear: both; }
+      #page98 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page98 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page98 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page98 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page98 .ui-content {
+    display: block; } }
+
+#page99 {
+  overflow: hidden; }
+  #page99 .page_bg {
+    background: url("../images/day2/45_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page99 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page99 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page99 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page99 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page99 .ui-content .textwrap:before, #page99 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page99 .ui-content .textwrap:after {
+        clear: both; }
+      #page99 .ui-content .textwrap .text {
+        overflow: hidden;
+        padding-top: 39%; }
+        #page99 .ui-content .textwrap .text .text_img2 {
+          height: 24%;
+          position: absolute;
+          top: 5%;
+          right: 25%;
+          overflow: hidden;
+          width: 49%;
+          border-bottom: 1px solid #ffffff; }
+          #page99 .ui-content .textwrap .text .text_img2 img {
+            width: 131%;
+            position: relative;
+            right: 21%; }
+
+@media only screen and (orientation: Portrait) {
+  #page99 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page99 .ui-content {
+    display: block; } }
+
+#page100 {
+  background: url("../images/day2/52_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page100 .ui-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+    #page100 .ui-content .imgwrap {
+      width: 80px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 50px;
+      z-index: 10; }
+    #page100 .ui-content .start_text {
+      max-width: 60px;
+      position: absolute;
+      bottom: 125px;
+      left: 77px;
+      z-index: 10; }
+    #page100 .ui-content .img_twinkle {
+      animation: twinkle 1.5s infinite; }
+    #page100 .ui-content .textwrap {
+      max-width: 63%;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0;
+      position: absolute;
+      left: 134px;
+      bottom: 30px; }
+      #page100 .ui-content .textwrap:before, #page100 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page100 .ui-content .textwrap:after {
+        clear: both; }
+      #page100 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        float: left;
+        margin-top: 20px; }
+
+@media only screen and (orientation: Portrait) {
+  #page100 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page100 .ui-content {
+    display: block; } }
+
+#page101 {
+  background: url("../images/day2/70_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page101 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page101 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page101 .ui-content .textwrap:before, #page101 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page101 .ui-content .textwrap:after {
+        clear: both; }
+      #page101 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page101 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page101 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page101 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page101 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page101 .ui-content {
+    display: block; } }
+
+#page102 {
+  background: url("../images/day2/71_photo.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 50%; }
+  #page102 .page_bg {
+    background: url("../images/day2/71_photo.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 100%;
+    background-position: 50% 50%; }
+  #page102 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page102 .ui-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; }
+    #page102 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page102 .ui-content .textwrap {
+      max-width: 33%;
+      float: right;
+      margin-top: 45px;
+      padding: 0; }
+      #page102 .ui-content .textwrap:before, #page102 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page102 .ui-content .textwrap:after {
+        clear: both; }
+      #page102 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page102 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+
+@media only screen and (orientation: Portrait) {
+  #page102 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page102 .ui-content {
+    display: block; } }
+
+#page103 {
+  overflow: hidden; }
+  #page103 .page_bg {
+    background: url("../images/day1/landscape2/18_photo_1.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    height: 100%; }
+  #page103 a.next_finger {
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    width: 25%; }
+  #page103 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #page103 .ui-content .imgwrap {
+      max-width: 45%;
+      margin: 0 auto;
+      margin-top: 5px; }
+    #page103 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page103 .ui-content .textwrap:before, #page103 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page103 .ui-content .textwrap:after {
+        clear: both; }
+
+@media only screen and (orientation: Portrait) {
+  #page103 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page103 .ui-content {
+    display: block; } }
+
+#page104 {
+  background: url("../images/day2/76_photo.jpg") no-repeat;
+  background-size: 100% auto; }
+  #page104 .ui-content {
+    margin: 0;
+    padding: 0;
+    max-width: 33%;
+    float: right;
+    height: 100%;
+    overflow-x: initial; }
+    #page104 .ui-content .textwrap {
+      margin-top: 45px;
+      padding: 0; }
+      #page104 .ui-content .textwrap:before, #page104 .ui-content .textwrap:after {
+        content: "";
+        display: table; }
+      #page104 .ui-content .textwrap:after {
+        clear: both; }
+      #page104 .ui-content .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 30%;
+        position: relative;
+        top: 3px; }
+        #page104 .ui-content .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page104 .ui-content .textwrap .text {
+        overflow: hidden; }
+        #page104 .ui-content .textwrap .text #go_page13 {
+          margin-top: 10px; }
+
+@media only screen and (orientation: Portrait) {
+  #page104 .ui-content {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  #page104 .ui-content {
+    display: block; } }

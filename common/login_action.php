@@ -66,7 +66,7 @@
 	$HY_LMS_CONTRY = $LMS_CONTRY;
 	$HY_LMS_NAME = $LMS_NAME;
 	$HY_LMS_GB = $LMS_GB;
-	$HY_LMS_SEQ = $row[0]["LMS_SEQ"];
+	$HY_LMS_SEQ = $LMS_SEQ;
 
 	
 
