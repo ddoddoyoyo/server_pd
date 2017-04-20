@@ -1481,7 +1481,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox32_1" class="textbox">
-									<p>With sensing the distance between front car, even driver is not pushing the acceleration or brake pedal, it's driving on driver's setting demand with keeping the constant distance between front car.</p>
+									<p>LKAS is the high-tech feature for preventing lane crossing.A frontal camera realizes the lane informations so that driver won’t violate the other lane.</p>
 								</div>
 							</div>
 						</div>
