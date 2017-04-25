@@ -214,7 +214,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>From now on, we will be moving to the Stelvio Pass where I think the highlight place of this trip.</p>
+						<p>From here, we will move to the Stelvio Pass where I think is the highlight of this trip.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -224,7 +224,7 @@
 				<img src="../images/person/james_2.png" alt="james">
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/03.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/045.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page58" class="container">
@@ -243,10 +243,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Stlelvio Pass is like a dream place for winding enthusiasts.</p>
+						<p>With winding roads, Stelvio Pass is like a dream place for driving enthusiasts</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>And a lot of famous models from various car brands comes here for performance tests.</p>
+						<p>And a lot of famous models from other car brands go through performance tests here.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -261,6 +261,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 			</div>
+			<audio class="audio1" src="../tts/day2/046.mp3"></audio>
+			<audio class="audio2" src="../tts/day2/047.mp3"></audio>
 		</div>
 		<!-- <audio class="audio1" src="../tts/day2/04.mp3"></audio>
 		<audio class="audio2" src="../tts/day2/05.mp3"></audio> -->
@@ -287,10 +289,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Here we can still see some snow yet. But weather is just so fine for driving!</p>
+						<p>Here we can still see some snow left, but the weather is just fine for driving!</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>Here we are at Stelvio Pass.<br>Shall I accelerate from now?</p>
+						<p>Here, we are at Stelvo Pass. Shall I start accelerating?</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l" >
@@ -306,8 +308,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/06.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/07.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/048.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/049.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page60" class="container">
@@ -326,7 +328,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>The spec of my car is 1.6 Turbo-GDI.<br>Did you know that this one has higher horsepower than Golf 1.8?</p>
+						<p>My car has a 1.6 Turbo-GDI engine. Did you know that this one has higher horsepower than the Golf 1.8 Turbo engine?</p>
 					</div>
 				</div>
 				<a href="#page61" id="go_page61" class="next_p_btn ui-btn go-next">
@@ -334,7 +336,7 @@
 			</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/08.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/050.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page61" class="container">
@@ -396,7 +398,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>i30's GAMMA 1.6 T-GDI engine shows higher horsepower and torque compare to Golf 1.8T. But unfortunately, most of people didn't recognized this.</p>
+							<p>The Gamma 1.6 Turbo-GDI engine of i30 has higher horsepower and torque than the Golf 1.8 Turbo engine. Unfortunately, not many people are aware of this.</p>
 						</div>	
 					</div>
 				</div>	
@@ -405,7 +407,6 @@
 			<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 		</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/09.mp3"></audio> -->
 	</section>
 
 	<!--<section data-role="page" id="page62" class="container">
@@ -454,10 +455,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Transmission is 7 speed DCT.<br>Can you believe it?<br>A strong engine with quick shift.</p>
+						<p>This car also has 7 speed Dual Clutch Transmission(DCT). A strong engine with quick shift. Can you believe it? </p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>There is no power loss on shifting, because i30 contains dual-clutch transmission. It will show a true value on winding driving for sure.</p>
+						<p>DCT has that direct feel without power loss when switching gears.You can feel the true value of that characteristic  when winding.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -474,8 +475,8 @@
 			</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/10.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/11.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/051.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/052.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page63001" class="container">
@@ -529,7 +530,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>Dual-clutch accelerator deceleration delivers maximum power to a fast-shifting engine at winding road.</p>
+							<p>The fast-shifting dual clutch transmission delivers the maximum power of engine to make it easy to accelerate and decelerate on winding roads.</p>
 						</div>	
 					</div>
 				</div>	
@@ -561,7 +562,18 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>We are escaping hairpin section, a grip force from rear suspension is core thing. see! there is no slip on tolerable speed.</p>
+						<p>When we escape a hairpin section like here, a grip force from rear suspension is a core thing.</p>
+					</div>
+					<div id="textbox2" class="textbox">
+						<p>And do you see? there is no slip on a tolerable speed.</p>
+					</div>
+					<div class="btn_box">
+						<a href="#" id="go_next1" class="text_btn_l">
+							<img src="../images/button/btn_next_talk_arrow_2.png" alt="next button">
+						</a>
+						<a href="#" id="go_back" class="text_btn_r">
+							<img src="../images/button/btn_next_talk_arrow_1.png" alt="next button">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -569,7 +581,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/14.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/053.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/054.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page65" class="container">
@@ -604,10 +617,10 @@
 				</div>
 				<div class="text">
 					<div id="textbox1" class="textbox">
-						<p>Did you know that multilink system is usually used on sportcars to increase the road grip force?<br>i30 also uses multilink system with holding 5 links so it can react to any type of roads to keep stable grip force.</p>
+						<p>Do you remember the multi-link system that made driving on the road of Milano stable?<br>That multi-link system also contribute to the stable rear grip force on road when cornering at a high speed.</p>
 					</div>	
 					<div id="textbox2" class="textbox">
-						<p>Especially when we are driving on winding roads, you will see the true value of multilink suspension system.</p>
+						<p>Especially when we are driving on winding roads, you will see the true value of the multi-link suspension system.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -664,7 +677,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>The chassis of i30 used Structural adhesivesto improve the body rigidity and durability. Structural adhesives is used 112M.</p>
+							<p>The chassis of i30 used high strength metal adhesive to improve the body rigidity and durability.<br>If I’m not wrong 112 meters of metal adhesive were used.</p>
 						</div>	
 					</div>
 				</div>	
@@ -721,7 +734,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Wow! That's why I feel so connected with the car when I'm on high speed in continuous corners.<br>Such a thrill, I'm loving it!!</p>
+						<p>Ah Ha! that’s why I felt like one body  with the car when I was repetitively cornering at a high speed.<br>Such a thrill, I’m loving it!!</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -732,7 +745,7 @@
 			</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/19.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/055.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page69" class="container">
@@ -766,7 +779,7 @@
 				</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/20.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/056.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page70" class="container">
@@ -789,17 +802,17 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Stelvio Pass is famous for its tremendous views of Alps range becomes a beautiful scene</p>
+						<p>Do you know why Stelvio Pass became a world famous winding road? As it connects various Alps mountains, it gives us tremendous views.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>These are the roads we just have passed pretty dizzy right?<br>How many hairpins did we passed?<br>It was such a fun.</p>
+						<p>These are the roads we just have passed pretty dizzy right?<br>How many hairpins did we pass?<br>It was such a fun.</p>
 					</div>
 					<div id="textbox3" class="textbox">
-						<p>Powerful engine, 7 DCT, Strong body rigidity, Multilink rear-suspension. These combination makes i30 such a fun car!</p>
+						<p>Noteworthy powerful engine 7 Speed Dual Clutch Transmission Strong body rigidity Multilink rear-suspension system</p>
 					</div>
-					<!-- <div id="textbox4" class="textbox">
-						<p>These combination makes i30 such a fun car!</p>
-					</div> -->
+					<div id="textbox4" class="textbox">
+						<p>The combination of all of these features makes i30 such a fun car to drive!</p>
+					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
 							<img src="../images/button/btn_next_talk_arrow_2.png" alt="next button">
@@ -813,10 +826,11 @@
 			<a href="#page71" id="go_page71" class="next_p_btn ui-btn go-next">
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
+			<audio class="audio1" src="../tts/day2/057.mp3"></audio>
+			<audio class="audio2" src="../tts/day2/058.mp3"></audio>
+			<audio class="audio3" src="../tts/day2/059.mp3"></audio>
+			<audio class="audio4" src="../tts/day2/060.mp3"></audio>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/21.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/22.mp3"></audio>
-		<audio class="audio3" src="../tts/day2/23.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page71" class="container">
@@ -832,7 +846,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>How was it?<br>Wasn't it scared though?<br>I hope you enjoyed in this magnificent winding courses.<br>Because I fully enjoyed.</p>
+						<p>How was it?<br>Wasn’t it scared though?<br>I hope you enjoyed the magnificent winding courses.<br>because I definitely did.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -843,7 +857,7 @@
 			</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/24.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/061.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page72" class="container">
@@ -861,7 +875,7 @@
 			<div class="textwrap">	
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Hurry up, let's get down.<br>We will be moving to the one of greatest camping spot in Europe.</p>
+						<p>Hurry up, let's go back down.<br>We will move to the one of the greatest camping spots in Europe.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -875,7 +889,7 @@
 			</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/25.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/062.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page73" class="container">
@@ -897,7 +911,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>We will be going to the place called Fischers Fritz in Zurich, Switzerland.<br>Click on the Zurich.</p>
+						<p>We will go to the place called Fischers Fritz in Zurich, Switzerland.<br>Click on the Zurich.</p>
 					</div>
 					<!-- <div id="textbox2" class="textbox">
 						<p>In Switzerland, we will be stop at Zurich and Bern to get to final spot Strasbourg.</p>
@@ -910,7 +924,7 @@
 				<img src="../images/person/james_7.png" alt="james">
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/26.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/063.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page74" class="container">
@@ -926,7 +940,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>As you know, Zurich is the biggest city in Switzerland.<br>There is beautiful Zurich lake right next to and Limit river.</p>
+						<p>As you know, Zurich is the biggest city in Switzerland.<br>There is beautiful Zurich lake right next to the city and also the Limit river .</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -937,7 +951,7 @@
 			</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/27.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/064.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page75" class="container">
@@ -960,7 +974,7 @@
 				</div>
 				<div class="text">		
 					<div id="textbox1" class="textbox">
-						<p>Before we take a look a downtown, We gotta unpack first so let's drive straight to the camping spot.</p>
+						<p>Before we look around the downtown, let’s first drive straight to the camping spot and unpack</p>
 					</div>
 				</div>
 			</div>
@@ -968,7 +982,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/28.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/065.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page76" class="container">
@@ -1002,7 +1016,7 @@
 				</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/29.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/066.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page77" class="container">
@@ -1025,10 +1039,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>It's the one of most famous camping spot in Europe. So a lot of camping lovers visit here.</p>
+						<p>It’s one of the most famous camping spots in Europe. that a lot of camping lovers visit here.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>I've always wanted to camp here for a long time also. So we'll be unpacking here.</p>
+						<p>I’ve always wanted to camp here for a long time as well.<br>Let’s unpack here</p>
 					</div>
 					<!-- <div id="textbox3" class="textbox">
 						<p>Facility is good, and riverside is so cozy and beautiful.</p>
@@ -1050,8 +1064,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/30.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/31.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/067.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/068.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page78" class="container">
@@ -1069,7 +1083,7 @@
 			<div class="textwrap">	
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>i30 is really spacious car.<br>As you can see the trunk, its so roomy.<br>We could load all of our luggage for this trip.</p>
+						<p>i30 is really a spacious car.<br>As you can see, the trunk, is so roomy.<br>We could load all the luggage we need for this trip.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1083,7 +1097,7 @@
 			</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/32.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/069.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page79" class="container">
@@ -1123,7 +1137,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>Brand new i30 increased the luggage capacity until 395L, so it boasts very spacious trunk.</p>
+							<p>Brand new i30 increased the luggage capacity to 395L, boasting its very spacious trunk.</p>
 						</div>	
 					</div>
 				</div>	
@@ -1133,8 +1147,6 @@
 				 <img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a> 
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/33.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/34.mp3"></audio> -->
 	</section>
 
 	<!--<section data-role="page" id="page80" class="container">
@@ -1182,7 +1194,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>Wow, it can load really a lot of baggage.</p>
+							<p>Wow, it really can load a lot of things.</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1196,7 +1208,7 @@
 				</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/35.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/070.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page82" class="container">
@@ -1226,7 +1238,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/36.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/071.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page83" class="container">
@@ -1336,7 +1348,7 @@
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
 				</div>
 				<div class="text">	
-					<p>i30 offers mutual internet, mobile service, remote control, voice assistance for navigation and phone call via Android Auto.<br>It's possible to use most of smart features.</p>
+					<p>i30 offers mutual internet, mobile service, remote control, voice assistance for navigation and phone call via Android Auto.<br>You can use most of the smartphone functions.</p>
 				</div>
 			</div>
 			<a href="#page89" id="go_page89" class="next_p_btn ui-btn go-next">
@@ -1398,7 +1410,7 @@
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
 				</div>
 				<div class="text">	
-					<p>i30 supports Apple car play so that able to use navigation, phone call and music with simple pairing.</p>
+					<p>i30 supports Apple car play where, after simple pairing ,you can use the navigation, make a phone call, and play music.</p>
 				</div>
 			</div>
 			<a href="#page89" id="go_page89" class="next_p_btn ui-btn go-next">
@@ -1421,7 +1433,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>We gotta volume up for pitching tent.</p>
+						<p>Why don’t we turn the volume up while we pitch the tent, buddy.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -1432,7 +1444,7 @@
 			</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/40.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/072.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page90" class="container">
@@ -1449,7 +1461,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>You have a serious good taste on music.<br>Come on we gotta get done before sunset.</p>
+							<p>You seriously have a good taste in music.<br>Come on, we gotta get done before sunset.</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1463,7 +1475,7 @@
 				</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/41.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/073.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page91" class="container">
@@ -1494,7 +1506,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/42.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/074.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page92" class="container">
@@ -1571,7 +1583,7 @@
 				</div>
 				<div class="text">
 					<div id="textbox1" class="textbox">
-						<p>You can charge your phone conveniently via wireless charging.<br>When charging is completed, the charging completion lamp changes to green color!</p>
+						<p>You can conveniently charge your phone with the wireless charger.<br>When charging is completed, the charging lamp turns into green!</p>
 					</div>
 				</div>
 			</div>
@@ -1610,7 +1622,7 @@
 				</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/45.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/075.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page95" class="container">
@@ -1629,7 +1641,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Alright, such a moody night.<br>Let me play a song.</p>
+						<p>Alright, let me play a song for this great night.</p>
 					</div>
 				</div>
 			</div>
@@ -1637,7 +1649,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/46.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/076.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page96" class="container">
@@ -1654,7 +1666,7 @@
 				
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>It's been a really long time doing camping right?<br>Let's take a sleep for now and take a look zurich tomorrow?</p>
+						<p>Let’s have a good sleep for now and take a look at Zurich tomorrow?</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -1665,7 +1677,7 @@
 					<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 				</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/47.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/077.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page97" class="container">
@@ -1694,7 +1706,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/48.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/078.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page98" class="container">
@@ -1725,7 +1737,7 @@
 					<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 				</a>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/49.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/079.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page99" class="container">
@@ -1783,7 +1795,7 @@
 				</div>
 				<div class="text">
 					<div id="textbox1" class="textbox">
-						<p>There is a one touch folding function on i30, so one touch click here seats folds right away.</p>
+						<p>With the one touch folding convenience function, you can fold the rear seats with only one touch of a latch.</p>
 					</div>
 				</div>
 			</div>
@@ -1808,7 +1820,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>Okay, all the luggages loaded.<br>Let's move on.</p>
+							<p>okay, everything’s loaded.<br>Let’s move on.</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1822,7 +1834,7 @@
 				</a>
 			</div>
 		</div>
-		<!-- <audio class="audio1" src="../tts/day2/51.mp3"></audio> -->
+		<audio class="audio1" src="../tts/day2/080.mp3"></audio>
 	</section>
 
 	<!-- <section data-role="page" id="page102" class="container">
@@ -1962,7 +1974,7 @@
 </div>
 
 
-<!-- <a href="#page69">이동!!!!!!!!!</a>
-<a href="#page90">이동!!!!!!!!!</a> -->
+<!-- <a href="#page81">이동!!!!!!!!!</a> -->
+
 
 

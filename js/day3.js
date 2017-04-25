@@ -8,8 +8,47 @@ $(document).ready(function() {
 			 if($("#"+pageid+" #go_next1").css("display") == "none"){
 				 $("#"+pageid+" #go_next1").show(); 
 			 }
+		});
+
+
+		 //뒤로가기 시  audio 다시 재생
+		audio_pause();
+
+		$('section').each(function(idx,obj){
+			 var pageid = $(obj).attr("id");
+			 if($("#"+pageid).hasClass("ui-page-active")){
+				$("#"+pageid).prev().find(".audio1").trigger('play'); 
+				 //$("#"+pageid).find(".audio1").trigger('play'); 
+			 }
 		 });
 	});
+
+	$(".next_p_btn, .next_finger").click(function(){
+		audio_pause();
+		$('section').each(function(idx,obj){
+			 var pageid = $(obj).attr("id");
+			 if($("#"+pageid).hasClass("ui-page-active")){
+				$("#"+pageid).next().find(".audio1").trigger('play'); 
+			}
+		});
+	});
+
+
+	//오디오 일시정지
+	function audio_pause(){
+	$("audio").each(function(){ 
+			this.pause();
+			if (!isNaN(this.duration)) {
+				this.currentTime = 0;
+			}
+		});
+	}
+
+	//오디오 플레이
+	function audio_play(pNum,num){
+		audio_pause();
+		$("#page"+pNum).find(".audio"+num).trigger('play');
+	}
 	
 	$("#mokup, #wrap.mobile").addClass("landscape");
 	$(".btn_device").hide();
@@ -26,13 +65,13 @@ $(document).ready(function() {
 	var next_Count;
 	$("#page0").on({
 		"pagebeforeshow" : function(){
-			$("#page0 .textwrap, #page0 .textbox,#page0 .next_finger,#page0 #go_back").hide();
+			$("#page0 .textwrap, #page0 .textbox,#page0 .next_finger,#page0 #go_back, #page0 .next_finger").hide();
 			$("#page0 .imgwrap img").css({"top":"200px"});
 		},
 		"pageshow": function(){
 			$("#page0 .imgwrap img").animate({"top":"5px"},500);
 			$("#page0 .textwrap, #page0 #textbox0_1,#page0 #go_next1").delay(500).fadeIn(500);
-			$("#page0 .next_finger").delay(1000).fadeIn(500);
+			// $("#page0 .next_finger").delay(1000).fadeIn(500);
 			next_Count=1;
 		}
 	});
@@ -41,10 +80,12 @@ $(document).ready(function() {
 		if (next_Count == 1) {
 			$("#page0 .textbox").hide();
 			$("#page0 .textwrap,#textbox0_2, #page0 #go_back, #page0 #go_next1").fadeIn(500);
+			audio_play(0,2);
 		}
 		else { //next_Count == 2
 			$("#page0 .textbox, #page0 #go_next1").hide();
-			$("#page0 .textwrap,#textbox0_3, #page0 #go_back").fadeIn(500);
+			$("#page0 .textwrap,#textbox0_3, #page0 #go_back, #page0 .next_finger").fadeIn(500);
+			audio_play(0,3);
 		}
 		next_Count++;
 	});
@@ -55,10 +96,12 @@ $(document).ready(function() {
 			$(this).hide();
 			$("#page0 .textbox, #page0 #go_back").hide();
 			$("#page0 .textwrap, #textbox0_1, #page0 #go_next1").fadeIn(500);
+			audio_play(0,1);
 		}
 		else if (next_Count == 3) {
 			$("#page0 .textbox").hide();
 			$("#page0 .textwrap, #textbox0_2, #page0 #go_next1, #page0 #go_back").fadeIn(500);
+			audio_play(0,2);
 		}
 		next_Count--;
 	});
@@ -185,6 +228,7 @@ $(document).ready(function() {
 		if(next_Count == 1){
 		    $("#page4 #textbox1, #page4 #go_next1").hide();
 		    $("#page4 #textbox2, #page4 #go_back, #page4 .next_p_btn").show();
+		    audio_play(4,2);
 		} 
 		next_Count++;
 	});
@@ -196,6 +240,7 @@ $(document).ready(function() {
 			$(this).hide();
 			$("#page4 #textbox1, #page4 #go_next1").show();
 			$("#page4 #textbox2, #page4 .next_p_btn").hide();
+			audio_play(4,1);
 		}
 		next_Count--;
 	});
@@ -319,7 +364,7 @@ $(document).ready(function() {
 			engineArr[parseInt($(this).attr('alt'))] = '1';
 
 			if (engineArr.join('') == '111')
-				$("#page9 .titlewrap .text_i #textbox1 p").html('Pick one which is your favorite');
+				$("#page9 .titlewrap .text_i #textbox1 p").html('Pick your favorite engine');
 
 		}
 		else if (engineArr.join('') == '111') {
@@ -407,6 +452,7 @@ $(document).ready(function() {
 			$('#page12').queue(function() {
 				$(this).css({"background-image":"url(../images/day3/21_photo.jpg)", "background-size":"100% auto"}).dequeue();
 			});
+			audio_play(12,2);
 		}
 		next_Count++;
 	});
@@ -422,6 +468,7 @@ $(document).ready(function() {
 			$('#page12').queue(function() {
 				$(this).css({"background-image":"url(../images/day3/20_photo.jpg)", "background-size":"100% auto"}).dequeue();
 			});
+			audio_play(12,1);
 		}
 		next_Count--;
 	});
@@ -511,6 +558,7 @@ $(document).ready(function() {
 	});
 
 	$("#page17 .next_finger").click(function() {
+		audio_pause();
 		$(this).hide();
 		$('#page17 .ui-content')
 			.delay(500)
@@ -549,6 +597,7 @@ $(document).ready(function() {
 			$("#page18 .page_bg").animate({"left":"0"},500);
 			$("#page18 .textwrap, #page18 #go_back, #textbox18_2").delay(500).fadeIn(500);
 			$("#page18 .textbox").hide();
+			audio_play(18,2);
 		} else if (next_Count == 2) {
 			// $('#page18 .page_bg')
 			// .fadeOut()
@@ -560,6 +609,7 @@ $(document).ready(function() {
 			$("#page18 .page_bg").animate({"left":"0"},500);
 			$("#page18 .textwrap,#page18 .next_p_btn, #page18 #textbox18_3").delay(500).fadeIn(500);
 			$("#page18 #go_next1, #page18 .textbox").hide();
+			audio_play(18,3);
 		}
 		next_Count++;
 	});
@@ -581,6 +631,7 @@ $(document).ready(function() {
 			$("#page18 .page_bg").animate({"left":"0"},500);
 			$("#page18 .textwrap, #textbox18_1").delay(500).fadeIn(500);
 			$("#page18 .textbox, #page18 .next_p_btn").hide();
+			audio_play(18,1);
 		} else if (next_Count == 3) {
 			// $('#page18 .page_bg')
 			// .fadeOut()
@@ -592,6 +643,7 @@ $(document).ready(function() {
 			$("#page18 .page_bg").animate({"left":"0"},500);
 			$("#page18 .textwrap, #page18 #go_next1,#textbox18_2").delay(500).fadeIn(500);
 			$("#page18 .textbox, #page18 .next_p_btn").hide();		
+			audio_play(18,2);
 		}
 		next_Count--;
 	});
@@ -619,13 +671,13 @@ $(document).ready(function() {
 
 	$("#page2101").on({
 		"pagebeforeshow" : function(){
-			$("#page2101 .textwrap, #page2101 .textbox,#page2101 .next_finger,#page2101 #go_back").hide();
+			$("#page2101 .textwrap, #page2101 .textbox, #page2101 .next_finger,#page2101 #go_back").hide();
 			$("#page2101 .imgwrap img").css({"top":"200px"});
 		},
 		"pageshow": function(){
 			$("#page2101 .imgwrap img").animate({"top":"5px"},500);
 			$("#page2101 .textwrap, #page2101 #textbox0_1,#page2101 #go_next1").delay(500).fadeIn(500);
-			$("#page2101 .next_finger").delay(1000).fadeIn(500);
+			// $("#page2101 .next_finger").delay(1000).fadeIn(500);
 			next_Count=1;
 		}
 	});
@@ -633,7 +685,8 @@ $(document).ready(function() {
 		$("#page2101 .textwrap").hide();
 		if (next_Count == 1) {
 			$("#page2101 .textbox, #page2101 #go_next1").hide();
-			$("#page2101 .textwrap,#textbox0_2, #page2101 #go_back").fadeIn(500);
+			$("#page2101 .textwrap,#textbox0_2, #page2101 #go_back, #page2101 .next_finger").fadeIn(500);
+			audio_play(2101,2);
 		}
 		next_Count++;
 	});
@@ -644,6 +697,7 @@ $(document).ready(function() {
 			$(this).hide();
 			$("#page2101 .textbox, #page2101 #go_next1, #page2101 .next_p_btn").hide();
 			$("#page2101 .textwrap, #textbox0_1, #page2101 #go_next1").fadeIn(500);
+			audio_play(2101,1);
 		}
 		next_Count--;
 	});
@@ -713,6 +767,7 @@ $(document).ready(function() {
 		if(next_Count == 1){
 		    $("#page26 #textbox1, #page26 #go_next1").hide();
 		    $("#page26 .textwrap,#page26 #textbox2, #page26 #go_back, #page26 .next_p_btn").fadeIn(500);
+		    audio_play(26,2);
 		} 
 		next_Count++;
 	});
@@ -725,6 +780,7 @@ $(document).ready(function() {
 			$(this).hide();
 			$("#page26 .textwrap,#page26 #textbox1, #page26 #go_next1").fadeIn(500);
 			$("#page26 #textbox2, #page26 .next_p_btn").hide();
+			audio_play(26,1);
 		}
 		next_Count--;
 	});
@@ -1009,6 +1065,7 @@ $(document).ready(function() {
 	});
 
 	$("#page41 .next_finger").click(function() {
+		audio_pause();
 		$(this).hide();
 		$('#page41 .ui-content')
 			.delay(500)
@@ -1050,6 +1107,7 @@ $(document).ready(function() {
 			$("#page42 .textbox, #page42 .textwrap").hide();
 			$("#page42 .textwrap").delay(500).fadeIn(500);
 			$("#textbox42_2").show();
+			audio_play(42,2);
 		} else if (next_Count == 2) {
 			// $('#page42 .page_bg')
 			// .fadeOut()
@@ -1062,6 +1120,7 @@ $(document).ready(function() {
 			$("#page42 #go_next1, #page42 .textbox,  #page42 .textwrap").hide();
 			$("#page42 .next_p_btn, #page42 #textbox42_3").show();
 			$("#page42 .textwrap").delay(500).fadeIn(500);
+			audio_play(42,3);
 		}
 		next_Count++;
 	});
@@ -1083,6 +1142,7 @@ $(document).ready(function() {
 			$("#page42 .textbox, #page42 .textwrap, #page42 .next_p_btn").hide();
 			$("#page42 .textwrap").delay(500).fadeIn(500);
 			$("#textbox42_1").show();
+			audio_play(42,1);
 		} else if (next_Count == 3) {
 			$('#page42 #go_next1').show()
 			// $('#page42 .page_bg')
@@ -1096,6 +1156,7 @@ $(document).ready(function() {
 			$("#page42 .textbox, #page42 .textwrap, #page42 .next_p_btn").hide();
 			$("#page42 .textwrap").delay(500).fadeIn(500);
 			$("#textbox42_2").show();
+			audio_play(42,2);
 		}
 		next_Count--;
 	});

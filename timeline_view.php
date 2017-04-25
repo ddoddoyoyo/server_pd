@@ -16,8 +16,8 @@
 				  ,B.PD_CHOICE AS PD_STYLE
 				  ,C.PD_CHOICE AS PD_ENGINE
 				  ,D.PD_CHOICE AS PD_HIGH_TECH
-				  ,F.HD_CON_FILENAME
-				,F.HD_CON_COMMENT
+				  ,F.LMS_CON_TITLE_IMG
+				  ,F.LMS_CON_TEXT
 			FROM LMS_MEMBER A
 			INNER JOIN 
 			(
@@ -37,11 +37,12 @@
 			   WHERE PD_GUBUN = 3
 			) AS D
 			ON A.LMS_SEQ = D.LMS_SEQ
-			INNER JOIN HD_CONTENT_BOARD F
-			ON A.LMS_SEQ = F.LMS_MEMBER_SEQ
+			INNER JOIN LMS_CONTENTS F
+			ON A.LMS_SEQ = F.LMS_SEQ
 		  WHERE A.LMS_GB = 'hyundai'
-		  AND F.HD_CON_GUBUN = 'PD'
-		  ORDER BY F.HD_CON_REGDATE
+		  AND F.LMS_CON_GB = 'hyundai'
+		  AND F.LMS_CON_CAR_GUBUN = 'PD'
+		  ORDER BY F.LMS_CON_REGDATE
 		 ) AS AA
 
 	";
@@ -95,8 +96,8 @@
 										WHEN AA.PD_HIGH_TECH = 4 THEN 'DAA'
 										WHEN AA.PD_HIGH_TECH = 5 THEN 'AEB'
 										ELSE '' END AS PD_HIGH_TECH_DESC
-									  ,AA.HD_CON_FILENAME
-									  ,AA.HD_CON_COMMENT
+									  ,AA.LMS_CON_TITLE_IMG
+									  ,AA.LMS_CON_TEXT
 							FROM 
 							(
 							SELECT A.LMS_SEQ
@@ -106,8 +107,8 @@
 									  ,B.PD_CHOICE AS PD_STYLE
 									  ,C.PD_CHOICE AS PD_ENGINE
 									  ,D.PD_CHOICE AS PD_HIGH_TECH
-									  ,F.HD_CON_FILENAME
-									,F.HD_CON_COMMENT
+									  ,F.LMS_CON_TITLE_IMG
+									  ,F.LMS_CON_TEXT
 								FROM LMS_MEMBER A
 								INNER JOIN 
 								(
@@ -127,11 +128,12 @@
 								   WHERE PD_GUBUN = 3
 								) AS D
 								ON A.LMS_SEQ = D.LMS_SEQ
-								INNER JOIN HD_CONTENT_BOARD F
-								ON A.LMS_SEQ = F.LMS_MEMBER_SEQ
+								INNER JOIN LMS_CONTENTS F
+								ON A.LMS_SEQ = F.LMS_SEQ
 							  WHERE A.LMS_GB = 'hyundai'
-							  AND F.HD_CON_GUBUN = 'PD'
-							  ORDER BY F.HD_CON_REGDATE DESC
+							  AND F.LMS_CON_GB = 'hyundai'
+							  AND F.LMS_CON_CAR_GUBUN = 'PD'
+							  ORDER BY F.LMS_CON_REGDATE
 							 ) AS AA
 							 LIMIT 5
 							 ";
@@ -147,8 +149,8 @@
 
 					<article class="article">
 						<div class="photo">
-							<?php if($ls["HD_CON_FILENAME"]) { ?>
-								<img src="<?=$IMG_URL?>/hyundai/pd/<?=$ls["HD_CON_FILENAME"]?>" alt="">
+							<?php if($ls["LMS_CON_TITLE_IMG"]) { ?>
+								<img src="<?=$IMG_URL?>/hyundai/pd/<?=$ls["LMS_CON_TITLE_IMG"]?>" alt="">
 							<?php } else { ?>
 								<img src="" alt="">
 							<?php } ?>
@@ -170,7 +172,7 @@
 							<div class="comment_wrap">
 								<p class="headColor">Trip Feedback</p>
 								<!-- <p>Love Europe! Love trip! THanks you~</p>  -->
-								<p><?=$ls["HD_CON_COMMENT"]?></p>
+								<p><?=$ls["LMS_CON_TEXT"]?></p>
 							</div>
 							<div class="keyword_wrap">
 								<p class="headColor">Best Style Interior <span class="interior">'<?=$ls["PD_STYLE_DESC"]?>'</span></p>

@@ -247,10 +247,10 @@ var options = {
 									<p>So, shall we carry on to the next stop?</p>
 								</div>
 								<div id="textbox0_2" class="textbox">
-									<p>It's actually 4th biggest and the capital city of Switzerland, which is the Bern.</p>
+									<p>It's Bern the  4th biggest and the capital city of Switzerland.</p>
 								</div>
 								<div id="textbox0_3" class="textbox">
-									<p>Touch the Bern on the map.</p>
+									<p>Touch Bern on the map.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -268,6 +268,9 @@ var options = {
 							<img src="/pd/images/person/james_14.png" alt="james">
 						</div>
 					</div>
+					<audio class="audio1" src="../tts/day3/081.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/082.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/083.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page1" class="container">
@@ -283,9 +286,8 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>We need to take a Express way A1 to get to Bern.<br />
-									So that will be a high speed driving.<br />
-									I'm pretty nervous now.</p>
+									<p>We need to take the A1 Express way to get to Bern.<br>
+									which means I can speed up here.<br>Actually, I’m getting pretty nervous now.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -296,6 +298,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/084.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page2" class="container">
@@ -311,8 +314,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>i30's stability and fuel efficiency is quite good even on high speed driving.<br />
-									I heard that there was an improvement on aerodynamics.</p>
+									<p>i30’s stability and fuel efficiency are quite good even when driving at high speed.<br>I heard it’s because there was an improvement on aerodynamics.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -323,6 +325,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/085.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page3" class="container">
@@ -365,16 +368,16 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox3_1" class="textbox">
-									<p>First, the rear spoiler and side garnish is applied to optimize the air flow.</p>
+									<p>First, the rear spoiler with side garnish is applied to optimize the air flow.</p>
 								</div>
 								<div id="textbox3_2" class="textbox">
-									<p>The improve the swirl on A-pillar part, side moulding is applied on boy side of windshield</p>
+									<p>To improve the A-pillar vortex of air, side molding is applied on both sides of the front windshield.</p>
 								</div>
 								<div id="textbox3_3" class="textbox">
-									<p>A wheel air-curtain minimize the air flow and resistance on high speed driving.</p>
+									<p>The wheel air curtains improves the air flow to minimize resistance on high speed driving.</p>
 								</div>
 								<div id="textbox3_4" class="textbox">
-									<p>By the way, do you know the entire coefficient dynamics figure of i30?</p>
+									<p>By the way, do you know the coefficient of drag of i30?</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -450,7 +453,7 @@ var options = {
 									Yeah, I know it.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>It's 0.3, and  I heard the smaller number is good and i30 has lowest figure on it's class.</p>
+									<p>It's 0.3, and smaller the number the better the aerodynamics performance. i30 has the lowest figure in it’s class.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -466,6 +469,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/086.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/087.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page5" class="container">
@@ -481,7 +486,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox5_1" class="textbox">
-									<p>Don't you think it's too quiet even we're running on the highway?</p>
+									<p>Don't you think it's so quiet inside for a car running at this high speed</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -492,6 +497,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/088.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page6" class="container">
@@ -576,10 +582,10 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox6_1" class="textbox">
-									<p>That's the effect of aerodynamics,<br />and also minimized the number of parts used about 30%.</p>
+									<p>That’s because of the aerodynamics performance, and also the decreased number of parts by 30%.</p>
 								</div>
 								<div id="textbox6_2" class="textbox">
-									<p>Lastly, integral panel is applied to improve fundamental noise.</p>
+									<p>Lastly, the integrated side panel is applied for minimum generation of noise.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -610,7 +616,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox7_1" class="textbox">
-									<p>Oh, that's why I felt silent on high speed also. Because there is less wind noise.</p>
+									<p>Oh, that’s why it felt almost silent in here. Reduced wind noise!</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -621,6 +627,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/089.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page8" class="container">
@@ -636,8 +643,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox8_1" class="textbox">
-									<p>Do you know about the i30 engines?<br />
-									There were 3 line-up on engines, and I chose 1.6 T-GDI.</p>
+									<p>Do you know about the engines available for i30?<br>From 3 types of engines I chose the Gamma 1.6 Turbo-GDI.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -648,6 +654,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/090.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page9" class="container">
@@ -664,7 +671,7 @@ var options = {
 						<div class="titlewrap">
 							<div class="text_i">
 								<div id="textbox1">
-									<p>Verify the engines</p>
+									<p>Click on each of the engines</p>
 								</div>	
 							</div>
 						</div>
@@ -695,7 +702,7 @@ var options = {
 						<div class="titlewrap">
 							<div class="text_i">
 								<div id="textbox1">
-									<p>Verify the engines</p>
+									<p>Click on each of the engines</p>
 								</div>	
 							</div>
 						</div>
@@ -739,8 +746,8 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox11_1" class="textbox">
-									<p>My choice was <span>1.6 T-GDI</span>.<br />
-									It's most powerful engine on the line-up so I'm satisfied.</p>
+									<p>My choice was <span>the 1.6 T-GDI</span>.<br />
+									It's the most powerful engine from the line-up so I'm satisfied.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -751,6 +758,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/091.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page12" class="container">
@@ -766,12 +774,11 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox12_1" class="textbox">
-									<p>Here we're running on A1 express way.<br />
+									<p>Here we're running on the A1 express way.<br />
 									This is the fastest way to reach Bern.</p>
 								</div>
 								<div id="textbox12_2" class="textbox">
-									<p>I feel a bit tired maybe because of long time driving.<br />
-									But not that bad as I expected. I guess the reason would be roomy space.</p>
+									<p>I feel a bit tired maybe because of long distance driving.<br>But not that bad as I expected. I guess it’s because of the roomy space.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -790,6 +797,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/092.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/093.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page13" class="container">
@@ -837,8 +846,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox14_1" class="textbox">
-									<p>A sporty interior and spacious interior. i30 combines all the benefits, right?<br />
-									Compare to the competitors, i30 is most spacious.</p>
+									<p>A sporty exterior and spacious interior. i30 has it all, right?<br>i30 is more spacious than any other competitor.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -870,7 +878,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox15_1" class="textbox">
-									<p>Maybe that's why I feel interior is spacious than other cars.</p>
+									<p>Maybe that’s why I felt it’s more spacious inside than other cars I drove before.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -880,6 +888,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/094.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page16" class="container">
@@ -906,6 +915,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/095.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page17" class="container">
@@ -939,6 +949,7 @@ var options = {
 							</a>
 						</div>
 					</div>
+					<audio class="audio1" src="../tts/day3/096.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page18" class="container">
@@ -964,11 +975,10 @@ var options = {
 									<p>Bern means the city of bear, and this old town is registered as UNESCO World Heritage.</p>
 								</div>
 								<div id="textbox18_2" class="textbox">
-									<p>It's keeping a mood of original medieval age and it's history.</p>
+									<p>It still has the atmosphere of the original medieval age, also preserving what its history left.</p>
 								</div>
 								<div id="textbox18_3" class="textbox">
-									<p>Especially on noon, this clock tower show is very famous.<br />
-									Shall we wait here and see?</p>
+									<p>Shall we wait here and see?</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -984,6 +994,9 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/097.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/098.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/099.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page19" class="container">
@@ -1047,7 +1060,39 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/100.mp3"></audio>
 				</section>
+
+				<section data-role="page" id="page21" class="container">
+					<div data-role="header" class="header">
+						<a href="#" class="ui-btn go-back back" data-rel="back">
+							<img src="/pd/images/button/icon_arrow.png" alt="">
+						</a>
+						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
+							<img src="/pd/images/button/icon_navbar.png" alt="">
+						</a>
+					</div>
+					<div class="page_bg"></div>
+					<div data-role="main" class="ui-content">
+						<div class="textwrap">
+							<div class="text_img2">
+								<img src="/pd/images/person/day3_james.png" alt="james">
+							</div>	
+							<div class="text_tip">
+								<img src="/pd/images/button/tail_3_@3x.png" alt="text box">
+							</div>	
+							<div class="text">
+								<div id="textbox21_1" class="textbox">
+									<p>Did you have fun in Bern?<br>Then let's move to our final destination, Strasbourg.</p>
+								</div>
+							</div>
+						</div>
+						<a href="#page2101" id="go_page2101" class="next_p_btn ui-btn go-next">
+							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
+						</a>
+					</div>
+					<audio class="audio1" src="../tts/day3/101.mp3"></audio>
+				</section>	
 
 				<section data-role="page" id="page2101" class="container">
 					<div data-role="header" class="header">
@@ -1089,37 +1134,8 @@ var options = {
 							<img src="/pd/images/person/james_14.png" alt="james">
 						</div>
 					</div>
-				</section>
-
-				<section data-role="page" id="page21" class="container">
-					<div data-role="header" class="header">
-						<a href="#" class="ui-btn go-back back" data-rel="back">
-							<img src="/pd/images/button/icon_arrow.png" alt="">
-						</a>
-						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right">
-							<img src="/pd/images/button/icon_navbar.png" alt="">
-						</a>
-					</div>
-					<div class="page_bg"></div>
-					<div data-role="main" class="ui-content">
-						<div class="textwrap">
-							<div class="text_img2">
-								<img src="/pd/images/person/day3_james.png" alt="james">
-							</div>	
-							<div class="text_tip">
-								<img src="/pd/images/button/tail_3_@3x.png" alt="text box">
-							</div>	
-							<div class="text">
-								<div id="textbox21_1" class="textbox">
-									<p>Did you have fun in Bern?<br />
-									then we gotta move on the our final destination, Strasbourg.</p>
-								</div>
-							</div>
-						</div>
-						<a href="#page2101" id="go_page2101" class="next_p_btn ui-btn go-next">
-							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
-						</a>
-					</div>
+					<audio class="audio1" src="../tts/day3/102.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/103.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page22" class="container">
@@ -1136,7 +1152,7 @@ var options = {
 							<div class="text">
 								<div id="textbox22_1" class="textbox">
 									<p>Here we're on the way to Strasbourg.<br />
-									You see the sunset through panorama sunroof?<br />
+									You see the sunset through the panorama sunroof?<br />
 									This is amazing.</p>
 								</div>
 							</div>
@@ -1148,6 +1164,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/104.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page23" class="container">
@@ -1173,7 +1190,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox23_1" class="textbox">
-									<p>i30's sunroof is panorama type so assessment of openness is awesome. Even comparable to the convertible cars.</p>
+									<p>The sunroof of i30 is panoramic type giving the sense of openness. <br>No need for convertible cars!</p>
 								</div>
 							</div>
 						</div>
@@ -1196,7 +1213,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox20_1" class="textbox">
-									<p>Look! I think we almost reached Strasbourg.</p>
+									<p>Look! I think we are almost at Strasbourg.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1209,6 +1226,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/105.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page25" class="container">
@@ -1224,7 +1242,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox25_1" class="textbox">
-									<p>So, shall we take a look?</p>
+									<p>So, shall we take a look around?</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1235,6 +1253,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/106.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page26" class="container">
@@ -1250,8 +1269,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>This is the final stop of our journey, Strasbourg.<br />
-									Strasbourg is located on west side of Rhine river so developed with Canal.<br /></p>
+									<p>This is the final stop of our journey, Strasbourg.<br>Located on the west side of Rhine river, Strasbourg has well-developed canal.</p>
 								</div>
 								<div id="textbox2" class="textbox">
 									<p>And it has a beautiful le petit French houses.</p>
@@ -1273,6 +1291,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/107.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/108.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page27" class="container">
@@ -1295,8 +1315,7 @@ var options = {
 									<?php } ?>
 								</div>
 								<div id="textbox27_1" class="textbox">
-									<p>Wow, Watch out.<br />
-									You gotta stick to front sight, we were nearly hit something.</p>
+									<p>Wow, Watch out.<br>You gotta keep your eyes looking ahead, we were nearly hit something.</p>
 								</div>
 							</div>
 						</div>
@@ -1340,8 +1359,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox28_1" class="textbox">
-									<p>The AEB system of i30 is detecting the frontal sight through radar so that monitoring pedestrian or any object in case to prevent the crash.<br />
-									It's high-tech feature that brakes automatically when there is an accidental situation.</p>
+									<p>The AEB system of i30 detects pedestrian or vehicle in the front with the radar sensor and automatically engages the brake if a crash is expected. It prevents or minimizes the damage from frontal crash.</p>
 								</div>
 							</div>
 						</div>
@@ -1364,7 +1382,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox25_1" class="textbox">
-									<p>Fortunately, i30 escaped well. Is there any other high-tech features on i30?</p>
+									<p>Fortunately, i30 stopped well. Is there any other high-tech features on i30?</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1375,6 +1393,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/109.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page30" class="container">
@@ -1408,7 +1427,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox30_1" class="textbox">
-									<p>With sensing the distance between front car, even driver is not pushing the acceleration or brake pedal, it's driving on driver's setting demand with keeping the constant distance between front car.</p>
+									<p>Sensing and calculating the distance from the car in the front, the car maintains the constant preset distance even when the driver is not pressing the accelerator or brake pedal.</p>
 								</div>
 							</div>
 						</div>
@@ -1431,7 +1450,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox31_1" class="textbox">
-									<p>With ASCC, you can drive more comfortably. But this is not a fully automated driving, so you gotta be careful.</p>
+									<p>With ASCC, you can drive more comfortably. But this doesn’t mean a fully automated driving, so you gotta be careful.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1481,7 +1500,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox32_1" class="textbox">
-									<p>LKAS is the high-tech feature for preventing lane crossing.A frontal camera realizes the lane informations so that driver won’t violate the other lane.</p>
+									<p>LKAS is a high-tech feature for that prevents the car from departing a lane. A frontal camera detects the lane and assists steering via MDPS.</p>
 								</div>
 							</div>
 						</div>
@@ -1504,7 +1523,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox33_1" class="textbox">
-									<p>It's a piece of cake with LKAS to keeping the lane safely.</p>
+									<p>It's a piece of cake with LKAS to stay on the lane safely.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1554,7 +1573,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox34_1" class="textbox">
-									<p>BSD senses and ringing alert in case of crash. There is a radar in rear bumper that senses the approaching car from blind spot, and transporting informations.</p>
+									<p>BSD senses a car approaching in the blind spot with a radar in the rear bumper and makes an alert sound to prevent crash.</p>
 								</div>
 							</div>
 						</div>
@@ -1577,7 +1596,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox35_1" class="textbox">
-									<p>BSD loaded car will be helpful for changing lane or watching blind spot.</p>
+									<p>Having BSD on a car makes it safer when changing lane or watching the blind spot.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1628,13 +1647,13 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox36_1" class="textbox">
-									<p>DAA is the function for careless driving. It analyze the driving pattern and car location.</p>
+									<p>DAA is a function for detecting careless driving. It analyzes the driving pattern and the location of the car.</p>
 								</div>
 								<div id="textbox36_2" class="textbox">
-									<p>so if driver feels tired or driving carelessly, there will be a pop up on cluster with warning sign to induce for taking a rest.</p>
+									<p>So if a driver feels tired and drives carelessly, a warning sign will appear on the cluster and advice the driver to take a rest.</p>
 								</div>
 								<div id="textbox36_3" class="textbox">
-									<p>Take a look if there is DAA sign on the cluster.</p>
+									<p>Take a look if there is a DAA sign on the cluster.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1666,8 +1685,7 @@ var options = {
 							<div class="textwrap">	
 								<div class="text">	
 									<div id="textbox1" class="textbox">
-										<p>I'm impressed that these loads of features are applied to this class car.<br />
-										I'm falling in love deeply.</p>
+										<p>I’m impressed that such many features are applied to a car of this class. I’m falling in a deep love with this car.</p>
 									</div>
 								</div>
 								<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1679,8 +1697,8 @@ var options = {
 							<a href="#page38" id="go_page38" class="next_p_btn ui-btn go-next">
 								<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
-						
 					</div>
+					<audio class="audio1" src="../tts/day3/110.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page38" class="container">
@@ -1693,7 +1711,7 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Which one is your favorite high-tech feature?</div>
+						<div class="pageTitle">Which one is your favorite high-tech safety feature?</div>
 						<div class="textwrap">
 							<ul>
 								<li><span>LKAS</span></li>
@@ -1751,7 +1769,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox40_1" class="textbox">
-									<p>The i30 is equipped with the best-in-class safety systems to help drivers get maximum comfort and safety!</p>
+									<p>The i30 is equipped with the best-in-class safety systems to provide drivers with maximum comfort and safety.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1801,6 +1819,7 @@ var options = {
 							</a>
 						</div>
 					</div>
+					<audio class="audio1" src="../tts/day3/111.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page42" class="container">
@@ -1823,13 +1842,13 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox42_1" class="textbox">
-									<p>Notre-dame cathedral is located in the middle of old town, and registered as UNESCO World Heritage in 1988.</p>
+									<p>Notre-dame cathedral is located in the center of the old town, and was registered as UNESCO World Heritage in 1988.</p>
 								</div>
 								<div id="textbox42_2" class="textbox">
-									<p>It took 350 years for fully construct so it shows a magnificent view.</p>
+									<p>It took 350 years to construct this cathedral with a magnificent view.</p>
 								</div>
 								<div id="textbox42_3" class="textbox">
-									<p>Yeah, personally Notre-dame here is more picturesque than the Notre-dame in Paris.</p>
+									<p>Yeah, I personally think Notre-dame here is more picturesque than the one in Paris.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1845,6 +1864,9 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/112.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/113.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/114.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page43" class="container">
@@ -1867,7 +1889,7 @@ var options = {
 									<?php } ?>
 								</div>
 								<div id="textbox43_1" class="textbox">
-									<p>Oh, wait. Didn't you close the window though?</p>
+									<p>Oh, wait. Did you close the window though?</p>
 								</div>
 							</div>
 						</div>
@@ -1890,7 +1912,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox44_1" class="textbox">
-									<p>Don't worry, I can close the window easily with remote window control on my key.</p>
+									<p>Don't worry, I can close the window easily with the remote window control on my key.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1903,6 +1925,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/115.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page45" class="container">
@@ -1943,7 +1966,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox45_1" class="textbox">
-									<p>You're right. Even the engine is off, you can close the window easily with the smart-key.</p>
+									<p>You’re right. Even when the engine is off, you can close the window remotely with the smart-key.</p>
 								</div>
 							</div>
 						</div>
@@ -1973,7 +1996,7 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>This city trip is the last course of our journey.</p>
+									<p>This city is the last course of our journey.</p>
 								</div>
 								<!-- <div id="textbox2" class="textbox">
 									<p>In Switzerland, we will be stop at Zurich and Bern to get to final spot Strasbourg.</p>
@@ -1984,6 +2007,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/116.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page47" class="container">
@@ -1999,8 +2023,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox47_1" class="textbox">
-									<p>I'm sorry but this is the moment to say goodbye.<br />
-									I hope you enjoyed the trip with i30.</p>
+									<p>I’m afraid it’s time to say goodbye.<br>I hope you enjoyed the trip with i30.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -2011,6 +2034,7 @@ var options = {
 						</div>
 						<a href="#page48" id="go_page48" class="bye_btn">BYE</a>
 					</div>
+					<audio class="audio1" src="../tts/day3/117.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page48" class="container">
@@ -2024,7 +2048,7 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Leave your feedback with your photos on trip with i30.</div>
+						<div class="pageTitle">Please upload your photo and  leave your feedback on this trip with i30.</div>
 						<div class="imgwrap">
 							<div class="imgphoto">
 								<img id="upload-img">
@@ -2045,7 +2069,7 @@ var options = {
 			</div>
 		</div>
 
-		 <!-- <a href="#page37">이동</a> -->
+		 <a href="#page41">이동</a>
 	</body>
 </html>
 

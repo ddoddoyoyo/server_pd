@@ -47,33 +47,37 @@
 	{
 		$dbh->beginTransaction();
 		
-		$sql = "INSERT INTO HD_CONTENT_BOARD 
-					(
-						LMS_MEMBER_SEQ,
-						HD_CON_USERNAME,
-						HD_CON_REGION,
-						HD_CON_COMMENT,
-						HD_CON_FILENAME,
-						HD_CON_GUBUN,
-						HD_CON_REGDATE
-					) 
-					VALUES 
-					(
-						:LMS_MEMBER_SEQ, 
-						:HD_CON_USERNAME,
-						:HD_CON_REGION,
-						:HD_CON_COMMENT, 
-						:HD_CON_FILENAME, 
-						'PD',
-						NOW()
-					)";
+		$sql = "INSERT INTO LMS_CONTENTS
+				  (
+					LMS_SEQ, 
+					LMS_CON_GUBUN, 
+					LMS_CON_TITLE, 
+					LMS_CON_TEXT, 
+					LMS_CON_TITLE_IMG, 
+					LMS_CON_RECOM_STATUS, 
+					LMS_CON_STATUS, 
+					LMS_CON_GB, 
+					LMS_CON_CAR_GUBUN, 
+					LMS_CON_REGDATE
+				  ) 
+				VALUES 
+				(
+				  :LMS_SEQ, 
+				  4, 
+				  '', 
+				  :LMS_CON_TEXT, 
+				  :LMS_CON_TITLE_IMG, 
+				  'N', 
+				  'Y', 
+				  'hyundai', 
+				  'PD', 
+				  NOW()
+				  )";
 
 			$stmt = $dbh->prepare($sql);
-			$stmt->bindParam(':LMS_MEMBER_SEQ',$LMS_SEQ);
-			$stmt->bindParam(':HD_CON_USERNAME',$row[0]['LMS_NAME']);
-			$stmt->bindParam(':HD_CON_REGION',$row[0]['LMS_CONTRY']);
-			$stmt->bindParam(':HD_CON_COMMENT',$PD_CON_TEXT);
-			$stmt->bindParam(':HD_CON_FILENAME',$PD_CON_IMAGE);
+			$stmt->bindParam(':LMS_SEQ',$LMS_SEQ);
+			$stmt->bindParam(':LMS_CON_TEXT',$PD_CON_TEXT);
+			$stmt->bindParam(':LMS_CON_TITLE_IMG',$PD_CON_IMAGE);
 			if($stmt->execute()){
 				$dbh->commit();
 				$json["result"] = "success";
