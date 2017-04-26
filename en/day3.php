@@ -268,9 +268,9 @@ var options = {
 							<img src="/pd/images/person/james_14.png" alt="james">
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day3/081.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/082.mp3"></audio>
-					<audio class="audio3" src="../tts/day3/083.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/080.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/081.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/082.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page1" class="container">
@@ -298,7 +298,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/084.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/083.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page2" class="container">
@@ -325,7 +325,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/085.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/084.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page3" class="container">
@@ -469,8 +469,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/086.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/087.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/085.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/086.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page5" class="container">
@@ -497,7 +497,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/088.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/087.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page6" class="container">
@@ -616,7 +616,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox7_1" class="textbox">
-									<p>Oh, that’s why it felt almost silent in here. Reduced wind noise!</p>
+									<p>Oh, it felt almost silent in here. Reduced wind noise!</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -627,7 +627,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/089.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/088.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page8" class="container">
@@ -654,7 +654,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/090.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/089.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page9" class="container">
@@ -758,7 +758,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/091.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/090.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page12" class="container">
@@ -797,8 +797,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/092.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/093.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/091.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/092.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page13" class="container">
@@ -888,7 +888,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/094.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/093.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page16" class="container">
@@ -915,7 +915,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/095.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/094.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page17" class="container">
@@ -949,7 +949,7 @@ var options = {
 							</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day3/096.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/095.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page18" class="container">
@@ -994,9 +994,9 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/097.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/098.mp3"></audio>
-					<audio class="audio3" src="../tts/day3/099.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/096.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/097.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/098.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page19" class="container">
@@ -1060,7 +1060,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/100.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/099.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page21" class="container">
@@ -1091,7 +1091,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/101.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/100.mp3"></audio>
 				</section>	
 
 				<section data-role="page" id="page2101" class="container">
@@ -1134,8 +1134,8 @@ var options = {
 							<img src="/pd/images/person/james_14.png" alt="james">
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day3/102.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/103.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/101.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/102.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page22" class="container">
@@ -1164,7 +1164,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/104.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/103.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page23" class="container">
@@ -1226,7 +1226,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/105.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/104.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page25" class="container">
@@ -1253,7 +1253,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/106.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/105.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page26" class="container">
@@ -1291,8 +1291,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/107.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/108.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/106.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/107.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page27" class="container">
@@ -1393,7 +1393,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/109.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/108.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page30" class="container">
@@ -1698,7 +1698,7 @@ var options = {
 								<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/110.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/109.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page38" class="container">
@@ -1819,7 +1819,7 @@ var options = {
 							</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day3/111.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/110.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page42" class="container">
@@ -1864,9 +1864,9 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/112.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/113.mp3"></audio>
-					<audio class="audio3" src="../tts/day3/114.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/111.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/112.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/113.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page43" class="container">
@@ -1925,7 +1925,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/115.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/114.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page45" class="container">
@@ -2007,7 +2007,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/116.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/115.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page47" class="container">
@@ -2034,7 +2034,7 @@ var options = {
 						</div>
 						<a href="#page48" id="go_page48" class="bye_btn">BYE</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/117.mp3"></audio>
+					<audio class="audio1" src="../tts/day3/116.mp3"></audio>
 				</section>
 
 				<section data-role="page" id="page48" class="container">

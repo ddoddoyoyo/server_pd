@@ -32,12 +32,15 @@ $(document).ready(function(){
 
 	$(".next_p_btn, .next_finger").click(function(){
 		audio_pause();
-		$('section').each(function(idx,obj){
-			 var pageid = $(obj).attr("id");
-			 if($("#"+pageid).hasClass("ui-page-active")){
-				$("#"+pageid).next().find(".audio1").trigger('play'); 
-			}
-		});
+		setTimeout(function(){
+			$('section').each(function(idx,obj){
+				 var pageid = $(obj).attr("id");
+				 if($("#"+pageid).hasClass("ui-page-active")){
+					$("#"+pageid).find(".audio1").trigger('play'); 
+				}
+			});
+		}, 1500);
+		
 	});
 
 	$(".btn_device").hide();
