@@ -32,15 +32,19 @@ $(document).ready(function(){
 
 	$(".next_p_btn, .next_finger").click(function(){
 		audio_pause();
-		setTimeout(function(){
+		// setTimeout(function(){
 			$('section').each(function(idx,obj){
 				 var pageid = $(obj).attr("id");
 				 if($("#"+pageid).hasClass("ui-page-active")){
-					$("#"+pageid).find(".audio1").trigger('play'); 
+					$("#"+pageid).next().find(".audio1").trigger('play'); 
 				}
 			});
-		}, 1500);
+		// }, 1500);
 		
+	});
+
+	$(".btn_sidePanel").click(function(){
+			audio_pause();
 	});
 
 	$(".btn_device").hide();
@@ -517,7 +521,9 @@ $(document).ready(function(){
 		}
 	});
 	$("#page17 .next_finger").click(function(){
-		audio_pause();
+		// setTimeout(function(){
+			audio_pause();
+		// }, 1500);
 		$(this).hide();
 		$('#page17 .ui-content')
 			.delay(500)
@@ -713,7 +719,9 @@ $(document).ready(function(){
 	});
 
 	$("#page25 .next_finger").click(function(){
-		audio_pause();
+		// setTimeout(function(){
+			audio_pause();
+		// }, 1500);
 		$(this).hide();
 		$('#page25 .page_bg')
 			.delay(500)
@@ -1322,7 +1330,9 @@ $(document).ready(function(){
 		}
 	});
 	$("#page53 .next_finger").click(function(){
-		audio_pause();
+		// setTimeout(function(){
+			audio_pause();
+		// }, 1500);
 		$(this).hide();
 		$('#page53 .page_bg')
 			.delay(500)

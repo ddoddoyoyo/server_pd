@@ -25,15 +25,21 @@ $(document).ready(function() {
 
 	$(".next_p_btn, .next_finger").click(function(){
 		audio_pause();
-		$('section').each(function(idx,obj){
-			 var pageid = $(obj).attr("id");
-			 if($("#"+pageid).hasClass("ui-page-active")){
-				$("#"+pageid).next().find(".audio1").trigger('play'); 
-			}
-		});
+		// setTimeout(function(){
+			$('section').each(function(idx,obj){
+				 var pageid = $(obj).attr("id");
+				 if($("#"+pageid).hasClass("ui-page-active")){
+					$("#"+pageid).next().find(".audio1").trigger('play'); 
+				}
+			});
+		// }, 1500);
+		
 	});
 
-
+	$(".btn_sidePanel").click(function(){
+			audio_pause();
+	});
+	
 	//오디오 일시정지
 	function audio_pause(){
 	$("audio").each(function(){ 
@@ -558,8 +564,10 @@ $(document).ready(function() {
 	});
 
 	$("#page17 .next_finger").click(function() {
-		audio_pause();
 		$(this).hide();
+		// setTimeout(function(){
+			audio_pause();
+		// }, 1500);
 		$('#page17 .ui-content')
 			.delay(500)
 			.fadeOut()
@@ -1065,8 +1073,10 @@ $(document).ready(function() {
 	});
 
 	$("#page41 .next_finger").click(function() {
-		audio_pause();
 		$(this).hide();
+		// setTimeout(function(){
+			audio_pause();
+		// }, 1500);
 		$('#page41 .ui-content')
 			.delay(500)
 			.fadeOut()

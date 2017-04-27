@@ -308,7 +308,7 @@
 									<div class="img_wrap">
 										<img src="../images/button/08_point.png" alt="location point">
 										<img src="../images/button/08_lodeline.png" alt="location">
-										<p class="p1">Milan</p>
+										<p class="p1">Milano</p>
 										<p class="p2">Como</p>
 									</div>
 									<ul>
@@ -371,7 +371,7 @@
 							<div class="text">	
 								<div id="textbox1" class="textbox">
 									<h2>Duomo</h2>
-									<p class="p2">In milano</p>
+									<p class="p2">In Milano</p>
 								</div>
 								<a href="#page9" id="go_page9">
 									<img src="../images/button/btn_next_02_@3x.png" alt="next button">
@@ -399,7 +399,7 @@
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 							<div class="text">	
-								<p>Here is our first destination!<br>I couldn't miss the Duomo which is the symbol of milan with sophisticated beauty.</p>
+								<p>Here is our first destination!<br>I couldn't miss the Duomo which is the symbol of Milano with sophisticated beauty.</p>
 							</div>
 						</div>
 						<a href="#page10" id="go_page10" class="next_p_btn ui-btn go-next">
@@ -674,7 +674,7 @@
 							</div>
 						</div>
 						<div class="view_text">	
-							<a href="#page18"><p>Milan. Duomo Cathedral</p></a>
+							<a href="#page18"><p>Milano. Duomo Cathedral</p></a>
 							<a href="#page18" id="go_page18" class="next_p_btn ui-btn go-next">
 								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
@@ -706,10 +706,10 @@
 									<p>You need to know this. Duomo Cathedral is one of the “1001 buildings you must see before you die”</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>This gigantic cathedral has various and sophisticated sculptures. </p>
+									<p>This gigantic cathedral has various and sophisticated sculptures.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>We can see the whole city of Milano from its roof top.</p>
+									<p>We can see the whole city of Milano from its rooftop.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -959,7 +959,7 @@
 							</div>
 						</div>
 						<div class="view_text">	
-							<a href="#page26"><p>Milan. Sforzesco Castle</p></a>
+							<a href="#page26"><p>Milano. Sforzesco Castle</p></a>
 							<a href="#page26" id="go_page26" class="next_p_btn ui-btn go-next">
 								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
@@ -997,7 +997,7 @@
 									<p>It's created by Lord Francesco Sforza,</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p>Nowdays, it is used as museum and are gallery.</p>
+									<p>Nowadays, it is used as museum and art gallery.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -2047,7 +2047,7 @@
 
 	</div>
 </div>
-		<!-- <a href="#page25">이동</a> -->
+		<!-- <a href="#page16">이동</a> -->
 
 
 	</body>

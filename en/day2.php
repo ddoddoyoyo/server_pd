@@ -455,7 +455,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>This car also has 7 speed Dual Clutch Transmission(DCT). A strong engine with quick shift. Can you believe it? </p>
+						<p>This car also has 7 speed Dual Clutch Transmission(DCT).<br>A strong engine with quick shift. Can you believe it? </p>
 					</div>
 					<div id="textbox2" class="textbox">
 						<p>DCT has that direct feel without power loss when switching gears.You can feel the true value of that characteristic  when winding.</p>
@@ -846,7 +846,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>How was it?<br>Wasn’t it scared though?<br>I hope you enjoyed the magnificent winding courses.<br>because I definitely did.</p>
+						<p>How was it?<br>Wasn’t it scared though?<br>I hope you enjoyed the magnificent winding courses.<br>Because I definitely did.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -1039,7 +1039,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>It’s one of the most famous camping spots in Europe. that a lot of camping lovers visit here.</p>
+						<p>It’s one of the most famous camping spots in Europe. that a lot of camping lovers visit.</p>
 					</div>
 					<div id="textbox2" class="textbox">
 						<p>I’ve always wanted to camp here for a long time as well.<br>Let’s unpack here</p>
@@ -1323,6 +1323,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
+		<audio class="audio1" src="../tts/day2/music1.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page86" class="container">
@@ -1385,6 +1386,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
+		<audio class="audio1" src="../tts/day2/music2.mp3"></audio>
 	</section>
 
 	<section data-role="page" id="page88" class="container">
@@ -1981,7 +1983,7 @@
 </div>
 
 
-<!-- <a href="#page81">이동!!!!!!!!!</a> -->
+<!-- <a href="#page84">이동!!!!!!!!!</a> -->
 
 
 

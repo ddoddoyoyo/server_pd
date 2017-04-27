@@ -25,12 +25,19 @@ $(document).ready(function(){
 
 	$(".next_p_btn, .next_finger").click(function(){
 		audio_pause();
-		$('section').each(function(idx,obj){
-			 var pageid = $(obj).attr("id");
-			 if($("#"+pageid).hasClass("ui-page-active")){
-				$("#"+pageid).next().find(".audio1").trigger('play'); 
-			}
-		});
+		// setTimeout(function(){
+			$('section').each(function(idx,obj){
+				 var pageid = $(obj).attr("id");
+				 if($("#"+pageid).hasClass("ui-page-active")){
+					$("#"+pageid).next().find(".audio1").trigger('play'); 
+				}
+			});
+		// }, 1500);
+		
+	});
+
+	$(".btn_sidePanel").click(function(){
+			audio_pause();
 	});
 
 	//다음페이지로 이동막기
@@ -773,7 +780,9 @@ $(document).ready(function(){
 	});
 	$("#page69 .next_finger").click(function(){
 		$(this).hide();
-		audio_pause();
+		// setTimeout(function(){
+			audio_pause();
+		// }, 1500);
 		$('#page69 .ui-content')
 			.delay(500)
 			.fadeOut()
@@ -909,8 +918,10 @@ $(document).ready(function(){
 		}, 
 		"pageshow" : function(){
 			//$("#page72").delay(500).animate({"backgroundSize":"100%"});
-			$("#page72 .imgwrap img").delay(1000).animate({"top":"7px"},500);
-			$("#page72 .next_p_btn, #page72 .textwrap").delay(1500).fadeIn(500);
+			$("#page72 .imgwrap img").animate({"top":"7px"},500);
+			$("#page72 .textwrap").delay(500).fadeIn(500);
+			$("#page72 .next_p_btn").delay(1500).fadeIn(500);
+
 		}
 	});
 
@@ -1016,8 +1027,10 @@ $(document).ready(function(){
 		}
 	});
 	$("#page76 .next_finger").click(function(){
-		audio_pause();
 		$(this).hide();
+		// setTimeout(function(){
+			audio_pause();
+		// }, 1500);
 		$('#page76 .ui-content')
 			.delay(500)
 			.fadeOut()
@@ -1301,6 +1314,9 @@ $(document).ready(function(){
 	//page85
 	$("#page85").on({
 		"pagebeforeshow" : function(){
+			// setTimeout(function(){
+				audio_pause();
+			// });
 			$("#page85 #textbox1").show();
 			$("#page85 #textbox2, #page85 .next_p_btn").hide();
 			$('#page85 .ui-content').css({"background-image":"url(../images/day2/43_image.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"100% auto"});
@@ -1311,9 +1327,10 @@ $(document).ready(function(){
 		}
 	});
 	$("#page85 .next_finger").click(function(){
-		audio_pause();
+		// audio_pause();
 		if(next_Count == 1){
 			$(this).hide();
+			audio_play(85,1);
 			$("#page85 #textbox1, #page85 .next_finger").hide();
 			$('#page85 .ui-content')
 				.delay(500)
@@ -1325,6 +1342,7 @@ $(document).ready(function(){
 		    $("#page85 #textbox2, #page85 .next_p_btn").delay(800).fadeIn();
 			//$(this).delay(2000).fadeIn();
 		} else if(next_Count == 2){
+			audio_pause();
 			$.mobile.changePage("#page86");
 		}
 		next_Count++;
@@ -1340,6 +1358,9 @@ $(document).ready(function(){
 	//page87
 	$("#page87").on({
 		"pagebeforeshow" : function(){
+			// setTimeout(function(){
+				audio_pause();
+			// });
 			$("#page87 #textbox1").show();
 			$("#page87 #textbox2, #page87 .next_p_btn").hide();
 			$('#page87 .ui-content').css({"background-image":"url(../images/day2/46_image.jpg)","background-repeat":"no-repeat%","background-position":"50% 50%", "background-size":"100% auto"});
@@ -1350,9 +1371,10 @@ $(document).ready(function(){
 		}
 	});
 	$("#page87 .next_finger").click(function(){
-		audio_pause();
+		// audio_pause();
 		if(next_Count == 1){
 			$(this).hide();
+			audio_play(87,1);
 			$("#page87 #textbox1, #page87 .next_finger").hide();
 			$('#page87 .ui-content')
 				.delay(500)
@@ -1364,6 +1386,7 @@ $(document).ready(function(){
 		    $("#page87 #textbox2, #page87 .next_p_btn").delay(800).fadeIn();
 			//$(this).delay(2000).fadeIn();
 		} else if(next_Count == 2){
+			audio_pause();
 			$.mobile.changePage("#page88");
 		}
 		next_Count++;
@@ -1378,6 +1401,7 @@ $(document).ready(function(){
 
 	$("#page89").on({
 		"pagebeforeshow" : function(){
+			audio_pause();
 			$("#page89 .textwrap, #page83 .next_p_btn").hide();
 			//$("#page89").css({"background-size":"120% auto"});
 		}, 
