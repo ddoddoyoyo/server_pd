@@ -633,24 +633,35 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page22 .textwrap, #page22 #textbox2, #page22 #textbox3, #page22 .text_btn_r, #page22 .next_p_btn").hide();
 			$("#page22 .start_text").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
 			$("#page22 #textbox1").show();
 			
 			next_Count = 1;
+			next_tg_Count = 1;
 		}
 	});
 	$("#page22 .toggle").click(function(){
 		$("#page22 .textwrap, #page22 .start_text").toggle();
+		
+		if(next_tg_Count == 1){
+		   audio_play(22,1);
+		} else {
+			audio_pause();
+		 }
+		next_tg_Count++;
 	});
 
 	$("#page22 #go_next1").click(function(){
 		if(next_Count == 1){
 		    $("#page22 #textbox1, #page22 #go_next1").hide();
 		    $("#page22 #textbox2, #page22 #go_back, #page22 .text_btn_l").show();
+		    audio_play(22,2);
 		} else if(next_Count == 2){
 			$("#page22 #textbox3, #page22 #go_back ,#page22 .next_p_btn").show();
 			$("#page22 #textbox2, #page22 #go_next1").hide();
+			audio_play(22,3);
 		 }
 		next_Count++;
 	});
@@ -661,9 +672,11 @@ $(document).ready(function(){
 		} else if(next_Count == 2){
 			$("#page22 #textbox1, #page22 #go_next1, #page22 #go_back").show();
 			$("#page22 #textbox2, #page22 .next_p_btn, #page22 #go_back").hide();
+			audio_play(22,1);
 		} else if(next_Count == 3){
 			$("#page22 #textbox2, #page22 #go_next1").show();
 			$("#page22 #textbox3, #page22 .next_p_btn").hide();
+			audio_play(22,2);
 		}
 		next_Count--;
 	});
@@ -862,14 +875,23 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page30 .textwrap, #page30 #textbox2, #page30 #textbox3, #page30 .text_btn_r, #page30 .next_p_btn,#page30 .img_trinkle #img2").hide();
 			$("#page30 .start_text, #page30 #go_next1").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
 			$("#page30 #textbox1").show();	
 			next_Count = 0;
+			next_tg_Count = 1;
 		}
 	});
 	$("#page30 .toggle").click(function(){
 		$("#page30 .textwrap, #page30 .start_text").toggle();
+
+		if(next_tg_Count == 1){
+		   audio_play(30,1);
+		} else {
+			audio_pause();
+		 }
+		next_tg_Count++;
 	});
 
 	$("#page30 #go_next1").click(function(){
@@ -877,6 +899,7 @@ $(document).ready(function(){
 		if(next_Count == 1){
 		    $("#page30 #textbox1, #page30 #go_next1,#page30 .ui-content .img_twinkle").hide();
 		    $("#page30 #textbox2, #page30 #go_back, #page30 .next_p_btn").show();
+		    audio_play(30,2);
 		    $('#page30')
 			//.fadeOut()
 			.queue(function() {
@@ -892,6 +915,7 @@ $(document).ready(function(){
 		if(next_Count == 0){
 			$("#page30 #textbox1, #page30 #go_next1").show();
 			$("#page30 #textbox2, #page30 #go_back, #page30 .next_p_btn").hide();
+			audio_play(30,1);
 			$('#page30')
 			//.fadeOut()
 			.queue(function() {
@@ -936,13 +960,22 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page33 .textwrap,#page33 .next_p_btn").hide();
 			$("#page33 .start_text").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
-			$("#page33 #textbox1").show();	
+			$("#page33 #textbox1").show();
+			next_tg_Count = 1;	
 		}
 	});
 	$("#page33 .toggle").click(function(){
 		$("#page33 .textwrap, #page33 .start_text, #page33 .next_p_btn").toggle();
+
+			if(next_tg_Count == 1){
+		   audio_play(33,1);
+			} else {
+			audio_pause();
+		 }
+		next_tg_Count++;
 	});
 
 	//page35
@@ -950,13 +983,22 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page35 .textwrap,#page35 .next_p_btn").hide();
 			$("#page35 .start_text").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
-			$("#page35 #textbox1").show();	
+			$("#page35 #textbox1").show();
+			next_tg_Count = 1;	
 		}
 	});
 	$("#page35 .toggle").click(function(){
 		$("#page35 .textwrap, #page35 .start_text, #page35 .next_p_btn").toggle();
+
+		if(next_tg_Count == 1){
+		   audio_play(35,1);
+			} else {
+			audio_pause();
+		 }
+		next_tg_Count++;
 	});
 
 	$("#page37").on({
@@ -999,13 +1041,22 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page40 .textwrap,#page40 .next_p_btn").hide();
 			$("#page40 .start_text").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
 			$("#page40 #textbox1").show();	
+			next_tg_Count = 1;
 		}
 	});
 	$("#page40 .toggle").click(function(){
 		$("#page40 .textwrap, #page40 .start_text, #page40 .next_p_btn").toggle();
+
+		if(next_tg_Count == 1){
+		   audio_play(40,1);
+		} else {
+			audio_pause();
+		}
+		next_tg_Count++;
 	});
 
 	$("#page41").on({
@@ -1061,13 +1112,22 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page46 .textwrap,#page46 .next_p_btn").hide();
 			$("#page46 .start_text").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
 			$("#page35 #textbox1").show();	
+			next_tg_Count = 1;
 		}
 	});
 	$("#page46 .toggle").click(function(){
 		$("#page46 .textwrap, #page46 .start_text, #page46 .next_p_btn").toggle();
+
+		if(next_tg_Count == 1){
+		   audio_play(46,1);
+		} else {
+			audio_pause();
+	 	}
+		next_tg_Count++;
 	});
 
 	//page47
@@ -1075,14 +1135,23 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page47 .textwrap, #page47 #textbox2, #page47 #textbox3, #page47 #textbox4 ,#page47 #textbox5,  #page47 #go_back, #page47 .next_p_btn").hide();
 			$("#page47 .start_text, #page47 #go_next1").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
 			$("#page47 #textbox1").show();	
 			next_Count = 0;
+			next_tg_Count = 1;
 		}
 	});
 	$("#page47 .toggle").click(function(){
 		$("#page47 .textwrap, #page47 .start_text").toggle();
+
+		if(next_tg_Count == 1){
+		   audio_play(47,1);
+		} else {
+			audio_pause();
+	 	}
+		next_tg_Count++;
 	});
 
 	$("#page47 #go_next1").click(function(){
@@ -1090,6 +1159,7 @@ $(document).ready(function(){
 		if(next_Count == 1){
 		    $("#page47 #textbox1").hide();
 		    $("#page47 #textbox2, #page47 #go_next1, #page47 #go_back").show();
+		    audio_play(47,2);
 		    $('#page47')
 			//.fadeOut()
 			.queue(function() {
@@ -1100,6 +1170,7 @@ $(document).ready(function(){
 		else if(next_Count == 2){
 		    $("#page47 #textbox2").hide();
 		    $("#page47 #textbox3, #page47 #go_back, #page47 #go_next1").show();
+		    audio_play(47,3);
 		    $('#page47')
 			//.fadeOut()
 			.queue(function() {
@@ -1110,6 +1181,7 @@ $(document).ready(function(){
 		else if(next_Count == 3){
 		    $("#page47 #textbox3").hide();
 		    $("#page47 #textbox4, #page47 #go_back, #page47 #go_next1").show();
+		    audio_play(47,4);
 		    $('#page47')
 			//.fadeOut()
 			.queue(function() {
@@ -1120,6 +1192,7 @@ $(document).ready(function(){
 		else if(next_Count == 4){
 		    $("#page47 #textbox4, #page47 #go_next1").hide();
 		    $("#page47 #textbox5, #page47 #go_back, #page47 .next_p_btn").show();
+		    audio_play(47,5);
 		    $('#page47')
 			//.fadeOut()
 			.queue(function() {
@@ -1136,6 +1209,7 @@ $(document).ready(function(){
 		if(next_Count == 0){
 		    $("#page47 #textbox2,#page47 #go_back").hide();
 		    $("#page47 #textbox1, #page47 #go_next1").show();
+		    audio_play(47,1);
 		    $('#page47')
 			//.fadeOut()
 			.queue(function() {
@@ -1146,6 +1220,7 @@ $(document).ready(function(){
 		else if(next_Count == 1){
 		    $("#page47 #textbox3").hide();
 		    $("#page47 #textbox2, #page47 #go_back, #page47 #go_next1").show();
+		    audio_play(47,2);
 		    $('#page47')
 			//.fadeOut()
 			.queue(function() {
@@ -1156,6 +1231,7 @@ $(document).ready(function(){
 		else if(next_Count == 2){
 		    $("#page47 #textbox4").hide();
 		    $("#page47 #textbox3, #page47 #go_back, #page47 #go_next1").show();
+		    audio_play(47,3);
 		    $('#page47')
 			//.fadeOut()
 			.queue(function() {
@@ -1166,6 +1242,7 @@ $(document).ready(function(){
 		else if(next_Count == 3){
 		    $("#page47 #textbox5, #page47 #go_next1,#page47 .next_p_btn").hide();
 		    $("#page47 #textbox4, #page47 #go_back").show();
+		    audio_play(47,4);
 		    $('#page47')
 			//.fadeOut()
 			.queue(function() {
@@ -1203,6 +1280,7 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page49 .text, #page49 #textbox1, #page49 #textbox2, #page49 #textbox3, #page49 #textbox4, #page49 #textbox5, #page49 .text_img2, #page49 .text_tip").hide();
 			$("#page49 .next_p_btn").hide();
+			audio_pause();
 		},
 		"pageshow" :function(){
 			//console.log(ck);
@@ -1210,10 +1288,12 @@ $(document).ready(function(){
 			if(ck==1){
 				//$("#page49 #textbox2,#page49 #textbox3, #page49 #textbox4, #page49 #textbox5").hide();
 				$("#page49 .text, #page49 #textbox1, #page49 .text_img2").delay(500).fadeIn(500);
+				audio_play(49,1);
 				$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_01.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 			}else if(ck==2){
 				//$("#page49 #textbox1,#page49 #textbox3, #page49 #textbox4, #page49 #textbox5").hide();
 				$("#page49 .text, #page49 #textbox2, #page49 .text_img2, #page49 .text_tip").delay(500).fadeIn(500);
+				audio_play(49,2);
 				//setTimeout(function(){
 					$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_02.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 
@@ -1221,18 +1301,21 @@ $(document).ready(function(){
 			}else if(ck==3){
 				//$("#page49 #textbox2,#page49 #textbox1, #page49 #textbox4, #page49 #textbox5").hide();
 				$("#page49 .text, #page49 #textbox3, #page49 .text_img2, #page49 .text_tip").delay(500).fadeIn(500);
+				audio_play(49,3);
 				//setTimeout(function(){
 					$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_03.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 				//});
 			}else if(ck==4){
 				//$("#page49 #textbox2,#page49 #textbox3, #page49 #textbox1, #page49 #textbox5").hide();
 				$("#page49 .text, #page49 #textbox4, #page49 .text_img2, #page49 .text_tip").delay(500).fadeIn(500);
+				audio_play(49,4);
 				//setTimeout(function(){
 					$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_04.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 				//});
 			}else if(ck==5){
 				//$("#page49 #textbox2,#page49 #textbox3, #page49 #textbox4, #page49 #textbox1").hide();
 				$("#page49 .text,#page49 #textbox5, #page49 .text_img2, #page49 .text_tip").delay(500).fadeIn(500);
+				audio_play(49,5);
 				//setTimeout(function(){
 					$('#page49').css({"transition":"background-image 0.5s ease-in-out","background":"url(../images/day1/79_interior_05.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto"}).fadeIn(500);
 				//})}

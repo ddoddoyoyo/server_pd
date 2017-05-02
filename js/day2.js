@@ -323,6 +323,7 @@ $(document).ready(function(){
 			$("#page61 .imgR .engine").css({"background-image":"url(../images/day2/08_engine_right.png)","background-repeat":"no-repeat%","background-position":"50% 50%"}).dequeue();
 			$("#page61 .next_finger").css({"left":"17%"});
 			$("#page61 .graphR .graph1, #page61 .graphR .graph2, #page61 .graphL .graph1, #page61 .graphL .graph2").css({"height":"0"});	
+			audio_pause();
 
 			// $("#page61 #textbox2, #page63 #go_back, #page63 .next_p_btn").hide();
 			// $("#page63 #textbox1, #page63 #go_next1").show();
@@ -377,20 +378,13 @@ $(document).ready(function(){
 	});
 	$("#page61 .next_p_btn").click(function(){
 		if($("#page61 .next_p_btn").hasClass("stopPage")){
-			// if($("#page61").has(".audio1")) {
-			// 	$("#page61").find(".audio1").trigger('play');
-			// }
-			// $("#page61 .audio1").each(function(){ 
-			// 		this.pause();
-			// 		if (!isNaN(this.duration)) {
-			// 			this.currentTime = 0;
-			// 		}
-			// 	});
-			audio_pause();
+			audio_play(61,1);
+			
 			$("#page61 .popLayer").fadeIn(500, function(){
 				$("#page61 .next_p_btn").removeClass("stopPage");
 				
 			});
+
 			//$("#page61 .next_p_btn").removeClass("stopPage");
 		}
 		else{
@@ -492,6 +486,7 @@ $(document).ready(function(){
 		}
 	});
 	$("#page63001 .btn_play").click(function(){
+		audio_pause();
 		// $("#page63001 .audio1, #page63001 .audio2").each(function(){ 
 		// 			this.pause();
 		// 			if (!isNaN(this.duration)) {
@@ -509,7 +504,7 @@ $(document).ready(function(){
 	$("#page63001 .next_p_btn").click(function(){
 		//$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").hide();
 		if($("#page63001 .next_p_btn").hasClass("stopPage")){
-			audio_pause();
+			audio_play(63001,2);
 			$("#page63001 .popLayer#pop02").fadeIn(500,function(){
 				//pageshow에서 fadeIn되서..
 				//$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").delay(500).fadeIn(500);
@@ -592,6 +587,7 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page65 .textwrap, #page65 #textbox2, #page65 .text_btn_r, #page65 .next_p_btn").hide();
 			$("#page65 .start_text, #page65 #go_next1").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
 			$("#page65 #textbox1").show();
@@ -602,13 +598,18 @@ $(document).ready(function(){
 			// 	}
 			// });
 			next_Count = 1;
+			next_tg_Count = 1;
 		}
 	});
 	$("#page65 .toggle").click(function(){
 		$("#page65 .textwrap, #page65 .start_text").toggle();
-	  //   if($("#page65").has(".audio1")) {
-			// $("#page65").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
-			// }
+	  
+	  if(next_tg_Count == 1){
+		   audio_play(65,1);
+		} else {
+			audio_pause();
+		 }
+		next_tg_Count++;
 	});
 
 	$("#page65 #go_next1").click(function(){
@@ -616,6 +617,7 @@ $(document).ready(function(){
 			//console.log('aa');
 		    $("#page65 #textbox1, #page65 #go_next1").hide();
 		    $("#page65 #textbox2, #page65 #go_back, #page65 .next_p_btn").show();
+		    audio_play(65,2);
 		 //    $("#page65 .audio1").each(function(){ 
 			// 		this.pause();
 			// 		if (!isNaN(this.duration)) {
@@ -635,6 +637,7 @@ $(document).ready(function(){
 		} else if(next_Count == 2){
 			$("#page65 #textbox1, #page65 #go_next1, #page65 #go_back").show();
 			$("#page65 #textbox2, #page65 .next_p_btn, #page65 #go_back").hide();
+			audio_play(65,1);
 			// $("#page65 .audio2").each(function(){ 
 			// 		this.pause();
 			// 		if (!isNaN(this.duration)) {
@@ -664,6 +667,7 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page66 .next_p_btn, #page66 .popLayer, #page66 .img_ex").hide();
 			$("#page66 .next_p_btn").addClass("stopPage");
+			audio_pause();
 		}, 
 		"pageshow" : function(){
 			$('#page66').css({"background":"url(../images/day2/16_photo_1.jpg)","background-repeat":"no-repeat", "background-size":"auto 100%"}).show();
@@ -708,7 +712,7 @@ $(document).ready(function(){
 
 	$("#page66 .next_p_btn").click(function(){
 		if($("#page66 .next_p_btn").hasClass("stopPage")){
-			audio_pause();
+			audio_play(66,1);
 			$("#page66 .popLayer").fadeIn(500, function(){
 			// 	$("#page66 .audio1").each(function(){ 
 			// 		this.pause();
@@ -1218,6 +1222,7 @@ $(document).ready(function(){
 			$("#page79 .popLayer, #page79 .next_p_btn").hide();
 			$("#page79 .next_finger").show();
 			$("#page79 .next_p_btn").addClass("stopPage");
+			audio_pause();
 			// $("#page79 .audio2").each(function(){ 
 			// 	this.pause();
 			// 	if (!isNaN(this.duration)) {
@@ -1240,7 +1245,7 @@ $(document).ready(function(){
 
 	$("#page79 .next_p_btn").click(function(){
 		if($("#page79 .next_p_btn").hasClass("stopPage")){
-			audio_pause();
+			audio_play(79,1);
 			$("#page79 .popLayer").fadeIn(500, function(){
 				// $("#page79 .audio1").each(function(){ 
 				// 	this.pause();
@@ -1348,11 +1353,16 @@ $(document).ready(function(){
 		next_Count++;
 	});
 
-	$("#page86 .next_p_btn").click(function(){
-		// 	if($("#page89").has(".audio1")) {
-		// 	$("#page89").find(".audio1").trigger('play');
-		// }
-});
+	$("#page86").on({
+		"pagebeforeshow" : function(){
+			audio_pause();
+		}, 
+		"pageshow" : function(){
+			audio_play(86,1);
+		}
+	});
+
+
 
 
 	//page87
@@ -1392,23 +1402,19 @@ $(document).ready(function(){
 		next_Count++;
 	});
 
-	$("#page88 .next_p_btn").click(function(){
-		
-	// if($("#page89").has(".audio1")) {
-	// 		$("#page89").find(".audio1").trigger('play');
-	// 	}
-	});
 
 	$("#page89").on({
 		"pagebeforeshow" : function(){
-			audio_pause();
+			// audio_pause();
 			$("#page89 .textwrap, #page83 .next_p_btn").hide();
+			audio_pause();
 			//$("#page89").css({"background-size":"120% auto"});
 		}, 
 		"pageshow" : function(){
 			//$("#page89").animate({"backgroundSize":"100%"});
 			$("#page89 .textwrap").delay(500).fadeIn(500);
 			$("#page89 .next_p_btn").delay(1000).fadeIn(500);
+			audio_play(89,1);
 		}
 	});
 
@@ -1506,6 +1512,7 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page93 .textwrap,#page93 .next_p_btn").hide();
 			$("#page93 .start_text").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
 			$("#page93 #textbox1").show();
@@ -1515,13 +1522,18 @@ $(document).ready(function(){
 			// 		this.currentTime = 0;
 			// 	}
 			// });	
+			next_tg_Count = 1;
 		}
 	});
 	$("#page93 .toggle").click(function(){
 		$("#page93 .textwrap, #page93 .start_text, #page93 .next_p_btn").toggle();
-		// if($("#page93").has(".audio1")) {
-		// 		$("#page93").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
-		// 	}
+
+		if(next_tg_Count == 1){
+		   audio_play(93,1);
+		} else {
+			audio_pause();
+		 }
+		next_tg_Count++;
 	});
 
 	$("#page93 .next_p_btn").click(function(){
@@ -1687,6 +1699,7 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page100 .textwrap,#page100 .next_p_btn").hide();
 			$("#page100 .start_text").show();
+			audio_pause();
 		}, 
 		"pageshow" : function(){
 			$("#page100 #textbox1").show();
@@ -1696,13 +1709,18 @@ $(document).ready(function(){
 			// 		this.currentTime = 0;
 			// 	}
 			// });
+			next_tg_Count = 1;
 		}
 	});
 	$("#page100 .toggle").click(function(){
 		$("#page100 .textwrap, #page100 .start_text, #page100 .next_p_btn").toggle();
-		// if($("#page100").has(".audio1")) {
-		// 		$("#page100").find(".audio1").trigger('play');//다음페이지로 넘기기 위해서 trigger꼭 써야함
-		// 	}
+		
+		if(next_tg_Count == 1){
+		   audio_play(100,1);
+		} else {
+			audio_pause();
+		 }
+		next_tg_Count++;
 	});
 
 	$("#page100 .next_p_btn").click(function(){
