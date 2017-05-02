@@ -120,9 +120,11 @@ $(document).ready(function(){
 					$('.pd_con_text').val('');
 
 					//$.mobile.changePage("#page0");
-					location.href='/pd/en/day1.php';
-					window.open('/pd/timeline_view.php','toolbar=no, scrollbars=yes');
+					//window.open('/pd/timeline_view.php','toolbar=no, scrollbars=yes');
+					//fb_pupup();
 					//window.open('/pd/en/timeline_view.html','toolbar=no, scrollbars=yes');
+					//location.href='/pd/en/day1.php';
+					location.href='/pd/timeline_view.php';
 				} else {
 					alert('오류가 발생했습니다');
 				}
@@ -138,6 +140,8 @@ $(document).ready(function(){
 
 
 });
+
+
 
 //인테리어 컬러
 function choice_color(no){

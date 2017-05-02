@@ -12,6 +12,18 @@
 
 	$REFER = $_SERVER['REMOTE_ADDR'];
 
+	
+	
+
+	$ADM_DEVICE = $_POST["ADM_DEVICE"];
+	$IP = $_POST["IP"];
+	$ADM_ACCESS_GUBUN = $_POST["ADM_ACCESS_GUBUN"];
+	$ADM_INFLOW_GUBUN = $_POST["ADM_INFLOW_GUBUN"];
+	$COUNTRY_CODE = $_POST["COUNTRY_CODE"];
+
+
+
+
 	$sql = "SELECT COUNT(*) AS CNT FROM LMS_MEMBER WHERE LMS_CONTRY = :LMS_CONTRY AND LMS_NAME = :LMS_NAME AND LMS_GB = :LMS_GB";
 	$stmt = $dbh->prepare($sql);
 	$stmt->bindParam(':LMS_NAME',$LMS_NAME);
@@ -78,6 +90,7 @@
 		$stmt->bindParam(':LMS_IP',$REFER);
 
 		if($stmt->execute()){
+
 			$dbh->commit();
 			$param = "?LMS_CONTRY=".urlencode($LMS_CONTRY)."&LMS_NAME=".urlencode($LMS_NAME)."&RETURN=".urlencode($RETURN)."";
 			$tools->metaGo("/pd/common/login_action.php".$param."");

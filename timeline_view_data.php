@@ -61,7 +61,7 @@
 				  WHERE A.LMS_GB = 'hyundai'
 				  AND F.LMS_CON_GB = 'hyundai'
 				  AND F.LMS_CON_CAR_GUBUN = 'PD'
-				  ORDER BY F.LMS_CON_REGDATE
+				  ORDER BY F.LMS_CON_REGDATE DESC
 				 ) AS AA
 			LIMIT ".$list.",5";
 
@@ -87,7 +87,7 @@
 		if($ROW[$a]['LMS_IMAGE']){
 			$dataList = $dataList."  <div class='userPix'><img src='".$IMG_URL."/hyundai/member/".$ROW[$a]['LMS_IMAGE']."' alt=''></div>" ;
 		} else {
-			$dataList = $dataList."  <div class='userPix'><img src='/pc_pd/app/images/thumbnail_none-profile.png' alt=''></div>" ;
+			$dataList = $dataList."  <div class='userPix'><img src='/pd/images/profile_basic_@3x.png' alt=''></div>" ;
 		}
 		$dataList = $dataList."</div>";
 		$dataList = $dataList."    <div class='userProfile'>";

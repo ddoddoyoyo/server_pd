@@ -2060,7 +2060,7 @@ var options = {
 							</div>
 						</div>
 						<a href="#" id="form_sumit" class="bye_btn">OK</a>
-						<!-- <a href="/pd/en/timeline_view.html" class="bye_btn" target="_blank">OK</a> -->
+						<!-- <a href="/pd/timeline_view.php" class="bye_btn" id="timeline_show" target="_blank" style="display:none">OK</a> -->
 					</div>
 					</form>
 				</section>

@@ -42,7 +42,7 @@
 		  WHERE A.LMS_GB = 'hyundai'
 		  AND F.LMS_CON_GB = 'hyundai'
 		  AND F.LMS_CON_CAR_GUBUN = 'PD'
-		  ORDER BY F.LMS_CON_REGDATE
+		  ORDER BY F.LMS_CON_REGDATE DESC
 		 ) AS AA
 
 	";
@@ -133,7 +133,7 @@
 							  WHERE A.LMS_GB = 'hyundai'
 							  AND F.LMS_CON_GB = 'hyundai'
 							  AND F.LMS_CON_CAR_GUBUN = 'PD'
-							  ORDER BY F.LMS_CON_REGDATE
+							  ORDER BY F.LMS_CON_REGDATE DESC
 							 ) AS AA
 							 LIMIT 5
 							 ";

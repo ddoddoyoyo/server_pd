@@ -5,6 +5,37 @@
 		$tools->JavaGo("/pd/en/day1.php");
 	}
 	
+	
+	$QRCode = $_REQUEST["QRCode"];
+
+	$agent = $tools->user_agent($_SERVER['HTTP_USER_AGENT']);
+
+	$refer = $_SERVER['REMOTE_ADDR'];
+
+
+	if($agent == 'PC'){
+		$ADM_ACCESS_GUBUN = 2;
+	} else {
+		$ADM_ACCESS_GUBUN = 1;
+	}
+
+	
+	if(!isset($QRCode)){
+		$ADM_INFLOW_GUBUN = 1;
+	} else {
+		$ADM_INFLOW_GUBUN = 2;
+	}
+	
+
+	$request_url = "http://whois.kisa.or.kr/openapi/ipascc.jsp?query=".$refer."&key=2016081813570509350490&answer=json";
+	
+	$info = $tools->get_web_page($request_url);
+
+	$data = json_decode($info['content'],true);
+
+	$COUNTRY_CODE = $data['whois']['countryCode'];
+
+
 
 ?>
 <!DOCTYPE html>
@@ -146,6 +177,13 @@
 				<form id="Frm" name="Frm" method="post" action="/pd/common/join_action.php" enctype="multipart/form-data">
 					<input type="hidden" name="RETURN" value="/pd/en/day1.php"/>
 					<input type="hidden" name="LMS_GB" value="hyundai"/>
+					
+					<input type="hidden" name="ADM_DEVICE" value="<?=$agent?>"/>
+					<input type="hidden" name="IP" value="<?=$refer?>"/>
+					<input type="hidden" name="ADM_ACCESS_GUBUN" value="<?=$ADM_ACCESS_GUBUN?>"/>
+					<input type="hidden" name="ADM_INFLOW_GUBUN" value="<?=$ADM_INFLOW_GUBUN?>"/>
+					<input type="hidden" name="COUNTRY_CODE" value="<?=$COUNTRY_CODE?>"/>
+
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
 							<h1>Hello.</h1>
