@@ -457,6 +457,7 @@ $(document).ready(function(){
 		$("#page14 .good").show();
 		setTimeout(function(){
 			$.mobile.changePage("#page15");
+			audio_play(15,1);
 		},1000);	
 	});
 
@@ -1241,7 +1242,7 @@ $(document).ready(function(){
 		}
 		else if(next_Count == 3){
 		    $("#page47 #textbox5, #page47 #go_next1,#page47 .next_p_btn").hide();
-		    $("#page47 #textbox4, #page47 #go_back").show();
+		    $("#page47 #textbox4, #page47 #go_back, #page47 #go_next1").show();
 		    audio_play(47,4);
 		    $('#page47')
 			//.fadeOut()

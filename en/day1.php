@@ -2067,8 +2067,7 @@
 
 	</div>
 </div>
-		<!-- <a href="#page46">이동</a> -->
-
+		<!-- <a href="#page14">이동</a> -->
 
 	</body>
 </html>
