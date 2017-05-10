@@ -188,7 +188,7 @@ var options = {
 							<div class="loding_bar">
 								<img src="/pd/images/loading_bar_1.png" alt="" class="londing1">
 								<img src="/pd/images/loading_bar_2.png" alt="" class="londing2">
-								<div id="logind_text">Preparing our trip...</div>
+								<div id="logind_text">Seyahatimiz Hazırlanıyor…</div>
 							</div>
 						</div>
 					</div>
@@ -202,19 +202,19 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<h1>Day3.</h1>
+									<h1>3. Gün</h1>
 									<div class="img_wrap">
 										<img src="/pd/images/button/08_point.png" alt="location point">
 										<img src="/pd/images/button/08_lodeline.png" alt="location">
 										<p class="p1">Bern</p>
-										<p class="p2">Strasbourg</p>
+										<p class="p2">Strazburg</p>
 									</div>
 									<ul>
-										<li>Aerdynamic</li>
-										<li>Turbo engine</li>
-										<li>Best Class Legroom</li>
-										<li>ADAS</li>
-										<li>Remote Window Control</li>
+										<li>Aerodinamik</li>
+										<li>Turbo Motor</li>
+										<li>Sınıfında En İyi Bacak  Mesafesi</li>
+										<li>Gelişmiş Sürüş Yardım Sistemleri</li>
+										<li>Uzaktan Kumanda Edilebilen Camlar</li>
 									</ul>
 								</div>
 								<a href="#page0" id="go_page0" class="next_p_btn ui-btn go-next">
@@ -244,13 +244,13 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox0_1" class="textbox">
-									<p>So, shall we carry on to the next stop?</p>
+									<p>O zaman gelecek durağımız ile devam edelim mi ?</p>
 								</div>
 								<div id="textbox0_2" class="textbox">
-									<p>It's Bern the  4th biggest and the capital city of Switzerland.</p>
+									<p>Bern, İsviçre’nin 4. büyük kenti olmakla birlikte aynı zamanda başkentidir.</p>
 								</div>
 								<div id="textbox0_3" class="textbox">
-									<p>Touch Bern on the map.</p>
+									<p> Harita üzerinde Bern’e dokunun.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -286,8 +286,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>We need to take the A1 Express way to get to Bern.<br>
-									which means I can speed up here.<br>Actually, I’m getting pretty nervous now.</p>
+									<p>Bern’e gidebilmek için A1 otobanını kullanmamız gerekecek.<br>Bu nedenle yüksek hızlara çıkacağız. Şimdiden heyecanlandım.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -314,7 +313,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>i30’s stability and fuel efficiency are quite good even when driving at high speed.<br>I heard it’s because there was an improvement on aerodynamics.</p>
+									<p>İ30’un stabilite ve yakıt ekonomisi, yüksek hızlarda dahi oldukça iyi.<br>Bunun yanı sıra aerodinamik konusunda da bazı geliştirmelerin yapıldığını duymuştum.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -368,16 +367,16 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox3_1" class="textbox">
-									<p>First, the rear spoiler with side garnish is applied to optimize the air flow.</p>
+									<p>Öncelikle arka spoyler ve c sütunu kaplaması, hava akışını optimize etmek üzere tasarlanmıştır.</p>
 								</div>
 								<div id="textbox3_2" class="textbox">
-									<p>To improve the A-pillar vortex of air, side molding is applied on both sides of the front windshield.</p>
+									<p>A sütunu çevresinde hava akışını iyileştirmek için ön cam kavis tasarımı optimum duruma getirilmiştir.</p>
 								</div>
 								<div id="textbox3_3" class="textbox">
-									<p>The wheel air curtains improves the air flow to minimize resistance on high speed driving.</p>
+									<p>Hava perdeleri, tekerlek kısmındaki türbülansı azaltarak hava akışını iyileştirir. Bu sayede yüksek hızlarda dahi rüzgar direnci  azaltılmış olur.</p>
 								</div>
 								<div id="textbox3_4" class="textbox">
-									<p>By the way, do you know the coefficient of drag of i30?</p>
+									<p>Bu arada i30’un rüzgar direnci katsayısının ne olduğunu biliyor muydunuz ?</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -440,7 +439,7 @@ var options = {
 						<div class="titlewrap">
 							<div class="text_i">
 								<div id="textbox1">
-									<p>Cd Comparison</p>
+									<p>Rüzgar Direnci Katsayısı (Cd) Karşılaştırması</p>
 								</div>	
 							</div>
 						</div>
@@ -453,11 +452,10 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>You mean the Cd figure right?<br />
-									Yeah, I know it.</p>
+									<p>Evet, biliyorum.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>It's 0.3, and smaller the number the better the aerodynamics performance. i30 has the lowest figure in it’s class.</p>
+									<p>i30’un rüzgar direnci katsayısı 0.30. Bu rakam düştükçe, aerodinamik performansın arttığını duymuştum. i30 bu konuda, sınıfında en düşük orana sahip araçlardan bir tanesi.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -490,7 +488,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox5_1" class="textbox">
-									<p>Don't you think it's so quiet inside for a car running at this high speed</p>
+									<p>Otobanda gitmemize rağmen, sen de aracın oldukça sessiz olduğunu düşünmüyor musun</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -515,7 +513,7 @@ var options = {
 					</div>
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
-							<div class="graphDesc">30%<br /><span>decrease</span></div>
+							<div class="graphDesc">%30<br/><span>azaltıldı</span></div>
 							<div class="graphLegend6">
 								<div><img src="/pd/images/day3/11_title_current-i30.png" /></div>
 								<div><img src="/pd/images/day3/09_title_i30.png" /></div>
@@ -554,7 +552,7 @@ var options = {
 						<div class="titlewrap">
 							<div class="text_i">
 								<div id="textbox1">
-									<p>Minimized number of parts</p>
+									<p>Azaltılmış parça sayısı</p>
 								</div>	
 							</div>
 						</div>
@@ -586,10 +584,10 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox6_1" class="textbox">
-									<p>That’s because of the aerodynamics performance, and also the decreased number of parts by 30%.</p>
+									<p>İşte bu aerodinamiğin bir sonucu. Aynı zamanda %30 oranında kullanılan parça sayısı azaltıldı.</p>
 								</div>
 								<div id="textbox6_2" class="textbox">
-									<p>Lastly, the integrated side panel is applied for minimum generation of noise.</p>
+									<p>Son olarak,Yeni i30’da en temel seslerin dahi azaltılması için entegre panel uygulandı.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -622,7 +620,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox7_1" class="textbox">
-									<p>Oh, it felt almost silent in here. Reduced wind noise!</p>
+									<p>Aa, yüksek hızlarda da araç içerisinin bu denli sessiz olmasının sebebi bu demek ki. Çünkü daha az rüzgar sesi duyuluyor.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -649,7 +647,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox8_1" class="textbox">
-									<p>Do you know about the engines available for i30?<br>From 3 types of engines I chose the Gamma 1.6 Turbo-GDI.</p>
+									<p>i30’un motor seçenekleri hakkında ne düşünüyorsun. 3 farklı motor seçeneği bulunuyor. Ben T-GDI’ yı seçtim.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -677,7 +675,7 @@ var options = {
 						<div class="titlewrap">
 							<div class="text_i">
 								<div id="textbox1">
-									<p>Click on each of the engines</p>
+									<p>Motor İncelemesi</p>
 								</div>	
 							</div>
 						</div>
@@ -708,27 +706,27 @@ var options = {
 						<div class="titlewrap">
 							<div class="text_i">
 								<div id="textbox1">
-									<p>Result</p>
+									<p>Sonuç</p>
 								</div>	
 							</div>
 						</div>
 						<div class="imgwrap">
 							<div class="graphLegend10">
-								<div>NU 2.0 GDI</div>
-								<div>GAMMA 1.6 T-GDI</div>
-								<div>U2 1.6 VGT</div>
+								<div>Kappa 1.4 MPi</div>
+								<div>Kappa 1.4 T-GDI</div>
+								<div>U2 1.6 VGT CRDi</div>
 							</div>
 							<ul class="graph10">
 								<li>
-									<div class="graphObj" alt="30">30%</div>
+									<div class="graphObj" alt="30">%30</div>
 									<div class="graphText"></div>
 								</li>
 								<li>
-									<div class="graphObj large" alt="50">50%</div>
+									<div class="graphObj large" alt="50">%50</div>
 									<div class="graphText large"></div>
 								</li>
 								<li>
-									<div class="graphObj" alt="20">20%</div>
+									<div class="graphObj" alt="20">%20</div>
 									<div class="graphText"></div>
 								</li>
 							</ul>
@@ -752,8 +750,8 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox11_1" class="textbox">
-									<p>My choice was <span>the 1.6 T-GDI</span>.<br />
-									It's the most powerful engine from the line-up so I'm satisfied.</p>
+									<p>Benim seçimim <span>T-GDI oldu</span>.<br />
+									Bu seçeneklerden en güçlü benzinli motor bu, seçimimden oldukça memnunum.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -780,11 +778,10 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox12_1" class="textbox">
-									<p>Here we're running on the A1 express way.<br />
-									This is the fastest way to reach Bern.</p>
+									<p>İşte A1 otobanı. Bern’e ulaşmak için en hızlı yol bu.</p>
 								</div>
 								<div id="textbox12_2" class="textbox">
-									<p>I feel a bit tired maybe because of long distance driving.<br>But not that bad as I expected. I guess it’s because of the roomy space.</p>
+									<p>Uzun süredir araç kullandığım için kendimi biraz yorgun hissediyorum. Fakat uzun süredir araç kullanıyor olmama rağmen, umduğumdan daha az yoruldum. Belki de araç içinin ferah olmasından kaynaklanıyordur.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -852,7 +849,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox14_1" class="textbox">
-									<p>A sporty exterior and spacious interior. i30 has it all, right?<br>i30 is more spacious than any other competitor.</p>
+									<p>Hem geniş hem de sportif bir iç mekan. i30, bir otomobilde istenen bütün imkanlara sahip değil mi ?<br>Rakipleri ile kıyaslandığında, Hyundai i30’un en geniş iç hacme sahip  araçlardan olduğunu söyleyebilirim.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -885,7 +882,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox15_1" class="textbox">
-									<p>Maybe that’s why I felt it’s more spacious inside than other cars I drove before.</p>
+									<p>Belki de bu yüzden i30’un iç mekanını, diğer araçlara göre daha geniş buldum.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -911,7 +908,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox16_1" class="textbox">
-									<p>Here we are reaching Bern.</p>
+									<p>İşte Bern’e yaklaşıyoruz.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -942,7 +939,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox17_1" class="textbox">
-									<p>This clock tower is the landmark of the Bern.</p>
+									<p>Bu saat kulesi, Ortaçağ’da Bern’in batı giriş kapısı olarak inşa edilmiş.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -950,7 +947,7 @@ var options = {
 							</div>
 						</div>
 						<div class="view_text">
-							<a href="#page18"><p>Bern, Zytglogge</p></a>
+							<a href="#page18"><p>Zytglogge Saat Kulesi</p></a>
 							<a href="#page18" id="go_page18" class="next_p_btn ui-btn go-next">
 								<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
@@ -979,13 +976,13 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox18_1" class="textbox">
-									<p>Bern means the city of bear, and this old town is registered as UNESCO World Heritage.</p>
+									<p>Bern kelime olarak «ayılar şehri» anlamına geliyor. Aynı zamanda tüm şehir UNESCO Dünya Mirası listesinde yer alıyor.</p>
 								</div>
 								<div id="textbox18_2" class="textbox">
-									<p>It still has the atmosphere of the original medieval age, also preserving what its history left.</p>
+									<p>Şehir, orijial ortaçağ ve tarihi dokusunu günümüze kadar korumuş.</p>
 								</div>
 								<div id="textbox18_3" class="textbox">
-									<p>Shall we wait here and see?</p>
+									<p>Özellikle öğleyin yapılan, bu saat kulesi şovu oldukça meşhur. Burada bekleyip şovu izlemeye dersin ?</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1029,8 +1026,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox19_1" class="textbox">
-									<p>We can't miss the famous rose park in Bern also.<br>
-									Let's take a look here as well.</p>
+									<p>Bern’de yer alan ünlü gül parkını da görmeden gitmeyelim.<br>İşte burada, haydi içeriye bir göz atalım.</p>
 								</div>
 							</div>
 						</div>
@@ -1054,8 +1050,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox20_1" class="textbox">
-									<p>This blooming rose garden is so beautiful.<br />
-									I feel relaxed here.</p>
+									<p>Bu çiçek açmış gül bahçesi çok ama çok güzel. İnsan kendini burada rahatlamış hissediyor.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1091,7 +1086,7 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox21_1" class="textbox">
-									<p>Did you have fun in Bern?<br>Then let's move to our final destination, Strasbourg.</p>
+									<p>Bern’i umarım sevmişsindir. Şimdi sırada son durağımız olan Strazburg.</p>
 								</div>
 							</div>
 						</div>
@@ -1121,10 +1116,10 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox0_1" class="textbox">
-									<p>Our last destination, Strasbourg!<br>It is a city of France, </p>
+									<p>Son durağımız, Fransa’nın bir şehri olan Strazburg.</p>
 								</div>
 								<div id="textbox0_2" class="textbox">
-									<p>Where various canals meet and the center of traffic culture in a quiet atmosphere.<br>Let's go quickly!</p>
+									<p>Burası birçok kanalın birleştiği ve trafik kültürünün, son derece sessiz olmasıyla örnek gösterilen bir şehir. Haydi çabuk olalım !</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1159,9 +1154,8 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox22_1" class="textbox">
-									<p>Here we're on the way to Strasbourg.<br />
-									You see the sunset through the panorama sunroof?<br />
-									This is amazing.</p>
+									<p>İşte Strazburg yollarındayız. Güneşin batışını panaromik cam tavanı açıp izleyelim mi ?<br />
+									Bu gerçekten görülmeye değer.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1198,7 +1192,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox23_1" class="textbox">
-									<p>The sunroof of i30 is panoramic type giving the sense of openness. <br>No need for convertible cars!</p>
+									<p>i30 panaromik cam tavanın bu kadar açılabilmesi harika. Neredeyse cabrio araçlarla kıyaslanabilecek türden.</p>
 								</div>
 							</div>
 						</div>
@@ -1222,7 +1216,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox20_1" class="textbox">
-									<p>Look! I think we are almost at Strasbourg.</p>
+									<p>Bak!  Neredeyse Strazburg’a ulaştığımızı düşünüyorum.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1251,7 +1245,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox25_1" class="textbox">
-									<p>So, shall we take a look around?</p>
+									<p>Haydi şehri şöyle bir turlayalım.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1278,10 +1272,10 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>This is the final stop of our journey, Strasbourg.<br>Located on the west side of Rhine river, Strasbourg has well-developed canal.</p>
+									<p>Burası gezimizdeki son şehir. Strazburg, Ren Nehri’nin batısında konumlandırılmış olup her tarafı nehirlerle donatılmış bir şehir.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>And it has a beautiful le petit French houses.</p>
+									<p>Burada aynı zamanda çok sayıda küçük Fransız evleri bulunuyor.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1324,7 +1318,7 @@ var options = {
 									<?php } ?>
 								</div>
 								<div id="textbox27_1" class="textbox">
-									<p>Wow, Watch out.<br>You gotta keep your eyes looking ahead, we were nearly hit something.</p>
+									<p>Hey ! Dikkat et ! Neredeyse bir şeye çarpıyorduk.</p>
 								</div>
 							</div>
 						</div>
@@ -1369,7 +1363,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox28_1" class="textbox">
-									<p>The AEB system of i30 detects pedestrian or vehicle in the front with the radar sensor and automatically engages the brake if a crash is expected. It prevents or minimizes the damage from frontal crash.</p>
+									<p>i30’da bulunan Otomatik Acil Fren Destek Sistemi (AEB), aracın önünde yer alan radar sistemi ile yaya ve nesneleri önceden algılayarak olası kazaları önler.<br>Bu ileri teknoloji özelliği herhangi bir potansiyel kaza durumunda, otomatik olarak araca fren uygulamaktadır.</p>
 								</div>
 							</div>
 						</div>
@@ -1393,7 +1387,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox25_1" class="textbox">
-									<p>Fortunately, i30 stopped well. Is there any other high-tech features on i30?</p>
+									<p>i30’um bizi kurtardığı için şanslıyız. i30’un bundan başka ileri teknoloji özelliği var mı ?</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1438,7 +1432,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox30_1" class="textbox">
-									<p>Sensing and calculating the distance from the car in the front, the car maintains the constant preset distance even when the driver is not pressing the accelerator or brake pedal.</p>
+									<p>Sürücünün gaz pedalı veya frene basmasına gerek kalmadan, sürücünün seçimine uygun olarak i30 öndeki araç ile olan mesafeyi algılar ve bu mesafeyi.</p>
 								</div>
 							</div>
 						</div>
@@ -1462,7 +1456,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox31_1" class="textbox">
-									<p>With ASCC, you can drive more comfortably. But this doesn’t mean a fully automated driving, so you gotta be careful.</p>
+									<p>Akıllı Hız Sabitleyici özelliği ile yolculuklarınız artık çok daha konforlu ve güvenli.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1537,7 +1531,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox33_1" class="textbox">
-									<p>It's a piece of cake with LKAS to stay on the lane safely.</p>
+									<p>Akıllı Hız Sabitleyici (ASCC) özelliği ile birlikte Şeritten Ayrılma Uyarı Sistemi (LDWS), şeritten ayrılma durumunda sürücüyü uyarır.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1588,7 +1582,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox34_1" class="textbox">
-									<p>BSD senses a car approaching in the blind spot with a radar in the rear bumper and makes an alert sound to prevent crash.</p>
+									<p>Kör Nokta Uyarı Sistemi (BSD) de, sensör mekanizması ile sürücüyü olası kazalara karşı uyarır. Arka tamponda yer alan sensör sayesinde, araç arkasından görüş dışında yaklaşan başka bir araç olması durumunda sürücü bilgilendirilir.</p>
 								</div>
 							</div>
 						</div>
@@ -1612,7 +1606,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox35_1" class="textbox">
-									<p>Having BSD on a car makes it safer when changing lane or watching the blind spot.</p>
+									<p>Kör Nokta Uyarı Sistemi (BSD), şerit değiştirirken veya kör noktadan bir araç gelip gelmediğini görmek için oldukça yardımcı bir özelliktir.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1664,13 +1658,13 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox36_1" class="textbox">
-									<p>DAA is a function for detecting careless driving. It analyzes the driving pattern and the location of the car.</p>
+									<p>Yorgunluk Tespit Sistemi (DAA), dikkatsiz sürüşe karşı ideal bir özelliktir. Sürüş şeklini ve aracın yol üzerindeki konum değişikliklerini analiz ederek, sürücünün dikkat seviyesini ölçümler.</p>
 								</div>
 								<div id="textbox36_2" class="textbox">
-									<p>So if a driver feels tired and drives carelessly, a warning sign will appear on the cluster and advice the driver to take a rest.</p>
+									<p>Eğer sürüş şekli, dikkatsiz sürüş kalıplarına sahipse ve/veya sürücü kendini yorgun hissediyorsa; gösterge panelindeki dikkat seviyesi aşamalı olarak azalır ve sürücüyü mola vermesi için uyarır.</p>
 								</div>
 								<div id="textbox36_3" class="textbox">
-									<p>Take a look if there is a DAA sign on the cluster.</p>
+									<p>Hey ! Gösterge panelindeki «Yorgunluk Tespit Sistemi (DAA)» uyarısına baksana !</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1705,7 +1699,7 @@ var options = {
 							<div class="textwrap">	
 								<div class="text">	
 									<div id="textbox1" class="textbox">
-										<p>I’m impressed that such many features are applied to a car of this class. I’m falling in a deep love with this car.</p>
+										<p>Bu sınıftaki bir aracın, bu kadar çok ileri teknoloji özellikle donatılmış olmasından çok etkilendim. Şimdi aracıma daha derin bir tutkuyla bağlandım !</p>
 									</div>
 								</div>
 								<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1734,11 +1728,11 @@ var options = {
 						<div class="pageTitle">Which one is your favorite high-tech safety feature?</div>
 						<div class="textwrap">
 							<ul>
-								<li><span>LKAS</span></li>
-								<li><span>BSD</span></li>
-								<li><span>ASCC</span></li>
-								<li><span>DAA</span></li>
-								<li><span>AEB</span></li>
+								<li><span>LDWS(Şeritten Ayrılma Uyarı Sistemi)</span></li>
+								<li><span>BSD(Kör Nokta Uyarı Sistemi)</span></li>
+								<li><span>ASCC(Akıllı Hız Sabitleyici)</span></li>
+								<li><span>DAA(Yorgunluk Tespit Sistemi)</span></li>
+								<li><span>AEB(Otomatik Acil Fren Destek Sistemi)</span></li>
 							</ul>
 						</div>
 					</div>
@@ -1789,7 +1783,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox40_1" class="textbox">
-									<p>The i30 is equipped with the best-in-class safety systems to provide drivers with maximum comfort and safety.</p>
+									<p>Hyundai Yeni i30, sınıfında en iyi güvenlik sistemlerine sahiptir. Bu da kullanıcılarına sürüş esnasında maksimum konfor ve güvenlik sağlamaktadır.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1826,7 +1820,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox41_1" class="textbox">
-									<p>Here we are at Notre-dame cathedral.</p>
+									<p>İşte, Notre-Dame Katedrali’ndeyiz.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1834,7 +1828,7 @@ var options = {
 							</div>
 						</div>
 						<div class="view_text">
-							<a href="#page42"><p>Strasbourg, Notre-dame cathedral</p></a>
+							<a href="#page42"><p>Strazburg, Notre-Dame Katedrali</p></a>
 							<a href="#page42" id="go_page42" class="next_p_btn ui-btn go-next">
 								<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
@@ -1863,13 +1857,13 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox42_1" class="textbox">
-									<p>Notre-dame cathedral is located in the center of the old town, and was registered as UNESCO World Heritage in 1988.</p>
+									<p>Notre-Dame Katedrali, «eski şehir» olarak adlandırılan bölgenin tam ortasında yer alıyor. Bu katedral, aynı zamanda 1998 yılında UNESCO Dünya Mirası listene girmiş.</p>
 								</div>
 								<div id="textbox42_2" class="textbox">
-									<p>It took 350 years to construct this cathedral with a magnificent view.</p>
+									<p>Buranın tamamen inşa edilmesi tam 350 yıl almış! Belki de bu kadar ihtişamlı olmasının nedeni budur.</p>
 								</div>
 								<div id="textbox42_3" class="textbox">
-									<p>Yeah, I personally think Notre-dame here is more picturesque than the one in Paris.</p>
+									<p>Buradaki Notre-Dame, Paris’deki Notre-Dame’a göre çok daha estetik ve sanatsal.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1910,7 +1904,7 @@ var options = {
 									<?php } ?>
 								</div>
 								<div id="textbox43_1" class="textbox">
-									<p>Oh, wait. Did you close the window though?</p>
+									<p>Beklesene, camları kapatmamıştın değil mi ?</p>
 								</div>
 							</div>
 						</div>
@@ -1934,7 +1928,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox44_1" class="textbox">
-									<p>Don't worry, I can close the window easily with the remote window control on my key.</p>
+									<p>Endişelenme gerek yok! Anahtarımdaki uzaktan kumandalı cam özelliği ile camları kolayca kapatabilirim.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1988,7 +1982,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox45_1" class="textbox">
-									<p>You’re right. Even when the engine is off, you can close the window remotely with the smart-key.</p>
+									<p>Evet, haklısın! Motor kapalı konumdayken bile, akıllı anahtar ile camları kolaylıkla kapatabilirsin.</p>
 								</div>
 							</div>
 						</div>
@@ -2020,7 +2014,7 @@ var options = {
 									<?php } ?>
 								</div>
 								<div id="textbox1" class="textbox">
-									<p>This city is the last course of our journey.</p>
+									<p>Bu şehir, gezimizin son durağıydı.</p>
 								</div>
 							</div>
 						</div>
@@ -2044,7 +2038,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox47_1" class="textbox">
-									<p>I’m afraid it’s time to say goodbye.<br>I hope you enjoyed the trip with i30.</p>
+									<p>Üzgünüm ama veda zamanımız geldi. Umarım i30 ile yaptığımız bu yolculuktan memnun kalmışsınızdır.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -2053,7 +2047,7 @@ var options = {
 						<div class="imgwrap">
 							<img src="/pd/images/day3/james_20.png" alt="james">
 						</div>
-						<a href="#page48" id="go_page48" class="bye_btn">BYE</a>
+						<a href="#page48" id="go_page48" class="bye_btn">HOŞÇAKALIN</a>
 					</div>
 					<audio class="audio1" src="../tts/day3/116.mp3"></audio>
 				</section>
@@ -2069,7 +2063,7 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Please upload your photo and  leave your feedback on this trip with i30.</div>
+						<div class="pageTitle">i30 ile Avrupa Gezimiz hakkındaki yorumunuzu fotoğrafınızla birlikte lütfen buraya yazın.</div>
 						<div class="imgwrap">
 							<div class="imgphoto">
 								<img id="upload-img">
@@ -2077,10 +2071,10 @@ var options = {
 								
 							</div>
 							<div class="imginput">
-								<textarea class="pd_con_text">Please enter TEXT.</textarea>
+								<textarea class="pd_con_text">Yorumunuzu lütfen bu alana yazınız.</textarea>
 							</div>
 						</div>
-						<a href="#" id="form_sumit" class="bye_btn">OK</a>
+						<a href="#" id="form_sumit" class="bye_btn">TAMAM</a>
 						<!-- <a href="/pd/timeline_view.php" class="bye_btn" id="timeline_show" target="_blank" style="display:none">OK</a> -->
 					</div>
 					</form>
