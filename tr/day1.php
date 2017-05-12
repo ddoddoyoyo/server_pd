@@ -58,7 +58,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
 		<script src="../js/day1.js"></script>	
-		<script src="../js/menu_day1.js"></script>
+		<script src="../js/menu_day1_tr.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
@@ -2073,7 +2073,7 @@
 
 	</div>
 </div>
-		<a href="#page12">이동</a>
+		<!-- <a href="#page12">이동</a> -->
 
 	</body>
 </html>

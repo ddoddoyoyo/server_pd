@@ -62,7 +62,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="/pd/js/device.js"></script>
 		<script src="/pd/js/day3.js"></script>
-		<script src="../js/menu_day3.js"></script>
+		<script src="../js/menu_day3_tr.js"></script>
 		<script src="/pd/js/Nwagon.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
@@ -1571,7 +1571,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox32_1" class="textbox">
-									<p>LKAS is a high-tech feature for that prevents the car from departing a lane. A frontal camera detects the lane and assists steering via MDPS.</p>
+									<p>Şeritten Ayrılma Uyarı Sistemi (LDWS), sürücünün sinyal vermeden şeritten ayrılması durumunda devreye giren ileri teknoloji uyarı sistemidir.</p>
 								</div>
 							</div>
 						</div>
@@ -2148,7 +2148,7 @@ var options = {
 			</div>
 		</div>
 
-		 <a href="#page48">이동</a>
+		 <!-- <a href="#page48">이동</a> -->
 	</body>
 </html>
 

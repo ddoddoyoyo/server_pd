@@ -58,7 +58,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
 		<script src="../js/day2.js"></script>		
-		<script src="../js/menu_day2.js"></script>
+		<script src="../js/menu_day2_tr.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
@@ -463,7 +463,7 @@
 						<p>i30’da 7 İleri Çift Kavramalı DCT şanzıman tercih edilmiş.<br>İnanabiliyor musunuz ? Güçlü bir motor ve hızlı vites geçişleri. İşte bu.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>DCT has that direct feel without power loss when switching gears.You can feel the true value of that characteristic  when winding.</p>
+						<p>Çift Kavramalı DCT Şanzıman, vites geçişleri sırasında güç kaybı yaşanmadan doğrudan geçiş hissi  sunar. Şanzımanın performansını viraj alırken çok daha iyi bir şekilde hissedebilirsiniz.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
