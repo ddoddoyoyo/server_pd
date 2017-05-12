@@ -410,6 +410,10 @@ img {
 		  #pageStart .ui-content .textwrap .text #textbox1 ul {
 			margin-top:12%;
 			position:relative; }
+			#pageStart .ui-content .textwrap .text #textbox1 ul li {
+			    margin: 4px 0;
+		        font-size: 0.9em;
+			}
 			#pageStart .ui-content .textwrap .text #textbox1 ul li:before {
 			  content:'';
 			  display:block;
@@ -759,7 +763,7 @@ img {
 		#page4 .ui-content .textwrap {
 			margin-top: 28px;
       padding: 0;
-      width: 28%;
+      width: 33%;
       position: absolute;
       top: 0;
       right: 0; }
@@ -1384,7 +1388,7 @@ img {
 			left:10%;
 			overflow:hidden; }
 		#page14 .ui-content .textwrap {
-			max-width:63%;
+			max-width:65%;
 			margin-left:0;
 			padding-left:0;
 			padding:0;
@@ -1579,9 +1583,9 @@ img {
 		position:absolute;
 		top:0; }
 		#page18 .ui-content .textwrap {
-			margin-top:45px;
+			margin-top:20px;
 			padding:0;
-			width:28%;
+			width:33%;
 			position:absolute;
 			top:0;
 			right:0; }
@@ -1668,7 +1672,7 @@ img {
 		height:100%;
 		width:100%; }
 		#page20 .ui-content .textwrap {
-			margin-top:8%;
+			margin-top:7%;
 			padding:0;
 			width:30%;
 			right:3%;
@@ -1731,13 +1735,15 @@ img {
 	#page2101 .ui-content {
 		margin:0;
 		padding:0;
-		max-width:33%;
+		max-width:38%;
 		position:absolute;
 		bottom:0;
 		right:0;
 		overflow:hidden; }
 		#page2101 .ui-content .textwrap {
-			margin:45px 25px 0 0; }
+			margin:45px 25px 0 0; 
+			position: relative;
+    		top: 10px;}
 		#page2101 .ui-content .textwrap:before, #page0 .ui-content .textwrap:after {
 			content:"";
 			display:table; }
@@ -2707,6 +2713,24 @@ img {
 				padding:3% 0;
 			}
 
+			#page38 .textwrap_tr {
+				overflow: hidden;
+			}
+
+			#page38 .textwrap ul.tr {
+				width:100%;
+			    padding: 0 0 0 3%;
+		        margin: 6% auto;
+			}
+
+			#page38 .textwrap ul.tr li {
+				margin: 1% 1%;
+			}
+
+			#page38 .textwrap ul.tr li span{
+				font-size:1em;			
+			}
+
 @media only screen and (orientation:Portrait) {
 	#page38 .ui-content {
 		display:none !important; } }
@@ -2930,9 +2954,9 @@ img {
 		position:absolute;
 		top:0; }
 		#page42 .textwrap {
-			margin-top:25px;
+			margin-top:10px;
 			padding:0;
-			width:32%;
+			width:38%;
 			position:absolute;
 			top:0;
 			right:0; }
@@ -3228,7 +3252,7 @@ img {
 		height:100%;
 		width:100%; }
 		#page47 .textwrap {
-			margin-top:45px;
+			margin-top:40px;
 			padding:0;
 			width:31%;
 			right:3%;
@@ -3253,7 +3277,7 @@ img {
 					transform:rotate(-90deg); }
 		#page47 .imgwrap {
 			max-width:22%;
-			bottom:0;
+			bottom:-10px;
 			right:18%;
 			position:absolute; }
 			#page47 .imgwrap img {
@@ -3269,6 +3293,7 @@ img {
 		right: 3%;
 		font-weight: normal;
 		font-size: 1.25em;
+		max-width: inherit;
 	}
 
 @media only screen and (orientation:Portrait) {
@@ -3291,6 +3316,8 @@ img {
 		right:0;
 		height:100%;
 		overflow-x:initial; }
+	#page48 .ui-content_tr .pageTitle{
+	    margin: 6% 0 0 0;}
 		#page48 .pageTitle {
 			margin:8% 0 0 0;
 			width:100%;
@@ -3392,6 +3419,7 @@ img {
 		right: 3%;
 		font-weight: normal;
 		font-size: 1.25em;
+		max-width: inherit;
 	}
 @media only screen and (orientation:Portrait) {
 	#page48 .ui-content {

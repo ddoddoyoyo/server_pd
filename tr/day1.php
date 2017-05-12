@@ -6,7 +6,7 @@
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
 		//$tools->JavaGo("/genesis/part1/en/main.php");
 	}else{
-		$tools->JavaGo("/pd/tur/");
+		$tools->JavaGo("/pd/tr/");
 	}
 	
 	
@@ -110,7 +110,13 @@
 					} 
 				};
 			}
+
+			$("#page55 .go-next").click(function(){	
+				location.href="/pd/tr/day2.php";
+			});
 		});
+
+
 
 			 
 		</script>
@@ -220,7 +226,7 @@
 						<a href="#page4" id="go_page4" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
-						<audio class="audio1" src="../tts/day1/001.mp3"></audio>
+						<!-- <audio class="audio1" src="../tts/day1/001.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page4" class="container">
@@ -248,7 +254,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/002.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/002.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page5" class="container">
@@ -292,8 +298,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/003.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/004.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/003.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/004.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page7" class="container">
@@ -357,7 +363,7 @@
 							<img src="../images/person/james_2.png" alt="james">
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/005.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/005.mp3"></audio> -->
 				</section>
 
 				
@@ -406,7 +412,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/006.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/006.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page10" class="container">
@@ -433,7 +439,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/007.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/007.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page11" class="container">
@@ -462,7 +468,7 @@
 					<a href="#page12" id="go_page12" class="next_p_btn ui-btn go-next">
 						<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 					</a>
-					<audio class="audio1" src="../tts/day1/008.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/008.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page12" class="container">
@@ -474,7 +480,7 @@
 							<img src="../images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
-					<div data-role="main" class="ui-content">
+					<div data-role="main" class="ui-content ui-content_tr">
 						<div class="textwrap">
 							<div class="text_tip">
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -500,8 +506,8 @@
 						</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/009.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/010.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/009.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/010.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page13" class="container">
@@ -545,10 +551,10 @@
 						</a>
 					</div>
 					<div class="try_again">
-						<img src="../images/tryagain.png"" alt="">
+						<img src="../images/tryagain_tr.png"" alt="">
 					</div>
 					<div class="good">
-						<img src="../images/tryagain_O.png"" alt="">
+						<img src="../images/tryagain_O_tr.png"" alt="">
 					</div>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
@@ -608,7 +614,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/001.mp3"></audio>
+				<!-- 	<audio class="audio1" src="../tts/day1/tom/001.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page16" class="container">
@@ -646,8 +652,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/011.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/012.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/011.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/012.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page17" class="container">
@@ -681,7 +687,7 @@
 							</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/013.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/013.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page18" class="container">
@@ -726,9 +732,9 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/014.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/014.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/015.mp3"></audio>
-					<audio class="audio3" src="../tts/day1/016.mp3"></audio>
+					<audio class="audio3" src="../tts/day1/016.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page19" class="container">
@@ -755,7 +761,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/017.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/017.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page20" class="container">
@@ -782,7 +788,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 				</div>
-				<audio class="audio1" src="../tts/day1/018.mp3"></audio>
+				<!-- <audio class="audio1" src="../tts/day1/018.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page21" class="container">
@@ -809,7 +815,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/019.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/019.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page22" class="container">
@@ -866,9 +872,9 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/002.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/002.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/tom/003.mp3"></audio>
-					<audio class="audio3" src="../tts/day1/tom/004.mp3"></audio>
+					<audio class="audio3" src="../tts/day1/tom/004.mp3"></audio> -->
 				</section>
 					
 				<section data-role="page" id="page23" class="container">
@@ -907,8 +913,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/020.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/021.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/020.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/021.mp3"></audio> -->
 				</section>
 
 				<!-- <section data-role="page" id="page24" class="container">
@@ -969,7 +975,7 @@
 							</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/022.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/022.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page26" class="container">
@@ -1017,10 +1023,10 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/023.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/023.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/024.mp3"></audio>
 					<audio class="audio3" src="../tts/day1/025.mp3"></audio>
-					<audio class="audio4" src="../tts/day1/026.mp3"></audio>
+					<audio class="audio4" src="../tts/day1/026.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page27" class="container">
@@ -1050,7 +1056,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/027.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/027.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page28" class="container">
@@ -1078,7 +1084,7 @@
 							</div>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/028.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/028.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page29" class="container">
@@ -1154,8 +1160,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/005.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/tom/006.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/005.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/tom/006.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page31" class="container">
@@ -1249,7 +1255,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/007.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/007.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page34" class="container">
@@ -1310,7 +1316,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/008.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/008.mp3"></audio> -->
 				</section>
 
 				<!-- <section data-role="page" id="page36" class="container">
@@ -1368,7 +1374,7 @@
 							<img src="../images/person/james_2_2.png" alt="james">
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/029.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/029.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page38" class="container">
@@ -1396,7 +1402,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/030.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/030.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page39" class="container">
@@ -1428,7 +1434,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/009.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/009.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page40" class="container">
@@ -1470,7 +1476,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/010.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/010.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page41" class="container">
@@ -1498,7 +1504,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/032.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/032.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page42" class="container">
@@ -1525,7 +1531,7 @@
 						</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/033.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/033.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page43" class="container">
@@ -1547,7 +1553,7 @@
 						<a href="#page44"><div class="imgwrap">
 							<img id="waking" src="../images/day1/alarm.gif" alt="">
 							<!-- <img id="waking2" src="../images/day1/icon_waking_2.png" alt=""> -->
-							<img src="../images/day1/btn_wakingup.png" alt="">
+							<img src="../images/day1/btn_wakingup_tr.png" alt="">
 						</div>
 						</a>
 						<a href="#page44" class="next_finger">
@@ -1582,7 +1588,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/034.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/034.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page45" class="container">
@@ -1612,7 +1618,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/035.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/035.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page46" class="container">
@@ -1654,7 +1660,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/011.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/011.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page47" class="container">
@@ -1688,19 +1694,19 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Kırmızı rengin gücü, siyah deri döşeme ile kontrast oluştururken iç mekana premium bir görünüm kazandırıyor.</p>
+									<p><strong>Kırmızı</strong> rengin gücü, siyah deri döşeme ile kontrast oluştururken iç mekana premium bir görünüm kazandırıyor.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p>Siyah kumaş ve deri kombinasyonu iç mekana şık bir görünüm kazandırıyor.</p>
+									<p><strong>Siyah</strong> kumaş ve deri kombinasyonu iç mekana şık bir görünüm kazandırıyor.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Gri deri iç döşeme seçeneği araç içinde oldukça sade ve ferah bir görünüm.</p>
+									<p><strong>Gri</strong> deri iç döşeme seçeneği araç içinde oldukça sade ve ferah bir görünüm.</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p>İndigo mavi seçeneği iç mekana genç ve canlı bir görünüm kazandırıyor.</p>
+									<p><strong>İndigo mavi</strong> seçeneği iç mekana genç ve canlı bir görünüm kazandırıyor.</p>
 								</div>
 								<div id="textbox5" class="textbox">
-									<p>Büyüleyici bordo renkli koltuklar, seçkin bir görünüm sağlarken aynı zamanda iç mekana canlılık kazandırıyor.</p>
+									<p><strong>Büyüleyici bordo</strong> renkli koltuklar, seçkin bir görünüm sağlarken aynı zamanda iç mekana canlılık kazandırıyor.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1716,11 +1722,11 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/012.mp3"></audio>
+				<!-- 	<audio class="audio1" src="../tts/day1/tom/012.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/tom/013.mp3"></audio>
 					<audio class="audio3" src="../tts/day1/tom/014.mp3"></audio>
 					<audio class="audio4" src="../tts/day1/tom/015.mp3"></audio>
-					<audio class="audio5" src="../tts/day1/tom/016.mp3"></audio>
+					<audio class="audio5" src="../tts/day1/tom/016.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page48" class="container">
@@ -1791,7 +1797,7 @@
 									<p>Spor araç konseptini destekleyen <strong>Kırmızı</strong> iç mekanı ben de beğendim.</p>
 								</div>		
 								 <div id="textbox2" class="textbox">
-									<p>İç mekanda, tamamen <strong>Siyah<strong> kullanımın verdiği şık görünüm benim de tercihim.</p>
+									<p>İç mekanda, tamamen <strong>Siyah</strong> kullanımın verdiği şık görünüm benim de tercihim.</p>
 								</div>
 								<div id="textbox3" class="textbox">
 									<p><strong>Gri</strong> kolay kolay sıkılmayacağınız bir renk. Ben de iç mekanda kesinlikle griyi tercih ederdim.</p>
@@ -1808,11 +1814,11 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/017.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/017.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/tom/018.mp3"></audio>
 					<audio class="audio3" src="../tts/day1/tom/019.mp3"></audio>
 					<audio class="audio4" src="../tts/day1/tom/020.mp3"></audio>
-					<audio class="audio5" src="../tts/day1/tom/021.mp3"></audio>
+					<audio class="audio5" src="../tts/day1/tom/021.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page50" class="container">
@@ -1874,7 +1880,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/036.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/036.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page51" class="container">
@@ -1904,7 +1910,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/037.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/037.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page52" class="container">
@@ -1931,7 +1937,7 @@
 						</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/038.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/038.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page53" class="container">
@@ -1965,7 +1971,7 @@
 						</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/039.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/039.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page54" class="container">
@@ -2013,10 +2019,10 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/040.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/040.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/041.mp3"></audio>
 					<audio class="audio3" src="../tts/day1/042.mp3"></audio>
-					<audio class="audio4" src="../tts/day1/043.mp3"></audio>
+					<audio class="audio4" src="../tts/day1/043.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page55" class="container">
@@ -2046,7 +2052,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/044.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/044.mp3"></audio> -->
 				</section>
 
 
@@ -2067,7 +2073,7 @@
 
 	</div>
 </div>
-		<!-- <a href="#page14">이동</a> -->
+		<a href="#page12">이동</a>
 
 	</body>
 </html>

@@ -468,7 +468,7 @@ $(document).ready(function(){
 
 	$("#page63001").on({
 		"pagebeforeshow" : function(){
-			$("#page63001 .popLayer, #page63001 .next_p_btn").hide();
+			$("#page63001 .popLayer, #page63001 .popLayer_tr, #page63001 .next_p_btn").hide();
 			$("#page63001 .next_p_btn").addClass("stopPage");
 			$("#page63001 .imgwrap, #page63001 .textwrap").hide();
 			// $("#page63001 .audio2").each(function(){ 
@@ -505,7 +505,7 @@ $(document).ready(function(){
 		//$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").hide();
 		if($("#page63001 .next_p_btn").hasClass("stopPage")){
 			audio_play(63001,2);
-			$("#page63001 .popLayer#pop02").fadeIn(500,function(){
+			$("#page63001 .popLayer#pop02, #page63001 .popLayer_tr#pop02").fadeIn(500,function(){
 				//pageshow에서 fadeIn되서..
 				//$("#page63001 .popLayer#pop02 .imgwrap, #page63001 .popLayer#pop02 .textwrap").delay(500).fadeIn(500);
 			});
@@ -873,7 +873,7 @@ $(document).ready(function(){
 			$("#page70 .page_bg").css({"background":"url(../images/day2/23_photo_2.jpg)","background-repeat":"no-repeat","background-position":"50% 50%", "background-size":"100% auto","left":"-100%"});
 		    $("#page70 .page_bg").animate({"left":"0"},500);
 		    $("#page70 .textwrap, #page70 #textbox3, #page70 #go_back,#page70 #go_next1").delay(500).fadeIn(500);
-			$("#page70 #textbox4").hide();
+			$("#page70 #textbox4, #page70 .next_p_btn").hide();
 			audio_play(70,3);
 		}
 		next_Count--;
@@ -1850,8 +1850,8 @@ $(document).ready(function(){
 	});
 
 
- $("#page101 .go-next").click(function(){	
-		location.href="/pd/en/day3.php";
-	});
+ // $("#page101 .go-next").click(function(){	
+	// 	location.href="/pd/en/day3.php";
+	// });
 
 });

@@ -147,7 +147,73 @@
 					} 
 				};
 			}
-					
+
+			$("#page6").on({
+				"pagebeforeshow" : function() {
+					$("#page6 .titlewrap .text_i #textbox1 p").html('Minimized number of parts');
+					next_Count = 1;
+				}
+			});
+			
+				
+			$("#page6 #go_next1").click(function() {
+				if (next_Count == 1) {
+					$("#page6 .titlewrap .text_i #textbox1 p").html('Unified frame panel');
+				}
+				next_Count++;
+			});
+
+			$("#page6 #go_back").click(function(e) {
+				if (next_Count == 1) {
+
+				} else if (next_Count == 2) {
+					$("#page6 .titlewrap .text_i #textbox1 p").html('Minimized number of parts');
+
+				}
+				next_Count--;
+			});
+
+				var engineArr = [];
+				$("#page9").on({
+					"pagebeforeshow" : function() {
+						$("#page9 .titlewrap .text_i #textbox1 p").html('Verify the engines');
+						$("#page9 .next_p_btn").hide();
+						$.each($("#page9 .engine img"), function() {
+							$(this).attr('src', $(this).attr('src').replace('_o', ''));
+							$(this).attr('src', $(this).attr('src').replace('_s', ''));
+						});
+						
+						if (engineArr.length == 3)
+							$("#page9 .titlewrap .text_i #textbox1 p").html('Verify the engines');
+						engineArr = [];
+					},
+					"pageshow" : function() {
+
+					}
+				});
+
+				$("#page9 .engine img").click(function(e) {
+					if (engineArr.join('') != '111' && !engineArr[parseInt($(this).attr('alt'))]) {
+				$(this).attr('src', $(this).attr('src').replace('.png', '_o.png'));
+				engineArr[parseInt($(this).attr('alt'))] = '1';
+
+				if (engineArr.join('') == '111')
+					$("#page9 .titlewrap .text_i #textbox1 p").html('Pick your favorite engine');
+
+			}
+			else if (engineArr.join('') == '111') {
+				$.each($("#page9 .engine img"), function() {
+					$(this).attr('src', $(this).attr('src').replace('_s', '_o'));
+					$(this).removeClass('active');
+				});
+				$(this).attr('src', $(this).attr('src').replace('_o.png', '_s.png'));
+				$(this).addClass('active');
+				
+				$("#page9 .next_p_btn").show();
+			}			
+			});
+
+
 		});
 		</script>
 
@@ -2090,7 +2156,7 @@ var options = {
 			</div>
 		</div>
 
-		<!--  <a href="#page44">이동</a> -->
+		 <a href="#page9">이동</a>
 	</body>
 </html>
 

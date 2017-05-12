@@ -22,6 +22,11 @@
       }
     }
   } 
+
+  .ui-content {
+    @include reset-margins;
+    width: 38%;
+  }
 }
 
 

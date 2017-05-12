@@ -369,6 +369,11 @@ img {
     bottom: 3%;
     right: 6%; }
 
+#page0.tr {
+  background: url("../images/intro/open_bg_@3x_tr.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+
 #page1 {
   background: url("../images/intro/login_bg_blue_2_@3x.jpg") no-repeat;
   background-size: 100% auto;
@@ -1134,6 +1139,10 @@ img {
         position: absolute;
         left: -3px;
         top: 80px; }
+  #page12 .ui-content {
+    margin: 0;
+    padding: 0;
+    width: 38%; }
 
 @media only screen and (orientation: Portrait) {
   #page12 .ui-content {
@@ -1159,7 +1168,8 @@ img {
       #page13 .ui-content .textwrap:after {
         clear: both; }
       #page13 .ui-content .textwrap .text_i {
-        width: 50%; }
+        width: 50%;
+        padding-top: 3%; }
     #page13 .ui-content .imgwrap {
       width: 25%;
       position: absolute;
@@ -1194,6 +1204,9 @@ img {
 @media only screen and (orientation: landscape) {
   #page13 .ui-content {
     display: block; } }
+
+#page13 .ui-content .textwrap .text_i {
+  width: 60%; }
 
 #page14 {
   background: #000; }
@@ -1683,7 +1696,7 @@ img {
   #page23 .ui-content {
     margin: 0;
     padding: 0;
-    max-width: 33%;
+    max-width: 38%;
     position: absolute;
     top: 0;
     right: 0;
@@ -1883,7 +1896,7 @@ img {
   #page27 .ui-content {
     margin: 0;
     padding: 0;
-    max-width: 38%;
+    max-width: 40%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -3952,22 +3965,22 @@ img {
       transform: translate(-50%, -50%);
       width: 7%;
       animation: twinkle 1.5s infinite; }
-    #page63001 .ui-content .popLayer {
+    #page63001 .ui-content .popLayer, #page63001 .ui-content .popLayer_tr {
       height: 100%;
       width: 100%;
       position: absolute;
       top: 0;
       left: 0;
       background: #000; }
-      #page63001 .ui-content .popLayer iframe, #page63001 .ui-content .popLayer video {
+      #page63001 .ui-content .popLayer iframe, #page63001 .ui-content .popLayer video, #page63001 .ui-content .popLayer_tr iframe, #page63001 .ui-content .popLayer_tr video {
         position: relative;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
-      #page63001 .ui-content .popLayer video {
+      #page63001 .ui-content .popLayer video, #page63001 .ui-content .popLayer_tr video {
         width: 70%;
         height: auto; }
-      #page63001 .ui-content .popLayer .imgwrap {
+      #page63001 .ui-content .popLayer .imgwrap, #page63001 .ui-content .popLayer_tr .imgwrap {
         width: 80px;
         height: 80px;
         border-radius: 50px;
@@ -3975,7 +3988,7 @@ img {
         position: absolute;
         bottom: 25px;
         overflow: hidden; }
-      #page63001 .ui-content .popLayer .textwrap {
+      #page63001 .ui-content .popLayer .textwrap, #page63001 .ui-content .popLayer_tr .textwrap {
         max-width: 63%;
         margin-left: 0;
         padding-left: 0;
@@ -3983,21 +3996,26 @@ img {
         position: absolute;
         left: 134px;
         bottom: 30px; }
-        #page63001 .ui-content .popLayer .textwrap:before, #page63001 .ui-content .popLayer .textwrap:after {
+        #page63001 .ui-content .popLayer .textwrap:before, #page63001 .ui-content .popLayer .textwrap:after, #page63001 .ui-content .popLayer_tr .textwrap:before, #page63001 .ui-content .popLayer_tr .textwrap:after {
           content: "";
           display: table; }
-        #page63001 .ui-content .popLayer .textwrap:after {
+        #page63001 .ui-content .popLayer .textwrap:after, #page63001 .ui-content .popLayer_tr .textwrap:after {
           clear: both; }
-        #page63001 .ui-content .popLayer .textwrap .text_tip {
+        #page63001 .ui-content .popLayer .textwrap .text_tip, #page63001 .ui-content .popLayer_tr .textwrap .text_tip {
           width: 20px;
           height: 30px;
           position: absolute;
           bottom: 8px;
           bottom: 8px; }
-        #page63001 .ui-content .popLayer .textwrap .text {
+        #page63001 .ui-content .popLayer .textwrap .text, #page63001 .ui-content .popLayer_tr .textwrap .text {
           margin-left: 19px; }
     #page63001 .ui-content .popLayer#pop02 {
       background-image: url("../images/day2/13_plus_background.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: 50% 50%; }
+    #page63001 .ui-content .popLayer_tr#pop02 {
+      background-image: url("../images/day2/13_plus_background_tr.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: 50% 50%; }
@@ -4295,7 +4313,7 @@ img {
   #page68 .ui-content {
     margin: 0;
     padding: 0;
-    width: 33%;
+    width: 38%;
     position: absolute;
     top: 0;
     right: 0;
@@ -4447,7 +4465,7 @@ img {
   #page71 .ui-content {
     margin: 0;
     padding: 0;
-    width: 33%;
+    width: 38%;
     position: absolute;
     top: 0;
     right: 0;
@@ -4673,9 +4691,9 @@ img {
       margin: 0 auto;
       margin-top: 5px; }
     #page75 .ui-content .textwrap {
-      margin-top: 45px;
+      margin-top: 30px;
       padding: 0;
-      width: 28%;
+      width: 33%;
       position: absolute;
       top: 0;
       right: 0; }
@@ -4840,37 +4858,35 @@ img {
     #page78 .ui-content .main_wrap {
       max-width: 50%;
       float: right; }
-      #page78 .ui-content .main_wrap .textwrap {
-        max-width: 188px; }
-        #page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
-          content: "";
-          display: table; }
-        #page78 .ui-content .main_wrap .textwrap:after {
-          clear: both; }
-        #page78 .ui-content .main_wrap .textwrap .text_tip {
-          max-width: 20px;
-          margin-left: 10%;
-          float: right;
-          margin-right: 70%;
-          position: relative;
-          top: 2px;
-          -moz-transform: scaleX(-1);
-          -o-transform: scaleX(-1);
-          -webkit-transform: scaleX(-1);
-          transform: scaleX(-1); }
-          #page78 .ui-content .main_wrap .textwrap .text_tip img {
-            -ms-transform: rotate(-90deg);
-            /* IE 9 */
-            -webkit-transform: rotate(-90deg);
-            /* Chrome, Safari, Opera */
-            transform: rotate(-90deg); }
-        #page78 .ui-content .main_wrap .textwrap .text {
-          overflow: hidden; }
+      #page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
+        content: "";
+        display: table; }
+      #page78 .ui-content .main_wrap .textwrap:after {
+        clear: both; }
+      #page78 .ui-content .main_wrap .textwrap .text_tip {
+        max-width: 20px;
+        margin-left: 10%;
+        float: right;
+        margin-right: 70%;
+        position: relative;
+        top: 2px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+        #page78 .ui-content .main_wrap .textwrap .text_tip img {
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(-90deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(-90deg); }
+      #page78 .ui-content .main_wrap .textwrap .text {
+        overflow: hidden; }
       #page78 .ui-content .main_wrap .imgwrap {
-        width: 100%;
+        width: 240px;
         max-height: 130px;
         float: right;
-        margin-right: 35%; }
+        margin-right: 70px; }
         #page78 .ui-content .main_wrap .imgwrap img {
           position: relative;
           right: -10%;
@@ -4884,63 +4900,10 @@ img {
   #page78 .ui-content {
     display: block; } }
 
-#page78 {
-  background: url("../images/day2/35_photo.jpg") no-repeat;
-  background-size: 100% auto;
-  background-position: 50% 50%; }
-  #page78 .ui-content {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    overflow: hidden; }
-    #page78 .ui-content .main_wrap {
-      max-width: 50%;
-      float: right; }
-      #page78 .ui-content .main_wrap .textwrap {
-        max-width: 188px; }
-        #page78 .ui-content .main_wrap .textwrap:before, #page78 .ui-content .main_wrap .textwrap:after {
-          content: "";
-          display: table; }
-        #page78 .ui-content .main_wrap .textwrap:after {
-          clear: both; }
-        #page78 .ui-content .main_wrap .textwrap .text_tip {
-          max-width: 20px;
-          margin-left: 10%;
-          float: right;
-          margin-right: 70%;
-          position: relative;
-          top: 2px;
-          -moz-transform: scaleX(-1);
-          -o-transform: scaleX(-1);
-          -webkit-transform: scaleX(-1);
-          transform: scaleX(-1); }
-          #page78 .ui-content .main_wrap .textwrap .text_tip img {
-            -ms-transform: rotate(-90deg);
-            /* IE 9 */
-            -webkit-transform: rotate(-90deg);
-            /* Chrome, Safari, Opera */
-            transform: rotate(-90deg); }
-        #page78 .ui-content .main_wrap .textwrap .text {
-          overflow: hidden; }
-      #page78 .ui-content .main_wrap .imgwrap {
-        width: 100%;
-        max-height: 130px;
-        float: right;
-        margin-right: 35%; }
-        #page78 .ui-content .main_wrap .imgwrap img {
-          position: relative;
-          right: -10%;
-          top: 7px; }
-
-@media only screen and (orientation: Portrait) {
-  #page78 .ui-content {
-    display: none !important; } }
-
-@media only screen and (orientation: landscape) {
-  #page78 .ui-content {
-    display: block; } }
+#page78 .ui-content .main_wrap_tr {
+  max-width: 47%; }
+  #page78 .ui-content .main_wrap_tr .textwrap {
+    max-width: 100%; }
 
 #page79 .ui-content {
   margin: 0;

@@ -149,7 +149,10 @@ img {
       width: 100%;
       height: 100% !important;
       min-height: 100% !important;
-      background-color: #000; }
+      background-color: #000;
+      overflow: hidden; }
+      #wrap #contBox section #current-img {
+        min-width: 100%; }
 
 .ui-page-theme-a {
   background: #000; }
@@ -167,7 +170,7 @@ img {
       box-shadow: none;
       width: 30px;
       display: block; }
-  .ui-page-theme-a a, .ui-page-theme-a a:hover, .ui-page-theme-a a:focus {
+  .ui-page-theme-a a, .ui-page-theme-a a:hover, .ui-page-theme-a a:active {
     color: #fff; }
 
 .ui-page-theme-a .ui-content {
@@ -199,7 +202,7 @@ img {
         height: 23px;
         padding-left: 2px;
         background: dimgray; }
-        .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:focus, .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:hover, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:focus, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:hover {
+        .ui-page-theme-a .ui-content .textwrap .text .text_btn_r img:active, .ui-page-theme-a .ui-content .textwrap .text .text_btn_l img:active {
           background: #2b73af; }
       .ui-page-theme-a .ui-content .textwrap .text .text_btn_r {
         float: left; }
@@ -209,7 +212,6 @@ img {
         margin: 0 auto;
         border-radius: 50px;
         background: #a0a0a0;
-        border: 1px solid #ffffff;
         overflow: hidden;
         margin-bottom: 10px; }
       .ui-page-theme-a .ui-content .textwrap .text .btn_box #go_next1 {

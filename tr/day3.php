@@ -7,7 +7,7 @@
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
 		//$tools->JavaGo("/genesis/part1/en/main.php");
 	}else{
-		$tools->JavaGo("/pd/en/");
+		$tools->JavaGo("/pd/tr/");
 	}
 
 
@@ -147,6 +147,70 @@
 					} 
 				};
 			}
+
+			$("#page6").on({
+				"pagebeforeshow" : function() {
+					$("#page6 .titlewrap .text_i #textbox1 p").html('Azaltılmış parça sayısı');
+					next_Count = 1;
+				}
+			});
+
+			$("#page6 #go_next1").click(function() {
+				if (next_Count == 1) {
+					$("#page6 .titlewrap .text_i #textbox1 p").html('Birleştirilmiş Gövde Paneli');
+				}
+				next_Count++;
+			});
+
+			$("#page6 #go_back").click(function(e) {
+				if (next_Count == 1) {
+
+				} else if (next_Count == 2) {
+					$("#page6 .titlewrap .text_i #textbox1 p").html('Azaltılmış parça sayısı');
+
+				}
+				next_Count--;
+			});
+
+			var engineArr = [];
+				$("#page9").on({
+					"pagebeforeshow" : function() {
+						$("#page9 .titlewrap .text_i #textbox1 p").html('Motor İncelemesi');
+						$("#page9 .next_p_btn").hide();
+						$.each($("#page9 .engine img"), function() {
+							$(this).attr('src', $(this).attr('src').replace('_o', ''));
+							$(this).attr('src', $(this).attr('src').replace('_s', ''));
+						});
+						
+						if (engineArr.length == 3)
+							$("#page9 .titlewrap .text_i #textbox1 p").html('Motor İncelemesi');
+						engineArr = [];
+					},
+					"pageshow" : function() {
+
+					}
+				});
+
+				$("#page9 .engine img").click(function(e) {
+					if (engineArr.join('') != '111' && !engineArr[parseInt($(this).attr('alt'))]) {
+				$(this).attr('src', $(this).attr('src').replace('.png', '_o.png'));
+				engineArr[parseInt($(this).attr('alt'))] = '1';
+
+				if (engineArr.join('') == '111')
+					$("#page9 .titlewrap .text_i #textbox1 p").html('Favori Motor Seçeneğinizi Seçiniz');
+
+			}
+			else if (engineArr.join('') == '111') {
+				$.each($("#page9 .engine img"), function() {
+					$(this).attr('src', $(this).attr('src').replace('_s', '_o'));
+					$(this).removeClass('active');
+				});
+				$(this).attr('src', $(this).attr('src').replace('_o.png', '_s.png'));
+				$(this).addClass('active');
+				
+				$("#page9 .next_p_btn").show();
+			}			
+			});
 					
 		});
 		</script>
@@ -268,9 +332,9 @@ var options = {
 							<img src="/pd/images/person/james_14.png" alt="james">
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day3/080.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/080.mp3"></audio>
 					<audio class="audio2" src="../tts/day3/081.mp3"></audio>
-					<audio class="audio3" src="../tts/day3/082.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/082.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page1" class="container">
@@ -297,7 +361,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/083.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/083.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page2" class="container">
@@ -324,7 +388,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/084.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/084.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page3" class="container">
@@ -392,10 +456,10 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/035.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/035.mp3"></audio>
 					<audio class="audio2" src="../tts/day3/tom/036.mp3"></audio>
 					<audio class="audio3" src="../tts/day3/tom/037.mp3"></audio>
-					<audio class="audio4" src="../tts/day3/tom/038.mp3"></audio>
+					<audio class="audio4" src="../tts/day3/tom/038.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page4" class="container">
@@ -452,10 +516,10 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Evet, biliyorum.</p>
+									<p>Evet, biliyorum. i30’un rüzgar direnci katsayısı 0.30. Bu rakam düştükçe, aerodinamik performansın arttığını duymuştum.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>i30’un rüzgar direnci katsayısı 0.30. Bu rakam düştükçe, aerodinamik performansın arttığını duymuştum. i30 bu konuda, sınıfında en düşük orana sahip araçlardan bir tanesi.</p>
+									<p> i30 bu konuda, sınıfında en düşük orana sahip araçlardan bir tanesi.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -471,8 +535,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/085.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/086.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/085.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/086.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page5" class="container">
@@ -488,7 +552,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox5_1" class="textbox">
-									<p>Otobanda gitmemize rağmen, sen de aracın oldukça sessiz olduğunu düşünmüyor musun</p>
+									<p>Otobanda gitmemize rağmen, sen de aracın oldukça sessiz olduğunu düşünmüyor musun.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -499,7 +563,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/087.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/087.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page6" class="container">
@@ -515,7 +579,7 @@ var options = {
 						<div class="imgwrap">
 							<div class="graphDesc">%30<br/><span>azaltıldı</span></div>
 							<div class="graphLegend6">
-								<div><img src="/pd/images/day3/11_title_current-i30.png" /></div>
+								<div><img src="/pd/images/day3/11_title_current-i30_tr.png" /></div>
 								<div><img src="/pd/images/day3/09_title_i30.png" /></div>
 								<div>VW<br />Golf</div>
 							</div>
@@ -536,7 +600,7 @@ var options = {
 						</div>
 						<div class="imgwrap2">
 							<div class="panel panelTitle">
-								<div><img src="/pd/images/day3/11_title_current-i30.png" /></div>
+								<div><img src="/pd/images/day3/11_title_current-i30_tr.png" /></div>
 								<div><img src="/pd/images/day3/09_title_i30.png" /></div>
 							</div>
 							<div class="panel panelImg">
@@ -603,8 +667,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/039.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/tom/040.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/039.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/tom/040.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page7" class="container">
@@ -631,7 +695,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/088.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/088.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page8" class="container">
@@ -658,7 +722,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/089.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/089.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page9" class="container">
@@ -681,9 +745,9 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<div class="engine">
-								<img src="/pd/images/day3/15_btn_01.png" alt="0" />
-								<img src="/pd/images/day3/15_btn_02.png" alt="1" />
-								<img src="/pd/images/day3/15_btn_03.png" alt="2" />
+								<img src="/pd/images/day3/15_btn_01_tr.png" alt="0" />
+								<img src="/pd/images/day3/15_btn_02_tr.png" alt="1" />
+								<img src="/pd/images/day3/15_btn_03_tr.png" alt="2" />
 							</div>
 						</div>
 						<a href="javascript:;" id="go_page10" class="next_p_btn ui-btn go-next">
@@ -762,7 +826,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/090.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/090.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page12" class="container">
@@ -800,8 +864,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/091.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/092.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/091.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/092.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page13" class="container">
@@ -866,7 +930,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/041.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/041.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page15" class="container">
@@ -892,7 +956,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/093.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/093.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page16" class="container">
@@ -919,7 +983,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/094.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/094.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page17" class="container">
@@ -953,7 +1017,7 @@ var options = {
 							</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day3/095.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/095.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page18" class="container">
@@ -998,9 +1062,9 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/096.mp3"></audio>
+				<!-- 	<audio class="audio1" src="../tts/day3/096.mp3"></audio>
 					<audio class="audio2" src="../tts/day3/097.mp3"></audio>
-					<audio class="audio3" src="../tts/day3/098.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/098.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page19" class="container">
@@ -1034,7 +1098,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/042.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/042.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page20" class="container">
@@ -1063,7 +1127,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/099.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/099.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page21" class="container">
@@ -1094,7 +1158,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/100.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/100.mp3"></audio> -->
 				</section>	
 
 				<section data-role="page" id="page2101" class="container">
@@ -1137,8 +1201,8 @@ var options = {
 							<img src="/pd/images/person/james_14.png" alt="james">
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day3/101.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/102.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/101.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/102.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page22" class="container">
@@ -1166,7 +1230,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/103.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/103.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page23" class="container">
@@ -1200,7 +1264,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/043.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/043.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page24" class="container">
@@ -1229,7 +1293,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/104.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/104.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page25" class="container">
@@ -1256,7 +1320,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/105.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/105.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page26" class="container">
@@ -1294,8 +1358,8 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/106.mp3"></audio>
-					<audio class="audio2" src="../tts/day3/107.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/106.mp3"></audio>
+					<audio class="audio2" src="../tts/day3/107.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page27" class="container">
@@ -1329,7 +1393,7 @@ var options = {
 					<div class="imgwrap img_twinkle">
 						<img src="/pd/images/day3/43_photo.jpg" alt="james" />
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/044.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/044.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page28" class="container">
@@ -1371,7 +1435,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/045.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/045.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page29" class="container">
@@ -1398,7 +1462,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/108.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/108.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page30" class="container">
@@ -1440,7 +1504,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/046.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/046.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page31" class="container">
@@ -1473,7 +1537,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/047.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/047.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page32" class="container">
@@ -1515,7 +1579,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/048.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/048.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page33" class="container">
@@ -1548,7 +1612,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/049.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/049.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page34" class="container">
@@ -1590,7 +1654,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/050.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/050.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page35" class="container">
@@ -1623,7 +1687,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/051.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/051.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page36" class="container">
@@ -1680,9 +1744,9 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/052.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/052.mp3"></audio>
 					<audio class="audio2" src="../tts/day3/tom/053.mp3"></audio>
-					<audio class="audio3" src="../tts/day3/tom/054.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/tom/054.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page37" class="container">
@@ -1712,7 +1776,7 @@ var options = {
 								<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/109.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/109.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page38" class="container">
@@ -1725,9 +1789,9 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Which one is your favorite high-tech safety feature?</div>
-						<div class="textwrap">
-							<ul>
+						<div class="pageTitle">Aşağıdaki ileri-teknoloji özelliklerinden favoriniz olanı seçiniz.</div>
+						<div class="textwrap textwrap_tr">
+							<ul class="tr">
 								<li><span>LDWS(Şeritten Ayrılma Uyarı Sistemi)</span></li>
 								<li><span>BSD(Kör Nokta Uyarı Sistemi)</span></li>
 								<li><span>ASCC(Akıllı Hız Sabitleyici)</span></li>
@@ -1748,7 +1812,7 @@ var options = {
 						</a>
 					</div>
 					<div id="page39Chart" class="page_bg"></div>
-					<div class="page_bg" style='background-image:url(/pd/images/day3/63_result_graph.png); background-size:100% auto;'>
+					<div class="page_bg" style='background-image:url(/pd/images/day3/63_result_graph_tr.png); background-size:100% auto;'>
 						<div id="page39ChartNum1" class="page39ChartNum">33%</div>
 						<div id="page39ChartNum2" class="page39ChartNum">66%</div>
 						<div id="page39ChartNum3" class="page39ChartNum">77%</div>
@@ -1800,7 +1864,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/055.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/055.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page41" class="container">
@@ -1834,7 +1898,7 @@ var options = {
 							</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day3/110.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/110.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page42" class="container">
@@ -1879,9 +1943,9 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/111.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/111.mp3"></audio>
 					<audio class="audio2" src="../tts/day3/112.mp3"></audio>
-					<audio class="audio3" src="../tts/day3/113.mp3"></audio>
+					<audio class="audio3" src="../tts/day3/113.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page43" class="container">
@@ -1912,7 +1976,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/056.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/056.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page44" class="container">
@@ -1941,7 +2005,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/114.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/114.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page45" class="container">
@@ -1990,7 +2054,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/057.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/057.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page46" class="container">
@@ -2022,7 +2086,7 @@ var options = {
 							<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/tom/058.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/tom/058.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page47" class="container">
@@ -2049,7 +2113,7 @@ var options = {
 						</div>
 						<a href="#page48" id="go_page48" class="bye_btn">HOŞÇAKALIN</a>
 					</div>
-					<audio class="audio1" src="../tts/day3/116.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day3/116.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page48" class="container">
@@ -2062,8 +2126,8 @@ var options = {
 							<img src="/pd/images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
-					<div data-role="main" class="ui-content">
-						<div class="pageTitle">i30 ile Avrupa Gezimiz hakkındaki yorumunuzu fotoğrafınızla birlikte lütfen buraya yazın.</div>
+					<div data-role="main" class="ui-content_tr ui-content">
+						<div class="pageTitle">i30 ile Avrupa Gezimiz hakkındaki yorumunuzu<br>fotoğrafınızla birlikte lütfen buraya yazın</div>
 						<div class="imgwrap">
 							<div class="imgphoto">
 								<img id="upload-img">
@@ -2084,7 +2148,7 @@ var options = {
 			</div>
 		</div>
 
-		<!--  <a href="#page44">이동</a> -->
+		 <a href="#page48">이동</a>
 	</body>
 </html>
 

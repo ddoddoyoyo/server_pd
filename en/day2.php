@@ -136,6 +136,9 @@
 				// $("#upload").change(function(){
 				// 	readURL(this);
 				// });
+				$("#page101 .go-next").click(function(){	
+					location.href="/pd/en/day3.php";
+				});
 			});
 				
 		</script>
@@ -1984,7 +1987,7 @@
 </div>
 
 
-<!-- <a href="#page84">이동!!!!!!!!!</a> -->
+<!-- <a href="#page63001">이동!!!!!!!!!</a> -->
 
 
 

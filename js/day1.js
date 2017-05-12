@@ -1544,9 +1544,9 @@ $(document).ready(function(){
 	});
 
 	
-	$("#page55 .go-next").click(function(){	
-		location.href="/pd/en/day2.php";
-	});
+	// $("#page55 .go-next").click(function(){	
+	// 	location.href="/pd/en/day2.php";
+	// });
 
 	
 

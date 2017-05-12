@@ -3,7 +3,7 @@
 	header("Content-Type: text/html; charset=UTF-8");
 	
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
-		$tools->JavaGo("/pd/tur/day1.php");
+		$tools->JavaGo("/pd/tr/day1.php");
 	}
 	
 	
@@ -152,7 +152,7 @@
 	<body>
 		<div id="wrap">
 			<div id="contBox" class="container">
-				<section data-role="page" id="page0" class="container">
+				<section data-role="page" id="page0" class="container tr">
 					<!-- <div data-role="header" class="header">
 						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right"><img src="../images/button/icon_navbar.png" alt=""></a>
 					</div> -->
@@ -164,7 +164,7 @@
 						</div>
 						<!-- <a href="#page1"><p class="intro_start">START</p></a> -->
 						<a href="#page1" id="go_page1" class="next_p_btn ui-btn go-next">
-							<img src="../images/button/start_btn.png" alt="next button">
+							<img src="../images/button/start_btn_tr.png" alt="next button">
 						</a>
 						<!-- <div class="imgwrap">
 							<img src="../images/intro/hyundai_logo.png" alt="logo">
@@ -175,7 +175,7 @@
 				
 				<section data-role="page" id="page1" class="container">
 				<form id="Frm" name="Frm" method="post" action="/pd/common/join_action.php" enctype="multipart/form-data">
-					<input type="hidden" name="RETURN" value="/pd/tur/day1.php"/>
+					<input type="hidden" name="RETURN" value="/pd/tr/day1.php"/>
 					<input type="hidden" name="LMS_GB" value="hyundai"/>
 					
 					<input type="hidden" name="ADM_DEVICE" value="<?=$agent?>"/>
