@@ -218,7 +218,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Şimdi de, yolculuk rotasını anlatırken sıklıkla vurguladığım Stelvio Geçidi’ne doğru yola.</p>
+						<p>Şimdi de, yolculuk rotasını anlatırken sıklıkla vurguladığım Stelvio Geçidi’ne doğru yola çıkacağız.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -332,7 +332,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Benim kullandığım araç 1.6 Turbo GDI. Bunun Golf 1.8 motora kıyasla daha fazla beygir gücü olduğunu biliyor muydunuz ?</p>
+						<p>Benim kullandığım araç 1.6 Turbo GDI. Bunun Golf 1.8 motora kıyasla daha fazla beygir gücüne sahip olduğunu biliyor muydunuz ?</p>
 					</div>
 				</div>
 				<a href="#page61" id="go_page61" class="next_p_btn ui-btn go-next">
@@ -625,7 +625,7 @@
 						<p>Çok noktadan bağlantılı süspansiyon sisteminin, genellikle spor araçlarda, yol tutuş gücünü arttırmak için kullanıldığını biliyor muydunuz ?<br>Hyundai i30’da bulunan 5 farklı bağlantı ile «çok noktadan bağlantılı süspansiyon sistemi» kullanılarak her türlü zeminde yol tutuşu sabit kılmak için tasarlanmıştır.</p>
 					</div>	
 					<div id="textbox2" class="textbox">
-						<p>«Çok Noktadan Bağlantılı Süspansiyon» sisteminin geçek önemini özellikle keskin virajlı yollarda daha iyi anlayabilirsiniz.</p>
+						<p>«Çok Noktadan Bağlantılı Süspansiyon» sisteminin gerçek önemini özellikle keskin virajlı yollarda daha iyi anlayabilirsiniz.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -1988,7 +1988,7 @@
 </div>
 
 
-<!-- <a href="#page63001">이동!!!!!!!!!</a> -->
+<!-- <a href="#page65">이동!!!!!!!!!</a> -->
 
 
 

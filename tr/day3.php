@@ -552,7 +552,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox5_1" class="textbox">
-									<p>Otobanda gitmemize rağmen, sen de aracın oldukça sessiz olduğunu düşünmüyor musun.</p>
+									<p>Otobanda gitmemize rağmen, sen de aracın oldukça sessiz olduğunu düşünmüyor musun ?</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1150,7 +1150,7 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox21_1" class="textbox">
-									<p>Bern’i umarım sevmişsindir. Şimdi sırada son durağımız olan Strazburg.</p>
+									<p>Bern’i umarım sevmişsindir. Şimdi sırada son durağımız olan Strazburg var.</p>
 								</div>
 							</div>
 						</div>
@@ -1496,7 +1496,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox30_1" class="textbox">
-									<p>Sürücünün gaz pedalı veya frene basmasına gerek kalmadan, sürücünün seçimine uygun olarak i30 öndeki araç ile olan mesafeyi algılar ve bu mesafeyi.</p>
+									<p>Sürücünün gaz pedalı veya frene basmasına gerek kalmadan, sürücünün seçimine uygun olarak i30 öndeki araç ile olan mesafeyi algılar ve bu mesafeyi korur.</p>
 								</div>
 							</div>
 						</div>
@@ -1824,7 +1824,7 @@ var options = {
 						<div class="titlewrap">
 							<div class="text_i">
 								<div id="textbox1">
-									<p>Result</p>
+									<p>Sonuçlarr</p>
 								</div>	
 							</div>
 						</div>
@@ -2148,7 +2148,7 @@ var options = {
 			</div>
 		</div>
 
-		 <!-- <a href="#page48">이동</a> -->
+		 <!-- <a href="#page39">이동</a> -->
 	</body>
 </html>
 

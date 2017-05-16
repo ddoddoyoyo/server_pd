@@ -807,7 +807,7 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>İ30 C segmentinde bit hatchbag. Bu yüzden sürüşü oldukça kolay hale getiriyor. Engebeli yollardan geçtiğimde araç arkası sarsılmadan pürüzsüz bir şekilde ilerleyebiliyorum.</p>
+									<p>İ30 C segmentinde bir hatchback. Bu yüzden sürüşü oldukça kolay hale getiriyor. Engebeli yollardan geçtiğimde araç arkası sarsılmadan pürüzsüz bir şekilde ilerleyebiliyorum.</p>
 								</div>
 							</div>
 						</div>
@@ -1141,7 +1141,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Üst üste konumlandırılmış basamaklı ızgara, i30’a çok daha spor bir görünüm vermiş. Buna ek olarak genişletilmiş logonun teknolojik ve sofistike görünümüyle birlikte, akıllı fonksiyonları sağlayan ön radar sensörünü de .</p>
+									<p>Üst üste konumlandırılmış basamaklı ızgara, i30’a çok daha spor bir görünüm vermiş. Buna ek olarak genişletilmiş logonun teknolojik ve sofistike görünümüyle birlikte, akıllı fonksiyonları sağlayan ön radar sensörünü de barındırıyor.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
 									<p>Kişisel olarak benim de bu araçta en sevdiğim şey olan ön ızgara çerçevesi, araca sofistike bir görünüm kazandırıyor.</p>
@@ -1247,7 +1247,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>i30 kesinlikle c segmentine ait bir araç ancak bu segmentteki diğer araçlara kıyasla oldukça zarif görünüyor. Uzun ön kaput oranı sütunların açısıyla birlikte uzun karakter çizgisi görünümünü.</p>
+									<p>i30 kesinlikle c segmentine ait bir araç ancak bu segmentteki diğer araçlara kıyasla oldukça zarif görünüyor. Uzun ön kaput oranı sütunların açısıyla birlikte uzun karakter çizgisi görünümünü pekiştiriyor.</p>
 								</div>
 							</div>
 						</div>
@@ -1308,7 +1308,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Parlak siyah spoyler ile bütünleşik 3. stop lambası ve yukarı konumlandırılmış arka sis ve reflektörler, i30’u diğer araçlardan farklı kılıyor. Kişisel olarak tasarımın Golf’ten çok daha iyi göründüğünü.</p>
+									<p>Parlak siyah spoyler ile bütünleşik 3. stop lambası ve yukarı konumlandırılmış arka sis ve reflektörler, i30’u diğer araçlardan farklı kılıyor. Kişisel olarak tasarımın Golf’ten çok daha iyi göründüğünü söyleyebilirim.</p>
 								</div>
 							</div>
 						</div>
@@ -1652,7 +1652,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Aklıma gelmişken, 5 farklı iç seçeneğimiz mevcut ve sen kırmızı olanı tercih etmiştin. Diğer renk seçeneklerine birlikte göz atalım mı ?</p>
+									<p>Aklıma gelmişken, 5 farklı iç seçeneğimiz mevcut ve sen kırmızı olanı tercih etmiştin. Diğer renk seçeneklerine birlikte göz atalım mı ? <br>[Türkiye pazarı için iç renkler farklılık gösterebilir]</p>
 								</div>
 							</div>
 						</div>
@@ -1700,7 +1700,7 @@
 									<p><strong>Siyah</strong> kumaş ve deri kombinasyonu iç mekana şık bir görünüm kazandırıyor.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p><strong>Gri</strong> deri iç döşeme seçeneği araç içinde oldukça sade ve ferah bir görünüm.</p>
+									<p><strong>Gri</strong> deri iç döşeme seçeneği araç içinde oldukça sade ve ferah bir görünüm sağlıyor.</p>
 								</div>
 								<div id="textbox4" class="textbox">
 									<p><strong>İndigo mavi</strong> seçeneği iç mekana genç ve canlı bir görünüm kazandırıyor.</p>
@@ -1994,13 +1994,13 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Orta Çağ’da Como Gölü, birçok lordun ve sanatçının serbest zamanlarını değerlendirmek için tercih ettikleri bir.</p>
+									<p>Orta Çağ’da Como Gölü, birçok lordun ve sanatçının serbest zamanlarını değerlendirmek için tercih ettikleri bir yerdi.</p>
 								</div>
 								<div id="textbox2" class="textbox">
 									<p>Ne kadar güzel bir yer.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Sanki bir peri masalındaymışız gibi, değil?</p>
+									<p>Sanki bir peri masalındaymışız gibi, değil mi?</p>
 								</div>
 								<div id="textbox4" class="textbox">
 									<p>Şimdi insanların neden burayı seçtiklerini anlıyorum.</p>
@@ -2039,7 +2039,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Haydi bir sonraki durağımızla devam.</p>
+									<p>Haydi bir sonraki durağımızla devam edelim.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -2073,7 +2073,7 @@
 
 	</div>
 </div>
-		<!-- <a href="#page12">이동</a> -->
+		<!-- <a href="#page55">이동</a> -->
 
 	</body>
 </html>
