@@ -83,7 +83,7 @@ input select label a {
     position: absolute;
     top: 0;
     left: 105%;
-    width: 67%;
+    width: 100%;
     height: 100%;
     -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
@@ -112,21 +112,12 @@ input select label a {
     .sidePanel .menu_list > li > a span {
       font-size: 30px; }
   .sidePanel .menu_list > li#day2 {
-    width: 50%;
     height: 100%;
-    float: left;
-    margin-right: 5%; }
+    float: left; }
   .sidePanel .menu_list > li#day1 {
-    width: 45%;
-    height: 50%;
     float: left;
     position: relative; }
-    .sidePanel .menu_list > li#day1:before, .sidePanel .menu_list > li#day1:after {
-      content: "";
-      display: table; }
-    .sidePanel .menu_list > li#day1:after {
-      clear: both; }
-    .sidePanel .menu_list > li#day1:after {
+    .sidePanel .menu_list > li#day1 .day_arrow:after {
       content: "";
       display: block;
       position: absolute;
@@ -140,22 +131,22 @@ input select label a {
       background-repeat: no-repeat;
       background-size: 16%;
       background-position: 54% 2%; }
+    .sidePanel .menu_list > li#day1 .sub_menu1 {
+      opacity: 0.6;
+      padding-top: 4px; }
     .sidePanel .menu_list > li#day1 a {
       position: relative;
       z-index: 1; }
     .sidePanel .menu_list > li#day1 > ul {
-      opacity: 0.5;
-      height: 50%; }
+      opacity: 0.5; }
   .sidePanel .menu_list > li#day3 {
-    width: 45%;
-    height: 50%;
     float: left;
     position: relative; }
-    .sidePanel .menu_list > li#day3:after {
+    .sidePanel .menu_list > li#day3 .day_arrow:after {
       content: "";
       display: block;
       position: absolute;
-      top: 0;
+      top: 5px;
       left: 0;
       background-image: url("../images/button/btn_next_talk_arrow_2.png");
       width: 100%;
@@ -165,17 +156,22 @@ input select label a {
       background-repeat: no-repeat;
       background-size: 16%;
       background-position: 54% 2%; }
+    .sidePanel .menu_list > li#day3 .sub_menu1 {
+      opacity: 0.6;
+      padding-top: 14px; }
     .sidePanel .menu_list > li#day3 a {
       position: relative;
       z-index: 1; }
     .sidePanel .menu_list > li#day3 > ul {
-      opacity: 0.5;
-      height: 50%; }
+      opacity: 0.5; }
+    .sidePanel .menu_list > li#day3 li#bern {
+      width: 84%; }
+      .sidePanel .menu_list > li#day3 li#bern span {
+        font-size: 20px; }
   .sidePanel .menu_list .sub_menu1 {
     height: 100%;
     width: 100%; }
     .sidePanel .menu_list .sub_menu1 > li {
-      width: 92%;
       margin-top: 10px; }
       .sidePanel .menu_list .sub_menu1 > li > a, .sidePanel .menu_list .sub_menu1 > li > span {
         font-size: 20px; }
