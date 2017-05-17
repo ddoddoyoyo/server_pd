@@ -27,6 +27,18 @@
 			 $.mobile.pushStateEnabled = false;
 			 $.mobile.changePage.defaults.changeHash = false;
 		});
+
+		 $(document).ready(function(){
+		 		$("a.en").click(function(){
+					location.href='/pd/en/';
+				});
+
+				$("a.tr").click(function(){
+					location.href='/pd/tr/';
+				});
+		 });
+
+
 	</script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
@@ -48,12 +60,12 @@
 							<div class="lang_select">	
 								<div class="blue_bg blue_bg_l"></div>
 								<ul>
-									<li><a href="/pd/en/">ENGLISH</a></li>
+									<li><a class="en" href="javascript:;">ENGLISH</a></li>
 									<li><a href="/pd/ar/">ARABIC</a></li>
-									<li><a href="/pd/fr/">FRENCH</a></li>
-									<li><a href="/pd/ru/">RUSSIAN</a></li>
-									<li><a href="/pd/es/">LATIN SPANISH</a></li>
-									<li><a href="/pd/tr/">TURKISH</a></li>
+									<li><a class="fr" href="/pd/fr/">FRENCH</a></li>
+									<li><a class="ru" href="/pd/ru/">RUSSIAN</a></li>
+									<li><a class="es" href="/pd/es/">LATIN SPANISH</a></li>
+									<li><a class="tr" href="javascript:;">TURKISH</a></li>
 								</ul>
 								<div class="blue_bg blue_bg_r"></div>
 								<div class="blue_bg blue_bg_btm"></div>
