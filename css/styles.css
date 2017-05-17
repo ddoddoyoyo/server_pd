@@ -464,7 +464,7 @@ img {
         background: #002c5f;
         border-radius: 5px 5px 0 0;
         margin: 0;
-        padding: 15px 0;
+        padding-top: 20px;
         font-size: 25px;
         font-family: "HyundaiSansText-Regular_0"; }
       #lang .ui-content .textwrap .lang_select {
@@ -511,7 +511,8 @@ img {
               border-bottom: 3px solid #002c5f; }
               #lang .ui-content .textwrap .lang_select ul li:hover a {
                 font-family: "HyundaiSansHead-Medium";
-                font-size: 20px; }
+                font-size: 20px;
+                top: 22%; }
             #lang .ui-content .textwrap .lang_select ul li a {
               font-family: "HyundaiSansHead-Regular_0";
               max-width: inherit;
@@ -519,7 +520,7 @@ img {
               color: #002c5f;
               height: 100%;
               position: relative;
-              top: 24%; }
+              top: 28%; }
         #lang .ui-content .textwrap .lang_select .blue_bg_btm {
           display: block;
           width: 100%;

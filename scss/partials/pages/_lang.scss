@@ -38,7 +38,7 @@
 		    background: $blue_bg;
 		    border-radius: 5px 5px 0 0;
 		    margin: 0;
-        padding: 15px 0;
+        padding-top: 20px;
     		font-size: 25px;
     		font-family: "HyundaiSansText-Regular_0";
 			}
@@ -91,6 +91,7 @@
 							a {
 								font-family: "HyundaiSansHead-Medium";
 								font-size: 20px;
+								top: 22%;
 							}
 						}
 
@@ -101,7 +102,7 @@
 							color: $blue_bg;
 					    height: 100%;
 					    position: relative;
-					    top: 24%;
+					    top: 28%;
 
 							
 						}
