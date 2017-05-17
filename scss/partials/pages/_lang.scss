@@ -1,0 +1,124 @@
+#lang {
+	background:url('../images/Language_bg.jpg') no-repeat; 
+	background-size: 100% auto;
+	background-position: 50% 50%;
+
+	.ui-content {
+		height: 100%;
+	
+		h1 {
+			color: $white;
+	    text-shadow: 0px 0px 8px #383838;
+	    text-align: center;
+	    margin-top: 20%;
+	    margin-bottom: 20px;
+	    height: 22%;
+
+			span {
+		    font-size: 50px;
+	    	font-weight: bold;
+		    border-bottom: 4px solid white;
+	    	padding-bottom: 2px;
+		    line-height: 1.3em;
+			}	
+		}
+
+		.textwrap {
+			color: $white;
+			text-align: center;
+	    height: 50%;
+      margin: 0 30px;
+      box-shadow: 0 0 24px #000000;
+
+			h3 {
+				height: 20%;
+    		box-sizing: border-box;
+				border: 2px solid $white;
+				border-bottom: none;
+		    background: $blue_bg;
+		    border-radius: 5px 5px 0 0;
+		    margin: 0;
+        padding: 15px 0;
+    		font-size: 25px;
+    		font-family: "HyundaiSansText-Regular_0";
+			}
+			.lang_select {
+				height: 80%;
+
+				.blue_bg {
+		    	background: $blue_bg;
+			    display: inline-block;
+			    width: 4%;
+			    height: 100%;
+			    box-sizing: border-box;
+		    }
+
+		    .blue_bg_l {
+		    	float: left;
+		    	border-left: 2px solid $white;
+		    }
+
+		    .blue_bg_r {
+		    	float: right;
+		    	border-right: 2px solid $white;
+		    }
+	    	ul {	
+	    		display: inline-block;
+		    	width: 92%;
+			    height: 95%;
+			    margin: 0;
+			    background-color: rgba( $white, .7);
+			    border: 2px solid white;
+			    box-sizing: border-box; 
+			    border-radius: 5px;
+			    padding: 0;
+			    li {
+	    	    border-bottom: 2px solid $blue_bg;
+		        height: 16.2%;
+						margin: 0;
+
+						&:last-child {
+							border-bottom: none;
+						}
+						&:hover {
+							background: rgb(254,255,255); /* Old browsers */
+							background: -moz-radial-gradient(center, ellipse cover, rgba(254,255,255,1) 0%, rgba(226,231,235,1) 64%, rgba(151,170,184,1) 100%); /* FF3.6-15 */
+							background: -webkit-radial-gradient(center, ellipse cover, rgba(254,255,255,1) 0%,rgba(226,231,235,1) 64%,rgba(151,170,184,1) 100%); /* Chrome10-25,Safari5.1-6 */
+							background: radial-gradient(ellipse at center, rgba(254,255,255,1) 0%,rgba(226,231,235,1) 64%,rgba(151,170,184,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#97aab8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+					    border-bottom: 3px solid #002c5f;
+
+							a {
+								font-family: "HyundaiSansHead-Medium";
+								font-size: 20px;
+							}
+						}
+
+						a {
+							font-family: "HyundaiSansHead-Regular_0";
+					    max-width: inherit;
+							float: inherit;
+							color: $blue_bg;
+					    height: 100%;
+					    position: relative;
+					    top: 24%;
+
+							
+						}
+			    }
+		    }
+		    
+		    .blue_bg_btm {
+		    	display: block;
+	  	    width: 100%;
+			    height: 5%;
+	        border: 2px solid white;
+	    		border-top: none;
+			    border-radius: 0 0 5px 5px;
+			    position: relative;
+    			top: 0px;
+		    }
+			}
+		}
+	}
+}
