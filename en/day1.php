@@ -315,9 +315,9 @@
 										<p class="p2">Como</p>
 									</div>
 									<ul>
-										<li>Exterior</li>
 										<li>Body frame</li>
 										<li>Suspension</li>
+										<li>Exterior</li>
 									</ul>
 								</div>
 							</div>

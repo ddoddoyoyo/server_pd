@@ -318,9 +318,9 @@
 										<p class="p2">Como Gölü</p>
 									</div>
 									<ul>
-										<li>Dış Tasarım</li>
 										<li>Gövde Yapısı</li>
 										<li>Süspansiyon</li>
+										<li>Dış Tasarım</li>
 									</ul>
 								</div>
 							</div>
@@ -1468,7 +1468,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Evet, oldukça parlak. Led farlar daha ilerisini görme imkanı sunarken Uzun Far Asistanı (HBS) dağ yolundan sorunsuzca geçmemizi sağlayacak.</p>
+									<p>Evet, oldukça parlak. Led farlar daha ilerisini görme imkanı sunarken Uzun Far Asistanı (HBA) dağ yolundan sorunsuzca geçmemizi sağlayacak.</p>
 								</div>
 							</div>
 						</div>

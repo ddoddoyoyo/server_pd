@@ -275,10 +275,10 @@ var options = {
 									</div>
 									<ul>
 										<li>Aerodinamik</li>
-										<li>Turbo Motor</li>
-										<li>Sınıfında En İyi Bacak  Mesafesi</li>
-										<li>Gelişmiş Sürüş Yardım Sistemleri</li>
-										<li>Uzaktan Kumanda Edilebilen Camlar</li>
+										<li>NVH</li>
+										<li>Boyut</li>
+<!-- 										<li>Gelişmiş Sürüş Yardım Sistemleri</li>
+										<li>Uzaktan Kumanda Edilebilen Camlar</li> -->
 									</ul>
 								</div>
 								<a href="#page0" id="go_page0" class="next_p_btn ui-btn go-next">

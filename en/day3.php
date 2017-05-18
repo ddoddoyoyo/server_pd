@@ -277,10 +277,10 @@ var options = {
 									</div>
 									<ul>
 										<li>Aerdynamic</li>
-										<li>Turbo engine</li>
-										<li>Best Class Legroom</li>
-										<li>ADAS</li>
-										<li>Remote Window Control</li>
+										<li>NVH</li>
+										<li>Dimension</li>
+<!-- 										<li>ADAS</li>
+										<li>Remote Window Control</li> -->
 									</ul>
 								</div>
 								<a href="#page0" id="go_page0" class="next_p_btn ui-btn go-next">

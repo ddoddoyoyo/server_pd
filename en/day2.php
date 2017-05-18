@@ -180,8 +180,8 @@
 						<ul>
 							<li>Body Rigidity</li>
 							<li>Turbo Engine + DCT</li>
-							<li>Connectivity</li>
-							<li>Space(Trunk)</li>
+<!-- 							<li>Connectivity</li>
+							<li>Space(Trunk)</li> -->
 						</ul>
 					</div>
 				</div>

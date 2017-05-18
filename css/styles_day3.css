@@ -408,11 +408,10 @@ img {
 			#pageStart .ui-content .textwrap .text #textbox1 .img_wrap .p2 {
 			  float:right; }
 		  #pageStart .ui-content .textwrap .text #textbox1 ul {
-			margin-top:12%;
+			margin-top:25%;
 			position:relative; }
 			#pageStart .ui-content .textwrap .text #textbox1 ul li {
 			    margin: 4px 0;
-		        font-size: 0.9em;
 			}
 			#pageStart .ui-content .textwrap .text #textbox1 ul li:before {
 			  content:'';

@@ -181,8 +181,8 @@
 						<ul>
 							<li>Gövde Sertliği</li>
 							<li>Turbo Motor + DCT</li>
-							<li>Bağlanabilirlik</li>
-							<li>Bagaj Alanı</li>
+<!-- 							<li>Bağlanabilirlik</li>
+							<li>Bagaj Alanı</li> -->
 						</ul>
 					</div>
 				</div>
