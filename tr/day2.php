@@ -179,10 +179,10 @@
 							<p class="p2">Zürih</p>
 						</div>
 						<ul>
-							<li>Gövde Sertliği</li>
-							<li>Turbo Motor + DCT</li>
-<!-- 							<li>Bağlanabilirlik</li>
-							<li>Bagaj Alanı</li> -->
+							<li>MOTOR</li>
+							<li>7 DCT</li>
+<!-- 							<li>Bağlanabilirlik</li> -->
+							<li>Bagaj Alanı</li>
 						</ul>
 					</div>
 				</div>
