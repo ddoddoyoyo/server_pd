@@ -6,7 +6,7 @@ $(document).ready(function(){
 		sidePanel += "<li>SÜSPANSİYON</li>";
 		sidePanel += "<li>DIŞ TASARIM</li>";
 		sidePanel += "</ul></li><li id='como'><span>Como Gölü</span><ul class='sub_menu2'>";//day1 como
-		sidePanel += "<li>UZUN FAR ASİSTANI</li>";
+		sidePanel += "<li>HBA</li>";
 		sidePanel += "<li>İÇ TASARIM</li>";
 		sidePanel += "</ul></li></ul></a></li>";//day1 end
 
@@ -14,24 +14,23 @@ $(document).ready(function(){
 		sidePanel += "<li id='day2'><a href='javascript:;' id='go_day2'><span class='day_arrow'>2. Gün</span><ul class='sub_menu1'><li id='stelvio'><span>Stelvio Geçidi</span><ul class='sub_menu2'>";//day2 stelvio
 		sidePanel += "<li>MOTOR</li>";
 		sidePanel += "<li>7 DCT</li>";
-		sidePanel += "<li>2 SÜSPANSİYON</li>";
-		sidePanel += "<li>2 GÖVDE YAPISI</li>";
+		sidePanel += "<li>SÜSPANSİYON</li>";
+		sidePanel += "<li>GÖVDE YAPISI</li>";
 		sidePanel += "</ul></li><li id='zurich'><span>Zurich</span><ul class='sub_menu2'>";//day2 Zurich
 		sidePanel += "<li>BAGAJ ALANI</li>";
-		sidePanel += "<li>BAĞLANTI</li>";
+		sidePanel += "<li>BAĞLANABİLİRLİK</li>";
 		sidePanel += "</ul></li></ul></a></li>";//day2 end
 
 
 		sidePanel += "<li id='day3'><a href='#pageStart'><span>3. Gün</span></a><ul class='sub_menu1'><li id='bern'><a href='#page0'><span>Bern</span></a><ul class='sub_menu2'>";//day3 bern
 		sidePanel += "<li><a href='#page3'>AERODINAMIK</a></li>";
 		sidePanel += "<li><a href='#page6'>NVH</a></li>";
-		sidePanel += "<li><a href='#page9'>2 MOTOR</a></li>";
+		sidePanel += "<li><a href='#page9'>MOTOR</a></li>";
 		sidePanel += "<li><a href='#page13'>BOYUT</a></li>";
 		sidePanel += "</ul></li><li id='strasbourg'><a href='#page2101'><span>Strasbourg</span></a><ul class='sub_menu2'>";//day3 strasbourg
-		sidePanel += "<li><a href='#page22'>CAM TAVANI</a></li>";
-		sidePanel += "<li><a href='#page28'>ADAS</a></li>";
-		sidePanel += "<li><a href='#page45'>UZAKTAN PENCERE</a></li>";
-		sidePanel += "<li>ZAMAN ÇİZELGESİ</li>";
+		sidePanel += "<li><a href='#page22'>CAM TAVAN</a></li>";
+		sidePanel += "<li><a href='#page28'>SÜRÜŞ YARDIMI</a></li>";
+		sidePanel += "<li><a href='#page45'>CAMLAR</a></li>";
 		sidePanel += "</ul></li></ul></li>";//day3 end
 		$("section.container").append(sidePanel);
 
