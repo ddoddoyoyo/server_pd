@@ -12,6 +12,8 @@
 
 	$REFER = $_SERVER['REMOTE_ADDR'];
 
+	$LANGUAGE = $_POST['LANGUAGE'];
+
 	
 	
 
@@ -50,7 +52,10 @@
 
 		if( !@move_uploaded_file($_FILES["LMS_IMAGE"][tmp_name], $IMG_DIR."hyundai/member/".$LMS_IMAGE) ) { 
 			//$tools->errMsg("파일 업로드 에러"); 
-		}else { @unlink($_FILES["LMS_IMAGE"][tmp_name]);}	
+		}else { 
+			@unlink($_FILES["LMS_IMAGE"][tmp_name]);
+			chmod($IMG_DIR."hyundai/member/".$LMS_IMAGE,0755);
+		}	
 	}else{
 		$LMS_IMAGE = "";
 	}
@@ -92,7 +97,7 @@
 		if($stmt->execute()){
 
 			$dbh->commit();
-			$param = "?LMS_CONTRY=".urlencode($LMS_CONTRY)."&LMS_NAME=".urlencode($LMS_NAME)."&RETURN=".urlencode($RETURN)."";
+			$param = "?LMS_CONTRY=".urlencode($LMS_CONTRY)."&LMS_NAME=".urlencode($LMS_NAME)."&RETURN=".urlencode($RETURN)."&LANGUAGE=".$LANGUAGE."";
 			$tools->metaGo("/pd/common/login_action.php".$param."");
 		}else{
 			$dbh->rollBack();

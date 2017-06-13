@@ -77,6 +77,7 @@ function view_search(){
 		dataType: "json",
 		data:{
 			list: list_cnt,
+			Total_Cnt: $('#TOT_LIST_COUNT').val(),
 		},
 		success:  function(json){
 			//console.log(json);

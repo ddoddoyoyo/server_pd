@@ -5,38 +5,6 @@
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
 		$tools->JavaGo("/pd/tr/day1.php");
 	}
-	
-	
-	$QRCode = $_REQUEST["QRCode"];
-
-	$agent = $tools->user_agent($_SERVER['HTTP_USER_AGENT']);
-
-	$refer = $_SERVER['REMOTE_ADDR'];
-
-
-	if($agent == 'PC'){
-		$ADM_ACCESS_GUBUN = 2;
-	} else {
-		$ADM_ACCESS_GUBUN = 1;
-	}
-
-	
-	if(!isset($QRCode)){
-		$ADM_INFLOW_GUBUN = 1;
-	} else {
-		$ADM_INFLOW_GUBUN = 2;
-	}
-	
-
-	$request_url = "http://whois.kisa.or.kr/openapi/ipascc.jsp?query=".$refer."&key=2016081813570509350490&answer=json";
-	
-	$info = $tools->get_web_page($request_url);
-
-	$data = json_decode($info['content'],true);
-
-	$COUNTRY_CODE = $data['whois']['countryCode'];
-
-
 ?>
 <!DOCTYPE html>
 <html lang="tr">
@@ -176,6 +144,7 @@
 				<section data-role="page" id="page1" class="container">
 				<form id="Frm" name="Frm" method="post" action="/pd/common/join_action.php" enctype="multipart/form-data">
 					<input type="hidden" name="RETURN" value="/pd/tr/day1.php"/>
+					<input type="hidden" name="LANGUAGE" value="tr"/>
 					<input type="hidden" name="LMS_GB" value="hyundai"/>
 					
 					<input type="hidden" name="ADM_DEVICE" value="<?=$agent?>"/>

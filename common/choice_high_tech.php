@@ -5,10 +5,13 @@
 
 	$CHOICE = $_POST["CHOICE"];
 
+	$LMS_LANGUAGE = $_POST["LMS_LANGUAGE"];
 
-	$sql = "SELECT COUNT(*) AS CNT FROM HD_PD_CHOICE_INFO WHERE LMS_SEQ = :LMS_SEQ AND PD_GUBUN = 3";
+
+	$sql = "SELECT COUNT(*) AS CNT FROM HD_PD_CHOICE_INFO WHERE LMS_SEQ = :LMS_SEQ AND PD_GUBUN = 3  AND LMS_LANGUAGE = :LMS_LANGUAGE";
 	$stmt = $dbh->prepare($sql);
 	$stmt->bindParam(':LMS_SEQ',$HY_LMS_SEQ);
+	$stmt->bindParam(':LMS_LANGUAGE',$LMS_LANGUAGE);
 	$stmt->execute();
 	$row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -25,19 +28,22 @@
 						LMS_SEQ,
 						PD_GUBUN,
 						PD_CHOICE,
+						LMS_LANGUAGE,
 						PD_REGDATE
 					) 
 					VALUES 
 					(
 						:LMS_SEQ, 
 						3,
-						:PD_CHOICE, 
+						:PD_CHOICE,
+						:LMS_LANGUAGE,
 						NOW()
 					)";
 
 			$stmt = $dbh->prepare($sql);
 			$stmt->bindParam(':LMS_SEQ',$HY_LMS_SEQ);
 			$stmt->bindParam(':PD_CHOICE',$CHOICE);
+			$stmt->bindParam(':LMS_LANGUAGE',$LMS_LANGUAGE);
 
 			if($stmt->execute()){
 				$dbh->commit();		
@@ -57,10 +63,13 @@
 						LMS_SEQ = :LMS_SEQ
 					AND
 						PD_GUBUN = 3
+					AND
+						LMS_LANGUAGE = :LMS_LANGUAGE
 					";
 			$stmt = $dbh->prepare($sql);
 			$stmt->bindParam(':PD_CHOICE',$CHOICE);
 			$stmt->bindParam(':LMS_SEQ',$HY_LMS_SEQ);
+			$stmt->bindParam(':LMS_LANGUAGE',$LMS_LANGUAGE);
 			if($stmt->execute()){
 				$dbh->commit();
 				$json["result"] = "success";

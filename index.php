@@ -1,7 +1,14 @@
 <?php
 	include_once ($_SERVER[DOCUMENT_ROOT]."/common/commonFunction.php");
+
+	$LMS_CONTRY = urldecode($_POST["LMS_COUNTRY"]);
+
+	$LMS_NAME = urldecode($_POST["LMS_NAME"]);
 	
-	
+	$TYPE = urldecode($_POST["TYPE"]);
+
+	$APP_GB = urldecode($_POST["APP_GB"]);
+
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -44,37 +51,45 @@
 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 	<script src="/pd/js/device.js"></script>
 	<script src="/pd/js/day1.js"></script>
+	<script src="/pd/common/js/common.js"></script>
  </head>
 
  <body>
-  <div id="wrap">
-			<div id="contBox" class="container">
-				<section data-role="page" id="lang" class="container">
-					<!-- <div data-role="header" class="header">
-						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right"><img src="../images/button/icon_navbar.png" alt=""></a>
-					</div> -->
-					<div data-role="main" class="ui-content">
-						<h1>HOT HATCH<br><span>i30</span></h1>
-						<div class="textwrap">
-							<h3>Select a Language</h3>
-							<div class="lang_select">	
-								<div class="blue_bg blue_bg_l"></div>
-								<ul>
-									<li><a class="en" href="javascript:;">ENGLISH</a></li>
-									<li><a href="/pd/ar/">ARABIC</a></li>
-									<li><a class="fr" href="/pd/fr/">FRENCH</a></li>
-									<li><a class="ru" href="/pd/ru/">RUSSIAN</a></li>
-									<li><a class="es" href="/pd/es/">LATIN SPANISH</a></li>
-									<li><a class="tr" href="javascript:;">TURKISH</a></li>
-								</ul>
-								<div class="blue_bg blue_bg_r"></div>
-								<div class="blue_bg blue_bg_btm"></div>
-							</div>	
-						</div>
+	<form id="Frm" name="Frm" method="post" action="/pd/common/login_action.php">
+		<input type="hidden" name="LMS_CONTRY" value="<?=$LMS_CONTRY?>"/>
+		<input type="hidden" name="LMS_NAME" value="<?=$LMS_NAME?>"/>
+		<input type="hidden" name="APP_GB" value="<?=$APP_GB?>"/>
+		<input type="hidden" name="TYPE" value="<?=$TYPE?>"/>
+		<input type="hidden" name="RETURN" value=""/>
+	</form>
+	<script type="text/javascript">
+		main_go('tr');
+	</script>
+  <!-- <div id="wrap">
+		<div id="contBox" class="container">
+			<section data-role="page" id="lang" class="container">
+				<div data-role="main" class="ui-content">
+					<h1>HOT HATCH<br><span>i30</span></h1>
+					<div class="textwrap">
+						<h3>Select a Language</h3>
+						<div class="lang_select">	
+							<div class="blue_bg blue_bg_l"></div>
+							<ul>
+								<li><a class="en" href="javascript:;">ENGLISH</a></li>
+								<li><a href="/pd/ar/">ARABIC</a></li>
+								<li><a class="fr" href="/pd/fr/">FRENCH</a></li>
+								<li><a class="ru" href="/pd/ru/">RUSSIAN</a></li>
+								<li><a class="es" href="/pd/es/">LATIN SPANISH</a></li>
+								<li><a class="tr" href="javascript:;">TURKISH</a></li>
+							</ul>
+							<div class="blue_bg blue_bg_r"></div>
+							<div class="blue_bg blue_bg_btm"></div>
+						</div>	
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 		</div>
-	</body>
+	</div> -->
+</body>
  </body>
 </html>

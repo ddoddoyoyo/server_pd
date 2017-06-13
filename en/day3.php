@@ -47,7 +47,7 @@
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
 		  //주소창 없애기
-			 $(document).on("mobileinit", function () {
+			$(document).on("mobileinit", function () {
 				 $.mobile.hashListeningEnabled = false;
 				 $.mobile.pushStateEnabled = false;
 				 $.mobile.changePage.defaults.changeHash = false;
@@ -2153,10 +2153,14 @@ var options = {
 				</section>
 				
 				<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
+				<input type="hidden" id="LMS_LANGUAGE" name="LMS_LANGUAGE" value="en">
+				<input type="hidden" id="SESSION_APP_GB" name="SESSION_APP_GB" value="<?=$_SESSION["HY_APP_GB"]?>">
 			</div>
 		</div>
 
-		<!--  <a href="#page9">이동</a> -->
+		<!-- <a href="#page9">엔진 이동</a>
+		<a href="#page38">마지막 이동</a>
+		<a href="#page48">파일 업로드</a> -->
 	</body>
 </html>
 

@@ -1745,19 +1745,7 @@
 						</div>
 						<!-- 여창민 대리 추가 (2017-03-30) : 시작 -->
 						
-						<?php
-							$sql = "SELECT COUNT(*) AS COLOR_CNT FROM HD_PD_CHOICE_INFO WHERE LMS_SEQ = :LMS_SEQ AND PD_GUBUN = 1";
-							$stmt = $dbh->prepare($sql);
-							$stmt->bindParam(':LMS_SEQ',$_SESSION["HY_LMS_SEQ"]);
-							$stmt->execute();
-							$row = $stmt->fetchAll(PDO::FETCH_ASSOC);
-							if($row[0]["COLOR_CNT"] > 0 ){
-								$MODE = "Modify";
-							}else{
-								$MODE = "Insert";
-							}
-						?>
-						<input type="hidden" id="COLOR_MODE" name="COLOR_MODE" value="<?=$MODE?>">
+						
 						<div class="imgwrap">
 							<ul class="choice_color">
 								<a href="#page49" id="ch1" onclick="choice_color('1')"><li><img src="../images/day1/78_btn_01.png" alt=""></li></a>
@@ -2065,12 +2053,14 @@
 
 	<!-- 여창민 대리 추가 (2017-03-30) : 시작 -->
 	<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
+	<input type="hidden" id="LMS_LANGUAGE" name="LMS_LANGUAGE" value="en">
 	<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
 
 
 	</div>
 </div>
-		<!-- <a href="#page14">이동</a> -->
+		<!-- <a href="#page48">컬러 이동</a><br>
+		<a href="#page50">그래프 이동</a> -->
 
 	</body>
 </html>

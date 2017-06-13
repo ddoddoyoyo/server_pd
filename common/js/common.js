@@ -4,7 +4,8 @@ $(document).ready(function(){
 		var LMS_CONTRY = $("select[name=LMS_CONTRY]").val();
 		var LMS_NAME = $("input[name=LMS_NAME]").val();
 		var RETURN = $("input[name=RETURN]").val();
-		var params="?LMS_CONTRY="+LMS_CONTRY+"&LMS_NAME="+LMS_NAME+"&RETURN="+RETURN;  
+		var LANGUAGE = $("input[name=LANGUAGE]").val();
+		var params="?LMS_CONTRY="+LMS_CONTRY+"&LMS_NAME="+LMS_NAME+"&RETURN="+RETURN+"&LANGUAGE="+LANGUAGE;  
 
 		if($("select[name=LMS_CONTRY]").val() == "")	{$("select[name=LMS_CONTRY]").focus();return;}
 		if($("input[name=LMS_NAME]").val() == ""){$("input[name=LMS_NAME]").focus();return;};
@@ -49,6 +50,7 @@ $(document).ready(function(){
 	$('#go_page10').click(function(){
 		
 		var HY_LMS_SEQ = $("input[name=SESSION_LMS_SEQ]").val();
+		var LMS_LANGUAGE = $("input[name=LMS_LANGUAGE]").val();
 		var CHOICE = "";
 
 		$("#page9 .engine img").each(function(idx,obj){		
@@ -70,6 +72,7 @@ $(document).ready(function(){
 			data:{
 				HY_LMS_SEQ: HY_LMS_SEQ,
 				ENGINE_CHOICE: CHOICE,
+				LMS_LANGUAGE: LMS_LANGUAGE,
 			},
 			success:  function(json){			
 				console.log(json);
@@ -88,6 +91,14 @@ $(document).ready(function(){
 
 		var form = $('#Frm')[0];
 		var data = new FormData(form);	
+
+		var LMS_LANGUAGE = $("input[name=LMS_LANGUAGE]").val();
+		
+		var SESSION_APP_GB = $("input[name=SESSION_APP_GB]").val();
+
+		$('#form_sumit').hide();
+
+		
 		
 		if(typeof $('#upload')[0].files[0] == "undefinde"){
 			alert('Please select an image.');
@@ -102,6 +113,7 @@ $(document).ready(function(){
 		data.append('PD_CON_IMAGE',$('#upload')[0].files[0]);
 		data.append('PD_CON_TEXT',$('.pd_con_text').val());		
 		data.append('LMS_SEQ',$('#SESSION_LMS_SEQ').val());
+		data.append('LMS_LANGUAGE',LMS_LANGUAGE);
 		
 
 		$.ajax({
@@ -118,13 +130,11 @@ $(document).ready(function(){
 
 					$('#upload').val('');
 					$('.pd_con_text').val('');
-
-					//$.mobile.changePage("#page0");
-					//window.open('/pd/timeline_view.php','toolbar=no, scrollbars=yes');
-					//fb_pupup();
-					//window.open('/pd/en/timeline_view.html','toolbar=no, scrollbars=yes');
-					//location.href='/pd/en/day1.php';
-					location.href='/pd/timeline_view.php';
+					if(SESSION_APP_GB ==""){
+						location.href='/pd/timeline_view.php';
+					}else{
+						alert('success');
+					}
 				} else {
 					alert('오류가 발생했습니다');
 				}
@@ -144,9 +154,9 @@ $(document).ready(function(){
 
 
 //인테리어 컬러
-function choice_color(no){
+function choice_color(COLOR_NO){
 	var HY_LMS_SEQ = $("input[name=SESSION_LMS_SEQ]").val();
-	var COLOR_MODE = $("input[name=COLOR_MODE]").val();
+	var LMS_LANGUAGE = $("input[name=LMS_LANGUAGE]").val();
 
 	$.ajax({
 			url:"/pd/common/choice_color.php",
@@ -154,11 +164,11 @@ function choice_color(no){
 			dataType: "json",
 			data:{
 				HY_LMS_SEQ: HY_LMS_SEQ,
-				COLOR_MODE: COLOR_MODE,
-				NO: no,
+				COLOR_NO: COLOR_NO,
+				LMS_LANGUAGE : LMS_LANGUAGE,
 			},
 			success:  function(json){			
-				//console.log(json);
+				//console.log("1111111");
 			},
 		   error : function(xhr, status, error) {
 				//console.log(error);
@@ -170,4 +180,15 @@ function choice_color(no){
 //중복체크
 function lms_user_check(){
 	
+}
+
+function main_go(language){
+	if($("input[name=APP_GB]").val() == "APP"){
+		//alert("APP");
+		$("input[name=RETURN]").val("/pd/"+language+"/main.php");
+		Frm.submit();
+	}else{
+		//alert("LINK");
+		document.location.href="/pd/"+language+"/";
+	}
 }

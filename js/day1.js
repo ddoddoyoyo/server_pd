@@ -1331,26 +1331,30 @@ $(document).ready(function(){
 			$("#page50 .g_num").css({"width":"0%"});
 		},
 		"pageshow" : function(){
+
+			var LMS_LANGUAGE = $("input[name=LMS_LANGUAGE]").val();
+
 			$.ajax({
 			url:"/pd/common/color_json.php",
 			type: "POST",
 			dataType: "json",
 			data:{
+				LMS_LANGUAGE : LMS_LANGUAGE,
 			},
 			success:  function(json){
-				$("#page50 .g_num#red").delay(300).animate({"width":""+json.val1+"%"}, 500,function(){
+				$("#page50 .g_num#red").delay(300).animate({"width":""+json.val1 / 2+"%"}, 500,function(){
 				$(this).text(json.val1_Cnt);
 				}).fadeIn(800);
-				$("#page50 .g_num#black").delay(500).animate({"width":""+json.val2+"%"}, 500,function(){
+				$("#page50 .g_num#black").delay(500).animate({"width":""+json.val2 / 2+"%"}, 500,function(){
 					$(this).text(json.val2_Cnt);
 				}).fadeIn(800);
-				$("#page50 .g_num#gray").delay(700).animate({"width":""+json.val3+"%"}, 500,function(){
+				$("#page50 .g_num#gray").delay(700).animate({"width":""+json.val3 / 2+"%"}, 500,function(){
 					$(this).text(json.val3_Cnt);
 				}).fadeIn(800);
-				$("#page50 .g_num#ind_blue").delay(900).animate({"width":""+json.val4+"%"}, 500,function(){
+				$("#page50 .g_num#ind_blue").delay(900).animate({"width":""+json.val4 / 2+"%"}, 500,function(){
 					$(this).text(json.val4_Cnt);
 				}).fadeIn(800);
-				$("#page50 .g_num#burgundy").delay(1100).animate({"width":""+json.val5+"%"}, 500,function(){
+				$("#page50 .g_num#burgundy").delay(1100).animate({"width":""+json.val5 / 2+"%"}, 500,function(){
 					$(this).text(json.val5_Cnt);
 				}).fadeIn(800);
 				$("#page50 .go-next").delay(1300).fadeIn(500);

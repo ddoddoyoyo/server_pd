@@ -3,76 +3,119 @@
 
 	$list = $_POST['list'];
 
-	$sql = "	SELECT AA.LMS_SEQ
-						  ,AA.LMS_CONTRY 
-						  ,AA.LMS_NAME
-						  ,AA.LMS_IMAGE
-						  ,CASE WHEN AA.PD_STYLE = 1 THEN 'RED'
-							WHEN AA.PD_STYLE = 2 THEN 'BLACK'
-							WHEN AA.PD_STYLE = 3 THEN 'GRAY'
-							WHEN AA.PD_STYLE = 4 THEN 'INDIGO BLUE'
-							WHEN AA.PD_STYLE = 5 THEN 'GLAM BURGUNDY'
-							ELSE '' END AS PD_STYLE_DESC 
-						  ,CASE WHEN AA.PD_ENGINE = 1 THEN 'NU 2.0GDI'
-							WHEN AA.PD_ENGINE = 2 THEN 'GAMMA 1.6T-GDI'
-							WHEN AA.PD_ENGINE = 3 THEN 'U2 1.6VGT'
-							ELSE '' END AS PD_ENGINE_DESC
-					   
-						  ,CASE WHEN AA.PD_HIGH_TECH = 1 THEN 'LKAS'
-							WHEN AA.PD_HIGH_TECH = 2 THEN 'BSD'
-							WHEN AA.PD_HIGH_TECH = 3 THEN 'ASCC'
-							WHEN AA.PD_HIGH_TECH = 4 THEN 'DAA'
-							WHEN AA.PD_HIGH_TECH = 5 THEN 'AEB'
-							ELSE '' END AS PD_HIGH_TECH_DESC
-						  ,AA.LMS_CON_TITLE_IMG
-						  ,AA.LMS_CON_TEXT
-				FROM 
-				(
-				SELECT A.LMS_SEQ
-						  ,A.LMS_CONTRY 
-						  ,A.LMS_NAME
-						  ,A.LMS_IMAGE
-						  ,B.PD_CHOICE AS PD_STYLE
-						  ,C.PD_CHOICE AS PD_ENGINE
-						  ,D.PD_CHOICE AS PD_HIGH_TECH
-						  ,F.LMS_CON_TITLE_IMG
-						  ,F.LMS_CON_TEXT
-					FROM LMS_MEMBER A
-					INNER JOIN 
-					(
-					  SELECT LMS_SEQ ,PD_CHOICE FROM HD_PD_CHOICE_INFO
-					  WHERE PD_GUBUN = 1
-					) AS B
-					ON A.LMS_SEQ = B.LMS_SEQ
-					INNER JOIN 
-					(
-					  SELECT LMS_SEQ ,PD_CHOICE FROM HD_PD_CHOICE_INFO
-					  WHERE PD_GUBUN = 2
-					) AS C
-					ON A.LMS_SEQ = C.LMS_SEQ
-				   INNER JOIN 
-				   (
-					   SELECT LMS_SEQ ,PD_CHOICE FROM HD_PD_CHOICE_INFO
-					   WHERE PD_GUBUN = 3
-					) AS D
-					ON A.LMS_SEQ = D.LMS_SEQ
-					INNER JOIN LMS_CONTENTS F
-					ON A.LMS_SEQ = F.LMS_SEQ
-				  WHERE A.LMS_GB = 'hyundai'
-				  AND F.LMS_CON_GB = 'hyundai'
-				  AND F.LMS_CON_CAR_GUBUN = 'PD'
-				  ORDER BY F.LMS_CON_REGDATE DESC
-				 ) AS AA
-			LIMIT ".$list.",5";
+	$Total_Cnt = $_POST['Total_Cnt'];
+
+	$sql = "	SELECT 
+				 A.LMS_CON_SEQ,
+				 A.LMS_CON_TITLE_IMG,
+				 A.LMS_CON_TEXT,
+				 A.LMS_CON_LANGUAGE,
+				 B.LMS_NAME,
+				 B.LMS_CONTRY,
+				 B.LMS_IMAGE,
+				 C.PD_CHOICE AS PD_CHOICE_1,
+				 D.PD_CHOICE AS PD_CHOICE_2,
+				 E.PD_CHOICE AS PD_CHOICE_3
+				FROM LMS_CONTENTS A
+				LEFT JOIN LMS_MEMBER B ON B.LMS_SEQ = A.LMS_SEQ
+				LEFT JOIN HD_PD_CHOICE_INFO C ON C.LMS_SEQ = A.LMS_SEQ  AND C.LMS_LANGUAGE = A.LMS_CON_LANGUAGE AND C.PD_GUBUN = 1
+				LEFT JOIN HD_PD_CHOICE_INFO D ON D.LMS_SEQ = A.LMS_SEQ  AND D.LMS_LANGUAGE = A.LMS_CON_LANGUAGE AND D.PD_GUBUN = 2
+				LEFT JOIN HD_PD_CHOICE_INFO E ON E.LMS_SEQ = A.LMS_SEQ  AND E.LMS_LANGUAGE = A.LMS_CON_LANGUAGE AND E.PD_GUBUN = 3
+				WHERE A.LMS_CON_GB = 'hyundai' AND A.LMS_CON_CAR_GUBUN = 'PD'
+				ORDER BY A.LMS_CON_REGDATE DESC 
+				LIMIT ".$list.",5";
 
 	$stmt = $dbh->prepare($sql);
 	$stmt->execute();
 	$ROW = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	$stmt->closeCursor();
 
+	$PageCount = count($ROW) + (int)$list;
+
 	$dataList=" ";
 
 	for($a = 0; $a < count($ROW); $a++){
+
+		if($ROW[$a]["LMS_CON_LANGUAGE"] == "en"){
+
+			switch($ROW[$a]["PD_CHOICE_1"]){
+				case 1 : $Text_1 = "RED";
+				break;
+				case 2 : $Text_1 = "BLACK";
+				break;
+				case 3 : $Text_1 = "GRAY";
+				break;
+				case 4 : $Text_1 = "INDIGO BLUE";
+				break;
+				case 5 : $Text_1 = "BLAM BURGUNDY";
+				break;
+				default : $Text_1 = "No Selection";
+			}
+
+			switch($ROW[$a]["PD_CHOICE_2"]){
+				case 1 : $Text_2 = "NU 2.0 GDI";
+				break;
+				case 2 : $Text_2 = "GAMMA 1.6 T-GDI";
+				break;
+				case 3 : $Text_2 = "U2 1.6 VGT";
+				break;
+				default : $Text_2 = "No Selection";
+			}
+
+			switch($ROW[$a]["PD_CHOICE_3"]){
+				case 1 : $Text_3 = "LKAS";
+				break;
+				case 2 : $Text_3 = "BSD";
+				break;
+				case 3 : $Text_3 = "ASCC";
+				break;
+				case 4 : $Text_3 = "DAA";
+				break;
+				case 5 : $Text_3 = "AEB";
+				break;
+				default : $Text_3 = "No Selection";
+			}
+
+
+		}else if($ROW[$a]["LMS_CON_LANGUAGE"] == "tr"){
+			switch($ROW[$a]["PD_CHOICE_1"]){
+				case 1 : $Text_1 = "RED";
+				break;
+				case 2 : $Text_1 = "BLACK";
+				break;
+				case 3 : $Text_1 = "GRAY";
+				break;
+				case 4 : $Text_1 = "INDIGO BLUE";
+				break;
+				case 5 : $Text_1 = "BLAM BURGUNDY";
+				break;
+				default : $Text_1 = "No Selection";
+			}
+
+			switch($ROW[$a]["PD_CHOICE_2"]){
+				case 1 : $Text_2 = "Kappa 1.4 MPi";
+				break;
+				case 2 : $Text_2 = "Kappa 1.4 T-GDI";
+				break;
+				case 3 : $Text_2 = "U2 1.6 VGT CRDi";
+				break;
+				default : $Text_2 = "No Selection";
+			}
+
+			switch($ROW[$a]["PD_CHOICE_3"]){
+				case 1 : $Text_3 = "LKAS";
+				break;
+				case 2 : $Text_3 = "BSD";
+				break;
+				case 3 : $Text_3 = "ASCC";
+				break;
+				case 4 : $Text_3 = "DAA";
+				break;
+				case 5 : $Text_3 = "AEB";
+				break;
+				default : $Text_3 = "No Selection";
+			}
+		}
 
 		$dataList = $dataList."<article class='article'> <div class='photo'>";
 
@@ -98,14 +141,14 @@
 		$dataList = $dataList."	<div class='txt_wrap'>";
 		$dataList = $dataList."    <div class='comment_wrap'><p class='headColor'>Trip Feedback</p><p>".$ROW[$a]['LMS_CON_TEXT']."</p></div>";
 		$dataList = $dataList."	   <div class='keyword_wrap'>";
-		$dataList = $dataList."				<p class='headColor'>Best Style Interior <span class='interior'>'".$ROW[$a]['PD_STYLE_DESC']."'</span></p>";
-		$dataList = $dataList."				<p class='headColor'>Favorite Engine <span class='engine'>'".$ROW[$a]['PD_ENGINE_DESC']."'</span></p>";
-		$dataList = $dataList."				<p class='headColor'>Favorite High-tech Feature <span class='feature'>'".$ROW[$a]['PD_HIGH_TECH_DESC']."'</span></p>";
+		$dataList = $dataList."				<p class='headColor'>Best Style Interior <span class='interior'>'".$Text_1."'</span></p>";
+		$dataList = $dataList."				<p class='headColor'>Favorite Engine <span class='engine'>'".$Text_2."'</span></p>";
+		$dataList = $dataList."				<p class='headColor'>Favorite High-tech Feature <span class='feature'>'".$Text_3."'</span></p>";
 		$dataList = $dataList."	</div>";
 		$dataList = $dataList."</div></article>";
 	}
 	
-	if(count($ROW) > 0){
+	if($Total_Cnt > $PageCount){
 		$dataList = $dataList."<div class='moreView'><a href='javascript:void(0)' onclick='view_search()'><i class='icon'></i>View More</a></div>";
 	}
 

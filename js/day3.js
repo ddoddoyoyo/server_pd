@@ -416,11 +416,14 @@ $(document).ready(function() {
 	$("#page10").on({
 		"pagebeforeshow" : function() {
 
+			var LMS_LANGUAGE = $("input[name=LMS_LANGUAGE]").val();
+
 			$.ajax({
 				url:"/pd/common/engine_json.php",
 				type: "POST",
 				dataType: "json",
 				data:{
+					LMS_LANGUAGE : LMS_LANGUAGE,
 				},
 				success:  function(json){
 					$("#page10 .graphObj").eq(0).attr('alt',json.val1);
@@ -1035,6 +1038,7 @@ $(document).ready(function() {
 		$(this).addClass('choice');
 
 		var HY_LMS_SEQ = $("input[name=SESSION_LMS_SEQ]").val();
+		var LMS_LANGUAGE = $("input[name=LMS_LANGUAGE]").val();
 		var CHOICE = "";
 		
 		$("#page38 .textwrap span").each(function(idx,obj){
@@ -1061,6 +1065,7 @@ $(document).ready(function() {
 			data:{
 				HY_LMS_SEQ: HY_LMS_SEQ,
 				CHOICE: CHOICE,
+				LMS_LANGUAGE : LMS_LANGUAGE,
 			},
 			success:  function(json){			
 				//console.log(json);
@@ -1095,20 +1100,23 @@ $(document).ready(function() {
 			}
 		},
 		"pageshow" : function() {
-		
+			
+			var LMS_LANGUAGE = $("input[name=LMS_LANGUAGE]").val();
+
 			$.ajax({
 				url:"/pd/common/high_tech_json.php",
 				type: "POST",
 				dataType: "json",
 				data:{
+					LMS_LANGUAGE : LMS_LANGUAGE,
 				},
 				success:  function(json){
 					console.log(json);
 					$("#page39 #page39ChartNum1").text(json.val2 + "%");
-					$("#page39 #page39ChartNum2").text(json.val1 + "%");
-					$("#page39 #page39ChartNum3").text(json.val3 + "%");
-					$("#page39 #page39ChartNum4").text(json.val5 + "%");
-					$("#page39 #page39ChartNum5").text(json.val4 + "%");
+					$("#page39 #page39ChartNum2").text(json.val4 + "%");
+					$("#page39 #page39ChartNum3").text(json.val5 + "%");
+					$("#page39 #page39ChartNum4").text(json.val3 + "%");
+					$("#page39 #page39ChartNum5").text(json.val1 + "%");
 
 					var options = {
 						'legend':{

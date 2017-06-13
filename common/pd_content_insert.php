@@ -7,10 +7,12 @@
 
 	$PD_CON_TEXT = $_POST["PD_CON_TEXT"];
 
+	$LMS_LANGUAGE = $_POST["LMS_LANGUAGE"];
+
 	$_FILES["PD_CON_IMAGE"];
 
 	//회원정보 조회 
-	$sql = "SELECT LMS_CONTRY,LMS_NAME FROM LMS_MEMBER WHERE LMS_SEQ = :LMS_SEQ";
+	$sql = "SELECT LMS_CONTRY,LMS_NAME FROM LMS_MEMBER WHERE LMS_SEQ = :LMS_SEQ AND LMS_GB = 'hyundai'";
 	$stmt = $dbh->prepare($sql);
 	$stmt->bindParam(':LMS_SEQ',$LMS_SEQ);
 	$stmt->execute();
@@ -30,7 +32,10 @@
 
 		if( !@move_uploaded_file($_FILES["PD_CON_IMAGE"][tmp_name], $IMG_DIR."hyundai/pd/".$PD_CON_IMAGE) ) { 
 			//$tools->errMsg("파일 업로드 에러"); 
-		}else { @unlink($_FILES["PD_CON_IMAGE"][tmp_name]);}	
+		}else { 
+			@unlink($_FILES["PD_CON_IMAGE"][tmp_name]);
+			chmod($IMG_DIR."hyundai/pd/".$PD_CON_IMAGE,0755);
+		}	
 	}else{
 		$PD_CON_IMAGE = "";
 	}
@@ -56,8 +61,10 @@
 					LMS_CON_TITLE_IMG, 
 					LMS_CON_RECOM_STATUS, 
 					LMS_CON_STATUS, 
-					LMS_CON_GB, 
-					LMS_CON_CAR_GUBUN, 
+					LMS_CON_GB,
+					LMS_CON_REGION,
+					LMS_CON_CAR_GUBUN,
+					LMS_CON_LANGUAGE,
 					LMS_CON_REGDATE
 				  ) 
 				VALUES 
@@ -67,10 +74,12 @@
 				  '', 
 				  :LMS_CON_TEXT, 
 				  :LMS_CON_TITLE_IMG, 
-				  'N', 
 				  'Y', 
-				  'hyundai', 
+				  'Y', 
+				  'hyundai',
+				  :LMS_CON_REGION,
 				  'PD', 
+				  :LMS_CON_LANGUAGE,
 				  NOW()
 				  )";
 
@@ -78,6 +87,8 @@
 			$stmt->bindParam(':LMS_SEQ',$LMS_SEQ);
 			$stmt->bindParam(':LMS_CON_TEXT',$PD_CON_TEXT);
 			$stmt->bindParam(':LMS_CON_TITLE_IMG',$PD_CON_IMAGE);
+			$stmt->bindParam(':LMS_CON_REGION',$row[0]["LMS_CONTRY"]);
+			$stmt->bindParam(':LMS_CON_LANGUAGE',$LMS_LANGUAGE);
 			if($stmt->execute()){
 				$dbh->commit();
 				$json["result"] = "success";

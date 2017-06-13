@@ -2145,10 +2145,14 @@ var options = {
 				</section>
 				
 				<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">
+				<input type="hidden" id="LMS_LANGUAGE" name="LMS_LANGUAGE" value="tr">
+				<input type="hidden" id="SESSION_APP_GB" name="SESSION_APP_GB" value="<?=$_SESSION["HY_APP_GB"]?>">
 			</div>
 		</div>
 
-		 <!-- <a href="#page39">이동</a> -->
+		<!-- <a href="#page9">엔진 이동</a>
+		<a href="#page38">마지막 이동</a>
+		<a href="#page48">파일 업로드</a> -->
 	</body>
 </html>
 

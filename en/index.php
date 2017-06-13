@@ -176,6 +176,7 @@
 				<section data-role="page" id="page1" class="container">
 				<form id="Frm" name="Frm" method="post" action="/pd/common/join_action.php" enctype="multipart/form-data">
 					<input type="hidden" name="RETURN" value="/pd/en/day1.php"/>
+					<input type="hidden" name="LANGUAGE" value="en"/>
 					<input type="hidden" name="LMS_GB" value="hyundai"/>
 					
 					<input type="hidden" name="ADM_DEVICE" value="<?=$agent?>"/>
