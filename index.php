@@ -35,15 +35,15 @@
 			 $.mobile.changePage.defaults.changeHash = false;
 		});
 
-		 $(document).ready(function(){
-		 		$("a.en").click(function(){
-					location.href='/pd/en/';
-				});
-
-				$("a.tr").click(function(){
-					location.href='/pd/tr/';
-				});
-		 });
+//		 $(document).ready(function(){
+//		 		$("a.en").click(function(){
+//					location.href='/pd/en/';
+//				});
+//
+//				$("a.tr").click(function(){
+//					location.href='/pd/tr/';
+//				});
+//		 });
 
 
 	</script>
@@ -60,12 +60,13 @@
 		<input type="hidden" name="LMS_NAME" value="<?=$LMS_NAME?>"/>
 		<input type="hidden" name="APP_GB" value="<?=$APP_GB?>"/>
 		<input type="hidden" name="TYPE" value="<?=$TYPE?>"/>
+		<input type="hidden" name="LANGUAGE" value=""/>
 		<input type="hidden" name="RETURN" value=""/>
 	</form>
 	<script type="text/javascript">
-		main_go('tr');
+		//main_go('tr');
 	</script>
-  <!-- <div id="wrap">
+  <div id="wrap">
 		<div id="contBox" class="container">
 			<section data-role="page" id="lang" class="container">
 				<div data-role="main" class="ui-content">
@@ -75,12 +76,12 @@
 						<div class="lang_select">	
 							<div class="blue_bg blue_bg_l"></div>
 							<ul>
-								<li><a class="en" href="javascript:;">ENGLISH</a></li>
-								<li><a href="/pd/ar/">ARABIC</a></li>
+								<li><a class="en" href="javascript:;" onclick="main_go('en')">ENGLISH</a></li>
+								<li><a class="tr" href="javascript:;" onclick="main_go('tr')">TURKISH</a></li>
+								<!-- <li><a href="/pd/ar/">ARABIC</a></li>
 								<li><a class="fr" href="/pd/fr/">FRENCH</a></li>
 								<li><a class="ru" href="/pd/ru/">RUSSIAN</a></li>
-								<li><a class="es" href="/pd/es/">LATIN SPANISH</a></li>
-								<li><a class="tr" href="javascript:;">TURKISH</a></li>
+								<li><a class="es" href="/pd/es/">LATIN SPANISH</a></li> -->
 							</ul>
 							<div class="blue_bg blue_bg_r"></div>
 							<div class="blue_bg blue_bg_btm"></div>
@@ -89,7 +90,7 @@
 				</div>
 			</section>
 		</div>
-	</div> -->
+	</div>
 </body>
  </body>
 </html>

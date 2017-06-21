@@ -186,6 +186,7 @@ function main_go(language){
 	if($("input[name=APP_GB]").val() == "APP"){
 		//alert("APP");
 		$("input[name=RETURN]").val("/pd/"+language+"/main.php");
+		$("input[name=LANGUAGE]").val(language);
 		Frm.submit();
 	}else{
 		//alert("LINK");
