@@ -1,0 +1,25 @@
+
+body .right-to-left, p, label, select, option {
+	text-align: right!important;
+}
+
+#page7, #page56, #pageStart {
+	.textwrap {
+		.textbox {
+			ul li {
+				&::before {
+					left: auto;
+					right: 0;
+				}
+			}	
+		}
+	}	
+}
+
+#page4, #page6, #page9, #page10 {
+	.titlewrap {
+		p {
+		    text-align: center!important;
+		}
+	}
+}

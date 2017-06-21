@@ -1,0 +1,9 @@
+body .right-to-left, p, label, select, option {
+  text-align: right !important; }
+
+#page7 .textwrap .textbox ul li::before, #page56 .textwrap .textbox ul li::before, #pageStart .textwrap .textbox ul li::before {
+  left: auto;
+  right: 0; }
+
+#page4 .titlewrap p, #page6 .titlewrap p, #page9 .titlewrap p, #page10 .titlewrap p {
+  text-align: center !important; }

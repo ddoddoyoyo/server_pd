@@ -1,0 +1,26 @@
+body .right-to-left, p, label, select, option {
+  text-align: right !important; }
+
+#page1 .ui-content .log_box .input_info label {
+  background-position: 5% 50%; }
+
+#page1 .ui-content .log_box .input_info select#input_country {
+  text-align: right !important; }
+  #page1 .ui-content .log_box .input_info select#input_country option {
+    text-align: right !important; }
+
+#page3 .box p {
+  text-align: center !important; }
+
+#page7 .textwrap .textbox ul li::before, #page56 .textwrap .textbox ul li::before {
+  left: auto;
+  right: 0; }
+
+#page32 .ui-content .textwrap p, #page48 .ui-content .textwrap p, #page66 .ui-content .textwrap p, #page79 .ui-content .textwrap p, #page85 .ui-content .textwrap p, #page87 .ui-content .textwrap p, #page92 .ui-content .textwrap p, #page99 .ui-content .textwrap p {
+  text-align: center !important; }
+
+#page84 .ui-content .imgwrap p {
+  text-align: center !important; }
+
+#page96 .ui-content .textwrap {
+  margin-bottom: 140px; }
