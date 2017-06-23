@@ -127,7 +127,7 @@ $(document).ready(function(){
 	$("#page3001").on({
 		"pagebeforeshow" : function(){
 			$("#page3001 .popLayer, #page3001 .next_p_btn, #page3001 .textwrap").hide();
-			//$("#page3001 .next_p_btn").addClass("stopPage");
+			video_pause();
 		}, 
 		"pageshow" : function(){
 			$("#page3001 .textwrap").fadeIn(500);
@@ -138,6 +138,7 @@ $(document).ready(function(){
 		audio_pause();
 		$("#page3001 .popLayer").fadeIn(500,function(){
 			$("#page3001 .next_p_btn").delay(500).fadeIn(500);
+			$('#page3001 video')[0].play();
 			//$("#page63001 video")[0].play();//자동 재생
 			//$("#page63001 video").attr("controls","true");
 		});
