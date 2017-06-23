@@ -6,7 +6,7 @@
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
 		//$tools->JavaGo("/genesis/part1/en/main.php");
 	}else{
-		$tools->JavaGo("/pd/en/");
+		$tools->JavaGo("/pd/es/");
 	}
 	
 	
@@ -111,7 +111,7 @@
 				};
 			}
 			$("#page55 .go-next").click(function(){	
-				location.href="/pd/en/day2.php";
+				location.href="/pd/es/day2.php";
 			});
 		});
 
@@ -153,7 +153,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<h2 class="pointColor"><?=$_SESSION["HY_LMS_NAME"]?>!</h1>
-								<p>Hi!<br>I am James!<br><span class="pointColor">Finally, I got an i30 I’ve been waiting for!</span><br>Now we can go on a trip that we have planned before. <br>Why don’t you hop in?</p>
+								<p>¡Hola !<br>¡Yo soy James!<br><span class="pointColor">¡Por fin, tengo el i30 que había estado esperando!</span><br>Ahora podemos ir en el viaje que habíamos planeado antes.<br>¿Por qué no te subes?</p>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box"></div>
 						</div>
@@ -180,7 +180,7 @@
 						<a href="#page3001" id="go_page3001"  class="next_p_btn layer_landscape">
 							<div class="box">
 								<img class="icon-device" src="../images/icon_phonerotation_@3x.png" alt="">
-								<p>Turn the screen to landscape.</p>
+								<p>Gira la pantalla al modo horizontal.</p>
 								<p class="ok_btn">OK</p>
 							</div>
 						</a>
@@ -206,7 +206,7 @@
 							</div>	
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Before we start our journey, let me show you this clip. After I watched this, I decided to buy the i30</p>
+									<p>Antes de comenzar nuestro viaje, déjame mostrarte este video. Después de verlo, decidí comprar un i30</p>
 								</div>
 							</div>
 						</div>
@@ -223,7 +223,7 @@
 						<a href="#page4" id="go_page4" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
-						<audio class="audio1" src="../tts/day1/001.mp3"></audio>
+						<!-- <audio class="audio1" src="../tts/day1/001.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page4" class="container">
@@ -244,14 +244,14 @@
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 							<div class="text">	
-								<p>You'll be travelling 6 cities for 3days with i30 and me. I've planned the routes already.<br>So shall we move on?</p>
+								<p>Estarás viajando por 6 ciudades por 3 días en un i30 conmigo. Ya tengo planeadas las rutas. Así que, ¿nos vamos?</p>
 							</div>
 						</div>
 						<a href="#page5" id="go_page5" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/002.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/002.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page5" class="container">
@@ -271,10 +271,10 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>We will start from Milano, stop at Lake Como and Stelvio Pass, and reach Switzerland.</p>
+									<p>Comenzaremos desde Milán, nos detendremos en el lago Como y el Paso Stelvio, y llegaremos a Suiza.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>Then in Switzerland, we will stop at Zurich and Bern as we get to Strasbourg, our final destination.</p>
+									<p>Luego en Suiza, nos detendremos en Zúrich y Berna en nuestro camino hacia Estrasburgo que es nuestro destino final.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -295,8 +295,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/003.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/004.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/003.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/004.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page7" class="container">
@@ -307,16 +307,16 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<h1>Day1.</h1>
+									<h1>Día 1.</h1>
 									<div class="img_wrap">
 										<img src="../images/button/08_point.png" alt="location point">
 										<img src="../images/button/08_lodeline.png" alt="location">
-										<p class="p1">Milano</p>
-										<p class="p2">Como</p>
+										<p class="p1">MILÁN</p>
+										<p class="p2">COMO</p>
 									</div>
 									<ul>
-										<li>Body frame</li>
-										<li>Suspension</li>
+										<li>Carrocería</li>
+										<li>Suspensión</li>
 										<li>Exterior</li>
 									</ul>
 								</div>
@@ -347,7 +347,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Our first journey starts from Milano, isn’t it exciting?</p>
+									<p>Nuestro primer viaje inicia en Milán, ¿no es emocionante?</p>
 								</div>
 								<!-- <div id="textbox2" class="textbox">
 									<p>In Switzerland, we will be stop at Zurich and Bern to get to final spot Strasbourg.</p>
@@ -360,7 +360,7 @@
 							<img src="../images/person/james_2.png" alt="james">
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/005.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/005.mp3"></audio> -->
 				</section>
 
 				
@@ -402,14 +402,14 @@
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 							<div class="text">	
-								<p>Here is our first destination!<br>I couldn't miss the Duomo which is the symbol of Milano with sophisticated beauty.</p>
+								<p>¡Aquí está nuestro primer destino!<br>No pude perderme la Catedral que es el símbolo de Milán con su sofisticada belleza.</p>
 							</div>
 						</div>
 						<a href="#page10" id="go_page10" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/006.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/006.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page10" class="container">
@@ -428,7 +428,7 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Such a wonderful day to go on a trip with my first car<br>Feeling great!</p>
+									<p>Que día tan maravilloso para ir de viaje con mi primer carro.<br>¡Tremenda sensación!</p>
 								</div>
 							</div>	
 						</div>
@@ -436,7 +436,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/007.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/007.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page11" class="container">
@@ -458,14 +458,14 @@
 							</div>	
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>You know that roads in Italy are narrow and preserved with stones for legacy.</p>
+									<p>Seguro sabes que las calles en Italia son angostas y se preservan empedradas para mantener el legado.</p>
 								</div>
 							</div>
 					</div>
 					<a href="#page12" id="go_page12" class="next_p_btn ui-btn go-next">
 						<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 					</a>
-					<audio class="audio1" src="../tts/day1/008.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/008.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page12" class="container">
@@ -484,10 +484,10 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>You know the road condition is quite bad but isn’t it still comfortable to ride in this car?<br>I heard the body rigidity of i30 was enhanced and I can feel the solidity.</p>
+									<p>Sabes que la condición de las calles es bastante mala pero aun así es bastante cómodo viajar en este carro, ¿verdad?<br>Escuché que la rigidez de la carrocería del i30 fue mejorada y puedo sentir su solidez.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>I know it for sure I am driving on unpaved roads!</p>
+									<p>Lo sé con certeza, ¡estoy conduciendo en calles no pavimentadas!</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -503,8 +503,8 @@
 						</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/009.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/010.mp3"></audio>
+				<!-- 	<audio class="audio1" src="../tts/day1/009.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/010.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page13" class="container">
@@ -527,7 +527,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">
-									<p>Let's apply the AHSS</p>
+									<p>Vamos a aplicar el AHSS</p>
 								</div>	
 							</div>
 						</div>
@@ -548,10 +548,10 @@
 						</a>
 					</div>
 					<div class="try_again">
-						<img src="../images/tryagain.png"" alt="">
+						<img src="../images/tryagain_X_es.png"" alt="">
 					</div>
 					<div class="good">
-						<img src="../images/tryagain_O.png"" alt="">
+						<img src="../images/tryagain_O_es.png"" alt="">
 					</div>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
@@ -564,10 +564,10 @@
 											<img src="../images/intro/login_profile_@3x.png" alt="man">
 										<?php } ?>
 									</div>
-									<p>To make the body frame more rigid, AHSS was applied to <span>?</span> of crucial parts of the new i30 compared to  27.2% of the previous model, </p>
+									<p>Para hacer la carrocería más rígida, se aplicó AHSS a <span>?</span> de las partes esenciales del nuevo i30 comparado con 27.2% del modelo anterior.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p>What would be the right number to tell James?</p>
+									<p>¿Cuál sería el número correcto que debemos darle a James?</p>
 									<ul class="btn_num">
 										<a href="#" class="wrong"><li>17.7%</li></a>
 										<a href="#" class="wrong"><li>27.2%</li></a>
@@ -604,14 +604,14 @@
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 							<div class="text">	
-								<p>This brand new i30 has improved the body frame with wider application of AHSS to 53.5%.</p>
+								<p>El nuevo i30 ha mejorado su carrocería con una aplicación más extensa de AHSS de 53.5%.</p>
 							</div>
 						</div>
 						<a href="#page16" id="go_page16" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/001.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/001.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page16" class="container">
@@ -630,10 +630,10 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>I see, that’s why I could feel both the comfort and solidity.<br>Oh, you work at Hyundai motors, right?</p>
+									<p>Ya veo, por eso pude sentir tanto la comodidad como la solidez.<br>Ah, trabajas en Hyundai Motors, ¿verdad?</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>You know much more than I expected. Hope to get a lot of information from you during this trip.</p>
+									<p>Sabes mucho más de lo que esperaba. Espero obtener mucha información de ti durante este viaje.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -649,8 +649,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/011.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/012.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/011.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/012.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page17" class="container">
@@ -670,7 +670,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Here we are reaching to the Duomo.</p>
+									<p>Aquí estamos llegando a la Catedral.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -678,13 +678,13 @@
 							</div>
 						</div>
 						<div class="view_text">	
-							<a href="#page18"><p>Milano. Duomo Cathedral</p></a>
+							<a href="#page18"><p>Catedral de Milán</p></a>
 							<a href="#page18" id="go_page18" class="next_p_btn ui-btn go-next">
 								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/013.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/013.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page18" class="container">
@@ -707,13 +707,13 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>You need to know this. Duomo Cathedral is one of the “1001 buildings you must see before you die”</p>
+									<p>Debes saber esto. La Catedral de Milán es uno de los “1001 edificios que tienes que ver antes de morir”</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>This gigantic cathedral has various and sophisticated sculptures.</p>
+									<p>TEsta catedral gigante tiene varias esculturas sofisticadas.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>We can see the whole city of Milano from its rooftop.</p>
+									<p>Podemos ver toda la ciudad de Milán desde su techo.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -729,9 +729,9 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/014.mp3"></audio>
+<!-- 					<audio class="audio1" src="../tts/day1/014.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/015.mp3"></audio>
-					<audio class="audio3" src="../tts/day1/016.mp3"></audio>
+					<audio class="audio3" src="../tts/day1/016.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page19" class="container">
@@ -747,7 +747,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Hurry up!<br>We gotta move on</p>
+									<p>¡Apresúrate!<br>Tenemos que irnos</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -758,7 +758,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/017.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/017.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page20" class="container">
@@ -774,7 +774,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>You see that this town has so many narrow and bumpy roads.<br>Maybe because of the tram passing through the city.</p>
+									<p>Puedes ver que esta localidad tiene muchas calles angostas y pedregosas. Tal vez debido al tranvía que pasa por la ciudad.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -785,7 +785,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 				</div>
-				<audio class="audio1" src="../tts/day1/018.mp3"></audio>
+				<!-- <audio class="audio1" src="../tts/day1/018.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page21" class="container">
@@ -804,7 +804,7 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>This hatchback is really easy to drive because of its compact size. I can feel the rear part landing so smooth when passing the bumpy road.</p>
+									<p>Este hatchback es realmente fácil de conducir debido a su tamaño compacto. Puedo sentir la parte trasera descendiendo suavemente cuando pasamos por un camino pedregoso.</p>
 								</div>
 							</div>
 						</div>
@@ -812,7 +812,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/019.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/019.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page22" class="container">
@@ -847,13 +847,13 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Did you know that multi-link suspension system is usually used on sport cars to have stronger grip on the road?</p>
+									<p>¿Sabías que el sistema de suspensión multi-link es normalmente utilizado en carros deportivos para tener un mejor agarre en el camino?</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p>i30 also uses multilink system held by 5 links which gives it  stable grip on any type of roads.</p>
+									<p>El i30 también utiliza el sistema multi-link sujetado por 5 links que le dan su agarre estable en cualquier tipo de camino.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Especially when you are driving on winding roads, you will see the true value of  the multi-link suspension system.</p>
+									<p>Especialmente cuando conduzcas en caminos con mucho viento, verás el verdadero valor del sistema de suspensión multi-link.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -869,9 +869,9 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/002.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/002.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/tom/003.mp3"></audio>
-					<audio class="audio3" src="../tts/day1/tom/004.mp3"></audio>
+					<audio class="audio3" src="../tts/day1/tom/004.mp3"></audio> -->
 				</section>
 					
 				<section data-role="page" id="page23" class="container">
@@ -891,10 +891,10 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>I see, all I was told when I was buying the car was that the multilink system is good, but your technical explanation helps me a lot.</p>
+									<p>Ya veo, lo único que me dijeron cuando compré el carro es que el sistema multi-link es bueno, pero tu explicación técnica me ayuda mucho.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>I can't wait to drive on winding roads.</p>
+									<p>No puedo esperar a conducir en caminos con mucho viento.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -910,8 +910,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/020.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/021.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/020.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/021.mp3"></audio> -->
 				</section>
 
 				<!-- <section data-role="page" id="page24" class="container">
@@ -958,7 +958,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Here we can see the Castello Sforzesco.</p>
+									<p>Aquí podemos ver el Castillo Sforzesco.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -966,13 +966,13 @@
 							</div>
 						</div>
 						<div class="view_text">	
-							<a href="#page26"><p>Milano. Sforzesco Castle</p></a>
+							<a href="#page26"><p>Castillo Sforzesco, Milán</p></a>
 							<a href="#page26" id="go_page26" class="next_p_btn ui-btn go-next">
 								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/022.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/022.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page26" class="container">
@@ -995,16 +995,16 @@
 								</div>
 							<div class="text">		
 								<div id="textbox1" class="textbox">
-									<p>You know that Leonardo Da Vinci and Bramante joined to build the Castello Sforzesco.</p>
+									<p>Sabes que Leonardo Da Vinci y Bramante se unieron para construir el Castillo Sforzesco.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>This is the symbolic architecture of the Renaissance era in the 15th century.</p>
+									<p>Esta es la arquitectura simbólica de la era del Renacimiento en el siglo XV.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>It's created by Lord Francesco Sforza,</p>
+									<p>Fue creado por el Lord Francesco Sforza,</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p>Nowadays, it is used as museum and art gallery.</p>
+									<p>Hoy en día, se utiliza como un museo y una galería de arte.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1020,10 +1020,10 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/023.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/023.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/024.mp3"></audio>
 					<audio class="audio3" src="../tts/day1/025.mp3"></audio>
-					<audio class="audio4" src="../tts/day1/026.mp3"></audio>
+					<audio class="audio4" src="../tts/day1/026.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page27" class="container">
@@ -1040,7 +1040,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>It’s not only built in a huge scale, but its overall condition also has been kept so well.</p>
+									<p>No solo es una construcción de gran escala, sino que su condición general ha sido preservada demasiado bien.</p>
 								</div>							
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1053,7 +1053,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/027.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/027.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page28" class="container">
@@ -1074,14 +1074,14 @@
 						</div>
 						<div class="textwrap">
 							<div class="text">	
-								<p>It’s thrilling to watch these great architectures. And, so it is to be looking at this ‘i30’s cool design.</p>
+								<p>Es emocionante ver esta gran arquitectura. Y también lo es al mirar el increíble diseño del i30.</p>
 							</div>
 							<div class="text_tip">
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/028.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/028.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page29" class="container">
@@ -1138,10 +1138,10 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>The cascading grille emphasizes the sporty look even more and the enlarged emblem is integrated with the radar for smart safety features.</p>
+									<p>La parrilla en cascada resalta la apariencia deportiva aún más y el emblema más grande está integrado con el radar para los elementos de seguridad inteligentes.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p>Especially, the outline of the grille is very sophisticated and personally my favorite part. of the design.</p>
+									<p>Especialmente, el contorno de la parrilla es bastante sofisticado y personalmente mi parte favorita del diseño.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1157,8 +1157,8 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/005.mp3"></audio>
-					<audio class="audio2" src="../tts/day1/tom/006.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/005.mp3"></audio>
+					<audio class="audio2" src="../tts/day1/tom/006.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page31" class="container">
@@ -1195,7 +1195,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">
-									<p>Let’s draw the side character line of the i30.</p>
+									<p>Vamos a dibujar la línea de carácter del i30.</p>
 								</div>	
 							</div>
 						</div>
@@ -1244,7 +1244,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>No doubt it’s a compact car but  it looks very slim! The extended hood length and the character line across the side body makes the car look longer.</p>
+									<p>No hay duda de que es un carro compacto pero, ¡luce muy fino! La longitud extendida del cofre y la línea de carácter a lo largo de la parte lateral de la carrocería hacen que el carro se vea más largo.</p>
 								</div>
 							</div>
 						</div>
@@ -1252,7 +1252,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/007.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/007.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page34" class="container">
@@ -1305,7 +1305,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>The spoiler contains LED brake light, and the dual tip mufflers is a unique point compared to other cars. My design taste is much better than Golf.</p>
+									<p>El alerón tiene luces de freno LED, y los mofles de doble punta son una característica única comparado con otros carros. Mi preferencia de diseño me dice que es mucho mejor que el Golf.</p>
 								</div>
 							</div>
 						</div>
@@ -1313,7 +1313,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/008.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/008.mp3"></audio> -->
 				</section>
 
 				<!-- <section data-role="page" id="page36" class="container">
@@ -1358,7 +1358,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>So shall we move on to the Lago di Como?</p>
+									<p>Así que, ¿nos vamos al lago de Como?</p>
 								</div>
 								<!-- <div id="textbox2" class="textbox">
 									<p>In Switzerland, we will be stop at Zurich and Bern to get to final spot Strasbourg.</p>
@@ -1371,7 +1371,7 @@
 							<img src="../images/person/james_2_2.png" alt="james">
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/029.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/029.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page38" class="container">
@@ -1388,7 +1388,7 @@
 							
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>We gotta hurry before the dawn.</p>
+									<p>Debemos apresurarnos antes del amanecer.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1399,7 +1399,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/030.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/030.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page39" class="container">
@@ -1423,7 +1423,7 @@
 								<?php } ?>
 							</div>	
 								<div id="textbox1" class="textbox">
-									<p>It’s getting dark now, I heard i30 has Full LED headlights that give much brighter view ahead.</p>
+									<p>Ya está oscureciendo, escuché que el i30 tiene faros completamente de LED que dan una visualización del camino mucho más brillante.</p>
 								</div>		
 							</div>
 						</div>
@@ -1431,7 +1431,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/009.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/009.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page40" class="container">
@@ -1465,7 +1465,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Yeah, it’s really bright. It lets me see  much further, and High Beam Assist also makes it no problem to drive in mountain road.</p>
+									<p>Sí, es realmente brillante. Me permite ver mucho más lejos, y el asistente de luces altas ayuda a que sea más fácil conducir en caminos de carretera.</p>
 								</div>
 							</div>
 						</div>
@@ -1473,7 +1473,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/010.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/010.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page41" class="container">
@@ -1491,7 +1491,7 @@
 						</div>
 						<div class="textwrap">
 							<div class="text">	
-								<p>It’s a bit late already, so we will stay a night here in hostel.</p>
+								<p>Ya es un poco tarde, así que nos quedaremos una noche aquí en el hostal.</p>
 							</div>
 							<div class="text_tip">
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1501,7 +1501,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/032.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/032.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page42" class="container">
@@ -1520,7 +1520,7 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Okay, good night . I'll see you tomorrow.</p>
+									<p>Muy bien, buenas noches. Nos vemos mañana.</p>
 								</div>
 							</div>
 							<a href="#page43" id="go_page43" class="next_p_btn ui-btn go-next">
@@ -1528,7 +1528,7 @@
 						</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/033.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/033.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page43" class="container">
@@ -1550,7 +1550,7 @@
 						<a href="#page44"><div class="imgwrap">
 							<img id="waking" src="../images/day1/alarm.gif" alt="">
 							<!-- <img id="waking2" src="../images/day1/icon_waking_2.png" alt=""> -->
-							<img src="../images/day1/btn_wakingup.png" alt="">
+							<img src="../images/day1/btn_wakingup_es.png" alt="">
 						</div>
 						</a>
 						<a href="#page44" class="next_finger">
@@ -1572,7 +1572,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Before we carry on, let's clean up the mess inside.</p>
+									<p>Antes de continuar, vamos a limpiar el desorden en el interior.</p>
 								</div>	
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1585,7 +1585,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/034.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/034.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page45" class="container">
@@ -1602,7 +1602,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Now it's clean, just like a brand new one out of factory.</p>
+									<p>Ahora está limpio, justo como salido de la fábrica.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1615,7 +1615,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/035.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/035.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page46" class="container">
@@ -1649,7 +1649,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Actually, there are five options for the  interior color and you chose the red one. Shall we check out the rest of the colors available?</p>
+									<p>De hecho, hay cinco opciones para el color interior y tú elegiste el rojo. ¿Vemos el resto de colores disponibles?</p>
 								</div>
 							</div>
 						</div>
@@ -1657,7 +1657,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/011.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/011.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page47" class="container">
@@ -1691,19 +1691,19 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Strong <strong>Red</strong> color that makes a good contrast with the black leather.</p>
+									<p>El color <strong>rojo</strong> intenso tiene un buen contraste con la vestidura de piel negra.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p><strong>Black</strong> fabric and leather fill the interior with a modern look</p>
+									<p>La tela y la piel <strong>negra</strong> cubren el interior dando una apariencia moderna.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Leather point in <strong>Gray</strong> color gives the interior a simple image.</p>
+									<p>Los puntos <strong>grises</strong> de piel le dan al interior una imagen simple.</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p><strong>Indigo blue</strong>  color that is reminiscent of youth and liveliness.</p>
+									<p>El color <strong>azul índigo</strong> evoca juventud y vitalidad.</p>
 								</div>
 								<div id="textbox5" class="textbox">
-									<p><strong>Glam burgundy</strong>  interior for an elegant and bright touch.</p>
+									<p>El glamoroso interior color <strong>vino</strong> para un toque elegante y brillante.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1719,11 +1719,11 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/012.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/012.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/tom/013.mp3"></audio>
 					<audio class="audio3" src="../tts/day1/tom/014.mp3"></audio>
 					<audio class="audio4" src="../tts/day1/tom/015.mp3"></audio>
-					<audio class="audio5" src="../tts/day1/tom/016.mp3"></audio>
+					<audio class="audio5" src="../tts/day1/tom/016.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page48" class="container">
@@ -1739,7 +1739,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">
-									<p>Pick an interior color you like the best.</p>
+									<p>Elige el color interior que te guste más.</p>
 								</div>	
 							</div>
 						</div>
@@ -1748,11 +1748,11 @@
 						
 						<div class="imgwrap">
 							<ul class="choice_color">
-								<a href="#page49" id="ch1" onclick="choice_color('1')"><li><img src="../images/day1/78_btn_01.png" alt=""></li></a>
-								<a href="#page49" id="ch2" onclick="choice_color('2')"><li><img src="../images/day1/78_btn_02.png" alt=""></li></a>
-								<a href="#page49" id="ch3" onclick="choice_color('3')"><li><img src="../images/day1/78_btn_03.png" alt=""></li></a>
-								<a href="#page49" id="ch4" onclick="choice_color('4')"><li><img src="../images/day1/78_btn_04.png" alt=""></li></a>
-								<a href="#page49" id="ch5" onclick="choice_color('5')"><li><img src="../images/day1/78_btn_05.png" alt=""></li></a>
+								<a href="#page49" id="ch1" onclick="choice_color('1')"><li><img src="../images/day1/78_btn_01_es.png" alt=""></li></a>
+								<a href="#page49" id="ch2" onclick="choice_color('2')"><li><img src="../images/day1/78_btn_02_es.png" alt=""></li></a>
+								<a href="#page49" id="ch3" onclick="choice_color('3')"><li><img src="../images/day1/78_btn_03_es.png" alt=""></li></a>
+								<a href="#page49" id="ch4" onclick="choice_color('4')"><li><img src="../images/day1/78_btn_04_es.png" alt=""></li></a>
+								<a href="#page49" id="ch5" onclick="choice_color('5')"><li><img src="../images/day1/78_btn_05_es.png" alt=""></li></a>
 							</ul>
 						</div>
 						<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
@@ -1779,19 +1779,19 @@
 								<?php } ?>
 							</div>	
 								<div id="textbox1" class="textbox">
-									<p>I like the red interior that has sporty red point of sport car concept.</p>
+									<p>Me gusta el interior rojo que tiene puntos rojos deportivos dando el concepto de carro deportivo</p>
 								</div>		
 								 <div id="textbox2" class="textbox">
-									<p>I prefer the chic mood of whole black interior.</p>
+									<p>Prefiero el tono elegante del interior completamente negro.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Gray is the color that I won’t regret for a long time, so I would go for gray interior.</p>
+									<p>Gris es el color del que no me voy a cansar en mucho tiempo, así que elegiré el interior gris.</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p>As I’m more of an urban person, I love the indigo blue interior.</p>
+									<p>Como soy una persona más urbana, me encante el interior azul índigo.</p>
 								</div>
 								<div id="textbox5" class="textbox">
-									<p>I like the glam burgundy interior because burgundy obviously is a unique color point.</p>
+									<p>Me gusta el interior color vino glamoroso porque el color vino es obviamente un color con un sentido único.</p>
 								</div> 
 							</div>
 						</div>
@@ -1799,11 +1799,11 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/tom/017.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/tom/017.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/tom/018.mp3"></audio>
 					<audio class="audio3" src="../tts/day1/tom/019.mp3"></audio>
 					<audio class="audio4" src="../tts/day1/tom/020.mp3"></audio>
-					<audio class="audio5" src="../tts/day1/tom/021.mp3"></audio>
+					<audio class="audio5" src="../tts/day1/tom/021.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page50" class="container">
@@ -1819,17 +1819,17 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">
-									<p>The result for most liked i30 interior colors.</p>
+									<p>Los resultados de los colores de interior más gustados del i30.</p>
 								</div>	
 							</div>
 						</div>
 						<div class="imgwrap">	
 							<ul>
-								<li><span class="g_title">RED</span><span class="g_num" id="red">25</span></li>
-								<li><span class="g_title">BLACK</span><span class="g_num" id="black">5</span></li>
-								<li><span class="g_title">GRAY</span><span class="g_num" id="gray">20</span></li>
-								<li><span class="g_title">INDIGO BLUE</span><span class="g_num" id="ind_blue">15</span></li>
-								<li><span class="g_title">BLAM BURGUNDY</span><span class="g_num" id="burgundy">10</span></li>
+								<li><span class="g_title">ROJO</span><span class="g_num" id="red">25</span></li>
+								<li><span class="g_title">NEGRO</span><span class="g_num" id="black">5</span></li>
+								<li><span class="g_title">GRIS</span><span class="g_num" id="gray">20</span></li>
+								<li><span class="g_title">AZUL íNDIGO</span><span class="g_num" id="ind_blue">15</span></li>
+								<li><span class="g_title">COLOR VINO GRAMOROSO</span><span class="g_num" id="burgundy">10</span></li>
 							</ul>
 						</div>
 					</div>
@@ -1852,7 +1852,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Whatever the others say, my favorite is red. It took me a week to decide.</p>
+									<p>Sin importar lo que digan los demás, mi favorito es el rojo. Me tardé una semana en decidir.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1865,7 +1865,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/036.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/036.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page51" class="container">
@@ -1882,7 +1882,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Now, let’s take a look at Lago di Como, the best leisure spot in Italy.</p>
+									<p>Ahora, vamos a echarle un vistazo al lago Como, el mejor lugar de esparcimiento en Italia.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1895,7 +1895,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/037.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/037.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page52" class="container">
@@ -1911,7 +1911,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Lago di Como became more famous after George Clooney and John Legend did their weddings there.</p>
+									<p>El lago de Como se volvió más famoso después de que George Clooney y John Legend hicieran sus bodas aquí.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1922,7 +1922,7 @@
 						</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/038.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/038.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page53" class="container">
@@ -1942,7 +1942,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Lago di Como has also been a well-known place for vacation in Europe for a long time.</p>
+									<p>El lago de Como también es un lugar bien conocido para vacacionar en Europa desde hace mucho tiempo.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1950,13 +1950,13 @@
 							</div>
 						</div>
 						<div class="view_text">	
-							<a href="#page54"><p>Como Lake</p></a>
+							<a href="#page54"><p>Lago  Como</p></a>
 							<a href="#page54" id="go_page54" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 						</div>
 					</div>
-					<audio class="audio1" src="../tts/day1/039.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/039.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page54" class="container">
@@ -1979,16 +1979,16 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>From the medieval era, lots of lords and artist chose Lago di Como for the leisure.</p>
+									<p>Desde la era medieval, había muchos Lords y artistas que elegían el lago de Como como su lugar de esparcimiento.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>It’s just so beautiful here.</p>
+									<p>Es realmente hermoso aquí.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Just like one in a fairy tale, isn’t it?</p>
+									<p>Es justo como en un cuento de hadas, ¿no es así?</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p>Now I know why people choose here to visit.</p>
+									<p>Ahora ya sé por qué la gente elige visitar este lugar.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -2004,10 +2004,10 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/040.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/040.mp3"></audio>
 					<audio class="audio2" src="../tts/day1/041.mp3"></audio>
 					<audio class="audio3" src="../tts/day1/042.mp3"></audio>
-					<audio class="audio4" src="../tts/day1/043.mp3"></audio>
+					<audio class="audio4" src="../tts/day1/043.mp3"></audio> -->
 				</section>
 
 				<section data-role="page" id="page55" class="container">
@@ -2024,7 +2024,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Okay let’s move on to the next stop.</p>
+									<p>Muy bien, vámonos a nuestra siguiente parada.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">

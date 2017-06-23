@@ -156,7 +156,7 @@
 							<div class="loding_bar">
 								<img src="/pd/images/loading_bar_1.png" alt="" class="londing1">
 								<img src="/pd/images/loading_bar_2.png" alt="" class="londing2">
-								<div id="logind_text">Preparing our trip...</div>
+								<div id="logind_text">Preparando nuestro viaje…</div>
 							</div>
 						</div>
 					</div>
@@ -170,18 +170,18 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<h1>Day2.</h1>
+						<h1>DÍA 2.</h1>
 						<div class="img_wrap">
 							<img src="../images/button/08_point.png" alt="location point">
 							<img src="../images/button/08_lodeline.png" alt="location">
-							<p class="p1">Stelvio Pass</p>
-							<p class="p2">Zurich</p>
+							<p class="p1">Paso Stelvio</p>
+							<p class="p2">Zúrich</p>
 						</div>
 						<ul>
-							<li>Engine</li>
+							<li>Turbo </li>
 							<li>7 DCT</li>
 <!-- 							<li>Connectivity</li> -->
-							<li>Space(Trunk)</li>
+							<li>Espacio (cajuela)</li>
 						</ul>
 					</div>
 				</div>
@@ -217,7 +217,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>From here, we will move to the Stelvio Pass where I think is the highlight of this trip.</p>
+						<p>Desde aquí, iremos hacia el Paso Stelvio, el que creo ser el plato fuerte de este viaje.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -227,7 +227,7 @@
 				<img src="../images/person/james_2.png" alt="james">
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/045.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/045.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page58" class="container">
@@ -246,10 +246,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>With winding roads, Stelvio Pass is like a dream place for driving enthusiasts</p>
+						<p>Con caminos de mucho viento, el Paso Stelvio es como un lugar de ensueño para los apasionados de la conducción.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>And a lot of famous models from other car brands go through performance tests here.</p>
+						<p>Y muchos modelos de otras marcas de carros son sometidos a pruebas de desempeño aquí.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -264,8 +264,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 			</div>
-			<audio class="audio1" src="../tts/day2/046.mp3"></audio>
-			<audio class="audio2" src="../tts/day2/047.mp3"></audio>
+			<!-- <audio class="audio1" src="../tts/day2/046.mp3"></audio>
+			<audio class="audio2" src="../tts/day2/047.mp3"></audio> -->
 		</div>
 		<!-- <audio class="audio1" src="../tts/day2/04.mp3"></audio>
 		<audio class="audio2" src="../tts/day2/05.mp3"></audio> -->
@@ -292,10 +292,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Here we can still see some snow left, but the weather is just fine for driving!</p>
+						<p>Aquí todavía podemos ver un poco de nieve, ¡pero el clima es simplemente excelente para conducir!</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>Here, we are at Stelvo Pass. Shall I start accelerating?</p>
+						<p>Estamos aquí, en el Paso Stelvo. ¿Comienzo a acelerar?</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l" >
@@ -311,8 +311,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/048.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/049.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/048.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/049.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page60" class="container">
@@ -331,7 +331,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>My car has a 1.6 Turbo-GDI engine. Did you know that this one has higher horsepower than the Golf 1.8 Turbo engine?</p>
+						<p>Mi carro tiene un motor 1.6 Turbo-GDI. ¿Sabías que tiene más caballos de fuerza que el motor del Golf 1.8 Turbo?</p>
 					</div>
 				</div>
 				<a href="#page61" id="go_page61" class="next_p_btn ui-btn go-next">
@@ -339,7 +339,7 @@
 			</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/050.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/050.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page61" class="container">
@@ -401,7 +401,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>The Gamma 1.6 Turbo-GDI engine of i30 has higher horsepower and torque than the Golf 1.8 Turbo engine. Unfortunately, not many people are aware of this.</p>
+							<p>El motor Gamma 1.6 Turbo-GDI del i30 tiene más caballos de fuerza y torque que el motor del Golf 1.8 Turbo. Desafortunadamente, no mucha gente sabe esto.</p>
 						</div>	
 					</div>
 				</div>	
@@ -410,7 +410,7 @@
 			<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 		</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/022.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/022.mp3"></audio> -->
 	</section>
 
 	<!--<section data-role="page" id="page62" class="container">
@@ -459,10 +459,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>This car also has 7 speed Dual Clutch Transmission(DCT).<br>A strong engine with quick shift. Can you believe it? </p>
+						<p>Este carro tiene una transmisión de doble embrague (DCT) de 7 velocidades. Un potente motor con cambios rápidos. ¿Puedes creerlo?</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>DCT has that direct feel without power loss when switching gears.You can feel the true value of that characteristic  when winding.</p>
+						<p>El DCT tiene esa sensación directa sin perdida de poder cuando cambia de velocidad. Puedes sentir el verdadero valor de esta función en caminos sinuosos.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -479,8 +479,8 @@
 			</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/051.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/052.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/051.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/052.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page63001" class="container">
@@ -507,7 +507,7 @@
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
 				</div>
 				<div class="text">	
-					<p>Let's learn about DCT! Click on the video!</p>
+					<p>¡Vamos a aprender acerca del DCT! ¡Haz clic en el video!</p>
 				</div>
 			</div>
 			<div class="btn_play">
@@ -534,7 +534,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>The fast-shifting dual clutch transmission delivers the maximum power of engine to make it easy to accelerate and decelerate on winding roads.</p>
+							<p>La transmisión de doble embrague de cambios rápidos ofrece la máxima potencia del motor para facilitar la aceleración y desaceleración en caminos sinuosos.</p>
 						</div>	
 					</div>
 				</div>	
@@ -543,8 +543,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/023.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/tom/024.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/023.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/tom/024.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page64" class="container">
@@ -566,10 +566,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>When we escape a hairpin section like here, a grip force from rear suspension is a core thing.</p>
+						<p>Cuando pasamos por una curva de volteo como esta, la fuerza de agarre de la suspensión trasera es un elemento central.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>And do you see? there is no slip on a tolerable speed.</p>
+						<p>¿Te das cuenta? No hay deslizamiento a una velocidad considerable.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -585,8 +585,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/053.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/054.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/053.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/054.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page65" class="container">
@@ -621,10 +621,10 @@
 				</div>
 				<div class="text">
 					<div id="textbox1" class="textbox">
-						<p>Do you remember the multi-link system that made driving on the road of Milano stable?<br>That multi-link system also contribute to the stable rear grip force on road when cornering at a high speed.</p>
+						<p>¿Recuerdas el sistema multi-link que hacia que la conducción fuera estable en los caminos de Milán?<br>Ese sistema multi-link también contribuye a la fuerza de agarre trasero estable cuando pasamos una curva a alta velocidad.</p>
 					</div>	
 					<div id="textbox2" class="textbox">
-						<p>Especially when we are driving on winding roads, you will see the true value of the multi-link suspension system.</p>
+						<p>Especialmente cuando conducimos en caminos sinuosos, verás el verdadero valor del sistema de suspensión multi-link.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -640,8 +640,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/025.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/tom/026.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/025.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/tom/026.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page66" class="container">
@@ -660,7 +660,7 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">
-						<p>Apply structural adhesive! </p>
+						<p>¡Aplicar el adhesivo estructurales!</p>
 					</div>	
 				</div>
 			</div>
@@ -681,7 +681,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>The chassis of i30 used high strength metal adhesive to improve the body rigidity and durability.<br>If I’m not wrong 112 meters of metal adhesive were used.</p>
+							<p>El chasis del i30 utiliza adhesivo para metal de alta resistencia para mejorar la rigidez de la carrocería y la durabilidad. Si no me equivoco, se utilizaron 112 metros de adhesivo estructurales.</p>
 						</div>	
 					</div>
 				</div>	
@@ -691,7 +691,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/027.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/027.mp3"></audio> -->
 	</section>
 
 	<!-- <section data-role="page" id="page67" class="container">
@@ -737,7 +737,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Ah Ha! that’s why I felt like one body  with the car when I was repetitively cornering at a high speed.<br>Such a thrill, I’m loving it!!</p>
+						<p>¡Wow! Por eso me sentí tan conectado con el carro cuando estaba tomando las curvas a alta velocidad de forma repetida. ¡Qué emoción, me encanta!</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -748,7 +748,7 @@
 			</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/055.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/055.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page69" class="container">
@@ -768,7 +768,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Let's take a rest here.</p>
+						<p>Vamos a tomar un descanso aquí.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -776,13 +776,13 @@
 				</div>
 			</div>
 			<div class="view_text">	
-				<a href="#page70"><p>Passo Della Stelvio</p></a>
+				<a href="#page70"><p>Paso Stelvio</p></a>
 				<a href="#page70" id="go_page70" class="next_p_btn ui-btn go-next">
 					<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 				</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/056.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/056.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page70" class="container">
@@ -805,16 +805,16 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Do you know why Stelvio Pass became a world famous winding road? As it connects various Alps mountains, it gives us tremendous views.</p>
+						<p>¿Sabes por qué el Paso Stelvio se convirtió en un camino sinuoso famoso a nivel mundial? Debido a que conecta varias montañas de los Alpes, tiene vistas impresionantes.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>These are the roads we just have passed pretty dizzy right?<br>How many hairpins did we pass?<br>It was such a fun.</p>
+						<p>Estos son los caminos por los que acabamos de pasar. Estás bastante mareado, ¿verdad?<br>¿Cuántas curvas de volteo pasamos?<br>Fue muy divertido.</p>
 					</div>
 					<div id="textbox3" class="textbox">
-						<p>Noteworthy powerful engine 7 Speed Dual Clutch Transmission Strong body rigidity Multilink rear-suspension system</p>
+						<p>Un motor notablemente poderoso DCT de 7 velocidades, carrocería rígida, sistema de suspensión trasera multi-link.</p>
 					</div>
 					<div id="textbox4" class="textbox">
-						<p>The combination of all of these features makes i30 such a fun car to drive!</p>
+						<p>La combinación de todas estas características hacen del i30 un carro muy divertido de conducir!</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -829,10 +829,10 @@
 			<a href="#page71" id="go_page71" class="next_p_btn ui-btn go-next">
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
-			<audio class="audio1" src="../tts/day2/057.mp3"></audio>
+			<!-- <audio class="audio1" src="../tts/day2/057.mp3"></audio>
 			<audio class="audio2" src="../tts/day2/058.mp3"></audio>
 			<audio class="audio3" src="../tts/day2/059.mp3"></audio>
-			<audio class="audio4" src="../tts/day2/060.mp3"></audio>
+			<audio class="audio4" src="../tts/day2/060.mp3"></audio> -->
 		</div>
 	</section>
 
@@ -849,7 +849,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>How was it?<br>Wasn’t it scared though?<br>I hope you enjoyed the magnificent winding courses.<br>Because I definitely did.</p>
+						<p>¿Qué tal estuvo?<br>¿No fue un poco intimidante?<br>Espero que hayas disfrutado de los magníficos caminos sinuosos porque yo definitivamente lo hice.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -860,7 +860,7 @@
 			</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/061.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/061.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page72" class="container">
@@ -878,7 +878,7 @@
 			<div class="textwrap">	
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Hurry up, let's go back down.<br>We will move to the one of the greatest camping spots in Europe.</p>
+						<p>Apresúrate, vamos de regreso hacia abajo.<br>Vamos hacia unos de los mejores sitios para acampar en Europa.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -892,7 +892,7 @@
 			</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/062.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/062.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page73" class="container">
@@ -914,7 +914,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>We will go to the place called Fischers Fritz in Zurich, Switzerland.<br>Click on the Zurich.</p>
+						<p>Vamos a ir a un lugar llamado Fischers Fritz en Zúrich, Suiza.<br>Haz clic en Zúrich.</p>
 					</div>
 					<!-- <div id="textbox2" class="textbox">
 						<p>In Switzerland, we will be stop at Zurich and Bern to get to final spot Strasbourg.</p>
@@ -927,7 +927,7 @@
 				<img src="../images/person/james_7.png" alt="james">
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/063.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/063.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page74" class="container">
@@ -943,7 +943,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>As you know, Zurich is the biggest city in Switzerland.<br>There is beautiful Zurich lake right next to the city and also the Limit river .</p>
+						<p>Como bien sabes, Zúrich es la ciudad más grande de Suiza.<br>El hermoso lago de Zúrich está justo junto a la ciudad y también el Río Limmat.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -977,7 +977,7 @@
 				</div>
 				<div class="text">		
 					<div id="textbox1" class="textbox">
-						<p>Before we look around the downtown, let’s first drive straight to the camping spot and unpack</p>
+						<p>Antes de ir al centro de la ciudad, primero vamos a conducir directo hacia el sitio para acampar y desempacaremos.</p>
 					</div>
 				</div>
 			</div>
@@ -985,7 +985,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/065.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/065.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page76" class="container">
@@ -1005,7 +1005,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Now we're at Fischers fritz.</p>
+						<p>Ahora estamos en Fischers Fritz.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -1013,13 +1013,13 @@
 				</div>
 			</div>
 			<div class="view_text">	
-				<a href="#page77"><p>Fischers Fritz </p></a>
+				<a href="#page77"><p>Fischers Fritz</p></a>
 				<a href="#page77" id="go_page77" class="next_p_btn ui-btn go-next">
 					<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 				</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/066.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/066.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page77" class="container">
@@ -1042,10 +1042,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>It’s one of the most famous camping spots in Europe. that a lot of camping lovers visit.</p>
+						<p>Es uno de los sitios más famosos para acampar en Europa que muchos amantes de camping visitan.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>I’ve always wanted to camp here for a long time as well.<br>Let’s unpack here</p>
+						<p>Siempre quise acampar aquí, desde hace mucho tiempo.<br>Vamos a desempacar aquí.</p>
 					</div>
 					<!-- <div id="textbox3" class="textbox">
 						<p>Facility is good, and riverside is so cozy and beautiful.</p>
@@ -1067,8 +1067,8 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/067.mp3"></audio>
-		<audio class="audio2" src="../tts/day2/068.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/067.mp3"></audio>
+		<audio class="audio2" src="../tts/day2/068.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page78" class="container">
@@ -1086,7 +1086,7 @@
 			<div class="textwrap">	
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>i30 is really a spacious car.<br>As you can see, the trunk, is so roomy.<br>We could load all the luggage we need for this trip.</p>
+						<p>El i30 es un carro realmente espacioso.<br>Como puedes ver, la cajuela es muy grande.<br>Pudimos cargar todo el equipaje que necesitamos para este viaje.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1100,7 +1100,7 @@
 			</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/069.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/069.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page79" class="container">
@@ -1116,7 +1116,7 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">
-						<p>What is the maximum load capacity of trunk?</p>
+						<p>¿Cuál es la capacidad máxima de carga de la cajuela?</p>
 					</div>	
 				</div>
 			</div>
@@ -1140,7 +1140,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>Brand new i30 increased the luggage capacity to 395L, boasting its very spacious trunk.</p>
+							<p>El nuevo i30 aumentó el espacio del porta equipajes a 395 litros, ostentando una cajuela muy espaciosa.</p>
 						</div>	
 					</div>
 				</div>	
@@ -1150,7 +1150,7 @@
 				 <img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a> 
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/028.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/028.mp3"></audio> -->
 	</section>
 
 	<!--<section data-role="page" id="page80" class="container">
@@ -1198,7 +1198,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>Wow, it really can load a lot of things.</p>
+							<p>Wow, realmente puede cargar muchas cosas.</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1212,7 +1212,7 @@
 				</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/070.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/070.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page82" class="container">
@@ -1234,7 +1234,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>So let's pitch a tent.<br>While I'm pitching, why don't you turn the music on.</p>
+						<p>Así que vamos a armar la tienda de campaña.<br>Mientras la estoy armando, ¿por qué no pones algo de música?</p>
 					</div>
 				</div>
 			</div>
@@ -1242,7 +1242,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/071.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/071.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page83" class="container">
@@ -1265,7 +1265,7 @@
 					<?php } ?>
 				</div>	
 					<div id="textbox1" class="textbox">
-						<p>Wait a sec, I need a phone to link first. Where is my phone?</p>
+						<p>Espera un segundo, primero necesito un teléfono para sincronizarlo, ¿dónde está mi teléfono?</p>
 					</div>		
 				</div>
 			</div>
@@ -1273,7 +1273,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/029.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/029.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page84" class="container">
@@ -1288,7 +1288,7 @@
 		<div data-role="main" class="ui-content">
 			<div class="imgwrap">
 				<div class="text_i">		
-						<p>What is your smartphone type?</p>
+						<p>¿Qué tipo de smartphone tienes?</p>
 				</div>
 				<div class="device_wrap">
 					<a href="#page85" class="deviceL"><div ><img src="../images/day2/42_btn_left.png" alt=""></div></a>
@@ -1316,10 +1316,10 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">	
-						<p>Pairing completed.</p>
+						<p>Sincronización completada.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>PLAY MUSIC</p>
+						<p>Reproducir música</p>
 					</div>
 				</div>
 			</div>
@@ -1353,14 +1353,14 @@
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
 				</div>
 				<div class="text">	
-					<p>i30 offers mutual internet, mobile service, remote control, voice assistance for navigation and phone call via Android Auto.<br>You can use most of the smartphone functions.</p>
+					<p>El i30 ofrece internet compartido, servicio móvil, asistente de voz para la navegación y llamadas de voz a través de Android Auto.<br>Puedes usar la mayoría de las funciones de tu smartphone.</p>
 				</div>
 			</div>
 			<a href="#page89" id="go_page89" class="next_p_btn ui-btn go-next">
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/030.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/030.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page87" class="container">
@@ -1379,10 +1379,10 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">	
-						<p>Pairing completed.</p>
+						<p>Sincronización completada.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>PLAY MUSIC</p>
+						<p>Reproducir música</p>
 					</div>
 				</div>
 			</div>
@@ -1390,7 +1390,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/music2.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/music2.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page88" class="container">
@@ -1416,14 +1416,14 @@
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
 				</div>
 				<div class="text">	
-					<p>i30 supports Apple car play where, after simple pairing ,you can use the navigation, make a phone call, and play music.</p>
+					<p>El i30 soporta Apple CarPlay, con el cual, después de hacer una sincronización sencilla, se puede utilizar el sistema de navegación, hacer llamadas y reproducir música.</p>
 				</div>
 			</div>
 			<a href="#page89" id="go_page89" class="next_p_btn ui-btn go-next">
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/031.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/031.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page89" class="container">
@@ -1446,7 +1446,7 @@
 					<?php } ?>
 				</div>	
 					<div id="textbox1" class="textbox">
-						<p>Why don’t we turn the volume up while we pitch the tent, buddy.</p>
+						<p>¿Por qué no subimos el volumen mientras ponemos la tienda de campaña, amigo?</p>
 					</div>		
 				</div>
 				<div class="text_tip">
@@ -1457,7 +1457,7 @@
 			</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/032.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/032.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page90" class="container">
@@ -1474,7 +1474,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>You seriously have a good taste in music.<br>Come on, we gotta get done before sunset.</p>
+							<p>Realmente tienes buen gusto musical.<br>Vamos, debemos terminar antes del atardecer.</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1488,7 +1488,7 @@
 				</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/072.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/072.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page91" class="container">
@@ -1511,7 +1511,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Oh, right! my battery is almost dead. Can you charge it for me?</p>
+						<p>¡Ah, sí! mi batería casi está muerta. ¿Puedes ponerla a cargar por mí?</p>
 					</div>
 				</div>
 			</div>
@@ -1519,7 +1519,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/073.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/073.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page92" class="container">
@@ -1538,7 +1538,7 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">	
-						<p>Please put your phone on the wireless charger.</p>
+						<p>Por favor pon tu teléfono en el cargador inalámbrico.</p>
 					</div>
 				</div>
 			</div>
@@ -1596,7 +1596,7 @@
 				</div>
 				<div class="text">
 					<div id="textbox1" class="textbox">
-						<p>You can conveniently charge your phone with the wireless charger.<br>When charging is completed, the charging lamp turns into green!</p>
+						<p>Puedes cargar convenientemente tu teléfono con el cargador inalámbrico. Cuando la carga es completada, ¡la lámpara del cargador se ilumina de color verde.</p>
 					</div>
 				</div>
 			</div>
@@ -1604,7 +1604,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/033.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/033.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page94" class="container">
@@ -1621,7 +1621,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>It’s already dark now. Isn’t it great watching lake while camping?</p>
+							<p>Ya se hizo de noche. ¿No es genial ver el lago mientras acampas?</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1635,7 +1635,7 @@
 				</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/074.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/074.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page95" class="container">
@@ -1654,7 +1654,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Alright, let me play a song for this great night.</p>
+						<p>Muy bien, déjame tocar una canción para esta grandiosa noche.</p>
 					</div>
 				</div>
 			</div>
@@ -1662,7 +1662,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/075.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/075.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page96" class="container">
@@ -1679,7 +1679,7 @@
 				
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Let’s have a good sleep for now and take a look at Zurich tomorrow?</p>
+						<p>Vamos a dormir bien por ahora y echar un vistazo mañana en Zúrich.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -1690,7 +1690,7 @@
 					<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 				</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/076.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/076.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page97" class="container">
@@ -1706,7 +1706,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Did you sleep well?<br>Let's pack up and move on.</p>
+						<p>¿Dormiste bien?<br>Vamos a empacar y seguir adelante.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1719,7 +1719,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/077.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/077.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page98" class="container">
@@ -1742,7 +1742,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Here we go, shall we load again?</p>
+						<p>Aquí vamos, vamos a cargar las cosas de nuevo en el carro?</p>
 					</div>
 				</div>
 			</div>
@@ -1750,7 +1750,7 @@
 					<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 				</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/078.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/078.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page99" class="container">
@@ -1769,7 +1769,7 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">	
-						<p>Please touch the button to load your luggage.</p>
+						<p>Por favor toca el botón para cargar el equipaje.</p>
 					</div>
 				</div>
 			</div>
@@ -1808,7 +1808,7 @@
 				</div>
 				<div class="text">
 					<div id="textbox1" class="textbox">
-						<p>With the one touch folding convenience function, you can fold the rear seats with only one touch of a latch.</p>
+						<p>Con la conveniente función de un toque puedes plegar los asientos traseros con tan solo el toque de un pestillo.</p>
 					</div>
 				</div>
 			</div>
@@ -1816,7 +1816,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/tom/034.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/tom/034.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page101" class="container">
@@ -1833,7 +1833,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>okay, everything’s loaded.<br>Let’s move on.</p>
+							<p>Muy bien, todo está cargado.<br>¡Vamos a seguir adelante!</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1847,7 +1847,7 @@
 				</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/079.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/079.mp3"></audio> -->
 	</section>
 
 	<!-- <section data-role="page" id="page102" class="container">
