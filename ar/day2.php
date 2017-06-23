@@ -59,7 +59,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
 		<script src="../js/day2.js"></script>		
-		<script src="../js/menu_day2_tr.js"></script>
+		<script src="../js/menu_day2_ar.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
@@ -77,7 +77,7 @@
 
 		$(document).ready(function(){
 				//text align right
-				$(".sidePanel_wrap,.textwrap, p, input, label, option").attr("dir", "rtl").addClass("right-to-left");
+				$(".sidePanel_wrap, p, input, label, option").attr("dir", "rtl").addClass("right-to-left");
 				// enter key 금지
 				//console.log($("#current-img").height() );
 				//console.log($("#current-img").width() );
@@ -361,11 +361,11 @@
 		<div data-role="main" class="ui-content">
 			<div class="imgwrap">
 					<div class="imgL">
-						<p>i30<br><span>GAMMA 1.6 T-GDI</p>
+						<p>i30<br><span>محرك توربيني  جاما1.6</p>
 						<div class="engine"></div>
 					</div>
 					<div class="imgR">
-						<p>Golf<br><span>1.8 Turbo</p>
+						<p>Golf<br><span>الحقن المباشر للوقود 1.8</p>
 						<div class="engine"></div>
 					</div>
 			</div>
@@ -524,7 +524,7 @@
 				</video>	
 				<!-- <iframe src="https://www.youtube.com/embed/HMUwBaKxOj8" frameborder="0" allowfullscreen></iframe> -->
 			</div>
-			<div class="popLayer_tr" id="pop02">
+			<div class="popLayer" id="pop02">
 				<div class="imgwrap">
 					<?php if($LMS_IMAGE) { ?> 
 						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
@@ -1017,7 +1017,7 @@
 				</div>
 			</div>
 			<div class="view_text">	
-				<a href="#page77"><p>فيشر فريتز</p></a>
+				<a href="#page77"><p>فيشرز فريتز</p></a>
 				<a href="#page77" id="go_page77" class="next_p_btn ui-btn go-next">
 					<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 				</a>
@@ -1086,11 +1086,11 @@
 		<!-- <h1 class="subject">BRAND</h1> -->
 		</div>
 		<div data-role="main" class="ui-content">	
-		<div class="main_wrap main_wrap_tr">
+		<div class="main_wrap main_wrap">
 			<div class="textwrap">	
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>i30  هي حقًا سيارة فسيحة.<br>كما ترون، حقيبة السيارة فسيحة جدًا.<br>يمكننا حمل جميع الأمتعة التي نحتاجها لهذه الرحلة.</p>
+						<p>i30  هي حقًا سيارة فسيحة.<br>كما ترون، حقيبة السيارة فسيحة جدًا.يمكننا حمل جميع الأمتعة التي نحتاجها لهذه الرحلة.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">

@@ -3,6 +3,35 @@ body .right-to-left, p, label, select, option {
 	text-align: right!important;
 }
 
+#pageStart {
+	.textwrap {
+		.textbox {
+			h1 {
+				text-align: right!important;
+
+			}
+
+			.img_wrap {
+				float: right;
+				height: 85px;
+			}
+
+			ul {
+			    clear: both;
+
+				li {
+					text-align: right!important;
+
+					&::before {
+						left: auto!important;
+						right: 0;
+					}
+				}	
+			}
+		}
+	}
+}
+
 #page7, #page56, #pageStart {
 	.textwrap {
 		.textbox {
@@ -16,10 +45,20 @@ body .right-to-left, p, label, select, option {
 	}	
 }
 
-#page4, #page6, #page9, #page10 {
+#page4, #page6, #page9, #page10, #page39 {
 	.titlewrap {
 		p {
 		    text-align: center!important;
 		}
 	}
+}
+
+.sidePanel .menu_list {
+  li{ 
+    .day_arrow {
+      &:after{
+        display: none!important;
+      }
+    }
+  }
 }

@@ -1,6 +1,14 @@
 body .right-to-left, p, label, select, option {
   text-align: right !important; }
 
+#page0.ar {
+  background: url("../images/intro/open_bg_@3x_ar.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+
+#page1 .ui-content .textwrap {
+  text-align: right !important; }
+
 #page1 .ui-content .log_box .input_info label {
   background-position: 5% 50%; }
 
@@ -9,18 +17,38 @@ body .right-to-left, p, label, select, option {
   #page1 .ui-content .log_box .input_info select#input_country option {
     text-align: right !important; }
 
+#page2 h2 {
+  text-align: right !important; }
+
 #page3 .box p {
   text-align: center !important; }
 
-#page7 .textwrap .textbox ul li::before, #page56 .textwrap .textbox ul li::before {
-  left: auto;
-  right: 0; }
+#page7 .textwrap .textbox h1, #page56 .textwrap .textbox h1 {
+  text-align: right !important; }
 
-#page32 .ui-content .textwrap p, #page48 .ui-content .textwrap p, #page66 .ui-content .textwrap p, #page79 .ui-content .textwrap p, #page85 .ui-content .textwrap p, #page87 .ui-content .textwrap p, #page92 .ui-content .textwrap p, #page99 .ui-content .textwrap p {
+#page7 .textwrap .textbox .img_wrap, #page56 .textwrap .textbox .img_wrap {
+  float: right;
+  height: 85px; }
+
+#page7 .textwrap .textbox ul, #page56 .textwrap .textbox ul {
+  clear: both; }
+  #page7 .textwrap .textbox ul li, #page56 .textwrap .textbox ul li {
+    text-align: right !important; }
+    #page7 .textwrap .textbox ul li::before, #page56 .textwrap .textbox ul li::before {
+      left: auto !important;
+      right: 0; }
+
+#page32 .ui-content .textwrap p, #page48 .ui-content .textwrap p, #page50 .ui-content .textwrap p, #page66 .ui-content .textwrap p, #page79 .ui-content .textwrap p, #page85 .ui-content .textwrap p, #page87 .ui-content .textwrap p, #page92 .ui-content .textwrap p, #page99 .ui-content .textwrap p {
   text-align: center !important; }
 
-#page84 .ui-content .imgwrap p {
+#page32 .ui-content .popLayer .textwrap p, #page48 .ui-content .popLayer .textwrap p, #page50 .ui-content .popLayer .textwrap p, #page66 .ui-content .popLayer .textwrap p, #page79 .ui-content .popLayer .textwrap p, #page85 .ui-content .popLayer .textwrap p, #page87 .ui-content .popLayer .textwrap p, #page92 .ui-content .popLayer .textwrap p, #page99 .ui-content .popLayer .textwrap p {
+  text-align: right !important; }
+
+#page61 .ui-content .imgwrap p, #page84 .ui-content .imgwrap p {
   text-align: center !important; }
 
 #page96 .ui-content .textwrap {
   margin-bottom: 140px; }
+
+.sidePanel .menu_list li .day_arrow:after {
+  display: none !important; }

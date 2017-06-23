@@ -1,11 +1,20 @@
 
+
 body .right-to-left, p, label, select, option {
 	text-align: right!important;
 }
 
+#page0.ar {
+	background:url('../images/intro/open_bg_@3x_ar.jpg') no-repeat;
+	background-size: 100% auto;
+	background-position: 50% 50%; 
+}
 // page1.scss
 #page1 {
 	.ui-content {
+		.textwrap {
+			text-align: right!important;
+		}
 		.log_box  {
 			.input_info{
 				label{
@@ -22,6 +31,12 @@ body .right-to-left, p, label, select, option {
 	}	
 }
 
+#page2 {
+	h2 {
+		text-align: right!important;
+	}
+}
+
 #page3 {
 	.box {
 		p {
@@ -33,27 +48,51 @@ body .right-to-left, p, label, select, option {
 #page7, #page56 {
 	.textwrap {
 		.textbox {
-			ul li {
-				&::before {
-					left: auto;
-					right: 0;
-				}
-			}	
+			h1 {
+				text-align: right!important;
+
+			}
+
+			.img_wrap {
+				float: right;
+				height: 85px;
+			}
+
+			ul {
+			    clear: both;
+
+				li {
+					text-align: right!important;
+
+					&::before {
+						left: auto!important;
+						right: 0;
+					}
+				}	
+			}
 		}
 	}	
 }
 
-#page32, #page48, #page66, #page79, #page85, #page87, #page92, #page99 {
+#page32, #page48, #page50, #page66, #page79, #page85, #page87, #page92, #page99 {
 	.ui-content {
 		.textwrap {
 			p {
 			    text-align: center!important;
 			}
 		}
+
+		.popLayer {
+			.textwrap {
+				p {
+					text-align: right!important;
+				}	
+			}
+		}
 	}
 }
 
-#page84 {
+#page61, #page84 {
 	.ui-content {
 		.imgwrap {
 			p {
@@ -69,4 +108,14 @@ body .right-to-left, p, label, select, option {
 			margin-bottom: 140px;
 		}
 	}
+}
+
+.sidePanel .menu_list {
+  li{ 
+    .day_arrow {
+      &:after{
+        display: none!important;
+      }
+    }
+  }
 }

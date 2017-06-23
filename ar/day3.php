@@ -63,7 +63,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="/pd/js/device.js"></script>
 		<script src="/pd/js/day3.js"></script>
-		<script src="../js/menu_day3_tr.js"></script>
+		<script src="../js/menu_day3_ar.js"></script>
 		<script src="/pd/js/Nwagon.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
@@ -81,7 +81,7 @@
 
 		$(document).ready(function(){
 			//text align right
-			$(".sidePanel_wrap,.textwrap, p, input, label, option").attr("dir", "rtl").addClass("right-to-left");
+			$(".sidePanel_wrap, p, input, label, option").attr("dir", "rtl").addClass("right-to-left");
 			// enter key 금지
 			//console.log($("#current-img").height() );
 			//console.log($("#current-img").width() );
@@ -582,7 +582,7 @@ var options = {
 						<div class="imgwrap">
 							<div class="graphDesc">%30<br/><span>azaltıldı</span></div>
 							<div class="graphLegend6">
-								<div><img src="/pd/images/day3/11_title_current-i30_tr.png" /></div>
+								<div><img src="/pd/images/day3/11_title_current-i30.png" /></div>
 								<div><img src="/pd/images/day3/09_title_i30.png" /></div>
 								<div>VW<br />Golf</div>
 							</div>
@@ -603,7 +603,7 @@ var options = {
 						</div>
 						<div class="imgwrap2">
 							<div class="panel panelTitle">
-								<div><img src="/pd/images/day3/11_title_current-i30_tr.png" /></div>
+								<div><img src="/pd/images/day3/11_title_current-i30.png" /></div>
 								<div><img src="/pd/images/day3/09_title_i30.png" /></div>
 							</div>
 							<div class="panel panelImg">
@@ -748,9 +748,9 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<div class="engine">
-								<img src="/pd/images/day3/15_btn_01_tr.png" alt="0" />
-								<img src="/pd/images/day3/15_btn_02_tr.png" alt="1" />
-								<img src="/pd/images/day3/15_btn_03_tr.png" alt="2" />
+								<img src="/pd/images/day3/15_btn_01.png" alt="0" />
+								<img src="/pd/images/day3/15_btn_02.png" alt="1" />
+								<img src="/pd/images/day3/15_btn_03.png" alt="2" />
 							</div>
 						</div>
 						<a href="javascript:;" id="go_page10" class="next_p_btn ui-btn go-next">
@@ -779,9 +779,9 @@ var options = {
 						</div>
 						<div class="imgwrap">
 							<div class="graphLegend10">
-								<div>Kappa 1.4 MPi</div>
-								<div>Kappa 1.4 T-GDI</div>
-								<div>U2 1.6 VGT CRDi</div>
+								<div>NU 2.0 GDI</div>
+								<div>GAMMA 1.6 T-GDI</div>
+								<div>U2 1.6 VGT</div>
 							</div>
 							<ul class="graph10">
 								<li>
@@ -1152,7 +1152,7 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox21_1" class="textbox">
-									<p>Bern’i umarım sevmişsindir. Şimdi sırada son durağımız olan Strazburg var.</p>
+									<p>هل استمتعتم في برن؟<br>دعونا ننتقل إلى وجهتنا النهائية، ستراسبورغ.</p>
 								</div>
 							</div>
 						</div>
@@ -1182,10 +1182,10 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox0_1" class="textbox">
-									<p>Son durağımız, Fransa’nın bir şehri olan Strazburg.</p>
+									<p>ستراسبورغ هي وجهتنا الأخيرة!<br>وهي مدينة فرنسية</p>
 								</div>
 								<div id="textbox0_2" class="textbox">
-									<p>Burası birçok kanalın birleştiği ve trafik kültürünün, son derece sessiz olmasıyla örnek gösterilen bir şehir. Haydi çabuk olalım !</p>
+									<p>تلتقي بها قنوات مختلفة، وهي مركز له حضارة في المرور وذات جو هادئ.<br>دعونا نذهب بسرعة!</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1220,8 +1220,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox22_1" class="textbox">
-									<p>İşte Strazburg yollarındayız. Güneşin batışını panaromik cam tavanı açıp izleyelim mi ?<br />
-									Bu gerçekten görülmeye değer.</p>
+									<p>نحن في الطريق إلى ستراسبورغ.<br>ترون غروب الشمس من خلال فتحة سقف بانورامية؟<br>هذا مذهل.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1258,7 +1257,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox23_1" class="textbox">
-									<p>i30 panaromik cam tavanın bu kadar açılabilmesi harika. Neredeyse cabrio araçlarla kıyaslanabilecek türden.</p>
+									<p>فتحة السقف لسيارةi30  بانورامية تعطيكم شعورًا بالانفتاح، فلا حاجة للسيارات ذات الأغطية القابلة للطي!</p>
 								</div>
 							</div>
 						</div>
@@ -1282,7 +1281,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox20_1" class="textbox">
-									<p>Bak!  Neredeyse Strazburg’a ulaştığımızı düşünüyorum.</p>
+									<p>انظروا! أعتقد أننا تقريبًا في ستراسبورغ.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1311,7 +1310,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox25_1" class="textbox">
-									<p>Haydi şehri şöyle bir turlayalım.</p>
+									<p>لذا, هل نلقي نظرة حولنا؟</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1338,10 +1337,10 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Burası gezimizdeki son şehir. Strazburg, Ren Nehri’nin batısında konumlandırılmış olup her tarafı nehirlerle donatılmış bir şehir.</p>
+									<p>هذه هي ستراسبورغ، المحطة النهائية لرحلتنا.<br>تقع ستراسبورغ على الجانب الغربي من نهر الراين، ويوجد بها قناة متطورة بشكل جيد.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>Burada aynı zamanda çok sayıda küçük Fransız evleri bulunuyor.</p>
+									<p>وتضم بيوتًا فرنسية جميلة.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1384,7 +1383,7 @@ var options = {
 									<?php } ?>
 								</div>
 								<div id="textbox27_1" class="textbox">
-									<p>Hey ! Dikkat et ! Neredeyse bir şeye çarpıyorduk.</p>
+									<p>واو, انتبهوا.<br>ترقبوا بأعينكم، فلقد كدنا أن نصطدم تقريبًا بشيء ما.</p>
 								</div>
 							</div>
 						</div>
@@ -1429,7 +1428,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox28_1" class="textbox">
-									<p>i30’da bulunan Otomatik Acil Fren Destek Sistemi (AEB), aracın önünde yer alan radar sistemi ile yaya ve nesneleri önceden algılayarak olası kazaları önler.<br>Bu ileri teknoloji özelliği herhangi bir potansiyel kaza durumunda, otomatik olarak araca fren uygulamaktadır.</p>
+									<p>يكتشف نظام  الفرملة الذاتي في حالة الطوارئ للسيارة i30 المشاة أو السيارة الموجودة أمامها من خلال جهاز استشعار راداري يُشغل الفرامل تلقائيا إذا كان من المتوقع حدوث تصادم. إنه يمنع أو يقلل من الضرر الناجم عن التصادم الأمامي.</p>
 								</div>
 							</div>
 						</div>
@@ -1453,7 +1452,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox25_1" class="textbox">
-									<p>i30’um bizi kurtardığı için şanslıyız. i30’un bundan başka ileri teknoloji özelliği var mı ?</p>
+									<p>لحسن الحظ، توقفت سيارة I30  بصورة جيدة. هل هناك أي ميزات أخرى عالية التقنية في سيارة  i30؟</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1498,7 +1497,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox30_1" class="textbox">
-									<p>Sürücünün gaz pedalı veya frene basmasına gerek kalmadan, sürücünün seçimine uygun olarak i30 öndeki araç ile olan mesafeyi algılar ve bu mesafeyi korur.</p>
+									<p>يحافظ استشعار وحساب المسافة من السيارة الموجودة في الأمام على استمرارية وجود مسافة ثابتة بين السيارتين حتى مع عدم ضغط السائق على دواسة الوقود أو دواسة الفرامل.</p>
 								</div>
 							</div>
 						</div>
@@ -1522,7 +1521,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox31_1" class="textbox">
-									<p>Akıllı Hız Sabitleyici özelliği ile yolculuklarınız artık çok daha konforlu ve güvenli.</p>
+									<p>مع نظام التحكم الذكي في السرعة (ASCC)، يمكن القيادة بمزيد من الراحة. لكن هذا لا يعني ذاتية القيادة بالكامل، لذا يجب عليكم توخي الحذر.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1573,7 +1572,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox32_1" class="textbox">
-									<p>Şeritten Ayrılma Uyarı Sistemi (LDWS), sürücünün sinyal vermeden şeritten ayrılması durumunda devreye giren ileri teknoloji uyarı sistemidir.</p>
+									<p>يعتبر النظام المساند للبقاء على المسار (LKAS) ميزة تمنع السيارة من مغادرة الحارة. وتكشف الكاميرا الأمامية الحارة وتساعد على توجيه السيارة عبر نظام التوجيه الآلي (المؤازرة) المدار بمحرك (MDPS).</p>
 								</div>
 							</div>
 						</div>
@@ -1597,7 +1596,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox33_1" class="textbox">
-									<p>Akıllı Hız Sabitleyici (ASCC) özelliği ile birlikte Şeritten Ayrılma Uyarı Sistemi (LDWS), şeritten ayrılma durumunda sürücüyü uyarır.</p>
+									<p>مع النظام المساند للبقاء على المسار (LKAS)، بات الأمر سهلاً في البقاء على الحارة بشكل آمن.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1648,7 +1647,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox34_1" class="textbox">
-									<p>Kör Nokta Uyarı Sistemi (BSD) de, sensör mekanizması ile sürücüyü olası kazalara karşı uyarır. Arka tamponda yer alan sensör sayesinde, araç arkasından görüş dışında yaklaşan başka bir araç olması durumunda sürücü bilgilendirilir.</p>
+									<p>يستشعر جهاز الكشف عن النقطة العمياء (BSD) اقتراب السيارة من النقطة العمياء من خلال الرادار الموجود في المصد الخلفي ويصدر صوت تنبيه لمنع الاصطدام.</p>
 								</div>
 							</div>
 						</div>
@@ -1672,7 +1671,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox35_1" class="textbox">
-									<p>Kör Nokta Uyarı Sistemi (BSD), şerit değiştirirken veya kör noktadan bir araç gelip gelmediğini görmek için oldukça yardımcı bir özelliktir.</p>
+									<p>إن وجود جهاز الكشف عن البقع العمياء (BSD ) على السيارة يجعلها أكثر أمانًا عند تغيير حارة أو مشاهدة البقعة العمياء.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1724,13 +1723,13 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox36_1" class="textbox">
-									<p>Yorgunluk Tespit Sistemi (DAA), dikkatsiz sürüşe karşı ideal bir özelliktir. Sürüş şeklini ve aracın yol üzerindeki konum değişikliklerini analiz ederek, sürücünün dikkat seviyesini ölçümler.</p>
+									<p>DAAهي وظيفة للكشف عن وجود إهمال في القيادة. وتعمل على تحليل نمط القيادة وموقع السيارة.</p>
 								</div>
 								<div id="textbox36_2" class="textbox">
-									<p>Eğer sürüş şekli, dikkatsiz sürüş kalıplarına sahipse ve/veya sürücü kendini yorgun hissediyorsa; gösterge panelindeki dikkat seviyesi aşamalı olarak azalır ve sürücüyü mola vermesi için uyarır.</p>
+									<p>لذا, إذا شعر السائق بالتعب وقاد بلا مبالاة، سوف تظهر علامة تحذير على المجموعة وتنصح السائق بأخذ قسط من الراحة.</p>
 								</div>
 								<div id="textbox36_3" class="textbox">
-									<p>Hey ! Gösterge panelindeki «Yorgunluk Tespit Sistemi (DAA)» uyarısına baksana !</p>
+									<p>ألقِ نظرة فيما إذا كان هناك توقيع DAA  على المجموعة.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1765,7 +1764,7 @@ var options = {
 							<div class="textwrap">	
 								<div class="text">	
 									<div id="textbox1" class="textbox">
-										<p>Bu sınıftaki bir aracın, bu kadar çok ileri teknoloji özellikle donatılmış olmasından çok etkilendim. Şimdi aracıma daha derin bir tutkuyla bağlandım !</p>
+										<p>أثار إعجابي تطبيق هذه الميزات الكثيرة على سيارة من هذه الفئة. لقد سقطت في حب عميق مع هذه السيارة.</p>
 									</div>
 								</div>
 								<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1791,14 +1790,14 @@ var options = {
 						</a>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="pageTitle">Aşağıdaki ileri-teknoloji özelliklerinden favoriniz olanı seçiniz.</div>
-						<div class="textwrap textwrap_tr">
-							<ul class="tr">
-								<li><span>LDWS(Şeritten Ayrılma Uyarı Sistemi)</span></li>
-								<li><span>BSD(Kör Nokta Uyarı Sistemi)</span></li>
-								<li><span>ASCC(Akıllı Hız Sabitleyici)</span></li>
-								<li><span>DAA(Yorgunluk Tespit Sistemi)</span></li>
-								<li><span>AEB(Otomatik Acil Fren Destek Sistemi)</span></li>
+						<div class="pageTitle">أي ميزة من ميزات السلامة عالية التقنية المفضلة لديك؟</div>
+						<div class="textwrap textwrap">
+							<ul>
+								<li><span>LDWS</span></li>
+								<li><span>BSD</span></li>
+								<li><span>ASCC</span></li>
+								<li><span>DAA</span></li>
+								<li><span>AEB</span></li>
 							</ul>
 						</div>
 					</div>
@@ -1814,7 +1813,7 @@ var options = {
 						</a>
 					</div>
 					<div id="page39Chart" class="page_bg"></div>
-					<div class="page_bg" style='background-image:url(/pd/images/day3/63_result_graph_tr.png); background-size:100% auto;'>
+					<div class="page_bg" style='background-image:url(/pd/images/day3/63_result_graph.png); background-size:100% auto;'>
 						<div id="page39ChartNum1" class="page39ChartNum">33%</div>
 						<div id="page39ChartNum2" class="page39ChartNum">66%</div>
 						<div id="page39ChartNum3" class="page39ChartNum">77%</div>
@@ -1826,7 +1825,7 @@ var options = {
 						<div class="titlewrap">
 							<div class="text_i">
 								<div id="textbox1">
-									<p>Sonuçlarr</p>
+									<p>النتيجة</p>
 								</div>	
 							</div>
 						</div>
@@ -1849,7 +1848,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox40_1" class="textbox">
-									<p>Hyundai Yeni i30, sınıfında en iyi güvenlik sistemlerine sahiptir. Bu da kullanıcılarına sürüş esnasında maksimum konfor ve güvenlik sağlamaktadır.</p>
+									<p>تم تجهيز السيارة i30  بأفضل أنظمة السلامة الموجودة لهذه الفئة من السيارات لتزويد السائقين بأقصى قدر من الراحة والسلامة.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -1886,7 +1885,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox41_1" class="textbox">
-									<p>İşte, Notre-Dame Katedrali’ndeyiz.</p>
+									<p>نحن هنا في كاتدرائية نوتردام.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1894,7 +1893,7 @@ var options = {
 							</div>
 						</div>
 						<div class="view_text">
-							<a href="#page42"><p>Strazburg, Notre-Dame Katedrali</p></a>
+							<a href="#page42"><p>ستراسبورغ. كاتدرائية نوتردام</p></a>
 							<a href="#page42" id="go_page42" class="next_p_btn ui-btn go-next">
 								<img src="/pd/images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
@@ -1923,13 +1922,13 @@ var options = {
 							</div>	
 							<div class="text">
 								<div id="textbox42_1" class="textbox">
-									<p>Notre-Dame Katedrali, «eski şehir» olarak adlandırılan bölgenin tam ortasında yer alıyor. Bu katedral, aynı zamanda 1998 yılında UNESCO Dünya Mirası listene girmiş.</p>
+									<p>تقع كاتدرائية نوتردام في وسط البلدة القديمة, وقد تم تسجيلها ضمن تراث اليونسكو العالمي في عام 1988.</p>
 								</div>
 								<div id="textbox42_2" class="textbox">
-									<p>Buranın tamamen inşa edilmesi tam 350 yıl almış! Belki de bu kadar ihtişamlı olmasının nedeni budur.</p>
+									<p>استغرق الأمر 350 سنة لبناء هذه الكاتدرائية بهذا المنظر الرائع.</p>
 								</div>
 								<div id="textbox42_3" class="textbox">
-									<p>Buradaki Notre-Dame, Paris’deki Notre-Dame’a göre çok daha estetik ve sanatsal.</p>
+									<p>نعم, أنا شخصيًا أعتقد أن كاتدرائية نوتردام هنا أكثر خلابةً من كاتدرائية باريس.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1970,7 +1969,7 @@ var options = {
 									<?php } ?>
 								</div>
 								<div id="textbox43_1" class="textbox">
-									<p>Beklesene, camları kapatmamıştın değil mi ?</p>
+									<p>أوه, انتظر، هل أغلقت النافذة؟</p>
 								</div>
 							</div>
 						</div>
@@ -1994,7 +1993,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox44_1" class="textbox">
-									<p>Endişelenme gerek yok! Anahtarımdaki uzaktan kumandalı cam özelliği ile camları kolayca kapatabilirim.</p>
+									<p>لا تقلقوا, يمكنني إغلاق النوافذ بسهولة من خلال جهاز التحكم عن بعد الموجود على مفتاحي.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -2048,7 +2047,7 @@ var options = {
 							</div>
 							<div class="text">
 								<div id="textbox45_1" class="textbox">
-									<p>Evet, haklısın! Motor kapalı konumdayken bile, akıllı anahtar ile camları kolaylıkla kapatabilirsin.</p>
+									<p>أنتم على حق. حتى عندما يكون المحرك في وضع إيقاف التشغيل، يمكنكم إغلاق النافذة عن بعد بالمفتاح الذكي.</p>
 								</div>
 							</div>
 						</div>
@@ -2080,7 +2079,7 @@ var options = {
 									<?php } ?>
 								</div>
 								<div id="textbox1" class="textbox">
-									<p>Bu şehir, gezimizin son durağıydı.</p>
+									<p>هذه المدينة هي آخر مسار لرحلتنا.</p>
 								</div>
 							</div>
 						</div>
@@ -2104,7 +2103,7 @@ var options = {
 						<div class="textwrap">
 							<div class="text">
 								<div id="textbox47_1" class="textbox">
-									<p>Üzgünüm ama veda zamanımız geldi. Umarım i30 ile yaptığımız bu yolculuktan memnun kalmışsınızdır.</p>
+									<p>آسف حان الوقت لنقول وداعا.<br>آمل أن تكونوا قد استمتعتم بالرحلة بسيارة i30.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="/pd/images/button/tail_3_@3x.png" alt="text box">
@@ -2113,7 +2112,7 @@ var options = {
 						<div class="imgwrap">
 							<img src="/pd/images/day3/james_20.png" alt="james">
 						</div>
-						<a href="#page48" id="go_page48" class="bye_btn">HOŞÇAKALIN</a>
+						<a href="#page48" id="go_page48" class="bye_btn">وداعا</a>
 					</div>
 					<!-- <audio class="audio1" src="../tts/day3/116.mp3"></audio> -->
 				</section>
@@ -2128,8 +2127,8 @@ var options = {
 							<img src="/pd/images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
-					<div data-role="main" class="ui-content_tr ui-content">
-						<div class="pageTitle">i30 ile Avrupa Gezimiz hakkındaki yorumunuzu<br>fotoğrafınızla birlikte lütfen buraya yazın</div>
+					<div data-role="main" class="ui-content ui-content">
+						<div class="pageTitle">يُرجى تحميل صورتك وترك ملاحظاتك عن هذه الرحلة بسيارةi30.</div>
 						<div class="imgwrap">
 							<div class="imgphoto">
 								<img id="upload-img">
@@ -2137,10 +2136,10 @@ var options = {
 								
 							</div>
 							<div class="imginput">
-								<textarea class="pd_con_text">Yorumunuzu lütfen bu alana yazınız.</textarea>
+								<textarea class="pd_con_text">Please enter TEXT.</textarea>
 							</div>
 						</div>
-						<a href="#" id="form_sumit" class="bye_btn">TAMAM</a>
+						<a href="#" id="form_sumit" class="bye_btn">حسنا</a>
 						<!-- <a href="/pd/timeline_view.php" class="bye_btn" id="timeline_show" target="_blank" style="display:none">OK</a> -->
 					</div>
 					</form>

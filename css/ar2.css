@@ -1,9 +1,27 @@
 body .right-to-left, p, label, select, option {
   text-align: right !important; }
 
+#pageStart .textwrap .textbox h1 {
+  text-align: right !important; }
+
+#pageStart .textwrap .textbox .img_wrap {
+  float: right;
+  height: 85px; }
+
+#pageStart .textwrap .textbox ul {
+  clear: both; }
+  #pageStart .textwrap .textbox ul li {
+    text-align: right !important; }
+    #pageStart .textwrap .textbox ul li::before {
+      left: auto !important;
+      right: 0; }
+
 #page7 .textwrap .textbox ul li::before, #page56 .textwrap .textbox ul li::before, #pageStart .textwrap .textbox ul li::before {
   left: auto;
   right: 0; }
 
-#page4 .titlewrap p, #page6 .titlewrap p, #page9 .titlewrap p, #page10 .titlewrap p {
+#page4 .titlewrap p, #page6 .titlewrap p, #page9 .titlewrap p, #page10 .titlewrap p, #page39 .titlewrap p {
   text-align: center !important; }
+
+.sidePanel .menu_list li .day_arrow:after {
+  display: none !important; }

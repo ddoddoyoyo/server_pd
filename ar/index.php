@@ -34,7 +34,7 @@
 		<script>
 		$(document).ready(function(){
 				//text align right
-				$(".sidePanel_wrap,.textwrap, p, input, label, option").attr("dir", "rtl").addClass("right-to-left");
+				$(".sidePanel_wrap, p, input, label, option").attr("dir", "rtl").addClass("right-to-left");
 				// enter key 금지
 				//console.log($("#current-img").height() );
 				//console.log($("#current-img").width() );
@@ -123,7 +123,7 @@
 	<body>
 		<div id="wrap">
 			<div id="contBox" class="container">
-				<section data-role="page" id="page0" class="container tr">
+				<section data-role="page" id="page0" class="container ar">
 					<!-- <div data-role="header" class="header">
 						<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-shadow btn_sidePanel ui-btn-right"><img src="../images/button/icon_navbar.png" alt=""></a>
 					</div> -->
@@ -135,7 +135,7 @@
 						</div>
 						<!-- <a href="#page1"><p class="intro_start">START</p></a> -->
 						<a href="#page1" id="go_page1" class="next_p_btn ui-btn go-next">
-							<img src="../images/button/start_btn_tr.png" alt="next button">
+							<img src="../images/button/start_btn_ar.png" alt="next button">
 						</a>
 						<!-- <div class="imgwrap">
 							<img src="../images/intro/hyundai_logo.png" alt="logo">

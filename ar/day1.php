@@ -59,7 +59,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
 		<script src="../js/day1.js"></script>	
-		<script src="../js/menu_day1_tr.js"></script>
+		<script src="../js/menu_day1_ar.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
@@ -77,7 +77,7 @@
 
 		$(document).ready(function(){
 			//text align right
-			$(".sidePanel_wrap,.textwrap, p, input, label, option").attr("dir", "rtl").addClass("right-to-left");
+			$(".sidePanel_wrap, p, input, label, option").attr("dir", "rtl").addClass("right-to-left");
 			// enter key 금지
 			//console.log($("#current-img").height() );
 			//console.log($("#current-img").width() );
@@ -221,7 +221,7 @@
 							</div>
 							<div class="popLayer" id="pop01">
 								<video width="320" height="240" controls>
-								  <source src="http://of01-qb5150.ktics.co.kr/Hayden_Paddon_Hyundai_i30.mp4" type="video/mp4">
+								  <source src="http://of01-qb5150.ktics.co.kr/Hyundai_i30_product_video.mp4" type="video/mp4">
 									Your browser does not support HTML5 video.
 								</video>	
 							<!-- <iframe src="https://www.youtube.com/embed/HMUwBaKxOj8" frameborder="0" allowfullscreen></iframe> -->
@@ -554,10 +554,10 @@
 						</a>
 					</div>
 					<div class="try_again">
-						<img src="../images/tryagain_tr.png"" alt="">
+						<img src="../images/tryagain_X_ar.png"" alt="">
 					</div>
 					<div class="good">
-						<img src="../images/tryagain_O_tr.png"" alt="">
+						<img src="../images/tryagain_O_ar.png"" alt="">
 					</div>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
@@ -570,10 +570,10 @@
 											<img src="../images/intro/login_profile_@3x.png" alt="man">
 										<?php } ?>
 									</div>
-									<p>Bir önceki i30 ile kıyaslandığında, Gelişmiş Yüksek Mukavemetli Çelik Kullanımı %27,2’den<span>?</span>’e/ye çıkartılmıştır.</p>
+									<p>لجعل إطار الهيكل أكثر صلابة, تم نطبيق المعدن المطور شديد الصلابه على الأجزاء الهامة من سيارة i30 الجديدة مقارنة بـ 27.2, للطراز السابق,</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p>Yukarıdaki boşluğa aşağıdakilerden hangisi getirilmelidir ?</p>
+									<p>فما هو العدد الصحيح لإخبار جيمس به؟</p>
 									<ul class="btn_num">
 										<a href="#" class="wrong"><li>17.7%</li></a>
 										<a href="#" class="wrong"><li>27.2%</li></a>
@@ -1556,7 +1556,7 @@
 						<a href="#page44"><div class="imgwrap">
 							<img id="waking" src="../images/day1/alarm.gif" alt="">
 							<!-- <img id="waking2" src="../images/day1/icon_waking_2.png" alt=""> -->
-							<img src="../images/day1/btn_wakingup_tr.png" alt="">
+							<img src="../images/day1/btn_wakingup_ar.png" alt="">
 						</div>
 						</a>
 						<a href="#page44" class="next_finger">
@@ -1754,11 +1754,11 @@
 						
 						<div class="imgwrap">
 							<ul class="choice_color">
-								<a href="#page49" id="ch1" onclick="choice_color('1')"><li><img src="../images/day1/78_btn_01.png" alt=""></li></a>
-								<a href="#page49" id="ch2" onclick="choice_color('2')"><li><img src="../images/day1/78_btn_02.png" alt=""></li></a>
-								<a href="#page49" id="ch3" onclick="choice_color('3')"><li><img src="../images/day1/78_btn_03.png" alt=""></li></a>
-								<a href="#page49" id="ch4" onclick="choice_color('4')"><li><img src="../images/day1/78_btn_04.png" alt=""></li></a>
-								<a href="#page49" id="ch5" onclick="choice_color('5')"><li><img src="../images/day1/78_btn_05.png" alt=""></li></a>
+								<a href="#page49" id="ch1" onclick="choice_color('1')"><li><img src="../images/day1/78_btn_01_ar.png" alt=""></li></a>
+								<a href="#page49" id="ch2" onclick="choice_color('2')"><li><img src="../images/day1/78_btn_02_ar.png" alt=""></li></a>
+								<a href="#page49" id="ch3" onclick="choice_color('3')"><li><img src="../images/day1/78_btn_03_ar.png" alt=""></li></a>
+								<a href="#page49" id="ch4" onclick="choice_color('4')"><li><img src="../images/day1/78_btn_04_ar.png" alt=""></li></a>
+								<a href="#page49" id="ch5" onclick="choice_color('5')"><li><img src="../images/day1/78_btn_05_ar.png" alt=""></li></a>
 							</ul>
 						</div>
 						<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->

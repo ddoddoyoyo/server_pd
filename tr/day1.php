@@ -218,7 +218,7 @@
 							</div>
 							<div class="popLayer" id="pop01">
 								<video width="320" height="240" controls>
-								  <source src="http://of01-qb5150.ktics.co.kr/Hayden_Paddon_Hyundai_i30.mp4" type="video/mp4">
+								  <source src="http://of01-qb5150.ktics.co.kr/Hyundai_i30_product_video.mp4" type="video/mp4">
 									Your browser does not support HTML5 video.
 								</video>	
 							<!-- <iframe src="https://www.youtube.com/embed/HMUwBaKxOj8" frameborder="0" allowfullscreen></iframe> -->
