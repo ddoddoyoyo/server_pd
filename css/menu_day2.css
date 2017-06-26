@@ -233,3 +233,6 @@ input select label a {
     color: #fff; }
   .sidePanel .menu_list a {
     font-weight: normal; }
+
+.sidePanel.ru .menu_list li .day_arrow:after {
+  left: 20px !important; }
