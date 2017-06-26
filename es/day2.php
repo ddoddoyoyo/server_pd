@@ -7,7 +7,7 @@
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
 		//$tools->JavaGo("/genesis/part1/en/main.php");
 	}else{
-		$tools->JavaGo("/pd/en/");
+		$tools->JavaGo("/pd/es/");
 	}
 	
 	
@@ -43,11 +43,11 @@
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
 		  //주소창 없애기
-			 $(document).on("mobileinit", function () {
-				 $.mobile.hashListeningEnabled = false;
-				 $.mobile.pushStateEnabled = false;
-				 $.mobile.changePage.defaults.changeHash = false;
-			});
+			//  $(document).on("mobileinit", function () {
+			// 	 $.mobile.hashListeningEnabled = false;
+			// 	 $.mobile.pushStateEnabled = false;
+			// 	 $.mobile.changePage.defaults.changeHash = false;
+			// });
 		</script>
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
@@ -58,7 +58,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
 		<script src="../js/day2.js"></script>		
-		<script src="../js/menu_day2.js"></script>
+		<script src="../js/menu_day2_es.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
@@ -79,9 +79,9 @@
 				//console.log($("#current-img").height() );
 				//console.log($("#current-img").width() );
 
-				$.mobile.hashListeningEnabled = false;
-				$.mobile.pushStateEnabled = false;
-				$.mobile.changePage.defaults.changeHash = false;
+				// $.mobile.hashListeningEnabled = false;
+				// $.mobile.pushStateEnabled = false;
+				// $.mobile.changePage.defaults.changeHash = false;
 
 				var lms_img = "<? echo $LMS_IMAGE ?>";
 
@@ -137,7 +137,7 @@
 				// 	readURL(this);
 				// });
 				$("#page101 .go-next").click(function(){	
-					location.href="/pd/en/day3.php";
+					location.href="/pd/es/day3.php";
 				});
 			});
 				

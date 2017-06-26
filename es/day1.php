@@ -58,7 +58,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
 		<script src="../js/day1.js"></script>	
-		<script src="../js/menu_day1.js"></script>
+		<script src="../js/menu_day1_es.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
@@ -79,9 +79,9 @@
 			//console.log($("#current-img").height() );
 			//console.log($("#current-img").width() );
 
-			$.mobile.hashListeningEnabled = false;
-			$.mobile.pushStateEnabled = false;
-			$.mobile.changePage.defaults.changeHash = false;
+			// $.mobile.hashListeningEnabled = false;
+			// $.mobile.pushStateEnabled = false;
+			// $.mobile.changePage.defaults.changeHash = false;
 
 			var lms_img = "<? echo $LMS_IMAGE ?>";
 
@@ -774,7 +774,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Puedes ver que esta localidad tiene muchas calles angostas y pedregosas. Tal vez debido al tranvía que pasa por la ciudad.</p>
+									<p>Puedes ver que esta localidad tiene muchas calles angostas y pedregosas. Tal vez debido al tranvía que pasa por la ciudad.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1402,7 +1402,7 @@
 					<!-- <audio class="audio1" src="../tts/day1/030.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page39" class="container">
+				<section data-role="page" id="page39" class="container es">
 				<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">

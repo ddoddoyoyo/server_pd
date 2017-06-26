@@ -2731,6 +2731,9 @@ img {
       #page39 .ui-content .textwrap .text {
         overflow: hidden; }
 
+#page39.es .ui-content .textwrap {
+  width: 34%; }
+
 @media only screen and (orientation: Portrait) {
   #page39 .ui-content {
     display: none !important; } }
