@@ -58,7 +58,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
 		<script src="../js/day1.js"></script>	
-		<script src="../js/menu_day1_tr.js"></script>
+		<script src="../js/menu_day1_ru.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
@@ -112,7 +112,7 @@
 			}
 
 			$("#page55 .go-next").click(function(){	
-				location.href="/pd/tr/day2.php";
+				location.href="/pd/ru/day2.php";
 			});
 		});
 
@@ -190,7 +190,7 @@
 					</div>
 				</section>
 
-				<section data-role="page" id="page3001" class="container">
+				<section data-role="page" id="page3001" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">
@@ -510,7 +510,7 @@
 					<audio class="audio2" src="../tts/day1/010.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page13" class="container">
+				<section data-role="page" id="page13" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">
@@ -551,7 +551,7 @@
 						</a>
 					</div>
 					<div class="try_again">
-						<img src="../images/tryagain_ru.png"" alt="">
+						<img src="../images/tryagain_X_ru.png"" alt="">
 					</div>
 					<div class="good">
 						<img src="../images/tryagain_O_ru.png"" alt="">
@@ -567,7 +567,6 @@
 											<img src="../images/intro/login_profile_@3x.png" alt="man">
 										<?php } ?>
 									</div>
-								</div>	
 									<p>Чтобы сделать раму кузова более жесткой, AHSS была использована для изготовления<span>?</span>критически важных элементов нового i30, что гораздо больше по сравнению с 27,2% у предыдущей модели.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
@@ -792,7 +791,7 @@
 				<!-- <audio class="audio1" src="../tts/day1/018.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page21" class="container">
+				<section data-role="page" id="page21" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">
@@ -1406,7 +1405,7 @@
 					<!-- <audio class="audio1" src="../tts/day1/030.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page39" class="container">
+				<section data-role="page" id="page39" class="container ru">
 				<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">
@@ -1763,7 +1762,7 @@
 					</div>
 				</section>
 
-				<section data-role="page" id="page49" class="container">
+				<section data-role="page" id="page49" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">

@@ -7,7 +7,7 @@
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
 		//$tools->JavaGo("/genesis/part1/en/main.php");
 	}else{
-		$tools->JavaGo("/pd/tr/");
+		$tools->JavaGo("/pd/ru/");
 	}
 
 
@@ -364,7 +364,7 @@ var options = {
 					<!-- <audio class="audio1" src="../tts/day3/083.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page2" class="container">
+				<section data-role="page" id="page2" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="/pd/images/button/icon_arrow.png" alt="">
@@ -462,7 +462,7 @@ var options = {
 					<audio class="audio4" src="../tts/day3/tom/038.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page4" class="container">
+				<section data-role="page" id="page4" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="/pd/images/button/icon_arrow.png" alt="">
