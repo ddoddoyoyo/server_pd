@@ -7,7 +7,7 @@
 	if($_SESSION["HY_LMS_SEQ"] > 0 ){
 		//$tools->JavaGo("/genesis/part1/en/main.php");
 	}else{
-		$tools->JavaGo("/pd/tr/");
+		$tools->JavaGo("/pd/ru/");
 	}
 	
 	
@@ -58,7 +58,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="../js/device.js"></script>
 		<script src="../js/day2.js"></script>		
-		<script src="../js/menu_day2_tr.js"></script>
+		<script src="../js/menu_day2_ru.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
 
@@ -138,7 +138,7 @@
 				// });
 
 				$("#page101 .go-next").click(function(){	
-					location.href="/pd/tr/day3.php";
+					location.href="/pd/ru/day3.php";
 				});
 			});
 				
@@ -316,7 +316,7 @@
 		<audio class="audio2" src="../tts/day2/049.mp3"></audio> -->
 	</section>
 
-	<section data-role="page" id="page60" class="container">
+	<section data-role="page" id="page60" class="container ru">
 		<div data-role="header" class="header">
 			<a href="#" class="ui-btn go-back back" data-rel="back">
 				<img src="../images/button/icon_arrow.png" alt="">
@@ -521,7 +521,7 @@
 				</video>	
 				<!-- <iframe src="https://www.youtube.com/embed/HMUwBaKxOj8" frameborder="0" allowfullscreen></iframe> -->
 			</div>
-			<div class="popLayer_tr" id="pop02">
+			<div class="popLayer" id="pop02">
 				<div class="imgwrap">
 					<?php if($LMS_IMAGE) { ?> 
 						<img src="<?=$LMS_IMAGE?>" alt="james" id="current-img">
@@ -548,7 +548,7 @@
 		<audio class="audio2" src="../tts/day2/tom/024.mp3"></audio> -->
 	</section>
 
-	<section data-role="page" id="page64" class="container">
+	<section data-role="page" id="page64" class="container ru">
 		<div data-role="header" class="header">
 			<a href="#" class="ui-btn go-back back" data-rel="back">
 				<img src="../images/button/icon_arrow.png" alt="">
@@ -786,7 +786,7 @@
 		<!-- <audio class="audio1" src="../tts/day2/056.mp3"></audio> -->
 	</section>
 
-	<section data-role="page" id="page70" class="container">
+	<section data-role="page" id="page70" class="container ru">
 	<div data-role="header" class="header">
 			<a href="#" class="ui-btn go-back back" data-rel="back">
 				<img src="../images/button/icon_arrow.png" alt="">
@@ -931,7 +931,7 @@
 		<!-- <audio class="audio1" src="../tts/day2/063.mp3"></audio> -->
 	</section>
 
-	<section data-role="page" id="page74" class="container">
+	<section data-role="page" id="page74" class="container ru">
 		<div data-role="header" class="header">
 			<a href="#" class="ui-btn go-back back" data-rel="back">
 				<img src="../images/button/icon_arrow.png" alt="">
@@ -1023,7 +1023,7 @@
 		<!-- <audio class="audio1" src="../tts/day2/066.mp3"></audio> -->
 	</section>
 
-	<section data-role="page" id="page77" class="container">
+	<section data-role="page" id="page77" class="container ru">
 	<div data-role="header" class="header">
 			<a href="#" class="ui-btn go-back back" data-rel="back">
 				<img src="../images/button/icon_arrow.png" alt="">
@@ -1072,7 +1072,7 @@
 		<audio class="audio2" src="../tts/day2/068.mp3"></audio> -->
 	</section>
 
-	<section data-role="page" id="page78" class="container">
+	<section data-role="page" id="page78" class="container ru">
 		<div data-role="header" class="header">
 			<a href="#" class="ui-btn go-back back" data-rel="back">
 				<img src="../images/button/icon_arrow.png" alt="">
@@ -1083,7 +1083,7 @@
 		<!-- <h1 class="subject">BRAND</h1> -->
 		</div>
 		<div data-role="main" class="ui-content">	
-		<div class="main_wrap main_wrap_tr">
+		<div class="main_wrap main_wrap">
 			<div class="textwrap">	
 				<div class="text">	
 					<div id="textbox1" class="textbox">
@@ -1608,7 +1608,7 @@
 		<!-- <audio class="audio1" src="../tts/day2/tom/033.mp3"></audio> -->
 	</section>
 
-	<section data-role="page" id="page94" class="container">
+	<section data-role="page" id="page94" class="container ru">
 		<div data-role="header" class="header">
 			<a href="#" class="ui-btn go-back back" data-rel="back">
 				<img src="../images/button/icon_arrow.png" alt="">

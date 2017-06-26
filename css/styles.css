@@ -874,6 +874,10 @@ img {
   #page11 .ui-content {
     display: block; } }
 
+#page3001.ru .ui-content .textwrap {
+  margin-top: 7%;
+  width: 35%; }
+
 #page4 {
   background: url("../images/day1/landscape/05_bg_@3x.jpg") no-repeat;
   background-size: 100% auto; }
@@ -1400,6 +1404,9 @@ img {
   #page13 .ui-content {
     display: block; } }
 
+#page13.ru .ui-content .textwrap .text_i {
+  width: 70% !important; }
+
 #page13 .ui-content .textwrap .text_i {
   width: 60%; }
 
@@ -1822,6 +1829,9 @@ img {
 @media only screen and (orientation: landscape) {
   #page21 .ui-content {
     display: block; } }
+
+#page21.ru .ui-content {
+  width: 37% !important; }
 
 #page22 {
   background: url("../images/ezgif.com-video-to-gif.gif") no-repeat;
@@ -2732,6 +2742,9 @@ img {
   #page39 .ui-content {
     display: block; } }
 
+#page39.ru .ui-content .textwrap {
+  width: 33% !important; }
+
 #page40 {
   background: url("../images/day1/64_photo.gif") no-repeat;
   background-size: 100% auto; }
@@ -3227,6 +3240,9 @@ img {
 @media only screen and (orientation: landscape) {
   #page49 .ui-content {
     display: block; } }
+
+#page49.ru .ui-content .textwrap {
+  width: 30% !important; }
 
 #page50 {
   background-image: url("../images/day1/78_image.jpg");
@@ -3887,6 +3903,9 @@ img {
   #page60 .ui-content {
     display: block; } }
 
+#page60.ru .ui-content {
+  width: 35% !important; }
+
 #page61 {
   background: #000;
   overflow: hidden; }
@@ -4313,6 +4332,9 @@ img {
   #page64 .ui-content {
     display: block; } }
 
+#page64.ru .ui-content .textwrap {
+  width: 33% !important; }
+
 #page65 {
   background: url("../images/ezgif.com-video-to-gif.gif") no-repeat;
   background-size: 100% auto; }
@@ -4657,6 +4679,11 @@ img {
   #page70 .ui-content {
     display: block; } }
 
+#page70.ru .ui-content .textwrap {
+  width: 42% !important; }
+  #page70.ru .ui-content .textwrap .text_img2 {
+    width: 45%; }
+
 #page71 {
   background: url("../images/day2/24_photo.jpg") no-repeat;
   background-size: 100% auto; }
@@ -4866,6 +4893,9 @@ img {
   #page74 .ui-content {
     display: block; } }
 
+#page74.ru .ui-content {
+  width: 35%; }
+
 #page75 {
   overflow: hidden; }
   #page75 .page_bg {
@@ -5042,6 +5072,11 @@ img {
   #page77 .ui-content {
     display: block; } }
 
+#page77.ru .ui-content .textwrap {
+  width: 35%; }
+  #page77.ru .ui-content .textwrap .text_img2 {
+    width: 52%; }
+
 #page78 {
   background: url("../images/day2/35_photo.jpg") no-repeat;
   background-size: 100% auto;
@@ -5097,6 +5132,10 @@ img {
 @media only screen and (orientation: landscape) {
   #page78 .ui-content {
     display: block; } }
+
+#page78.ru .ui-content .textwrap {
+  position: relative;
+  top: 20px; }
 
 #page78 .ui-content .main_wrap_tr {
   max-width: 47%; }
@@ -5948,6 +5987,11 @@ img {
 @media only screen and (orientation: landscape) {
   #page94 .ui-content {
     display: block; } }
+
+#page94.ru .ui-content {
+  width: 35%; }
+  #page94.ru .ui-content .textwrap {
+    margin-bottom: 0; }
 
 #page95 {
   background: url("../images/day2/55_photo.jpg") no-repeat;

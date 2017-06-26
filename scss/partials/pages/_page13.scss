@@ -15,23 +15,7 @@
        .text_i {
           //overflow:hidden;
           width: 50%;
-          padding-top: 3%;
-          //margin: 0 auto;
-          
-          
-          // p {
-          //   &:before {
-          //     content: '';
-          //     display: block;
-          //     width: 4px;
-          //     height: 26px;
-          //     background: #ffffff;
-          //     position: relative;
-          //     margin-top: 3px;
-          //     top: 23px;
-          //     left: 50px;
-          //   }
-          // }           
+          padding-top: 3%;         
        }
     }
     .imgwrap{
@@ -92,3 +76,12 @@
   }
 }
 
+#page13.ru {
+  .ui-content {
+    .textwrap {
+      .text_i {
+        width: 70%!important;
+      }
+    }
+  }
+}

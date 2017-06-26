@@ -617,6 +617,9 @@ img {
 @media only screen and (orientation:landscape) {
 	#page2 .ui-content {
 		display:block; } }
+#page2.ru .ui-content {
+	width: 42%;
+}
 
 #page3 {
 	background:url("../images/day3/05_image.jpg") no-repeat;
@@ -793,6 +796,10 @@ img {
 @media only screen and (orientation:landscape) {
 	#page4 .ui-content {
 		display:block; } }
+
+#page4.ru .ui-content .textwrap {
+    margin-top: 10px;
+}
 
 #page5 {
 	background:url("../images/day3/10_photo.jpg") no-repeat;
