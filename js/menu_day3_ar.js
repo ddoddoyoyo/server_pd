@@ -31,6 +31,7 @@ $(document).ready(function(){
 		sidePanel += "<li><a href='#page22'>فتحة سقف</a></li>";
 		sidePanel += "<li><a href='#page28'>ADAS</a></li>";
 		sidePanel += "<li><a href='#page45'>ريموت ويندو</a></li>";
+		sidePanel += "<li><a id='time_line' href='javascript:;'>الخط الزمني</a></li>";
 		sidePanel += "</ul></li></ul></li>";//day3 end
 		$("section.container").append(sidePanel);
 

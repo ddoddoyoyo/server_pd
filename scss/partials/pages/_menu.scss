@@ -75,3 +75,14 @@
     }
   }
 }
+
+
+.sidePanel.ru .menu_list {
+  li{ 
+    .day_arrow {
+      &:after{
+        left:   20px;
+      }
+    }
+  }
+}

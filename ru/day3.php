@@ -62,7 +62,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="/pd/js/device.js"></script>
 		<script src="/pd/js/day3.js"></script>
-		<script src="../js/menu_day3_tr.js"></script>
+		<script src="../js/menu_day3_ru.js"></script>
 		<script src="/pd/js/Nwagon.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>

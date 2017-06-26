@@ -31,6 +31,7 @@ $(document).ready(function(){
 		sidePanel += "<li>CAM TAVAN</li>";
 		sidePanel += "<li>SÜRÜŞ YARDIMI</li>";
 		sidePanel += "<li>CAMLAR</li>";
+		sidePanel += "<li>ZAMAN ÇİZELGESİ</li>";
 		sidePanel += "</ul></li></ul></a></li>";//day3 end
 		$("section.container").append(sidePanel);
 

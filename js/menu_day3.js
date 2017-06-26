@@ -31,7 +31,7 @@ $(document).ready(function(){
 		sidePanel += "<li><a href='#page22'>SUNROOF</a></li>";
 		sidePanel += "<li><a href='#page28'>ADAS</a></li>";
 		sidePanel += "<li><a href='#page45'>REMOTE WINDOW</a></li>";
-		sidePanel += "<li>TIME LINE</li>";
+		sidePanel += "<li><a id='time_line' href='javascript:;'>TIME LINE</a></li>";
 		sidePanel += "</ul></li></ul></li>";//day3 end
 		$("section.container").append(sidePanel);
 

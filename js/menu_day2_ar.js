@@ -30,7 +30,8 @@ $(document).ready(function(){
 		sidePanel += "</ul></li><li id='strasbourg'><span>ستراسبورغ</span><ul class='sub_menu2'>";//day3 strasbourg
 		sidePanel += "<li>فتحة سقف</li>";
 		sidePanel += "<li>ADAS</li>";
-		sidePanel += "<li><a href='#page45'>ريموت ويندو</a></li>";
+		sidePanel += "<li>ريموت ويندو</li>";
+		sidePanel += "<li>الخط الزمني</li>";
 		sidePanel += "</ul></li></ul></a></li>";//day3 end
 		$("section.container").append(sidePanel);
 

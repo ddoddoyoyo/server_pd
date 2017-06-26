@@ -31,6 +31,7 @@ $(document).ready(function(){
 		sidePanel += "<li>فتحة سقف</li>";
 		sidePanel += "<li>ADAS</li>";
 		sidePanel += "<li>ريموت ويندو</li>";
+		sidePanel += "<li>الخط الزمني</li>";
 		sidePanel += "</ul></li></ul></a></li>";//day3 end
 		$("section.container").append(sidePanel);
 

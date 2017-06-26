@@ -14,8 +14,8 @@ $(document).ready(function(){
 		sidePanel += "<li id='day2'><a href='javascript:;' id='go_day2'><span class='day_arrow'>DÍA 2.</span><ul class='sub_menu1'><li id='stelvio'><span>PASO STELVIO</span><ul class='sub_menu2'>";//day2 stelvio
 		sidePanel += "<li>MOTOR</li>";
 		sidePanel += "<li>7 DCT</li>";
-		sidePanel += "<li>SUSPENSIÓN 2</li>";
-		sidePanel += "<li>CARROCERÍA 2</li>";
+		sidePanel += "<li>SUSPENSIÓN</li>";
+		sidePanel += "<li>CARROCERÍA</li>";
 		sidePanel += "</ul></li><li id='zurich'><span>ZÚRICH</span><ul class='sub_menu2'>";//day2 Zurich
 		sidePanel += "<li>PORTAEQUIPAJE</li>";
 		sidePanel += "<li>CONECTIVIDAD</li>";
@@ -64,11 +64,11 @@ $(document).ready(function(){
 
 
 	$("a#go_day2").click(function(){
-		location.href="/pd/en/day2.php";
+		location.href="/pd/es/day2.php";
 	});
 
 	$("a#go_day3").click(function(){
-		location.href="/pd/en/day3.php";
+		location.href="/pd/es/day3.php";
 	});
 
 	// $("a#time_line").click(function(){
