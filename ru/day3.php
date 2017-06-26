@@ -157,7 +157,7 @@
 
 			$("#page6 #go_next1").click(function() {
 				if (next_Count == 1) {
-					$("#page6 .titlewrap .text_i #textbox1 p").html('Birleştirilmiş Gövde Paneli');
+					$("#page6 .titlewrap .text_i #textbox1 p").html('Unified frame panel');
 				}
 				next_Count++;
 			});
@@ -197,7 +197,7 @@
 				engineArr[parseInt($(this).attr('alt'))] = '1';
 
 				if (engineArr.join('') == '111')
-					$("#page9 .titlewrap .text_i #textbox1 p").html('Favori Motor Seçeneğinizi Seçiniz');
+					$("#page9 .titlewrap .text_i #textbox1 p").html('Выберите понравившийся вам двигатель');
 
 			}
 			else if (engineArr.join('') == '111') {
@@ -1019,7 +1019,7 @@ var options = {
 					<!-- <audio class="audio1" src="../tts/day3/095.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page18" class="container">
+				<section data-role="page" id="page18" class="container ru">
 				<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="/pd/images/button/icon_arrow.png" alt="">
@@ -1160,7 +1160,7 @@ var options = {
 					<!-- <audio class="audio1" src="../tts/day3/100.mp3"></audio> -->
 				</section>	
 
-				<section data-role="page" id="page2101" class="container">
+				<section data-role="page" id="page2101" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="/pd/images/button/icon_arrow.png" alt="">
@@ -1747,7 +1747,7 @@ var options = {
 					<audio class="audio3" src="../tts/day3/tom/054.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page37" class="container">
+				<section data-role="page" id="page37" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="/pd/images/button/icon_arrow.png" alt="">
@@ -1777,7 +1777,7 @@ var options = {
 					<!-- <audio class="audio1" src="../tts/day3/109.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page38" class="container">
+				<section data-role="page" id="page38" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="/pd/images/button/icon_arrow.png" alt="">
@@ -1977,7 +1977,7 @@ var options = {
 					<!-- <audio class="audio1" src="../tts/day3/tom/056.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page44" class="container">
+				<section data-role="page" id="page44" class="container ru">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="/pd/images/button/icon_arrow.png" alt="">
