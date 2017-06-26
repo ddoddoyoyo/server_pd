@@ -1806,7 +1806,7 @@
 					<audio class="audio5" src="../tts/day1/tom/021.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page50" class="container">
+				<section data-role="page" id="page50" class="container es">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">
@@ -2037,7 +2037,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/044.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/044.mp3"></audio> -->
 				</section>
 
 

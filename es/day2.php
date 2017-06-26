@@ -785,7 +785,7 @@
 		<!-- <audio class="audio1" src="../tts/day2/056.mp3"></audio> -->
 	</section>
 
-	<section data-role="page" id="page70" class="container">
+	<section data-role="page" id="page70" class="container es">
 	<div data-role="header" class="header">
 			<a href="#" class="ui-btn go-back back" data-rel="back">
 				<img src="../images/button/icon_arrow.png" alt="">
@@ -954,7 +954,7 @@
 			</a>
 			</div>
 		</div>
-		<audio class="audio1" src="../tts/day2/064.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/064.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page75" class="container">
@@ -1327,7 +1327,7 @@
 				<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 			</a>
 		</div>
-		<audio class="audio1" src="../tts/day2/music1.mp3"></audio>
+		<!-- <audio class="audio1" src="../tts/day2/music1.mp3"></audio> -->
 	</section>
 
 	<section data-role="page" id="page86" class="container">
