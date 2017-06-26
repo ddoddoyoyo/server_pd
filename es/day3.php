@@ -1755,7 +1755,7 @@ var options = {
 					<audio class="audio3" src="../tts/day3/tom/054.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page37" class="container">
+				<section data-role="page" id="page37" class="container es">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="/pd/images/button/icon_arrow.png" alt="">

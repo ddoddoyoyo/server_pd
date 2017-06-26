@@ -137,7 +137,7 @@
 				// 	readURL(this);
 				// });
 				$("#page101 .go-next").click(function(){	
-					location.href="/pd/en/day3.php";
+					location.href="/pd/es/day3.php";
 				});
 			});
 				

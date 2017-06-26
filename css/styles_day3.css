@@ -2613,6 +2613,9 @@ img {
     bottom: 0;
     right: 0;
     overflow: hidden; }
+    #page37.es .ui-content{
+		max-width: 42%;
+    }
       #page37 .ui-content .textwrap {
         max-width: 100%;
         margin-top: 50px;
