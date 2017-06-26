@@ -157,7 +157,7 @@
 				<div class="loding_bar">
 					<img src="/pd/images/loading_bar_1.png" alt="" class="londing1">
 					<img src="/pd/images/loading_bar_2.png" alt="" class="londing2">
-					<div id="logind_text">Seyahatimiz Hazırlanıyor…</div>
+					<div id="logind_text">Идет подготовка к поездке</div>
 				</div>
 			</div>
 		</div>
@@ -171,18 +171,18 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<h1>Gün 2</h1>
+						<h1>ДЕНЬ 2</h1>
 						<div class="img_wrap">
 							<img src="../images/button/08_point.png" alt="location point">
 							<img src="../images/button/08_lodeline.png" alt="location">
-							<p class="p1">Stelvio Geçidi</p>
-							<p class="p2">Zürih</p>
+							<p class="p1">Перевал Стельвио</p>
+							<p class="p2">Цюрих</p>
 						</div>
 						<ul>
-							<li>MOTOR</li>
+							<li>двигатель</li>
 							<li>7 DCT</li>
 <!-- 							<li>Bağlanabilirlik</li> -->
-							<li>Bagaj Alanı</li>
+							<li>пространство</li>
 						</ul>
 					</div>
 				</div>
@@ -218,7 +218,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Şimdi de, yolculuk rotasını anlatırken sıklıkla vurguladığım Stelvio Geçidi’ne doğru yola çıkacağız.</p>
+						<p>Отсюда мы едем в сторону перевала Стельвио. Думаю, эта часть поездки будет одной из самых интересных.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -247,10 +247,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Stelvio Geçidi, keskin virajlı sürüş heyecanını yaşamak isteyen herkesin hayali olabilecek bir yer.</p>
+						<p>Многие автомобилисты мечтали бы прокатиться по извилистым дорогам перевала Стельвио.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>Çeşitli ünlü otomotiv markaları, buraya kendi modellerinin performansını test etmek için geliyor.</p>
+						<p>Известные модели автомобилей разных брендов проходят здесь эксплуатационные испытания.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -293,10 +293,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Havanın sürüş için oldukça iyi olmasına rağmen yollarda hala kar görmek mümkün.</p>
+						<p>Здесь еще остался местами снег, но для поездки погода просто прекрасная!</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>İşte Stelvio Geçidi ! Şimdi biraz hızlanmaya ne dersiniz ?</p>
+						<p>Вот мы и на перевале Стельвио. Мне ускориться?</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l" >
@@ -332,7 +332,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Benim kullandığım araç 1.6 Turbo GDI. Bunun Golf 1.8 motora kıyasla daha fazla beygir gücüne sahip olduğunu biliyor muydunuz ?</p>
+						<p>В моей машине установлен двигатель 1.6 Turbo-GDI. Вы знали, что мощность этого двигателя больше, чем мощность двигателя 1.8 Turbo у автомобиля модели Golf.</p>
 					</div>
 				</div>
 				<a href="#page61" id="go_page61" class="next_p_btn ui-btn go-next">
@@ -402,7 +402,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>i30’un 1.6 T-GDI motoru, Golf 1.8T’ ye kıyasla daha fazla güç ve tork sunuyor. Fakat aracı deneyimlememiş birçok insan bunun henüz farkında değil.</p>
+							<p>Двигатель Gamma 1.6 Turbo-GDI у i30 отличается более высокими мощностью и крутящим моментом по сравнению с двигателем 1.8 Turbo у Golf. К сожалению, мало кто знает об этом.</p>
 						</div>	
 					</div>
 				</div>	
@@ -460,10 +460,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>i30’da 7 İleri Çift Kavramalı DCT şanzıman tercih edilmiş.<br>İnanabiliyor musunuz ? Güçlü bir motor ve hızlı vites geçişleri. İşte bu.</p>
+						<p>Этот автомобиль оснащен 7-ступенчатой коробкой передач с двойным сцеплением (DCT).<br>Мощный двигатель с быстрым переключением скоростей. Вы можете в это поверить?</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>Çift Kavramalı DCT Şanzıman, vites geçişleri sırasında güç kaybı yaşanmadan doğrudan geçiş hissi  sunar. Şanzımanın performansını viraj alırken çok daha iyi bir şekilde hissedebilirsiniz.</p>
+						<p>Можно почувствовать, что DCT передает энергию без потери мощности при переключении передач. Вы можете по-настоящему оценить это на извилистой дороге.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -508,7 +508,7 @@
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
 				</div>
 				<div class="text">	
-					<p>O halde, Çift Kavramalı DCT şanzıman ile ilgili biraz daha bilgi alalım. Lütfen videoya tıklayınız.</p>
+					<p>Давайте узнаем больше о DCT! Запустите видео!</p>
 				</div>
 			</div>
 			<div class="btn_play">
@@ -535,7 +535,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>Çift kavramalı şanzıman, sürekli virajlı yollarda hızlanma ve yavaşlama sırasında motorun hızlı yanıt verebilmesi için maksimum güç aktarır.</p>
+							<p>Коробка передач с двойным сцеплением обеспечивает быстрое переключение передач и передает максимум энергии двигателя, что позволят быстро набирать и сбрасывать скорость на извилистой дороге.</p>
 						</div>	
 					</div>
 				</div>	
@@ -567,10 +567,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Bakın ! Keskin virajları, arka süspansiyonun sağladığı üstün yol tutuşu ile rahatlıkla alabiliyoruz.</p>
+						<p>Когда мы входим в такой крутой поворот, как здесь, самым важным становится сцепление задней подвески с дорогой.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>Orta hızlarda, herhangi bir kayma dahi olmadı !</p>
+						<p>Вы видите? При движении с разумной скоростью автомобиль не заносит.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -622,10 +622,10 @@
 				</div>
 				<div class="text">
 					<div id="textbox1" class="textbox">
-						<p>Çok noktadan bağlantılı süspansiyon sisteminin, genellikle spor araçlarda, yol tutuş gücünü arttırmak için kullanıldığını biliyor muydunuz ?<br>Hyundai i30’da bulunan 5 farklı bağlantı ile «çok noktadan bağlantılı süspansiyon sistemi» kullanılarak her türlü zeminde yol tutuşu sabit kılmak için tasarlanmıştır.</p>
+						<p>Вы помните о многорычажной подвеске, которая обеспечивала устойчивость автомобиля на дорогах в Милане?<br>Многорычажная подвеска также повышает сцепление задних колес с дорогой при вхождении на высокой скорости в крутой поворот.</p>
 					</div>	
 					<div id="textbox2" class="textbox">
-						<p>«Çok Noktadan Bağlantılı Süspansiyon» sisteminin gerçek önemini özellikle keskin virajlı yollarda daha iyi anlayabilirsiniz.</p>
+						<p>Теперь, когда мы едем по извилистой дороге, вы можете по-настоящему оценить достоинства многорычажной подвески.</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -661,7 +661,7 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">
-						<p>Yapısal yapıştırıcıları görmek için lütfen tıklayın.</p>
+						<p>Нанесите конструкционный клей!</p>
 					</div>	
 				</div>
 			</div>
@@ -682,7 +682,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>Gövde yapısının dayanımı ve sertliği için, Hyundai Yeni i30 şasisinde yapısal yapıştırıcılar kullanılmıştır. Yeni i30’da kullanılan yapısal yapıştırıcı miktarı 112 m.’dir.</p>
+							<p>При изготовлении шасси i30 для повышения жесткости и износоустойчивости кузова используется высокопрочный металлический клей. Если не ошибаюсь, общий его объем составляет 112 метров, если вытянуть его в длину.</p>
 						</div>	
 					</div>
 				</div>	
@@ -738,7 +738,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>İnanılmaz ! Geniş virajları yüksek hızla alırken dahi, araç ile bu kadar bütün ve güvende hissetmem demek ki bu yüzdenmiş.<br>Ne kadar heyecan verici bir sürüş deneyimi ! Buna bayıldım !</p>
+						<p>Ага! Вот почему я чувствую себя единым целым с автомобилем при многократном выполнении поворотов на высокой скорости.<br>Такие ощущения... Мне нравится это!!</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -769,7 +769,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Haydi burada bir mola verelim.</p>
+						<p>Давайте здесь отдохнем.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -777,7 +777,7 @@
 				</div>
 			</div>
 			<div class="view_text">	
-				<a href="#page70"><p>Stelvio Geçidi</p></a>
+				<a href="#page70"><p>Перевал Стельвио</p></a>
 				<a href="#page70" id="go_page70" class="next_p_btn ui-btn go-next">
 					<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 				</a>
@@ -806,16 +806,16 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Stelvio Geçidi, ihtişamlı Alp Dağları mazarasıyla ünlü. Ne kadar güzel bir manzara değil mi ?</p>
+						<p>Вы знаете, почему извилистая дорога перевала Стельвио прославилась на весь мир? Она соединяет между собой разные горы в Альпах, и отсюда открывается потрясающий вид.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>Geçtiğimiz yollar ne kadar güzel ve bir o kadar da baş döndürücüydü !<br>Ne kadar çok keskin viraj geçmişiz !<br>Gerçekten çok keyifliydi.</p>
+						<p>Вот дороги, по которым мы только что проехали. Это довольно ошеломительно, не так ли?<br>Сколько крутых поворотов осталось позади…<br>Это было здорово.</p>
 					</div>
 					<div id="textbox3" class="textbox">
-						<p>Güçlü motor seçeneği, 7 İleri Çift Kavramalı DCT şanzıman, Çok Noktadan Bağlantılı Arka Süspansiyon !</p>
+						<p>Достойный внимания мощный двигатель 7-ступенчатая коробка передач с двойным сцеплением Высокая жесткость кузова Многорычажная задняя подвеска</p>
 					</div>
 					<div id="textbox4" class="textbox">
-						<p>İşte bütün bunlar i30’u, aracını keyif için kullanan sürücülerin gözdesi haline getiriyor !</p>
+						<p>Благодаря комбинации все этих особенностей, езда на i30 приносит большое удовольствие!</p>
 					</div>
 					<div class="btn_box">
 						<a href="#" id="go_next1" class="text_btn_l">
@@ -850,7 +850,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Stelvio Geçidi’ni nasıl buldunuz ?<br>Korkmadınız değil mi ?<br>Ben bu harika virajlardan geçerken inanılmaz zevk aldım, umarım sizin için de keyifli olmuştur.</p>
+						<p>Ну, как?<br>Не было страшно?<br>Надеюсь, вам понравилась езда по этой прекрасной извилистой дороге.<br>Мне точно понравилась.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -879,7 +879,7 @@
 			<div class="textwrap">	
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Haydi o zaman aşağıya inelim.<br>Avrupa’daki en iyi kamp merkezlerinden bir tanesine gideceğiz.</p>
+						<p>Поспешите, нужно продолжать путь.<br>Мы едем в один из лучших кемпингов Европы.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -915,7 +915,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Şimdi İsviçre-Zürih’te yer alan Fischers Fritz’ e gidiyoruz.<br>Lütfen harita üzerinde Zürih’e tıklayın.</p>
+						<p>Это место называется Fischers Fritz и находится оно в швейцарском Цюрихе.<br>Кликните Цюриха.</p>
 					</div>
 					<!-- <div id="textbox2" class="textbox">
 						<p>In Switzerland, we will be stop at Zurich and Bern to get to final spot Strasbourg.</p>
@@ -944,7 +944,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Bildiğiniz üzere Zürih, İsviçre’nin en büyük şehri.<br>Bu şehrin hemen sağ tarafında Zürih Gölü ve Limmat Nehri bulunuyor.</p>
+						<p>Как вы знаете, Цюрих — крупнейший город Швейцарии.<br>Через город протекает река Лиммат, и прямо возле него расположено красивое Цюрихское озеро.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -978,7 +978,7 @@
 				</div>
 				<div class="text">		
 					<div id="textbox1" class="textbox">
-						<p>Şehir merkezini gezmeden önce, eşyalarımızı yerleştirmemiz gerekiyor. Bu yüzden dilerseniz önce kamp alanına gidelim.</p>
+						<p>Прежде чем отправиться на экскурсию по центру, давайте доедем до кемпинга и выгрузим багаж.</p>
 					</div>
 				</div>
 			</div>
@@ -1006,7 +1006,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>İşte Fischers Fritz’deyiz !</p>
+						<p>Вот мы и в кемпинге Fischers Fritz.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -1043,10 +1043,10 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Burası Avrupa’daki en ünlü kamp alanı. Bu yüzden birçok kamp tutkunu burayı tercih ediyor.</p>
+						<p>Это один из самых известных кемпингов в Европе, куда съезжается множество любителей отдыха на природе.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>Uzun zamandır buraya gelip kamp yapmak istiyordum.<br>Eşyalarımızı burada indirebiliriz.</p>
+						<p>Я тоже всегда хотел побывать здесь. Давайте разберем вещи.</p>
 					</div>
 					<!-- <div id="textbox3" class="textbox">
 						<p>Facility is good, and riverside is so cozy and beautiful.</p>
@@ -1087,7 +1087,7 @@
 			<div class="textwrap">	
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>İ30 gerçekten ferah ve geniş bir araç.<br>Şu bagaja bir baksanıza, ne kadar da geniş! <br>Bu yolculuk için gerekli tüm valiz ve eşyalarımızı rahatlıkla bagaja koyabildik.</p>
+						<p>i30 по-настоящему вместительный автомобиль.<br>Как вы видите, багажник очень большой.<br>В нем поместилось все, что нужно было взять с собой в поездку.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1117,7 +1117,7 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">
-						<p>Bagaj için maksimum kapasite nedir ?</p>
+						<p>Каков максимальный объем багажника?</p>
 					</div>	
 				</div>
 			</div>
@@ -1141,7 +1141,7 @@
 					</div>
 					<div class="text">
 						<div id="textbox1" class="textbox">
-							<p>Hyundai Yeni i30’da bagaj kapasitesi 395 litreye kadar çıkartıldı. Bu da gerçekten geniş bir bagaj hacmi sunduğu anlamına geliyor.</p>
+							<p>Новый i30 имеет очень вместительный багажник, объем которого увеличен до 395 литров.</p>
 						</div>	
 					</div>
 				</div>	
@@ -1199,7 +1199,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>Vay, oldukça fazla sayıda eşya yüklemek mümkün. Bu inanılmaz !</p>
+							<p>Ого, здесь действительно может много всего уместиться.</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1235,7 +1235,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>O halde, haydi çadırımızı kuralım. <br>Ben çadırı kurarken neden sen de müzik açmıyorsun ?</p>
+						<p>Нужно поставить палатку.<br>А пока я ставлю ее, почему бы вам не включить музыку?</p>
 					</div>
 				</div>
 			</div>
@@ -1266,7 +1266,7 @@
 					<?php } ?>
 				</div>	
 					<div id="textbox1" class="textbox">
-						<p>Bir saniye, öncelikle telefonu bağlamam lazım. Telefonum nerede ?</p>
+						<p>Подождите секундочку, мне нужно сначала подключить свой телефон. Где же он?</p>
 					</div>		
 				</div>
 			</div>
@@ -1289,7 +1289,7 @@
 		<div data-role="main" class="ui-content">
 			<div class="imgwrap">
 				<div class="text_i">		
-						<p>Hangi Tip Akıllı Telefon Kullanıyorsunuz ?</p>
+						<p>Какой у вас смартфон?</p>
 				</div>
 				<div class="device_wrap">
 					<a href="#page85" class="deviceL"><div ><img src="../images/day2/42_btn_left.png" alt=""></div></a>
@@ -1317,10 +1317,10 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">	
-						<p>Eşleştirme Tamamlandı.</p>
+						<p>Соединение установлено</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>Müzik Çalma</p>
+						<p>Включите музыку</p>
 					</div>
 				</div>
 			</div>
@@ -1354,7 +1354,7 @@
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
 				</div>
 				<div class="text">	
-					<p>İ30 internet, mobil servisler,uzaktan kontrol, sesli komut yardımcısı ve Android Auto vasıtası ile çağrı yapma / cevaplama gibi bir çok özelliğin kullanımına olanak tanır. Hyundai Yeni i30 ile, bunlar gibi daha birçok akıllı teknoloji özelliklerini kullanmak mümkün.</p>
+					<p>Система Android Auto в i30 позволяет пользоваться доступом в интернет, мобильными службами, дистанционным управлением, навигационной системой с голосовыми подсказками, а также совершать телефонные звонки.<br>Поддерживается большинство функций смартфона.</p>
 				</div>
 			</div>
 			<a href="#page89" id="go_page89" class="next_p_btn ui-btn go-next">
@@ -1380,10 +1380,10 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">	
-						<p>Eşleştirme Tamamlandı.</p>
+						<p>Соединение установлено.</p>
 					</div>
 					<div id="textbox2" class="textbox">
-						<p>Müzik Çalma</p>
+						<p>Включите музыку.</p>
 					</div>
 				</div>
 			</div>
@@ -1417,7 +1417,7 @@
 					<img src="../images/button/tail_3_@3x.png" alt="text box">
 				</div>
 				<div class="text">	
-					<p>İ30 Apple Car Play fonksiyonunu desteklemektedir. Böylece basit bir eşleştirme ile navigasyon, çağrı yapma/cevaplama ve müzik gibi telefonunuzun sağladığı bir çok fonksiyonu aracınızda da kullanabilirsiniz.</p>
+					<p>i30 поддерживает систему Apple Car Play, которая после несложной процедуры спаривания, позволяет пользоваться навигационной системой, совершать звонки и воспроизводить музыку.</p>
 				</div>
 			</div>
 			<a href="#page89" id="go_page89" class="next_p_btn ui-btn go-next">
@@ -1447,7 +1447,7 @@
 					<?php } ?>
 				</div>	
 					<div id="textbox1" class="textbox">
-						<p>Çadırımızı kurarken sesi biraz daha açmamız gerekecek.</p>
+						<p>Почему бы не сделать погромче, пока мы ставим палатку, дружище?</p>
 					</div>		
 				</div>
 				<div class="text_tip">
@@ -1475,7 +1475,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>Müzik zevkin gerçekten iyi !<br>Haydi gün batmadan işimizi bitirelim.</p>
+							<p>У вас очень хороший музыкальный вкус.<br>Нужно поторапливаться, чтобы успеть до заката.</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1512,7 +1512,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Oo, şarjım bitmek üzere. Benim için telefonumu şarj edebilir misin ?</p>
+						<p>О, батарея в моем телефоне почти села. Поставьте, пожалуйста, его на зарядку?</p>
 					</div>
 				</div>
 			</div>
@@ -1539,7 +1539,7 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">	
-						<p>Kablosuz şarj için lütfen telefonunuzu buraya koyunuz.</p>
+						<p>Положите телефон на панель для беспроводной зарядки.</p>
 					</div>
 				</div>
 			</div>
@@ -1597,7 +1597,7 @@
 				</div>
 				<div class="text">
 					<div id="textbox1" class="textbox">
-						<p>İ30’un kablosuz şarj özelliği ile telefonunuzu kolaylıkla şarj edebilirsiniz.<br>Şarj etme işlemi tamamlandığında, led rengi yeşil olacaktır.</p>
+						<p>Для удобства в автомобиле предусмотрено устройство беспроводной зарядки. Когда телефон полностью заряжен, индикатор становится зеленым!</p>
 					</div>
 				</div>
 			</div>
@@ -1622,7 +1622,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>Hava neredeyse karardı. Kamp yaparken gölü seyretmek harika değil mi ?</p>
+							<p>Уже стемнело. Разве это не здорово — отдыхать на природе и любоваться видом на озеро?</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1655,7 +1655,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Ne kadar karamsar bir hava !<br>Haydi bir şarkı çalayım.</p>
+						<p>Позвольте в этот прекрасный вечер сыграть песню.</p>
 					</div>
 				</div>
 			</div>
@@ -1680,7 +1680,7 @@
 				
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>Kamp yaparken zamanın nasıl geçtiğini anlamadık, geç oldu değil mi ?<br>Şimdi uyuyalım ve yarın Zürih’i keşfedelim, olur mu ?</p>
+						<p>Теперь давайте хорошенько выспимся, а завтра отправимся на знакомство с Цюрихом.</p>
 					</div>
 				</div>
 				<div class="text_tip">
@@ -1707,7 +1707,7 @@
 			<div class="textwrap">
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>İyi uyuyabildin mi ?<br>Eşyalarımızı toplayıp bir an evvel yola çıkalım.</p>
+						<p>Вы хорошо выспались?<br>Давайте соберем вещи и продолжим наш путь.</p>
 					</div>
 				</div>
 				<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1743,7 +1743,7 @@
 				</div>
 				<div class="text">	
 					<div id="textbox1" class="textbox">
-						<p>İşte başlıyoruz. Haydi şu eşyaları bagaja yeniden yükleyelim.</p>
+						<p>Ну вот, нужно опять складывать вещи.</p>
 					</div>
 				</div>
 			</div>
@@ -1770,7 +1770,7 @@
 			<div class="textwrap">
 				<div class="text_i">
 					<div id="textbox1" class="textbox">	
-						<p>Bagajınıza eşya yüklemek için lütfen butona basınız.</p>
+						<p>Нажмите на кнопку, чтобы сложить багаж.</p>
 					</div>
 				</div>
 			</div>
@@ -1809,7 +1809,7 @@
 				</div>
 				<div class="text">
 					<div id="textbox1" class="textbox">
-						<p>i30’da, tek adımda katlanma özelliği ile bir dokunuş ile koltukları kolaylıkla yatırabilirsiniz.</p>
+						<p>Для удобства предусмотрена функция складывания спинок задних сидений одним движением рукоятки.</p>
 					</div>
 				</div>
 			</div>
@@ -1834,7 +1834,7 @@
 				<div class="textwrap">	
 					<div class="text">	
 						<div id="textbox1" class="textbox">
-							<p>Tüm eşyalarımızı aracımıza geri yükledik.<br>şimdi şehir turu için Zürih’e gidelim.</p>
+							<p>Хорошо, теперь весь багаж погружен в машину.<br>Продолжаем наш путь.</p>
 						</div>
 					</div>
 					<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">

@@ -580,7 +580,7 @@ var options = {
 					</div>
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
-							<div class="graphDesc">%30<br/><span>azaltıldı</span></div>
+							<div class="graphDesc">30%<br/><span>decrease</span></div>
 							<div class="graphLegend6">
 								<div><img src="/pd/images/day3/11_title_current-i30.png" /></div>
 								<div><img src="/pd/images/day3/09_title_i30.png" /></div>

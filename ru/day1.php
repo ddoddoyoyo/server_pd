@@ -143,7 +143,7 @@
 							<div class="loding_bar">
 								<img src="/pd/images/loading_bar_1.png" alt="" class="londing1">
 								<img src="/pd/images/loading_bar_2.png" alt="" class="londing2">
-								<div id="logind_text">Seyahatimiz hazırlanıyor…</div>
+								<div id="logind_text">Идет подготовка к поездке</div>
 							</div>
 						</div>
 					</div>
@@ -156,11 +156,11 @@
 						<div class="textwrap">
 							<div class="text">	
 								<h2 class="pointColor"><?=$_SESSION["HY_LMS_NAME"]?>!</h1>
-								<p>JAMES İLE TANIŞIN !<br><span class="pointColor">Uzun zamandır beklediğim i30’uma nihayet kavuştum !</span><br>Şimdi planladığımız gibi gezimize  başlayabiliriz.<br>Haydi aracımıza! Geliyorsunuz değil mi ?</p>
+								<p>Я Джеймс!<br><span class="pointColor">Наконец то, я получил i30, который ждал!</span><br>Теперь мы можем отправиться в запланированную поездку. <br>Садитесь в машину!</p>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box"></div>
 						</div>
-						<a href="#page3" class="yes_btn">EVET</a>
+						<a href="#page3" class="yes_btn">YES</a>
 						<div class="imgwrap">
 							<img src="../images/person/james_21.png" alt="james">
 						</div>
@@ -183,8 +183,8 @@
 						<a href="#page3001" id="go_page3001"  class="next_p_btn layer_landscape">
 							<div class="box">
 								<img class="icon-device" src="../images/icon_phonerotation_@3x.png" alt="">
-								<p>Ekranı yatay konuma getirin.</p>
-								<p class="ok_btn">TAMAM</p>
+								<p>Поверните устройство, чтобы сменить ориентацию экрана на ландшафтную.</p>
+								<p class="ok_btn">OK</p>
 							</div>
 						</a>
 					</div>
@@ -209,7 +209,7 @@
 							</div>	
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Seyahatimize başlamadan önce bu videoyu izleyelim. Ben bu videoyu izledikten sora i30’u almaya karar verdim.</p>
+									<p>Прежде чем мы отправимся в поездку, позвольте мне показать вам этот ролик. После того, как я сам посмотрел его, я решил купить i30.</p>
 								</div>
 							</div>
 						</div>
@@ -247,7 +247,7 @@
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 							<div class="text">	
-								<p>i30 ve benimle toplam 3 günde 6 farklı şehir gezeceksiniz. Rotamızı çoktan planladım bile.<br>Ne dersiniz, seyahatimize başlayalım mı ?</p>
+								<p>Вместе с вами я отправляюсь в трехдневную поездку по 6 городам. Маршрут я уже составил.<br>Давайте продолжим.</p>
 							</div>
 						</div>
 						<a href="#page5" id="go_page5" class="next_p_btn ui-btn go-next">
@@ -274,10 +274,10 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Milano’dan  başlayıp  Como Gölü boyunca devam edeceğiz. İsviçre’ye ulaşmak için öncelikle Stelvio Geçidi’ni kullanacağız.</p>
+									<p>Мы начнем наше путешествие с Милана, сделаем остановку у озера Комо и на перевале Стельвио и доедем до Швейцарии.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>İsviçre’de öncelikle Zürih ve Bern’i ziyaret edeceğiz. Ardından ise son durağımız olan Strazburg’a geçeceğiz.</p>
+									<p>В Швейцарии, мы сделаем остановки в Цюрихе и Берне, а затем отправимся в Страсбург, наш конечный пункт.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -310,17 +310,17 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<h1>1. Gün</h1>
+									<h1>День 1.</h1>
 									<div class="img_wrap">
 										<img src="../images/button/08_point.png" alt="location point">
 										<img src="../images/button/08_lodeline.png" alt="location">
-										<p class="p1">Milano</p>
-										<p class="p2">Como Gölü</p>
+										<p class="p1">МИЛАН</p>
+										<p class="p2">КОМО</p>
 									</div>
 									<ul>
-										<li>Gövde Yapısı</li>
-										<li>Süspansiyon</li>
-										<li>Dış Tasarım</li>
+										<li>Экстерьер</li>
+										<li>Рама кузова</li>
+										<li>Подвеска</li>
 									</ul>
 								</div>
 							</div>
@@ -350,7 +350,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Yolculuğumuz Milano’dan başlayacak. Ne kadar heyecan verici değil mi ?</p>
+									<p>Наше путешествие начинается в Милане. Разве это не захватывающе?</p>
 								</div>
 								<!-- <div id="textbox2" class="textbox">
 									<p>In Switzerland, we will be stop at Zurich and Bern to get to final spot Strasbourg.</p>
@@ -405,7 +405,7 @@
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 							<div class="text">	
-								<p>İşte ilk durağımız !<br>Sofistike güzelliği ile Milano’nun sembolü haline gelen Duomo Katedralini görmeden gidemezdim.</p>
+								<p>Здесь будет наша первая остановка!<br>Я не мог пропустить Миланский собор с его утонченной красотой. Он является символом Милана.</p>
 							</div>
 						</div>
 						<a href="#page10" id="go_page10" class="next_p_btn ui-btn go-next">
@@ -431,7 +431,7 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Ne kadar güzel bir gün ve ben ilk aracımla seyahatteyim.<br>Bu muhteşem !</p>
+									<p>Чудесный день, чтобы отправиться в поездку на моем первом автомобиле.<br>Ощущения превосходные!</p>
 								</div>
 							</div>	
 						</div>
@@ -461,7 +461,7 @@
 							</div>	
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Gördüğünüz üzere İtalya’daki  bu dar ve taş yollar, geçmişten günümüze miras olarak kalmış.</p>
+									<p>В Италии дороги узкие. При этом они сохранили мощеные дороги как историческое наследие.</p>
 								</div>
 							</div>
 					</div>
@@ -480,17 +480,17 @@
 							<img src="../images/button/icon_navbar.png" alt="">
 						</a>
 					</div>
-					<div data-role="main" class="ui-content ui-content_tr">
+					<div data-role="main" class="ui-content ui-content">
 						<div class="textwrap">
 							<div class="text_tip">
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Yol şartları gerçekten kötü, buna rağmen sürüş oldukça konforlu değil mi ?<br>Gövde yapısının daha da güçlendirildiğini duymuştum, bu yolda bunu gerçekten hissedebiliyorum.</p>
+									<p>Несмотря на очень плохое состояние дороги, ехать в этой машине комфортно.<br>Я слышал, что жесткость кузова i30 была увеличена, и я чувствую, что он устойчивый.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>Asfaltsız yolda bile bunu hissedebilmek gerçekten mükemmel.</p>
+									<p>Я в этом точно уверен, ведь я еду по дорогам без покрытия!</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -530,7 +530,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">
-									<p>Haydi, Gelişmiş Yüksek Mukavemetli Çelik (AHSS) uygulayalım!</p>
+									<p>Давайте используем AHSS (прогрессивная сталь повышенной прочности)</p>
 								</div>	
 							</div>
 						</div>
@@ -551,10 +551,10 @@
 						</a>
 					</div>
 					<div class="try_again">
-						<img src="../images/tryagain_tr.png"" alt="">
+						<img src="../images/tryagain_ru.png"" alt="">
 					</div>
 					<div class="good">
-						<img src="../images/tryagain_O_tr.png"" alt="">
+						<img src="../images/tryagain_O_ru.png"" alt="">
 					</div>
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
@@ -567,10 +567,11 @@
 											<img src="../images/intro/login_profile_@3x.png" alt="man">
 										<?php } ?>
 									</div>
-									<p>Bir önceki i30 ile kıyaslandığında, Gelişmiş Yüksek Mukavemetli Çelik Kullanımı %27,2’den<span>?</span>’e/ye çıkartılmıştır.</p>
+								</div>	
+									<p>Чтобы сделать раму кузова более жесткой, AHSS была использована для изготовления<span>?</span>критически важных элементов нового i30, что гораздо больше по сравнению с 27,2% у предыдущей модели.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p>Yukarıdaki boşluğa aşağıdakilerden hangisi getirilmelidir ?</p>
+									<p>Какой ответ Джеймсу будет правильным?</p>
 									<ul class="btn_num">
 										<a href="#" class="wrong"><li>17.7%</li></a>
 										<a href="#" class="wrong"><li>27.2%</li></a>
@@ -607,7 +608,7 @@
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
 							</div>
 							<div class="text">	
-								<p>Yeni i30’da gövde dayanımı, % 53,5 oranında Gelişmiş Yüksek Mukavemetli Çelik (AHSS) kullanımı ile arttırılmıştır.</p>
+								<p>Рама кузова нового i30 стала крепче благодаря увеличенному количеству элементов из высокопрочной стали - 53,5%</p>
 							</div>
 						</div>
 						<a href="#page16" id="go_page16" class="next_p_btn ui-btn go-next">
@@ -633,10 +634,10 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Hem konforu hem de sağlamlığı aynı anda nasıl hissedebildiğimi şimdi anladım.<br>Şimdi hatırladım, siz de Hyundai ailesinin bir parçasıydınız değil mi ?</p>
+									<p>Понятно. Вот почему я ощущаю комфорт и устойчивость.<br>О, вы работаете в Hyundai, не так ли?</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>Sizler benim düşündüğümden çok daha fazlasını biliyorsunuz. O zaman bana yolculuğumuz sırasında daha fazla bilgi verirsiniz değil mi ?</p>
+									<p>Вы знаете гораздо больше, чем я ожидал. Надеюсь, что многое от вас узнаю во время поездки.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -673,7 +674,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>İşte Duomo Katedrali’ne ulaştık !</p>
+									<p>Вот, мы подъезжаем к Миланскому собору.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -681,7 +682,7 @@
 							</div>
 						</div>
 						<div class="view_text">	
-							<a href="#page18"><p>Milano. Duomo Katedrali</p></a>
+							<a href="#page18"><p>Милан. Миланский собор.</p></a>
 							<a href="#page18" id="go_page18" class="next_p_btn ui-btn go-next">
 								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
@@ -710,13 +711,13 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Bunu bilmeniz gerek. Duomo Katedrali ölmeden önce görmeniz gereken 1001 yer arasında yer alıyor.</p>
+									<p>Вам нужно это знать. Миланский собор — одно из «1001 здания, которое нужно увидеть».</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>Katedral heybetli bir büyüklüğe sahip olmakla birlikte içerisinde birçok farklı sofistike heykel bulunmakta.</p>
+									<p>В этом огромном соборе есть множество изящных скульптур.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Katedralin çatısından bütün Milano’yu görmek mümkün.</p>
+									<p>С крыши собора виден весь Милан.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -750,7 +751,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Haydi acele et !<br>Artık gitmemiz gerek !</p>
+									<p>Поторопитесь!<br>Нужно ехать дальше.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -777,7 +778,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Bu şehir oldukça dar ve engebeli yollara  sahip.<br>Belki de bu yüzden, bütün şehirde yaygın bir tramvay ağı mevcut.</p>
+									<p>Видите, как много в городе узких ухабистых дорог.<br>Может, это из-за городских трамваев?</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -807,7 +808,7 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>İ30 C segmentinde bir hatchback. Bu yüzden sürüşü oldukça kolay hale getiriyor. Engebeli yollardan geçtiğimde araç arkası sarsılmadan pürüzsüz bir şekilde ilerleyebiliyorum.</p>
+									<p>На этом хэтчбеке, действительно, удобно перемещаться по городу благодаря его компактным размерам. Чувствуется, что задняя часть очень мягко приземляется при движении по ухабистой дороге.</p>
 								</div>
 							</div>
 						</div>
@@ -850,13 +851,13 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Çok Noktadan Bağlantılı Arka Süspansiyon sisteminin, yol tutuş kuvvetini arttırmak için genellikle spor araçlarda kullanıldığını biliyor muydunuz ?</p>
+									<p>Вы знаете, что многорычажной подвеской обычно оснащают спортивные автомобили для обеспечения более надежного сцепления с дорогой?</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p>i30 aynı zamanda, farklı yol koşullarında tutuş kuvvetini sabit tutmak için 5 bağlantı ile çok noktadan bağlantılı arka süspansiyon sistemini kullanır.</p>
+									<p>i30 имеет подвеску с 5 рычагами, которая обеспечивает стабильное сцепление с дорогой любого типа.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Çok Noktadan Bağlantılı Arka Süspansiyon sisteminin önemini, özellikle virajlı yollarda anlayabilirsiniz.</p>
+									<p>По-настоящему оценить достоинства многорычажной подвески можно на извилистой дороге.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -894,10 +895,10 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Anladım. Çok Noktadan Bağlantılı Süspansiyon siteminin iyi olduğunu aracımı satın alırken duymuştum. Fakat bu şekilde teknik açıklamasını duymak daha iyi anlamama yardımcı oldu.</p>
+									<p>Понятно. Когда я покупал автомобиль, мне просто сказали, что многорычажная подвеска это хорошо, но ваше объяснение технической стороны вопроса оказалось для меня гораздо полезней.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>Aracımı virajlı yollarda da deneyimlemek için sabırsızlanıyorum !</p>
+									<p>Поскорей бы выехать на извилистую дорогу.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -961,7 +962,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>İşte Sforzesco Şatosu !</p>
+									<p>Впереди замок Сфорца</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -969,7 +970,7 @@
 							</div>
 						</div>
 						<div class="view_text">	
-							<a href="#page26"><p>Milano. Sforzesco Şatosu</p></a>
+							<a href="#page26"><p>Милан. Замок Сфорца.</p></a>
 							<a href="#page26" id="go_page26" class="next_p_btn ui-btn go-next">
 								<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 							</a>
@@ -998,16 +999,16 @@
 								</div>
 							<div class="text">		
 								<div id="textbox1" class="textbox">
-									<p>Leonardo Da Vinci ve Donato Bramante’nin, Sforzesco Şatosu’nun inşasında rol aldıklarını biliyor muydunuz ?</p>
+									<p>Вы знаете, что в работе над интерьером замка Сфорца принимали участие Леонардо да Винчи и Браманте?</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>Bu şato, 15. yüzyıl Rönesans döneminin sembolü haline gelmiş bir  mimari yapıdır.</p>
+									<p>Это характерный пример архитектуры Ренессанса XV века.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Bu ünlü mimari yapı, Lord Francesco Sforza tarafından yaratılmıştır.</p>
+									<p>Построил замок Франческо Сфорца.</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p>Günümüzde ise, müze ve sanat galerisi olarak kullanılmakta.</p>
+									<p>В наши дни здесь открыты музей и художественная галерея.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1043,7 +1044,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>İlk bakışta devasa bir büyülükte görünmese de, bütünsel halini ne kadar iyi koruduğunu görüyorsunuz. Sanki evdeymişim gibi hissettiriyor.</p>
+									<p>Это масштабное строение очень хорошо сохранилось.</p>
 								</div>							
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1077,7 +1078,7 @@
 						</div>
 						<div class="textwrap">
 							<div class="text">	
-								<p>Bu mimari yapıyı da izlerken aynı heyecanı hissediyorum. Kendi aracım diye söylemiyorum ama yeni i30’un tasarımı sizce de oldukça havalı değil mi ?</p>
+								<p>Эти великолепные архитектурные сооружения — захватывающее зрелище. Классный дизайн i30 также обращает на себя внимание.</p>
 							</div>
 							<div class="text_tip">
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1141,10 +1142,10 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Üst üste konumlandırılmış basamaklı ızgara, i30’a çok daha spor bir görünüm vermiş. Buna ek olarak genişletilmiş logonun teknolojik ve sofistike görünümüyle birlikte, akıllı fonksiyonları sağlayan ön radar sensörünü de barındırıyor.</p>
+									<p>Каскадная решетка радиатора еще больше подчеркивает спортивный образ, а увеличенная эмблема объединена с радаром, обеспечивающим работу интеллектуальных систем безопасности.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p>Kişisel olarak benim de bu araçta en sevdiğim şey olan ön ızgara çerçevesi, araca sofistike bir görünüm kazandırıyor.</p>
+									<p>Контур решетки очень изящный, и это моя любимая деталь дизайна.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1198,7 +1199,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">
-									<p>Haydi i30’un karakter çizgisini birlikte çizmeyi deneyelim !</p>
+									<p>Давайте проведем характерную боковую линию i30.</p>
 								</div>	
 							</div>
 						</div>
@@ -1247,7 +1248,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>i30 kesinlikle c segmentine ait bir araç ancak bu segmentteki diğer araçlara kıyasla oldukça zarif görünüyor. Uzun ön kaput oranı sütunların açısıyla birlikte uzun karakter çizgisi görünümünü pekiştiriyor.</p>
+									<p>Конечно, это компактный автомобиль, но он выглядит очень элегантно! Удлиненный капот и характерная линия, идущая вдоль боковой части кузова, визуально удлиняют его.</p>
 								</div>
 							</div>
 						</div>
@@ -1308,7 +1309,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Parlak siyah spoyler ile bütünleşik 3. stop lambası ve yukarı konumlandırılmış arka sis ve reflektörler, i30’u diğer araçlardan farklı kılıyor. Kişisel olarak tasarımın Golf’ten çok daha iyi göründüğünü söyleyebilirim.</p>
+									<p>На спойлере установлен светодиодный стоп-сигнал, а сдвоенный наконечник глушителя — уникальная деталь, которой нет у многих других автомобилей. На мой вкус, дизайн этой машины гораздо лучше, чем у Golf.</p>
 								</div>
 							</div>
 						</div>
@@ -1361,7 +1362,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Como Gölü ile devam edelim mi ?</p>
+									<p>Давайте поедем дальше, к озеру Комо.</p>
 								</div>
 								<!-- <div id="textbox2" class="textbox">
 									<p>In Switzerland, we will be stop at Zurich and Bern to get to final spot Strasbourg.</p>
@@ -1391,7 +1392,7 @@
 							
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Gün batmadan orada olmak için acele etmemiz gerek.</p>
+									<p>Нам нужно спешить, чтобы успеть до заката.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1426,7 +1427,7 @@
 								<?php } ?>
 							</div>	
 								<div id="textbox1" class="textbox">
-									<p>Hava kararmaya başladı, i30’un dual led farlarının oldukça aydınlık bir görüş sağladığını duymuştum. Bu doğru mu ?</p>
+									<p>Уже темнеет. Я слышал, что у i30 светодиодные фары, которые гораздо ярче освещают пространство впереди автомобиля.</p>
 								</div>		
 							</div>
 						</div>
@@ -1468,7 +1469,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Evet, oldukça parlak. Led farlar daha ilerisini görme imkanı sunarken Uzun Far Asistanı (HBA) dağ yolundan sorunsuzca geçmemizi sağlayacak.</p>
+									<p>Да, они действительно яркие. Я могу видеть гораздо дальше, а система автоматического переключения дальнего света облегчает поездку по горной дороге.</p>
 								</div>
 							</div>
 						</div>
@@ -1494,7 +1495,7 @@
 						</div>
 						<div class="textwrap">
 							<div class="text">	
-								<p>Bugün artık geç oldu. Hadi geceyi burada geçirmek için bir pansiyon bulalım.</p>
+								<p>Уже поздно, поэтому мы переночуем здесь, в хостеле.</p>
 							</div>
 							<div class="text_tip">
 								<img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1523,7 +1524,7 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>İyi geceler, yarın görüşürüz..</p>
+									<p>Спокойной ночи. Увидимся завтра.</p>
 								</div>
 							</div>
 							<a href="#page43" id="go_page43" class="next_p_btn ui-btn go-next">
@@ -1553,7 +1554,7 @@
 						<a href="#page44"><div class="imgwrap">
 							<img id="waking" src="../images/day1/alarm.gif" alt="">
 							<!-- <img id="waking2" src="../images/day1/icon_waking_2.png" alt=""> -->
-							<img src="../images/day1/btn_wakingup_tr.png" alt="">
+							<img src="../images/day1/btn_wakingup_ru.png" alt="">
 						</div>
 						</a>
 						<a href="#page44" class="next_finger">
@@ -1575,7 +1576,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Araç içi ile devam etmeden önce içerideki dağınıklığı temizleyelim.</p>
+									<p>Прежде чем мы отправимся дальше, давайте наведем порядок внутри автомобиля.</p>
 								</div>	
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1605,7 +1606,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Şimdi oldu. Sanki fabrikadan yeni çıkmış gibi.</p>
+									<p>Вот теперь он чистый, как будто только что с завода.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1652,7 +1653,7 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p>Aklıma gelmişken, 5 farklı iç seçeneğimiz mevcut ve sen kırmızı olanı tercih etmiştin. Diğer renk seçeneklerine birlikte göz atalım mı ? <br>[Türkiye pazarı için iç renkler farklılık gösterebilir]</p>
+									<p>Всего имеется пять вариантов расцветки интерьера, и вы выбрали красный. Давайте узнаем, какие еще есть цвета.</p>
 								</div>
 							</div>
 						</div>
@@ -1694,19 +1695,19 @@
 							</div>
 							<div class="text">
 								<div id="textbox1" class="textbox">
-									<p><strong>Kırmızı</strong> rengin gücü, siyah deri döşeme ile kontrast oluştururken iç mekana premium bir görünüm kazandırıyor.</p>
+									<p><strong>Ярко-красный</strong> цвет хорошо контрастирует с черной кожей.</p>
 								</div>	
 								<div id="textbox2" class="textbox">
-									<p><strong>Siyah</strong> kumaş ve deri kombinasyonu iç mekana şık bir görünüm kazandırıyor.</p>
+									<p><strong>Черные</strong> ткань и кожа придают интерьеру современный вид.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p><strong>Gri</strong> deri iç döşeme seçeneği araç içinde oldukça sade ve ferah bir görünüm sağlıyor.</p>
+									<p>Кожаные элементы <strong>серого</strong> цвета соответствуют строгому образу.</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p><strong>İndigo mavi</strong> seçeneği iç mekana genç ve canlı bir görünüm kazandırıyor.</p>
+									<p><strong>Цвет индиго</strong> ассоциируется с молодостью и приподнятым настроением.</p>
 								</div>
 								<div id="textbox5" class="textbox">
-									<p><strong>Büyüleyici bordo</strong> renkli koltuklar, seçkin bir görünüm sağlarken aynı zamanda iç mekana canlılık kazandırıyor.</p>
+									<p>Эффектный <strong>бордовый цвет</strong> как элегантный и яркий штрих.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -1742,7 +1743,7 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">
-									<p>James ile konuşmak için favori iç mekan renginizi seçin.</p>
+									<p>Выберите больше всего понравившийся вам цвет интерьера.</p>
 								</div>	
 							</div>
 						</div>
@@ -1782,19 +1783,19 @@
 								<?php } ?>
 							</div>	
 								<div id="textbox1" class="textbox">
-									<p>Spor araç konseptini destekleyen <strong>Kırmızı</strong> iç mekanı ben de beğendim.</p>
+									<p>Мне нравится интерьер со спортивными красными вставками, характерными для спорт-каров.</p>
 								</div>		
 								 <div id="textbox2" class="textbox">
-									<p>İç mekanda, tamamen <strong>Siyah</strong> kullanımın verdiği şık görünüm benim de tercihim.</p>
+									<p>Я предпочитаю атмосферу шика, которую создает полностью черный интерьер.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p><strong>Gri</strong> kolay kolay sıkılmayacağınız bir renk. Ben de iç mekanda kesinlikle griyi tercih ederdim.</p>
+									<p>Серый — это цвет, который мне долго не надоест, поэтому я выбирают серый интерьер.</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p>Bir metropol insanı olarak <strong>Indigo maviyi</strong> gerçekten çok sevdim.</p>
+									<p>Поскольку, я городской человек, мне нравится интерьер цвета индиго.</p>
 								</div>
 								<div id="textbox5" class="textbox">
-									<p>İşte bu ! <strong>Büyüleyici bordo</strong> rengi gerçekten çok güzel.</p>
+									<p>Мне нравится эффектный бордовый интерьер, потому что бордовый цвет лучше выражает индивидуальность.</p>
 								</div> 
 							</div>
 						</div>
@@ -1822,17 +1823,17 @@
 						<div class="textwrap">
 							<div class="text_i">
 								<div id="textbox1" class="textbox">
-									<p>İ30 İç Mekan Rengi için Sonuçlar.</p>
+									<p>Наиболее популярные цвета интерьера i30.</p>
 								</div>	
 							</div>
 						</div>
 						<div class="imgwrap">	
 							<ul>
-								<li><span class="g_title">Kırmızı</span><span class="g_num" id="red">25</span></li>
-								<li><span class="g_title">Siyah</span><span class="g_num" id="black">5</span></li>
-								<li><span class="g_title">Gri</span><span class="g_num" id="gray">20</span></li>
-								<li><span class="g_title">Indigo Mavi</span><span class="g_num" id="ind_blue">15</span></li>
-								<li><span class="g_title">Büyüleyici Bordo</span><span class="g_num" id="burgundy">10</span></li>
+								<li><span class="g_title">КРАСНЫЙ</span><span class="g_num" id="red">25</span></li>
+								<li><span class="g_title">ЧЕРНЫЙ </span><span class="g_num" id="black">5</span></li>
+								<li><span class="g_title">СЕРЫЙ </span><span class="g_num" id="gray">20</span></li>
+								<li><span class="g_title">ИНДИГО </span><span class="g_num" id="ind_blue">15</span></li>
+								<li><span class="g_title">БОРДОВЫЙ</span><span class="g_num" id="burgundy">10</span></li>
 							</ul>
 						</div>
 					</div>
@@ -1855,7 +1856,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Kim ne derse desin benim favorim kırmızı. Bu rengi seçmek tam bir haftamı aldı.</p>
+									<p>Что бы ни говорили другие, мой любимый — красный. Я целую неделю выбирал.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1885,7 +1886,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>O zaman Como Gölü’ne bir bakalım. Burası boş vakitleri değerlendirmek için İtalya’daki en iyi yer.</p>
+									<p>Теперь же давайте полюбуемся на озеро Комо, лучшее в Италии место отдыха.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">
@@ -1914,7 +1915,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Como Gölü, George Clooney ve John Legend’ın burada evlenmesi ile çok daha ünlendi.</p>
+									<p>Озеро Комо получило еще большую известность после того, как здесь сыграли свои свадьбы Джордж Клуни и Джон Ледженд.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1945,7 +1946,7 @@
 						<div class="textwrap">
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Como Gölü, uzun zamandır Avrupa’da hasta olan kişilerin sağlığına kavuşmak için geldikleri bir yer olarak bilinmektedir.</p>
+									<p>Озеро Комо также уже давно известно как одно из мест для отдыха в Европе.</p>
 								</div>
 							</div>
 							<div class="text_tip">
@@ -1953,7 +1954,7 @@
 							</div>
 						</div>
 						<div class="view_text">	
-							<a href="#page54"><p>Como Gölü</p></a>
+							<a href="#page54"><p>Озеро Комо</p></a>
 							<a href="#page54" id="go_page54" class="next_p_btn ui-btn go-next">
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
@@ -1982,16 +1983,16 @@
 							</div>
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Orta Çağ’da Como Gölü, birçok lordun ve sanatçının serbest zamanlarını değerlendirmek için tercih ettikleri bir yerdi.</p>
+									<p>Еще в средневековье многие лорды и художники выбирали для отдыха озеро Комо.</p>
 								</div>
 								<div id="textbox2" class="textbox">
-									<p>Ne kadar güzel bir yer.</p>
+									<p>Здесь просто так красиво.</p>
 								</div>
 								<div id="textbox3" class="textbox">
-									<p>Sanki bir peri masalındaymışız gibi, değil mi?</p>
+									<p>Прямо как в сказке, не так ли?</p>
 								</div>
 								<div id="textbox4" class="textbox">
-									<p>Şimdi insanların neden burayı seçtiklerini anlıyorum.</p>
+									<p>Теперь я понимаю, почему люди ездят сюда.</p>
 								</div>
 								<div class="btn_box">
 									<a href="#" id="go_next1" class="text_btn_l">
@@ -2027,7 +2028,7 @@
 						<div class="textwrap">	
 							<div class="text">	
 								<div id="textbox1" class="textbox">
-									<p>Haydi bir sonraki durağımızla devam edelim.</p>
+									<p>Ладно, давайте продолжим наш путь.</p>
 								</div>
 							</div>
 							<div class="text_tip"><img src="../images/button/tail_3_@3x.png" alt="text box">

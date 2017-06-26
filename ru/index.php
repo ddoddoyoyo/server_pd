@@ -7,7 +7,7 @@
 	}
 ?>
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
@@ -132,7 +132,7 @@
 						</div>
 						<!-- <a href="#page1"><p class="intro_start">START</p></a> -->
 						<a href="#page1" id="go_page1" class="next_p_btn ui-btn go-next">
-							<img src="../images/button/start_btn_ru.png" alt="next button">
+							<img src="../images/button/start_btn.png" alt="next button">
 						</a>
 						<!-- <div class="imgwrap">
 							<img src="../images/intro/hyundai_logo.png" alt="logo">
@@ -155,8 +155,8 @@
 
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
-							<h1>Merhaba.</h1>
-							<h2>Adınız Nedir?</h2>
+							<h1>Здравствуйте.</h1>
+							<h2>Как вас зовут?</h2>
 
 						</div>
 						<a class="btn btn-change" href="javascript:;">
@@ -184,7 +184,7 @@
 								</select>
 							</div>
 							<input type="text" id="input_name" placeholder="NAME" name="LMS_NAME">
-							<a href="javascript:;" id="Login_Action" class="intnext_btn">İLERİ</a>
+							<a href="javascript:;" id="Login_Action" class="intnext_btn">следующий</a>
 						</div>
 					</div></form>
 				</section>
