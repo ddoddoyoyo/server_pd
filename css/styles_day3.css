@@ -2679,6 +2679,12 @@ img {
 	position: relative;
     top: 20px;
 }
+#page37.es .ui-content {
+	max-width: 44%;
+}
+#page37.es .ui-content  .imgwrap{
+	width: 50%;
+}
 @media only screen and (orientation:Portrait) {
 	#page37 .ui-content {
 		display:none !important; } }

@@ -670,7 +670,7 @@ $(document).ready(function(){
 			audio_pause();
 		}, 
 		"pageshow" : function(){
-			$('#page66').css({"background":"url(../images/day2/16_photo_1.jpg)","background-repeat":"no-repeat", "background-size":"auto 100%"}).show();
+			$('#page66').css({"background":"url(../images/day2/16_photo_1.jpg)","background-repeat":"no-repeat", "background-size":"100% auto"}).show();
 			$("#page66 .next_finger img").css({"left":"44%","top":"12%"});
 			//$("#page66 .pointbtn").css({"left":"54%","top":"26%"});
 			$("#page66 .next_finger, #page66 .next_finger img").show();
@@ -684,7 +684,7 @@ $(document).ready(function(){
 		//console.log(ahss_ck);
 		$("#page66 .next_finger,#page66 .next_finger img").hide();
 		if(ahss_ck % 3 ==1){
-			$('#page66').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day2/16_photo_2.jpg)","background-repeat":"no-repeat", "background-size":"auto 100%"}).fadeIn(500);
+			$('#page66').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day2/16_photo_2.jpg)","background-repeat":"no-repeat", "background-size":"100% auto"}).fadeIn(500);
 			$("#page66 .next_finger").fadeIn(500);
 			$("#page66 .next_finger img").css({"left":"15%","top":"43%"}).delay(1500).fadeIn(500);
 			//$("#page66 .pointbtn").css({"left":"30%","top":"46%"}).delay(1500).fadeIn(500);
@@ -693,7 +693,7 @@ $(document).ready(function(){
 			//$("#page66 .incremental-counter").incrementalCounter({"digits": "auto"});
 
 		}else if(ahss_ck  % 3 ==2){
-			$('#page66').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day2/16_photo_3.jpg)","background-repeat":"no-repeat", "background-size":"auto 100%"}).fadeIn(500);
+			$('#page66').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day2/16_photo_3.jpg)","background-repeat":"no-repeat", "background-size":"100% auto"}).fadeIn(500);
 			$("#page66 .next_finger").fadeIn(500);
 			$("#page66 .next_finger img").css({"left":"31%","top":"55%"}).delay(1500).fadeIn(500);
 			//$("#page66 .pointbtn").css({"left":"43%","top":"58%"}).delay(1500).fadeIn(500);
@@ -701,7 +701,7 @@ $(document).ready(function(){
 			//$("#page66 .incremental-counter#decimal").attr('data-value','2');
 			//$("#page66 .incremental-counter").incrementalCounter({"digits": "auto"});
 		}else if(ahss_ck % 3 ==0){
-			$('#page66').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day2/16_photo_4.jpg)","background-repeat":"no-repeat", "background-size":"auto 100%"}).fadeIn(500);
+			$('#page66').css({"transition":"background-image 1s ease-in-out","background":"url(../images/day2/16_photo_4.jpg)","background-repeat":"no-repeat", "background-size":"100% auto"}).fadeIn(500);
 			$("#page66 .next_p_btn, #page66 .img_ex").delay(1500).fadeIn(500);
 			//$("#page66 .incremental-counter#int").attr('data-value','53');
 			//$("#page66 .incremental-counter#decimal").attr('data-value','5');

@@ -43,11 +43,11 @@
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
 		  //주소창 없애기
-			//  $(document).on("mobileinit", function () {
-			// 	 $.mobile.hashListeningEnabled = false;
-			// 	 $.mobile.pushStateEnabled = false;
-			// 	 $.mobile.changePage.defaults.changeHash = false;
-			// });
+			 $(document).on("mobileinit", function () {
+				 $.mobile.hashListeningEnabled = false;
+				 $.mobile.pushStateEnabled = false;
+				 $.mobile.changePage.defaults.changeHash = false;
+			});
 		</script>
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
@@ -79,9 +79,9 @@
 			//console.log($("#current-img").height() );
 			//console.log($("#current-img").width() );
 
-			// $.mobile.hashListeningEnabled = false;
-			// $.mobile.pushStateEnabled = false;
-			// $.mobile.changePage.defaults.changeHash = false;
+			$.mobile.hashListeningEnabled = false;
+			$.mobile.pushStateEnabled = false;
+			$.mobile.changePage.defaults.changeHash = false;
 
 			var lms_img = "<? echo $LMS_IMAGE ?>";
 
@@ -1806,7 +1806,7 @@
 					<audio class="audio5" src="../tts/day1/tom/021.mp3"></audio> -->
 				</section>
 
-				<section data-role="page" id="page50" class="container">
+				<section data-role="page" id="page50" class="container es">
 					<div data-role="header" class="header">
 						<a href="#" class="ui-btn go-back back" data-rel="back">
 							<img src="../images/button/icon_arrow.png" alt="">
@@ -2037,7 +2037,7 @@
 							<img src="../images/button/btn_next_02_@3x.png" alt="next button">
 						</a>
 					</div>
-					<audio class="audio1" src="../tts/day1/044.mp3"></audio>
+					<!-- <audio class="audio1" src="../tts/day1/044.mp3"></audio> -->
 				</section>
 
 

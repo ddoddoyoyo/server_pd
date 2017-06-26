@@ -3292,6 +3292,9 @@ img {
         #page50 .ui-content .imgwrap ul li .g_num#burgundy {
           background: linear-gradient(to left, #581d1d, rgba(88, 29, 29, 0.3)); }
 
+#page50.es .ui-content .textwrap .text_i {
+  width: 96%; }
+
 @media only screen and (orientation: Portrait) {
   #page50 .ui-content {
     display: none !important; } }
@@ -4400,7 +4403,7 @@ img {
 #page66 {
   background-image: url("../images/day2/16_photo_1.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%; }
+  background-size: 100% auto; }
   #page66 .ui-content {
     margin: 0;
     padding: 0;
@@ -4670,6 +4673,11 @@ img {
         transform: rotate(90deg); }
       #page70 .ui-content .textwrap .text {
         overflow: hidden; }
+
+#page70.es .ui-content .textwrap {
+  width: 42%; }
+  #page70.es .ui-content .textwrap .text_img2 {
+    width: 45%; }
 
 @media only screen and (orientation: Portrait) {
   #page70 .ui-content {

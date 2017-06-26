@@ -2,7 +2,7 @@
 #page66 {
   background-image:url('../images/day2/16_photo_1.jpg');
   background-repeat:no-repeat;
-  background-size: auto 100%;
+  background-size: 100% auto;
   //opacity: 0.7;
    .ui-content {
       @include reset-margins;
