@@ -148,7 +148,7 @@
 		<div id="wrap">
 			<div id="contBox" class="container">
 <!--day2-->
-	<section data-role="page" id="page5601" class="container"> 
+	<section data-role="page" id="page5601" class="container ru"> 
 		<div data-role="main" class="ui-content">
 			<div class="imgwrap">
 				<div class="gif_img">

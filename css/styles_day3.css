@@ -464,6 +464,12 @@ img {
           margin-top: 10px;
           text-align: center;
           color: #206cdb; }
+          
+#page1001.ru .ui-content .imgwrap .loding_bar {
+  width: 220px; }
+  #page1001.ru .ui-content .imgwrap .loding_bar .londing2 {
+    top: 1px;
+    bottom: auto; }
 
 #page0 {
 	background:url("../images/day3/02_bg_map_1.jpg") no-repeat;

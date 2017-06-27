@@ -243,7 +243,7 @@ var options = {
 		<div id="wrap">
 			<div id="contBox" class="container">
 
-			<section data-role="page" id="page1001" class="container"> 
+			<section data-role="page" id="page1001" class="container ru"> 
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
 							<div class="gif_img">

@@ -700,7 +700,10 @@ img {
           color: #206cdb; }
 
 #page1001.ru .ui-content .imgwrap .loding_bar {
-  width: 230px; }
+  width: 220px; }
+  #page1001.ru .ui-content .imgwrap .loding_bar .londing2 {
+    top: 1px;
+    bottom: auto; }
 
 #page2 {
   background: url("../images/intro/03_bg_3_2_@3x.jpg") no-repeat;
@@ -3647,6 +3650,12 @@ img {
           margin-top: 10px;
           text-align: center;
           color: #206cdb; }
+
+#page5601.ru .ui-content .imgwrap .loding_bar {
+  width: 220px; }
+  #page5601.ru .ui-content .imgwrap .loding_bar .londing2 {
+    top: 1px;
+    bottom: auto; }
 
 #page56 {
   background: #000; }
