@@ -134,7 +134,7 @@
 	<body>
 		<div id="wrap">
 			<div id="contBox" class="container">
-				<section data-role="page" id="page1001" class="container"> 
+				<section data-role="page" id="page1001" class="container ru"> 
 					<div data-role="main" class="ui-content">
 						<div class="imgwrap">
 							<div class="gif_img">
@@ -1751,11 +1751,11 @@
 						
 						<div class="imgwrap">
 							<ul class="choice_color">
-								<a href="#page49" id="ch1" onclick="choice_color('1')"><li><img src="../images/day1/78_btn_01.png" alt=""></li></a>
-								<a href="#page49" id="ch2" onclick="choice_color('2')"><li><img src="../images/day1/78_btn_02.png" alt=""></li></a>
-								<a href="#page49" id="ch3" onclick="choice_color('3')"><li><img src="../images/day1/78_btn_03.png" alt=""></li></a>
-								<a href="#page49" id="ch4" onclick="choice_color('4')"><li><img src="../images/day1/78_btn_04.png" alt=""></li></a>
-								<a href="#page49" id="ch5" onclick="choice_color('5')"><li><img src="../images/day1/78_btn_05.png" alt=""></li></a>
+								<a href="#page49" id="ch1" onclick="choice_color('1')"><li><img src="../images/day1/78_btn_01_ru.png" alt=""></li></a>
+								<a href="#page49" id="ch2" onclick="choice_color('2')"><li><img src="../images/day1/78_btn_02_ru.png" alt=""></li></a>
+								<a href="#page49" id="ch3" onclick="choice_color('3')"><li><img src="../images/day1/78_btn_03_ru.png" alt=""></li></a>
+								<a href="#page49" id="ch4" onclick="choice_color('4')"><li><img src="../images/day1/78_btn_04_ru.png" alt=""></li></a>
+								<a href="#page49" id="ch5" onclick="choice_color('5')"><li><img src="../images/day1/78_btn_05_ru.png" alt=""></li></a>
 							</ul>
 						</div>
 						<!-- 여창민 대리 추가 (2017-03-30) : 끝 -->
