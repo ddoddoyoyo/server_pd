@@ -78,10 +78,10 @@
 							<ul>
 								<li><a class="en" href="javascript:;" onclick="main_go('en')">ENGLISH</a></li>
 								<li><a class="tr" href="javascript:;" onclick="main_go('tr')">TURKISH</a></li>
-								<!-- <li><a href="/pd/ar/">ARABIC</a></li>
-								<li><a class="fr" href="/pd/fr/">FRENCH</a></li>
-								<li><a class="ru" href="/pd/ru/">RUSSIAN</a></li>
-								<li><a class="es" href="/pd/es/">LATIN SPANISH</a></li> -->
+								<li><a class="ar" href="javascript:;" onclick="main_go('ar')">ARABIC</a></li>
+								<!-- <li><a class="fr" href="/pd/fr/">FRENCH</a></li> -->
+								<li><a class="ru" href="javascript:;" onclick="main_go('ru')">RUSSIAN</a></li>
+								<li><a class="es" href="javascript:;" onclick="main_go('es')">LATIN SPANISH</a></li>
 							</ul>
 							<div class="blue_bg blue_bg_r"></div>
 							<div class="blue_bg blue_bg_btm"></div>
