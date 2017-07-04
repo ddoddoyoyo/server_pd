@@ -155,7 +155,6 @@ $(document).ready(function(){
 	$("#page3").on({
 		"pagebeforeshow" : function(){
 			$(".layer_landscape, .btn_device").show();
-
 		}, 
 		"pageshow" : function(){
 			$(".btn_device").click(function(){

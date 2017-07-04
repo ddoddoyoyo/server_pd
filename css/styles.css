@@ -278,7 +278,6 @@ img {
   transform: rotate(90deg) !important; }
 
 .layer_landscape {
-  display: none;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -700,10 +699,7 @@ img {
           color: #206cdb; }
 
 #page1001.ru .ui-content .imgwrap .loding_bar {
-  width: 220px; }
-  #page1001.ru .ui-content .imgwrap .loding_bar .londing2 {
-    top: 1px;
-    bottom: auto; }
+  width: 190px; }
 
 #page2 {
   background: url("../images/intro/03_bg_3_2_@3x.jpg") no-repeat;
@@ -871,14 +867,6 @@ img {
           bottom: 8px; }
         #page3001 .ui-content .popLayer .textwrap .text {
           margin-left: 19px; }
-
-@media only screen and (orientation: Portrait) {
-  #page11 .ui-content {
-    display: none !important; } }
-
-@media only screen and (orientation: landscape) {
-  #page11 .ui-content {
-    display: block; } }
 
 #page3001.ru .ui-content .textwrap {
   margin-top: 7%;
@@ -1411,7 +1399,7 @@ img {
     display: block; } }
 
 #page13.ru .ui-content .textwrap .text_i {
-  width: 70% !important; }
+  width: 70%; }
 
 #page13 .ui-content .textwrap .text_i {
   width: 60%; }
@@ -1837,7 +1825,7 @@ img {
     display: block; } }
 
 #page21.ru .ui-content {
-  width: 37% !important; }
+  width: 37%; }
 
 #page22 {
   background: url("../images/ezgif.com-video-to-gif.gif") no-repeat;
@@ -2736,9 +2724,6 @@ img {
         transform: rotate(90deg); }
       #page39 .ui-content .textwrap .text {
         overflow: hidden; }
-
-#page39.es .ui-content .textwrap {
-  width: 34%; }
 
 @media only screen and (orientation: Portrait) {
   #page39 .ui-content {
@@ -3650,12 +3635,6 @@ img {
           margin-top: 10px;
           text-align: center;
           color: #206cdb; }
-
-#page5601.ru .ui-content .imgwrap .loding_bar {
-  width: 220px; }
-  #page5601.ru .ui-content .imgwrap .loding_bar .londing2 {
-    top: 1px;
-    bottom: auto; }
 
 #page56 {
   background: #000; }

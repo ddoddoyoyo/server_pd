@@ -101,21 +101,21 @@
 }
 
 
-@media only screen and (orientation: Portrait) {
-  #page11{
-    .ui-content {
-      display: none!important;
-    }
-  }
-}
+// @media only screen and (orientation: Portrait) {
+//   #page11{
+//     .ui-content {
+//       display: none!important;
+//     }
+//   }
+// }
 
-@media only screen and (orientation: landscape) {
-  #page11{
-    .ui-content {
-      display: block;
-    }
-  }
-}
+// @media only screen and (orientation: landscape) {
+//   #page11{
+//     .ui-content {
+//       display: block;
+//     }
+//   }
+// }
 
 #page3001.ru {
   .ui-content {
