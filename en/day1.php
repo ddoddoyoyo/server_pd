@@ -49,6 +49,8 @@
 				 $.mobile.changePage.defaults.changeHash = false;
 			});
 		</script>
+		<script src="../js/device.js"></script>
+		<script src="../js/day1.js"></script>
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="../js/jquery-ui.js"></script>
@@ -56,8 +58,7 @@
 		<script src="../js/jquery.incremental-counter.js"></script>
 		<script src="../js/jquery.animateNumber.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-		<script src="../js/device.js"></script>
-		<script src="../js/day1.js"></script>	
+			
 		<script src="../js/menu_day1.js"></script>
 		<script src="/pd/common/js/common.js"></script>
 		<script>
