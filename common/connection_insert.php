@@ -56,6 +56,7 @@
 					LMS_PART,
 					LMS_BRAND_GB,
 					LMS_CAR_GB,
+					LMS_LEC_TYPE,
 					LMS_REGDATE
 				) 
 				VALUES 
@@ -71,6 +72,7 @@
 					:LMS_PART,
 					:LMS_BRAND_GB,
 					:LMS_CAR_GB,
+					:LMS_LEC_TYPE,
 					NOW()
 				)";
 
@@ -86,6 +88,7 @@
 		$stmt->bindParam(':LMS_PART',$LMS_PART);
 		$stmt->bindParam(':LMS_BRAND_GB',$LMS_GB);
 		$stmt->bindParam(':LMS_CAR_GB',$LMS_CAR_GB);
+		$stmt->bindParam(':LMS_LEC_TYPE',$LMS_LEC_TYPE);
 		
 		if($stmt->execute()){
 			$dbh->commit();
