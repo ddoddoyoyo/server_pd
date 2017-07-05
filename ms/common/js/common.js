@@ -189,7 +189,7 @@ function lms_user_check(){
 function main_go(language){
 	if($("input[name=APP_GB]").val() == "APP"){
 		//alert("APP");
-		$("input[name=RETURN]").val("/pd/ms/"+language+"/main.php");
+		$("input[name=RETURN]").val("/pd/ms/"+language+"/day1.php");
 		$("input[name=LANGUAGE]").val(language);
 		Frm.submit();
 	}else{
