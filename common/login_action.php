@@ -5,6 +5,8 @@
 
 	$LMS_NAME = urldecode($_REQUEST["LMS_NAME"]);
 
+	$LMS_LEC_TYPE = urldecode($_REQUEST["TYPE"]);
+
 	$LMS_LANGUAGE = urldecode($_REQUEST["LANGUAGE"]);
 
 	$LMS_GB = "hyundai";

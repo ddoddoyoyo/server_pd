@@ -1,0 +1,326 @@
+@font-face {
+  font-family: "HyundaiSansHead-Regular_0";
+  text-transform: normal;
+  font-weight: normal;
+  src: url("../../fonts/HyundaiSansHead.eot") format("eot"), url("../../fonts/HyundaiSansHead.woff2") format("woff2"), url("../../fonts/HyundaiSansHead.woff") format("woff"), url("../../fonts/HyundaiSansHead.ttf") format("truetype"), url("../../fonts/HyundaiSansHead.otf") format("opentype"); }
+
+@font-face {
+  font-family: "HyundaiSansText-Italic_0";
+  text-transform: normal;
+  font-weight: normal;
+  src: url("../../fonts/HyundaiSansText-Italic.eot") format("eot"), url("../../fonts/HyundaiSansText-Italic.woff2") format("woff2"), url("../../fonts/HyundaiSansText-Italic.woff") format("woff"), url("../../fonts/HyundaiSansText-Italic.ttf") format("truetype"), url("../../fonts/HyundaiSansText-Italic.otf") format("opentype"); }
+
+@font-face {
+  font-family: "HyundaiSansText-Regular_0";
+  text-transform: normal;
+  font-weight: normal;
+  src: url("../../fonts/HyundaiSansText.eot") format("eot"), url("../../fonts/HyundaiSansText.woff2") format("woff2"), url("../../fonts/HyundaiSansText.woff") format("woff"), url("../../fonts/HyundaiSansText.ttf") format("truetype"), url("../../fonts/HyundaiSansText.otf") format("opentype"); }
+
+@font-face {
+  font-family: "HyundaiSansHead-Medium";
+  text-transform: normal;
+  font-weight: normal;
+  src: url("../../fonts/HyundaiSansHeadMedium.eot") format("eot"), url("../../fonts/HyundaiSansHeadMedium.woff2") format("woff2"), url("../../fonts/HyundaiSansHeadMedium.woff") format("woff"), url("../../fonts/HyundaiSansHeadMedium.ttf") format("truetype"), url("../../fonts/HyundaiSansHeadMedium.otf") format("opentype"); }
+
+body p {
+  font-family: 'HyundaiSansText-Italic_0', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: normal; }
+
+h1, h2, h3 {
+  font-weight: normal;
+  line-height: 120%; }
+
+h1 {
+  font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+  font-size: 2.5em;
+  margin: 0 0 10px 0; }
+
+h2 {
+  font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+  font-size: 1.8em;
+  margin: 0 0 10px 0; }
+
+.h2_sub {
+  font-family: 'HyundaiSansText-Regular_0', sans-serif;
+  font-size: 1.2em; }
+
+h3 {
+  font-family: 'HyundaiSansText-Regular_0', sans-serif;
+  font-size: 1.3em;
+  margin: 10px 0; }
+
+.intro_start {
+  font-family: 'HyundaiSansHead-Regular_0', sans-serif;
+  font-size: 30px;
+  margin: 10px 0; }
+
+.text_i {
+  font-size: 20px; }
+
+span, .p1, .p2 {
+  font-family: 'HyundaiSansHead-Regular_0', sans-serif; }
+
+input select label a {
+  font-family: 'HyundaiSansText-Regular_0', sans-serif !important; }
+
+.ui-page-theme-a .sidePanel {
+  background-color: #000 !important; }
+
+.sidePanel_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 10;
+  overflow: hidden; }
+  .sidePanel_wrap .sidePanel {
+    position: absolute;
+    top: 0;
+    left: 105%;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.75); }
+    .sidePanel_wrap .sidePanel ul.menu_list #day1, .sidePanel_wrap .sidePanel ul.menu_list #day2, .sidePanel_wrap .sidePanel ul.menu_list #day3 {
+      width: 32%; }
+  .sidePanel_wrap .btn_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 18px;
+    line-height: 0; }
+
+.sidePanel .menu_list {
+  position: relative;
+  top: 11%;
+  margin: 0 auto;
+  padding: 0;
+  width: 92%;
+  height: 80%;
+  list-style: none;
+  color: #ffffff; }
+  .sidePanel .menu_list ul, .sidePanel .menu_list li {
+    margin: 0;
+    padding: 0; }
+  .sidePanel .menu_list > li {
+    height: 100%;
+    width: 32%;
+    float: left;
+    margin-bottom: 10px; }
+    .sidePanel .menu_list > li > span {
+      font-size: 30px; }
+  .sidePanel .menu_list .sub_menu1 {
+    height: 100%;
+    width: 100%; }
+    .sidePanel .menu_list .sub_menu1 > li {
+      width: 84%;
+      margin-top: 10px; }
+      .sidePanel .menu_list .sub_menu1 > li > span {
+        font-size: 18px; }
+    .sidePanel .menu_list .sub_menu1 li#stelvio span {
+      font-size: 19px; }
+  .sidePanel .menu_list .sub_menu2 {
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid;
+    margin-top: 5px 0;
+    line-height: 140%; }
+    .sidePanel .menu_list .sub_menu2 > li {
+      width: 100%; }
+    .sidePanel .menu_list .sub_menu2 span {
+      font-size: 11px; }
+  .sidePanel .menu_list li a:visited {
+    color: #fff; }
+  .sidePanel .menu_list li.current a {
+    color: #a36b4f; }
+    .sidePanel .menu_list li.current a:before {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      width: 10px;
+      height: 22px;
+      content: " ";
+      background: url("/genesis/part1/images/pointer_current-position.png") 50% 50% no-repeat;
+      background-size: 6px;
+      display: inline-block; }
+
+.ui-page-theme-a .sidePanel {
+  background-color: #000 !important; }
+
+.sidePanel_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 10;
+  overflow: hidden; }
+  .sidePanel_wrap .sidePanel {
+    position: absolute;
+    top: 0;
+    left: 105%;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.75); }
+  .sidePanel_wrap .btn_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 18px;
+    line-height: 0; }
+
+.sidePanel .menu_list {
+  position: relative;
+  top: 7%;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  height: 80%;
+  list-style: none;
+  color: #fff; }
+  .sidePanel .menu_list ul, .sidePanel .menu_list li {
+    margin: 0;
+    padding: 0; }
+  .sidePanel .menu_list > li {
+    margin-bottom: 10px; }
+    .sidePanel .menu_list > li > a span {
+      font-size: 30px; }
+  .sidePanel .menu_list > li#day3 {
+    height: 100%;
+    float: left;
+    margin-right: 3%; }
+  .sidePanel .menu_list > li#day1 {
+    float: left;
+    position: relative; }
+    .sidePanel .menu_list > li#day1:before, .sidePanel .menu_list > li#day1:after {
+      content: "";
+      display: table; }
+    .sidePanel .menu_list > li#day1:after {
+      clear: both; }
+    .sidePanel .menu_list > li#day1 .day_arrow:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../images/button/btn_next_talk_arrow_2.png");
+      width: 100%;
+      height: 100%;
+      opacity: 0.6;
+      z-index: 0;
+      background-repeat: no-repeat;
+      background-size: 16%;
+      background-position: 54% 2%; }
+    .sidePanel .menu_list > li#day1 .sub_menu1 {
+      opacity: 0.6;
+      padding-top: 4px; }
+    .sidePanel .menu_list > li#day1 a {
+      position: relative;
+      z-index: 1; }
+    .sidePanel .menu_list > li#day1 > ul {
+      opacity: 0.5;
+      height: 50%; }
+  .sidePanel .menu_list > li#day2 {
+    float: left;
+    position: relative; }
+    .sidePanel .menu_list > li#day2 .day_arrow:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../images/button/btn_next_talk_arrow_2.png");
+      width: 100%;
+      height: 100%;
+      opacity: 0.6;
+      z-index: 0;
+      background-repeat: no-repeat;
+      background-size: 16%;
+      background-position: 54% 2%; }
+    .sidePanel .menu_list > li#day2 .sub_menu1 {
+      opacity: 0.6;
+      padding-top: 6px; }
+    .sidePanel .menu_list > li#day2 a {
+      position: relative;
+      z-index: 1; }
+    .sidePanel .menu_list > li#day2 > ul {
+      opacity: 0.5; }
+  .sidePanel .menu_list .sub_menu1 {
+    height: 100%;
+    width: 100%; }
+    .sidePanel .menu_list .sub_menu1 > li {
+      width: 89%;
+      margin-top: 10px; }
+      .sidePanel .menu_list .sub_menu1 > li > a, .sidePanel .menu_list .sub_menu1 > li > span {
+        font-size: 20px; }
+    .sidePanel .menu_list .sub_menu1 > li#bern > .sub_menu2 > li {
+      position: relative;
+      margin-top: 2px; }
+      .sidePanel .menu_list .sub_menu1 > li#bern > .sub_menu2 > li:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../images/button/btn_next_talk_arrow_2.png");
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-size: 12%;
+        background-position: 100% 0%; }
+      .sidePanel .menu_list .sub_menu1 > li#bern > .sub_menu2 > li a {
+        position: relative;
+        z-index: 1; }
+    .sidePanel .menu_list .sub_menu1 > li#strasbourg {
+      margin-top: 5%; }
+      .sidePanel .menu_list .sub_menu1 > li#strasbourg > .sub_menu2 > li {
+        position: relative;
+        margin-top: 2px; }
+        .sidePanel .menu_list .sub_menu1 > li#strasbourg > .sub_menu2 > li:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url("../images/button/btn_next_talk_arrow_2.png");
+          width: 100%;
+          height: 100%;
+          opacity: 0.6;
+          z-index: 0;
+          background-repeat: no-repeat;
+          background-size: 12%;
+          background-position: 100% 0%; }
+        .sidePanel .menu_list .sub_menu1 > li#strasbourg > .sub_menu2 > li a {
+          position: relative;
+          z-index: 1; }
+    .sidePanel .menu_list .sub_menu1 > li#como, .sidePanel .menu_list .sub_menu1 li#zurich {
+      margin-top: 2px; }
+  .sidePanel .menu_list .sub_menu2 {
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    line-height: 140%; }
+    .sidePanel .menu_list .sub_menu2 > li {
+      width: 100%; }
+    .sidePanel .menu_list .sub_menu2 span {
+      font-size: 11px; }
+  .sidePanel .menu_list a:visited, .sidePanel .menu_list a {
+    color: #fff; }
+  .sidePanel .menu_list a {
+    font-weight: normal; }
+
+.sidePanel.ru .menu_list li .day_arrow:after {
+  left: 20px !important; }

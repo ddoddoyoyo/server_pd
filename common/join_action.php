@@ -14,6 +14,8 @@
 
 	$LANGUAGE = $_POST['LANGUAGE'];
 
+	$LMS_LEC_TYPE = $_POST["TYPE"];
+
 	
 	
 
@@ -97,7 +99,7 @@
 		if($stmt->execute()){
 
 			$dbh->commit();
-			$param = "?LMS_CONTRY=".urlencode($LMS_CONTRY)."&LMS_NAME=".urlencode($LMS_NAME)."&RETURN=".urlencode($RETURN)."&LANGUAGE=".$LANGUAGE."";
+			$param = "?LMS_CONTRY=".urlencode($LMS_CONTRY)."&LMS_NAME=".urlencode($LMS_NAME)."&RETURN=".urlencode($RETURN)."&LANGUAGE=".$LANGUAGE."&TYPE=".$LMS_LEC_TYPE."";
 			$tools->metaGo("/pd/common/login_action.php".$param."");
 		}else{
 			$dbh->rollBack();
