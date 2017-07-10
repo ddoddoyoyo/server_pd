@@ -23,26 +23,26 @@ $(document).ready(function(){
 	}
 
 	// portrait / landscape
-	$(window).on("orientationchange", function(){
-		//page1
-		$("#page1").on({
-			"pagebeforeshow" : function(){
-				$(".btn_device").removeClass("landscape");
-			}, 
-			"pageshow" : function(){
+	// $(window).on("orientationchange", function(){
+	// 	//page1
+	// 	$("#page1").on({
+	// 		"pagebeforeshow" : function(){
+	// 			$(".btn_device").removeClass("landscape");
+	// 		}, 
+	// 		"pageshow" : function(){
 				
-			}
-		});
+	// 		}
+	// 	});
 
-		$("#page2").on({
-			"pagebeforeshow" : function(){
-				$(".btn_device").addClass("landscape");
-			}, 
-			"pageshow" : function(){
+	// 	$("#page2").on({
+	// 		"pagebeforeshow" : function(){
+	// 			$(".btn_device").addClass("landscape");
+	// 		}, 
+	// 		"pageshow" : function(){
 				
-			}
-		});
-	});
+	// 		}
+	// 	});
+	// });
 
 	
 

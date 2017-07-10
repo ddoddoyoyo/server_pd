@@ -1,3 +1,4 @@
+_orientation = true;
 $(document).ready(function() {
 	
 	//뒤로가기 후에 textbox에서 next버튼 항상 보이게 하기

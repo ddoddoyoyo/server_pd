@@ -1970,7 +1970,14 @@
 		</div>
 	</section> -->
 	
-
+	<div id="landscape_popup" class="landscape_popup">
+		<a href="#" class="layer_landscape">
+			<div class="box">
+				<img class="icon-device" src="../images/icon_phonerotation_@3x.png" alt="">
+				<p>Turn the screen to landscape.</p>
+			</div>
+		</a>
+	</div>
 	
 
 

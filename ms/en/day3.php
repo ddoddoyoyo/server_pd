@@ -2159,6 +2159,15 @@ var options = {
 			</div>
 		</div>
 
+		<div id="landscape_popup" class="landscape_popup">
+		<a href="#" class="layer_landscape">
+			<div class="box">
+				<img class="icon-device" src="../images/icon_phonerotation_@3x.png" alt="">
+				<p>Turn the screen to landscape.</p>
+			</div>
+		</a>
+	</div>
+
 		<!-- <a href="#page9">엔진 이동</a>
 		<a href="#page38">마지막 이동</a>
 		<a href="#page48">파일 업로드</a> -->

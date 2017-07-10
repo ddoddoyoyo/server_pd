@@ -147,8 +147,6 @@
 					</div>
 				</section>
 
-				
-
 				<section data-role="page" id="page2" class="container"> 
 					<div data-role="main" class="ui-content">
 						<div class="textwrap">
@@ -2042,15 +2040,14 @@
 				</section>
 
 
-				<!-- <div id="landscape_popup" class="landscape_popup">
+				<div id="landscape_popup" class="landscape_popup">
 				<a href="#" class="layer_landscape">
 					<div class="box">
 						<img class="icon-device" src="../images/icon_phonerotation_@3x.png" alt="">
 						<p>Turn the screen to landscape.</p>
-						<p class="ok_btn">OK</p>
 					</div>
 				</a>
-			</div> -->
+			</div>
 
 	<!-- 여창민 대리 추가 (2017-03-30) : 시작 -->
 	<input type="hidden" id="SESSION_LMS_SEQ" name="SESSION_LMS_SEQ" value="<?=$_SESSION["HY_LMS_SEQ"]?>">

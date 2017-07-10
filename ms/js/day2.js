@@ -1,6 +1,7 @@
+_orientation = true;
+//alert(_orientation);
 $(document).ready(function(){
-
-	//뒤로가기 후에 textbox에서 next버튼 항상 보이게 하기
+		//뒤로가기 후에 textbox에서 next버튼 항상 보이게 하기
 	$(".go-back").click(function(){
 		 
 		 $('section').each(function(idx,obj){
@@ -76,6 +77,7 @@ $(document).ready(function(){
 	$(".btn_device").hide();
 
 	//day2
+
 	$("#page56 .next_p_btn").click(function(){
 		// if($("#page57").has(".audio1")) {
 		// 		$("#page57").find(".audio1").trigger('play');

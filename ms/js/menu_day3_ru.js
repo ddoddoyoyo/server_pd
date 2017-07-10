@@ -56,7 +56,7 @@ $(document).ready(function(){
 	});
 
 	$("a#time_line").click(function(){
-		location.href="../ms/timeline_view.php";
+		location.href="../timeline_view.php";
 	});
 });
 

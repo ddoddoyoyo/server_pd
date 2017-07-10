@@ -80,16 +80,17 @@ $(document).ready(function(){
 		$("#page"+pNum).find(".audio"+num).trigger('play');
 	}
 
-	//오디오 플레이
+	
 
 	//세로모드
-	$("#page0, #page1,#page2, #page3").on({
+	$("#page0, #page1001, #page1, #page2").on({
 		"pagebeforeshow" : function(){
 			$("#mokup, #wrap.mobile").removeClass("landscape");
-			// $('#page0 #landscape_popup,#page1 #landscape_popup,#page2 #landscape_popup,#page3 #landscape_popup').hide();
-			//$('.landscape_popup .layer_landscape').hide();
+			$("#landscape_popup").hide();
 		}
 	});
+
+
 
 	//page1
 	$("#page0").on({
@@ -128,6 +129,7 @@ $(document).ready(function(){
 		"pagebeforeshow" : function(){
 			$("#page3001 .popLayer, #page3001 .next_p_btn, #page3001 .textwrap").hide();
 			video_pause();
+			_orientation = true;
 		}, 
 		"pageshow" : function(){
 			$("#page3001 .textwrap").fadeIn(500);
@@ -154,8 +156,9 @@ $(document).ready(function(){
 
 	$("#page3").on({
 		"pagebeforeshow" : function(){
-			$(".layer_landscape, .btn_device").show();
-			$("#page3 .ok_btn").hide();
+			$(".btn_device").show();
+			$("#page3 .ok_btn, .landscape_popup").hide();
+			$('#landscape_popup p').html("Turn the screen to landscape.");
 		}, 
 		"pageshow" : function(){
 			$(".btn_device").click(function(){
@@ -176,6 +179,7 @@ $(document).ready(function(){
 	  }
 	  else{ // Landscape : window.orientation == 90 || window.orientation == -90
 		$("#page3 .ok_btn").show();
+		$('#landscape_popup').hide();
   	  }	
 	});
 

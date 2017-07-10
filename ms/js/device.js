@@ -1,3 +1,5 @@
+var _orientation = false;
+
 $(document).ready(function(){
 	// mobile, tablet / PC 구분
 	mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowssce|palm/i.test(navigator.userAgent.toLowerCase()));
@@ -24,23 +26,23 @@ $(document).ready(function(){
 		}
 	}
 
-	var android = (/|android|/i.test(navigator.userAgent.toLowerCase()));
-	var agt = navigator.userAgent.toLowerCase();
-	var browser = fun_agt(agt);
+	// var android = (/|android|/i.test(navigator.userAgent.toLowerCase()));
+	// var agt = navigator.userAgent.toLowerCase();
+	// var browser = fun_agt(agt);
 
-	if(android){
-		if(browser == "Samsungbrowser"){
-			$("body").css({'height':'calc(100% + 20px)'});
-			$(".ui-mobile-viewport").css({'height':'calc(100% + 20px)'});
-			$(".ui-mobile").css({"top":"10px"});
-		} else if(browser == "Chrome") {
-			$("body").css({'height':'calc(100% + 20px)'});
-			$(".ui-mobile").css({"top":"20px"});
-			$('.ui-mobile').css({'height':'calc(100% + 30px)'});
-		} else {
+	// if(android){
+	// 	if(browser == "Samsungbrowser"){
+	// 		$("body").css({'height':'calc(100% + 20px)'});
+	// 		$(".ui-mobile-viewport").css({'height':'calc(100% + 20px)'});
+	// 		$(".ui-mobile").css({"top":"10px"});
+	// 	} else if(browser == "Chrome") {
+	// 		$("body").css({'height':'calc(100% + 20px)'});
+	// 		$(".ui-mobile").css({"top":"20px"});
+	// 		$('.ui-mobile').css({'height':'calc(100% + 30px)'});
+	// 	} else {
 
-		}
-	}
+	// 	}
+	// }
 
 	function fun_agt(agt){
 		if (agt.indexOf("samsungbrowser") != -1) {
@@ -52,12 +54,12 @@ $(document).ready(function(){
 		}
 	}
 
-	window.addEventListener("load",function() {
-	    setTimeout(function(){
-	        // This hides the address bar:
-	        window.scrollTo(0, 1);
-	    }, 0);
-	});
+	// window.addEventListener("load",function() {
+	//     setTimeout(function(){
+	//         // This hides the address bar:
+	//         window.scrollTo(0, 1);
+	//     }, 0);
+	// });
 
 	// portrait / landscape
 	$(window).trigger("orientationchange");
@@ -87,6 +89,28 @@ $(document).ready(function(){
 		}
 	});
 
+	//document로딩 됬을 처음에 한번 실행
+	if(window.orientation != 0){ // Portrait
+	  	$("#landscape_popup").hide();
+	  }
+	  else {
+	  	$("#landscape_popup").show();
+	  }
+	// alert(window.orientation);
+	
+	$(window).on("orientationchange",function(){
+		// alert(_orientation);
+		if(_orientation == true){
+			if(window.orientation == 0){ // Portrait
+			  	$("#landscape_popup").show();
+			  }
+			  else{ // Landscape : window.orientation == 90 || window.orientation == -90
+				$("#landscape_popup").hide();
+		  	  }	
+		}
+	  
+	});
+
 	// $(".next_finger, .next_p_btn").click(function(e) {
 	// 	if($("audio").length){
 	// 		$("audio").each(function(){ 
@@ -109,18 +133,18 @@ $(document).ready(function(){
 		}
 	});
 
-	$(window).bind("orientationchange", function(e) {
-	   var orientation = window.orientation;
-	   var nowPageId = $.mobile.activePage.attr("id");
+	// $(window).bind("orientationchange", function(e) {
+	//    var orientation = window.orientation;
+	//    var nowPageId = $.mobile.activePage.attr("id");
 	   
-	   if(window.orientation == 0){
-	      //alert("portrait");
-	      //$('.landscape_popup').show();
-	      // $('#page0 #landscape_popup,#page1 #landscape_popup,#page2 #landscape_popup,#page3 #landscape_popup').hide();
-	   }else{
-	      //alert("landscape");
-	      //$('.landscape_popup').hide();
+	//    if(window.orientation == 0){
+	//       //alert("portrait");
+	//       //$('.landscape_popup').show();
+	//       // $('#page0 #landscape_popup,#page1 #landscape_popup,#page2 #landscape_popup,#page3 #landscape_popup').hide();
+	//    }else{
+	//       //alert("landscape");
+	//       //$('.landscape_popup').hide();
 
-	   }
-	});
+	//    }
+	// });
 });
