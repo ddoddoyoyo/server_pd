@@ -83,7 +83,7 @@ $(document).ready(function(){
 	
 
 	//세로모드
-	$("#page0, #page1001, #page1, #page2").on({
+	$("#page0, #page1001, #page1, #page2, #page3").on({
 		"pagebeforeshow" : function(){
 			$("#mokup, #wrap.mobile").removeClass("landscape");
 			$("#landscape_popup").hide();
