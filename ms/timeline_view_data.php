@@ -121,17 +121,20 @@
 		$dataList = $dataList."<article class='article'> <div class='photo'>";
 
 		if($ROW[$a]['LMS_CON_TITLE_IMG']){
-			$dataList = $dataList." <img src='".$IMG_URL."/hyundai/pd/".$ROW[$a]['LMS_CON_TITLE_IMG']."' alt=''>" ;
+			//$dataList = $dataList." <img src='".$IMG_URL."/hyundai/pd/".$ROW[$a]['LMS_CON_TITLE_IMG']."' alt=''>" ;
+			$dataList = $dataList."<div class='img' style='background-image : url(".$IMG_URL."/hyundai/pd/".$ROW[$a]['LMS_CON_TITLE_IMG'].");'></div>";
 		} else {
-			$dataList = $dataList." <img src='' alt=''>";
+			//$dataList = $dataList." <img src='' alt=''>";
 		}
 		$dataList = $dataList." </div>";
 		$dataList = $dataList." <div class='profile_wrap'>";
 		$dataList = $dataList."	     <div class='userPix_wrap'>";
 		if($ROW[$a]['LMS_IMAGE']){
-			$dataList = $dataList."  <div class='userPix'><img src='".$IMG_URL."/hyundai/member/".$ROW[$a]['LMS_IMAGE']."' alt=''></div>" ;
+			//$dataList = $dataList."  <div class='userPix'><img src='".$IMG_URL."/hyundai/member/".$ROW[$a]['LMS_IMAGE']."' alt=''></div>" ;
+			$dataList = $dataList."<div class='userPix'><div class='img' style='background-image : url(".$IMG_URL."/hyundai/member/".$ROW[$a]['LMS_IMAGE'].");'></div></div>";
 		} else {
-			$dataList = $dataList."  <div class='userPix'><img src='/pd/images/profile_basic_@3x.png' alt=''></div>" ;
+			//$dataList = $dataList."  <div class='userPix'><img src='/pd/images/profile_basic_@3x.png' alt=''></div>" ;
+			$dataList = $dataList."<div class='userPix'><div class='img' style='background-image : url(images/profile_basic_@3x.png);'></div></div>";
 		}
 		$dataList = $dataList."</div>";
 		$dataList = $dataList."    <div class='userProfile'>";
