@@ -1,0 +1,23 @@
+// Font Type
+$header_r: 'HyundaiSansHead', Arial, sans-serif;
+$header_m: 'HyundaiSansHeadMedium', Arial, sans-serif;
+$header_l: 'HyundaiSansHead-Light', Arial, sans-serif;
+$base_font:  'HyundaiSansText', Arial, sans-serif;
+
+
+// Font Size 
+$base-font-size: 16px;
+$mid-font-size: 20px;
+$header-font: 18px;
+
+// ==========================================================
+// Font type
+// ==========================================================
+@include font-face("HyundaiSansHead", fonts/HyundaiSansHead, normal, normal);
+@include font-face("HyundaiSansHeadMedium", fonts/HyundaiSansHeadMedium, normal, normal);
+@include font-face("HyundaiSansHead-Light", fonts/HyundaiSansHead-Light, normal, normal);
+@include font-face("HyundaiSansText", fonts/HyundaiSansText, normal, normal);
+@include font-face("DIGI", fonts/DS-DIGI, normal, normal);
+// ==========================================================
+// Font 
+// ==========================================================
