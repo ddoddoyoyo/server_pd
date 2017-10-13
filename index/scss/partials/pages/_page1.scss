@@ -1,0 +1,110 @@
+// styles.scss
+
+#intPage {
+	#i30 {
+		margin-top: 52px;
+	    background-image: url('../images/i30/i30_main_img.png');
+
+	    img.con_title {
+		    height: 18px;
+		}
+	}
+
+	#azera {
+		background-image: url('../images/azera/azera_main_img.png');
+
+		img.con_title {
+		    height: 16px;
+		}
+	}
+
+	#kona {
+		margin-bottom: 10px;
+		background-image: url('../images/kona/kona_main_img.png');
+
+		img.con_title {
+		    height: 12px;
+		}
+	}
+
+	#sonata {
+		margin-bottom: 10px;
+		background-image: url('../images/sonata/sonata_main_img.png');
+
+		img.con_title {
+		    height: 11px;
+		}
+	}
+}
+
+#i30_sub {
+	.subcont_img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;	
+	}
+
+	.subcontent:first-child .subcont_img {
+		background-image: url('../images/i30/i30_img_1.png');
+	}
+
+	.subcontent:nth-child(2) .subcont_img {
+		background-image: url('../images/i30/i30_img_2.png');
+	}
+}
+
+#azera_sub {
+	.subcont_img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.subcontent:first-child .subcont_img {
+		background-image: url('../images/azera/azera_img_1.png');
+	}
+
+	.subcontent:nth-child(2) .subcont_img {
+		background-image: url('../images/azera/azera_img_2.png');
+	}
+}
+
+#kona_sub {
+	.subcont_img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	a:first-child .subcontent .subcont_img {
+		background-image: url('../images/kona/kona_img_1.png');
+	}
+
+	a:nth-child(2) .subcontent .subcont_img {
+		background-image: url('../images/kona/kona_img_2.png');
+	}
+
+	a:nth-child(3) .subcontent .subcont_img {
+		background-image: url('../images/kona/kona_img_3.png');
+	}
+}
+
+#sonata_sub {
+	.subcont_img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	a:first-child .subcontent .subcont_img {
+		background-image: url('../images/sonata/sonata_img_1.png');
+	}
+
+	a:nth-child(2) .subcontent .subcont_img {
+		background-image: url('../images/sonata/sonata_img_2.png');
+	}
+
+	a:nth-child(3) .subcontent .subcont_img {
+		background-image: url('../images/sonata/sonata_img_3.png');
+	}
+}

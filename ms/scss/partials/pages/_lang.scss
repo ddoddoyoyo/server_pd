@@ -77,9 +77,9 @@
 		        height: 16.2%;
 						margin: 0;
 
-						&:last-child {
-							border-bottom: none;
-						}
+						// &:last-child {
+						// 	border-bottom: none;
+						// }
 						&:hover {
 							background: rgb(254,255,255); /* Old browsers */
 							background: -moz-radial-gradient(center, ellipse cover, rgba(254,255,255,1) 0%, rgba(226,231,235,1) 64%, rgba(151,170,184,1) 100%); /* FF3.6-15 */
