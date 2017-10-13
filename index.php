@@ -1,3 +1,66 @@
+<?php
+	include_once ($_SERVER[DOCUMENT_ROOT]."/common/commonFunction.php");
+
+	$YB_CODE = 'PD';
+
+	$refer = $_SERVER['REMOTE_ADDR'];
+
+	$request_url = "http://whois.kisa.or.kr/openapi/ipascc.jsp?query=".$refer."&key=2016081813570509350490&answer=json";
+	
+	$info = $tools->get_web_page($request_url);
+
+	$data = json_decode($info['content'],true);
+
+	$YB_CONTRY = $data['whois']['countryCode'];
+	
+	try 
+	{
+		$dbh->beginTransaction();
+
+		$sql = "SELECT ENG,CTCODE FROM SPK_COUNTRY WHERE CCODE =:COUNTRY_CODE";
+		$stmt = $dbh->prepare($sql);
+		$stmt->bindParam(':COUNTRY_CODE',$YB_CONTRY);
+		$stmt->execute();
+		$row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+		$sql = "INSERT INTO YOUTUBE_COUNT 
+					(
+						GUBUN,
+						YB_REGION,
+						YB_COUNTRY,
+						YB_CODE,
+						YB_REGDATE
+					) 
+					VALUES 
+					(
+						2,
+						:YB_REGION,
+						:YB_COUNTRY,
+						:YB_CODE,
+						NOW()
+					)";
+
+			$stmt = $dbh->prepare($sql);
+			$stmt->bindParam(':YB_REGION',$row[0]["CTCODE"]);
+			$stmt->bindParam(':YB_COUNTRY',$row[0]["ENG"]);
+			$stmt->bindParam(':YB_CODE',$YB_CODE);
+
+			if($stmt->execute()){
+				$dbh->commit();
+			}else{
+				$dbh->rollBack();
+			}
+
+	} catch (PDOException $pe) {
+		
+		$dbh->rollBack();
+		
+	}
+
+	echo json_encode($json);
+		
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -24,6 +87,26 @@
 		<script>
 			$(document).ready(function(){
 				$('.scrollbar').perfectScrollbar(); 
+
+				$("#youtubeCnt").click(function(){
+
+					var YB_CODE = "PD";
+					$.ajax({
+						url: "common/youtube_action.php",
+						type: "POST",
+						dataType: "json",
+						data:{
+							YB_CODE: YB_CODE,
+						},
+						success:  function(json){
+							
+							if(json.data){
+								console.log(json);
+							}
+
+						}
+					});		
+				});
 			})
 		</script>
 	</head>
@@ -36,11 +119,18 @@
 						<h1>i30</h1>
 					</div>
 					<div data-role="main" class="ui-content">
-						<div class="subcontent sub_lang" id="subcontent1">
+						<a class="i30_ksp" href="javascript:;"><div class="subcontent" id="subcontent1">
+							<div class="subcont_img"></div>
+							<div class="subcont_txt">
+								<h3 class="subcont_txt_title">Mobile KSP Learning</h3>
+								<p>Learn about i30’s key selling points with this interactive and simple learning anytime and anywhere.</p>
+							</div>
+						</div></a>
+						<div class="subcontent sub_lang">
 							<div class="subcont_img"></div>
 							<div class="subcont_txt">
 								<h3 class="subcont_txt_title">Digital Sales Guide</h3>
-								<p>Easily check out the sales points of i30 with matrix structure.</p>
+								<p>Learn how to best present i30’s key selling points. Try searching the information you need in just a few seconds!</p>
 							</div>
 							<div class="subcont_lang">
 								<a href="" class="close">
@@ -55,15 +145,8 @@
 								</div>
 							</div>
 						</div>
-						<a class="i30_ksp" href="javascript:;"><div class="subcontent">
-							<div class="subcont_img" style="background-image: url('index/images/i30/i30_img_2.png')"></div>
-							<div class="subcont_txt">
-								<h3 class="subcont_txt_title">Mobile KSP Learning</h3>
-								<p>Trip to 3DAY Europe with i30,  Easy to understand i30 story.</p>
-							</div>
-						</div></a>
-						<a class="i30_yout" href="https://youtu.be/N6d1bRPIkwA" target="_blank"><div class="subcontent">
-							<div class="subcont_img" style="background-image: url('index/images/i30/i30_th.png')"></div>
+						<a class="i30_yout" href="https://youtu.be/N6d1bRPIkwA" target="_blank" id="youtubeCnt"><div class="subcontent">
+							<div class="subcont_img"></div>
 							<div class="subcont_txt">
 								<h3 class="subcont_txt_title">Product Video</h3>
 								<p>Watch this short but informative product video for i30 on Youtube and share this with your customers.</p>
