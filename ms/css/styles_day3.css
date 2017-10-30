@@ -802,7 +802,7 @@ img {
 	#page4 .ui-content {
 		display:block; } }
 
-#page4.ru .ui-content .textwrap {
+#page4.ru .ui-content .textwrap, #page4.fr .ui-content .textwrap {
     margin-top: 10px;
     width: 35%;
 }

@@ -566,6 +566,11 @@ img {
   background-size: 100% auto;
   background-position: 50% 50%; }
 
+#page0.fr {
+  background: url("../images/intro/open_bg_@3x_fr.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%; }
+
 #page1 {
   background: url("../images/intro/login_bg_blue_2_@3x.jpg") no-repeat;
   background-size: 100% auto;
@@ -4661,11 +4666,6 @@ img {
       #page70 .ui-content .textwrap .text {
         overflow: hidden; }
 
-#page70.es .ui-content .textwrap {
-  width: 42%; }
-  #page70.es .ui-content .textwrap .text_img2 {
-    width: 45%; }
-
 @media only screen and (orientation: Portrait) {
   #page70 .ui-content {
     display: none !important; } }
@@ -4674,9 +4674,9 @@ img {
   #page70 .ui-content {
     display: block; } }
 
-#page70.ru .ui-content .textwrap {
+#page70.ru .ui-content .textwrap, #page70.es .ui-content .textwrap, #page70.fr .ui-content .textwrap {
   width: 42% !important; }
-  #page70.ru .ui-content .textwrap .text_img2 {
+  #page70.ru .ui-content .textwrap .text_img2, #page70.es .ui-content .textwrap .text_img2, #page70.fr .ui-content .textwrap .text_img2 {
     width: 45%; }
 
 #page71 {

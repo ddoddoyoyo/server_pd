@@ -26,23 +26,23 @@ $(document).ready(function(){
 		}
 	}
 
-	// var android = (/|android|/i.test(navigator.userAgent.toLowerCase()));
-	// var agt = navigator.userAgent.toLowerCase();
-	// var browser = fun_agt(agt);
+	var android = (/|android|/i.test(navigator.userAgent.toLowerCase()));
+	var agt = navigator.userAgent.toLowerCase();
+	var browser = fun_agt(agt);
 
-	// if(android){
-	// 	if(browser == "Samsungbrowser"){
-	// 		$("body").css({'height':'calc(100% + 20px)'});
-	// 		$(".ui-mobile-viewport").css({'height':'calc(100% + 20px)'});
-	// 		$(".ui-mobile").css({"top":"10px"});
-	// 	} else if(browser == "Chrome") {
-	// 		$("body").css({'height':'calc(100% + 20px)'});
-	// 		$(".ui-mobile").css({"top":"20px"});
-	// 		$('.ui-mobile').css({'height':'calc(100% + 30px)'});
-	// 	} else {
+	if(android){
+		if(browser == "Samsungbrowser"){
+			$("body").css({'height':'calc(100% + 20px)'});
+			$(".ui-mobile-viewport").css({'height':'calc(100% + 38px)'});
+			$(".ui-mobile").css({"top":"10px"});
+		} else if(browser == "Chrome") {
+			$("body").css({'height':'calc(100% + 20px)'});
+			$(".ui-mobile").css({"top":"20px"});
+			$('.ui-mobile').css({'height':'calc(100% + 38px)'});
+		} else {
 
-	// 	}
-	// }
+		}
+	}
 
 	function fun_agt(agt){
 		if (agt.indexOf("samsungbrowser") != -1) {

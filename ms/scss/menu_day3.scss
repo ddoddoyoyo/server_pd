@@ -258,3 +258,11 @@
     }
   }
 }
+
+.sidePanel.fr .sub_menu2 {
+  li{ 
+    &:after{
+      left:   9px!important ;
+    }
+  }
+}

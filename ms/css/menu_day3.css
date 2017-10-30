@@ -324,3 +324,6 @@ input select label a {
 
 .sidePanel.ru .menu_list li .day_arrow:after {
   left: 20px !important; }
+
+.sidePanel.fr .sub_menu2 li:after {
+  left: 9px !important; }
